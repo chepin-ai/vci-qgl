@@ -1,0 +1,8 @@
+{
+ "repo": "vci-qgl",
+ "line": "quantum-go-ledger",
+ "tag": "业务线影子",
+ "spec": "SHADOW-CI-01",
+ "lane": "provision/vci",
+ "v": 1
+}
