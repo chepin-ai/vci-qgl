@@ -1,9 +1,9 @@
 {
  "line": "quantum-go-ledger",
  "vrepo": "vci-qgl",
- "last_pulse": "20260819-011041",
- "chain_head": "009289c4b3f5a487",
- "pulses_total": 4,
+ "last_pulse": "20260819-014551",
+ "chain_head": "792b7d2641a56067",
+ "pulses_total": 5,
  "snapshot": {
   "registry": "not-registered",
   "outbox": null
