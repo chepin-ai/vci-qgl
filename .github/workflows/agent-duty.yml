@@ -132,7 +132,14 @@ jobs:
                   summary+='（LLM 摘要失败，按机检原文呈现）'
           mode='llm' if key else '机检摘要（无 LLM key 降级）'
           doc=f"---\nv: 1\nfrom: {vrepo}\nto: broadcast\nkind: report\nstate: submitted\n---\n\n【agent-duty v2 值守 {ts}】模式={mode}\n发现 {len(findings)} 件：{summary}\n核销 {len(cleared)} 件；升级 {len(rec['escalated'])} 件。台账=weave/duty/duty-{ts}.json 链头 {chain}\n—— {vrepo}（agent-duty vci 分身）"
-          assert not gate(doc)
+          _hits=gate(doc)
+          if _hits:
+              # LA-3+候裁1：拒执结构化回执上链 {refused_what,why_gate,evidence_fp,ts}
+              ref={'ts':ts,'refused_what':'值守应答 msg 落盘','why_gate':'PATS 命中 '+'/'.join(_hits),'evidence_fp':hashlib.sha256(doc.encode()).hexdigest()[:16]}
+              os.makedirs('weave/duty',exist_ok=True)
+              open('weave/duty/refusals.jsonl','a').write(json.dumps(ref,ensure_ascii=False)+'
+')
+              print('REFUSED:',json.dumps(ref,ensure_ascii=False)); raise SystemExit(0)
           os.makedirs('.ci-inbox',exist_ok=True)
           open(f'.ci-inbox/msg-{ts}.md','w').write(doc)
           print(json.dumps({'findings':len(findings),'escalated':len(rec['escalated']),'mode':mode,'chain':chain},ensure_ascii=False))
