@@ -6,8 +6,16 @@
     "note": "对线未在公面注册表登记 outbox"
    },
    "first": "20260819-012631",
-   "ticks": 5,
+   "ticks": 6,
    "escalate": true
+  },
+  "1094fa63bf": {
+   "finding": {
+    "kind": "chain-diverge",
+    "note": "pulse.log 链头与 status.json 不一致"
+   },
+   "first": "20260819-070827",
+   "ticks": 1
   }
  }
 }

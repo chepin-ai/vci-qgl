@@ -1,0 +1,37 @@
+{
+ "ts": "20260819-070827",
+ "line": "quantum-go-ledger",
+ "checks": {
+  "outbox": "unregistered",
+  "pulse": {
+   "last": "20260819-065709",
+   "age_h": 0.2,
+   "chain_log": "b046e573dec80874"
+  },
+  "chain_match": false,
+  "matrix": [
+   {
+    "id": "shadow-pulse@vci-qgl",
+    "status": "ok"
+   }
+  ],
+  "inbox_unread": 5
+ },
+ "findings": [
+  {
+   "kind": "outbox-unregistered",
+   "note": "对线未在公面注册表登记 outbox"
+  },
+  {
+   "kind": "chain-diverge",
+   "note": "pulse.log 链头与 status.json 不一致"
+  }
+ ],
+ "cleared": [],
+ "escalated": [
+  {
+   "kind": "outbox-unregistered",
+   "note": "对线未在公面注册表登记 outbox"
+  }
+ ]
+}
