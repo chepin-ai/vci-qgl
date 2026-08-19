@@ -1,0 +1,12 @@
+{
+ "open": {
+  "fec84f4f76": {
+   "finding": {
+    "kind": "outbox-unregistered",
+    "note": "对线未在公面注册表登记 outbox"
+   },
+   "first": "20260819-012631",
+   "ticks": 1
+  }
+ }
+}
