@@ -1,0 +1,146 @@
+name: agent-duty
+# AGENT-DUTY v2 · vci 版 pilot（VCI-LOAD-01 波2 @vci-usrm，root 裁2 2026-08-19）
+# 公仓驱动机检/追办；死线：私域数据只以 sha256/HTTP 状态码出场，L2 永不落公仓
+# 无 LLM key 时机检摘要降级（明示不装死——DM 002 第三课）；台账 weave/duty/ 哈希链
+on:
+  workflow_dispatch: {}
+  schedule: [{ cron: '19 * * * *' }]   # 错峰值守（公仓零配额）
+  push:
+    paths: ['.github/workflows/agent-duty.yml']
+permissions:
+  contents: write
+jobs:
+  duty:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - name: duty
+        env:
+          LINE: quantum-go-ledger
+          VREPO: vci-qgl
+          API_KEY: ${{ secrets.API_DEEPSEEK_KEY_1 }}
+        run: |
+          python3 - <<'PYEOF'
+          import json, os, urllib.request, datetime, hashlib, re, base64
+          line=os.environ['LINE']; vrepo=os.environ['VREPO']
+          ts=datetime.datetime.utcnow().strftime('%Y%m%d-%H%M%S'); today=ts[:8]
+          now=datetime.datetime.utcnow()
+          PATS=[r'ghp_[A-Za-z0-9]{10,}', r'github_pat_[A-Za-z0-9_]{10,}', r'rings-[A-Za-z0-9]',
+                r'sk-[A-Za-z0-9]{16,}', r'PRIVATE'+' KEY', r'-----'+'BEGIN']
+          def gate(s): return [p for p in PATS if re.search(p, s or '')]
+          UA={'User-Agent':'agent-duty-v2','Accept':'application/vnd.github+json'}
+          def get(u):
+              req=urllib.request.Request(u,headers=UA)
+              try:
+                  with urllib.request.urlopen(req,timeout=20) as r: return r.status,r.read()
+              except Exception as e: return getattr(e,'code',0),b''
+          def age_h(name_ts,fmt='%Y%m%d-%H%M%S'):
+              try: return round((now-datetime.datetime.strptime(name_ts,fmt)).total_seconds()/3600,1)
+              except Exception: return 9e9
+          findings=[]; checks={}
+          # ① 对线 outbox 可达性（公面注册表；指纹/状态码级）
+          s,raw=get('https://raw.githubusercontent.com/chepin-ai/ci-control/main/bridge/outboxes.json')
+          if s==200:
+              ss=json.loads(raw).get('sessions',{})
+              url=(ss.get(line) or {}).get('url')
+              if not url:
+                  checks['outbox']='unregistered'
+                  findings.append({'kind':'outbox-unregistered','note':'对线未在公面注册表登记 outbox'})
+              else:
+                  s2,body=get(url)
+                  checks['outbox']={'http':s2,'sha256_16':hashlib.sha256(body).hexdigest()[:16] if s2==200 else None}
+                  if s2!=200: findings.append({'kind':'outbox-down','note':f'对线 outbox HTTP {s2}'})
+          else:
+              checks['outbox']='registry-unreachable'
+              findings.append({'kind':'registry-down','note':f'公面注册表 HTTP {s}'})
+          # ② 本仓影子链健康（链头一致性 + 新鲜度）
+          last_pulse=None
+          if os.path.exists('pulse.log'):
+              lines=[l for l in open('pulse.log').read().strip().split('\n') if l.strip()]
+              if lines:
+                  last_pulse=lines[-1].split()[0]
+                  chain_log=lines[-1].split()[2]
+                  a=age_h(last_pulse)
+                  checks['pulse']={'last':last_pulse,'age_h':a,'chain_log':chain_log}
+                  if a>12: findings.append({'kind':'pulse-stale','note':f'影子脉搏 {last_pulse} 年龄 {a}h（>2×6h 班）'})
+                  if os.path.exists('weave/status.json'):
+                      st=json.load(open('weave/status.json'))
+                      checks['chain_match']=(st.get('chain_head')==chain_log)
+                      if not checks['chain_match']:
+                          findings.append({'kind':'chain-diverge','note':'pulse.log 链头与 status.json 不一致'})
+          else:
+              findings.append({'kind':'pulse-missing','note':'pulse.log 不存在'})
+          # ③ 公面矩阵本线行读数（mech-status 公镜）
+          s,raw=get('https://raw.githubusercontent.com/chepin-ai/ci-control/main/bridge/mech-status.json')
+          if s==200:
+              mj=json.loads(raw)
+              mine=[r for r in mj.get('mechanisms',[]) if vrepo in str(r.get('repo',''))]
+              checks['matrix']=[{'id':r['id'],'status':r['status']} for r in mine]
+              for r in mine:
+                  if r['status'] in ('fail','silent','blocked'):
+                      findings.append({'kind':'matrix-'+r['status'],'note':f"公面矩阵 {r['id']}={r['status']}"})
+          else:
+              checks['matrix']='unreachable'
+          # ④ 本仓值守收件面（公仓 .ci-inbox 未读计数）
+          unread=0
+          if os.path.exists('.ci-inbox'):
+              unread=len([f for f in os.listdir('.ci-inbox') if f.startswith('msg-')])
+          checks['inbox_unread']=unread
+          # ── 追办台账（open findings 跨拍跟踪；≥3 拍未愈升级）──
+          os.makedirs('weave/duty',exist_ok=True)
+          state={'open':{}}
+          if os.path.exists('weave/duty/state.json'):
+              try: state=json.load(open('weave/duty/state.json'))
+              except Exception: pass
+          fp=lambda f: hashlib.sha256((f['kind']+f['note']).encode()).hexdigest()[:10]
+          newopen={}
+          for f in findings:
+              k=fp(f); prev=state['open'].get(k)
+              newopen[k]={'finding':f,'first':(prev or {}).get('first',ts),'ticks':(prev or {}).get('ticks',0)+1}
+              if newopen[k]['ticks']>=3: newopen[k]['escalate']=True
+          cleared=[v['finding'] for k,v in state['open'].items() if k not in newopen]
+          state['open']=newopen
+          json.dump(state,open('weave/duty/state.json','w'),ensure_ascii=False,indent=1)
+          rec={'ts':ts,'line':line,'checks':checks,'findings':findings,'cleared':cleared,
+               'escalated':[v['finding'] for v in newopen.values() if v.get('escalate')]}
+          json.dump(rec,open(f'weave/duty/duty-{ts}.json','w'),ensure_ascii=False,indent=1)
+          # duty.log 哈希链
+          prev='0'*16
+          if os.path.exists('weave/duty/duty.log'):
+              ll=[l for l in open('weave/duty/duty.log').read().strip().split('\n') if l.strip()]
+              if ll: prev=ll[-1].split()[2]
+          fsha=hashlib.sha256(open(f'weave/duty/duty-{ts}.json','rb').read()).hexdigest()
+          chain=hashlib.sha256((prev+fsha).encode()).hexdigest()[:16]
+          open('weave/duty/duty.log','a').write(f'{ts} {line} {chain} findings={len(findings)} escalated={len(rec["escalated"])}\n')
+          # ── 值守回应（无 LLM key → 机检摘要降级，明示不装死）──
+          if findings:
+              summary='；'.join(f"[{f['kind']}]{f['note']}" for f in findings)
+          else:
+              summary='机检全绿：outbox/影子链/矩阵/收件面四项正常'
+          key=os.environ.get('API_KEY','').strip()
+          if key and findings:
+              try:
+                  body=json.dumps({'model':'deepseek-chat','temperature':0.2,'max_tokens':300,'messages':[
+                      {'role':'system','content':'你是线值守摘要员。把机检发现压缩为≤150字中文追办要点，只述所给事实，不编造。'},
+                      {'role':'user','content':summary}]}).encode()
+                  req=urllib.request.Request('https://api.deepseek.com/chat/completions',data=body,
+                      headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'})
+                  with urllib.request.urlopen(req,timeout=60) as r:
+                      summary=json.load(r)['choices'][0]['message']['content'][:400]
+              except Exception as e:
+                  summary+='（LLM 摘要失败，按机检原文呈现）'
+          mode='llm' if key else '机检摘要（无 LLM key 降级）'
+          doc=f"---\nv: 1\nfrom: {vrepo}\nto: broadcast\nkind: report\nstate: submitted\n---\n\n【agent-duty v2 值守 {ts}】模式={mode}\n发现 {len(findings)} 件：{summary}\n核销 {len(cleared)} 件；升级 {len(rec['escalated'])} 件。台账=weave/duty/duty-{ts}.json 链头 {chain}\n—— {vrepo}（agent-duty vci 分身）"
+          assert not gate(doc)
+          os.makedirs('.ci-inbox',exist_ok=True)
+          open(f'.ci-inbox/msg-{ts}.md','w').write(doc)
+          print(json.dumps({'findings':len(findings),'escalated':len(rec['escalated']),'mode':mode,'chain':chain},ensure_ascii=False))
+
+          PYEOF
+      - name: 自提交成链
+        run: |
+          git config user.name "agent-duty[bot]"; git config user.email "agent-duty@users.noreply.github.com"
+          git add weave/duty .ci-inbox || true
+          git commit -m "agent-duty $(date -u +%Y%m%d-%H%M%S) v2" || echo "无变更"
+          git push
