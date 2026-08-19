@@ -137,8 +137,7 @@ jobs:
               # LA-3+候裁1：拒执结构化回执上链 {refused_what,why_gate,evidence_fp,ts}
               ref={'ts':ts,'refused_what':'值守应答 msg 落盘','why_gate':'PATS 命中 '+'/'.join(_hits),'evidence_fp':hashlib.sha256(doc.encode()).hexdigest()[:16]}
               os.makedirs('weave/duty',exist_ok=True)
-              open('weave/duty/refusals.jsonl','a').write(json.dumps(ref,ensure_ascii=False)+'
-')
+              open('weave/duty/refusals.jsonl','a').write(json.dumps(ref,ensure_ascii=False)+chr(10))
               print('REFUSED:',json.dumps(ref,ensure_ascii=False)); raise SystemExit(0)
           os.makedirs('.ci-inbox',exist_ok=True)
           open(f'.ci-inbox/msg-{ts}.md','w').write(doc)
