@@ -2,7 +2,7 @@
  "line": "quantum-go-ledger",
  "vrepo": "vci-qgl",
  "last_pulse": "20260819-014551",
- "chain_head": "d9aafa183a128c80",
+ "chain_head": "a6afb167d28fd306",
  "pulses_total": 5,
  "snapshot": {
   "registry": "not-registered",
@@ -10,5 +10,5 @@
  },
  "verdict": "ok",
  "spec": "VCI-LOAD-01 波1（心跳/快照/写链/对外验证面）",
- "heal_note": "F2 愈合 2026-08-20T07:33:03Z：status 链头重建对齐 pulse.log"
+ "heal_note": "F2 愈合 2026-08-20T14:36:01Z：status 链头重建对齐 pulse.log"
 }
