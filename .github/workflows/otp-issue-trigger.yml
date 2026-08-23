@@ -1,0 +1,94 @@
+# OTP issue 触发路 v2（usrm 全线推广版·QF-OS §3 OTP 大循环）：
+#   开 issue 标题 [SENDCODE]      → CI 经 kimi.com 官方通道发真短信到 OTP_PHONE
+#   开 issue 标题 [OTP] 123456    → CI 填码完成登录核对 → 登录态工件(1天) → DONE/FAILED
+# 真人闸门 = root 的手机；码只存在于 job 内存(::add-mask::)，真码文件即删(PII 闸)。
+name: otp-issue-trigger
+on:
+  issues:
+    types: [opened]
+permissions:
+  issues: write
+  contents: write
+concurrency:
+  group: otp-issue
+  cancel-in-progress: false
+jobs:
+  sendcode:
+    if: startsWith(github.event.issue.title, '[SENDCODE]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 装 Playwright
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: 发码（kimi.com 官方通道）
+        env:
+          OTP_PHONE: ${{ secrets.OTP_PHONE }}
+        run: |
+          mkdir -p inbox
+          python3 scripts/otp_gate_worker.py --send-only || true
+      - name: 回执并关闭 issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let note = '✅ CI-OS 已消费：真码经 kimi.com 官方通道发出，请查收手机';
+            try { const s = JSON.parse(fs.readFileSync('inbox/otp_gate_state.json','utf8')); note = `✅ CI-OS 已消费：${s.status} — ${s.note}（${s.ts}）`; } catch(e) {}
+            await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, body: note});
+            await github.rest.issues.update({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, state: 'closed'});
+      - name: 回写状态 [skip ci]
+        run: |
+          git config user.name "otp-gate"; git config user.email "otp-gate@ci"
+          git add -A inbox/ || true
+          git commit -qm "otp state $(date -u +%H:%M:%SZ) [skip ci]" || echo "nothing"
+          git push -q || true
+  verify:
+    if: startsWith(github.event.issue.title, '[OTP]')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 装 Playwright
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: 核码（取标题中的 6 位真码）
+        env:
+          OTP_PHONE: ${{ secrets.OTP_PHONE }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+        run: |
+          mkdir -p inbox
+          CODE=$(echo "$ISSUE_TITLE" | grep -oE '[0-9]{4,8}' | head -1)
+          if [ -z "$CODE" ]; then echo "no code in title"; exit 1; fi
+          echo "consuming code (masked)"; echo "::add-mask::$CODE"
+          python3 scripts/otp_gate_worker.py --verify-only "$CODE" || true
+      - name: 回执并关闭 issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            let note = '核码已执行';
+            try { const s = JSON.parse(fs.readFileSync('inbox/otp_gate_state.json','utf8')); note = `${s.status==='DONE'?'✅':'⚠️'} 核码回执：${s.status} — ${s.note}（${s.ts}）`; } catch(e) {}
+            await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, body: note});
+            await github.rest.issues.update({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, state: 'closed'});
+      - name: 登录态工件（成功时；1 天留存）
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kimi-session
+          path: inbox/.kimi_session.json
+          retention-days: 1
+          if-no-files-found: ignore
+      - name: 回写状态 [skip ci]
+        if: always()
+        run: |
+          git config user.name "otp-gate"; git config user.email "otp-gate@ci"
+          git add -A inbox/ || true
+          git commit -qm "otp verify state $(date -u +%H:%M:%SZ) [skip ci]" || echo "nothing"
+          git push -q || true
