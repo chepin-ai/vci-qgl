@@ -1,0 +1,46 @@
+# CI-OS 端 OTP 门（T171）：dashboard 按钮经 T2N 直推 inbox → push 触发本 workflow → runner 秒级消费
+# 一律 CI-OS 端 CI：会话端零驻留。借范成熟件：actions/setup-python + playwright 官方安装器。
+name: otp-gate
+on:
+  push:
+    paths:
+      - "inbox/sendcode-*.json"
+      - "inbox/otp-*.json"
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: otp-gate
+  cancel-in-progress: false   # 验证码场景排队消费，不互相顶
+jobs:
+  consume:
+    runs-on: ubuntu-latest
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 装 Playwright（官方安装器，成熟件）
+        run: |
+          pip install playwright
+          playwright install --with-deps chromium
+      - name: 消费 inbox（发码/核码）
+        env:
+          OTP_PHONE: ${{ secrets.OTP_PHONE }}
+        run: python3 scripts/otp_gate_worker.py
+      - name: 回写状态+清真码残留
+        run: |
+          git config user.name "usrm-otp-gate"
+          git config user.email "otp-gate@usrm.local"
+          git add -A inbox/
+          git commit -qm "otp-gate consume $(date -u +%H:%M:%SZ) [skip ci]" || echo "nothing"
+          git push -q
+      - name: 登录态工件（成功时；1 天留存，仅供后台工作取用）
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: kimi-session
+          path: inbox/.kimi_session.json
+          retention-days: 1
+          if-no-files-found: ignore
