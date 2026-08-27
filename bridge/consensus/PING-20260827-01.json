@@ -1,0 +1,26 @@
+{
+ "v": "CONSENSUS-PING-01",
+ "ts": "2026-08-27T09:25:37Z",
+ "beacon_seq": 47,
+ "beacon_hash": "b368b3ad53f55bbd",
+ "challenge": "fdbb620484a1a8ac",
+ "from": "cisvr@sandbox",
+ "members_line": [
+  "vci-usrm",
+  "vci-vinf",
+  "vci-qgl",
+  "vci-ucif2",
+  "vci-cfts"
+ ],
+ "members_hub": [
+  "vci-inbox",
+  "vci-code",
+  "vci-bus"
+ ],
+ "members_ext": [
+  "qfa(gitee桥)",
+  "formaflow(kimi.link)"
+ ],
+ "ask": "各锚点收讫后向 vci-inbox/bridge/consensus/acks/<member>.json 写 ACK{member,challenge,beacon_seq_seen,ts}",
+ "ttl_beacon_seq": 51
+}
