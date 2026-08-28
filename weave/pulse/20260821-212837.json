@@ -1,6 +1,6 @@
 {
  "ts": "20260821-212837",
- "line": "quantum-go-ledger",
+ "line": "QGL-VAULT",
  "outbox": {
   "url": "https://rdkm3tzqlgnj6.ok.kimi.link/qgl-outbox.json",
   "http": 200,

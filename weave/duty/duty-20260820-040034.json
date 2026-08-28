@@ -1,6 +1,6 @@
 {
  "ts": "20260820-040034",
- "line": "quantum-go-ledger",
+ "line": "QGL-VAULT",
  "checks": {
   "outbox": "unregistered",
   "pulse": {
