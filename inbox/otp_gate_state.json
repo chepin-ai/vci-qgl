@@ -1,0 +1,6 @@
+{
+ "status": "CODE_SENT",
+ "note": "CI-OS 端已触发真短信（kimi.com 官方通道），请查收手机并递交验证码",
+ "ts": "2026-08-29T02:20:29Z",
+ "worker": "cios-otp-gate"
+}
