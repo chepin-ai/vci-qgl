@@ -1,6 +1,6 @@
 {
- "status": "CODE_SENT_CONFIRMED",
- "note": "usrm法医更正：artifact截图示发码钮倒数88s=短信已离站；v2.2关键词误报已修(v2.3)",
- "ts": "2026-08-29T07:16:30Z",
- "worker": "usrm-forensic-correction"
+ "status": "FAILED",
+ "note": "码错误或已过期——请点「发码到我手机」重发后立即递交新码",
+ "ts": "2026-08-29T07:27:18Z",
+ "worker": "cios-otp-gate"
 }
