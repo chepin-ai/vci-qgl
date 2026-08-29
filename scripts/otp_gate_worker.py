@@ -54,13 +54,28 @@ async def main():
         await pg.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined})")
         if sends:
             await open_login(pg)
-            await pg.locator("button", has_text="发送验证码").first.click()
-            await pg.wait_for_timeout(3500)
+            btn = pg.locator("button", has_text="发送验证码").first
+            await btn.click()
+            await pg.wait_for_timeout(6000)
             body = await pg.locator("body").inner_text()
+            try: btxt = await btn.inner_text()
+            except Exception: btxt = ""
+            import re as _re
+            countdown = bool(_re.search(r"(\d+\s*s|重新发送|秒后)", btxt)) or bool(_re.search(r"(\d+\s*s|重新发送|秒后)", body))
+            err_hit = next((k for k in ["发送失败","操作频繁","请稍后再试","过于频繁","手机号","勾选","协议"] if k in body), None)
+            # PII 闸：截图前掩掉输入框真值
+            try:
+                await pg.evaluate("document.querySelectorAll('input').forEach(i=>{i.value='***';i.placeholder='***'})")
+                await pg.screenshot(path="inbox/otp_send_shot.png")
+            except Exception: pass
             if "滑块" in body or "安全验证" in body:
                 write_state("BLOCKED", "发码遇滑块风控——请 root 手动到 kimi.com 点发送验证码后在此递码")
+            elif err_hit:
+                write_state("FAILED", f"发码被页面拒绝（关键词:{err_hit}）——未证实送达，请查 artifact 截图")
+            elif countdown:
+                write_state("CODE_SENT_CONFIRMED", "发码钮已进入倒数态——短信已离站（正向回执），请查收手机并递交验证码")
             else:
-                write_state("CODE_SENT", "CI-OS 端已触发真短信（kimi.com 官方通道），请查收手机并递交验证码")
+                write_state("CODE_CLICK_UNVERIFIED", "点击已执行但无正向回执（钮未现倒数/无报错）——送达未证实，请查 artifact 截图")
             for f in sends:
                 if os.path.exists(f): os.remove(f)
         for f in otps:
