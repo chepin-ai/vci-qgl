@@ -1,6 +1,6 @@
 {
  "status": "FAILED",
  "note": "发码被页面拒绝（关键词:手机号）——未证实送达，请查 artifact 截图",
- "ts": "2026-08-29T07:10:11Z",
+ "ts": "2026-08-29T07:15:59Z",
  "worker": "cios-otp-gate"
 }
