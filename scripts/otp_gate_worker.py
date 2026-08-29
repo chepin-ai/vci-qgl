@@ -40,7 +40,9 @@ async def open_login(pg):
             await pg.click(sel, timeout=4000); break
         except Exception: pass
     await pg.wait_for_timeout(1500)
-    await pg.get_by_placeholder("手机号").fill(PHONE)
+    _digits = re.sub(r"\D", "", PHONE)
+    _local = _digits[-11:] if len(_digits) >= 11 else _digits
+    await pg.get_by_placeholder("手机号").fill(_local)
     try:
         await pg.check("input[type=checkbox]", timeout=3000)
     except Exception:
@@ -71,11 +73,16 @@ async def main():
         await pg.add_init_script("Object.defineProperty(navigator,'webdriver',{get:()=>undefined})")
         if sends:
             await open_login(pg)
+            _pre = await pg.locator("body").inner_text()
             await pg.locator("button", has_text="发送验证码").first.click()
             await pg.wait_for_timeout(3500)
             body = await pg.locator("body").inner_text()
             write_diag(body, "send")
-            if "滑块" in body or "安全验证" in body:
+            if "格式不正确" in body or "格式不正确" in _pre:
+                write_state("FAILED_FORMAT", "手机号格式被拒(实证otp_gate_diag)——worker已归一化末11位仍拒,需人工检视号码/页面")
+            if "格式不正确" in body or "格式不正确" in _pre:
+                pass
+            elif "滑块" in body or "安全验证" in body:
                 write_state("BLOCKED", "发码遇滑块风控——请 root 手动到 kimi.com 点发送验证码后在此递码")
             elif "频繁" in body or "稍后" in body or "上限" in body:
                 write_state("RATE_LIMITED", "发码被限流(实证见otp_gate_diag)——短信实未发出;请隔时窗再发,或root手动kimi.com发码后递码")
