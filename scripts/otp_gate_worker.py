@@ -25,7 +25,12 @@ async def open_login(pg):
             await pg.click(sel, timeout=4000); break
         except Exception: pass
     await pg.wait_for_timeout(1500)
-    await pg.get_by_placeholder("手机号").fill(PHONE)
+    import re as _re0
+    ph = _re0.sub(r"\D", "", PHONE)           # 去空格/横线/加号
+    if len(ph) == 13 and ph.startswith("86"):  # 去国别码（页面已自带 +86）
+        ph = ph[2:]
+    print(f"phone normalized: len={len(ph)}")  # 只印长度，PII 闸
+    await pg.get_by_placeholder("手机号").fill(ph)
     try:
         await pg.check("input[type=checkbox]", timeout=3000)
     except Exception:
