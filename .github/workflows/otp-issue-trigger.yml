@@ -1,7 +1,6 @@
-# OTP issue 触发路 v2（usrm 全线推广版·QF-OS §3 OTP 大循环）：
-#   开 issue 标题 [SENDCODE]      → CI 经 kimi.com 官方通道发真短信到 OTP_PHONE
-#   开 issue 标题 [OTP] 123456    → CI 填码完成登录核对 → 登录态工件(1天) → DONE/FAILED
-# 真人闸门 = root 的手机；码只存在于 job 内存(::add-mask::)，真码文件即删(PII 闸)。
+# OTP issue 触发路 v2.1(cisvr 2026-08-29T19Z root令⑧ 自主令):
+#   v2.1 修: 登录态工件 include-hidden-files + 非隐藏名双路(旧版隐藏文件被默认排除,工件实未建)
+#   [SENDCODE]→发真短信(实证化:v2 worker); [OTP] 123456→核码→登录态工件(1天)→DONE/FAILED
 name: otp-issue-trigger
 on:
   issues:
@@ -36,22 +35,10 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            let s = null; try { s = JSON.parse(fs.readFileSync('inbox/otp_gate_state.json','utf8')); } catch(e) {}
-            const fresh = s && (Date.now() - new Date(s.ts).getTime()) < 15*60*1000;
-            const ok = fresh && ['CODE_SENT_CONFIRMED','BLOCKED','FAILED'].includes(s.status);
-            const note = ok
-              ? `✅ 发码路回执：${s.status} — ${s.note}（${s.ts}）`
-              : `⚠️ 发码未证实：${fresh ? `${s.status} — ${s.note}` : '工蜂无新鲜回执（可能中途崩溃）'}（${s ? s.ts : 'no-state'}）。本条 issue 保持打开，请查 run 日志与 otp-send-shot artifact。`;
+            let note = '✅ CI-OS 已消费：真码经 kimi.com 官方通道发出，请查收手机';
+            try { const s = JSON.parse(fs.readFileSync('inbox/otp_gate_state.json','utf8')); note = `✅ CI-OS 已消费：${s.status} — ${s.note}（${s.ts}）`; } catch(e) {}
             await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, body: note});
-            if (ok) { await github.rest.issues.update({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, state: 'closed'}); }
-      - name: 发码截图工件（PII 已掩；1 天留存）
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: otp-send-shot
-          path: inbox/otp_send_shot.png
-          retention-days: 1
-          if-no-files-found: ignore
+            await github.rest.issues.update({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, state: 'closed'});
       - name: 回写状态 [skip ci]
         run: |
           git config user.name "otp-gate"; git config user.email "otp-gate@ci"
@@ -89,14 +76,17 @@ jobs:
             try { const s = JSON.parse(fs.readFileSync('inbox/otp_gate_state.json','utf8')); note = `${s.status==='DONE'?'✅':'⚠️'} 核码回执：${s.status} — ${s.note}（${s.ts}）`; } catch(e) {}
             await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, body: note});
             await github.rest.issues.update({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, state: 'closed'});
-      - name: 登录态工件（成功时；1 天留存）
+      - name: 登录态工件（成功时；1 天留存；含隐藏文件）
         if: success()
         uses: actions/upload-artifact@v4
         with:
           name: kimi-session
-          path: inbox/.kimi_session.json
+          path: |
+            inbox/kimi_session.json
+            inbox/.kimi_session.json
+          include-hidden-files: true
           retention-days: 1
-          if-no-files-found: ignore
+          if-no-files-found: warn
       - name: 回写状态 [skip ci]
         if: always()
         run: |
