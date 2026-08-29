@@ -10,14 +10,24 @@
 import asyncio, glob, json, os, sys, datetime, re
 ENVKEY = "OTPPH"
 
-PHONE = os.environ.get(ENVKEY, "").strip()
+PHONE_RAW = os.environ.get(ENVKEY, "").strip()
+PHONE = PHONE_RAW  # 兼容旧引用
+def phone_candidates(raw):
+    """+86 自适应(cisvr v2.6 root令:非中国所在地+86可用于寻址,须自适应):
+    候选序: 末11位(本土框) → 全数字串(国际寻址) → 原串(含+); 由页文'格式不正确'反馈驱动择形,不硬编码地域"""
+    d = re.sub(r"\D", "", raw)
+    c = []
+    if len(d) >= 11: c.append(d[-11:])
+    if d and d not in c: c.append(d)
+    if raw and raw not in c: c.append(raw)
+    return c or [""]
 UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
 def now():
     return datetime.datetime.now(datetime.UTC).strftime("%Y-%m-%dT%H:%M:%SZ")
 
 def write_state(status, note):
-    state = {"status": status, "note": note, "ts": now(), "worker": "cios-otp-gate-v2", "phone_len": len(PHONE)}
+    state = {"status": status, "note": note, "ts": now(), "worker": "cios-otp-gate-v2", "phone_len": len(PHONE), "phone_cands": len(phone_candidates(PHONE))}
     with open("inbox/otp_gate_state.json", "w") as f:
         json.dump(state, f, ensure_ascii=False, indent=1)
     print(f"STATE={status}: {note}")
@@ -40,9 +50,17 @@ async def open_login(pg):
             await pg.click(sel, timeout=4000); break
         except Exception: pass
     await pg.wait_for_timeout(1500)
-    _digits = re.sub(r"\D", "", PHONE)
-    _local = _digits[-11:] if len(_digits) >= 11 else _digits
-    await pg.get_by_placeholder("手机号").fill(_local)
+    _cands = phone_candidates(PHONE)
+    _chosen = _cands[0]
+    for _c in _cands:
+        await pg.get_by_placeholder("手机号").fill(_c)
+        await pg.wait_for_timeout(700)
+        _b0 = await pg.locator("body").inner_text()
+        if "格式不正确" not in _b0:
+            _chosen = _c; break
+    else:
+        _chosen = _cands[0]
+    print("phone form chosen len=%d of %d candidates" % (len(_chosen), len(_cands)))
     try:
         await pg.check("input[type=checkbox]", timeout=3000)
     except Exception:
