@@ -36,10 +36,22 @@ jobs:
         with:
           script: |
             const fs = require('fs');
-            let note = '✅ CI-OS 已消费：真码经 kimi.com 官方通道发出，请查收手机';
-            try { const s = JSON.parse(fs.readFileSync('inbox/otp_gate_state.json','utf8')); note = `✅ CI-OS 已消费：${s.status} — ${s.note}（${s.ts}）`; } catch(e) {}
+            let s = null; try { s = JSON.parse(fs.readFileSync('inbox/otp_gate_state.json','utf8')); } catch(e) {}
+            const fresh = s && (Date.now() - new Date(s.ts).getTime()) < 15*60*1000;
+            const ok = fresh && ['CODE_SENT_CONFIRMED','BLOCKED','FAILED'].includes(s.status);
+            const note = ok
+              ? `✅ 发码路回执：${s.status} — ${s.note}（${s.ts}）`
+              : `⚠️ 发码未证实：${fresh ? `${s.status} — ${s.note}` : '工蜂无新鲜回执（可能中途崩溃）'}（${s ? s.ts : 'no-state'}）。本条 issue 保持打开，请查 run 日志与 otp-send-shot artifact。`;
             await github.rest.issues.createComment({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, body: note});
-            await github.rest.issues.update({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, state: 'closed'});
+            if (ok) { await github.rest.issues.update({owner: context.repo.owner, repo: context.repo.repo, issue_number: context.issue.number, state: 'closed'}); }
+      - name: 发码截图工件（PII 已掩；1 天留存）
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: otp-send-shot
+          path: inbox/otp_send_shot.png
+          retention-days: 1
+          if-no-files-found: ignore
       - name: 回写状态 [skip ci]
         run: |
           git config user.name "otp-gate"; git config user.email "otp-gate@ci"
