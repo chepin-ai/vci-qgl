@@ -67,7 +67,7 @@ async def main():
             except Exception: btxt = ""
             import re as _re
             countdown = bool(_re.search(r"(\d+\s*s|重新发送|秒后)", btxt)) or bool(_re.search(r"(\d+\s*s|重新发送|秒后)", body))
-            err_hit = next((k for k in ["发送失败","操作频繁","请稍后再试","过于频繁","手机号","勾选","协议"] if k in body), None)
+            err_hit = next((k for k in ["格式不正确","发送失败","操作频繁","请稍后再试","过于频繁","请先勾选"] if k in body), None)  # v2.3：剔除页面固有词「手机号」防误报
             # PII 闸：截图前掩掉输入框真值
             try:
                 await pg.evaluate("document.querySelectorAll('input').forEach(i=>{i.value='***';i.placeholder='***'})")
