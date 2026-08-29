@@ -26,7 +26,7 @@ jobs:
           playwright install --with-deps chromium
       - name: 发码（kimi.com 官方通道）
         env:
-          〈RED〉: ${{ secrets.OTP_PHONE }}
+          OTPPH: ${{ secrets.OTP_PHONE }}
         run: |
           mkdir -p inbox
           python3 scripts/otp_gate_worker.py --send-only || true
@@ -59,7 +59,7 @@ jobs:
           playwright install --with-deps chromium
       - name: 核码（取标题中的 6 位真码）
         env:
-          〈RED〉: ${{ secrets.OTP_PHONE }}
+          OTPPH: ${{ secrets.OTP_PHONE }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
         run: |
           mkdir -p inbox
