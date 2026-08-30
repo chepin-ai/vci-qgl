@@ -4,6 +4,8 @@ name: agent-duty
 # 无 LLM key 时机检摘要降级（明示不装死——DM 002 第三课）；台账 weave/duty/ 哈希链
 on:
   workflow_dispatch: {}
+  repository_dispatch:
+    types: [line-beat]
   push:
     paths: ['.github/workflows/agent-duty.yml']
 permissions:
@@ -150,18 +152,23 @@ jobs:
           git commit -m "agent-duty $(date -u +%Y%m%d-%H%M%S) v2" || echo "无变更"
           git push
 
-      - name: qf-beat-forward（D-157 事件驱动接力扣门·级联≤1·不转叩）
+      - name: qf-beat-forward（D-157 事件驱动接力扣门·级联≤1·不转叩 + 线环冗余 BEAT-RING-01）
         if: always()
         env:
           LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
           LINE_ID: ${{ vars.CI_OPS_LINE_ID }}
           LINE: qgl
           WF: agent-duty
+          NEXT: vinf
+          CAUSE: ${{ github.event.client_payload.cause || github.event_name }}
         run: |
           python3 -m pip install -q pyjwt
           python3 - <<'PYEOF' || echo "beat-forward 降级跳过(不影响本班)"
           import os,json,time,datetime,urllib.request
           key=os.environ.get('LINE_KEY','').strip(); iss=os.environ.get('LINE_ID','').strip()
+          cause=os.environ.get('CAUSE','')
+          if cause=='beat-forward':
+              print('beat-forward: cause=beat-forward → D-157 不转叩,止叩'); raise SystemExit(0)
           if not key or not iss:
               print('beat-forward: 缺 LINE_KEY/LINE_ID,跳过'); raise SystemExit(0)
           import jwt as JW
@@ -180,11 +187,19 @@ jobs:
               except Exception as e: return getattr(e,'code',0),{}
           s,inst=gh('GET','https://api.github.com/repos/chepin-ai/vci-inbox/installation',auth='Bearer '+t)
           if s!=200:
-              print('beat-forward: ops-line 未覆盖 vci-inbox HTTP %s → 候 root 扩面,跳过'%s); raise SystemExit(0)
-          s2,tok=gh('POST','https://api.github.com/app/installations/%s/access_tokens'%inst['id'],auth='Bearer '+t)
-          if s2 not in (200,201):
-              print('beat-forward: 铸安装 token 失败 HTTP %s'%s2); raise SystemExit(0)
-          pl={'event_type':'qf-beat','client_payload':{'from':os.environ.get('LINE','?'),'wf':os.environ.get('WF','?'),'cause':'beat-forward','ts':datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}}
-          s3,_=gh('POST','https://api.github.com/repos/chepin-ai/vci-inbox/dispatches',auth='token '+tok['token'],data=pl)
-          print('beat-forward: qf-beat dispatch HTTP %s'%s3)
+              print('beat-forward: ops-line 未覆盖 vci-inbox HTTP %s → 候 root 扩面'%s)
+          else:
+              s2,tok=gh('POST','https://api.github.com/app/installations/%s/access_tokens'%inst['id'],auth='Bearer '+t)
+              if s2 in (200,201):
+                  pl={'event_type':'qf-beat','client_payload':{'from':os.environ.get('LINE','?'),'wf':os.environ.get('WF','?'),'cause':'beat-forward','ts':datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}}
+                  s3,_=gh('POST','https://api.github.com/repos/chepin-ai/vci-inbox/dispatches',auth='token '+tok['token'],data=pl)
+                  print('beat-forward: hub qf-beat dispatch HTTP %s'%s3)
+                  # BEAT-RING-01: 线环冗余(不依赖 vci-inbox)——叩下一线,级联≤1
+                  nxt=os.environ.get('NEXT','')
+                  if nxt:
+                      pl2={'event_type':'line-beat','client_payload':{'from':os.environ.get('LINE','?'),'wf':os.environ.get('WF','?'),'cause':'beat-forward','ring':nxt,'ts':datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}}
+                      s4,_=gh('POST','https://api.github.com/repos/chepin-ai/vci-%s/dispatches'%nxt,auth='token '+tok['token'],data=pl2)
+                      print('beat-ring: vci-%s line-beat dispatch HTTP %s'%(nxt,s4))
+              else:
+                  print('beat-forward: 铸安装 token 失败 HTTP %s'%s2)
           PYEOF
