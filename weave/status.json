@@ -1,14 +1,16 @@
 {
- "line": "QGL-VAULT",
- "vrepo": "vci-qgl",
- "last_pulse": "20260819-014551",
- "chain_head": "02ab4fd83b737d8f",
- "pulses_total": 5,
+ "line": "qgl",
+ "vrepo": "vci-vinf",
+ "last_pulse": "20260830-100612",
+ "chain_head": "25560cc190de5a18",
+ "pulses_total": 6,
  "snapshot": {
   "registry": "not-registered",
   "outbox": null
  },
  "verdict": "ok",
  "spec": "VCI-LOAD-01 波1（心跳/快照/写链/对外验证面）",
- "heal_note": "F2 愈合 2026-08-22T04:01:28Z：status 链头重建对齐 pulse.log"
+ "heal_note": "F2 愈合 2026-08-22T04:01:28Z：status 链头重建对齐 pulse.log",
+ "note": "snapshot ok",
+ "heal": "STATUS-HEAL-01 2026-08-30: 波1冻结面由 shadow-pulse 收编续写"
 }
