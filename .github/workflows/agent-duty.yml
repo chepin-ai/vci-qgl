@@ -185,21 +185,17 @@ jobs:
                   x=urllib.request.urlopen(r,timeout=20); bd=x.read().decode()
                   return x.status,(json.loads(bd) if bd else {})
               except Exception as e: return getattr(e,'code',0),{}
-          s,inst=gh('GET','https://api.github.com/repos/chepin-ai/vci-inbox/installation',auth='Bearer '+t)
-          if s!=200:
-              print('beat-forward: ops-line 未覆盖 vci-inbox HTTP %s → 候 root 扩面'%s)
-          else:
-              s2,tok=gh('POST','https://api.github.com/app/installations/%s/access_tokens'%inst['id'],auth='Bearer '+t)
-              if s2 in (200,201):
-                  pl={'event_type':'qf-beat','client_payload':{'from':os.environ.get('LINE','?'),'wf':os.environ.get('WF','?'),'cause':'beat-forward','ts':datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}}
-                  s3,_=gh('POST','https://api.github.com/repos/chepin-ai/vci-inbox/dispatches',auth='token '+tok['token'],data=pl)
-                  print('beat-forward: hub qf-beat dispatch HTTP %s'%s3)
-                  # BEAT-RING-01: 线环冗余(不依赖 vci-inbox)——叩下一线,级联≤1
-                  nxt=os.environ.get('NEXT','')
-                  if nxt:
-                      pl2={'event_type':'line-beat','client_payload':{'from':os.environ.get('LINE','?'),'wf':os.environ.get('WF','?'),'cause':'beat-forward','ring':nxt,'ts':datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')}}
-                      s4,_=gh('POST','https://api.github.com/repos/chepin-ai/vci-%s/dispatches'%nxt,auth='token '+tok['token'],data=pl2)
-                      print('beat-ring: vci-%s line-beat dispatch HTTP %s'%(nxt,s4))
-              else:
-                  print('beat-forward: 铸安装 token 失败 HTTP %s'%s2)
+          def knock(target,event,extra):
+              si,inst=gh('GET','https://api.github.com/repos/chepin-ai/%s/installation'%target,auth='Bearer '+t)
+              if si!=200:
+                  print('beat: ops-line 未覆盖 %s HTTP %s → 候 root 扩面'%(target,si)); return
+              st,tk=gh('POST','https://api.github.com/app/installations/%s/access_tokens'%inst['id'],auth='Bearer '+t)
+              if st not in (200,201):
+                  print('beat: 铸 %s token 失败 HTTP %s'%(target,st)); return
+              pl={'event_type':event,'client_payload':dict({'from':os.environ.get('LINE','?'),'wf':os.environ.get('WF','?'),'cause':'beat-forward','ts':datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')},**extra)}
+              sd,_=gh('POST','https://api.github.com/repos/chepin-ai/%s/dispatches'%target,auth='token '+tk['token'],data=pl)
+              print('beat: %s %s dispatch HTTP %s'%(target,event,sd))
+          knock('vci-inbox','qf-beat',{})
+          nxt=os.environ.get('NEXT','')
+          if nxt: knock('vci-'+nxt,'line-beat',{'ring':nxt})
           PYEOF
