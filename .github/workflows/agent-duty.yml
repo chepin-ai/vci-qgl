@@ -4,7 +4,6 @@ name: agent-duty
 # 无 LLM key 时机检摘要降级（明示不装死——DM 002 第三课）；台账 weave/duty/ 哈希链
 on:
   workflow_dispatch: {}
-  schedule: [{ cron: '19 * * * *' }]   # 错峰值守（公仓零配额）
   push:
     paths: ['.github/workflows/agent-duty.yml']
 permissions:
