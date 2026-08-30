@@ -41,12 +41,22 @@ jobs:
           open(p,'w').write(json.dumps(rec,ensure_ascii=False,indent=1))
           h=hashlib.sha256(open(p,'rb').read()).hexdigest()[:16]
           with open('pulse.log','a') as f: f.write('%s %s %s %s\n'%(ts,line,h,rec['note']))
+          # STATUS-HEAL-01: 同步刷新 status.json(波1遗物冻结面)——duty chain-diverge 根治
+          st_p='weave/status.json'
+          stj={}
+          if os.path.exists(st_p):
+              try: stj=json.load(open(st_p))
+              except Exception: stj={}
+          stj.update({'line':os.environ.get('LINE','vinf'),'vrepo':os.environ.get('VREPO','vci-vinf'),
+                      'last_pulse':ts,'chain_head':h,'pulses_total':int(stj.get('pulses_total',0) or 0)+1,
+                      'note':rec['note'],'heal':'STATUS-HEAL-01 2026-08-30: 波1冻结面由 shadow-pulse 收编续写'})
+          json.dump(stj,open(st_p,'w'),ensure_ascii=False,indent=1)
           print(json.dumps(rec,ensure_ascii=False))
           PYEOF
       - name: 自提交成链
         run: |
           git config user.name "shadow-pulse[bot]"; git config user.email "shadow-pulse@users.noreply.github.com"
-          git add weave/pulse pulse.log || true
+          git add weave/pulse weave/status.json pulse.log || true
           git commit -m "pulse $(date -u +%Y%m%d-%H%M%S) $LINE" || echo "无变更"
           # fetch-first 修复（A2 实证：并发班次 push 被拒）——push 前 pull --rebase，失败重试×3
           ok=0
