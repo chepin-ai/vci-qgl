@@ -39,7 +39,7 @@ jobs:
               except Exception: return 9e9
           findings=[]; checks={}
           # ① 对线 outbox 可达性（公面注册表；指纹/状态码级）
-          s,raw=get('https://raw.githubusercontent.com/chepin-ai/ci-control/main/bridge/outboxes.json')
+          s,raw=get('https://raw.githubusercontent.com/chepin-ai/vci-inbox/main/bridge/outboxes.json')
           if s==200:
               ss=json.loads(raw).get('sessions',{})
               url=(ss.get(line) or {}).get('url')
