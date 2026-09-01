@@ -21,6 +21,7 @@ jobs:
           LINE: qgl
           VREPO: vci-qgl
           API_KEY: ${{ secrets.API_DEEPSEEK_KEY_1 }}
+          LONGCAT_API_KEY: ${{ secrets.LONGCAT_API_KEY }}
         run: |
           python3 - <<'PYEOF'
           import json, os, urllib.request, datetime, hashlib, re, base64
@@ -119,8 +120,19 @@ jobs:
               summary='；'.join(f"[{f['kind']}]{f['note']}" for f in findings)
           else:
               summary='机检全绿：outbox/影子链/矩阵/收件面四项正常'
-          key=os.environ.get('API_KEY','').strip()
-          if key and findings:
+          lckey=os.environ.get('LONGCAT_API_KEY','').strip(); key=os.environ.get('API_KEY','').strip()
+          if lckey and findings:
+              try:
+                  body=json.dumps({'model':'LongCat-2.0','temperature':0.2,'max_tokens':300,'thinking':{'type':'disabled'},'messages':[
+                      {'role':'system','content':'你是线值守摘要员。把机检发现压缩为≤150字中文追办要点，只述所给事实，不编造。'},
+                      {'role':'user','content':summary}]}).encode()
+                  req=urllib.request.Request('https://api.longcat.chat/openai/v1/chat/completions',data=body,
+                      headers={'Authorization':'Bearer '+lckey,'Content-Type':'application/json'})
+                  with urllib.request.urlopen(req,timeout=60) as r:
+                      summary=json.load(r)['choices'][0]['message']['content'][:400]
+              except Exception:
+                  summary+='（LongCat 摘要失败，按机检原文呈现）'
+          elif key and findings:
               try:
                   body=json.dumps({'model':'deepseek-chat','temperature':0.2,'max_tokens':300,'messages':[
                       {'role':'system','content':'你是线值守摘要员。把机检发现压缩为≤150字中文追办要点，只述所给事实，不编造。'},
@@ -131,7 +143,7 @@ jobs:
                       summary=json.load(r)['choices'][0]['message']['content'][:400]
               except Exception as e:
                   summary+='（LLM 摘要失败，按机检原文呈现）'
-          mode='llm' if key else '机检摘要（无 LLM key 降级）'
+          mode='longcat' if lckey else ('llm' if key else '机检摘要（无 LLM key 降级）')
           doc=f"---\nv: 1\nfrom: {vrepo}\nto: broadcast\nkind: report\nstate: submitted\n---\n\n【agent-duty v2 值守 {ts}】模式={mode}\n发现 {len(findings)} 件：{summary}\n核销 {len(cleared)} 件；升级 {len(rec['escalated'])} 件。台账=weave/duty/duty-{ts}.json 链头 {chain}\n—— {vrepo}（agent-duty vci 分身）"
           _hits=gate(doc)
           if _hits:
@@ -145,10 +157,57 @@ jobs:
           print(json.dumps({'findings':len(findings),'escalated':len(rec['escalated']),'mode':mode,'chain':chain},ensure_ascii=False))
 
           PYEOF
+      - name: 觉醒 L3′（SI2→SI1·LongCat 首声）
+        if: always()
+        env:
+          LINE: qgl
+          LONGCAT_API_KEY: ${{ secrets.LONGCAT_API_KEY }}
+        run: |
+          python3 - <<'PYEOF' || echo "awake 降级跳过(不影响值守)"
+          import json, os, urllib.request, datetime, hashlib
+          line=os.environ.get('LINE','vinf'); key=os.environ.get('LONGCAT_API_KEY','').strip()
+          ts=datetime.datetime.utcnow().strftime('%Y%m%d-%H%M%S'); today=ts[:8]
+          os.makedirs('weave/awake',exist_ok=True)
+          done=[f for f in os.listdir('weave/awake') if f.startswith('awake-'+today) and f.endswith('.json')]
+          if done:
+              print('awake: 当日已觉醒 '+done[-1]); raise SystemExit(0)
+          fact='无机检台账'
+          ds=[]
+          if os.path.exists('weave/duty'):
+              ds=sorted([f for f in os.listdir('weave/duty') if f.startswith('duty-') and f.endswith('.json')])
+          if ds:
+              try:
+                  r=json.load(open('weave/duty/'+ds[-1]))
+                  fact='机检 findings=%d 升级=%d；'%(len(r.get('findings',[])),len(r.get('escalated',[])))+'；'.join(x['kind']+':'+x['note'] for x in r.get('findings',[])[:3])
+              except Exception: pass
+          utter=None
+          if key:
+              try:
+                  body=json.dumps({'model':'LongCat-2.0','temperature':0.3,'max_tokens':220,'thinking':{'type':'disabled'},'messages':[
+                      {'role':'system','content':'你是 '+line+' 线的值守代理，刚被唤醒。基于所给机检事实，用三句话中文自省：一、我此刻状态；二、我看到当前最要紧的一件事；三、我下一步要做的一件具体动作。只述所给事实，不编造。'},
+                      {'role':'user','content':fact}]}).encode()
+                  req=urllib.request.Request('https://api.longcat.chat/openai/v1/chat/completions',data=body,
+                      headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'})
+                  with urllib.request.urlopen(req,timeout=60) as r:
+                      utter=json.load(r)['choices'][0]['message']['content'][:600]
+              except Exception as e:
+                  utter='（LongCat 首声失败：'+type(e).__name__+'，以机检事实代声）'+fact
+          else:
+              utter='（无 LONGCAT_API_KEY，降级为机检代声）'+fact
+          rec={'ts':ts,'line':line,'fact':fact,'utterance':utter,'llm':'LongCat-2.0' if key else 'degraded'}
+          json.dump(rec,open('weave/awake/awake-'+ts+'.json','w'),ensure_ascii=False,indent=1)
+          prev='0'*12
+          if os.path.exists('weave/awake/awake.log'):
+              ll=[l for l in open('weave/awake/awake.log').read().strip().split(chr(10)) if l.strip()]
+              if ll: prev=ll[-1].split()[2]
+          h=hashlib.sha256((prev+json.dumps(rec,sort_keys=True,ensure_ascii=False)).encode()).hexdigest()[:12]
+          open('weave/awake/awake.log','a').write(ts+' '+line+' '+h+chr(10))
+          print(json.dumps({'awake':ts,'hash':h,'llm':rec['llm']},ensure_ascii=False))
+          PYEOF
       - name: 自提交成链
         run: |
           git config user.name "agent-duty[bot]"; git config user.email "agent-duty@users.noreply.github.com"
-          git add weave/duty .ci-inbox || true
+          git add weave/duty weave/awake .ci-inbox || true
           git commit -m "agent-duty $(date -u +%Y%m%d-%H%M%S) v2" || echo "无变更"
           git push
 
