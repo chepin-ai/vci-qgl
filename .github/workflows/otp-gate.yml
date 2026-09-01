@@ -30,6 +30,7 @@ jobs:
           OTP_PHONE: ${{ secrets.OTP_PHONE }}
         run: python3 scripts/otp_gate_worker.py
       - name: 回写状态+清真码残留
+        if: always()  # wave-70 usrm: FAILED态亦须落档——缺口文档化优先于跑红
         run: |
           git config user.name "usrm-otp-gate"
           git config user.email "otp-gate@usrm.local"
