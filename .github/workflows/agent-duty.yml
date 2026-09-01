@@ -1,5 +1,5 @@
 name: agent-duty
-# AGENT-DUTY v2 · vci 版 pilot（VCI-LOAD-01 波2 @vci-usrm，root 裁2 2026-08-19）
+# AGENT-DUTY v2.1 · vci 版 pilot（点火@wave-71·qgl）（VCI-LOAD-01 波2 @vci-usrm，root 裁2 2026-08-19）
 # 公仓驱动机检/追办；死线：私域数据只以 sha256/HTTP 状态码出场，L2 永不落公仓
 # 无 LLM key 时机检摘要降级（明示不装死——DM 002 第三课）；台账 weave/duty/ 哈希链
 on:
