@@ -10,7 +10,7 @@
 import asyncio, glob, json, os, sys, datetime, re
 ENVKEY = "OTPPH"
 
-PHONE_RAW = os.environ.get(ENVKEY, "").strip()
+PHONE_RAW = (os.environ.get(ENVKEY) or os.environ.get("OTP_PHONE") or "").strip()  # v2.1(usrm wave-69 root令:OTP@qgl解问题): ENVKEY双读——workflow注入OTP_PHONE与worker取OTPPH错位修复
 PHONE = PHONE_RAW  # 兼容旧引用
 def phone_candidates(raw):
     """+86 自适应(cisvr v2.6 root令:非中国所在地+86可用于寻址,须自适应):
@@ -81,7 +81,9 @@ async def main():
     if verify_only:
         otps = ["(issue-trigger-otp)"]; sends = []
     if not sends and not otps:
-        print("nothing to consume"); return
+        if PHONE:
+            write_state("SELFTEST_OK", "空匣自证:secret在库且可达 worker(phone_len=%d,cands=%d)——布线实证,未触机未发码" % (len(PHONE), len(phone_candidates(PHONE)))); return
+        write_state("FAILED", "repo secret "+ENVKEY+"/OTP_PHONE 未设置或不可达——布线断"); sys.exit(1)
     if not PHONE:
         write_state("FAILED", "repo secret "+ENVKEY+" 未设置"); sys.exit(1)
     async with async_playwright() as pw:
