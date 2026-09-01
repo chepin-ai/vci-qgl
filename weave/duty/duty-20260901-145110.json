@@ -1,0 +1,21 @@
+{
+ "ts": "20260901-145110",
+ "line": "qgl",
+ "checks": {
+  "outbox": {
+   "http": 200,
+   "sha256_16": "cd142527fd36191b"
+  },
+  "pulse": {
+   "last": "20260901-134739",
+   "age_h": 1.1,
+   "chain_log": "7862dae5ecaeb276"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 68
+ },
+ "findings": [],
+ "cleared": [],
+ "escalated": []
+}
