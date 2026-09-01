@@ -1,6 +1,8 @@
 {
- "status": "DONE",
- "note": "核对成功·登录态已成——后台即刻持态开展工作",
- "ts": "2026-08-29T08:55:35Z",
- "worker": "cios-otp-gate"
+ "status": "SELFTEST_OK",
+ "note": "空匣自证:secret在库且可达 worker(phone_len=15,cands=3)——布线实证,未触机未发码",
+ "ts": "2026-09-01T08:03:42Z",
+ "worker": "cios-otp-gate-v2",
+ "phone_len": 15,
+ "phone_cands": 3
 }
