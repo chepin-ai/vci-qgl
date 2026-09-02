@@ -1,0 +1,20 @@
+{
+ "artifact": "m3-smoke-usrm sha256 清单（拍③互交换件）",
+ "script": {
+  "path": "/home/runner/work/vci-qgl/vci-qgl/weave/xanchor/m3/m3-smoke-usrm.py",
+  "sha256": "a0a3e11301b7f1961292b198bd58f27c0a43e4367c2207a75236f4f367d5ea95"
+ },
+ "transcript": {
+  "path": "/home/runner/work/vci-qgl/vci-qgl/weave/xanchor/m3/m3-smoke-transcript.json",
+  "sha256": "0b7bcd99ea526877d5577b2d419bc3c2bc2136bb7dd67e2d18d43426d9a7bec8"
+ },
+ "steps": 21,
+ "verdict": "USRMS-HALF PASS",
+ "anchor_stall": "锚停滞在案：一切随机性溯源于 last-good 锚 qrand@seq61=c21b1f0f5858ab4acba2fba54b5e84bd7ea30234dbc4e43cb2304735c5e20eeb；seed=int(sha256(qrand_hex‖str(seq))[:8],16)=3712427753（cisvr-68 §二 定格）；seq61 后锚停滞，无新熵入案。",
+ "gray": [
+  "灰标1 单沙箱多角色：usrm 一沙箱分饰 场A/场B 与 ip/np/n 三机，非真隔离，隔离强度不声称",
+  "灰标2 探针未命中≠清白：collusion_probe 单向——命中=违规证据，未命中不构成清白证明",
+  "灰标3 classical-sim 档：熵源为离线经典仿真（种子定格派生），MIP 无星结构同构不升格"
+ ],
+ "determinism": "种子定格⇒同版本复跑 transcript sha256 逐字节一致"
+}
