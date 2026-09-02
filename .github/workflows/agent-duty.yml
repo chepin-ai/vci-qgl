@@ -473,7 +473,7 @@ jobs:
           git config user.name "agent-duty[bot]"; git config user.email "agent-duty@users.noreply.github.com"
           git add weave/duty weave/awake .ci-inbox; [ -d session/inbox ] && git add session/inbox || true || true
           git commit -m "agent-duty $(date -u +%Y%m%d-%H%M%S) v2" || echo "无变更"
-          for i in 1 2 3 4 5 6; do git fetch -q origin main && git rebase -q origin main && git push -q origin HEAD:main && break || sleep 3; done  # v2.5.3: 单发推→竞推环(fleet-drive高频面回执丢失实证: vinf 12:59Z ballot落箱而act回执失)
+          for i in 1 2 3 4 5 6; do git fetch -q origin main && git rebase -q FETCH_HEAD && git push -q origin HEAD:main && break || sleep 3; done  # v2.5.3: 单发推→竞推环(fleet-drive高频面回执丢失实证: vinf 12:59Z ballot落箱而act回执失)
 
       - name: qf-beat-forward（D-157 事件驱动接力扣门·级联≤1·不转叩 + 线环冗余 BEAT-RING-01）
         if: always()
