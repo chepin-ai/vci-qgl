@@ -270,6 +270,7 @@ jobs:
           print(json.dumps({'awake':ts,'hash':h,'llm':rec['llm']},ensure_ascii=False))
           PYEOF
       - name: 自提交成链
+        if: always()  # v2.4.1: duty步败亦必落链(W79 死角根治:产物写了却不提交=运行隐身)
         run: |
           git config user.name "agent-duty[bot]"; git config user.email "agent-duty@users.noreply.github.com"
           git add weave/duty weave/awake .ci-inbox; [ -d session/inbox ] && git add session/inbox || true || true
