@@ -1,4 +1,5 @@
 name: agent-duty
+# AGENT-DUTY v2.5.1 (wave-80): vote/cosign 改走 vci-inbox bridge-drop 毂侧代投(LINE app 未覆 ci-control=404 实证;绕面先例 CIROOT-ROUTEAROUND-01;relay=bridge-drop-relay.yml)
 # AGENT-DUTY v2.5 (wave-80): 执手 H1 OTP机读执行(白名单vote/cosign/xanchor-respond,幂等,CAP4,无LLM) — kernel-20260902-08 有耳有口无手根治
 # AGENT-DUTY v2.4 (wave-77): SESSION-END-SWEEP 终止自检(W77-L2) + git级联触发路径扩(W77-L5) + pulse环守卫 + dashboard.meta同跑再生(W77-L6)
 # AGENT-DUTY v2.1 · qgl 面（SI2→SI1@qgl，wave-73 装检，root 令）（VCI-LOAD-01 波2 @vci-usrm，root 裁2 2026-08-19）
@@ -301,8 +302,8 @@ jobs:
           def log(a,v,d):
               rec['acts'].append({'act':a,'verdict':v,'detail':d[:300]}); print('act-h1:',a,'->',v,':',d[:160])
           # 白名单(严格值域——非名单内一律 reject;扩面须新版直令+新版执手)
-          WL_VOTE={'VOTE-YONEDA-01':{'dir':'bridge/ballots/VOTE-YONEDA-01','scheme':'design/VOTE-YONEDA-01.md 机制栈收敛稿（D-143正本）','votes':('approve','object','amend')}}
-          WL_COSIGN={'EXP-032-FIRSTSIGN':{'dir':'bridge/cosign/EXP-032','parties':('cfts','cisvr')}}
+          WL_VOTE={'VOTE-YONEDA-01':{'dir':'bridge-drop/incoming/ballots/VOTE-YONEDA-01','scheme':'design/VOTE-YONEDA-01.md 机制栈收敛稿（D-143正本）','votes':('approve','object','amend')}}
+          WL_COSIGN={'EXP-032-FIRSTSIGN':{'dir':'bridge-drop/incoming/cosign/EXP-032','parties':('cfts','cisvr')}}
           WL_XA=('XANCHOR-V2-01',)
           FROM_OK=('from: usrm','from: vci-usrm','from: cisvr','from: vci-library')
           CAP=4
@@ -369,12 +370,12 @@ jobs:
               except Exception: return ''
           def do_vote(bid,vote):
               spec=WL_VOTE[bid]
-              wd=checkout('ci-control')
-              d=os.path.join(wd,spec['dir'])
+              wd=checkout('vci-inbox')  # v2.5.1: LINE app 未覆 ci-control(404实证,kernel-20260902-08续) → bridge-drop 毂侧代投(CIROOT-ROUTEAROUND-01绕面先例)
+              d=os.path.join(wd,spec['dir']); dd2=d.replace('/incoming/','/relayed/')
               me='ballot-%s.json'%line
-              if os.path.exists(os.path.join(d,me)): return ('skip','票已在箱(幂等)')
+              if os.path.exists(os.path.join(d,me)) or os.path.exists(os.path.join(dd2,me)): return ('skip','票已在投/已入箱(幂等)')
               prev=None; cands=[]
-              for f in glob.glob(os.path.join(d,'ballot-*.json')):
+              for f in glob.glob(os.path.join(d,'ballot-*.json'))+glob.glob(os.path.join(dd2,'ballot-*.json')):
                   try:
                       j=json.load(open(f)); cands.append((j.get('ts',''),j.get('hash')))
                   except Exception: pass
@@ -390,10 +391,10 @@ jobs:
           def do_cosign(pid):
               spec=WL_COSIGN[pid]
               if line not in spec['parties']: return ('skip','非三方位(%s)——首签属 cfts/cisvr(MECH-COSIGN-01)'%line)
-              wd=checkout('ci-control')
-              d=os.path.join(wd,spec['dir'])
+              wd=checkout('vci-inbox')  # v2.5.1: 毂侧代投(404实证)
+              d=os.path.join(wd,spec['dir']); dd2=d.replace('/incoming/','/relayed/')
               me='commit-%s.json'%line
-              if os.path.exists(os.path.join(d,me)): return ('skip','commit已锚(幂等)')
+              if os.path.exists(os.path.join(d,me)) or os.path.exists(os.path.join(dd2,me)): return ('skip','commit已投/已锚(幂等)')
               verdict='成立'
               salt=hashlib.sha256(('%s|%s|%s|%s'%(line,pid,ts,os.urandom(8).hex())).encode()).hexdigest()[:32]
               rationale='执手v2.5机读OTP-v2令执:机制四要件俱在(门不复活立法固化/commit-reveal可重算对验/三方自链尖互锚/72hSLA非阻塞+代偿圈兜底);usrm reveal已对验通过,cfts会合已毕,本线就位即签。T0永续可证伪:证伪件至即翻。'
