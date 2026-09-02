@@ -1,9 +1,9 @@
 {
  "line": "qgl",
  "vrepo": "vci-vinf",
- "last_pulse": "20260902-192726",
- "chain_head": "b2d69dd9877aefad",
- "pulses_total": 101,
+ "last_pulse": "20260902-192802",
+ "chain_head": "2f24d481269ff91c",
+ "pulses_total": 102,
  "snapshot": {
   "registry": "not-registered",
   "outbox": null
@@ -11,6 +11,6 @@
  "verdict": "ok",
  "spec": "VCI-LOAD-01 波1（心跳/快照/写链/对外验证面）",
  "heal_note": "F2 愈合 2026-08-22T04:01:28Z：status 链头重建对齐 pulse.log",
- "note": "outbox unreachable",
+ "note": "snapshot ok",
  "heal": "STATUS-HEAL-01 2026-08-30: 波1冻结面由 shadow-pulse 收编续写"
 }
