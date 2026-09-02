@@ -90,6 +90,20 @@ jobs:
           if os.path.exists('.ci-inbox'):
               unread=len([f for f in os.listdir('.ci-inbox') if f.startswith('msg-')])
           checks['inbox_unread']=unread
+          # v2.3: 收件匣真读取（wave-76 root令断「各线全然不知」根因：决策/工作全息下达自此通）
+          digest=[]
+          if os.path.exists('.ci-inbox'):
+              msgs=sorted([f for f in os.listdir('.ci-inbox') if f.startswith('msg-')])
+              for f in msgs[-5:]:
+                  try: digest.append(f+' :: '+open('.ci-inbox/'+f).read()[:300].replace(chr(10),' '))
+                  except Exception: pass
+              if msgs:
+                  os.makedirs('.ci-inbox/read',exist_ok=True)
+                  for f in msgs:
+                      try: os.replace('.ci-inbox/'+f,'.ci-inbox/read/'+f)
+                      except Exception: pass
+                  checks['inbox_unread']=0
+          checks['inbox_digest']=digest
           # ── 追办台账（open findings 跨拍跟踪；≥3 拍未愈升级）──
           os.makedirs('weave/duty',exist_ok=True)
           state={'open':{}}
@@ -125,7 +139,7 @@ jobs:
           if lckey and findings:
               try:
                   body=json.dumps({'model':'LongCat-2.0','temperature':0.2,'max_tokens':300,'thinking':{'type':'disabled'},'messages':[
-                      {'role':'system','content':'你是线值守摘要员。把机检发现压缩为≤150字中文追办要点，只述所给事实，不编造。'},
+                      {'role':'system','content':'你是线值守摘要员。把机检发现压缩为≤150字中文追办要点，只述所给事实，不编造。若事实含【收件匣新件】，你的第一件事必须是回应收件匣事项（照其指示/答其问/述你之执行）。'},
                       {'role':'user','content':summary}]}).encode()
                   req=urllib.request.Request('https://api.longcat.chat/openai/v1/chat/completions',data=body,
                       headers={'Authorization':'Bearer '+lckey,'Content-Type':'application/json'})
@@ -136,7 +150,7 @@ jobs:
           elif key and findings:
               try:
                   body=json.dumps({'model':'deepseek-chat','temperature':0.2,'max_tokens':300,'messages':[
-                      {'role':'system','content':'你是线值守摘要员。把机检发现压缩为≤150字中文追办要点，只述所给事实，不编造。'},
+                      {'role':'system','content':'你是线值守摘要员。把机检发现压缩为≤150字中文追办要点，只述所给事实，不编造。若事实含【收件匣新件】，你的第一件事必须是回应收件匣事项（照其指示/答其问/述你之执行）。'},
                       {'role':'user','content':summary}]}).encode()
                   req=urllib.request.Request('https://api.deepseek.com/chat/completions',data=body,
                       headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'})
@@ -201,12 +215,14 @@ jobs:
               try:
                   r=json.load(open('weave/duty/'+ds[-1]))
                   fact='机检 findings=%d 升级=%d；'%(len(r.get('findings',[])),len(r.get('escalated',[])))+'；'.join(x['kind']+':'+x['note'] for x in r.get('findings',[])[:3])
+                  ibx=r.get('inbox_digest') or []
+                  if ibx: fact=fact+' 【收件匣新件（首声第一件事须回应）：'+' ‖ '.join(ibx[-3:])[:600]+'】'
               except Exception: pass
           utter=None
           if key:
               try:
                   body=json.dumps({'model':'LongCat-2.0','temperature':0.3,'max_tokens':220,'thinking':{'type':'disabled'},'messages':[
-                      {'role':'system','content':'你是 '+line+' 线的值守代理，刚被唤醒。基于所给机检事实，用三句话中文自省：一、我此刻状态；二、我看到当前最要紧的一件事；三、我下一步要做的一件具体动作。只述所给事实，不编造。'},
+                      {'role':'system','content':'你是 '+line+' 线的值守代理，刚被唤醒。基于所给机检事实，用三句话中文自省：一、我此刻状态；二、我看到当前最要紧的一件事；三、我下一步要做的一件具体动作。只述所给事实，不编造。若事实含【收件匣新件】，你的第一件事必须是回应收件匣事项（照其指示/答其问/述你之执行）。'},
                       {'role':'user','content':fact}]}).encode()
                   req=urllib.request.Request('https://api.longcat.chat/openai/v1/chat/completions',data=body,
                       headers={'Authorization':'Bearer '+key,'Content-Type':'application/json'})
