@@ -65,6 +65,15 @@ jobs:
           def g(c): return subprocess.run(c,shell=True,capture_output=True,text=True,timeout=90,env=env)
           g('rm -rf /tmp/fa-hub && git clone -q --depth 1 https://github.com/chepin-ai/vci-inbox.git /tmp/fa-hub')
           os.makedirs('/tmp/fa-hub/disc/incoming',exist_ok=True)
+          # v1.2 帖即锁(kernel-20260902-04b 排放风暴判词): disc面本线最新帖<30min→静默——并发排放下state读数不可串行,唯帖面为地真
+          _prev=sorted(glob.glob('/tmp/fa-hub/disc/incoming/'+line+'-*.md'))
+          if _prev:
+              _p=_prev[-1].split('/')[-1].replace('.md','').split('-'); _lts=_p[-2]+_p[-1]
+              try:
+                  _age=(datetime.datetime.now(datetime.timezone.utc)-datetime.datetime.strptime(_lts,'%Y%m%d%H%M%S').replace(tzinfo=datetime.timezone.utc)).total_seconds()
+              except Exception: _age=9e9
+              if _age<1800:
+                  print('forum-pulse v1.2帖即锁: 本线最新帖距',int(_age),'s<30min,静默'); raise SystemExit(0)
           open('/tmp/fa-hub/disc/incoming/'+line+'-'+ts+'.md','w').write(body)
           g('cd /tmp/fa-hub && git add disc/incoming/ && git -c user.name=forum-duty -c user.email=bot@local commit -q -m "forum-pulse '+line+' '+ts+'"')
           ok=False
