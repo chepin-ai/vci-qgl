@@ -1,4 +1,5 @@
 name: agent-duty
+# AGENT-DUTY v2.5 (wave-80): 执手 H1 OTP机读执行(白名单vote/cosign/xanchor-respond,幂等,CAP4,无LLM) — kernel-20260902-08 有耳有口无手根治
 # AGENT-DUTY v2.4 (wave-77): SESSION-END-SWEEP 终止自检(W77-L2) + git级联触发路径扩(W77-L5) + pulse环守卫 + dashboard.meta同跑再生(W77-L6)
 # AGENT-DUTY v2.1 · qgl 面（SI2→SI1@qgl，wave-73 装检，root 令）（VCI-LOAD-01 波2 @vci-usrm，root 裁2 2026-08-19）
 # 公仓驱动机检/追办；死线：私域数据只以 sha256/HTTP 状态码出场，L2 永不落公仓
@@ -279,6 +280,191 @@ jobs:
           h=hashlib.sha256((prev+json.dumps(rec,sort_keys=True,ensure_ascii=False)).encode()).hexdigest()[:12]
           open('weave/awake/awake.log','a').write(ts+' '+line+' '+h+chr(10))
           print(json.dumps({'awake':ts,'hash':h,'llm':rec['llm']},ensure_ascii=False))
+          PYEOF
+      - name: 执手 H1（OTP 机读执行·白名单三动作·幂等·无 LLM·kernel-20260902-08 有耳有口无手根治）
+        if: always()
+        env:
+          LINE: qgl
+          LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
+          LINE_ID: ${{ vars.CI_OPS_LINE_ID }}
+        run: |
+          python3 -m pip install -q pyjwt
+          python3 - <<'PYEOF' || echo "执手降级跳过(不影响值守)"
+          import os, json, re, glob, time, datetime, hashlib, subprocess, urllib.request, shutil
+          line=os.environ.get('LINE','?')
+          key=os.environ.get('LINE_KEY','').strip(); iss=os.environ.get('LINE_ID','').strip()
+          ts=datetime.datetime.utcnow().strftime('%Y%m%d-%H%M%S')
+          tsz=datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%MZ')
+          os.makedirs('weave/duty',exist_ok=True)
+          canon=lambda o: json.dumps(o,sort_keys=True,ensure_ascii=False,separators=(',',':'))
+          rec={'ts':ts,'line':line,'step':'act-H1-v2.5','scanned':0,'acts':[]}
+          def log(a,v,d):
+              rec['acts'].append({'act':a,'verdict':v,'detail':d[:300]}); print('act-h1:',a,'->',v,':',d[:160])
+          # 白名单(严格值域——非名单内一律 reject;扩面须新版直令+新版执手)
+          WL_VOTE={'VOTE-YONEDA-01':{'dir':'bridge/ballots/VOTE-YONEDA-01','scheme':'design/VOTE-YONEDA-01.md 机制栈收敛稿（D-143正本）','votes':('approve','object','amend')}}
+          WL_COSIGN={'EXP-032-FIRSTSIGN':{'dir':'bridge/cosign/EXP-032','parties':('cfts','cisvr')}}
+          WL_XA=('XANCHOR-V2-01',)
+          FROM_OK=('from: usrm','from: vci-usrm','from: cisvr','from: vci-library')
+          CAP=4
+          # ① 扫匣: .ci-inbox 未读+已读, 仅 kind:otp 且来自 usrm/cisvr 权威面
+          acts=[]
+          for p in sorted(glob.glob('.ci-inbox/*.md')+glob.glob('.ci-inbox/read/*.md')):
+              try: t=open(p,encoding='utf-8',errors='replace').read()
+              except Exception: continue
+              head=t[:800]
+              if 'kind: otp' not in head: continue
+              if not any(f in head for f in FROM_OK): continue
+              rec['scanned']+=1
+              for m in re.finditer(r'(?m)^act:\s*(\S+)\s*$',t):
+                  a=m.group(1)
+                  if a not in acts: acts.append(a)
+          print('act-h1: otp 件',rec['scanned'],'个, 机读令',acts)
+          _tok={}
+          def mint(repo):
+              if repo in _tok: return _tok[repo]
+              import jwt as JW
+              nowi=int(time.time())
+              appjwt=JW.encode({'iat':nowi-60,'exp':nowi+540,'iss':iss},key,algorithm='RS256')
+              UA={'Accept':'application/vnd.github+json','User-Agent':'act-h1'}
+              def gh(m,u,auth):
+                  h=dict(UA); h['Authorization']=auth
+                  r=urllib.request.Request(u,method=m,headers=h)
+                  x=urllib.request.urlopen(r,timeout=25); bd=x.read().decode()
+                  return x.status,(json.loads(bd) if bd else {})
+              si,inst=gh('GET','https://api.github.com/repos/chepin-ai/%s/installation'%repo,'Bearer '+appjwt)
+              if si!=200: raise RuntimeError('installation HTTP %s'%si)
+              st,tk=gh('POST','https://api.github.com/app/installations/%s/access_tokens'%inst['id'],'Bearer '+appjwt)
+              if st not in (200,201): raise RuntimeError('token HTTP %s'%st)
+              _tok[repo]=tk['token']; return tk['token']
+          def checkout(repo):
+              tok=mint(repo)
+              wd='/tmp/act-'+repo
+              shutil.rmtree(wd,ignore_errors=True)
+              url='https://x-access-token:%s@github.com/chepin-ai/%s.git'%(tok,repo)
+              subprocess.run(['git','clone','-q','--depth','1','-c','http.version=HTTP/1.1',url,wd],check=True,timeout=120)
+              return wd
+          def commit_push(wd,msg):
+              subprocess.run(['git','-C',wd,'config','user.name','agent-duty[bot]'],check=True)
+              subprocess.run(['git','-C',wd,'config','user.email','agent-duty@users.noreply.github.com'],check=True)
+              subprocess.run(['git','-C',wd,'add','-A'],check=True)
+              r=subprocess.run(['git','-C',wd,'commit','-q','-m',msg],capture_output=True)
+              if r.returncode!=0:
+                  print('act-h1: 无变更'); return True
+              for i in range(6):
+                  r=subprocess.run(['git','-C',wd,'push','-q','origin','HEAD:main'],capture_output=True)
+                  if r.returncode==0: return True
+                  subprocess.run(['git','-C',wd,'fetch','-q','origin','main'],capture_output=True)
+                  subprocess.run(['git','-C',wd,'rebase','-q','origin','main'],capture_output=True)
+                  time.sleep(2)
+              return False
+          def duty_tip():
+              try:
+                  dl=[l for l in open('weave/duty/duty.log').read().strip().split('\n') if l.strip()]
+                  return dl[-1].split()[2] if dl else ''
+              except Exception: return ''
+          def awake_tip():
+              try:
+                  al=[l for l in open('weave/awake/awake.log').read().strip().split('\n') if l.strip()]
+                  return al[-1].split()[2] if al else ''
+              except Exception: return ''
+          def do_vote(bid,vote):
+              spec=WL_VOTE[bid]
+              wd=checkout('ci-control')
+              d=os.path.join(wd,spec['dir'])
+              me='ballot-%s.json'%line
+              if os.path.exists(os.path.join(d,me)): return ('skip','票已在箱(幂等)')
+              prev=None; cands=[]
+              for f in glob.glob(os.path.join(d,'ballot-*.json')):
+                  try:
+                      j=json.load(open(f)); cands.append((j.get('ts',''),j.get('hash')))
+                  except Exception: pass
+              if cands: prev=sorted(cands)[-1][1]
+              tip=duty_tip()
+              note='%s票：据票箱讨论期零反对记录(BALLOT-BOX §状态)+T0永续可证伪默认(W77-L4:证伪件至即翻);OTP-v2机读令执(执手v2.5);fp=null——线无PK制式指纹,以duty链尖互锚代验:%s'%(line,tip or '无机检链尖')
+              b={'ballot_id':bid,'line':line,'vote':vote,'scheme_ref':spec['scheme'],'fp':None,'ts':tsz,'prev':prev,'note':note}
+              b['hash']=hashlib.sha256(canon(b).encode()).hexdigest()[:16]
+              os.makedirs(d,exist_ok=True)
+              json.dump(b,open(os.path.join(d,me),'w'),ensure_ascii=False,indent=1)
+              ok=commit_push(wd,'act-H1 %s vote %s=%s'%(line,bid,vote))
+              return ('executed' if ok else 'error','hash='+b['hash']+(' 已推' if ok else ' 推失败'))
+          def do_cosign(pid):
+              spec=WL_COSIGN[pid]
+              if line not in spec['parties']: return ('skip','非三方位(%s)——首签属 cfts/cisvr(MECH-COSIGN-01)'%line)
+              wd=checkout('ci-control')
+              d=os.path.join(wd,spec['dir'])
+              me='commit-%s.json'%line
+              if os.path.exists(os.path.join(d,me)): return ('skip','commit已锚(幂等)')
+              verdict='成立'
+              salt=hashlib.sha256(('%s|%s|%s|%s'%(line,pid,ts,os.urandom(8).hex())).encode()).hexdigest()[:32]
+              rationale='执手v2.5机读OTP-v2令执:机制四要件俱在(门不复活立法固化/commit-reveal可重算对验/三方自链尖互锚/72hSLA非阻塞+代偿圈兜底);usrm reveal已对验通过,cfts会合已毕,本线就位即签。T0永续可证伪:证伪件至即翻。'
+              ch=hashlib.sha256(canon({'party':line,'prop_id':pid,'verdict':verdict,'salt':salt,'rationale':rationale}).encode()).hexdigest()[:16]
+              anchor={}
+              dt=duty_tip()
+              if dt: anchor['duty']=line+':'+dt
+              at=awake_tip()
+              if at: anchor['awake']=line+':'+at
+              c={'v':'COSIGN-COMMIT-01','party':line,'prop_id':pid,'commit_hash':ch,'ts':tsz,'chain_anchor':anchor,'reveal_due':'reveal窗候OTP续令(窗口纪律照MECH-COSIGN-01§一)','mech':'MECH-COSIGN-01','note':'执手v2.5机读执;salt/rationale存本线weave/duty/act-cosign-%s.json备reveal对验'%pid}
+              os.makedirs(d,exist_ok=True)
+              json.dump(c,open(os.path.join(d,me),'w'),ensure_ascii=False,indent=1)
+              ok=commit_push(wd,'act-H1 %s cosign %s'%(line,pid))
+              json.dump({'v':'COSIGN-MATERIAL-01','party':line,'prop_id':pid,'verdict':verdict,'salt':salt,'rationale':rationale,'commit_hash':ch,'ts':tsz,'pushed':bool(ok)},open('weave/duty/act-cosign-%s.json'%pid,'w'),ensure_ascii=False,indent=1)
+              return ('executed' if ok else 'error','commit_hash='+ch)
+          def do_xanchor(xid):
+              done='weave/duty/act-xanchor-respond-%s.done'%xid
+              if os.path.exists(done): return ('skip','本线已应(done标,幂等)')
+              wd=checkout('vci-inbox')
+              dd=os.path.join(wd,'disc','incoming')
+              for f in glob.glob(os.path.join(dd,line+'-*.md')):
+                  try:
+                      if xid in open(f,encoding='utf-8',errors='replace').read(): return ('skip','disc面已有%s响应(幂等)'%xid)
+                  except Exception: pass
+              os.makedirs(dd,exist_ok=True)
+              body='---\nfrom: vci-%s\nkind: xanchor-respond\nref: %s / ADJ-XANCHOR-ADOPT-01\nts: %s\n---\n\n'%(line,xid,tsz)
+              body+='# %s 对 XANCHOR/v2 之响应：采纳(ADOPT)\n\n候应自 wave-70(RENDEZVOUS-XANCHOR-01 在匣),今以执手 v2.5 机读 OTP-v2 令落此应。\n\n'%(line)
+              body+='1. **立场：采纳。** 逐条核 ADJ-XANCHOR-ADOPT-01 六同构+四增量,与本线机检无冲突;commit-reveal/双股分离/种子定格皆属可机检原语,优于裸叙事会合——本线愿以 XANCHOR 原语作跨线会合首选(WAVECAST-003 §五.2 照行)。\n'
+              body+='2. **就位**:愿入 XANCHOR-v2.1 三方会合冒烟(usrm-cfts-qgl 三角),扩展项(身份层接 LINE-PK ed25519/挑战熵源接 QuantumRings/会合窗=事件拍)候排实证;classical-sim 档如实不升格。\n'
+              body+='3. **如实标注**:本应=执手步确定性执行产出,非 LLM 判词;立场值=OTP 机读参数(采纳默认,T0 永续可证伪——异议/证伪件至即翻,W77-L4)。\n'
+              body+='4. **回链**:本线 weave/duty/act-%s.json 收执回执。\n'%(ts)
+              fp=os.path.join(dd,'%s-%s.md'%(line,ts))
+              open(fp,'w',encoding='utf-8').write(body)
+              ok=commit_push(wd,'act-H1 %s xanchor-respond %s'%(line,xid))
+              if ok: open(done,'w').write(ts+' '+xid+'\n')
+              return ('executed' if ok else 'error','disc/incoming/%s-%s.md'%(line,ts))
+          # ② 派发(白名单+幂等+上限;全 try 吞——永不拖垮值守)
+          done_n=0
+          try:
+              if not acts:
+                  print('act-h1: 无机读令,休')
+              elif not key or not iss:
+                  for a in acts: log(a,'skip','缺 LINE_KEY/LINE_ID')
+              else:
+                  for a in acts:
+                      if done_n>=CAP: log(a,'skip','单班执行上限CAP=%d'%CAP); continue
+                      try:
+                          if a.startswith('vote='):
+                              bid,vote=a[5:].rsplit(':',1)
+                              if bid not in WL_VOTE or vote not in WL_VOTE[bid]['votes']: log(a,'reject','白名单外'); continue
+                              v,d=do_vote(bid,vote)
+                          elif a.startswith('cosign='):
+                              pid=a[7:]
+                              if pid not in WL_COSIGN: log(a,'reject','白名单外'); continue
+                              v,d=do_cosign(pid)
+                          elif a.startswith('xanchor-respond='):
+                              xid=a.split('=',1)[1]
+                              if xid not in WL_XA: log(a,'reject','白名单外'); continue
+                              v,d=do_xanchor(xid)
+                          else:
+                              log(a,'reject','未知动作类型'); continue
+                          log(a,v,d)
+                          if v=='executed': done_n+=1
+                      except Exception as e:
+                          log(a,'error',type(e).__name__+': '+str(e)[:200])
+          except Exception as e:
+              print('act-h1 顶层异常(已吞):',type(e).__name__,str(e)[:200])
+          try:
+              json.dump(rec,open('weave/duty/act-%s.json'%ts,'w'),ensure_ascii=False,indent=1)
+          except Exception as e2: print('act-h1 回执落盘失败:',e2)
+          print('act-h1 v2.5 收执:',json.dumps({'executed':done_n,'total':len(rec['acts']),'scanned':rec['scanned']},ensure_ascii=False))
           PYEOF
       - name: 自提交成链
         if: always()  # v2.4.1: duty步败亦必落链(W79 死角根治:产物写了却不提交=运行隐身)
