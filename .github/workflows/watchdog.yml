@@ -8,6 +8,9 @@ on:
       - "line-producer"
       - "shadow-pulse"
     types: [completed]
+concurrency:
+  group: watchdog
+  cancel-in-progress: true  # W79-L4: 排队放大器熔断（吠件去重，最新胜出）
 permissions:
   actions: read
 jobs:
