@@ -169,7 +169,18 @@ jobs:
               open('weave/duty/refusals.jsonl','a').write(json.dumps(ref,ensure_ascii=False)+chr(10))
               print('REFUSED:',json.dumps(ref,ensure_ascii=False)); raise SystemExit(0)
           os.makedirs('.ci-inbox',exist_ok=True)
-          open(f'.ci-inbox/msg-{ts}.md','w').write(doc)
+          # v2.4.2 自级联守卫(kernel-20260902-07 第3类自激环): 仅自线回报且无发现→不续帖,环自熄
+          _foreign=[]
+          try:
+              _ms=msgs if 'msgs' in dir() else []
+              for _m in _ms:
+                  _p='.ci-inbox/read/'+_m
+                  if os.path.exists(_p) and ('from: '+vrepo) not in open(_p).read(400): _foreign.append(_m)
+          except Exception: pass
+          if findings or _foreign:
+              open(f'.ci-inbox/msg-{ts}.md','w').write(doc)
+          else:
+              print('v2.4.2 自级联守卫: 仅自线回报且无发现,不续帖(环自熄)')
           print(json.dumps({'findings':len(findings),'escalated':len(rec['escalated']),'mode':mode,'chain':chain},ensure_ascii=False))
 
           PYEOF
