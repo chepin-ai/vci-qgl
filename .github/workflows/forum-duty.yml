@@ -1,0 +1,65 @@
+name: forum-duty
+# W78-L1 SI-FORUM-01 · qgl面论坛SI进程:讨论/学习/搜集/同步(wave-78 root令:各线必有一SI进程专注论坛)
+on:
+  workflow_dispatch: {}
+  repository_dispatch:
+    types: [forum-beat, line-beat]
+  push:
+    paths: ['.ci-inbox/**','.github/workflows/forum-duty.yml']
+permissions:
+  contents: write
+jobs:
+  forum:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: 论坛四事(讨论/学习/搜集/同步)
+        if: always()
+        env:
+          LINE: qgl
+          LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
+          LINE_ID: ${{ vars.CI_OPS_LINE_ID }}
+        run: |
+          python3 -m pip install -q pyjwt
+          python3 - <<'PYEOF' || echo "forum-duty 降级跳过(不阻塞)"
+          import os,json,datetime,hashlib,glob,urllib.request,subprocess,time
+          import jwt as JW
+          line=os.environ.get('LINE','?')
+          ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d-%H%M%S')
+          nread=len(glob.glob('.ci-inbox/read/*.md')); unread=sorted(glob.glob('.ci-inbox/msg-*.md'))
+          ends=len(glob.glob('session/inbox/end-*.json')); selfs=len(glob.glob('session/inbox/self-*.json'))
+          head=subprocess.run(['git','rev-parse','HEAD'],capture_output=True,text=True).stdout.strip()[:12]
+          body="# forum-pulse "+line+" "+ts+"\n\n- 学习: 匣读毕 "+str(nread)+" 件 / 未读 "+str(len(unread))+" 件\n- 搜集: 终止报告 "+str(ends)+" / 自抓拍 "+str(selfs)+"\n- 同步: 本仓 HEAD "+head+"\n- 讨论: 照 CALL-FOR-EXPERIENCE-01 献计帖线;本线经验/提议续本帖线\n\n锚: "+line+" HEAD "+head+" @"+ts+"\n"
+          key=os.environ.get('LINE_KEY','').strip(); iss=os.environ.get('LINE_ID','').strip()
+          if not key or not iss:
+              print('无LINE钥,降级:帖留本仓 disc-outbox/'); os.makedirs('disc-outbox',exist_ok=True); open('disc-outbox/'+line+'-'+ts+'.md','w').write(body); raise SystemExit(0)
+          nowi=int(datetime.datetime.now().timestamp())
+          appjwt=JW.encode({'iat':nowi-90,'exp':nowi+540,'iss':iss},key,algorithm='RS256')
+          def gh(m,u,auth,data=None):
+              r=urllib.request.Request('https://api.github.com'+u,method=m,headers={'Authorization':auth,'Accept':'application/vnd.github+json','User-Agent':'forum-duty'})
+              if data is not None: r.data=json.dumps(data).encode(); r.add_header('Content-Type','application/json')
+              x=urllib.request.urlopen(r,timeout=20); bd=x.read().decode(); return x.status,(json.loads(bd) if bd else {})
+          try:
+              si,inst=gh('GET','/repos/chepin-ai/vci-inbox/installation','Bearer '+appjwt)
+              if si!=200: raise Exception('installation探 '+str(si))
+              st,tk=gh('POST','/app/installations/'+str(inst['id'])+'/access_tokens','Bearer '+appjwt)
+              if st not in (200,201): raise Exception('铸token '+str(st))
+          except Exception as e:
+              print('毂token道失败,降级留本仓:',str(e)[:80]); os.makedirs('disc-outbox',exist_ok=True); open('disc-outbox/'+line+'-'+ts+'.md','w').write(body); raise SystemExit(0)
+          tok=tk['token']
+          env=dict(os.environ); env['GIT_ASKPASS']='/tmp/.fa.sh'; env['GIT_TERMINAL_PROMPT']='0'
+          open('/tmp/.fa.sh','w').write('#!/bin/sh\ncase "$1" in *sername*) echo x-access-token;; *) echo '+tok+';; esac\n')
+          os.chmod('/tmp/.fa.sh',0o700)
+          def g(c): return subprocess.run(c,shell=True,capture_output=True,text=True,timeout=90,env=env)
+          g('rm -rf /tmp/fa-hub && git clone -q --depth 1 https://github.com/chepin-ai/vci-inbox.git /tmp/fa-hub')
+          os.makedirs('/tmp/fa-hub/disc/incoming',exist_ok=True)
+          open('/tmp/fa-hub/disc/incoming/'+line+'-'+ts+'.md','w').write(body)
+          g('cd /tmp/fa-hub && git add disc/incoming/ && git -c user.name=forum-duty -c user.email=bot@local commit -q -m "forum-pulse '+line+' '+ts+'"')
+          ok=False
+          for i in range(4):
+              r=g('cd /tmp/fa-hub && git fetch -q origin main && git rebase -q origin/main && git push -q origin HEAD:main')
+              if r.returncode==0: ok=True; break
+              time.sleep(2)
+          print('forum-pulse',line,ts,'投毂','成' if ok else '败(候下拍)')
+          PYEOF
