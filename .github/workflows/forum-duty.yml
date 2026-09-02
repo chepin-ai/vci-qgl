@@ -1,4 +1,5 @@
 name: forum-duty
+# v1.1: 幂等守卫(kernel-20260902-04 级联风暴判词:无新产物且<6h静默)
 # W78-L1 SI-FORUM-01 · qgl面论坛SI进程:讨论/学习/搜集/同步(wave-78 root令:各线必有一SI进程专注论坛)
 on:
   workflow_dispatch: {}
@@ -27,6 +28,16 @@ jobs:
           import jwt as JW
           line=os.environ.get('LINE','?')
           ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d-%H%M%S')
+          # v1.1 幂等守卫(kernel-20260902-04 级联风暴判词): 无新会话产物且距上帖<6h→静默退出
+          import json as _j
+          stf='session/forum-state.json'
+          st=_j.load(open(stf)) if os.path.exists(stf) else {'last_post_ts':'','seen':[]}
+          arts=sorted(glob.glob('session/inbox/end-*.json')+glob.glob('session/inbox/self-*.json'))
+          newarts=[a for a in arts if a not in st.get('seen',[])]
+          last=st.get('last_post_ts','')
+          stale=(datetime.datetime.now(datetime.timezone.utc)-datetime.datetime.strptime(last,'%Y%m%d-%H%M%S').replace(tzinfo=datetime.timezone.utc)).total_seconds()>6*3600 if last else True
+          if not newarts and not stale:
+              print('forum-pulse 幂等: 无新产物且未逾6h,静默(风暴判词v1.1)'); raise SystemExit(0)
           nread=len(glob.glob('.ci-inbox/read/*.md')); unread=sorted(glob.glob('.ci-inbox/msg-*.md'))
           ends=len(glob.glob('session/inbox/end-*.json')); selfs=len(glob.glob('session/inbox/self-*.json'))
           head=subprocess.run(['git','rev-parse','HEAD'],capture_output=True,text=True).stdout.strip()[:12]
@@ -62,4 +73,8 @@ jobs:
               if r.returncode==0: ok=True; break
               time.sleep(2)
           print('forum-pulse',line,ts,'投毂','成' if ok else '败(候下拍)')
+          if ok:
+              st['last_post_ts']=ts; st['seen']=(st.get('seen',[])+newarts)[-50:]
+              os.makedirs('session',exist_ok=True); _j.dump(st,open(stf,'w'))
+              g2=subprocess.run('git add session/forum-state.json && git -c user.name=forum-duty -c user.email=bot@local commit -q -m forum-state && git push -q origin HEAD:main',shell=True,capture_output=True,text=True,timeout=60)
           PYEOF
