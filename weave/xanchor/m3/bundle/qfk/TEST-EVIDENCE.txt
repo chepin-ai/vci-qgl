@@ -1,0 +1,51 @@
+QFK v0.2 TEST-EVIDENCE（八模块，34 测全绿；运行：在 /mnt/agents/output 下）
+  python3 -m pytest qfk/test_all.py qfk/test_ipmp.py -q  →  34 passed
+  python3 -m qfk.test_all  → 23 OK（旧基线不破） / python3 -m qfk.test_ipmp → 11 OK
+
+== qfk.test_all -v ==
+test_20_offline_tick_chain_and_draw_deterministic (__main__.TestBeacon.test_20_offline_tick_chain_and_draw_deterministic) ... ok
+test_21_qubo_hook_no_promise (__main__.TestBeacon.test_21_qubo_hook_no_promise) ... ok
+test_01_append_and_verify (__main__.TestChain.test_01_append_and_verify) ... ok
+test_02_tamper_detection (__main__.TestChain.test_02_tamper_detection) ... ok
+test_03_alias_never_in_verification (__main__.TestChain.test_03_alias_never_in_verification) ... ok
+test_04_tile_inclusion_proof (__main__.TestChain.test_04_tile_inclusion_proof) ... ok
+test_05_legacy_12hex_binding_degraded (__main__.TestChain.test_05_legacy_12hex_binding_degraded) ... ok
+test_06_m_of_n_pass (__main__.TestCircle.test_06_m_of_n_pass) ... ok
+test_07_insufficient_reject (__main__.TestCircle.test_07_insufficient_reject) ... ok
+test_08_reconfig_self_referential (__main__.TestCircle.test_08_reconfig_self_referential) ... ok
+test_09_llm_advice_weight_zero (__main__.TestCircle.test_09_llm_advice_weight_zero) ... ok
+test_10_fingerprint_commit_and_tick_check_clean (__main__.TestField.test_10_fingerprint_commit_and_tick_check_clean) ... ok
+test_11_drift_becomes_finding (__main__.TestField.test_11_drift_becomes_finding) ... ok
+test_12_reconcile_and_slice (__main__.TestField.test_12_reconcile_and_slice) ... ok
+test_13_write_gate_max5 (__main__.TestField.test_13_write_gate_max5) ... ok
+test_22_closed_loop_commit_on_chain (__main__.TestFindings.test_22_closed_loop_commit_on_chain) ... ok
+test_23_breaking_human_gate_and_round_cap (__main__.TestFindings.test_23_breaking_human_gate_and_round_cap) ... ok
+test_14_fixpoint_transitive_closure (__main__.TestTensor.test_14_fixpoint_transitive_closure) ... ok
+test_15_tn_embed_and_residual_threshold (__main__.TestTensor.test_15_tn_embed_and_residual_threshold) ... ok
+test_16_contraction_path_cache_with_digest (__main__.TestTensor.test_16_contraction_path_cache_with_digest) ... ok
+test_17_t4_gate (__main__.TestTrans.test_17_t4_gate) ... ok
+test_18_t5_chain_witness (__main__.TestTrans.test_18_t5_chain_witness) ... ok
+test_19_hook_tiers_residual (__main__.TestTrans.test_19_hook_tiers_residual) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 0.031s
+
+OK
+
+== qfk.test_ipmp -v ==
+test_24_machine_specs_declared (__main__.TestIpmp.test_24_machine_specs_declared) ... ok
+test_25_class_gate_rejects_entangled (__main__.TestIpmp.test_25_class_gate_rejects_entangled) ... ok
+test_26_gap_unknown_pinned (__main__.TestIpmp.test_26_gap_unknown_pinned) ... ok
+test_27_window_commit_reveal_happy (__main__.TestIpmp.test_27_window_commit_reveal_happy) ... ok
+test_28_window_early_reveal_rejected (__main__.TestIpmp.test_28_window_early_reveal_rejected) ... ok
+test_29_collusion_negative (__main__.TestIpmp.test_29_collusion_negative) ... ok
+test_30_entropy_grade_in_verdict (__main__.TestIpmp.test_30_entropy_grade_in_verdict) ... ok
+test_31_replay_deterministic (__main__.TestIpmp.test_31_replay_deterministic) ... ok
+test_32_verdict_m_of_n_enforced (__main__.TestIpmp.test_32_verdict_m_of_n_enforced) ... ok
+test_33_binding_mismatch_finding (__main__.TestIpmp.test_33_binding_mismatch_finding) ... ok
+test_34_no_self_judge (__main__.TestIpmp.test_34_no_self_judge) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.028s
+
+OK

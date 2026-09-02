@@ -1,0 +1,15 @@
+{
+ "script_sha256": "a0a3e11301b7f1961292b198bd58f27c0a43e4367c2207a75236f4f367d5ea95",
+ "transcript_sha256": "0b7bcd99ea526877d5577b2d419bc3c2bc2136bb7dd67e2d18d43426d9a7bec8",
+ "seed": 3712427753,
+ "deps": {
+  "numpy": "2.2.5",
+  "cryptography": "44.0.2"
+ },
+ "evidence": "vci-usrm/ure/m3-bridge/（usrm 半区双轮逐字节一致+2026-09-02T20:1xZ 沙箱跨死第三度复算一致）",
+ "gray": [
+  "单沙箱/单仓CI 非真隔离",
+  "探针未命中≠清白",
+  "classical-sim 档不升格"
+ ]
+}

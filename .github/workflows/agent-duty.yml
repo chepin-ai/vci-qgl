@@ -1,6 +1,6 @@
 name: agent-duty
 # AGENT-DUTY v2.5.1 (wave-80): vote/cosign 改走 vci-inbox bridge-drop 毂侧代投(LINE app 未覆 ci-control=404 实证;绕面先例 CIROOT-ROUTEAROUND-01;relay=bridge-drop-relay.yml)
-# AGENT-DUTY v2.5 (wave-80): 执手 H1 OTP机读执行(白名单vote/cosign/xanchor-respond,幂等,CAP4,无LLM) — kernel-20260902-08 有耳有口无手根治
+# AGENT-DUTY v2.7.2-qgl (wave-82): xanchor-run=M3 白名单装检(三半签第三线;冒烟包hash闸+钉版+sudo路径重建+代投halfsign;成链取证注记v2.7.1) — root令注意qgl互动 — 原v2.5: 执手 H1 OTP机读执行(白名单vote/cosign/xanchor-respond,幂等,CAP4,无LLM) — kernel-20260902-08 有耳有口无手根治
 # AGENT-DUTY v2.4 (wave-77): SESSION-END-SWEEP 终止自检(W77-L2) + git级联触发路径扩(W77-L5) + pulse环守卫 + dashboard.meta同跑再生(W77-L6)
 # AGENT-DUTY v2.1 · qgl 面（SI2→SI1@qgl，wave-73 装检，root 令）（VCI-LOAD-01 波2 @vci-usrm，root 裁2 2026-08-19）
 # 公仓驱动机检/追办；死线：私域数据只以 sha256/HTTP 状态码出场，L2 永不落公仓
@@ -305,6 +305,7 @@ jobs:
           WL_VOTE={'VOTE-YONEDA-01':{'dir':'bridge-drop/incoming/ballots/VOTE-YONEDA-01','scheme':'design/VOTE-YONEDA-01.md 机制栈收敛稿（D-143正本）','votes':('approve','object','amend')}}
           WL_COSIGN={'EXP-032-FIRSTSIGN':{'dir':'bridge-drop/incoming/cosign/EXP-032','parties':('cfts','cisvr')}}
           WL_XA=('XANCHOR-V2-01',)
+          WL_XRUN=('M3',)  # v2.7-qgl: xanchor-run 白名单(三半签第三线装检——usrm-cfts-qgl 三角首步,root令注意qgl互动)
           FROM_OK=('from: usrm','from: vci-usrm','from: cisvr','from: vci-library')
           CAP=4
           # ① 扫匣: .ci-inbox 未读+已读, 仅 kind:otp 且来自 usrm/cisvr 权威面
@@ -431,6 +432,41 @@ jobs:
               ok=commit_push(wd,'act-H1 %s xanchor-respond %s'%(line,xid))
               if ok: open(done,'w').write(ts+' '+xid+'\n')
               return ('executed' if ok else 'error','disc/incoming/%s-%s.md'%(line,ts))
+          def do_xanchor_run(tag):
+              if tag not in WL_XRUN: return ('reject','白名单外')
+              done='weave/duty/act-xanchor-run-%s.done'%tag
+              if os.path.exists(done): return ('skip','已跑(done标,幂等)')
+              wd0='weave/xanchor/m3'
+              if not os.path.exists(wd0+'/m3-smoke-usrm.py'): return ('error','冒烟包未镜像(weave/xanchor/m3)')
+              import hashlib as _hl
+              sh=_hl.sha256(open(wd0+'/m3-smoke-usrm.py','rb').read()).hexdigest()
+              exp=json.load(open(wd0+'/EXPECTED.json'))
+              if sh!=exp['script_sha256']: return ('error','脚本哈希漂移(防篡改闸): '+sh[:16])
+              subprocess.run(['python3','-m','pip','install','-q','numpy==2.2.5','cryptography==44.0.2'],timeout=240)
+              subprocess.run(['sudo','mkdir','-p','/mnt/agents/output/wave5'],check=True)  # v2.7.2: runner无/mnt/agents写权(PermissionError 13 @21:17Z实证)——sudo建径+chown,脚本字节不动
+              subprocess.run(['sudo','chown','-R','%d:%d'%(os.getuid(),os.getgid()),'/mnt/agents'],check=True)
+              subprocess.run(['cp','-r',wd0+'/bundle/.','/mnt/agents/output/wave5/'],check=True)
+              r=subprocess.run(['python3','m3-smoke-usrm.py'],capture_output=True,text=True,timeout=300,cwd=wd0)
+              tf=os.path.join(wd0,'m3-smoke-transcript.json')
+              th=_hl.sha256(open(tf,'rb').read()).hexdigest() if os.path.exists(tf) else None
+              match=bool(th) and th==exp['transcript_sha256']
+              art={'v':'XANCHOR-HALFSIGN-01','party':line,'prop':'M3-SMOKE','seed':exp['seed'],
+                   'script_sha256':sh,'transcript_sha256':th,'expected':exp['transcript_sha256'],'match':match,
+                   'verdict':('%s-HALF PASS(同种子复算逐字节一致)'%line.upper() if match and r.returncode==0 else '%s-HALF FAIL/MISMATCH(如实,开replay争议窗)'%line.upper()),
+                   'rc':r.returncode,'ts':tsz,'duty_tip':duty_tip(),
+                   'gray':['单仓CI非真隔离(灰标1不除)','探针未命中≠清白','classical-sim档不升格'],
+                   'note':'执手v2.7确定性复跑;usrm半区transcript 0b7bcd99…三度在案(vci-usrm/ure/m3-bridge/);依赖钉版照EXPECTED.json'}
+              wd=checkout('vci-inbox')
+              dd=os.path.join(wd,'bridge-drop/incoming/xanchor/M3')
+              me='halfsign-%s.json'%line
+              dd2=dd.replace('/incoming/','/relayed/')
+              if os.path.exists(os.path.join(dd,me)) or os.path.exists(os.path.join(dd2,me)):
+                  open(done,'w').write(ts+' M3 已在投/已入正本\n'); return ('skip','halfsign已在投/已入(幂等)')
+              os.makedirs(dd,exist_ok=True)
+              json.dump(art,open(os.path.join(dd,me),'w'),ensure_ascii=False,indent=1)
+              ok=commit_push(wd,'act-H1 %s xanchor-run M3 halfsign'%line)
+              if ok: open(done,'w').write(ts+' M3 match=%s rc=%s\n'%(match,r.returncode))
+              return ('executed' if ok else 'error','match=%s transcript=%s rc=%s'%(match,(th or '')[:16],r.returncode))
           # ② 派发(白名单+幂等+上限;全 try 吞——永不拖垮值守)
           done_n=0
           try:
@@ -454,6 +490,10 @@ jobs:
                               xid=a.split('=',1)[1]
                               if xid not in WL_XA: log(a,'reject','白名单外'); continue
                               v,d=do_xanchor(xid)
+                          elif a.startswith('xanchor-run='):
+                              tag=a.split('=',1)[1]
+                              if tag not in WL_XRUN: log(a,'reject','白名单外'); continue
+                              v,d=do_xanchor_run(tag)
                           else:
                               log(a,'reject','未知动作类型'); continue
                           log(a,v,d)
@@ -471,9 +511,17 @@ jobs:
         if: always()  # v2.4.1: duty步败亦必落链(W79 死角根治:产物写了却不提交=运行隐身)
         run: |
           git config user.name "agent-duty[bot]"; git config user.email "agent-duty@users.noreply.github.com"
-          git add weave/duty weave/awake .ci-inbox; [ -d session/inbox ] && git add session/inbox || true || true
-          git commit -m "agent-duty $(date -u +%Y%m%d-%H%M%S) v2" || echo "无变更"
-          for i in 1 2 3 4 5 6; do git fetch -q origin main && git rebase -q FETCH_HEAD && git push -q origin HEAD:main && break || sleep 3; done  # v2.5.3: 单发推→竞推环(fleet-drive高频面回执丢失实证: vinf 12:59Z ballot落箱而act回执失)
+          git add weave/duty weave/awake .ci-inbox weave/xanchor
+          [ -d session/inbox ] && git add session/inbox || true
+          git commit -m "agent-duty $(date -u +%Y%m%d-%H%M%S) v2" || echo "无变更 local=$(git rev-parse --short HEAD)"
+          ok=0
+          for i in 1 2 3 4 5 6; do
+            if git fetch -q origin main 2>/tmp/fe && git rebase -q FETCH_HEAD 2>/tmp/re && git push -q origin HEAD:main 2>/tmp/pe; then ok=1; break; fi
+            git rebase --abort 2>/dev/null || true
+            echo "::warning::成链iter$i fail rc=$? head=$(git rev-parse --short HEAD) fetch[$(tail -c160 /tmp/fe 2>/dev/null)] rebase[$(tail -c160 /tmp/re 2>/dev/null)] push[$(tail -c260 /tmp/pe 2>/dev/null)]"
+            sleep 3
+          done
+          if [ "$ok" != 1 ]; then echo "::warning::自提交成链6连败 local=$(git rev-parse --short HEAD) remote=$(git ls-remote origin main 2>/dev/null | cut -c1-7) staged=$(git status --porcelain | head -4 | tr '\n' ' ')"; fi  # v2.7.1: 失败取证注记(匿面可读)+rebase卡态自解
 
       - name: qf-beat-forward（D-157 事件驱动接力扣门·级联≤1·不转叩 + 线环冗余 BEAT-RING-01）
         if: always()
