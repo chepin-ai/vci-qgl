@@ -1,4 +1,5 @@
 name: agent-duty
+# AGENT-DUTY v2.4 (wave-77): SESSION-END-SWEEP 终止自检(W77-L2) + git级联触发路径扩(W77-L5) + pulse环守卫 + dashboard.meta同跑再生(W77-L6)
 # AGENT-DUTY v2.1 · qgl 面（SI2→SI1@qgl，wave-73 装检，root 令）（VCI-LOAD-01 波2 @vci-usrm，root 裁2 2026-08-19）
 # 公仓驱动机检/追办；死线：私域数据只以 sha256/HTTP 状态码出场，L2 永不落公仓
 # 无 LLM key 时机检摘要降级（明示不装死——DM 002 第三课）；台账 weave/duty/ 哈希链
@@ -8,7 +9,7 @@ on:
     types: [line-beat]
   # schedule: [废除-W30/34 cron全废]
   push:
-    paths: ['.github/workflows/agent-duty.yml']
+    paths: ['.github/workflows/agent-duty.yml','.ci-inbox/**','weave/pulse/**','pulse.log','session/**','inbox/**']  # W77-L5 git级联面
 permissions:
   contents: write
 jobs:
@@ -193,6 +194,32 @@ jobs:
           json.dump({'cursor':rec['hash'],'ts':ts},open('session/inbox/cursor.json','w'))
           print('selfcap',rec['hash'])
           PYEOF
+      - name: 会话终止自检（W77-L2 SESSION-END-SWEEP·W77-L6盘面再生）
+        if: always()
+        env:
+          LINE: qgl
+        run: |
+          python3 - <<'PYEOF' || echo "session-end-sweep 降级跳过(不影响值守)"
+          import json, os, hashlib, datetime, glob
+          line=os.environ.get('LINE','?')
+          ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d-%H%M%S')
+          read=len(glob.glob('.ci-inbox/read/*.md'))
+          unread=sorted(glob.glob('.ci-inbox/msg-*.md'))
+          hou=[]
+          for f in unread:
+              try:
+                  t=open(f).read()
+                  if '候root' in t or '候 root' in t: hou.append(os.path.basename(f))
+              except Exception: pass
+          cur=json.load(open('session/inbox/cursor.json')) if os.path.exists('session/inbox/cursor.json') else {}
+          rep={'v':'SESSION-END-SWEEP-01','line':line,'ts':ts,'inbox_read_total':read,'inbox_unread':len(unread),'hou_local':hou,'cursor':cur.get('cursor')}
+          rep['hash']=hashlib.sha256(json.dumps(rep,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()[:16]
+          os.makedirs('session/inbox',exist_ok=True)
+          open('session/inbox/end-'+ts+'.json','w').write(json.dumps(rep,ensure_ascii=False,indent=1))
+          dash={'line':line,'duty_version':'v2.4','last_session_ts':ts,'inbox_read_total':read,'inbox_unread':len(unread),'hou_local_n':len(hou),'end_hash':rep['hash']}
+          json.dump(dash,open('dashboard.meta.json','w'),ensure_ascii=False,indent=1)
+          print('end-sweep',rep['hash'],'unread',len(unread),'hou',len(hou))
+          PYEOF
       - name: 觉醒 L3′（SI2→SI1·LongCat 首声）
         if: always()
         env:
@@ -262,6 +289,14 @@ jobs:
           python3 -m pip install -q pyjwt
           python3 - <<'PYEOF' || echo "beat-forward 降级跳过(不影响本班)"
           import os,json,time,datetime,urllib.request
+          # W77-L5 pulse环守卫: head提交独为pulse面→不转叩(级联≤1)
+          import subprocess as _sp
+          try:
+              _files=[f for f in _sp.run(['git','log','-1','--name-only','--format=','HEAD'],capture_output=True,text=True).stdout.split('\n') if f.strip()]
+              if _files and all(f.startswith('weave/pulse/') or f in ('pulse.log','weave/status.json') for f in _files):
+                  print('beat-forward: pulse独件触发,不转叩(W77-L5环守卫)'); raise SystemExit(0)
+          except SystemExit: raise
+          except Exception as _e: print('pulse-guard 降级放行:',str(_e)[:80])
           key=os.environ.get('LINE_KEY','').strip(); iss=os.environ.get('LINE_ID','').strip()
           cause=os.environ.get('CAUSE','')
           if cause=='beat-forward':
