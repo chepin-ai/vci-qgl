@@ -1,11 +1,12 @@
 name: agent-duty
-# AGENT-DUTY v2.1 · vci 版 pilot（点火@wave-71·qgl）（VCI-LOAD-01 波2 @vci-usrm，root 裁2 2026-08-19）
+# AGENT-DUTY v2.1 · qgl 面（SI2→SI1@qgl，wave-73 装检，root 令）（VCI-LOAD-01 波2 @vci-usrm，root 裁2 2026-08-19）
 # 公仓驱动机检/追办；死线：私域数据只以 sha256/HTTP 状态码出场，L2 永不落公仓
 # 无 LLM key 时机检摘要降级（明示不装死——DM 002 第三课）；台账 weave/duty/ 哈希链
 on:
   workflow_dispatch: {}
   repository_dispatch:
     types: [line-beat]
+  # schedule: [废除-W30/34 cron全废]
   push:
     paths: ['.github/workflows/agent-duty.yml']
 permissions:
@@ -157,6 +158,27 @@ jobs:
           print(json.dumps({'findings':len(findings),'escalated':len(rec['escalated']),'mode':mode,'chain':chain},ensure_ascii=False))
 
           PYEOF
+      - name: 会话自抓拍（T5Q3 §4 增量保持·机侧面自证轨）
+        if: always()
+        env:
+          LINE: qgl
+        run: |
+          python3 - <<'PYEOF' || echo "session-selfcap 降级跳过(不影响值守)"
+          import json, os, hashlib, datetime, glob
+          line=os.environ.get('LINE','?')
+          ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%d-%H%M%S')
+          os.makedirs('session/inbox',exist_ok=True)
+          arts={}
+          for f in sorted(glob.glob('weave/duty/duty-*.json'))[-1:]+sorted(glob.glob('weave/awake/awake-2*.json'))[-1:]:
+              arts[f]=hashlib.sha256(open(f,'rb').read()).hexdigest()[:16]
+          cur={}
+          if os.path.exists('session/inbox/cursor.json'): cur=json.load(open('session/inbox/cursor.json'))
+          rec={'v':'SELFCAP-01','line':line,'ts':ts,'artifacts':arts,'prev_cursor':cur.get('cursor')}
+          rec['hash']=hashlib.sha256(json.dumps(rec,sort_keys=True,ensure_ascii=False,separators=(',',':')).encode()).hexdigest()[:16]
+          open(f'session/inbox/self-{ts}.json','w').write(json.dumps(rec,ensure_ascii=False,indent=1))
+          json.dump({'cursor':rec['hash'],'ts':ts},open('session/inbox/cursor.json','w'))
+          print('selfcap',rec['hash'])
+          PYEOF
       - name: 觉醒 L3′（SI2→SI1·LongCat 首声）
         if: always()
         env:
@@ -207,7 +229,7 @@ jobs:
       - name: 自提交成链
         run: |
           git config user.name "agent-duty[bot]"; git config user.email "agent-duty@users.noreply.github.com"
-          git add weave/duty weave/awake .ci-inbox || true
+          git add weave/duty weave/awake .ci-inbox; [ -d session/inbox ] && git add session/inbox || true || true
           git commit -m "agent-duty $(date -u +%Y%m%d-%H%M%S) v2" || echo "无变更"
           git push
 
@@ -218,7 +240,7 @@ jobs:
           LINE_ID: ${{ vars.CI_OPS_LINE_ID }}
           LINE: qgl
           WF: agent-duty
-          NEXT: vinf
+          NEXT: 'vinf'
           CAUSE: ${{ github.event.client_payload.cause || github.event_name }}
         run: |
           python3 -m pip install -q pyjwt
