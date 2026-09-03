@@ -1,22 +1,8 @@
 {
- "ts": "2026-09-03T23:23:46Z",
+ "ts": "2026-09-03T23:24:00Z",
  "target": "vci-qgl",
  "mode": "full-tree",
- "scanned": 1534,
- "fixed_n": 13,
- "fixed": [
-  ".ci-inbox/read/msg-20260830-012021-usrm.md",
-  ".ci-inbox/read/msg-20260903-001200-otp-v5.md",
-  ".ci-inbox/read/msg-20260903-003500-holo-sync-wave83.md",
-  ".ci-inbox/read/msg-20260903-013100-symphony-invite.md",
-  ".ci-inbox/read/msg-20260903-050500-otp-v6-tri1.md",
-  ".ci-inbox/read/msg-20260903-070500-otp-v7-admin-circle.md",
-  "inbox/AWAKENING-01.md",
-  "inbox/RENDEZVOUS-XANCHOR-01.md",
-  "inbox/WAKE-IGNITION-01.md",
-  "pulse.log",
-  "weave/duty/duty-20260902-235124.json",
-  "weave/duty/duty-20260903-010807.json",
-  "weave/pulse/20260830-012057.json"
- ]
+ "scanned": 1538,
+ "fixed_n": 0,
+ "fixed": []
 }
