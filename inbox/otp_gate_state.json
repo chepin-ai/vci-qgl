@@ -1,7 +1,7 @@
 {
- "status": "SELFTEST_OK",
- "note": "空匣自证:secret在库且可达 worker(phone_len=15,cands=3)——布线实证,未触机未发码",
- "ts": "2026-09-01T08:03:42Z",
+ "status": "CODE_SENT_UNVERIFIED",
+ "note": "页文未见倒计时亦未见风控——发码成否未定,实证见otp_gate_diag;若1min内无短信请按RATE_LIMITED处置",
+ "ts": "2026-09-03T12:25:07Z",
  "worker": "cios-otp-gate-v2",
  "phone_len": 15,
  "phone_cands": 3
