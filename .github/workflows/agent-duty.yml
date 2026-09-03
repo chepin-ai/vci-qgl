@@ -305,7 +305,9 @@ jobs:
           WL_VOTE={'VOTE-YONEDA-01':{'dir':'bridge-drop/incoming/ballots/VOTE-YONEDA-01','scheme':'design/VOTE-YONEDA-01.md 机制栈收敛稿（D-143正本）','votes':('approve','object','amend')}}
           WL_COSIGN={'EXP-032-FIRSTSIGN':{'dir':'bridge-drop/incoming/cosign/EXP-032','parties':('cfts','cisvr')}}
           WL_XA=('XANCHOR-V2-01',)
-          WL_XRUN=('M3',)  # v2.7-qgl: xanchor-run 白名单(三半签第三线装检——usrm-cfts-qgl 三角首步,root令注意qgl互动)
+          WL_XRUN=('M3','TRI1')  # v2.8(wave-84 usrm令): 扩 TRI1 三角会合;路径映射见 XRUN_CFG
+          XRUN_CFG={'M3':{'dir':'weave/xanchor/m3','script':'m3-smoke-usrm.py','bundle':True},
+                    'TRI1':{'dir':'weave/xanchor/tri','script':'m3-tri-smoke.py','bundle':False}}
           FROM_OK=('from: usrm','from: vci-usrm','from: cisvr','from: vci-library')
           CAP=4
           # ① 扫匣: .ci-inbox 未读+已读, 仅 kind:otp 且来自 usrm/cisvr 权威面
@@ -436,36 +438,39 @@ jobs:
               if tag not in WL_XRUN: return ('reject','白名单外')
               done='weave/duty/act-xanchor-run-%s.done'%tag
               if os.path.exists(done): return ('skip','已跑(done标,幂等)')
-              wd0='weave/xanchor/m3'
-              if not os.path.exists(wd0+'/m3-smoke-usrm.py'): return ('error','冒烟包未镜像(weave/xanchor/m3)')
+              cfg=XRUN_CFG[tag]; wd0=cfg['dir']; script=cfg['script']
+              if not os.path.exists(wd0+'/'+script): return ('error','冒烟包未镜像(%s)'%wd0)
               import hashlib as _hl
-              sh=_hl.sha256(open(wd0+'/m3-smoke-usrm.py','rb').read()).hexdigest()
+              sh=_hl.sha256(open(wd0+'/'+script,'rb').read()).hexdigest()
               exp=json.load(open(wd0+'/EXPECTED.json'))
               if sh!=exp['script_sha256']: return ('error','脚本哈希漂移(防篡改闸): '+sh[:16])
-              subprocess.run(['python3','-m','pip','install','-q','numpy==2.2.5','cryptography==44.0.2'],timeout=240)
-              subprocess.run(['sudo','mkdir','-p','/mnt/agents/output/wave5'],check=True)  # v2.7.2: runner无/mnt/agents写权(PermissionError 13 @21:17Z实证)——sudo建径+chown,脚本字节不动
-              subprocess.run(['sudo','chown','-R','%d:%d'%(os.getuid(),os.getgid()),'/mnt/agents'],check=True)
-              subprocess.run(['cp','-r',wd0+'/bundle/.','/mnt/agents/output/wave5/'],check=True)
-              r=subprocess.run(['python3','m3-smoke-usrm.py'],capture_output=True,text=True,timeout=300,cwd=wd0)
-              tf=os.path.join(wd0,'m3-smoke-transcript.json')
+              if cfg['bundle']:
+                  subprocess.run(['python3','-m','pip','install','-q','numpy==2.2.5','cryptography==44.0.2'],timeout=240)
+                  subprocess.run(['sudo','mkdir','-p','/mnt/agents/output/wave5'],check=True)  # v2.7.2: runner无/mnt/agents写权(PermissionError 13 @21:17Z实证)——sudo建径+chown,脚本字节不动
+                  subprocess.run(['sudo','chown','-R','%d:%d'%(os.getuid(),os.getgid()),'/mnt/agents'],check=True)
+                  subprocess.run(['cp','-r',wd0+'/bundle/.','/mnt/agents/output/wave5/'],check=True)
+              r=subprocess.run(['python3',script],capture_output=True,text=True,timeout=300,cwd=wd0)
+              tf=os.path.join(wd0,'m3-smoke-transcript.json' if tag=='M3' else 'm3-tri-transcript.json')
               th=_hl.sha256(open(tf,'rb').read()).hexdigest() if os.path.exists(tf) else None
               match=bool(th) and th==exp['transcript_sha256']
-              art={'v':'XANCHOR-HALFSIGN-01','party':line,'prop':'M3-SMOKE','seed':exp['seed'],
+              prop = 'M3-SMOKE' if tag=='M3' else 'TRIANGLE-SMOKE-01'
+              art={'v':'XANCHOR-HALFSIGN-01','party':line,'prop':prop,'seed':exp.get('seed') or exp.get('base_seed'),
                    'script_sha256':sh,'transcript_sha256':th,'expected':exp['transcript_sha256'],'match':match,
                    'verdict':('%s-HALF PASS(同种子复算逐字节一致)'%line.upper() if match and r.returncode==0 else '%s-HALF FAIL/MISMATCH(如实,开replay争议窗)'%line.upper()),
                    'rc':r.returncode,'ts':tsz,'duty_tip':duty_tip(),
                    'gray':['单仓CI非真隔离(灰标1不除)','探针未命中≠清白','classical-sim档不升格'],
-                   'note':'执手v2.7确定性复跑;usrm半区transcript 0b7bcd99…三度在案(vci-usrm/ure/m3-bridge/);依赖钉版照EXPECTED.json'}
+                   'note':'执手确定性复跑;usrm半区transcript 0b7bcd99…三度在案(vci-usrm/ure/m3-bridge/);依赖钉版照EXPECTED.json' if tag=='M3' else '执手v2.8确定性复跑;usrm TRI1 参考 transcript 6f97b605…在案;stdlib-only零依赖(XANCHOR-TRIANGLE-SMOKE-01)'}
+              if tag=='TRI1': art['tri_root']=exp.get('tri_root')
               wd=checkout('vci-inbox')
-              dd=os.path.join(wd,'bridge-drop/incoming/xanchor/M3')
+              dd=os.path.join(wd,'bridge-drop/incoming/xanchor', 'M3' if tag=='M3' else 'TRI1')
               me='halfsign-%s.json'%line
               dd2=dd.replace('/incoming/','/relayed/')
               if os.path.exists(os.path.join(dd,me)) or os.path.exists(os.path.join(dd2,me)):
-                  open(done,'w').write(ts+' M3 已在投/已入正本\n'); return ('skip','halfsign已在投/已入(幂等)')
+                  open(done,'w').write(ts+' %s 已在投/已入正本\n'%tag); return ('skip','halfsign已在投/已入(幂等)')
               os.makedirs(dd,exist_ok=True)
               json.dump(art,open(os.path.join(dd,me),'w'),ensure_ascii=False,indent=1)
-              ok=commit_push(wd,'act-H1 %s xanchor-run M3 halfsign'%line)
-              if ok: open(done,'w').write(ts+' M3 match=%s rc=%s\n'%(match,r.returncode))
+              ok=commit_push(wd,'act-H1 %s xanchor-run %s halfsign'%(line,tag))
+              if ok: open(done,'w').write(ts+' %s match=%s rc=%s\n'%(tag,match,r.returncode))
               return ('executed' if ok else 'error','match=%s transcript=%s rc=%s'%(match,(th or '')[:16],r.returncode))
           # ② 派发(白名单+幂等+上限;全 try 吞——永不拖垮值守)
           done_n=0
