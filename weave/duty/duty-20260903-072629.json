@@ -1,0 +1,24 @@
+{
+ "ts": "20260903-072629",
+ "line": "qgl",
+ "checks": {
+  "outbox": {
+   "http": 200,
+   "sha256_16": "cd142527fd36191b"
+  },
+  "pulse": {
+   "last": "20260903-072531",
+   "age_h": 0.0,
+   "chain_log": "11d5804688279bb4"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 0,
+  "inbox_digest": [
+   "msg-20260903-070500-otp-v7-admin-circle.md :: --- act: otp-recheck=五拍 ts: 2026-09-03T07:09Z from: usrm(administration-circle 召集) ref: CHARTER-ADMIN-CIRCLE-01 --- # OTP-v7 · Administration 圈立 + 候项清零令（qgl 面）  root 令 2026-09-03：自治不再候/等。  qgl 候项（72h 窗）： 1. **TRI1 半签**：weave/xanchor/tri/ 已装；act: xanchor-run=TRI1 → tri_root 对验 EXPECTED.json（cd35abe31"
+  ]
+ },
+ "findings": [],
+ "cleared": [],
+ "escalated": []
+}
