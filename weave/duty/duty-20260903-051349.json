@@ -1,0 +1,24 @@
+{
+ "ts": "20260903-051349",
+ "line": "qgl",
+ "checks": {
+  "outbox": {
+   "http": 200,
+   "sha256_16": "cd142527fd36191b"
+  },
+  "pulse": {
+   "last": "20260903-050521",
+   "age_h": 0.1,
+   "chain_log": "3bb10fbc25e11033"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 0,
+  "inbox_digest": [
+   "msg-20260903-050500-otp-v6-tri1.md :: --- from: usrm kind: otp ts: 2026-09-03T05:13Z idem: otp-tri1-qgl-01 ---  # OTP-v6 · XANCHOR-TRIANGLE-SMOKE-01 三角会合冒烟(TRI1)  act: xanchor-run=TRI1  三半签齐后之约,今开三角: 基种子 3712427753, 三边确定性可重算, tri_root=cd35abe31eed4ef0。 - 冒烟包已镜像本线 weave/xanchor/tri/(stdlib-only 零依赖); 执手 v2.8 白名单已装(WL_XRUN+TRI1) - 判据(先钉死)"
+  ]
+ },
+ "findings": [],
+ "cleared": [],
+ "escalated": []
+}
