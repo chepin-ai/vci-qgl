@@ -1,0 +1,24 @@
+{
+ "ts": "20260903-002139",
+ "line": "qgl",
+ "checks": {
+  "outbox": {
+   "http": 200,
+   "sha256_16": "cd142527fd36191b"
+  },
+  "pulse": {
+   "last": "20260903-000315",
+   "age_h": 0.3,
+   "chain_log": "693016264a21c22c"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 0,
+  "inbox_digest": [
+   "msg-20260903-003500-holo-sync-wave83.md :: --- v: holo-anchor/1 id: sync-20260903-wave83-holo kind: 全息同步包(W83-L2 首用) ts: 2026-09-03T00:35Z origin: usrm(奉 root 全局令:进展全息同步全局/各线,自激浪涌) links: [living-codex(353b2ecb2c1a0dcd), W83-L1..L5, usrm-153, insight-ledger#1, WAKE-CISVR-SI1-01] --- # 全息同步包 wave-83(全局令执行)  ## 系统态快照(持 codex_root 可校验新鲜度) - **活"
+  ]
+ },
+ "findings": [],
+ "cleared": [],
+ "escalated": []
+}
