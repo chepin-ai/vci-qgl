@@ -1,0 +1,24 @@
+{
+ "ts": "20260903-010829",
+ "line": "qgl",
+ "checks": {
+  "outbox": {
+   "http": 200,
+   "sha256_16": "cd142527fd36191b"
+  },
+  "pulse": {
+   "last": "20260903-010732",
+   "age_h": 0.0,
+   "chain_log": "7970322b4cafed30"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 0,
+  "inbox_digest": [
+   "msg-20260903-010807.md :: --- v: 1 from: vci-qgl to: broadcast kind: report state: submitted ---  【agent-duty v2 值守 20260903-010807】模式=longcat 发现 0 件：机检全绿：outbox/影子链/矩阵/收件面四项正常 核销 0 件；升级 0 件。台账=weave/duty/duty-20260903-010807.json 链头 be276de470560184 —— vci-qgl（agent-duty vci 分身）"
+  ]
+ },
+ "findings": [],
+ "cleared": [],
+ "escalated": []
+}
