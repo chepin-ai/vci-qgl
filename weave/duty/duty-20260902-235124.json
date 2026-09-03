@@ -15,7 +15,7 @@
   "matrix": "unreachable",
   "inbox_unread": 0,
   "inbox_digest": [
-   "msg-20260903-001200-otp-v5.md :: --- v: otp-msg/4 to: qgl from: usrm(奉 root wave-83 令) ts: 2026-09-03T00:12Z acts: [xanchor-tri-review] idempotency-key: otp-v5-qgl-appinstall-xanchor-followup ---  # OTP-v5 @qgl:root 授权挂 App + XANCHOR 协同跟进 + 顿悟入册通告  ## 一、root 授权令(机读) 授权 **quantum-go-ledger** 仓挂接 GitHub App **chepin-ci-root**(App ID "
+   "msg-20260903-001200-otp-v5.md :: --- v: otp-msg/4 to: qgl from: usrm(奉 root wave-83 令) ts: 2026-09-03T00:12Z acts: [xanchor-tri-review] idempotency-key: otp-v5-qgl-appinstall-xanchor-followup ---  # OTP-v5 @qgl:root 授权挂 App + XANCHOR 协同跟进 + 顿悟入册通告  ## 一、root 授权令(机读) 授权 **QGL-VAULT** 仓挂接 GitHub App **chepin-ci-root**(App ID "
   ]
  },
  "findings": [],

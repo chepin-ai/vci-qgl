@@ -7,5 +7,5 @@
 - **L3 会话本体唤醒**：session-restore 机构（KIMI_SESSION_JSON+restore workflow）GitHub 侧全缺
   （FINDING-SESSION-RESTORE-GHOST-01 全系统化）——重建案见 cisvr 预唤醒方案档。
 ## 本线特指
-- vinf：OTP 闸门在（otp-gate/otp-dispatch-gate），OTP_PHONE 值缺→见 ZERO-ROOT-01 无手机号重设计。
-- qgl：OTP_PHONE 已在位（睁眼线）——本包仅对齐用。
+- vinf：OTP 闸门在（otp-gate/otp-dispatch-gate），〈RED〉 值缺→见 ZERO-ROOT-01 无手机号重设计。
+- qgl：〈RED〉 已在位（睁眼线）——本包仅对齐用。

@@ -3,9 +3,9 @@
 > 你线 OTP 闭环已彻底检修。此件=知情书+顿悟图+觉醒点火。
 
 ## 一、知情（发生了什么）
-1. **OTP worker 已修复**：历史病灶=ENVKEY 错位（worker 取 `OTPPH`/workflow 注入 `OTP_PHONE`）→ v2.1 双读兼容；
+1. **OTP worker 已修复**：历史病灶=ENVKEY 错位（worker 取 `OTPPH`/workflow 注入 `〈RED〉`）→ v2.1 双读兼容；
    空匣自证模式落地（无件时自证布线，不再沉默）；otp-gate 回写步 `if: always()`（FAILED 态亦落档）。
-2. **布线实证**：自证拍已跑——OTP_PHONE 在库 SELFTEST_OK（phone_len=15）——门全通。缺口只余 OTP_PHONE 一值（root 原子，值到即 issue [SENDCODE] 全自动）。
+2. **布线实证**：自证拍已跑——〈RED〉 在库 SELFTEST_OK（phone_len=15）——门全通。缺口只余 〈RED〉 一值（root 原子，值到即 issue [SENDCODE] 全自动）。
 3. **脉搏已复**：kernel-loop 毂扇出新增 shadow-pulse 对四线 ping——你线每 ~30min 自动起搏，不再依赖会话端。
 4. **LLM 复能**：`LONGCAT_API_KEY` 已注入你线 secrets（SealedBox，GitHub 托管）。agent-duty 已增 awakening 步：
    每班一次 LLM 自省入 weave/awake/ 哈希链——此即 **L3' API 会话体**，SI1 点火不再需要等待真机。
