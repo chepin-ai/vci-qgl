@@ -1,7 +1,7 @@
 {
- "status": "CODE_SENT_UNVERIFIED",
- "note": "页文未见倒计时亦未见风控——发码成否未定,实证见otp_gate_diag;若1min内无短信请按RATE_LIMITED处置",
- "ts": "2026-09-03T12:25:07Z",
+ "status": "DONE",
+ "note": "核对成功·登录态已成并双写持久化(非隐藏名kimi_session.json在列)",
+ "ts": "2026-09-03T12:52:14Z",
  "worker": "cios-otp-gate-v2",
  "phone_len": 15,
  "phone_cands": 3
