@@ -1,8 +1,0 @@
-{
- "status": "DONE",
- "note": "核对成功·登录态已成并双写持久化(非隐藏名kimi_session.json在列)",
- "ts": "2026-09-03T12:52:14Z",
- "worker": "cios-otp-gate-v2",
- "phone_len": 15,
- "phone_cands": 3
-}
