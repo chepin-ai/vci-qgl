@@ -6,7 +6,7 @@
     "note": "对线 outbox HTTP 404"
    },
    "first": "20260904-023043",
-   "ticks": 3,
+   "ticks": 4,
    "escalate": true
   }
  }
