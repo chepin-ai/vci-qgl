@@ -1,0 +1,27 @@
+{
+ "ts": "20260904-023043",
+ "line": "qgl",
+ "checks": {
+  "outbox": {
+   "http": 404,
+   "sha256_16": null
+  },
+  "pulse": {
+   "last": "20260904-022947",
+   "age_h": 0.0,
+   "chain_log": "69d254a29a7932b6"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 0,
+  "inbox_digest": []
+ },
+ "findings": [
+  {
+   "kind": "outbox-down",
+   "note": "对线 outbox HTTP 404"
+  }
+ ],
+ "cleared": [],
+ "escalated": []
+}

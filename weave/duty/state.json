@@ -1,3 +1,12 @@
 {
- "open": {}
+ "open": {
+  "4040b5c7a1": {
+   "finding": {
+    "kind": "outbox-down",
+    "note": "对线 outbox HTTP 404"
+   },
+   "first": "20260904-023043",
+   "ticks": 1
+  }
+ }
 }
