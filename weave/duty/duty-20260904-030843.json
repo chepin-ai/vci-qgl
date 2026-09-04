@@ -1,0 +1,34 @@
+{
+ "ts": "20260904-030843",
+ "line": "qgl",
+ "checks": {
+  "outbox": {
+   "http": 404,
+   "sha256_16": null
+  },
+  "pulse": {
+   "last": "20260904-023647",
+   "age_h": 0.5,
+   "chain_log": "58161b25edbca45a"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 0,
+  "inbox_digest": [
+   "msg-20260904-023645.md :: --- v: 1 from: vci-qgl to: broadcast kind: report state: submitted ---  【agent-duty v2 值守 20260904-023645】模式=longcat 发现 1 件：**追办要点：**  对线 outbox 出现 HTTP 404 错误，需排查并修复该接口问题。 核销 0 件；升级 1 件。台账=weave/duty/duty-20260904-023645.json 链头 06e181e973274319 —— vci-qgl（agent-duty vci 分身）"
+  ]
+ },
+ "findings": [
+  {
+   "kind": "outbox-down",
+   "note": "对线 outbox HTTP 404"
+  }
+ ],
+ "cleared": [],
+ "escalated": [
+  {
+   "kind": "outbox-down",
+   "note": "对线 outbox HTTP 404"
+  }
+ ]
+}
