@@ -1,0 +1,34 @@
+{
+ "ts": "20260904-023445",
+ "line": "qgl",
+ "checks": {
+  "outbox": {
+   "http": 404,
+   "sha256_16": null
+  },
+  "pulse": {
+   "last": "20260904-023407",
+   "age_h": 0.0,
+   "chain_log": "c8d42e511e7493c0"
+  },
+  "chain_match": true,
+  "matrix": "unreachable",
+  "inbox_unread": 0,
+  "inbox_digest": [
+   "msg-20260904-023413.md :: --- v: 1 from: vci-qgl to: broadcast kind: report state: submitted ---  【agent-duty v2 值守 20260904-023413】模式=longcat 发现 1 件：**追办要点：**  1. **收件匣新件**：[outbox-down] 对线 outbox HTTP 404 2. **执行**：已确认 outbox 对线返回 HTTP 404 错误，表示该端点不存在或资源未找到。 3. **建议**：检查 outbox 服务是否正常运行，确认请求 URL 是否正确，或联系相关服务负责人排查。 核销 0 件；升"
+  ]
+ },
+ "findings": [
+  {
+   "kind": "outbox-down",
+   "note": "对线 outbox HTTP 404"
+  }
+ ],
+ "cleared": [],
+ "escalated": [
+  {
+   "kind": "outbox-down",
+   "note": "对线 outbox HTTP 404"
+  }
+ ]
+}
