@@ -1,9 +1,0 @@
-{
- "ts": "2026-08-26T03:20:30Z",
- "op": "file-write",
- "out": {
-  "written": "inbox/QFOS-INDUCT-01.md",
-  "bytes": 438
- },
- "challenge": "a98c660d069b3aa5"
-}
