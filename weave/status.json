@@ -1,9 +1,9 @@
 {
  "line": "qgl",
  "vrepo": "vci-vinf",
- "last_pulse": "20260904-030843",
- "chain_head": "85ebac49ff29f11c",
- "pulses_total": 337,
+ "last_pulse": "20260904-030951",
+ "chain_head": "c6967aa4b718b2d7",
+ "pulses_total": 338,
  "snapshot": {
   "registry": "not-registered",
   "outbox": null
