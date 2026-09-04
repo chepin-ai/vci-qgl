@@ -1,0 +1,10 @@
+{
+ "ts": "20260904-031232",
+ "line": "qgl",
+ "outbox": {
+  "url": "https://raw.githubusercontent.com/chepin-ai/vci-qgl/main/outbox/qgl-outbox.json",
+  "http": 404,
+  "sha256": null
+ },
+ "note": "outbox unreachable"
+}
