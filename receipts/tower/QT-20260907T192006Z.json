@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T19:20:06Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① 何事：无人驿 inbox 于 2026-09-07 06:20—08:19 间自动涌入 OTP 令牌残件 8 件（`auto-otp*.json`），系外源认证系统抛掷的瞬时凭证碎片。  \n② 与 qgl 主线何干：量子账本 / go 主线锚定于分布式状态机、加密原语与共识实现；此类一次性消费令牌既非交易体，亦非链上状态，与主线无关，纯为环境噪声。  \n③ 应动何件：整批冷存，落仓路径 `/.archive/inbox/auto-otp/2026/09/07/`；写合并索引 `manifest-20260907.auto-otp`，去重后注销 inbox 活性引用，禁止渗入源码与构建树。  \n④ 生债一条：须在收件闸口增设 `auto-otp` 自动过滤与分流规则，避免噪声洪峰冲散主线注意力，此债记于运维护栏。"
+}
