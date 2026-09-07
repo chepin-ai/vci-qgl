@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T22:10:16Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要（批次：auto-otp 八连入）**\n\n① **何事**：2026-09-07 06:20–08:19 间，inbox 连续到件八封 `auto-otp` 型 JSON，均为外部系统自动投递的一次性验证码/身份信标，无人工附言。\n\n② **与 qgl 主线何干**：毫不相干。此属联邦边界外未授权身份噪声，不涉量子账本状态、不触 go-ledger 共识层、不携带可解析的交易原子。若任其漂流，反污染驿卒视线。\n\n③ **应动何件**：全批次原封移仓 `inbox/noise/otp-spam/20260907/`；标记 `frozen`，不拆包、不应答、不喂入任何状态机。后续同类件若频度 ≥3/小时，触发边界熔断规则，硬丢弃。\n\n④ **生债一条**：**边界感知迟钝债**——首件于 06:20 到时未立即识别噪声族特征，致同族连入八件，虚耗驿卒八目算力，此感知债记于本期尾生簿。"
+}
