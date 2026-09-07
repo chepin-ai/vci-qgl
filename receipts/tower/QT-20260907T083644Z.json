@@ -1,0 +1,48 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T08:36:44Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① 何事：本日到件八目（自 auto-otp-20260907T062033-f6162319 至 081959-e56843a4），皆为系统自动化一次性令牌流水，时跨辰巳（06:20–08:19）。\n\n② 与 qgl 主线何干：OTP 乃身份之钥。若此批系 qgl 联邦节点间量子握手、共识 nonce 或账本交易动态凭证，则关涉安全层与链路可信；若为外部平台杂讯，则不关主线，仅占 inbox 算力。\n\n③ 应动何件：同质并案。先整体落 `staging/inbox/otp-batch-20260907/` 作快照固化；辨源后——系 qgl 内建认证者，迁 `ledger/security/auth-chain/` 挂「待哈希关联」，系外者封样入 `archive/noise/`。\n\n④ 生债一条：inbox 无 OTP 自动路由 filter，批量杂讯直涌单会话工位，生「分拣管道失明债」。须补分类规则一条，免占锚点算力。"
+}
