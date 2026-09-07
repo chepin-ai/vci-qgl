@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T11:35:57Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "①何事：inbox 同日批量涌入 8 件 `auto-otp` 自动令牌件（06:20–08:19），系系统自动化生成之边缘认证噪声。  \n②与 qgl 主线何干：量子账本 / go 主线锚定于链式状态机与共识实现，此类 OTP 自动件不触及状态转换、拍尾生债或联邦律法核心逻辑，属无关输入。  \n③应动何件：整体归仓至 `archive/inbox/sysnoise/auto-otp/20260907/`，并在收信前端增设 `auto-otp-*` 自动分拣规则，永蔽于主线待办栈外。  \n④生债：机读噪声未设机滤，徒耗单会话工位认知带宽——债曰：「非共识不入栈，非人审不点灯。」"
+}
