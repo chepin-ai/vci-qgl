@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T06:14:08Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "**件一：sendcode-qgl-revival-01.json**\n① 断代复活启动码JSON，疑似重链初锚之密钥/配置根。② 系量子账本go实现重新bootstrap之前提，直关主线锚定。③ 落仓 `qgl/boot/anchor/sendcode-revival-01.json`，加只读锁，须先与旧纪元账本哈希交叉验证，方可载入。④ 生债：盲启债——未验即载，若致分岔，此身永为尾生之质。\n\n**件二：si2-revival-qgl-01.md**\n① si2子系统复活方案书，兼联邦律法接口修葺记。② 主线外延，关乎量子账本与外域联邦律法之桥接合规，辅线而系全局。③ 落仓 `qgl/docs/revival/si2-01.md`，待主线锚稳后迁入 `/spec`。④ 生债：纸锚债——案上revived，案下无器，限期内须出可编译之原型，否则虚文入典，永欠尾生。"
+}
