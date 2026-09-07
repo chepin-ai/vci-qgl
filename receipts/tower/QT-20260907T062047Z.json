@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T06:20:47Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① auto-otp-…json：自动 otp 凭据日志。乃无人驿断代复活后身份验真之运维血脉，关涉接入安全。应动：落 `sec/otp/` 时令归档，过期即焚。生债：凭令有期，逾期未销则成安患之债。\n\n② sendcode-qgl-revival-01.json：代码投递件。系 qgl 主线 go 实现之直接素材，为续锚砖石。应动：落 `code/revival/` 候审后并主干。生债：未经分片测试即纳，生技术尾债。\n\n③ si2-revival-qgl-01.md：si2 子系统复兴文档。属量子账本架构重启之设计纪要。应动：落 `docs/si2/` 与实码对锁。生债：文实若脱节，终成僵尸文档债。"
+}
