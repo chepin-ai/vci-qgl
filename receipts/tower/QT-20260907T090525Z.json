@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T09:05:25Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "八件并判。  \n①何事：`auto-otp` 系统令牌生成日志八条，时序 06:20–08:19，各附独立哈希句柄，属节点身份心跳。  \n②与 qgl 主线何干：为量子账本/go 网络层准入凭证，非共识本体，然系加密信道与节点确权之基，账本安全之所系。  \n③应动何件：并案落仓 `/qgl/inbox/otp/batch-20260907.auto`，由安全子模块验签；正常的归 `/ledger/audit/auth/`，异常的入 `/quarantine/otp/`。  \n④生债：仅收 ref 未解内文，欠「令牌明文交叉验证债」一条，须待持钥工位补验销账。"
+}
