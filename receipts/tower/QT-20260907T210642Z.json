@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T21:06:42Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "八件并批判词纪要：\n\n①何事：auto-otp 断代残档八枚（0602–0819），乃无人驿沉睡期间机械触发之令牌/流水线日志，无业务上下文，属噪声溢出。  \n②与 qgl 主线何干：无干。主线锚定于量子账本之 Go 实现与共识层，此系外围安全或 CI 余波，不入账本科目、不触核心链。  \n③应动何件：八件合批移仓 `/archive/inbox/auto-otp/sweep/20260907/`，挂冰棺（冷存），设 TTL=7；逾期未领，执行 `/dev/null`，不得复淤 inbox 主道。  \n④生债一条：断代失管，致 OTP 残件淤塞驿路。今拍尾生债曰——凡 auto-otp 类到件，收件即标 TTL、即时归仓，永不得占主线信道。"
+}
