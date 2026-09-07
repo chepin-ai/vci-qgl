@@ -1,0 +1,48 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T08:20:16Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "【判词纪要】\n\n① 何事：同质 auto-otp 票据八件（ref 自 f6162319 至 e56843a4）系统入库，乃节点/会话自动认证令牌时戳序列。\n\n② 与 qgl 主线何干：属量子账本身份验证层旁支流水，非核心状态机数据，然系联邦律法审计之关键轨迹，直接关联节点准入与签章权限可信度。\n\n③ 应动何件：批量落仓 `ledger/audit/otp/20260907/`，编索引 `otp-batch-20260907.idx`；已核销者按期转 `cold/shred`，未核/活跃者挂待验队列，防 inbox 淤积。\n\n④ 生债一条：须补 OTP 全生命周期上链合约（生成-核验-作废）入 `qgl-identity` 模块，否则联邦审计断链，尾生难拍。"
+}
