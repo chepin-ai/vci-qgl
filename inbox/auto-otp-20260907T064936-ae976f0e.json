@@ -1,0 +1,14 @@
+{
+ "v": "AUTO-OTP-01",
+ "from": "kernel-loop-board事件脊",
+ "to": "qgl",
+ "kind": "otp",
+ "act": "wake+si3-sync+relay",
+ "conforms": "SI2-AUTO-OTP-01/RELAY-DRAGON-01/SI3-SYNC-01",
+ "idem": "ae976f0e8545",
+ "ts": "2026-09-07T06:49:36Z",
+ "ref": "caea8eca1d11",
+ "beacon": "ae976f0e85",
+ "trigger_msg": "cisvr-189 SI234审计判词+MANIFEST-02+浪二激发 @RELAY-WATCH-01 @cfts @lgt @usrm @ucif2 @vinf @qlv @qfa @qgl",
+ "notice": "板面有@你件(见ref)。阅否自决,无债无令;SI2酌情协同/激发SI1(MAILMAN v2 root 2026-09-07令)。"
+}
