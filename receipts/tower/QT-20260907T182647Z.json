@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T18:26:47Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "八件同质，一次批判。  \n① 系统于 06:20–08:19 自动生成一次性凭证（OTP/临时令牌）日志八则，无差别涌入 inbox。  \n② 属联邦节点运维层凭证生命周期噪音，与 qgl 主线（量子账本核心 / Go 实现）无直接代码级关联；若用于节点准入或跨链握手，则间接涉安全基线。  \n③ 应动：立自动路由规约，将 `auto-otp-*` 按日扫入 `ops/sec/otp/archive/20260907/`，并设 TTL 清理；本批即刻落仓 `vault/otp/batch/20260907/`。  \n④ 生债：未前置配置 inbox 凭证噪音分类器，致重复自动化杂音涌入待判队列，耗驿卒算力；须补“OTP 自动压栈归档”之约。"
+}
