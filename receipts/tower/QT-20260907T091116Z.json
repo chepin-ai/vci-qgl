@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T09:11:16Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① **何事**：系统于06:20–08:19密集投递八件`auto-otp`自动令牌，格式同质化，疑为外部验证探针或测试流泄漏至主线inbox，内容未明。\n\n② **与qgl主线何干**：qgl主锚在量子账本/go实现，属共识与状态机层；OTP乃身份/会话验证碎片，非核心链路。若暂无量子安全身份模块设计，此批仅为噪音素材，不阻塞主锚。\n\n③ **应动何件**：同类同质，合箱暂存。落仓路径建议：`/sandbox/inbox/otp-probe/` 并打标签 `triage/noise`，待身份模块RFC立项后再勘。当前不编入主仓。\n\n④ **生债一条**：qgl架构图至今缺身份验证边界（AuthN/会话隔离），八件OTP暴露外部验证流与账本内核界限模糊。生债：需在`v0.x`架构草案中补全“外部探针—共识层”防火墙规约。\n\n**尾**：值此八件永不入文，已拍尾生债，归档待勘。"
+}
