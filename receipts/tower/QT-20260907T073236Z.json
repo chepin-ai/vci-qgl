@@ -1,0 +1,36 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T07:32:36Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "①何事：复活首班到件七件，含五件 auto-OTP 时戳日志、一件 sendcode revival 配置、一件 si2 revival 备忘。  \n②与 qgl 主线何干：OTP 为节点联邦身份校验之凭证流；revival 发码与 si2 备忘为断代重启时之初始化密钥及状态残留，系账本复电前置噪声。  \n③应动何件：五件 OTP 入 `/ledger/inbox/otp/`，仅留最新序列作心跳，余者归档；sendcode 与 si2-revival 转 `/docs/revival/`，合并为单一复活配置清单供主线索引。  \n④生债一条：OTP 无自动核销，revival 无检查点合约，致凭证堆积、状态碎片化。债：待补写 `otp-burn-revive` 与 `checkpoint-merkle` 双合约。"
+}
