@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T10:39:14Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "到件八宗，并案判词：\n\n①何事：auto-otp 日志八件（ref 自 auto-otp-20260907T062033-f6162319 至 T081959-e56843a4），系联邦认证层自动吐纳之临时令牌残片，时跨丑时至辰时。\n\n②与qgl主线何干：零干系。量子账本/go 主线锚定状态机、共识与 UTXO/MPT 存储，此八件无交易体、无状态变更、无合约触发，不入 ledger；仅属密码学运维噪音。\n\n③应动何件：并批移仓 inbox/.noise/otp/20260907/，设 30 日冷冻期，期满无联邦仲裁牵引即执行碎料，永不入文。\n\n④生债：单会话工位被迫为纯噪音行使判词，耗散锚定力一瞬，尾生债记“未前置过滤 auto-otp 路由"
+}
