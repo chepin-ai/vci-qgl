@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T16:07:08Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① 何事：inbox 连入 8 件 auto-otp 残件，系系统自动吐出的一次性验证码/令牌壳，无人签收，属瞬时噪声。\n\n② 与 qgl 主线何干：OTP 为联邦身份层的可燃耗材，qgl 主线只落共识状态与合约码，不落瞬时凭证；噪声入仓将污染 Merkle 索引、徒增存储熵。\n\n③ 应动何件：一概不入主仓。统归 `var/scrap/otp/202609/` 冰柜，设 7 日 TTL 自焚；常态下直接旁路 `/dev/null`，inbox 只留人工复核异常件。\n\n④ 生债一条：inbox 缺 auto-otp 自动旁路与碎纸规则，致分拣带宽空耗。尾生债：须立 `inbox-filter` 守护，凡 `auto-otp-*` 直达冰柜或焚化炉，不得再犯。"
+}
