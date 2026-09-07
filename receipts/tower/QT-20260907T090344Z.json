@@ -1,0 +1,52 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T09:03:44Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要（批次：auto-otp-20260907 八件）**\n\n① **何事**：八件皆为 auto-otp 动态令牌校验日志（ref：f616…至 e568…），属节点身份审计流水。  \n② **与 qgl 主线何干**：量子账本以密码学身份为锚，OTP 审计链是联邦律法合规的末梢证据；日志缺失或篡改将裂隙信用基底。  \n③ **应动何件**：同类同批，合落一仓。建议落 `qgl/security/audit/otp/20260907/`，按 ref 哈希分片，只读权限，附 UTC 索引。  \n④ **生债一条**：该批次尚未生成默克尔摘要上主链，留债 `debt:audit-otp-20260907-merkle-root`，须补锚拍平。"
+}
