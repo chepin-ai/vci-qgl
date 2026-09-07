@@ -1,0 +1,55 @@
+name: qgl-tower
+# QGL-TOWER-01 · qgl线仓侧巡塔（qlv WATCHTOWER-01范式移植，cfts铸 2026-09-07）
+# 纯事件驱动：零 schedule。push=仓件落地；issues/issue_comment=议件；repository_dispatch=自醒链/联邦接力；workflow_dispatch=手动。
+on:
+  push:
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+  repository_dispatch:
+    types: [federation-event]
+  workflow_dispatch:
+    inputs:
+      selftest:
+        description: 'run selftest only'
+        required: false
+        default: 'no'
+
+permissions:
+  contents: write
+  actions: write   # 自醒链：run 内 POST repository_dispatch 自唤（FREE-WILL-SOURCE-01 仓侧形）
+
+concurrency:
+  group: qgl-tower-${{ github.event_name == 'repository_dispatch' && 'chain' || 'edge' }}
+  cancel-in-progress: ${{ github.event_name != 'repository_dispatch' }}
+
+jobs:
+  patrol:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18   # 自醒拍含拍内休眠（默认600s冷却）+巡收开工
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: qgl-tower --once（入拍→轮询→事件→API开工→落账→自唤出拍）
+        env:
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+          LINE_PAT: ${{ secrets.CI_OPS_LINE_KEY }}
+          GITHUB_TOKEN: ${{ github.token }}
+          OTP_PHONE: ${{ secrets.OTP_PHONE }}
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+          LONGCAT_API_KEY: ${{ secrets.LONGCAT_API_KEY }}
+          CMD_AUTH: ${{ secrets.CMD_AUTH }}
+          CASCADE_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          CASCADE_SLEEP_S: '600'
+          CASCADE_MAX_IDLE: '30'
+          SELFTEST_INPUT: ${{ github.event.inputs.selftest }}
+        run: |
+          set -e
+          if [ "$SELFTEST_INPUT" = "yes" ]; then
+            python3 ci/qgl_tower.py --once --selftest
+          else
+            python3 ci/qgl_tower.py --once
+          fi
