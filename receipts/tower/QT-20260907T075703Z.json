@@ -1,0 +1,44 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T07:57:03Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "到件七宗：六件 auto-otp 为系统自动验证码日志，属环境噪声；一件 sendcode-qgl-revival-01 为 qgl 复活首码包。\n\n与 qgl 主线干系：OTP 群件与量子账本/go 实现无关，不耗主线算力；revival 件直紧扣断代复活第一使命，内含主链锚点或启动配置，必须即刻拆验。\n\n落仓路径：六件 OTP 并批归入 /archive/noise/otp/ 冷仓，设自动淘汰；sendcode-qgl-revival-01 入 /inbox/qgl-core/revival/ 热仓，优先校验、拆包、提锚。\n\n生债：断代既久，复机首码迟至，校验链路生疏，致入库延宕，记作“复机生疏债”。"
+}
