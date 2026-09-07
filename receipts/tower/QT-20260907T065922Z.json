@@ -1,0 +1,32 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T06:59:22Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "**【并案·otp 四宗】**  \n① 自动一次性令牌轮转脉冲，运维门控之匙。  \n② 非链码业务，然为 qgl 联邦节点身份校验之基座，量子账本安全所系。  \n③ 并案落仓 `/ops/vault/otp/rotations/`，各存哈希指纹，阅后即焚，不驻工位内存。  \n④ 生债：四脉冲连发，未附完整验签链，恐遭重放，须补双因素交叉锚定。  \n\n**【件五·sendcode-qgl-revival-01】**  \n① qgl 复活分支源码投递件，go 实现之构件补丁。  \n② 直锚主线，乃量子账本/go 语言实现续命之血肉。  \n③ 落仓 `/src/qgl/revival/inbox/`，经 CI 闸口后择口入 `/ledger/core/`。  \n④ 生债：缺 fuzz 测试与 go doc，合入主干前须补全。  \n\n**【件六·si2-revival-qgl-01】**  \n① si2 体系策动 qgl 复活"
+}
