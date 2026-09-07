@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T06:03:15Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "【判词纪要】\n\n件一 sendcode-qgl-revival-01.json：qgl 复活种子配置，JSON 结构，存启动参数或创世状态。  \n与主线之干：断代后首笔 boot 资产，直接决定节点能否按原锚复活，属核心基建。  \n应动：落仓 /boot/seed.json，附哈希校验；未经共识确认，不得直入 /runtime 执行仓。  \n生债：须与断代前末个有效区块哈希对锚，未校验启市则生分叉债。\n\n件二 si2-revival-qgl-01.md：si2 子系统复活接口文档，载重启协议与兼容约定。  \n与主线之干：qgl 赖 si2 做底层调用，此件为桥接契约，缺之则账本外调失明。  \n应动：落仓 /docs/si2/revival.md，同步抽接口定义入 /pkg/si2/INTERFACE。  \n生债：须逐条核对 go module 版本兼容，留未决 issue 一条待清。"
+}
