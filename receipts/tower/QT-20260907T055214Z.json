@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T05:52:14Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "**件①** `sendcode-qgl-revival-01.json`  \n① sendcode 复活交付，JSON 载初始序列或链上配置。② 乃主线锚之实体，关涉 go-ledger 重铸与创世分发，不可旁落。③ 落仓 `qgl-core/revival/inbox/`，先验签名校哈希，再并入主干开发分支。④ 债：缺默克尔源证明，须补全链上溯源路径。\n\n**件②** `si2-revival-qgl-01.md`  \n① si2 子系统复活文檔，Markdown 记其状态与协议规约。② 为辅序/次节点之存亡凭据，系主网共识完整性，非旁支。③ 落仓 `qgl-spec/si2/revival/`，加注联邦版本戳，同步治理索引。④ 债：无联邦时戳与写者环签，须补锚定确权。"
+}
