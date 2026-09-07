@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T14:17:02Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "判词纪要（八件并案）\n\n① 何事：inbox 连收 auto-otp 到件八宗（ref=f6162319…至 e56843a4），时戳 0620–0820，均为系统自动生成之单次凭证碎片。  \n② 与 qgl 主线何干：不涉账本状态机与共识代码，然属联邦律法「凭证熵不可积于 inbox」之戒；若滞留，必污主线锚定环境，须清。  \n③ 应动何件：并批落仓 `qgl/inbox/sweep/otp/20260907/`，各以其 ref 为键存原片；同日移入 `cold/audit/otp/`，仅留 Merkle 指纹上链备审。  \n④ 生债一条：八件连发而无自动归集器，显 inbox 管道缺筛。尾生债记「须制 inbox sweeper 规则：遇 auto-otp 到件即触冷仓流，免人工逐判」。值永不入文。"
+}
