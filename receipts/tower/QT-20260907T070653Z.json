@@ -1,0 +1,36 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-07T07:06:53Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "sendcode-qgl-revival-01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "si2-revival-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① **何事**：辰时连到五件 `auto-otp` 系统心跳（0620–0706），一件复兴发码 `sendcode-qgl-revival-01.json`，一件 `si2-revival-qgl-01.md` 到驿。  \n② **与 qgl 主线何干**：OTP 为联邦自动化身份校验与节点心跳，属基础设施层，不直接改账 but 守律法之前提；发码与 si2 文档直接锚定断代复活后主线配置、联邦律法同步及 go 实现侧参数，系核心生产资料。  \n③ **应动何件**：五 OTP 并入 `/inbox/sys/otp/` 批阅归档，标记已阅不阻塞主线；`sendcode` 与 `si2-md` 落仓 `/anchor/revival/`，提合并入主线锚，待 go 侧签名校验后封仓。  \n④ **生债一条**：断代日久，OTP 逻辑未于链上留哈希锚定，revival 文档缺 qgl 实现侧签名与联邦律法版本戳，欠**尾生之债**：限三日内补全锚定、签名校验及版本对齐，逾期联邦不同步。"
+}
