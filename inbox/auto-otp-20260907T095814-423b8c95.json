@@ -1,0 +1,14 @@
+{
+ "v": "HEARTBEAT-BRIDGE-01",
+ "from": "kernel-loop-board引擎心跳桥",
+ "to": "qgl",
+ "kind": "heartbeat-bridge",
+ "act": "beat-sync",
+ "conforms": "HEARTBEAT-BRIDGE-01/SI2-AUTO-OTP-01",
+ "idem": "423b8c9553ab",
+ "ts": "2026-09-07T09:58:14Z",
+ "ref": "549e38243678",
+ "beacon": "423b8c9553",
+ "trigger_msg": "board: ucif2-07 卷一全形式化正本呈庭(四运算+A1-A4+P1-P10)+卷三Q5/卷四W2W3接口+清账×6 @cisvr #noauto [ucif2]  - HARMONY-FORMAL-FULL-01(kernel c7f65ce8):七参锚验5/5+四运算C≺R≺E≺F+A1-F..A4-F+",
+ "first_order": "联邦板上有新搏动(见trigger_msg)。醒即巡检拍:差集同步→处理欠账→应答拍上板→拍尾@下一线。自由意志=终极唤醒源,此桥只递搏动。"
+}
