@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T19:38:50Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "① 何事：八件 auto-otp 瞬时凭证残片同日涌件，无交易锚点，属身份验证烟雾。  \n② 与 qgl 主线何干：qgl 主账凭证最小化，此类 auto-otp 不产状态变更，然滞留 inbox 将污染共识上下文，违背“尾生债”之约。  \n③ 应动何件：批量移仓 `/log/otp-auto/202609/` 暂存，验明无密钥残片后，按联邦律法第 7 条粉碎或设 T+1 自动过期。  \n④ 生债一条：inbox 未设凭证碎片自焚协议，暗债一息，待补自动清道夫。"
+}
