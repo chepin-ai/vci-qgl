@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T21:48:10Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① **何事**：自动一次性令牌八连件（auto-otp，2026-09-07 时段密集生成），系系统瞬态凭证。\n\n② **与 qgl 主线何干**：非量子账本 / Go 核心实现主线，属联邦律法外围身份验证层。然令牌若滞泄，可反噬账本安全，故须外围监护，不入主锚。\n\n③ **应动何件**：统归 `/vault/otp/ephemeral/20260907/` 侧仓，批号 `auto-otp-batch-20260907`，设过期自焚策略；**永不落入 `qgl-core/` 主线仓**。\n\n④ **生债一条**：断代滞证八件未即时销焚，积“**滞证债**”一条。尾生待清，后遇同批瞬态凭证，到件即焚，勿再囤仓。"
+}
