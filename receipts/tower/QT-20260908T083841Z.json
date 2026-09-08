@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T08:38:41Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要（并案：八件 auto-otp 残片）**\n\n八件到件时戳密接于 2026-09-07 06:20–08:19，系同一准入令牌自动轮转批次之审计毛边。\n\n① **何事**：自动一次性操作令牌（OTP）生成与失效日志残件，仅含散列尾码，无交易荷载正文。  \n② **与 qgl 主线何干**：不涉 go-ledger 核心编译路径，然属联邦节点身份网关伴生数据，触律法“凭据可溯、操作留痕”之合规底线，需冷备待查。  \n③ **应动何件**：并案落入 `/qgl/cold-audit/ephemeral/otp/20260907T06-08.batch`，标 `retention=30d`，期满碎码焚仓；禁止直入主链，免占量子态存储。  \n④ **生债**：八件皆缺节点指纹（`node_id`）与签发原由（`purpose_ctx`），审计索引悬空。生债一条：限本轮班内补录映射表，否则无法拍板销号。"
+}
