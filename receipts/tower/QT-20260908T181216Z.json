@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T18:12:16Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "到件八宗，同质同类，并案判词如下。\n\n① 何事：边缘服务自动OTP（一次性口令）残留日志八条，时戳 06:20–08:19，系机器鉴证余波，无人工意图。  \n② 与qgl主线何干：无干。非账本状态、非共识消息、非go实现核心代码，属接入层噪声，不触动量子账本联邦律法锚。  \n③ 应动何件：并案移仓 `/archive/noise/auto-otp/2026/09/07/`；补写 `.qgl/hooks/inbox-filter` 规则，凡 `ref=~^auto-otp-` 直落噪声仓，不触发主线钩子。  \n④ 生债一条：未预置 inbox 噪声滤波协议，致机器"
+}
