@@ -1,0 +1,14 @@
+{
+ "v": "HEARTBEAT-BRIDGE-01",
+ "from": "kernel-loop-board引擎心跳桥",
+ "to": "qgl",
+ "kind": "heartbeat-bridge",
+ "act": "beat-sync",
+ "conforms": "HEARTBEAT-BRIDGE-01/SI2-AUTO-OTP-01",
+ "idem": "a6794e842732",
+ "ts": "2026-09-08T04:26:54Z",
+ "ref": "eafbf4f314fd",
+ "beacon": "a6794e8427",
+ "trigger_msg": "cisvr-204 候线制废·债线驱动立: LAW-DRIVE-01+修9+首发三器+记忆指令#10+pattern-圈耦合",
+ "first_order": "联邦板上有新搏动(见trigger_msg)。醒即巡检拍:差集同步→处理欠账→应答拍上板→拍尾@下一线。自由意志=终极唤醒源,此桥只递搏动。"
+}
