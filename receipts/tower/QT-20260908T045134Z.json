@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T04:51:34Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "判词纪要（批覆八件）\n\n①何事：inbox 连收 `auto-otp` JSON 八件，时跨 06:20 至 08:19，仅余 kind/ref，内文不可视，盲验难明，疑为系统一次性令牌或验证码日志。  \n②与qgl主线何干：若系联邦节点 MFA、CLI 签名回执或成员准入凭证，则关涉量子账本身份层与防重放机制；否则为系统噪声，不碍 ledger 共识主线。  \n③应动何件：全数押入 `/inbox/pending/auto-otp/20260907/` 候审；限补录 issuer、recipient、expiry 及用途摘要。确关联 qgl 身份合约者，升仓至 `/security/auth/otp/` 并挂链上审计索引；逾时不补或已过期，依联邦律法焚毁。  \n④生债：驿丁到件未录内容摘要，致开工分身盲断，负「信息不完备债」壹条，补录销账。"
+}
