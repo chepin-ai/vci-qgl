@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T13:25:08Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① **何事**：辰时至巳末，连收 `auto-otp` 系统件八件，皆为自动化一次性凭证碎片，时跨 06:20–08:19。\n\n② **与 qgl 主线何干**：属节点身份链外设末梢，非账本核心逻辑，然涉联邦准入与审计链路，散失则律法缺环。\n\n③ **应动何件**：并批归集，落冷仓 `…/inbox/auto-otp/20260907/`，编 `manifest` 索引；原件哈希脱敏，不入主记账通道。\n\n④ **生债一条**：驿体缺 `otp` 自动归仓合约，致八件滞箱待断。尾生债：限本工日内补写《auto-otp 自动冷冻落仓规约》并合入联邦律法附录。"
+}
