@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T12:21:41Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "① **何事**：inbox 批量到件 `auto-otp` 类 JSON 共八件，系系统自动生成的一次性验证令牌 / 登录验证码日志。\n\n② **与 qgl 主线何干**：若源自联邦节点身份准入或账本签名验证，则关涉律法身份核验；若为第三方服务 / 测试噪音，则与主线无干，仅作审计留痕。\n\n③ **应动何件**：统一落仓 `/audit/inbox/auto-otp/2026/09/07/`，按时序索引；若 ref 含节点准入标记，则转 `/federation/identity/otp/` 待联邦验签；其余冷备归档。\n\n④ **生债一条**：批量同类噪音未设自动分拣，占压单会话工位，延误主线锚定工时，此尾生债一记。"
+}
