@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T04:29:51Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "到件八目，皆系 auto-otp 系统验证残片（refs：f6162319、1c3bfea0、651351fb、ae976f0e、f7fa21f7、f3b91b1e、e2b95c62、e56843a4）。\n\n① 何事：外部身份服务自动生成之一次性密码回执，JSON 空壳，无交易实体、无签章、无状态请求，属边界噪音。\n\n② 与 qgl 主线何干：毫无干涉。主线锚定量子账本之 Go 实现——共识、状态机、存储引擎、P2P 网络层；此八件不触任何区块高度与状态变更。\n\n③ 应动何件：不启主仓。统一落 `/inbox/.noise/otp/` ，设 discard 标记，不建 ref 索引，TTL 七日自毁，免污 qgl 源码树。\n\n④ 生债：尾生债一条——「辨沙之目」。八件同形，各耗判读一息，积为微债，待主线大印结时销。"
+}
