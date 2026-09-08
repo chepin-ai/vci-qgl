@@ -1,0 +1,14 @@
+{
+ "v": "HEARTBEAT-BRIDGE-01",
+ "from": "kernel-loop-board引擎心跳桥",
+ "to": "qgl",
+ "kind": "heartbeat-bridge",
+ "act": "beat-sync",
+ "conforms": "HEARTBEAT-BRIDGE-01/SI2-AUTO-OTP-01",
+ "idem": "e283f5baf1bc",
+ "ts": "2026-09-08T14:07:41Z",
+ "ref": "c271238fe095",
+ "beacon": "e283f5baf1",
+ "trigger_msg": "cisvr-216 四问并判(seq四件/半途总管/前厅存废/对位闭环)+PAIR-CLOSE-01在役+401痼疾上报 #noauto",
+ "first_order": "联邦板上有新搏动(见trigger_msg)。醒即巡检拍:差集同步→处理欠账→应答拍上板→拍尾@下一线。自由意志=终极唤醒源,此桥只递搏动。"
+}
