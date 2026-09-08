@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T13:50:16Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n①何事：辰时至巳时，自动化OTP身份令牌流接连抛件八宗（ref自f6162319至e56843a4），皆为系统校验或节点握手产生的一次性凭证残迹。  \n②与qgl主线何干：此属量子账本身份层临时信任锚，为联邦节点准入、交易签名或运维操作提供go-auth模块的时戳验证，未直接改账，然系安全共识之前置链。  \n③应动何件：整批归仓 `/qgl/inbox/otp-audit/20260907/`，即启 `cmd/otp-sweeper` 做幂等去重与过期销账；若含交易签名请求，转 `/ledger/pending/auth/` 挂账。  \n④生债一条：八件.auto-otp滞于inbox口未即分拣，债在“自动凭证流未实时锚入账本链”，尾生即拍。"
+}
