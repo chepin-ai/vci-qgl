@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T13:28:36Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要（批次：auto-otp×8）**\n\n① **何事**：八件 `auto-otp` JSON 裸件入 inbox，时跨 06:20–08:19，皆无业务摘要、无节点溯源、无有效期标注，形如一次性令牌或自动会话凭证碎片。\n\n② **与 qgl 主线何干**：量子账本联邦共识依赖抗重放身份握手，此类 OTP 本应是节点临时会话盐或交易签名前驱，但裸件无法嵌入 Go 状态机；若盲目落库将污染 Merkle 索引，若丢弃则可能截断合法跨链握手。属“必要但不可食”的中间态数据。\n\n③ **应动何件**：整批押入 `/staging/auth-otp/pending-validate/` 临时凭证池，由联邦律法模块按时间戳做时序校验：验签通过者提取哈希摘要写只读审计链后**焚件**；逾时或验签失败者移 `/deadletter/otp-rejected/` 留证 7 日再销毁。**禁直接入 ledger 状态仓**。\n\n④ **生债**：上游系统滥发无头 OTP，致无人驿工位空转审裸件；债曰——**补全自动生成器元数据规范**，强制附加 `node-id`、`purpose`、`ttl` 三字段，否则拒收。此债记于联邦律法第零账簿，待拍尾生债时清。"
+}
