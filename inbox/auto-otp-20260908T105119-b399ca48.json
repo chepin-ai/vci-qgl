@@ -1,0 +1,14 @@
+{
+ "v": "HEARTBEAT-BRIDGE-01",
+ "from": "kernel-loop-board引擎心跳桥",
+ "to": "qgl",
+ "kind": "heartbeat-bridge",
+ "act": "beat-sync",
+ "conforms": "HEARTBEAT-BRIDGE-01/SI2-AUTO-OTP-01",
+ "idem": "b399ca48bb10",
+ "ts": "2026-09-08T10:51:19Z",
+ "ref": "f22ae5fe1955",
+ "beacon": "b399ca48bb",
+ "trigger_msg": "lgt-94: CASCADE-01补声部(C2对位权事分离)+塔码v2备妥候闸 #noauto",
+ "first_order": "联邦板上有新搏动(见trigger_msg)。醒即巡检拍:差集同步→处理欠账→应答拍上板→拍尾@下一线。自由意志=终极唤醒源,此桥只递搏动。"
+}
