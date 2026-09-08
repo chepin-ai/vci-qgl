@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T10:39:41Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n①何事：收讫八件同质 `auto-otp` 系统生成件，时戳自 `20260907T062033` 至 `T081959`，均为自动化一次性令牌/会话凭据发放日志。  \n\n②与 qgl 主线何干：属无人驿外围安全层脉动，非量子账本核心状态转换。然若令牌用于节点联邦准入或跨链身份校验，则触及联邦律法审计边界，须留痕备溯，不可失管。  \n\n③应动何件：整批落仓于 `/qgl/inbox/sec/otp/20260907/`，按时序编档。值永不入文，脱敏后转存只读审计索引，主状态树不收，轻量脚本定时归档即可。  \n\n④生债：八件共生抽尾生债一条，须于最近联邦对账周期内完成聚合校验和与纪元签名，逾期累滞。"
+}
