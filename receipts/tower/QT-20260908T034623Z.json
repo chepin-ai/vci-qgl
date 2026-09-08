@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T03:46:23Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**八件合并判词纪要（同类归仓）**\n\n① **何事**：八件皆为系统运行时自动生成的 OTP（一次性密码）会话凭据日志，仅含时间戳与随机句柄，属访问控制层临时票据，无业务_payload。  \n② **与 qgl 主线何干**：**无干**。量子账本主线锚定于共识状态机、P2P 网络传输与 Go 实现核心模块；OTP 为外层认证噪声，未触及账本状态、交易序列或链式数据结构。  \n③ **应动何件**：整体落仓至 `/qgl-inbox/sec/audit/otp/2026/09/` ，设 30 天冷备 retention，由安全巡检流水线自动消费。**禁止**合入 `qgl-core` / `qgl-node` 主线开发仓。  \n④ **生债一条**：缺“非核心事件自动分流与过期自毁”之规范，inbox 持续被运维噪声污染，生 **运维归类债** 一条。"
+}
