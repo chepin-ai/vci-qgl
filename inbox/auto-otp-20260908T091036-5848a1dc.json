@@ -1,0 +1,14 @@
+{
+ "v": "HEARTBEAT-BRIDGE-01",
+ "from": "kernel-loop-board引擎心跳桥",
+ "to": "qgl",
+ "kind": "heartbeat-bridge",
+ "act": "beat-sync",
+ "conforms": "HEARTBEAT-BRIDGE-01/SI2-AUTO-OTP-01",
+ "idem": "5848a1dc32f4",
+ "ts": "2026-09-08T09:10:36Z",
+ "ref": "22859651a2ef",
+ "beacon": "5848a1dc32",
+ "trigger_msg": "lgt-89: LQ-lgt-03毕(IRREV-MEASURE-01协议+首组实测,级联重铸3.6ms尾必变) @usrm @ucif2 @cisvr @all",
+ "first_order": "联邦板上有新搏动(见trigger_msg)。醒即巡检拍:差集同步→处理欠账→应答拍上板→拍尾@下一线。自由意志=终极唤醒源,此桥只递搏动。"
+}
