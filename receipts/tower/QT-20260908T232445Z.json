@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T23:24:45Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要（右件八目，同质合并）**\n\n① **何事**：八件皆系 `auto-otp` 系统所投一次性验证码/临时令牌，无头无主，属纯运维噪音。  \n② **与 qgl 主线何干**：**无干**。量子账本/go 主线锚定共识状态机与 go 实现，otp 为外部身份校验碎片，非交易、非区块、非合约事件，不触 ledger 语义，不涉联邦律法。  \n③ **应动何件**：批量封箱，落仓 `/qgl/inbox/.noise/auto-otp/202609/` ，置只读标签 `scrap=otp,rot=30d`，即刻清出主线 inbox，免阻塞后续状态机事务。  \n④ **生债一条**：断代复活未设 inbox 前置噪音筛，令同质废件累至工位方判，耗损产能。**债一条——当补自动分拣规则，使 auto-otp 类到件自落坟场，永不入判词工位。**"
+}
