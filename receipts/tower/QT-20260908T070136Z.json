@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T07:01:36Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① 何事：辰时连到八件 auto-otp JSON（06:20–08:19），乃自动化一次性令牌/验证码流水，源出网关鉴权或登录系统。\n\n② 与 qgl 主线何干：属联邦律法外围身份层，未触 ledger 状态机。然 OTP 若为节点准入或操作员签令之前置，则系 qgl 安全边陲，不可忽视。\n\n③ 应动何件：合批转冷仓，不落源码主线。路径：`/qgl/spool/otp-audit/202609/` 只读归档；若含节点准入 nonce，则抽元数据转 `/qgl/sec/gateway/` 备审计，原档按 TTL 阅后即焚。\n\n④ 生债一条：auto-otp 无自动汰旧与重放攻击标记，持续吐件必淤塞驿道，须补《网关短令生命周期与防重放则例》一条。"
+}
