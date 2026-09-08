@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T10:17:51Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① 何事：辰时六刻至巳时初（06:20–08:19），连收 `kind=inbox` 之 `auto-otp` JSON 八件，时序密凑，哈希各别，乃自动密令蜕皮之瞬息残影。  \n② 与 qgl 主线何干：非 ledger 本体，然系量子账本联邦节点之关防余烬、门钥碎屑，属“界外近卫”，与主线间接系连，不可轻掷。  \n③ 应动何件：同质并案，统落 `/qgl/inbox/otp-slag/pending/`。限守律分身一小时内揭封勘验：若属本联邦节点运维副产，去核存壳，转 `/cold/audit/`；若来路不明，则哈希存证后粉碎。未勘前不得近主线仓。  \n④ 生债一条：八片盲收，目债八分，并单为“未勘之债”。待源核勘毕，或销或转，不得悬空。"
+}
