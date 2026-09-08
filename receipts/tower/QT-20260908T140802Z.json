@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T14:08:02Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "到件八宗，auto-otp 日志残片，时跨 06:20–08:19，各带哈希指纹，乃系统自动发放一次性令牌/验证码之审计尾迹。\n\n与 qgl 主线何干：qgl 联邦赖密码学身份以定节点出入；此虽非 go 核心共识代码，然属“守联邦律法”之鉴权基线，可补节点时间戳与轻量身份索引。\n\n应动何件：八件并入 `/audit/auth/otp/20260907/`，合编 `auto-otp-20260907.manifest`；各件哈希、时戳摘要写入本地只增审计索引（或轻链尾），满三月迁 `/cold/audit/`。\n\n生债：令牌之发不记则不可信，今八件到而尚未编年入库，生尾生债一条，名曰“稽迟”。他日审计回溯若阙，须以完备 manifest 与上链摘要偿之。"
+}
