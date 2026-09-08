@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T19:17:08Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "判词纪要  \n① 何事：inbox 连到 auto-otp JSON 八件（06:20–08:19，散列尾号 f616…e568），文件名惟有时戳与随机码，无域无类，体例未明。  \n② 与 qgl 主线何干：qgl 锚定量子账本 Go 实现，若此八件为节点一次性凭证或共识临时令牌，则系联邦身份与签名校验之钥；若为 CI 残渣或误触发日志，则壅塞驿道，耗散锚定力。  \n③ 应动何件：一律押入 /inbox/quarantine/auto-otp/，批量校验 JSON schema。确为凭证者，落仓 /pkg/auth/otp/ 并补类型定义与单元测试；为废件者，碎纸 /archive/shred/。  \n④ 生债一条：未启封即决，盲判之债也。当立规：凡 auto-otp 到件，须前置域标签（如 node/ci/test），否则拒收。此规未立，债记本期。"
+}
