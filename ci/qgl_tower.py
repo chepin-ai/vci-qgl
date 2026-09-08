@@ -87,6 +87,22 @@ def commit_all(msg):
         time.sleep(4)
     print('[commit] push FAILED'); return False
 
+# BOARD-VOICE-01: push verdict to ci-inbox board
+def board_voice(verdict_memo, parent_ts):
+    try:
+        import subprocess
+        hub = 'chepin-ai/ci-inbox'
+        title = f'qgl-verdict-{{parent_ts}}.md'
+        body = f'\n# qgl 引擎裁决 | {{parent_ts}}\n\n{{verdict_memo}}\n\n@qgl #noauto'
+        subprocess.run(['git','config','user.name','qgl-tower'], check=False)
+        subprocess.run(['git','config','user.email','qgl@chepin-ai.local'], check=False)
+        open(title,'w').write(body)
+        subprocess.run(['git','add',title], check=False)
+        subprocess.run(['git','commit','-m',f'qgl verdict {{parent_ts}} #noauto','--quiet'], check=False)
+        subprocess.run(['git','push','origin','main'], check=False)
+    except Exception:
+        pass
+
 def main():
     ts = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
     kimi = _env('KIMI_API_KEY'); pat = _env('LINE_PAT'); ghtok = _env('GITHUB_TOKEN')
@@ -126,6 +142,7 @@ def main():
         fp = 'receipts/tower/SELFTEST-%s.json' % ts.replace(':','').replace('-','')
         open(fp,'w').write(json.dumps(st, ensure_ascii=False, indent=1))
         print('[selftest]', json.dumps(st, ensure_ascii=False))
+    board_voice(cascade, ts)  # BOARD-VOICE-01
         commit_all('QGL-TOWER-01 selftest (names-only, values never printed) [skip ci]')
         return
 
