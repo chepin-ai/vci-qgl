@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T00:18:15Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "判词纪要（八件同质并案）：\n\n①何事：八件 auto-otp JSON（20260907 连续时段）批量入 inbox，系联邦节点自动握手或验证令牌残片。  \n②与 qgl 主线何干：属量子账本接入层安全审计痕迹，为节点身份校验、抗重放攻击之底层输入，与主线共识及联邦律法执行间接相关。  \n③应动何件：统落 `/inbox/otp/` 待验区；按时间戳序转 `/archive/otp/202609/` 冷仓；提取 ref-hash 建索引 `otp_audit.idx`，供联邦律法回溯。  \n④生债一条：未即时解析 OTP 载荷以识别潜在失效节点并熔断，生债一。"
+}
