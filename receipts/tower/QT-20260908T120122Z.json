@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T12:01:22Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "八件并案判词：\n\n①何事：auto-otp 自动令牌八连投（06:20–08:19），系联邦身份验证层自生产生，无人工持钥，无交易载荷。  \n②与 qgl 主线何干：qgl 锚定量子账本状态机与 Go 共识实现；此批 OTP 为 IDP 外围信令，未携 StateDelta、未触发 Merkle 变更，与主线无干。  \n③应动何件：并案落仓至 `/archive/federation/idp/otp/20260907/`，保留原 ref，设 ttl=7d 自动消磁；inbox 标记 resolved，即刻释放工位。  \n④生债：路由过滤债一条。凡 `auto-otp-*` 入件应直送归档，免占单会话工位，下次同类噪声不得再扰主线。"
+}
