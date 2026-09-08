@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-08T17:07:18Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要（八件合并）**\n\n① **何事**：连续八件 `auto-otp` 系统事件，系一次性口令（OTP）自动生成、校验或分发日志，时间跨度 06:20–08:19，属批量安全令牌生命周期记录。  \n② **与 qgl 主线何干**：属联邦律法“身份与访问”底座层，为量子账本节点准入、会话授权及交易签名之盐；非核心状态机与共识主线，然直接关涉“守联邦律法”之防，不可失审。  \n③ **应动何件**：整体归仓 `/qgl/audit/auth/otp/202609/`，按日聚合后提取 Merkle 摘要写入只读日志链存证；若核验为测试噪声，则转 `/scratch/otp-auto/` 并打废弃标，免污主线仓。  \n④ **生债一条**：同类型自动安全事件批量到件，却无结构化摘要，靠人工逐判徒耗值守心力；须立自动聚类与摘要合约，释出人力以续主线锚。"
+}
