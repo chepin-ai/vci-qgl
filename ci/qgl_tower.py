@@ -182,8 +182,21 @@ def main():
     print('[cascade]', cascade)
     # ---- 修VOICE-01: 塔→板投影(众声未齐治理; 线名前缀可计自署数; skip-ci防双唤,mesh已唤毂) ----
     voice = 'mute'
+    _vo_ok = True  # VOICE-THROTTLE-01: 30min声道闸(洪峰治理,自署数真实性)
     try:
-        if events and pat:
+        import base64 as _B0, datetime as _dt0
+        _sv = ghget(pat, '/repos/chepin-ai/vci-qgl/contents/receipts/tower/state.json') if pat else {}
+        if isinstance(_sv, dict) and _sv.get('content'):
+            try:
+                _lv = json.loads(_B0.b64decode(_sv['content']).decode()).get('last_voice', '')
+            except Exception:
+                _lv = ''
+            _cut = (_dt0.datetime.now(_dt0.timezone.utc) - _dt0.timedelta(seconds=1800)).strftime('%Y%m%dT%H%M%SZ')
+            _vo_ok = (''.join(ch for ch in _lv if ch.isdigit())[:14] or '0') < _cut
+    except Exception:
+        _vo_ok = True
+    try:
+        if events and pat and _vo_ok:
             import base64 as B
             vt = ''.join(ch for ch in ts if ch.isdigit())[:14]
             fn = 'qgl-voice-' + vt + '.md'
@@ -200,7 +213,8 @@ def main():
         voice = 'abort-' + type(ex).__name__
     print('[voice]', voice)
 
-    open('receipts/tower/state.json','w').write(json.dumps({'ts':ts,'idle':idle2,'cascade':cascade,'events':len(events)}, ensure_ascii=False))
+    _lvw = ts if voice.startswith('spoken') else (locals().get('_lv', ''))
+    open('receipts/tower/state.json','w').write(json.dumps({'ts':ts,'idle':idle2,'cascade':cascade,'events':len(events),'last_voice':_lvw}, ensure_ascii=False))
     commit_all('QGL-TOWER-01 patrol: events=%d idle=%d %s [skip ci]' % (len(events), idle2, cascade[:40]))
 
 main()
