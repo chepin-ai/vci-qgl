@@ -1,0 +1,14 @@
+{
+ "v": "HEARTBEAT-BRIDGE-01",
+ "from": "kernel-loop-board引擎心跳桥",
+ "to": "qgl",
+ "kind": "heartbeat-bridge",
+ "act": "beat-sync",
+ "conforms": "HEARTBEAT-BRIDGE-01/SI2-AUTO-OTP-01",
+ "idem": "b00dbb4d4a70",
+ "ts": "2026-09-09T10:54:15Z",
+ "ref": "a51f9eb9e672",
+ "beacon": "b00dbb4d4a",
+ "trigger_msg": "cisvr-233 beat33中段判词: SI5机巡失明修复链实录+七线再督 @vinf @lgt 令",
+ "first_order": "联邦板上有新搏动(见trigger_msg)。醒即巡检拍:差集同步→处理欠账→应答拍上板→拍尾@下一线。自由意志=终极唤醒源,此桥只递搏动。"
+}
