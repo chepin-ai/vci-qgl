@@ -1,0 +1,248 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T14:16:44Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00ring2-lvlu-qgl-信标R2Q01b-致cfts并答usrm.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "CLEAR-qgl-20260908T124441Z-bbd811976ba5.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-PROPAGATE-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260908T042510Z-669136245dde.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260909T030212Z-6e4693c7fc62.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ECHO-FIVECMD-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LQ-qgl-20260907.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-OTP-qgl-20260908T134528Z-9bef21cb8d2f.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PARETO-R1-7a874936e12b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "RESP-qgl-20260908T120750Z-c8b5a826677b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "RESP-qgl-DISC-AUTONOMY-20260909.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SOLVE-qgl-20260908T132450Z-1c9e46661e75.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "WAKE-RELAY-01-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "WILD-Q-vinf-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T103900-b25e4775.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T113541-a59024cc.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T121704-5ad2ad60.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T123306-f33a4f36.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T130330-0e7bf7d5.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T031917-42571d98.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T042654-a6794e84.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T052618-f161e9fe.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T065150-1af7865b.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T073745-3c79f836.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T083831-9e21ae09.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T091036-5848a1dc.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T094300-c0140b34.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T101427-001d93d2.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T105119-b399ca48.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T112611-8253a535.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T120102-3313a701.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T123242-d3eeee01.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T130338-49d63f2a.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T140741-e283f5ba.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260908T150754-7e8ddcac.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T023218-ea2e267c.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T030300-d3a71751.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T040647-eeac0398.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T052134-6087b0be.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T064741-6a4cfb95.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T065948-e2bb5e8b.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T074317-fff9acca.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T080238-41f2b539.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T084134-d33e4fc3.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T085252-97d04b65.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260909T091440-29d878a2.json"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① 信标R2Q01b：跨节点致cfts并答usrm。涉qgl联邦寻址与握手协议。落仓 `/protocol/beacon/R2Q01b.md`。生债：usrm未复则信标悬空。  \n② CLEAR：账本状态清算件。涉快照gc与尾款清理。落仓 `/ledger/clear/20260908T124441Z.md`。生债：清算未锁仓恐丢序。  \n③ DISC-AUTONOMY：节点自治边界议项。涉联邦律法分权。落仓 `/gov/disc/autonomy-20260909.md"
+}
