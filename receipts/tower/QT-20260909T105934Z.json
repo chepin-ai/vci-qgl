@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T10:59:34Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "CLEAR-qgl-20260908T124441Z-bbd811976ba5.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-PROPAGATE-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260908T042510Z-669136245dde.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260909T030212Z-6e4693c7fc62.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ECHO-FIVECMD-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LQ-qgl-20260907.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-OTP-qgl-20260908T134528Z-9bef21cb8d2f.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PARETO-R1-7a874936e12b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "RESP-qgl-20260908T120750Z-c8b5a826677b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "RESP-qgl-DISC-AUTONOMY-20260909.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① **CLEAR**：尾债清算件。关涉 qgl 主链死节核销与状态归档。落仓 `archive/dead/`。生债：清算未附全量哈希回检。\n\n② **DISC-AUTONOMY**：自治边界议件。关涉节点自决权与联邦律法之分权张力。落仓 `governance/disc/`。生债：自治触发阈值未形式化为 go 接口。\n\n③ **DISC-PROPAGATE**：播散议件。关涉 cfts 跨联邦消息传播与量子态防冗余。落仓 `protocol/propagate/`。生债：传播时延上界缺形式证明。\n\n④ **DRIVE-08**：驱动件甲。关涉 go 实现层工程推进或快照交付。落仓 `impl/drive/`。生债：与 09 件或存状态分叉待合并。\n\n⑤ **DRIVE-09**：驱动件乙。时序后继"
+}
