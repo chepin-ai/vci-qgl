@@ -5,7 +5,7 @@ on:
   workflow_dispatch: {}
 permissions:
   contents: write
-  # rationale: R1-CLASSIFY闸(hub植)——无CLASSIFY: L1标md入guard/quarantine;hub classify-sweep定期清空隔离区入私仓
+  # rationale: R1-CLASSIFY闸(hub植)——无CLASSIFY标且非联邦囊(FED-PASS-01: 前缀族/#noauto/idem)之md入guard/quarantine; 修beat25: 联邦囊免隔离(自治令石沉大海根因治理)
 jobs:
   classify:
     runs-on: ubuntu-latest
@@ -24,7 +24,9 @@ jobs:
               if p in ('README.md','INDEX.md','MANIFEST.md'): continue
               try: htxt=open(p,encoding='utf-8').read()[:2000]
               except Exception: continue
-              if 'CLASSIFY: L1' not in htxt:
+              base=os.path.basename(p)
+              FED=base.startswith(('PAIR-','DISC-','DRIVE-','SOLVE-','RESP-','CLEAR-','LQ-','ROOT-','MOB-','AUTONOMY-','OTP-','otp-','auto-otp','TOWER-','SI2-','PARETO-','wake-','sendcode','usrm-heartbeat','ucif2-heartbeat','usrm-voice')) or ('#noauto' in htxt) or ('idem' in htxt) or ('CLASSIFY: L2' in htxt)
+              if 'CLASSIFY: L1' not in htxt and not FED:
                   qp='guard/quarantine/'+p
                   os.makedirs(os.path.dirname(qp) or '.',exist_ok=True)
                   os.replace(p,qp); quar.append(p)
