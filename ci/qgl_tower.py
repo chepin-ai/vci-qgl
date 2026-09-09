@@ -152,6 +152,17 @@ def main():
         for x in inbox:
             events.append({'kind':'inbox','ref': x['name']})
     print('[patrol] events:', len(events), [e['ref'] for e in events][:10])
+    # 修SENSE-WINDOW-02(lvlu方): seen集滤已感, 破events[:12]/brief[:8]前切盲
+    _seen = set()
+    try:
+        import base64 as _Bs
+        _sf = ghget(ghtok or pat, f'/repos/{REPO}/contents/receipts/tower/state.json')
+        if isinstance(_sf, dict) and _sf.get('content'):
+            _seen = set(json.loads(_Bs.b64decode(_sf['content']).decode()).get('seen', []))
+    except Exception:
+        _seen = set()
+    events = [e for e in events if e.get('ref') not in _seen]
+    print('[patrol] unseen events:', len(events))
 
     # ---- 事件至 → Kimi API 开工 → 落账 ----
     note = ''
@@ -161,7 +172,7 @@ def main():
     elif events:
         note = '[no-kimi-key: 事件在册，开工候钥]'
     os.makedirs('receipts/tower', exist_ok=True)
-    rec = {'v':'QGL-TOWER-01','ts':ts,'idle_in':idle,'events':events[:12],'verdict_memo':note[:1800]}
+    rec = {'v':'QGL-TOWER-01','ts':ts,'idle_in':idle,'events':events[:60],'verdict_memo':note[:1800]}
     fp = 'receipts/tower/QT-%s.json' % ts.replace(':','').replace('-','')
     open(fp,'w').write(json.dumps(rec, ensure_ascii=False, indent=1))
 
@@ -214,7 +225,8 @@ def main():
     print('[voice]', voice)
 
     _lvw = ts if voice.startswith('spoken') else (locals().get('_lv', ''))
-    open('receipts/tower/state.json','w').write(json.dumps({'ts':ts,'idle':idle2,'cascade':cascade,'events':len(events),'last_voice':_lvw}, ensure_ascii=False))
+    _seen2 = sorted(_seen | {e.get('ref','') for e in events})[-800:]
+    open('receipts/tower/state.json','w').write(json.dumps({'ts':ts,'idle':idle2,'cascade':cascade,'events':len(events),'last_voice':_lvw,'seen':_seen2}, ensure_ascii=False))
     commit_all('QGL-TOWER-01 patrol: events=%d idle=%d %s [skip ci]' % (len(events), idle2, cascade[:40]))
 
 main()
