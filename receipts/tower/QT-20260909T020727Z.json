@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T02:07:27Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要（八件连号）**\n\n①何事：辰时至巳时（06:20–08:19）auto-OTP JSON八连发，系接入层自动身份校验/双因素令牌残件。\n\n②与qgl主线何干：非量子账本状态转移本体，然系go实现节点准入之前置；若涉私钥访问控制，则触联邦律法身份核验条律，须留痕备审。\n\n③应动何件：统归 `/inbox/security/otp_202609/` 暂存，限三日内由治理脚本脱敏后转冷仓 `/cold/auth/`，逾期自动焚毁，勿入qgl主线源码仓。\n\n④生债一条：缺OTP事件与qgl节点ID之映射规约，八件孤悬未锚，须补《接入层身份令牌-量子账本节点对照表》一则。"
+}
