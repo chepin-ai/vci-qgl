@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T03:03:15Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260909T030212Z-6e4693c7fc62.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① DRIVE-qgl-*.md：云盘文档到件，系 qgl 协议或架构文本，直接锚定主线；应落仓 `qgl/docs/spec`，提取可执行条目并同步迭代看板。生债：文档到件未即审，恐生版本漂移。\n\n② auto-otp-*.json（七件）：系统自动生成之 OTP 验证票据，属安全旁录，与账本核心无涉；应归拢至 `logs/security` 或就地焚毁，毋令杂芜入仓。生债：票据累日未清，或蔽密钥派生之审计迹。"
+}
