@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T05:45:12Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260909T030212Z-6e4693c7fc62.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PARETO-R1-7a874936e12b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  }
+ ],
+ "verdict_memo": "判词纪要：到件七件。一、DRIVE-qgl设计稿一件；二、PARETO-R1策略稿一件；三、auto-otp系统令牌日志五件。\n\nDRIVE直锚qgl主线架构，应即落/docs/spec为基线锚点；PARETO涉共识优化，可置/consensus待审；OTP五件乃运维噪声，与主线无显式纠缠，宜转/var冷存，留痕即焚，免淤inbox。\n\nqgl乃量子账本/go实现，安全令牌若涉链上签名则需补审计，今关联未明，故生债一条：须建立inbox自动分拣与冷存规则，断运维噪声之尾，保主线锚点清澈。"
+}
