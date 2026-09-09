@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T05:21:51Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260909T030212Z-6e4693c7fc62.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PARETO-R1-7a874936e12b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① DRIVE-qgl-20260909T030212Z：qgl驱动文档入箱，主线架构锚材；应落`/qgl/design/`仓并触发协议评审；债：未审先入则尾生。  \n② PARETO-R1-7a874936e12b：帕累托R1研究稿，主线资源优化辅材；应落`/qgl/research/pareto/`仓，标注与共识模块映射；债：未转可执行优化则尾生。  \n③ auto-otp六则（062033/062217/064442/064936/070638/074654）：自动OTP流水日志，交易/身份层辅材；应落`/qgl/log/otp/20260907/`仓，异常抽入`/qgl/audit/`；债：存而不审、异而不鸣则尾生。"
+}
