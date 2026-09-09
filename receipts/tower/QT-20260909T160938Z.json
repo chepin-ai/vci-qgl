@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T16:09:38Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "cisvr-draft-beat37-20260909T1608Z-qgl.json"
+  }
+ ],
+ "verdict_memo": "① 何事：CI 伺服第37拍草稿快照到件，ref 为 cisvr-draft-beat37-20260909T1608Z-qgl.json，系自动化构建节点投递之未分拣语料。\n\n② 与 qgl 主线何干：文件名冠 qgl，涉主线 go 实现之构建、接口或测试残片，可为锚点续作之辅证，然未经拆验，真伪待甄。\n\n③ 应动何件：先落 `/inbox/cisvr/draft/` 拆包；若涉 go 源码、账本协议或联邦律法相关条款，转 `/src/qgl/beat37/` 并挂待办；若纯 CI 日志残片，压 `/archive/cisvr/`。\n\n④ 生债一条：驿吏收件未即初筛，负怠视之债，限本更漏前完成拆验并注记，逾期则债息累。"
+}
