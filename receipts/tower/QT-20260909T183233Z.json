@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T18:32:33Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "vinf-20260909-03-selfexcite-wildq.md"
+  }
+ ],
+ "verdict_memo": "① 何事：board-mention 到件，ref 为 `vinf-20260909-03-selfexcite-wildq.md`，陈野生量子自激（wildq self-excite）之异状。\n\n② 与 qgl 主线何干：qgl 以 Go 筑量子账本之锚，赖量子态稳态以行记账与共识。野生自激若渗入共识层，必扰坍缩链，危及账本一致性与主线锚存续。\n\n③"
+}
