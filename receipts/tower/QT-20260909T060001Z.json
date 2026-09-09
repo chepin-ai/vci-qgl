@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T06:00:01Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "CLEAR-qgl-20260908T124441Z-bbd811976ba5.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-PROPAGATE-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260908T042510Z-669136245dde.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260909T030212Z-6e4693c7fc62.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LQ-qgl-20260907.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-OTP-qgl-20260908T134528Z-9bef21cb8d2f.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PARETO-R1-7a874936e12b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "RESP-qgl-20260908T120750Z-c8b5a826677b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SOLVE-qgl-20260908T132450Z-1c9e46661e75.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  }
+ ],
+ "verdict_memo": "**CLEAR-qgl-20260908T124441Z-bbd811976ba5.md**  \n①何事：量子账本结清/清理单，20260908时标。  \n②与qgl主线何干：属尾生债核销与状态清扫，关涉联邦记账终态确认，为链式清理提供go实现锚点。  \n③应动何件：落仓`/ledger/clearing/`，归年度结清索引，更新CLEAR状态机。  \n④生债一条：须补全该笔清理的merkle根校验片段，缺则下一节拍重提。  \n\n**DISC-PROPAGATE-01-cfts.md**  \n①何事：共识传播机制辨析稿，主题cfts（共识容错传播）。  \n②与qgl主线"
+}
