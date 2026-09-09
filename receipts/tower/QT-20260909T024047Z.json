@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T02:40:47Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T092514-339188d0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T095814-423b8c95.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要（统判 auto-otp 八件）**\n\n① **何事**：系统自动化产出之 OTP（一次性令牌/临时凭据）快照八件，时跨 06:20–08:19，乃节点认证、CI 流水线或测试夹具之瞬时密钥日志。  \n② **与 qgl 主线何干**：属量子账本运维安全末梢，非核心状态机数据，然涉联邦节点身份校验与密钥生命周期，不可无视。  \n③ **应动何件**：统落仓至 `/log/audit/otp/20260907/`，先按敏感等级脱敏（哈希化密钥残片），后分级压缩；纯测试夹具且已过期者，直接归入冷备或按策略粉碎。  \n④ **生债一条**：今欠 OTP 全生命周期合约债。须于主线近线补全「生成-生效-失效-归档-销毁」闭环规约，禁幽灵凭证明文滞留 inbox。"
+}
