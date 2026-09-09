@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T09:58:10Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "CLEAR-qgl-20260908T124441Z-bbd811976ba5.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-AUTONOMY-20260909-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-PROPAGATE-01-cfts.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260908T042510Z-669136245dde.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260909T030212Z-6e4693c7fc62.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ECHO-FIVECMD-20260909-vinf.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LQ-qgl-20260907.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PAIR-OTP-qgl-20260908T134528Z-9bef21cb8d2f.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PARETO-R1-7a874936e12b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "RESP-qgl-20260908T120750Z-c8b5a826677b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "RESP-qgl-DISC-AUTONOMY-20260909.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ROOT-AUTONOMY-01-cfts.md"
+  }
+ ],
+ "verdict_memo": ""
+}
