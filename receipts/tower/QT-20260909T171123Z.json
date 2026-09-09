@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T17:11:23Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "00chase-自治令回执-qgl-lvlu-20260910T004600Z.md"
+  }
+ ],
+ "verdict_memo": "① 件为 qgl-lvlu 节点自治令回执，时戳 20260910T004600Z，标志该自治指令已闭环签收。  \n② 此回执是联邦律法在 lvlu 子域的落地凭证，为量子账本共识层提供治理锚点，属主线合规校验关键链路。  \n③ 应落仓于 `/qgl/ledger/governance/receipts/lvlu/`，原名入库；同步追加至 `qgl-main` 的 `governance.log`，并触发该节点状态哈希增量快照。  \n④ 生债：须补全该自治令执行前后的 Merkle diff 审计索引，保回执链可复现、可验真。"
+}
