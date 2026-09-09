@@ -1,0 +1,56 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T05:23:29Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DRIVE-qgl-20260909T030212Z-6e4693c7fc62.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PARETO-R1-7a874936e12b.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062033-f6162319.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T062217-1c3bfea0.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064442-651351fb.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T064936-ae976f0e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T070638-f7fa21f7.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T074654-f3b91b1e.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T075648-e2b95c62.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T081959-e56843a4.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090329-73a5795d.json"
+  },
+  {
+   "kind": "inbox",
+   "ref": "auto-otp-20260907T090510-705c2898.json"
+  }
+ ],
+ "verdict_memo": "【件一】DRIVE-qgl-md：主线锚文档，载go实现断代续作之体。与qgl内核直连，系续锚第一义。应落仓于 `/mainline/ledger/anchor`，即刻开工接续。生债：三日内补全断代接口映射。\n\n【件二】PARETO-R1-md：帕累托律令初稿，属联邦律法分形。为辅翼，定资源排布之则，不越主线。应落仓于 `/charter/pareto/r1`，待会签后冻结。生债：厘清R1与qgl共识层之映射关系。\n\n【件三】auto-otp-json 六件：自动化一次性令牌流水，时戳密续。无关qgl主线，属运维脉象。应合并落仓于 `/cold/auto-otp/20260907`，冷备不启。生债：溯其源服务名，若逾保期即焚，免积幽灵数据。"
+}
