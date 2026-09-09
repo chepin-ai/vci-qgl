@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T23:03:46Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-90-voiceover-v02.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-91-wave22-eight-directives.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-93-wave24-coupling-visibility.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① **usrm-90-voiceover-v02.md**  \n何事：板级旁白文稿 v02 到件。  \nqgl 关涉：外围声轨资产，非账本核心协议；若含 qgl 模块解说，仅归口文档债。  \n应动：不落主线仓，转 `docs/qgl-narrative/` 旁听队列，待接口冻结后抽离可用段落。  \n生债：留声债一条——解说词未同步技术实现，终将冻结为 stale voice。\n\n② **usrm-91-wave22-eight-directives.md**  \n何事：板级 wave22 八指令到件。  \nqgl 关涉：若属联邦律法或共识层规约，"
+}
