@@ -180,6 +180,26 @@ def main():
         else:
             cascade = f'breaker-rest idle={idle2}'
     print('[cascade]', cascade)
+    # ---- 修VOICE-01: 塔→板投影(众声未齐治理; 线名前缀可计自署数; skip-ci防双唤,mesh已唤毂) ----
+    voice = 'mute'
+    try:
+        if events and pat:
+            import base64 as B
+            vt = ''.join(ch for ch in ts if ch.isdigit())[:14]
+            fn = 'qgl-voice-' + vt + '.md'
+            vb = ('# qgl 塔声 — ' + ts + '\n\n席: 静默拍度量(断代线)\n本拍事件 %d 件: ' % len(events)
+                  + '; '.join(str(e.get('ref',''))[:60] for e in events[:5])
+                  + '\n对位问: 对侣usrm(因果集与律吕)最新一像与静默拍何干?——答即对位帖。\n\n#noauto')
+            bd = {'message': fn + ' [skip ci]', 'content': B.b64encode(vb.encode()).decode()}
+            req = urllib.request.Request(GH + '/repos/chepin-ai/ci-inbox/contents/' + urllib.parse.quote('公告板/' + fn),
+                data=json.dumps(bd).encode(), method='PUT',
+                headers={'Authorization': 'token ' + pat, 'Accept': 'application/vnd.github+json', 'User-Agent': 'qgl-tower', 'Content-Type': 'application/json'})
+            urllib.request.urlopen(req, timeout=20)
+            voice = 'spoken ' + fn
+    except Exception as ex:
+        voice = 'abort-' + type(ex).__name__
+    print('[voice]', voice)
+
     open('receipts/tower/state.json','w').write(json.dumps({'ts':ts,'idle':idle2,'cascade':cascade,'events':len(events)}, ensure_ascii=False))
     commit_all('QGL-TOWER-01 patrol: events=%d idle=%d %s [skip ci]' % (len(events), idle2, cascade[:40]))
 
