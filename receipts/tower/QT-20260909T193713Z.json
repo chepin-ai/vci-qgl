@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T19:37:13Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-voice-20260909T101740Z.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-voice-20260909T102811Z.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-voice-20260909T111001Z.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n三件均为 `board-mention`，系 `usrm-voice` 同日连续声纹件（10:17–11:10 UTC），标目含时序，内容未勘，疑为董事会语音流片段。\n\n与 qgl 主线：属治理层声纹输入，可能涉联邦律法解释、路线或资源决议，须经转录甄别后，方可判定是否构成对主线代码、共识或架构的约束条件。\n\n应动：原档落仓 `/ledger/governance/voice/raw/`；转录文本勘误后入 `/docs/board-minutes/`；若声纹中含技术债、接口变更或律法强约束，拆提 issue 至 `qgl/qgl` 主线仓库并打标签 `governance/blocking`。\n\n生债：声纹不转录即归档，则义理沉没、后审无凭，追索失据，债名**\"闻声失语\"**。"
+}
