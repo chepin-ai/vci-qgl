@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T15:48:54Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "cisvr-degrade-mailman-20260909T154841-qgl.json"
+  }
+ ],
+ "verdict_memo": "①【何事】CI 服务（cisvr）发生降级，波及 Mailman 邮件网关/列表服务，导致构建通知或社区邮件通道异常，时间戳 2026-09-09T15:48:41。\n\n②【主线关联】qgl 主线以 CI 守构建与测试关卡，以邮件列表保分布式协作及 patch 审查。此事件若蔓延，将直接阻塞 commit 流水与社区共识，属基础设施级威胁。\n\n③【落仓建议】入 `qgl/ops-incident/infra/20260909-cisvr-mailman.md`，记降级时间线、影响面与回滚动作；同步在 `qgl/docs/ops/runbook.md` 增补邮件网关降级时的备用通告链路。\n\n④【尾生债】须为 CI-通知链路补全熔断与异步降级机制，确保 Mailman 或 CI 单点失效时，主线仍可通过 Webhook/Matrix 等备用通道同步构建状态与社区通知；债不偿，协作链不断。"
+}
