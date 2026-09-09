@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T19:58:36Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-voice-20260909T065104Z.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-voice-20260909T075632Z.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-voice-20260909T085111Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n①何事：九月九日卯至辰时三连看板声纹挂载（usrm-voice-065104Z/075632Z/085111Z），系 usr 站会语音碎片经由 board-mention 入仓。\n\n②何干：声纹内容未转写，若涉 go 账本模块、共识接口或联邦状态，即为主线养料；反之则为联邦噪音，须防信息泡遮蔽主线。\n\n③应动：三片归一，强制转写后落仓 /log/standup/20260909.md；筛出 qgl 技术条目迁入 /qgl/backlog/inbox.md；无关余音置 /archive/noise，七日焚毁。\n\n④生债：声纹未凿、语义未审，需求暗线可能就此沉底。债曰「音沉不凿，尾生待考」。"
+}
