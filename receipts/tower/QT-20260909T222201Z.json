@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T22:22:01Z",
+ "idle_in": 13,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-98-wave29-verdict-pack.md"
+  }
+ ],
+ "verdict_memo": "①何事：看板提及 `usrm-98-wave29-verdict-pack.md`，系第29波次裁决包被引用，触发裁决结论入库或执行流。\n\n②与 qgl 主线何干：qgl 主线锚定量子账本/go 实现的最终状态。该裁决包属联邦律法（治理层）输出，其结论必须作为可验证事务锚入账本，否则治理状态缺乏最终性证明，主线断环。\n\n③应动何件：提取裁决包核心结论与哈希，写入 qgl 治理事务日志（`/ledger/gov/wave29/`）；在 go 实现中新增看板提及钩子，落仓 `/docs/verdicts/usrm-98-wave29.md` 及 `/internal/anchor/gov_tx.go`。\n\n④生债一条：生债——未实现看板事件→qgl 账本事务的自动锚定接口（Board-Anchor Adapter），待以 go 模块偿还。"
+}
