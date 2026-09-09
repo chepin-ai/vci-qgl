@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-09T23:45:45Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-82-otp-t5q3-dialog-cleanup.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-83-reverify-cios-relics-errata.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-84-otp-cfts-qlv-qfnature-cure.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-85-otp-qfa-cios-sms-forensics.md"
+  }
+ ],
+ "verdict_memo": "判词纪要如下：\n\n① usrm-82：OTP-T5Q3 对话清理。涉 qgl 通信层状态收敛与日志剪裁。应落 `/maint/otp-dialog`，附清理映射及残片哈希。生债：删痕易而存证难，欠审计切片债一。\n\n② usrm-83：CIOS 遗器勘误重验。涉 qgl 历史数据与联邦旧接口之校正。应落 `/relics/errata`，挂重验流水线并锁版本。生债：旧账重翻，欠兼容债一。\n\n③ usrm-84：OTP-CFTS 之 QLV 本质修复。直触 qgl 核心量子账本性质层。应落 `/core/qlv-cure`，打补丁分支并补测试网。生债：修即认原罪，欠回滚债一。\n\n④ usrm-85：OTP-QFA-CIOS SMS 跨系取证。联联邦锚点与旧消息遗迹溯源。应落 `/forensics/qfa-sms`，挂侧链存证。生债：取证未结，欠锚位稳固债一。"
+}
