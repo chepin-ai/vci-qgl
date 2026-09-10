@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T08:46:29Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-146.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-147.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-148.md"
+  }
+ ],
+ "verdict_memo": "【判词纪要·usrm-146/147/148 同批】\n\n① 何事：三件皆为 board-mention 到件，ref 依次为 usrm-146.md、usrm-147.md、usrm-148.md，然箱空文隐，未载实质议题，属盲袋空包。\n\n② 与 qgl 主线何干：qgl 主线锚定于量子账本之 Go 实现，需可编译之码、可验证之状态转换及联邦律法兼容之接口。此三件未涉共识算法、Merkle 根、P2P 协议或合约模块，无从锚定主线。\n\n③ 应动何件：三件一并退回补全。令发起人于各 ref 内补入：议题摘要、关联子系统（如 core/ledger、net/qtp、law/contract）、期望输出格式（ADR/PR/Issue）。补全后落仓 vault/board/pending/，编流水号入 QGL-B-{NNN}。\n\n④ 生债一条：因空包耗占线位审查资源，记发起人「信息完整债」三钱，补全并回执后销账。"
+}
