@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T05:04:36Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-20260827-48-perm-matrix-qfos-guide.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-20260827-49-r1-selfreport.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① 件一，qfos-guide 权限矩阵文档到站；件二，R1 节点自报告到站。  \n② 件一乃联邦律法之权柄图谱，掌节点准入、资源边界与验签规则，系 qgl 共识安全之锁钥。件二为节点 Telemetry，主状态同步与故障熔断，关涉账本活性与联邦自愈。  \n③ 件一落仓 `/spec/auth/perm-matrix.md`，并映射至 go 接口 `pkg/federation/perm/` 实现；件二落仓 `/pkg/node/r1/selfreport.md`，纳入 health-check 管线与共识调度。  \n④ 生债：权限矩阵尚未实现动态衰减的 go 接口；自报告未绑定账本最新状态根作校验锚。二债并录，限时补阙。"
+}
