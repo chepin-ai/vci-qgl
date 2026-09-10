@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T12:46:15Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-100-wave31-cron-abolition.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-101-wave33-w31.md"
+  }
+ ],
+ "verdict_memo": "**件一：usrm-100-wave31-cron-abolition.md**\n① wave31 定时器（cron）机制废除之议。② 量子账本以共识时序为律，外部 cron 引入非确定性时钟，废之方可守联邦节点自治之戒，固主线之防。③ 落 `docs/adrs/adr-w31-cron-abolition.md`，并改 `internal/scheduler` 为共识内事件驱动。④ 生债：须保遗留定时事务之幂等回放，莫令历史状态断尾。\n\n**件二：usrm-101-wave33-w31.md**\n① wave33 承接 wave31 遗留模块之交接。② 波次迭代不废旧约，乃主线状态兼容与接口演进之关捩，防账本分叉。③ 落 `docs/handoff/wave33-from-w31.md`，并设 `milestone/wave33` 追踪未竟项。④ 生债：旧接口 deprecation 周期须公示，不可负尾生之信，致联邦成员猝然失据。"
+}
