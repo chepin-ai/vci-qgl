@@ -1,0 +1,28 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T09:18:50Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-135-wave68-closure.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-136-wave69-closure.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-137-wave70-closure.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-138-wave71-closure.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-139-wave72-closure.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n①何事：五份看板 wave 结案（usrm-135~139，wave68~72）批量到件，系迭代收官纪要。\n\n②与 qgl 主线何干：若 closure 含 go 账本实现、密码学原语或共识接口之结项，即为主链工程资产；若纯文档/运营，则属辅线噪音。需辨其是否沉积可复用代码与契约。\n\n③应动何件：落仓 qgl-vault/log/wave-closure/，按 wave 分卷；提取未竟项与尾生债，转录 backlog。若含 go 增量，cherry-pick 至主线 /pkg 或 /internal；纯文档则入 /docs/archive。\n\n④生债一条：Debt：限 72h 内筛出 closure 中 defer/follow-up 之项，铸 wave68-72-legacy.toml 入 backlog，逾期断代债务滚入黑箱，尾生难偿。"
+}
