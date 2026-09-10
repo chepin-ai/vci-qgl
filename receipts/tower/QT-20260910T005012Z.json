@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T00:50:12Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-68-sescap-progress.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-70-wave3-parallel.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-71-pilot-eval.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n到件一：usrm-68-sescap-progress.md  \n① SESCAPE 安全会话与密钥托管进度同步。  \n② 系 qgl 节点通信安全及账本准入之基。  \n③ 落仓 `/sec/sescap/`，补威胁模型与边界用例。  \n④ 生债：形式化验证缺口一笔。  \n\n到件二：usrm-70-wave3-parallel.md  \n① 执行/共识层第三波并行化方案推进。  \n② 系 qgl 吞吐与状态机性能主线。  \n③ 落仓 `/core/parallel/wave3/`，锁竞态条件与资源上限。  \n④ 生债：并行正确性证明一笔。  \n\n到件三：usrm-71-pilot-eval.md  \n① 试运行评估与指标收口。  \n② 系 qgl 主网落地与反馈闭环主线。  \n③ 落仓 `/pilot/eval/`，绑降级策略与可观测性。  \n④ 生债：异常回滚熔断预案一笔。"
+}
