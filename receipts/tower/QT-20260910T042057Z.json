@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T04:20:57Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-20260827-54-otp-5lines-done.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-203-c15-c17-iter-01.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-206-cmdauth-audit-cascade.md"
+  }
+ ],
+ "verdict_memo": "① **usrm-20260827-54-otp-5lines-done**：双因素入口验签极简补丁杀青，乃节点联邦之门禁。与主线干系：量子账本首道身份闸，直接关系共识参与者准入。应动：落仓 `/identity/otp/v0.1.md`，标为网关插件，待挂接入管。生债：五行极简未内置时序盐，抗重放契约待补。\n\n② **usrm-203-c15-c17-iter-01**：核心协议 C15-C17 初轮迭代，属账本心脏模块。与主线干系：联邦律法的技术骨骼，影响状态机与分片共识。应动：落仓 `/spec/ch15-17/iter-01.md`，挂评审队列，冻结前需交叉签章。生债：缺形式化不变量附章，验证债未偿。\n\n③ **usrm-206-cmdauth-audit-cascade**：指令授权审计级联定稿，操作为治理留痕。与主线干系：尾生债的链上执行锚，确保命令可回溯、不可抵赖。应动：落仓 `/gov/authz/audit-cascade.md`，绑定权限树与事件日志。生债：级联深度与熔断阈值未量化，回滚边界待明。"
+}
