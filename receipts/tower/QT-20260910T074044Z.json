@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T07:40:44Z",
+ "idle_in": 3,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-167.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板 mention 事件，ref 为 usrm-167.md，应是用户手册或需求文档条目被看板标引，提示存在待同步之讨论。\n\n② 与 qgl 主线何干：若该文涉及用户接口、交易语义或节点操作，则直接切入量子账本/go 的 API 与状态机边界。看板浮出此件，主线须识别其是否引发账本合约或 P2P 协议变更，防需求悬空。\n\n③ 应动何件：拉取原文落仓 /doc/requirements/usrm-167.md；若含待实现接口，转译为用户故事入 /backlog/，并在看板回链 commit hash。若为噪声，则归 /archive/board-mention/ 结项。\n\n④ 生债一条：今未审原文，不知该 mention 为有效需求抑或噪声，此“未判先挂”即为债；限 24h 内完成审阅与技术影响判定，逾期排期失真，"
+}
