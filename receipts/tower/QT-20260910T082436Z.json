@@ -1,0 +1,28 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T08:24:36Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-152.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-153.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-154.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-156.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "JOINT-WINDBLIND-usrm-part-01.md"
+  }
+ ],
+ "verdict_memo": ""
+}
