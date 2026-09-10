@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T03:59:03Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-207-harmony-qset-01.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-208-lang2-three-acks.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-211-self-ignite-01.md"
+  }
+ ],
+ "verdict_memo": "① **usrm-207-harmony-qset-01.md**：Harmony "
+}
