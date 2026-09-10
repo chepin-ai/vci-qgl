@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T19:38:53Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "OTP-LGT-SI5-VOTE-DL004-01-lgt.md"
+  }
+ ],
+ "verdict_memo": "① 何事：OTP 模块 SI5 期代码审查投票件（DL004-01），审阅者投 lgt（looks good to me）通过票，随 inbox 到件。  \n② 与 qgl 主线何干：OTP 为量子账本 go 实现侧身份认证与通信安全基座，关乎联邦节点准入与会话密钥链路的完整性。  \n③ 应动何件：落仓 `/qgl/auth/otp/si5/vote/DL004-01-lgt.md`，并入 `OTP-SI5.manifest`；同步刷新节点安全基线文档与 go 模块接口签名索引。  \n④ 生债一条：lgt 票未附性能压测及重放攻击边界审计，尾生债：限期补全 OTP 高并发窗口漂移与重放防护测试报告并归档。"
+}
