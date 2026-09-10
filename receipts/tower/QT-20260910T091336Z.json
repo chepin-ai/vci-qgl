@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T09:13:36Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-141-wave74-closure.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-142-wave75-closure.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-143-wave76-closure.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-144.md"
+  }
+ ],
+ "verdict_memo": ""
+}
