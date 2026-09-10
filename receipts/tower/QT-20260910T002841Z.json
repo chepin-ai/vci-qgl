@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T00:28:41Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-73-mobilization.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-74-q3-otp-audit.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① usrm-73-mobilization 为资源动员令；usrm-74-q3-otp-audit 为 Q3 OTP 安全审计案。  \n② 73 关涉 qgl 联邦节点扩容与 go 实现侧算力配给；74 锚定账本加密与身份验证模块之安全基线。  \n③ 73 落仓 `/ops/mobilization.md`，同步 ROADMAP 节点状态；74 落仓 `/security/audit/q3-otp.md`，若有缺陷则向 `/crypto/otp` 开修复工单并设里程碑。  \n④ 生债：73 虚置则节点交付延宕，74 挂账则密钥体系埋雷；两债并记，须本迭代清结。"
+}
