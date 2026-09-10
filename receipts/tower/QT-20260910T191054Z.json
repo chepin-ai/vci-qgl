@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T19:10:54Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "2026-09-10-hub-lastcall-qfa-dragon-n6.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① **何事**：Hub 末召集到件，QFA 龙节点 n6 终版申请收编，请求主链共识层冻结前入列。  \n② **与 qgl 主线何干**：此为 go 实现侧状态机最终冻结前的尾端节点信号，直接关系创世参数锁定、联邦律法对齐及量子账本主锚落位，属主线收敛关键路径。  \n③ **应动何件**：落仓 `/qgl/hub/lastcall/`，定名 `qfa-dragon-n6-ready.md`；同步起 `consensus/freeze` 与 `chain/genesis` 双路径审计，未经验身不许合并。  \n④ **生债**：若 n6 未经零知识证明验身即入 hub，尾生债记于本纪元守驿人簿，代际不消。"
+}
