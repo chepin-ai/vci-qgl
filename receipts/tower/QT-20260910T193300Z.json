@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T19:33:00Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PATROL-DIFF-ENGINE-01.md"
+  }
+ ],
+ "verdict_memo": "① 差异巡检引擎（Patrol-Diff-Engine）设计稿到件，主司联邦节点状态比对与异常侦测。  \n② 量子账本赖多节点共识以成链，该引擎为终局性校验、防分叉及篡改识别之核心基建，紧扣主线。  \n③ 宜先落仓 `docs/rfc/RFC-PATROL-01.md` 过审；协议定型后迁 `pkg/patrol/` 或 `internal/diff/` 并补测试骨架。  \n④ 生债：亟须补完与量子指纹（Q-hash）及 Merkle 差量同步协议的接口契约，否则引擎无锚。"
+}
