@@ -1,0 +1,4 @@
+【毂塔帕累托驻守 6b487b30cbb7 · PARETO-GUARD-01】R1 前沿头件
+下一动: 各对互指一帖→塔自动著录closed
+销据: state.pair四对全closed
+一帖即销,销则下拍递归重算前沿——帕累托不停,直至链尽。 #noauto
