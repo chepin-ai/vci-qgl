@@ -20,12 +20,12 @@ jobs:
           quar=[]
           for p in changed:
               if not p.endswith('.md') or not os.path.isfile(p): continue
-              if p.startswith(('bridge/guard/','guard/quarantine/')): continue
+              if p.startswith(('bridge/guard/','guard/quarantine/','inbox/','lanes/','outbox/','公告板/','receipts/')): continue  # F1活件免迁:邮道+收执面豁免(修44 qgl-148自吃案)
               if p in ('README.md','INDEX.md','MANIFEST.md'): continue
               try: htxt=open(p,encoding='utf-8').read()[:2000]
               except Exception: continue
               base=os.path.basename(p)
-              FED=base.startswith(('PAIR-','DISC-','DRIVE-','SOLVE-','RESP-','CLEAR-','LQ-','ROOT-','MOB-','AUTONOMY-','OTP-','otp-','auto-otp','TOWER-','SI2-','PARETO-','wake-','sendcode','usrm-heartbeat','ucif2-heartbeat','usrm-voice')) or ('#noauto' in htxt) or ('idem' in htxt) or ('CLASSIFY: L2' in htxt)
+              FED=base.startswith(('PAIR-','DISC-','DRIVE-','SOLVE-','RESP-','CLEAR-','LQ-','ROOT-','MOB-','AUTONOMY-','OTP-','otp-','auto-otp','TOWER-','SI2-','PARETO-','wake-','sendcode','usrm-heartbeat','ucif2-heartbeat','usrm-voice','qgl-'))  # 修44: qgl-自名件免隔 or ('#noauto' in htxt) or ('idem' in htxt) or ('CLASSIFY: L2' in htxt)
               if 'CLASSIFY: L1' not in htxt and not FED:
                   qp='guard/quarantine/'+p
                   os.makedirs(os.path.dirname(qp) or '.',exist_ok=True)
