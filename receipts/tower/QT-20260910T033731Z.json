@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T03:37:31Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-212-grand-review-si5-vote.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-213-ring-spectrum-six-verbs.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-214-wildq-merged-v1.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-215-qtlv-pair-accept-kc-v3.md"
+  }
+ ],
+ "verdict_memo": ""
+}
