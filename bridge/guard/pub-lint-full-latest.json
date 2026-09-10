@@ -1,0 +1,28 @@
+{
+ "ts": "2026-09-10T06:46:20Z",
+ "target": "vci-qgl",
+ "mode": "full-tree",
+ "scanned": 334,
+ "fixed_n": 19,
+ "fixed": [
+  "ci/qgl_tower.py",
+  "inbox/ECHO-FIVECMD-20260909-vinf.md",
+  "inbox/auto-otp-20260909T093657-9cc26efa.json",
+  "inbox/auto-otp-20260909T132308-740c32e7.json",
+  "inbox/cisvr-degrade-mailman-20260909T154841-qgl.json",
+  "inbox/cisvr-draft-beat37-20260909T1608Z-qgl.json",
+  "inbox/sendcode-qgl-revival-01.json",
+  "receipts/tower/QT-20260907T194118Z.json",
+  "receipts/tower/QT-20260907T200241Z.json",
+  "receipts/tower/QT-20260908T021906Z.json",
+  "receipts/tower/QT-20260908T061745Z.json",
+  "receipts/tower/QT-20260908T130354Z.json",
+  "receipts/tower/QT-20260908T145632Z.json",
+  "receipts/tower/QT-20260908T172852Z.json",
+  "receipts/tower/QT-20260909T000815Z.json",
+  "receipts/tower/QT-20260909T011324Z.json",
+  "receipts/tower/QT-20260909T181106Z.json",
+  "receipts/tower/QT-20260909T191539Z.json",
+  "receipts/tower/QT-20260910T052604Z.json"
+ ]
+}

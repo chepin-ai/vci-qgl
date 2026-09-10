@@ -2,7 +2,7 @@
 # 纯事件驱动：本脚本无定时器语义；由外部唤起（push|issues|issue_comment|repository_dispatch|workflow_dispatch）
 # 链：轮询联邦面 → 事件至 → Kimi API 开工（判词纪要） → 落账回仓 → 有候件则自唤下一拍（repository_dispatch）
 # 三律防自激：拍内休眠冷却（自源唤起先眠后巡）/ 空转计数骑 payload 链传，连空 CASCADE_MAX_IDLE 拍熔断而眠 / 无候件不出拍
-# 钥：env KIMI_API_KEY / LINE_PAT(CI_OPS_LINE_KEY) / GITHUB_TOKEN。值永不入文、永不打印。
+# 钥：env KIMI_API_KEY / LINE_PAT(〈RED〉) / GITHUB_TOKEN。值永不入文、永不打印。
 import json, os, sys, time, hashlib, subprocess, urllib.request, urllib.error
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-qgl')
@@ -52,7 +52,7 @@ def dispatch(token, payload, etype='federation-event'):
     except Exception:
         return 0
 
-WORKER_SYS = """你是 qgl 线（quantum-go-ledger：量子账本/go）无人驿开工分身（单会话文本工位，无工具）。
+WORKER_SYS = """你是 qgl 线（QGL-VAULT：量子账本/go）无人驿开工分身（单会话文本工位，无工具）。
 断代复活后第一使命：续主线锚（量子账本/go 语言实现），守联邦律法，拍尾生债。值永不入文。
 对每件到件出判词纪要：①何事②与 qgl 主线何干③应动何件（落仓路径建议）④生债一条。中文，精炼，≤400字。"""
 
@@ -90,7 +90,7 @@ def commit_all(msg):
 def main():
     ts = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
     kimi = _env('KIMI_API_KEY'); pat = _env('LINE_PAT'); ghtok = _env('GITHUB_TOKEN')
-    names_present = {n: bool(_env(n)) for n in ('KIMI_API_KEY','LINE_PAT','GITHUB_TOKEN','OTP_PHONE','DEEPSEEK_API_KEY','LONGCAT_API_KEY','CMD_AUTH')}
+    names_present = {n: bool(_env(n)) for n in ('KIMI_API_KEY','LINE_PAT','GITHUB_TOKEN','〈RED〉','DEEPSEEK_API_KEY','LONGCAT_API_KEY','CMD_AUTH')}
     print('[env] names-only:', {k: ('present' if v else 'MISSING') for k,v in names_present.items()})
 
     # ---- 自醒链入拍：自源唤起先眠后巡（冷却在拍内，非定时器） ----

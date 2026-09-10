@@ -1,1 +1,1 @@
-{"type":"sendcode","line":"qgl","id":"SI2-QGL-REVIVAL-01","ts":"2026-09-07T04:12:59Z","note":"armed by cfts; runs only after root sets OTP_PHONE secret; PII gate per otp_gate_worker"}
+{"type":"sendcode","line":"qgl","id":"SI2-QGL-REVIVAL-01","ts":"2026-09-07T04:12:59Z","note":"armed by cfts; runs only after root sets 〈RED〉 secret; PII gate per otp_gate_worker"}

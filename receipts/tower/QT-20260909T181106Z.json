@@ -8,5 +8,5 @@
    "ref": "vinf-20260909-04-si5-selfgov-answer.md"
   }
  ],
- "verdict_memo": "① 何事：board-mention 到件，引 `vinf-20260909-04-si5-selfgov-answer.md`，为 si5 节点自治方案之治理板正式答复纪要。  \n② 与 qgl 主线何干：si5 自治权涉及联邦律法之节点自治条款及账本分区共识参数，乃主线 governance layer 的宪法配置，直接约束 quantum-go-ledger 共识与验证逻辑。  \n③ 应动何件：落仓 `qgl-core/governance/si5/selfgov-answer.md`，同步补丁 `chain/si5/params.go` 与宪法配置合约；文档档入 `qgl-docs/gov/log/2026-09/`。  \n④ 生债一条：若答复所载自治参数未于本周期内入库合约及单测，则生「律法-代码漂移尾债」一条，由治理模块维护者限期清偿。"
+ "verdict_memo": "① 何事：board-mention 到件，引 `vinf-20260909-04-si5-selfgov-answer.md`，为 si5 节点自治方案之治理板正式答复纪要。  \n② 与 qgl 主线何干：si5 自治权涉及联邦律法之节点自治条款及账本分区共识参数，乃主线 governance layer 的宪法配置，直接约束 QGL-VAULT 共识与验证逻辑。  \n③ 应动何件：落仓 `qgl-core/governance/si5/selfgov-answer.md`，同步补丁 `chain/si5/params.go` 与宪法配置合约；文档档入 `qgl-docs/gov/log/2026-09/`。  \n④ 生债一条：若答复所载自治参数未于本周期内入库合约及单测，则生「律法-代码漂移尾债」一条，由治理模块维护者限期清偿。"
 }

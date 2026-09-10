@@ -52,5 +52,5 @@
    "ref": "auto-otp-20260907T095814-423b8c95.json"
   }
  ],
- "verdict_memo": "① 八件皆为 auto-otp 自动化验证码流水，无代码、无事务、无协议内容，属系统噪声到件。  \n② 与 quantum-go-ledger 主线无关：不涉及账本状态机、共识层、Go 实现及联邦律法。  \n③ 应动：整体移入 `archive/inbox/noise/otp/` 冷仓，标记 `discarded:auto`，不生成待办、不入主线栈；若律法审计留痕，仅存元数据哈希。  \n④ 生债：今日滤噪虽省注意力，然他日 qgl 身份层（联邦 DID）若需集成 OTP 认证，须回溯校验此批样本之接口契约，故生债 `auth-otp-schema-review` 一条。"
+ "verdict_memo": "① 八件皆为 auto-otp 自动化验证码流水，无代码、无事务、无协议内容，属系统噪声到件。  \n② 与 QGL-VAULT 主线无关：不涉及账本状态机、共识层、Go 实现及联邦律法。  \n③ 应动：整体移入 `archive/inbox/noise/otp/` 冷仓，标记 `discarded:auto`，不生成待办、不入主线栈；若律法审计留痕，仅存元数据哈希。  \n④ 生债：今日滤噪虽省注意力，然他日 qgl 身份层（联邦 DID）若需集成 OTP 认证，须回溯校验此批样本之接口契约，故生债 `auth-otp-schema-review` 一条。"
 }

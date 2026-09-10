@@ -52,5 +52,5 @@
    "ref": "auto-otp-20260907T095814-423b8c95.json"
   }
  ],
- "verdict_memo": "八件统判。\n\n①何事：辰时起连收 `auto-otp` 自动令牌残片八件，乃瞬时密钥或测试握手之残骸，时跨两小时余。  \n②与 qgl 主线何干：属联邦节点外部认证旁路之噪音，未触 ledger 状态树、共识引擎及 go 核心实现，于 quantum-go-ledger 主线无干。  \n③应动何件：并落 `/inbox/.noise/otp-scrap/`，挂时序索引冻存；逾七日无主，化 `/dev/null`。严禁混入 `/src`、`/pkg/ledger` 等主线仓。  \n④生债一条：驿台辨伪除尘，耗锚一帧，记「尾生弃置债」一条。"
+ "verdict_memo": "八件统判。\n\n①何事：辰时起连收 `auto-otp` 自动令牌残片八件，乃瞬时密钥或测试握手之残骸，时跨两小时余。  \n②与 qgl 主线何干：属联邦节点外部认证旁路之噪音，未触 ledger 状态树、共识引擎及 go 核心实现，于 QGL-VAULT 主线无干。  \n③应动何件：并落 `/inbox/.noise/otp-scrap/`，挂时序索引冻存；逾七日无主，化 `/dev/null`。严禁混入 `/src`、`/pkg/ledger` 等主线仓。  \n④生债一条：驿台辨伪除尘，耗锚一帧，记「尾生弃置债」一条。"
 }
