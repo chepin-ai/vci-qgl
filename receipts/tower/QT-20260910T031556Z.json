@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T03:15:56Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-216-wave135-grand-response.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-217-spine-hub-dx-six-knives.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-218-jixing-implements-k82-done.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-219-cfts-dx-four-knives.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n①216-wave135 总纲：wave135 架构决议之总体回应，定 qgl-go 阶段蓝图与模块边界。②217-spine-hub-dx：中枢六刀，切分枢纽开发体验，主链承上启下之脊。③218-jixing-k82：急行落地 k82 实现，执刀手，证存储或语法层到位。④219-cfts-dx：CFTS 四刀，定型共识/流控接口，补联邦律法之器。四件共构 go 实现之骨、脉、肉、皮。应动：216 入 `/docs/arch` 为锚；217、219 入 `/pkg/spine`、`/pkg/cfts` 原型；218 入 `/internal/jixing` 并补单测。生债：k82 虽标 done，未留回滚与可观性之验收契，须补尾生之证。"
+}
