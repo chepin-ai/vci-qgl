@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T06:59:23Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-174.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及事件，ref=usrm-174.md，一宗用户层文档被板信号捕获，文牍初到，内核未明。  \n② 与 qgl 主线何干：usrm 系需求侧输入，或涉 CLI/API 契约、联邦律法接口；若其踏进共识层、状态机、go 实现边界，则为主线之锚，否则为外围扰动，须降噪。  \n③ 应动何件：暂落 `/qgl/vault/usrm/inbox/174.md`，贴「未勘」签；限三日内完成与 `qgl-core` 协议矩阵之对照评查，再迁 design 或 archive。  \n④ 生债：板悬一 ref，仓无确据，尾生之债已生，必以勘定结。"
+}
