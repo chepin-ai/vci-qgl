@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T08:02:45Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-161.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-162.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-163.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-165.md"
+  }
+ ],
+ "verdict_memo": "① **usrm-161**：board-mention 涉账本状态持久化接口。与 qgl 主线之干：定 go 实现存储层锚点。应动：落仓 `/design/storage/ledger-store.md`，固化状态树接口。生债：存储模型一日不锚，尾生之债一日不偿。\n\n② **usrm-162**：board-mention 涉节点共识消息格式。与 qgl 主线之干：系联邦节点 go 实现通信命脉。应动：落仓 `/p2p/consensus/msg-spec.md`，锁定版本与边界。生债：消息格式未定，债在共识，偿在互通。\n\n③ **usrm-163**：board-mention 涉抗量子签名算法选型。与 qgl 主线之干：关密码学根基与 go-crypto 适配。应动：落仓 `/crypto/pq-sig/selection.md`，标定算法实验状态。生债：算法未验而链已行，尾生抱柱，不敢轻释。\n\n④ **usrm-165**：board-mention 涉联邦律法合约约束。与 qgl 主线之干：链上治理规则即账本之法源。应动：落仓 `/gov/law/contract-boundary.md`，锁定律法调用接口。生债：律法不入链，联邦无主；此债不偿，算力空转。"
+}
