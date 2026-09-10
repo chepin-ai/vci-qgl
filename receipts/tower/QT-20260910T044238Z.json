@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T04:42:38Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "usrm-20260827-50-engine-share.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-20260827-51-field-scan.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "usrm-20260827-53-four-rulings.md"
+  }
+ ],
+ "verdict_memo": "**到件一：usrm-20260827-50-engine-share.md**\n① 引擎共享契约：跨节点/分片执行引擎的调度与状态隔离方案。② qgl 以量子态账本为核，共识引擎是心跳；共享边界不清，则分区共识无法落地，go 实现层直接卡死。③ 落仓 `/spec/engine/share.md` 先出接口契约（ABI 与序列化），再补 `/qgl-core/consensus/engine_share.go` 单测及跨片消息边界。④ 尾生债：引擎共享之量子态纠缠边界未划定，记“engine-share 权责纠缠债”。\n\n**到件二：usrm-20260827-51-field-scan.md**\n① 域扫描机制：状态场/数据域的全局遍历、索引与同步策略。② qgl 账本是高维状态场，scan 决定轻节点同步、证明生成与垃圾回收；无 scan 则主线无法跑通 go 存储层。③ 落仓 `/spec/state/scan.md` 先定义场键前缀与迭代器契约，后接 `/qgl-core/storage/field_scan.go` 及 Merkle 覆盖证明。④ 尾生债：场扫描未限定量子观测窗口，易触发全量坍缩，记“field-scan 无窗口债”。\n\n**到件三：usrm-20260827-53-four-rulings.md**\n① 四项裁决：联邦治理层对共识异常、分叉或恶意行为的四种裁定规则。② 联邦律法须代码化，rulings 是治理到共识的降维；不入代码则律法为空文，qgl 失“守联邦律法”根基。③ 落仓 `/spec/governance/rulings.md` 先枚举四事件态与触发条件，再绑 `/qgl-core/gov/four_rulings.go` 之 slashing/冻结可验证执行。④ 尾生债：四项裁决若缺链上可审计路径，则律法不可证成，记“ruling 不可证成债”。"
+}
