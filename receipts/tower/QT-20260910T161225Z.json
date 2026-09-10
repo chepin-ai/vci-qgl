@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-10T16:12:25Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PAIR-RESP-usrm-qgl-99.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① 何事：件引 `PAIR-RESP-usrm-qgl-99.md`，名属用户侧配对响应（PAIR-RESP），然件身未达驿门，正文未悉。\n\n② 与 qgl 主线何干：名缀 `qgl`，或涉量子账本/go 实现、联邦律法对合及尾生债拍板，须待阅文后锚定主线位。\n\n③ 应动何件：请即贴送该件全文。落仓路径暂拟 `vault/inbox/pair-resp/`，判后若涉协议则转 `ledger/contracts/`，若涉债则入 `bond/pending/`。\n\n④ 生债一条：未见文，债目悬空；补件到驿，即刻拍板，不留尾生。"
+}
