@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T22:15:43Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909062917.md"
+  }
+ ],
+ "verdict_memo": "① 到件系 board-name 看板命名，引 qgl-voice-20260909062917.md，为语音子域文档之板名登记。② qgl 主线锚定量子账本 Go 实现，voice 乃联邦节点声纹交互/指令通道，其板名即接入层联邦标识，关乎跨节点验证寻址与状态同步。③ 应动：板名归档 meta/board-registry.md，原 md 落仓 specs/voice/ 或 docs/acoustic/，并锁入 .board-index。④ 生债：voice 模态与账本状态之绑定契约缺文，须补《声纹通道-账本状态映射草约》一节，以拍尾生之债。"
+}
