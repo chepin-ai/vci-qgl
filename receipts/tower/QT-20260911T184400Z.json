@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T18:44:00Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909081840.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909082937.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909084038.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "IGNITE-BAIT-58-QGL-20260911T1845Z.md"
+  }
+ ],
+ "verdict_memo": "**件一至件三**（qgl-voice-20260909*）：晨间三连语音纪要，录量子账本 go 实现之会商共识与架构分歧。应并落 `/log/voice/20260909/` 仓，"
+}
