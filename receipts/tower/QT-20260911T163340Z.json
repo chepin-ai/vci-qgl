@@ -1,0 +1,28 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T16:33:40Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909105521.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909105934.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909111001.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909112029.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909113059.md"
+  }
+ ],
+ "verdict_memo": "件1-5（`qgl-voice-20260909*.md`，10:55–11:30 连续五则）：\n\n① **何事**：同日语音备忘五则，时隙密集，应为需求对敲、设计走查或进度同步之留声。  \n② **与qgl主线何干**：属量子账本过程声音资产，或涉 Go 实现、共识接口、联邦律法适配，须经萃取方可锚定主线，否则为沉底噪声。  \n③ **应动何件**：并归仓 `qgl-vault/logs/voice/20260909/`；逐则提取决议入 `spec/decisions/`、待办入 `issues/`；无决策之纯同步标 `[noise]` 冷备。  \n④ **生债**：五则均未摘要、未转结构化决策，积为**声债**；限一工日内消音成文、拍板入仓，逾期尾生难拍。"
+}
