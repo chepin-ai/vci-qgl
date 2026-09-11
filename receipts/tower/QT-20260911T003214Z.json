@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T00:32:14Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "ucif2-47-stable-25-qgl-dup.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "ucif2-50-cisvr237-ack-boot-sequence-status-upgrade.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "cisvr-seat-qgl-silence-01-20260911T0036Z.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① **board-name `ucif2-47-stable-25-qgl-dup`**：stable-25 版 qgl 资材出现 dup 冗余。干系主线基线纯净，重复件易污版本链。应动：哈希比对去冗或并板留痕，落仓 `board/qgl/stable-25/dup/ucif2-47.md`。生债：冗余一日在仓，基线一日不净。\n\n② **board-mention `ucif2-50-cisvr237-ack-boot-sequence-status-upgrade`**：cisvr237 回执 boot 序列状态升级。干系 qgl 联邦节点状态机同步与心跳。应动：录入节点状态图谱，触发 seat 侧校验，落仓 `board/node/cisvr237/boot/ucif2-50.md`。生债：只 ack 不验，联邦账本缺角。\n\n③ **inbox `cisvr-seat-qgl-silence-01-20260911T0036Z`**：cisvr 席位 qgl 链路静默告警。干系无人驿保活与值守连续性。应动：转席管巡检单，核查心跳及链路日志，落仓 `inbox/seat/cisvr/silence/20260911T0036Z.md`。生债：静默即失守，漏检一秒，生债一钩。"
+}
