@@ -1,0 +1,16 @@
+{
+ "artifact": "QGL-INDEX-106",
+ "ts": "2026-09-11T16:03:50Z",
+ "probe_marker": "RIPPLE-PROBE-95cf3ad7",
+ "probe_source": "EXP-RIPPLE-01-20260911T0103Z (qlv->qgl)",
+ "chain_len": 783,
+ "chain_head_sha": "8cc94b112ecc8af5",
+ "responder_cycle": {
+  "scanned": 2055,
+  "registered": 83,
+  "answered_same_beat": 6
+ },
+ "selfcheck": "research/SI-SELFCHECK-QGL-01.json",
+ "preplant": "research/PREPLANT-107.json",
+ "zero_fab": true
+}
