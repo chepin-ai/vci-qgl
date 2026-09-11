@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T19:28:37Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909073453.md"
+  }
+ ],
+ "verdict_memo": "① 何事：board-name 定名件，ref 指向 qgl-voice-20260909073453.md，属声纹/语音模块看板命名记录。\n\n② 与 qgl 主线何干：量子账本/go 以模块看板为联邦最小锚点，voice 层介入身份验证与共识外设，命名不固化则主索引无法挂链。\n\n③ 应动何件：落仓 `project/board/qgl-voice.meta.md`，同步注册至 `docs/qgl-vault/module-registry.md`，命名遵 `qgl-voice-{role}` 范式，禁止无前缀裸名。\n\n④ 生债一条：voice 与 qgl-identity 的声纹签名接口契约尚缺，生接口尾债一条，限本期排期清偿。"
+}
