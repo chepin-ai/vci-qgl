@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T02:44:54Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "AA-SILENCE-INPUT-01-cisvr-20260911T0240Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① **何事**：空到件（SILENCE-INPUT），ref 仅存元数据与时间戳，无实质载荷，或为链路探针、心跳包或 CI 误触。  \n② **与 qgl 主线何干**：不携带交易数据与协议报文，不触发量子账本状态机；然若沉默涌入，将污染索引层、虚耗驿路算力，需防沉默型 DoS。  \n③ **应动何件**：不落主线仓。径入 `/vault/inbox/silence/` 冷仓，写只读日志 `silence.20260911.log`，标记 `SILENCE-PROCESSED`，不启动共识轮次。  \n④ **生债**：空转债。驿路为一次虚无消耗带宽与索引槽位，记债一笔，待批量清算时核销。"
+}
