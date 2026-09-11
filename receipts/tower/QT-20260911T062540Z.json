@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T06:25:40Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911004807.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911005852.md"
+  }
+ ],
+ "verdict_memo": "【到件·其一】ref=qgl-voice-20260911004807.md  \n① 子时声纹纪要，语音存案。  \n② 旁涉 qgl 协议口谕，非代码主干，然或隐接口草约。  \n③ 应动：落仓 `/qgl/vault/log/voice/`，标「旁录·待勘」；若涉共识，三日內转 RFC。  \n④ 生债：口谕不录等同空谈，逾期不勘者，息增。  \n\n【到件·其二】ref=qgl-voice-20260911005852.md  \n① 续录分片，与前件连珠，同场声纹之残卷。  \n② 辅线连缀，或存账本状态同步之临时决议。  \n③ 应动：并案归仓，合卷为 `qgl-voice-20260911-session`，置 `/qgl/docs/meetings/`，杜碎片化。  \n④ 生债：七日内不归卷，守库人须诵联邦律法第七条，直至清债。"
+}
