@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T07:51:13Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910161225.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910191054.md"
+  }
+ ],
+ "verdict_memo": "**件一**  \n① qgl-voice 板命名日志（`qgl-voice-20260910161225.md`），语音模块看板/命名空间配置快照。  \n② 属 periphery meta，不直接触量子账本与 Go 核心实现，然涉联邦命名律法一致性，需备稽核。  \n③ 落 `/meta/board-name/voice/inbox/` 待勘仓，限三日内由语音线 Owner 补注用途；若无增量，转 `/archive/meta/`。  \n④ 盲收未验，容留噪声，债一。  \n\n**件二**  \n① qgl-voice 板命名日志（`qgl-voice-20260910191054.md`），同日 19:10 再发，疑命名迭代或重复落盘。  \n② 同件一；若与 1612 件存在命名漂移，则生界面歧义，需警惕。  \n③ 并落 `/meta/board-name/voice/inbox/`，强制作 diff；哈希雷同即废，异动则并版入 `naming.log`。  \n④ 同日双件无附变更说明，倒逼后人考据"
+}
