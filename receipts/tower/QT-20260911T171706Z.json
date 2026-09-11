@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T17:17:06Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909101736.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909102806.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909103837.md"
+  }
+ ],
+ "verdict_memo": "【判词纪要 · 壹】`qgl-voice-20260909101736.md`\n① 何事：晨间节点通联语音，涉共识层启动前哨或 go 模块热更口谕。  \n②"
+}
