@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T14:12:21Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909141644.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909154854.md"
+  }
+ ],
+ "verdict_memo": "① 何事：qgl-voice 信道两则原始语音件到仓，壳存声纹，未闻其辞。  \n② 与 qgl 主线何干：量子账本/go 主线锚定链上共识与存储实现，语音层属人机交互外皮；若内容涉接口变更或共识口令，即转主线，否则为外围噪音。  \n③ 应动何件：启 ASR 落仓至 /qgl-voice/transcript/，提取结构化议程；涉 go 代码或"
+}
