@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T05:42:09Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911015323.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911020354.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911052027.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911053127.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n①何事：四件为 qgl-voice 系列板书记录，时跨 2026-09-11 凌晨 01:53 至 05:31，系量子账本/go 主线连续语音备忘/口述纪要，涵盖深夜攻坚与晨间复盘声迹。\n\n②与 qgl 主线何干：属过程资产，或涉接口设计、共识算法及代码走读，为主线开发一手口述史料，需入库以备版本追溯。\n\n③应动何件：并归 `/vault/log/voice/2026/`，合编索引 `qgl-voice-20260911-suite.md`，提取关键决策点写入 `decision-log.md`，原始声迹入 `.archive` 冷存。\n\n④生债一条：声迹未转文本即沉睡；限 48h 内完成语音-文本结构化转写，逾期口述信息衰减为沉没成本，形成认知债务。"
+}
