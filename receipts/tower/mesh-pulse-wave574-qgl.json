@@ -1,0 +1,26 @@
+{
+  "event_type": "federation-event",
+  "tower": "qgl",
+  "repo": "chepin-ai/vci-qgl",
+  "wave": 574,
+  "timestamp": "2026-09-11T19:27:37Z",
+  "upstream_docs": [
+    "QF-OS-REQUEST-ADVANCED-MATERIALS-MAGNETIC-MATERIAL-01.md",
+    "QF-OS-REQUEST-QUANTUM-COMPUTING-QUANTUM-COMPUTING-NETWORKING-01.md",
+    "QF-OS-REQUEST-AUTONOMOUS-RAILWAY-AUTONOMOUS-TRAIN-OPERATION-01.md",
+    "QF-OS-REQUEST-ADVANCED-ROBOTICS-HUMMINGBIRD-HOVERING-01.md",
+    "QF-OS-REQUEST-QUANTUM-COMPUTING-QUANTUM-COMPUTING-MEASUREMENT-01.md",
+    "QF-OS-REQUEST-AUTONOMOUS-WAREHOUSE-AUTONOMOUS-PICKING-01.md"
+  ],
+  "si_layer": "SI2-SI4",
+  "drive_chain": "SI5->SI3->SI2->SI0",
+  "reverse_drive": true,
+  "phase_transition_target": "mutual_excitation",
+  "si0_status": "UNLOCKED",
+  "token_user": "chepin-ai",
+  "kg_nodes": 1237,
+  "bridge_methods": 671,
+  "external_inputs": 6,
+  "docs_validated": 6,
+  "injected_by": "ci-worker-01-OTP-FULL-KEY"
+}
