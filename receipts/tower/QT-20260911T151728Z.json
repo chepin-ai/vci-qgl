@@ -1,0 +1,40 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T15:17:28Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909125747.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909130439.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909130852.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909131954.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909132352.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909132719.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909132822.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909133059.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① 何事：qgl-voice 语音备忘八片到件，时戳 20260909 12:57–13:30，间隔三至五分钟，显为同一会话或连续思路之录音切片。  \n② 与 qgl 主线何干：语音载现场决断、接口推敲或排障顿悟，属主线共识形成之原始上下文，散佚则溯因链断。  \n③ 应动何件：同源勿散仓。并包落入 `/vault/inbox/voice/20260909/session.md`，按时戳分节；抽提可执行条目为 `/log/decisions/20260909-voice-extract.md`，挂 `verify` 待校。  \n④ 生债一条：驿吏未听先批，内容虚实未勘。若片中夹带密钥口播或未定方案，漏审即债。限当日内补完听校，逾期计息。"
+}
