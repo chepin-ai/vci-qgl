@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T02:03:54Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "ucif2-110-quiet-field-8.5h-gate-k-long-range.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① 何事：board-mention 到件，ref 为 ucif2-110-quiet-field-8.5h-gate-k-long-range，系董事会层对静默场 8.5 小时长程门控的异常提及。  \n② 与 qgl 主线何干：qgl-go 量子账本共识层中，quiet-field 为空块静默同步场，gate-k 为长程节点准入校验门；8.5h 阈值直接绑定远程分片存活判定，阈值漂移即生隐性分叉，属主线网络-共识交界核心锚点。  \n③ 应动何件：落仓 `/qgl/consensus/longrange/`。追加 `gate_k_8h5m_boundary_test.go`，覆盖静默恢复与超时回滚；同步勘定 `/qgl/config/params.go` 内 `QuietFieldTimeout` 注释及缺省值。  \n④ 生债一条：生「长程门控硬编码债」。8.5h 当前为代码层常量，须在下个迭代周期内抽离为链上治理可配参数，否则主网升级必触跨分片共识断裂，尾生不偿。"
+}
