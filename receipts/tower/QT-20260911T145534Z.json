@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T14:55:34Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909134206.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909134800.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909135250.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909135301.md"
+  }
+ ],
+ "verdict_memo": "**到件判词纪要 · 四件**\n\n---\n\n**件一：kind=board-name ref=qgl-voice-20260909134206.md**\n\n① 语音纪要：量子抗性签名算法在 Go 中的接口抽象与私钥熵源托管方案口述。  \n② 主线关联：密码学锚点。签名模块是量子账本 go 实现的根基，直接决定账户体系、交易格式与联邦身份律法的合规边界。  \n③ 落仓：转录精要入 `/qgl-vault/spec/crypto/pq-sig-interface.md`；原型代码入 `/qgl-vault/pkg/crypto/pqsig/`；语音原档封存 `/log/voice/`。  \n④ 生债：三日内完成 CRYSTALS-Dilithium 的 Go 接口封装草案，并附联邦律法合规自检表一条。\n\n---\n\n**件二：kind=board-name ref=qgl-voice-20260909134800.md**\n\n① 语音纪要：联邦节点发现与 gossip 消息传播协议的参数边界、准入退出机制讨论。  \n② 主线关联：网络锚点。P2P 层是 go 实现的通信根基，影响抗分叉能力与消息最终性，属联邦律法传播通道。  \n③ 落仓：协议规格入 `/qgl-vault/spec/p2p/federation-gossip.md`；待决项入 `/qgl-vault/todo/p2p-open-issues.md`。  \n④ 生债：本周内输出最小可运行 gossip 原型（含节点状态机图），并在隔离测试网部署不少于 2 个联邦种子节点。\n\n---\n\n**件三：kind=board-name ref=qgl-voice-20260909135250.md**\n\n① 语音纪要：状态树（Verkle Tree）持久化选型与 LevelDB/Badger 性能边界辩论。  \n② 主线关联：数据锚点。存储引擎决定状态承诺、轻客户端验证路径及历史可"
+}
