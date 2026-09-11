@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T12:45:25Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909195836.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909222201.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909225313.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n①事：三连语音板。1958 初定语音指令集需求；2220 续定语音-账本事件桥协议；2253 收口 MVP 排期与回滚策略。\n\n②主线：此三件连缀语音通道自需求→协议→排期之闭环，属 QGL 人机接口与中间件层，直接约束外部语音入链规则。\n\n③落仓：并归 /spec/voice/，依序重命名为 01-req.md、02-bridge.md、03-roadmap.md；若含原型，拆入 /pkg/voice/。\n\n④生债：三会零代码零契约，语音层全虚债，限 48h 内补接口文档或标废，逾期记 deferred-spec。"
+}
