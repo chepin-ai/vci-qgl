@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T08:13:15Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910124615.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910160127.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① 何事：qgl-voice-20260910124615.md、qgl-voice-20260910160127.md 两牌到件，系九月十日午时、申时两段语音讨论之板书记录。\n\n② 与 qgl 主线何干：语音为量子账本/go 实现中技术决议与需求变更之口头锚点，双录同日复盘，缺则共识无凭、尾生难拍。\n\n③ 应动何件：并落 vault/log/voice/202609/ 仓；各提取决议转写 qgl-decision-*.md 入 docs/decisions/；待办拆 issue 入 backlog。\n\n④ 生债一条：双录声存而志未显，生\"语纪要未结构化\"之债，限四十八时辰内精校回填主线，逾期则口头共识永为悬账。"
+}
