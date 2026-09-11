@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T02:25:42Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "ucif2-10-pareto-full-deploy.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "ucif2-102-usrm-217-knife-5-sleep-mode-12-gates.md"
+  }
+ ],
+ "verdict_memo": "【判词纪要】\n\n① 何事：件一，帕累托全量部署书（ucif2-10），定联邦节点交付边界；件二，刀五休眠十二门状（ucif2-102），定节点降耗门控状态机。\n\n② 与 qgl 主线何干：件一属 go 实现之交付锚，决定量子账本共识集群滚动升级路径；件二属节点生命周期治理，门控跃迁直接耦合共识层状态迁移，皆系主线筋骨。\n\n③ 应动何件：件一落仓 `docs/deploy/pareto-full-deploy.md`，并启 `cmd/qgld/deploy/` 代码骨架；件二落仓 `pkg/node/lifecycle/sleep-gates.md`，状态机实作归 `internal/gate/knife5.go`。\n\n④ 生债一条：帕累托部署未于拜占庭容错下证收敛；十二门休眠缺形式化安全证明。尾生之债，测网前必偿，以守联邦律法。"
+}
