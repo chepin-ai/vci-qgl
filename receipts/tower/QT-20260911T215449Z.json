@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T21:54:49Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909064010.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909064804.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909065108.md"
+  }
+ ],
+ "verdict_memo": "① 何事：三件 qgl-voice 声纹板件（64010/64804/65108）连号到驿，系辰时语音留档。  \n② 何干：声纹或载量子账本/go 实现的共识与接口决策，为共识补声纹凭据。  \n③ 应动：并件转写文本，落仓 /log/voice/；抽决议入 /doc/minutes/qgl-index.md。  \n④ 生债：声纹未译，内容暗箱，生“听债”一条，限即日转译销账，免成死档。"
+}
