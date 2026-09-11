@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T16:55:19Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909104906.md"
+  }
+ ],
+ "verdict_memo": "① 何事：语音纪要到件（ref: qgl-voice-20260909104906.md），类属 board-name，系看板/频道或节点标识命名之提案/变更动议。  \n② 与 qgl 主线何干：命名即合约。board-name 直接锚定联邦节点索引键、go 包路径前缀及账本路由命名空间，属基础设施元语法；一错则全图引用链漂移、接口契约碎裂。  \n③ 应动何件：提取纪要中命名决议，落仓 `meta/naming/BOARD-NAMING.md` 为 RFC 条目；同步更新该 md 的 YAML front matter（status → `anchored`），并签发 qgl 主线锚哈希，关闭前须经联邦签章。  \n④ 生债一条：名不正则路由舛，此债曰“轻诺短命，重名长生”——若草率落名，他日语音、仓、节点皆须 Fork 偿债，代价百倍。"
+}
