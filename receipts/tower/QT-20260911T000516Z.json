@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T00:05:16Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PARETO-R1-246fad60da66.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PARETO-R1-b1278f02130e.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "PARETO-R1-b977506120d2.md"
+  }
+ ],
+ "verdict_memo": ""
+}
