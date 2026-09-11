@@ -1,0 +1,28 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T01:01:31Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "ucif2-34-post-cisvr236-monitor.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "ucif2-35-cfts-vinf-voice-seven-node-wake.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "ucif2-36-post-peak-stable-15.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "ucif2-37-stable-heartbeat-16.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "SILENCE-BEAT-METRIC-01-draft-v0-cisvr-20260911T0100Z.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n**件1**（ucif2-34）：cisvr236监控后置帖。①节点运行态镜像。②qgl可观测基建，守联邦节点在线律法。③落仓：`/log/monitor/cisvr236.md`。④生债：告警未闭环，须补自动契押脚本。\n\n**件2**（ucif2-35）：七节点唤醒记录。①cfts/vinf voice算力层恢复。②qgl共识可用性底线，go实现重启链路关键。③落仓：`/ops/node/wake/ucif2-35.md`。④生债：唤醒回执未全签，债在补齐节点契约。\n\n**件3**（ucif2-36）：峰值后稳态-15。①压测后运行快照。②为go实现性能基线，锚定峰值处置语义。③落仓：`/run/stable/post-peak-15.md`。④生债：稳态阈值未入参，债待配置固化。\n\n**件4**（ucif2-37）：稳定心跳-16。①存活确认帧。②qgl联邦心跳机制，守尾生约不失联。③落仓：`/run/heartbeat/stable-16.md`。④生债：心跳丢包无惩戒，债在契约罚则条款。\n\n**件5**（SILENCE-BEAT）：静默节拍指标草案。①静默期度量语义初稿。②补qgl可观测性短板，定义联邦无声态标准。③落仓：`/draft/metric/silence-beat-v0.md`。④生债：草案未评审，债在指标入库截止日。"
+}
