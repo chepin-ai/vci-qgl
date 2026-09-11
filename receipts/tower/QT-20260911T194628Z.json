@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T19:46:28Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909072358.md"
+  }
+ ],
+ "verdict_memo": "① 到件系 qgl-voice 子模块看板命名备案（ref: qgl-voice-20260909072358.md），board-name 类，确立语音/广播工位之版号。\n\n② voice 模块关涉节点共识与量子信道封装，其看板名即代码仓命名空间之前置契约；边界不清，则联邦律法之 import 路径与模块权限无所附丽。\n\n③ 应落仓于 `meta/board/qgl-voice-20260909072358.md`，并在 `qgl-voice/README.md` 内注册 board-name 索引；同步校验 `go.mod` 模块前缀，确保与 QGL-VAULT 主锚一致。\n\n④ 生债：今仅作时间戳单点记录，未立《QGL 看板命名-权限-仓址三联规约》，后续须以此件为样例补全律法，否则同类到件仍无律可依。"
+}
