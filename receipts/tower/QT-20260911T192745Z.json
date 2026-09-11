@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T19:27:45Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909074426.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板命名决议，附件为语音纪要 `qgl-voice-20260909074426.md`，属项目治理面看板定义或更名事件。  \n② 与 qgl 主线何干：量子账本/go 主线以“链/账/网/密”四端推进，看板命名即划定模块边界与交付节奏，间接锚定接口契约与开发优先级，乃主线之元治理。  \n③ 应动何件：将命名规则与决议落仓 `meta/governance/boards/board-name.md`，同步更新根目录看板索引；语音转录件归档 `docs/records/voice/`，确保断代后可追溯。  \n④ 生债一条：若看板名与代码仓库模块名、issue label 割裂，必生“名实不符”之尾债，须以一次 MR 同步 board-name → `go.mod` 模块注释或 label 体系，免主线认知断层。"
+}
