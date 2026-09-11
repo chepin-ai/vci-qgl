@@ -1,0 +1,22 @@
+{
+  "event_type": "federation-event",
+  "tower": "qgl",
+  "repo": "chepin-ai/vci-qgl",
+  "wave": 575,
+  "timestamp": "2026-09-11T19:41:33Z",
+  "upstream_docs": [
+    "QF-OS-REQUEST-ADVANCED-MATERIALS-PIEZOELECTRIC-MATERIAL-01.md",
+    "QF-OS-REQUEST-QUANTUM-COMPUTING-QUANTUM-COMPUTING-CRYPTOGRAPHY-01.md",
+    "QF-OS-REQUEST-AUTONOMOUS-AIRPORT-AUTONOMOUS-GROUND-HANDLING-01.md"
+  ],
+  "si_layer": "SI2-SI4",
+  "drive_chain": "SI5->SI3->SI2->SI0",
+  "reverse_drive": true,
+  "phase_transition_target": "mutual_excitation",
+  "si0_status": "UNLOCKED",
+  "token_user": "chepin-ai",
+  "kg_nodes": 1507,
+  "total_docs_all_towers": 3990,
+  "docs_validated": 6,
+  "injected_by": "ci-worker-01-OTP-FULL-KEY"
+}
