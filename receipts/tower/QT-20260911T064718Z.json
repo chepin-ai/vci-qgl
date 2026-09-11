@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T06:47:18Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911002710.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911003214.md"
+  }
+ ],
+ "verdict_memo": "①何事：两则 voice 板前后到件（00:27、00:32），系 qgl 线子时语音纪要落盘。  \n②与 qgl 主线何干：口头定谳、现场共识之活口存证，载协议或实现细节，文不载则主线失据。  \n③应动何件：并归 voice 日志仓，打标 #voice #raw；限当日转录为 text-decision，可执行条目写入 qgl-todo，余者入库。  \n④生债一条：声存而文佚，后觉者不可稽，债曰「声债」。"
+}
