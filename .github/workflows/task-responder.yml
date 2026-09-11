@@ -1,0 +1,22 @@
+name: TASK-RESPONDER-01
+on:
+  push:
+    paths: ["inbox/**"]
+  workflow_dispatch: {}
+  schedule:
+    - cron: "*/12 * * * *"
+permissions:
+  contents: write
+jobs:
+  respond:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install numpy
+      - env:
+          LINE: qgl
+          WATCH_DIRS: inbox
+        run: python3 ci/task_responder.py
