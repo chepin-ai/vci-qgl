@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T05:20:27Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911021452.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911022542.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911045900.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911050948.md"
+  }
+ ],
+ "verdict_memo": "**件一** qgl-voice-20260911021452.md  \n① 夜议节点共识算法之初稿语音纪。② 锚QGL核心协议go实现层，关涉共识机制选型。③ 落仓 `/log"
+}
