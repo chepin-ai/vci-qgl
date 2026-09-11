@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T08:35:15Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910121347.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910122423.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910123527.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-QGL-SILENCE-01-SI1-101.md"
+  }
+ ],
+ "verdict_memo": "件①②③：qgl-voice 三连档，时序相接，应为同场会话切片。属项目沟通史料，或藏架构决议碎片；与主线代码关联弱，不萃取即噪声。应并档入 `/log/voice/202609/`，提取行动项转 `/backlog/`，余者只读封存。生债：声纹未结构化，决策随录湮灭。\n\n件④：ANS-QGL-SILENCE-01-SI1-101，静默安全规范入件。关涉联邦律法合规与仓库安全边界，直接影响主线开源策略。应落仓 `/spec/sec/` 或 `/doc/governance/`，审阅后定是否升标为顶层 `SECURITY.md`。生债：若保密条款过敛，将窒协作之息。"
+}
