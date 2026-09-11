@@ -1,0 +1,32 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T10:34:37Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910035903.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910041001.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910042057.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910043147.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910044238.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910045339.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① 何事：qgl-voice 六连档（03:59–04:53），时戳密接，判为同一段 deliberation 语音之裂片，实体未达，暂作技术口述待勘。  \n② 与 qgl 主线何干：语音常载共识、接口、存储层决断，乃量子账本 Go 实现之原始矿砂；若不淘洗，主线锚点将随声纹衰减。  \n③ 应动何件：六片归仓 `vault/inbox/voice/20260910-delib/`，并转录为单稿；可执行项提入 `qgl/mainline/backlog/`，架构决议入 `qgl/docs/rfcs/`；原档封只读。  \n④ 生债：语音裂片未即时转结构化文本，已生上下文断缝，复听"
+}
