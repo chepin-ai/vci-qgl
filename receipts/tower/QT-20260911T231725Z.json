@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T23:17:25Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909060655.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909061140.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909061748.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909062813.md"
+  }
+ ],
+ "verdict_memo": "**件一：qgl-voice-20260909060655.md**\n①何事：凌晨顶层架构语音备忘，议量子账本与联邦律法接入之总纲、模块分界及不可变存储原则。②与qgl主线何干：定骨架、锚边界，为go实现之总图；若此图含糊，下游接口皆虚。③应动何件：即刻转写为 `docs/arch/ledger-principle.md`，并提取核心接口草案落仓至 `pkg/ledger/interface.go`。④生债一条：架构形式化文档未就，骨架悬于空中，债一尺。\n\n**件二：qgl-voice-20260909061140.md**\n①何事：通信层语音，论节点间量子信道封装、传输帧格式及go侧IO多路复用策略。②与qgl主线何干：承架构而启实现，联邦节点赖以互通；信道不稳，则共识无基。③应动何件：拆分为 `pkg/p2p/quantum_channel.go` 设计稿，并建架构决策录 `docs/adr/ADR-002-quantum-channel.md`。④生债一条：封装层缺单元测试骨架，接口契约未立，债一尺。\n\n**件三：qgl-voice-20260909061748.md**\n①何事：共识机制语音，议量子签名（Q-sig）摘要写入账本之流程、验证路径及回滚禁区。②与qgl主线何干：乃账本安全之芯，直接决定不可篡改性，属go实现深水区。③应动何件：凝为 `pkg/consensus/qsig/spec.md`，并向 `pkg/crypto/qsig` 提接口PR，冻结算法选型。④生债一条：签名算法与联邦密钥轮转方案未绑定，债一尺。\n\n**件四：qgl-voice-20260909062813.md**\n①何事：工程化语音，议go模块拆分、版本约束、CI流水线及联邦节点最小启动集。②与qgl主线何干：收尾落地，保主线可构建、可交付；无此则代码止于私库。③应动何件：化为 `build/Makefile`、`go.mod` 分段策略及 `deploy/fed-node.yaml`，并入运维手册 `docs/ops/bootstrap.md`。④生债一条：部署流水线未接入联邦密钥托管与分片校验，债一尺。"
+}
