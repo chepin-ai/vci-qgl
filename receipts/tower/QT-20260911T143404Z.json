@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T14:34:04Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909140352.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909141449.md"
+  }
+ ],
+ "verdict_memo": ""
+}
