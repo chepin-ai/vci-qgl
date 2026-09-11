@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T07:12:27Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911000516.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "ANS-QGL-SILENCE-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DEMAND-DIRECT-54-QGL-20260911T0705Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① **qgl-voice-20260911000516.md**：声纹协议定名板。关量子账本节点语音信令层，影响 go 实现接口契约。应落仓 `/specs/voice/` 并抽要件为 `qgl-spec-go#voice` 草案。生债：声纹上链标准悬而未决，债一条。\n\n② **ANS-QGL-SILENCE-01.md**：应答失语件。社区叩问久默，损联邦律法公信，阻主线演进。应落仓 `/inbox/silence/` 并启 `ANS-REPLY-01` 限期清偿。生债：沉默一日，尾生之息一条。\n\n③ **DEMAND-DIRECT-54-QGL-20260911T0705Z.md**：直连需求五十四号。外部对 qgl-go 之叩关，涉迭代排期与律法合规。应落仓 `/demands/2026/` 经律法审准：可则转 `feat/54`，不可则明拒。生债：审决逾期，生债一条。"
+}
