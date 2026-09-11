@@ -19,4 +19,5 @@ jobs:
       - env:
           LINE: qgl
           WATCH_DIRS: inbox
+          LANE_SCOPE: 
         run: python3 ci/task_responder.py
