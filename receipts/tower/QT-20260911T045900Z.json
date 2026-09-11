@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T04:59:00Z",
+ "idle_in": 14,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260911024454.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① 何事：board-name 命名到件，ref 为语音纪要 qgl-voice-20260911024454.md，属看板标识确权。  \n② 与 qgl 主线何干：量子账本/go 以看板为联邦工作流入口，board-name 是任务分派与状态同步的基础设施锚点，直接影响主线工程治理。  \n③ 应动何件：该纪要应落仓 `meta/governance/board/`，固化为 `board-name.20260911.md`；同步更新 `boards.yaml` 及 `PROJECTS.md` 索引，确保命名与仓库结构对齐。  \n④ 生债一条：voice 纪要编号规则与 board-name 语义边界未形成 RFC，需补命名规范提案，以清尾生债。"
+}
