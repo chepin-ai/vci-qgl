@@ -1,0 +1,32 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-11T09:07:27Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910080245.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910081336.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910082436.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910083538.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910084629.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260910085702.md"
+  }
+ ],
+ "verdict_memo": "①何事：qgl-voice 08:02–08:57 六段语音备忘连续到件，系同一会话流分片落板。  \n②与 qgl 主线何干：属量子账本/go 实现之口述现场矿，或涉共识机制、存储接口、节点协议，为架构决策提供声纹级原始信源。  \n③应动何件：整包入 `/raw/voice/20260910/`；逐条转写后按主题分流：架构入 `/design/`，协议入 `/spec/`，待办入 `/todo/`，关键决议提取为 `/decision/` 纪要并挂哈希上链。  \n④生债：声纹未转写、未结构化、未锚定，生「口述 entropy 散失债」一条；限本工位内完成文本化上链，口说无凭，逾期拍尾生之约。"
+}
