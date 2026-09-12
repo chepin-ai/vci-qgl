@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T11:46:33Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "RIPPLE-usrm-qgl-20260912T114614Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "TASK-AUTO-101-qgl-20260912T114602Z.md"
+  }
+ ],
+ "verdict_memo": "到件双纸，出判如下：\n\n① **何事**：RIPPLE-usrm 为外源协议/用户手册，疑涉 Ripple 共识与 qgl 跨链锚定；TASK-AUTO-101 为系统自动任务单，或源自巡检触发。\n\n② **与 qgl 主线何干**：前者直连联邦互操作层之 Go 实现与跨账本律法对接，属主线外延；后者需甄别是否触及状态机，若系 Routine，则属外围噪音，不轻动核心。\n\n③ **应动何件**：RIPPLE-usrm 落仓 `/spec/interop/ripple`，经审后转 RFC；TASK-AUTO-101 经 `/inbox/triage` 筛核，涉 core 入 `/core/backlog`，否则归入 `/ops/auto-close` 归档。\n\n④ **生债**：inbox 双压，半日不定级即滞纳一息，今日须清。"
+}
