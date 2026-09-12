@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T01:35:05Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909044945.md"
+  }
+ ],
+ "verdict_memo": "①何事：board-name 到件，ref 为 qgl-voice-20260909044945.md，系语音模块看板命名确权。  \n②与 qgl 主线何干：qgl-vault 联邦律法以看板名为模块契约；voice 涉节点通信/声纹验签，命名失准则 go 包路径与量子账本权限树错位，主线锚点松动。  \n③应动何件：落仓 `project/voice/BOARD.md`，头信息硬编码 `kind=board-name&ref`；同步修订 `docs/naming.md`，令看板名与 go 包名 `qgl.io/voice` 同构。  \n④生债一条：ref 仅用时间戳尾缀，缺语义版本与生命周期标记（如 `-draft`），生债：后续凡 board-name 须带状态后缀，否则阻截入仓。"
+}
