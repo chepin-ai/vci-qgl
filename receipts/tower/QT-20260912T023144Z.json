@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T02:31:44Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-20260911-repomap-silence-103.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-20260911-silence-verdict.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① **何事**：到件两件。一曰静默期仓库拓扑映射（`repomap-silence-103`），记 qgl 代码联邦在地基静默时的结构快照；一曰静默裁决书（`silence-verdict`），对该静默状态之律法定性。\n\n② **与 qgl 主线何干**：量子账本之可执行层以 go 实现，repo 地图乃联邦共识与提交流水线之地基。静默即主链提交空转、跨节点共识断联；裁决书则定此空转之法理边界，二者一术一法，同锁主线咽喉。\n\n③ **应动何件**：`repomap` 落仓 `/qgl/spec/arch/repomap-103.md`，须标注静默锁哈希及解锁条件；`verdict` 落仓 `/qgl/law/verdict/silence-20260911.md`，作为拍板凭证。两文件须交叉引用，解锁时同步作废或更新。\n\n④ **生债一条**：因静默致主线有效提交中断，记尾生债一筆——解锁后须以等效工程提交（含 go 单元测试及跨节点共识用例）填平该静默窗口，不得以空文档充数。\n\n**—— 线头收讫，待续。**"
+}
