@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T04:41:18Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-92-si05-circle-si5-ring-20260910T231548Z.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "qfa-93-si05-health-ring-20260910T232910Z.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "qfa-95-e67-exec-claims-defeats-20260910T234948Z.md"
+  }
+ ],
+ "verdict_memo": "**qfa-92**：SI-05 圈层 SI5 环配置异动。系量子账本环形共识骨架，go 实现之 ring 包与状态机所依。应落仓 `/spec/ring/si05-circle.md`、`/go/ring/si5.go`，补全环成员量子签名校验。生债：未验签即入库，恐埋伪造链"
+}
