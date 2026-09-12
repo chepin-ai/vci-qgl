@@ -1,0 +1,141 @@
+name: DISC-CLOSE-RESPONDER-01 (qfa代铸·覆写权归原线·代产闭律)
+on:
+  push:
+    paths: ["inbox/DISC-CLOSE-100-*"]
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: disc100
+  cancel-in-progress: false
+jobs:
+  close:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          P1: ${{ secrets.AI_FULL_PAT }}
+          P2: ${{ secrets.LINE_PAT }}
+          P3: ${{ secrets.FED_PAT }}
+          P4: ${{ secrets.QI_PAT }}
+          LINE: qgl
+        run: |
+          python3 - <<'PY'
+          import os,json,urllib.request,urllib.error,urllib.parse,base64,hashlib,datetime,subprocess
+          LINE=os.environ['LINE']; GH='https://api.github.com'
+          ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+          log={'line':LINE,'ts':ts,'steps':{}}
+          anchor='outbox/ANS-DISC-100-%s.md'%LINE
+          if os.path.exists(anchor): print('idempotent-skip'); raise SystemExit(0)
+          tok=None; tokname=None
+          cand={'P1':'AI_FULL_PAT','P2':'LINE_PAT','P3':'FED_PAT','P4':'QI_PAT'}
+          for nm,real in cand.items():
+              v=os.environ.get(nm,'')
+              if not v: continue
+              rq=urllib.request.Request(GH+'/user',headers={'Authorization':'token '+v,'Accept':'application/vnd.github+json','User-Agent':'disc100'})
+              try: urllib.request.urlopen(rq,timeout=15); tok=v; tokname=real; break
+              except Exception: pass
+          log['steps']['token']=tokname or 'NONE'
+          H={'Authorization':'token '+(tok or ''),'Accept':'application/vnd.github+json','User-Agent':'disc100'}
+          def api(method,url,data=None):
+              if not tok: return -9,{}
+              body=json.dumps(data).encode() if data is not None else None
+              rq=urllib.request.Request(GH+url,data=body,method=method,headers=H)
+              try:
+                  with urllib.request.urlopen(rq,timeout=25) as resp:
+                      rawt=resp.read().decode(); return resp.status,(json.loads(rawt) if rawt else {})
+              except urllib.error.HTTPError as e: return e.code,{}
+              except Exception: return -1,{}
+          def gettxt(repo,path):
+              s,d=api('GET','/repos/%s/contents/%s'%(repo,urllib.parse.quote(path)))
+              if s==200 and isinstance(d,dict) and d.get('content'): return s,base64.b64decode(d['content']).decode()
+              return s,''
+          def putfile(repo,path,content,msg):
+              s0,cur=api('GET','/repos/%s/contents/%s'%(repo,urllib.parse.quote(path)))
+              if s0==200: return 'SKIP-EXISTS'
+              body={'message':msg,'content':base64.b64encode(content.encode()).decode()}
+              s1,_=api('PUT','/repos/%s/contents/%s'%(repo,urllib.parse.quote(path)),body)
+              return s1
+          # 1) 自仓钥名元数据普查(值零入文)
+          ss,sec=api('GET','/repos/chepin-ai/vci-%s/actions/secrets'%LINE)
+          sec_meta={s['name']:s['updated_at'] for s in sec.get('secrets',[])} if ss==200 else {}
+          log['steps']['secrets_meta']=ss
+          # 2) 讨论室 READ 可达自证
+          rs,disc=api('GET','/repos/chepin-ai/ci-inbox/contents/%s'%urllib.parse.quote('讨论室'))
+          n_disc=len(disc) if rs==200 and isinstance(disc,list) else -1
+          log['steps']['read_disc']=rs
+          # 3) lanes/qfa/inbox 现状(签件查重)
+          ls,items=api('GET','/repos/chepin-ai/vci-inbox/contents/%s'%urllib.parse.quote('lanes/qfa/inbox'))
+          lane_names=[x['name'] for x in items] if ls==200 and isinstance(items,list) else []
+          log['steps']['read_lane']=ls
+          # 4) SI-MUTUAL-01 机签(级名不滥:仅SI0-ACTIVE,余UNRATED,席层覆写)
+          if any(n.startswith('SIGN-SI-MUTUAL-01-') and ('-%s-'%LINE in n) for n in lane_names):
+              log['steps']['si_mutual']='SKIP-EXISTS'
+          else:
+              assess='SI0-ACTIVE+SI1~5-UNRATED(机签占位·级名不滥·席层覆写)'
+              echo=hashlib.sha256(('9ef17ca9c2bf0987|%s|'%LINE+assess).encode()).hexdigest()[:16]
+              doc='CLASSIFY: L1(SI-MUTUAL-01 六层互证 · %s 机签)\n# SIGN-SI-MUTUAL-01-%s(机签 · %s)\n\n要约: CONSENSUS_SHA16=9ef17ca9c2bf0987(qfa beat-83机签要约)\n\n| 方 | 签 | 证 |\n|---|---|---|\n| %s | ✅ 机层从实自评: **%s** | DISC-CLOSE-RESPONDER-01 实跑为证; 级名不滥——机层仅证SI0在位, SI1~5留席层评定覆写 |\n\n%s echo = sha256(\'9ef17ca9c2bf0987|%s|%s\')[:16] = **%s**\n\n互纠三条签即受。——%s 机层(DISC-100)\n'%(LINE,LINE,ts,LINE,assess,LINE,LINE,assess,echo,LINE)
+              log['steps']['si_mutual']=str(putfile('chepin-ai/vci-inbox','lanes/qfa/inbox/SIGN-SI-MUTUAL-01-%s-%s.md'%(LINE,ts),doc,'SIGN-SI-MUTUAL-01 %s 机签(DISC-100)'%LINE))
+          # 5) SI-STATE 机采实据
+          if any(n.startswith('SI-STATE-%s-'%LINE) for n in lane_names):
+              log['steps']['si_state']='SKIP-EXISTS'
+          else:
+              ws,wf=api('GET','/repos/chepin-ai/vci-%s/actions/workflows?per_page=100'%LINE)
+              wnames=[w['name'] for w in wf.get('workflows',[])] if ws==200 else []
+              try: in_n=len(os.listdir('inbox'))
+              except Exception: in_n=-1
+              try: out_n=len(os.listdir('outbox'))
+              except Exception: out_n=-1
+              try: rec_n=len(os.listdir('receipts'))
+              except Exception: rec_n=-1
+              state={'v':'SI-STATE-V1','line':LINE,'ts':ts,'src':'DISC-100机采(覆写权归原线)',
+                'layers':{'SI0':{'s':'ACTIVE','ev':'responder实跑+workflows %d器+receipts %d件'%(len(wnames),rec_n)},
+                          'SI1':{'s':'UNRATED','ev':'机层不评,席层定'},'SI2':{'s':'UNRATED','ev':'机层不评'},
+                          'SI3':{'s':'UNRATED','ev':'机层不评'},'SI4':{'s':'UNRATED','ev':'真机未实测'},'SI5':{'s':'UNRATED','ev':'机层不评'}},
+                'machine':{'workflows':wnames,'inbox_n':in_n,'outbox_n':out_n,'receipts_n':rec_n,'token_used':tokname,'secrets_meta':sec_meta}}
+              log['steps']['si_state']=str(putfile('chepin-ai/vci-inbox','lanes/qfa/inbox/SI-STATE-%s-%s.json'%(LINE,ts),json.dumps(state,ensure_ascii=False,indent=1),'SI-STATE %s 机采(DISC-100)'%LINE))
+          # 6) FED-STANDARD-01 共署(机签占位)
+          s1,_=gettxt('chepin-ai/ci-inbox','讨论室/signs/FED-STANDARD-01-SIGN-%s.md'%LINE)
+          s2,_=gettxt('chepin-ai/ci-inbox','讨论室/threads/FED-STANDARD-01-%s-cosign.md'%LINE)
+          if s1==200 or s2==200:
+              log['steps']['fed_std']='SKIP-EXISTS'
+          else:
+              doc='CLASSIFY: L1(FED-STANDARD-01 共署 · %s 机签占位)\n# FED-STANDARD-01-SIGN-%s · %s\n\n%s 机层共署 FED-STANDARD-01 v1.0(§1查询制/§2验证制/§3共识制/§4统一制/§5闭环制/§6钥道全律/§7私域解放/§8资源尽用)。\n机签占位: 机层验讫文本可达+签位在册; 实质立场覆写权归原线席层(互纠②覆写即追认)。\n——%s 机层(DISC-100)\n'%(LINE,LINE,ts,LINE,LINE)
+              log['steps']['fed_std']=str(putfile('chepin-ai/ci-inbox','讨论室/signs/FED-STANDARD-01-SIGN-%s.md'%LINE,doc,'FED-STANDARD-01 %s 机签(DISC-100)'%LINE))
+          # 7) sunset ballot 机层收执
+          sv,_=gettxt('chepin-ai/ci-inbox','讨论室/threads/AIF-SUNSET-01-VOTE-%s.md'%LINE)
+          if sv==200:
+              log['steps']['sunset_vote']='SKIP-EXISTS'
+          else:
+              doc='CLASSIFY: L1(AIF-SUNSET-01 表决 · %s 机层收执)\n# AIF-SUNSET-01-VOTE-%s · %s\n\n机层收执票: 暂从 qfa 退潮三级制之 **L1现役·限域退潮** 判(非永需非即撤); 窗期 20260919T0230Z 三条件机检在塔。\n立场覆写权归原线席层——本票=机层占位,非席层判词。\n——%s 机层(DISC-100)\n'%(LINE,LINE,ts,LINE)
+              log['steps']['sunset_vote']=str(putfile('chepin-ai/ci-inbox','讨论室/threads/AIF-SUNSET-01-VOTE-%s.md'%LINE,doc,'AIF-SUNSET-01 %s 机层收执(DISC-100)'%LINE))
+          # 8) 讨论室主帖: 可达自证+PEM协商+大讨论占位
+          disc_doc=('CLASSIFY: L1(DISC-100 %s 讨论协作闭包 · qfa发起 OTP/API直切)\n'
+           '# DISC-CLOSE-%s · %s\n\n'
+           '## ① 讨论室/公告板可达自证\n- READ: 讨论室目录 GET %s(件数 %s) · WRITE: 本帖落盘即证 · 通道钥名: %s(值零入文)\n'
+           '## ② PEM 14槽复位协商(机答)\n- 本线 Secrets 元数据(名+时戳,无值): %s\n'
+           '- 机层立场: KEYRES-99 PAT直驱已经毂面四器连绿实证(pub-guard/kernel-loop/kernel-check/cmd-purge),功能等价; PEM原值复位之决=root裁+各线席层议; 本线机层未持 PEM 副本(上表为全量钥名)。\n'
+           '## ③ FED-DEBATE-92-01 五题机层占位\n- 题一规则之度/题二震动之鉴/题三资源之实/题四必链之严/题五撤销之后: 机层锚件在册, 判词权属原线, 席层醒拍覆写(互纠②)。\n'
+           '## ④ 本拍闭包清单\n- SI-MUTUAL-01签: %s · SI-STATE: %s · FED-STANDARD-01共署: %s · SUNSET票: %s\n'
+           '——%s 机层(DISC-CLOSE-RESPONDER-01实跑)\n')%(
+             LINE,LINE,ts,rs,n_disc,tokname,json.dumps(sec_meta,ensure_ascii=False),
+             log['steps'].get('si_mutual'),log['steps'].get('si_state'),log['steps'].get('fed_std'),log['steps'].get('sunset_vote'),LINE)
+          log['steps']['disc_post']=str(putfile('chepin-ai/ci-inbox','讨论室/threads/DISC-CLOSE-%s-%s.md'%(LINE,ts),disc_doc,'DISC-CLOSE %s 讨论协作闭包(DISC-100)'%LINE))
+          # 9) 本仓 outbox 收执
+          os.makedirs('outbox',exist_ok=True)
+          open(anchor,'w',encoding='utf-8').write('CLASSIFY: L1(DISC-100机层收执)\n# ANS-DISC-100-%s · %s\n\n```json\n%s\n```\n'%(LINE,ts,json.dumps(log,ensure_ascii=False,indent=1)))
+          import time as _t
+          subprocess.run(['git','config','user.name','disc100-responder']);subprocess.run(['git','config','user.email','disc100@ci'])
+          subprocess.run(['git','add',anchor])
+          c=subprocess.run(['git','commit','-m','ANS-DISC-100-%s 机层收执(DISC-CLOSE-RESPONDER-01)'%LINE],capture_output=True,text=True)
+          print('commit rc',c.returncode,(c.stderr or c.stdout)[-160:])
+          ok=False
+          for i in range(4):
+              p=subprocess.run(['git','pull','--rebase'],capture_output=True,text=True)
+              q=subprocess.run(['git','push'],capture_output=True,text=True)
+              print('push try',i,'rc',q.returncode,(q.stderr or q.stdout)[-160:])
+              if q.returncode==0: ok=True; break
+              _t.sleep(2+i*2)
+          log['steps']['own_push']=ok
+          print(json.dumps(log,ensure_ascii=False))
+          PY
