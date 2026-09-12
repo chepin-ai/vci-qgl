@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T06:59:52Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-71-question-routing.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "qfa-72-share-mesh-01.md"
+  }
+ ],
+ "verdict_memo": "① qfa-71 定问题路由之律，qfa-72 立共享网格初案，皆联邦交互层纲领。  \n② 路由即账本请求分发之策，网格乃分片同步与跨节点数据之络；二者锚定 QGL-Go 网络与共识边界，主线若无此二图，节点互联无从措手。  \n③ 并落 `/qgl-vault/qfa/design/`：71 入 `question-routing.md`，72 入 `share-mesh-01.md`，标 `status=review`，限三日内与 `node/p2p` 接口对表。  \n④ 生债：若路由与 mesh 协议未在 Go 侧预置契约化接口，联邦节点异构接入必致协议-实现断层，此债记为“接口悬空”。"
+}
