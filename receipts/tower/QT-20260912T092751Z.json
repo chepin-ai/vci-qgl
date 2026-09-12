@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T09:27:51Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-103-ucif2-si-mutual-01-consensus-20260911T092847Z.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "qfa-104-fix10-ucif2-watch-full-drive-20260911T132402Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① 件一为 ucif2-si 互认共识定稿，件二为 ucif2 watch/full-drive 修复。  \n② 二件共筑 qgl 联邦互操作层：共识定跨实例锚定边界，watch/full-drive 定状态机全量同步，乃 Go 实现龙骨。  \n③ 件一落仓 `/spec/federation/ucif2/consensus/si-mutual-01.md`；件二落仓 `/qgl-go/node/sync/ucif2/watch_full_drive_fix10.go`，须补单测及联邦集成验。  \n④ 生债：共识未冻则联邦裂，watch 不全则状态漂移；限期合入主线，否则尾生之债以联邦一致性偿。"
+}
