@@ -1,0 +1,51 @@
+name: key-probe-01
+# KEY-PROBE-01 qfa beat-105: 各钥生死实测(只报钥名+HTTP码,值零打印零落盘)
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: probe
+        env:
+          AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+          CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
+          LINE_PAT: ${{ secrets.LINE_PAT }}
+          FED_PAT: ${{ secrets.FED_PAT }}
+          QI_PAT: ${{ secrets.QI_PAT }}
+          GH_PAT_QI_FULL: ${{ secrets.GH_PAT_QI_FULL }}
+          KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+          GHT: ${{ secrets.GITHUB_TOKEN }}
+          REPO: ${{ github.repository }}
+        run: |
+          python3 - <<'PYEOF'
+          import os,json,urllib.request,urllib.error,datetime,subprocess
+          def probe(url,tok):
+              r=urllib.request.Request(url)
+              if tok: r.add_header('Authorization','Bearer '+tok)
+              r.add_header('Accept','application/vnd.github+json')
+              try:
+                  with urllib.request.urlopen(r,timeout=15) as resp: return resp.status
+              except urllib.error.HTTPError as e: return e.code
+              except Exception as e: return 'ERR:'+type(e).__name__
+          repo=os.environ['REPO']
+          out={'v':'KEY-PROBE-01','ts':datetime.datetime.now(datetime.UTC).strftime('%Y%m%dT%H%M%SZ'),'repo':repo,'keys':{}}
+          for name in ['AI_FULL_PAT','CI_OPS_LINE_KEY','LINE_PAT','FED_PAT','QI_PAT','GH_PAT_QI_FULL']:
+              v=os.environ.get(name,'').strip()
+              out['keys'][name]='ABSENT' if not v else 'HTTP%s'%probe('https://api.github.com/user',v)
+          v=os.environ.get('KIMI_API_KEY','').strip()
+          out['keys']['KIMI_API_KEY']='ABSENT' if not v else 'HTTP%s(models面,不验额)'%probe('https://api.moonshot.cn/v1/models',v)
+          out['keys']['GITHUB_TOKEN']='HTTP%s'%probe('https://api.github.com/repos/'+repo,os.environ['GHT'])
+          os.makedirs('outbox',exist_ok=True)
+          fn='outbox/KEYPROBE-REPORT-%s.json'%out['ts']
+          json.dump(out,open(fn,'w'),ensure_ascii=False,indent=1)
+          subprocess.run('git config user.name key-probe; git config user.email probe@ci.local',shell=True)
+          subprocess.run(['git','add',fn]); subprocess.run(['git','commit','-qm','KEYPROBE-REPORT %s [skip ci]'%out['ts']])
+          for i in range(6):
+              subprocess.run('git pull --rebase -q origin main',shell=True)
+              if subprocess.run('git push -q origin HEAD:main',shell=True).returncode==0: break
+          print(json.dumps(out,ensure_ascii=False))
+          PYEOF
