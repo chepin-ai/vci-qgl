@@ -1,0 +1,15 @@
+{
+ "v": "KEY-PROBE-01",
+ "ts": "20260912T234111Z",
+ "repo": "chepin-ai/vci-qgl",
+ "keys": {
+  "AI_FULL_PAT": "HTTP200",
+  "CI_OPS_LINE_KEY": "HTTP200",
+  "LINE_PAT": "HTTP200",
+  "FED_PAT": "ABSENT",
+  "QI_PAT": "ABSENT",
+  "GH_PAT_QI_FULL": "ABSENT",
+  "KIMI_API_KEY": "HTTP200(models面,不验额)",
+  "GITHUB_TOKEN": "HTTP200"
+ }
+}
