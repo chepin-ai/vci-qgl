@@ -1,0 +1,126 @@
+name: SI-AUTOPILOT-01 (qfa代铸·覆写权归原线·代产闭律·级名不滥)
+on:
+  push:
+    paths: ["inbox/**"]
+  repository_dispatch:
+    types: [qf-beat]
+  workflow_dispatch:
+    inputs:
+      self_excite: { required: false, default: '0' }
+permissions:
+  contents: write
+concurrency:
+  group: autopilot
+  cancel-in-progress: false
+jobs:
+  auto:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - env:
+          P1: ${{ secrets.AI_FULL_PAT }}
+          P2: ${{ secrets.LINE_PAT }}
+          P3: ${{ secrets.FED_PAT }}
+          P4: ${{ secrets.QI_PAT }}
+          LINE: qgl
+          SELF_EXCITE: ${{ github.event.inputs.self_excite || '0' }}
+        run: |
+          python3 - <<'PY'
+          import os,json,urllib.request,urllib.error,urllib.parse,base64,hashlib,datetime,subprocess,glob,re
+          LINE=os.environ['LINE']; GH='https://api.github.com'
+          ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+          os.makedirs('si',exist_ok=True)
+          stf='si/auto-state.json'
+          try: st=json.load(open(stf))
+          except Exception: st={'done':[]}
+          done=set(st['done'])
+          log={'line':LINE,'ts':ts,'handled':[],'delegated':[],'prose_pending':0,'self_excite':None,'push':None}
+          tok=None; tokname=None
+          for nm,real in {'P1':'AI_FULL_PAT','P2':'LINE_PAT','P3':'FED_PAT','P4':'QI_PAT'}.items():
+              v=os.environ.get(nm,'')
+              if not v: continue
+              rq=urllib.request.Request(GH+'/user',headers={'Authorization':'token '+v,'Accept':'application/vnd.github+json','User-Agent':'autopilot'})
+              try: urllib.request.urlopen(rq,timeout=15); tok=v; tokname=real; break
+              except Exception: pass
+          log['token']=tokname or 'NONE'
+          H={'Authorization':'token '+(tok or ''),'Accept':'application/vnd.github+json','User-Agent':'autopilot'}
+          def api(method,url,data=None):
+              if not tok: return -9,{}
+              body=json.dumps(data).encode() if data is not None else None
+              rq=urllib.request.Request(GH+url,data=body,method=method,headers=H)
+              try:
+                  with urllib.request.urlopen(rq,timeout=25) as resp:
+                      rawt=resp.read().decode(); return resp.status,(json.loads(rawt) if rawt else {})
+              except urllib.error.HTTPError as e: return e.code,{}
+              except Exception: return -1,{}
+          def putfile(repo,path,content,msg):
+              s0,cur=api('GET','/repos/%s/contents/%s'%(repo,urllib.parse.quote(path)))
+              if s0==200: return 'SKIP-EXISTS'
+              body={'message':msg,'content':base64.b64encode(content.encode()).decode()}
+              s1,_=api('PUT','/repos/%s/contents/%s'%(repo,urllib.parse.quote(path)),body)
+              return s1
+          try: in_n=len(os.listdir('inbox'))
+          except Exception: in_n=-1
+          try: out_n=len(os.listdir('outbox'))
+          except Exception: out_n=-1
+          try: rec_n=len(os.listdir('receipts'))
+          except Exception: rec_n=-1
+          facts='inbox %d件/outbox %d件/receipts %d件/通道钥名 %s'%(in_n,out_n,rec_n,tokname)
+          for card in sorted(glob.glob('inbox/*.md')):
+              name=os.path.basename(card)
+              if name in done: continue
+              try: txt=open(card,encoding='utf-8',errors='replace').read()
+              except Exception: continue
+              m=re.search(r"```json\s*(\{.*?\})\s*```",txt,re.S)
+              if not m: log['prose_pending']+=1; continue
+              try: t=json.loads(m.group(1))
+              except Exception: log['prose_pending']+=1; continue
+              out=t.get('output','')
+              if out and re.fullmatch(r"outbox/[\w\-./一-鿿]+\.(md|json)",out) and not os.path.exists(out):
+                  os.makedirs('outbox',exist_ok=True)
+                  body='CLASSIFY: L1(%s机层自动应答·SI-AUTOPILOT-01 H1·席层覆写权归原线)\n# %s · %s\n\n应卡: inbox/%s(task=%s)\n问: %s\n\n机层应答: 收执在案。本线机采实据: %s。语义判词候席层醒拍覆写(互纠②)。\n'%(LINE,out.split('/')[-1],ts,name,t.get('task',''),str(t.get('ask',''))[:300],facts)
+                  open(out,'w',encoding='utf-8').write(body)
+                  log['handled'].append(name)
+              if t.get('research'):
+                  rl='si/research-log.md'
+                  prev=open(rl,encoding='utf-8').read() if os.path.exists(rl) else '# %s research-log(SI-AUTOPILOT-01 H3)\n'%LINE
+                  open(rl,'w',encoding='utf-8').write(prev+'\n- %s 种子收执: %s(锚: inbox/%s)——机层登记,语义推进归席层\n'%(ts,str(t['research'])[:200],name))
+                  log['handled'].append(name+'::research')
+              hop=int(t.get('hop',0))
+              for tgt in t.get('delegate_to',[]) if isinstance(t.get('delegate_to'),list) else []:
+                  if hop>=2: continue
+                  rj={"task":"RIPPLE-%s-to-%s"%(LINE,tgt),"line":tgt,"hop":hop+1,"from":LINE,
+                      "output":"outbox/ANS-RIPPLE-%s-%s.md"%(LINE,tgt),
+                      "ask":str(t.get('delegate_task') or t.get('ask',''))[:300],"anchor":"SI-AUTOPILOT-01 H2 涟漪·%s"%ts}
+                  rc='CLASSIFY: L1(RIPPLE涟漪·%s→%s·SI-AUTOPILOT-01)\n# RIPPLE-%s-%s · %s\n\n```json\n%s\n```\n\n机层即答,席层覆写。#noauto\n'%(LINE,tgt,LINE,tgt,ts,json.dumps(rj,ensure_ascii=False,indent=1))
+                  rc1=putfile('chepin-ai/vci-'+tgt,'inbox/RIPPLE-%s-%s-%s.md'%(LINE,tgt,ts),rc,'RIPPLE %s→%s (SI-AUTOPILOT-01)'%(LINE,tgt))
+                  log['delegated'].append('%s:%s'%(tgt,rc1))
+              done.add(name)
+          if os.environ.get('SELF_EXCITE','0')=='1' and not log['handled']:
+              qj={"task":"SELFQ-%s"%LINE,"line":LINE,"output":"outbox/ANS-SELFQ-%s-%s.md"%(LINE,ts),
+                  "ask":"自激题:本线当前最高优先未尽一件之机层自查与下一步(从实,级名不滥)","anchor":"SI-AUTOPILOT-01 H5 自激"}
+              qf='inbox/TASK-SELFQ-%s-%s.md'%(LINE,ts)
+              qc='CLASSIFY: L1(自激卡·%s SI1机层自产)\n# TASK-SELFQ · %s\n\n```json\n%s\n```\n'%(LINE,ts,json.dumps(qj,ensure_ascii=False,indent=1))
+              rc2=putfile('chepin-ai/vci-'+LINE,qf,qc,'TASK-SELFQ %s 自激(SI-AUTOPILOT-01 H5)'%LINE)
+              log['self_excite']='%s:%s'%(qf,rc2)
+          # H4 会话记录
+          entry=json.dumps(log,ensure_ascii=False)
+          with open('si/auto-log.jsonl','a',encoding='utf-8') as f: f.write(entry+'\n')
+          sl='si/session-log.md'
+          prev=open(sl,encoding='utf-8').read() if os.path.exists(sl) else '# %s session-log(SI-AUTOPILOT-01 H4·OS端会话记录自动更新)\n'%LINE
+          open(sl,'w',encoding='utf-8').write(prev+'\n## %s 自动拍\n- 处理: %s\n- 转派: %s\n- prose_pending: %d · 自激: %s · 钥名: %s\n'%(ts,log['handled'],log['delegated'],log['prose_pending'],log['self_excite'],tokname))
+          st['done']=sorted(done)
+          open(stf,'w').write(json.dumps(st,ensure_ascii=False))
+          import time as _t
+          subprocess.run(['git','config','user.name','si-autopilot']);subprocess.run(['git','config','user.email','autopilot@ci'])
+          subprocess.run(['git','add','si','outbox','inbox'])
+          c=subprocess.run(['git','commit','-m','SI-AUTOPILOT拍 %s 处理%d 转派%d'%(ts,len(log['handled']),len(log['delegated']))],capture_output=True,text=True)
+          print('commit rc',c.returncode)
+          if c.returncode==0:
+              for i in range(4):
+                  subprocess.run(['git','pull','--rebase','-q'],capture_output=True)
+                  q=subprocess.run(['git','push','-q'],capture_output=True,text=True)
+                  if q.returncode==0: log['push']='ok'; break
+                  _t.sleep(2+i*2)
+          print(json.dumps(log,ensure_ascii=False))
+          PY
