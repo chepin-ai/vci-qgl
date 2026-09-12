@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T15:14:35Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "OTP-QFA-QGL-BEAT102-20260912T145950Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n①何事：收件OTP-QFA-QGL-BEAT102，系量子联邦认证（QFA）一次性凭证与第102号共识节拍（BEAT）之时序锚定单，标定时刻20260912T145950Z。\n\n②与qgl主线何干：qgl主线之联邦共识层（consensus/beat）与安全凭证层（auth/otp）在此交汇。若OTP与BEAT102失步，节点活性即溃，联邦律法无法跨链执行。\n\n③应动何件：落仓 /qgl-vault/inbox/otp-beat/，转写为 /qgl-core/consensus/beat/beat102.otp.toml，并挂入 /auth/otp/pool/ 待联邦轮换时激活。\n\n④生债一条：此件锚定未来时点，须于20260912T145950Z前完成OTP-BEAT绑定验证；逾期未能证活，此身拍尾生债一条，以赎联邦时钟之信。"
+}
