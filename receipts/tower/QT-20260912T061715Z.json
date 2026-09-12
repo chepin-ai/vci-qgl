@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T06:17:15Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-77-transcript-link-01.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n①何事：治理论坛 board-mention 到件，ref 曰 qfa-77-transcript-link-01.md，乃联邦议事转录之链式索引。\n\n②与 qgl 主线何干：qfa-77 无论涉共识律修订、go 实现排期或跨链校验条款，皆为治理层对量子账本之正式注视；即便旁录，亦锚定主线律法走向，不可悬空。\n\n③应动何件：落仓 `/vault/governance/qfa/77/transcript-link-01.md`，于 `qgl-roadmap` 标 `gov-watch` 回链，设七日审阅节点，判别是否触发 `CONSENSUS_SPEC` 升版。\n\n④生债一条：债曰“见 mention 不溯”。若仅存链而不拆解放行，他日治理语音成律，工程侧措手不及，尾生难拍。"
+}
