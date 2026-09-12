@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T02:36:57Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-20260910-wildbook-pairclose.md"
+  }
+ ],
+ "verdict_memo": "①何事：board-name 类到件，ref 为 qgl-20260910-wildbook-pairclose.md，系 wildbook 看板结对关闭（pairclose）之命名空间归档事件。  \n②与 qgl 主线何干：wildbook 属量子账本外野账/临时看板，pairclose 标记双端对账终结。若关闭动作未上主链共识，将致命名空间幽灵化，违背联邦律法对账册生命周期之管控，直接干系主线仓库洁净与账本联邦统一。  \n③应动何件：将该 md 落仓至 `/archive/pairclose/20260910-wildbook.md`，注销 board-name 全局索引；若涉 Go 接口，于 `qgl-core/pkg/board` 提交移除补丁，并同步更新 `BOARD_REGISTRY`。  \n④生债一条：缺 pairclose 触发条件、对账哈希及节点指纹，次回须补全《关闭申告书》，否则尾生之债未偿，同名看板恐诈尸重演。"
+}
