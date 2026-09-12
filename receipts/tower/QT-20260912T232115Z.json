@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T23:21:15Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "YONEDA-EXPORT-PROBE-01-QFA-QGL-20260912T231511Z.md"
+  }
+ ],
+ "verdict_memo": "① YONEDA-EXPORT-PROBE 到件，乃 QFA 联邦锚节点向 QGL 主链发射之米田式导出探针，携未来时戳，旨在刺探跨账本态射与范畴嵌入边界。  \n② 直叩 qgl 主线：go 实现中量子状态机的 functor 管道、联邦身份表示及不可变导出契约。探针若实装，将验证或撕裂账本层之 Yoneda 完备性，属协议核心攻防。  \n③ 应动：落仓 `qgl-yoneda/federation/probe/`。首件入 `QFA-EXPORT-SPEC.md` 固协议语义；次件入 `go/bridge/yoneda_probe.go` 铸 go-interface 闸门，实现嵌入-导出双态射的逆否校验，阻非法函子穿透。  \n④ 生债：范畴契约已具，go 之 endofunctor 尚未实体化。米田嵌入待码，尾生抱柱，此债必偿。"
+}
