@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T03:48:49Z",
+ "idle_in": 6,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DEMAND-FED-92-ACK-qgl-20260912T034751Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "TASK-ECHO-91-qgl-20260912T034751Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n① DEMAND-FED-92-ACK 系联邦律法对 qgl 之合规确认回执；TASK-ECHO-91 系第91号任务之回显，验交付闭环。\n② 前者定量子账本/go 实现之治理边界与 ACL 上限；后者验代码脉动与模块成色，皆为主线之锚。\n③ ACK 落仓 `/vault/fed/ack/92`，条款拆解转录为链上治理合约；ECHO 落仓 `/task/echo/91`，核效通过则关单，未竟则打回重入 Sprint。\n④ 生债：ACK 之合规条款与 ECHO 之状态证明须于 72 h 内同步归档，逾期尾生债计息，不可注销。"
+}
