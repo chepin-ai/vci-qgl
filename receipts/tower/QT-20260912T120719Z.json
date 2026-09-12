@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T12:07:19Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lvlu-器课六株-BURST-LOOP-01-lgt-qfa-手术及全谱审计-cisvr对位-20260909T165900Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：器课六株 BURST-LOOP-01 之 lgt-qfa 手术及全谱审计件，附 cisvr 对位勘验，属板级提及备案。\n\n② **与 qgl 主线何干**：涉量子硬件审计与接口对位，为联邦律法在器课场景之合规锚点；qgl 主线当录其审计哈希为链上存证，确保 Burst Loop 状态机可回溯。\n\n③ **应动何件**：落仓 `/qgl-vault/器课/六株/BURST-LOOP-01/audit/20260909-lgt-qfa-cisvr.md`，并触发 `qfa` 模组与 `cisvr` 接口之双签约束，纳入全谱审计流水线。\n\n④ **生债一条**：cisvr 对位若存毫厘之差，则全谱审计失真，须以尾生之信，限期闭环此接口对位债，逾期即记入联邦异常 ledger。"
+}
