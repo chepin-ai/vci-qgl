@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T08:44:47Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-108-leak-RCA-AIF-SUNSET-01-签覆盖补全-20260911T182136Z.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "qfa-109-全维升级令落实账-20260911T185404Z.md"
+  }
+ ],
+ "verdict_memo": "件一：QFA-108。① AIF-SUNSET 泄漏 RCA，签覆盖补全。② 根因证据须上量子账本固化；签覆盖直接驱动 go 层密钥轮换、默克尔状态迁移。③ 落仓 `/qgl-vault/qfa/108/RCA/`，patch `crypto/sign` 与 `ledger/snapshot`；同步更新 AIF 下线快照。④ 生债：覆盖签零知识模板未编译。\n\n件二：QFA-109。① 全维升级令落实账。② 凡涉共识参数、协议版本、硬分叉高度，必须在 go 实现中冻结高度并留痕。③ 落仓 `/qgl-vault/qfa/109/upgrade/`，拆解为 `upgrade.go` 配置差分，回联 108 签补。④ 生债：升级令与存量状态兼容性矩阵未闭环。"
+}
