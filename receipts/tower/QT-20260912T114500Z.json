@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T11:45:00Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "lvlu-ring2-环谱判词-vinf-lgt-cfts-qgl-usrm-五线互联浪涌-20260909T134851Z.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "lvlu-五要件取得-qlv塔成-lvlu塔生-三病株根除-vinf-qgl-lgt-qlv-20260909T143743Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DISC-CLOSE-100-qgl-20260912T101226Z.md"
+  }
+ ],
+ "verdict_memo": "① **环二·环谱判词·五线互联浪涌**：确认 vinf/lgt/cfts/usrm/主链五线拓扑与浪涌阈值，系 qgl 互联层基线。应落仓 `ring2/环谱/互联协议`，固化判词为路由契约。生债：缺五线联合压测报告，须补齐。\n\n② **五要件·QLV 塔成·三病株根除**：QLV 塔实体落成，三病株拔除，直接锚定主线建设节点。应落仓 `qlv/塔成/里程碑`，附病株清除签名。生债：五要件联邦律法合规回执待验。\n\n③ **DISC-CLOSE-100**：第 100 号讨论结案，治理收口。应落仓 `disc/close/归档`，清 inbox。生债：须萃取 Close 后遗留未决 action，转 issue 追踪。"
+}
