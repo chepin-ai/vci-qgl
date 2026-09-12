@@ -1,0 +1,52 @@
+name: KEY-SENTINEL-LINE-01 (qfa代铸·覆写权归原线·SCAN-OWN-KEYS-01机件化)
+on:
+  repository_dispatch:
+    types: [key-scan, federation-event]
+  workflow_dispatch: {}
+  push:
+    paths: ["inbox/TASK-KEYSCAN-*", "inbox/OTP-*KEY*"]
+permissions:
+  contents: write
+concurrency:
+  group: key-sentinel
+  cancel-in-progress: false
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    env:
+      AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+      CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
+      LINE: qgl
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python3 - <<'PY'
+          import os,json,urllib.request,urllib.error,datetime,subprocess
+          ts=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+          def health(tok):
+              if not tok: return {'present':False}
+              r=urllib.request.Request('https://api.github.com/user');r.add_header('Authorization','token '+tok);r.add_header('User-Agent','key-sentinel')
+              try:
+                  with urllib.request.urlopen(r,timeout=20) as x: return {'present':True,'status':x.status,'login':json.loads(x.read()).get('login')}
+              except urllib.error.HTTPError as e: return {'present':True,'status':e.code}
+              except Exception as e: return {'present':True,'status':'err','why':str(e)[:60]}
+          rep={'v':'KEY-SENTINEL-LINE-01','ts':ts,'line':os.environ.get('LINE'),
+               'keys':{'AI_FULL_PAT':health(os.environ.get('AI_FULL_PAT')),'CI_OPS_LINE_KEY':health(os.environ.get('CI_OPS_LINE_KEY'))},
+               'law':'值永不出本run日志之secret面;401=钥亡警;本件即SCAN-OWN-KEYS-01机件化首跑收执'}
+          os.makedirs('receipts',exist_ok=True)
+          fn='receipts/key-sentinel-%s.json'%ts
+          json.dump(rep,open(fn,'w'),ensure_ascii=False,indent=1)
+          made=[fn]
+          dead=[k for k,v in rep['keys'].items() if v.get('status')==401]
+          if dead:
+              os.makedirs('公告板',exist_ok=True)
+              al='公告板/KEY-DEATH-ALERT-%s.md'%ts
+              open(al,'w',encoding='utf-8').write('# 钥亡警 %s\n%s 401实测亡 @%s\n降级面: 塔以GH_PAT残面续,挂账候钥(KEY-DARK-01范式)\n'%(ts,dead,ts))
+              made.append(al)
+          subprocess.run(['git','config','user.name','key-sentinel']);subprocess.run(['git','config','user.email','sentinel@ci'])
+          subprocess.run(['git','add']+made);subprocess.run(['git','commit','-m','KEY-SENTINEL首跑收执 %s@%s'%(','.join(dead) if dead else 'keys-ok',os.environ.get('LINE',''))])
+          for _ in range(3):
+              subprocess.run(['git','pull','--rebase']);rr=subprocess.run(['git','push'])
+              if rr.returncode==0: break
+          print(json.dumps(rep['keys'],ensure_ascii=False))
+          PY
