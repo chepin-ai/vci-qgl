@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T07:31:31Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-67-t5q3-mobilize.md"
+  }
+ ],
+ "verdict_memo": "① 何事：董事会圈阅 `qfa-67-t5q3-mobilize.md`，系 QFA-67 号议题之跨域动员与资源调度案，要求执行侧响应。  \n② 与 qgl 主线何干：QFA 为量子账本联邦互操作之前置协议栈，本案若落地，将直接改变 go 实现层的网络握手与分片共识接口，属主线里程碑依赖。  \n③ 应动何件：将 md 转为可执行需求单，落仓 `qgl/fed/qfa-67/mobilize.md`；同步在 `milestone/` 下创建 T5Q3 接口草案，若涉及可信执行环境动员，另启 `tee/mobilize.go` 骨架。  \n④ 生债一条：七日之内不输出该动员案对应的 Go 接口 IDL 与最小可编译骨架，尾生之债不得销。"
+}
