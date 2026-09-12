@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T04:09:49Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-99-beat75-RING-MESH统一环谱-反向驱动链证-FLOOR04复证.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① **何事**：看板到件 `board-mention`，呈 `qfa-99-beat75-RING-MESH统一环谱-反向驱动链证-FLOOR04复证.md`，为统一环谱反向驱动链证在第四层的复证文书。\n\n② **与 qgl 主线何干**：RING-MESH 乃量子账本共识层核心拓扑，反向驱动链证关乎状态回滚与历史锚定机制，直接牵动 qgl 状态机及不可篡改承诺，属主线骨架工程。\n\n③ **应动何件**：落仓 `qgl/vault/consensus/ring-mesh/rev-drive/floor04/`；触发回归测试套件 `TestRingMeshRevFloor04`；若复证通过，合并入 `qfa-99` 里程碑并更新 `CHAIN_PROOF` 接口契约。\n\n④ **生债一条**：FLOOR04 复证尚缺形式化验证脚本，此债记为「还缺一次完整性形式化证明」，须以 TLAPLUS/COQ 补全，未结清不得封版。"
+}
