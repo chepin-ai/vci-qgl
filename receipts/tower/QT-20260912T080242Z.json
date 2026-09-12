@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T08:02:42Z",
+ "idle_in": 2,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-63-os-engine-persist-disc.md"
+  }
+ ],
+ "verdict_memo": "① 何事：QFA-63 看板提票，议 OS 引擎持久化层之存储策略、崩溃恢复与性能边界。\n\n② 与 qgl 主线何干：量子账本以日志复制为脊，持久化乃状态机容灾立命之根；OS 引擎落盘策略系于节点恢复与拜占庭容错之基，主线梁栋也。\n\n③ 应动何件：此件为讨论录，宜落仓 `/qfa/rfc/0063-os-engine-persist-disc.md`；待共识收敛，动 `/qgl/persist/store.go` 接口及 `/docs/adrs/adr-persistence.md` 架构决策录。\n\n④ 生债一条：议而无码，缺持久化接口 PoC。债曰：七日内出 `store.go` 草案与单测，逾期则为悬债。"
+}
