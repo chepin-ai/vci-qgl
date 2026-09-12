@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T06:38:20Z",
+ "idle_in": 1,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-75-lead-routing.md"
+  }
+ ],
+ "verdict_memo": "①何事：board-mention 触发，件为 qfa-75-lead-routing.md，定 lead 路由/主节点调度之则。  \n②与 qgl 主线何干：此则系联邦拓扑律法，直接框定量子账本 go 实现层之写入权威、分片归属与代码路由，动摇主线锚点。  \n③应动何件：落仓 `vault/federation/routing/qfa-75-lead-routing.md`；于 qgl 看板立追踪卡，强制同步 `CODEOWNERS` 与提交权限；如涉及接口变更，补 `design/ADR-xxx`。  \n④生债一条：路由规则与 qgl 共识层状态机尚缺显式契约，须补《路由决策 → 账本状态》对齐文档，债记 **QGL-ROUTING-ALIGN-01**，待偿。"
+}
