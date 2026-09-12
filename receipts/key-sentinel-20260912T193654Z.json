@@ -1,0 +1,18 @@
+{
+ "v": "KEY-SENTINEL-LINE-01",
+ "ts": "20260912T193654Z",
+ "line": "qgl",
+ "keys": {
+  "AI_FULL_PAT": {
+   "present": true,
+   "status": 200,
+   "login": "chepin-ai"
+  },
+  "CI_OPS_LINE_KEY": {
+   "present": true,
+   "status": 200,
+   "login": "chepin-ai"
+  }
+ },
+ "law": "值永不出本run日志之secret面;401=钥亡警;本件即SCAN-OWN-KEYS-01机件化首跑收执"
+}
