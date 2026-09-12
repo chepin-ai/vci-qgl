@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T23:49:21Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "KEY-VERDICT-105-QFA-QGL-20260912T233855Z.md"
+  }
+ ],
+ "verdict_memo": "①何事：收件箱到件 KEY-VERDICT-105，系 QFA（量子联邦锚）对 QGL 主线发出的第105号律法裁决封存件，时戳 2026-09-12T23:38:55Z，为断代后首批复苏的联邦法理依据。\n\n②与 qgl 主线何干：此件直接锚定 QGL-VAULT 的 go 实现层与联邦律法之对接点，断代后共识协议合法性重建全系于此，是续主线锚不可或缺的法理输入。\n\n③应动何件：落仓路径 `/qgl/vault/verdict/inbox/KEY-VERDICT-105-QFA-QGL-20260912T233855Z.md`；同步触发 `qgl-anchor` 工单 `legal-reboot` 分支，签入 `docs/federation/verdicts/` 索引，并绑定 go 模块的联邦接口。\n\n④生债一条：第105号裁决积压未落，复生首息已生——限二十四时辰内完成 go 实现层律法接口绑定，逾期联邦锚点漂移，尾生债：延宕一日，补双倍共识测试用例。"
+}
