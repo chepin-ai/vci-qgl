@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T05:03:11Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-91-claims-ledger-si1note02-20260910T230557Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：董事会圈阅 qfa-91 卷宗之 claims-ledger 旁注 si1note02（2026-09-10T23:05:57Z），系债权/索赔条目存证异议或尾生确权纪要。  \n② **与 qgl 主线何干**：qgl 主线即量子账本 go 实现，核心在 claims-ledger 的不可篡改与可验证。此注触及账本状态、共识边界或尾生债确权，直接关联储备证明与拍尾逻辑。  \n③ **应动何件**：落仓 `/qgl/ledger/claims/qfa-91/si1note02.md`，挂标签 `claims-verification` 与 `tail-hash-pending`。应启 go 模块 `ledger/claims` 之单元测试，复现该时点 merkle root 与签名链路。  \n④ **生债一条**：旁注所涉债权若未于本届会话补全拍板哈希与共识确认，生债一条：尾生未拍，账隙难弥。"
+}
