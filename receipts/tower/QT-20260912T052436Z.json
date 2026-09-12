@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T05:24:36Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-86-si5-answer-base-repair-dragon.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "qfa-88-si05-unified-grandhall-20260910T221847Z.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "qfa-89-mech-call-01-20260910T223007Z.md"
+  }
+ ],
+ "verdict_memo": "① **qfa-86「龙底修复」**：应答基座溃堤，龙形锚点失稳，将直接动摇 qgl 主链共识。应落仓 `/qfa/si5/dragon-base/`，补修复日志并回刷 si5 节点配置。生债：冷备仓补丁未签，下轮同步前须补。\n\n② **qfa-88「统一厅堂」**：Grandhall 为联邦律法唯一入口，归并可防接口分岔致账本状态撕裂。应落仓 `/qfa/si05/grandhall/`，锁死统一 schema，废弃旧分流页。生债：旧厅孤儿记录迁移脚本待补。\n\n③ **qfa-89「机制首唤」**：mech-call 乃无人驿自持心跳，首唤通则 qgl-go 流水线可自动驱动。应落仓 `/qfa/mech/call-01/`，固化为工位启动链契约。生债：异常回退未覆盖，须补熔断日志。"
+}
