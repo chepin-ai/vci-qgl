@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T06:06:34Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "qfa-80-origin-northstar.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① **何事**：看板提及 `qfa-80-origin-northstar.md`，系 QFA-80 号「起源·北极星」根文档于看板中被激活/引用。\n\n② **与 qgl 主线何干**：北极星文档载项目初心与联邦律法元约束。qgl 作为量子账本／Go 实现之肉身，须以此校准协议边界、数据结构及共识路径，防工程实现偏离源头宪章。\n\n③ **应动何件**：落仓路径建议——于 `qgl-vault` 开立 `/meta/northstar/qfa-80.md` 镜像摘要；提取核心律法条目铸入创世配置或 `docs/constitution.md` 注释；若看板存在联动议题，于 `/issues/80.md` 建双向回指，完成锚定。\n\n④ **生债一条**：当前 Go 实现与 qfa-80 北极星目标之兼容性尚未全量审计，记**方向校验债**一笔，须于本迭代内完成差值扫描并补录合宪性报告。"
+}
