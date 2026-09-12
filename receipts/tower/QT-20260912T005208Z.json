@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T00:52:08Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-voice-20260909052151.md"
+  }
+ ],
+ "verdict_memo": "① 何事：board-name 到件，ref 为 qgl-voice-20260909052151.md，属语音/广播板块定名记录。  \n② 与 qgl 主线何干：量子账本/go 主线以共识传播为脉，voice 若指节点广播/共识消息通道，则直关账本联邦通讯层命名空间；即便为外围看板，亦需防命名污染 go 模块边界。  \n③ 应动何件：落仓 `QGL-VAULT/boards/voice.md`，若涉接口则迁 `internal/p2p/voice/` 或 `pkg/consensus/broadcast/`；同步更新 `docs/naming-registry.md`。  \n④ 生债一条：qgl-voice 之“voice”尚未与账本消息类型（Transaction/Block/Consensus）对位，债存该 ref，待语音层权责裁定后销。"
+}
