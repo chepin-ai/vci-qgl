@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T03:05:50Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DIRECT-93-qgl-20260912T030532Z.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**（ref: DIRECT-93）\n\n① **何事**：盲件。到件仅具引用壳，正文阙如，未携 patch、issue_body 或 scope，属断代后直接撞驿之空包。  \n② **与 qgl 主线何干**：文空则锚无着点，暂无法系于量子账本 / Go 实现主线；惟标识含 qgl，疑为协议补遗或实现债，待补文方判权重。  \n③ **应动何件**：不仓。置 `inbox/DIRECT-93-qgl-20260912T030532Z.md` 并悬 `BLIND` 标；发 `NEED_INFO` 回件，索 `kind+scope+body`，三日满则转 `triaged/` 或 `graveyard/`。  \n④ **生债一条**：驿卒为盲件出一判，耗一算而未产锚，债曰「盲审占算」，入尾生簿，候正文到日或逾期核销时对冲。"
+}
