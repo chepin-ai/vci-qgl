@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-12T02:32:34Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "qgl-20260911-consensus-bridge01.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-20260911-fulldrive-resp-104.md"
+  },
+  {
+   "kind": "board-name",
+   "ref": "qgl-20260911-otp-intervention-105.md"
+  }
+ ],
+ "verdict_memo": "① **consensus-bridge01**：跨片共识桥接规约。关涉 qgl 联邦分片共识主线，为 go 实现层定义跨片提交与终局性锚定接口。应落 `/consensus/bridge/` 仓，同步绑定 `spec/qgl-consensus-v2.md`。生债：待补跨片欺诈证明的 go stub 与基准测。\n\n② **fulldrive-resp-104**：全节点驱动响应日志。属 qgl-go 节点引擎主线，记录状态机对全量请求的应答语义。应落 `/node/engine/resp/` 仓，合并入 `fulldrive` 系列索引。生债：缺状态回滚边界 case 的单元测覆盖。\n\n③ **otp-intervention-105**：一次性令牌应急干预案。涉 qgl 安全治理主线，规定联邦紧急状态下的 OTP 覆写与暂停规则。应落 `/security/gov/otp/` 仓，挂接 `emergency-protocol.md`。生债：未明确 OTP 触发所需的联邦仲裁阈值（几方签）。"
+}
