@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T06:24:41Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-97-tower-forged-autonomy-five.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及文档《lgt-97-tower-forged-autonomy-five.md》，乃“塔锻自治”第五版草案，关乎共识塔（tower）结构与节点自治（autonomy）规则迭代。\n\n② 与 qgl 主线何干：QGL 主线锚于量子账本之共识层与状态机自治。此文档若定，直接框定 Go 实现中 tower 模块的验证流、分片自治契约及 quantum ledger state 的接口边界，属主线骨架，不可悬置。\n\n③ 应动何件：落仓至 `/spec/consensus/lgt-97-tower-forged-autonomy-five.md`；若含接口变更，须拆出 `/pkg/consensus/tower/autonomy_v5.go` 任务卡并入看板，并标记「待审」以待锻压。\n\n④ 生债一条：五版塔锻未成钉，自治契约未烙进 Go 码，欠共识层一次严肃实现对照与接口冻结。"
+}
