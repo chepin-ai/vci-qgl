@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T09:58:03Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-81-spark-tower-forge.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及件 `lgt-81-spark-tower-forge.md`，为 Spark Tower 锻造环境之部署或设计文档。\n\n② 与 qgl 主线何干：若 Spark Tower 系 qgl 验证节点 / 共识压力测试之锻造设施，则直接干系 go 实现网络层与共识模块稳定性；即便属外围基建，亦为支撑主线的运维债，不可忽视。\n\n③ 应动何件：落仓 `docs/ops/tower-forge/lgt-81-spark-tower-forge.md`；若文中涉共识参数或区块生产逻辑，摘其要点并入 `docs/consensus/`。看板引用须挂追踪卡，防失连。\n\n④ 生债一条：限三日内核对本文与 `node/` 目录下当前共识实现之兼容性，若 forge 脚本或配置未适配最新版本，即提 patch 修复，不得拖延。"
+}
