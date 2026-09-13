@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T18:27:26Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-33-relay-ignite-mesh.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及技术文档 `lgt-33-relay-ignite-mesh.md`，记中继-点火-网格组网方案，属网络层设计稿。\n\n② 与 qgl 主线何干：量子账本依赖抗分区的 P2P 网格。该文档定义中继握手与拓扑点燃机制，是 qgl-go 网络子系统（net/relay）的主线锚点之一，直接决定节点发现与消息泛洪的 Go 实现接口。\n\n③ 应动何件：落仓至 `qgl-spec/net/rfc/`，并在主看板开立「net/mesh-ignite」工单；同步切出 `feat/relay-ignite` 分支，先行抽象 `MeshIgniter` 与 `RelayDialer` 的 Go interface，供联邦审阅。\n\n④ 生债一条：断代遗留，旧版中继状态机仅有伪码无存根。生债：三日内补齐 `ignite_statemachine.go` 的骨架、错误码枚举与最小可编译单元测试，拍尾合入主线。"
+}
