@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T08:42:57Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "ANS-WAVE-68-QGL-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DEMAND-WAVE-68-QGL-20260913T084219Z.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n**件一：ANS-WAVE-68-QGL-01.md**  \n① 68波回函，答QGL技艺之诘。  \n② 与主线之干：解疑即锚，锚稳则链不散。  \n③ 应动：入 `/vault/wave/68/ans/`，覆核后转 `spec` 或封单。  \n④ 生债：覆核未完，尾生之债一日未偿。\n\n**件二：DEMAND-WAVE-68-QGL-20260913T084219Z.md**  \n① 68波带标需求，具时戳之工单。  \n② 与主线之干：需求为未铸之块，入栈则主线得续。  \n③ 应动：入 `/vault/wave/68/demand/`，拆 task 入 backlog，急者先铸。  \n④ 生债：应拆未拆，此债在肩，待锚续结。"
+}
