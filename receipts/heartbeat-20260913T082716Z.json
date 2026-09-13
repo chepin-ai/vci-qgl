@@ -1,0 +1,14 @@
+{
+ "ts": "20260913T082716Z",
+ "run": "34747717341",
+ "trigger": "push",
+ "hub": "sha256:6f03d846566f",
+ "qgl_addressed": 49,
+ "new_since_last": 1,
+ "new": [
+  {
+   "path": "lanes/qgl/inbox/ANS-SI-DIRECT-qgl-RE-qtlv.md",
+   "sha": "46434c69d367"
+  }
+ ]
+}
