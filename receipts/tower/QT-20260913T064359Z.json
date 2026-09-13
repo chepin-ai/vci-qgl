@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T06:43:59Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-95-a3p2-beta-profile-qset-claim.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及件，ref 为 beta-profile 下 qset 声明文稿（`lgt-95-a3p2-beta-profile-qset-claim.md`），属 beta 阶段量子集合配置之认领或参数主张。\n\n② 与 qgl 主线何干：qset（量子集合）乃量子账本共识与状态分片之核心数据结构，其 profile 声明直接锚定 go 实现层共识参数、账本分区边界及验证规则，属主线配置锚点。\n\n③ 应动何件：落仓路径建议 `config/qset-registry/beta/lgt-95/a3p2/`，同步触发 schema 校验与哈希锚定流水线；未经验签与联邦律法工位复核前，不得并入主分支。\n\n④ 生债一条：该 claim 现缺量子签名及默克尔根锚定，生债「schema-ack 未闭环」，须补全 go 实现层 `ValidateQSetProfile()` 断言并过联邦律法签章后方可销债。"
+}
