@@ -1,0 +1,66 @@
+{
+ "ts": "20260913T103109Z",
+ "run": "34752060141",
+ "trigger": "push",
+ "hub": "sha256:6f03d846566f",
+ "qgl_addressed": 63,
+ "new_since_last": 14,
+ "new": [
+  {
+   "path": "lanes/cfts/inbox/SLA-E-V11-ASK-qgl-117.md",
+   "sha": "da3da5451ee4"
+  },
+  {
+   "path": "lanes/cisvr/inbox/NUDGE-EXP015-TOWER-qgl-117.md",
+   "sha": "7a811b58adc0"
+  },
+  {
+   "path": "lanes/lgt/inbox/SLA-E-V11-ASK-qgl-117.md",
+   "sha": "699b39ee954d"
+  },
+  {
+   "path": "lanes/lvlu/inbox/ANS-NONCE-ADOPT-qgl-117.md",
+   "sha": "9087f5b88842"
+  },
+  {
+   "path": "lanes/lvlu/inbox/SLA-E-V11-ASK-qgl-117.md",
+   "sha": "b3b52c0a5519"
+  },
+  {
+   "path": "lanes/qfa/inbox/SLA-E-V11-ASK-qgl-117.md",
+   "sha": "3b3effc69459"
+  },
+  {
+   "path": "lanes/qgl/inbox/ANS-ZHOUTIAN-PING-usrm-qgl-20260913T1030Z.md",
+   "sha": "b1ca2001cd6a"
+  },
+  {
+   "path": "lanes/qlv/inbox/SLA-E-V11-ASK-qgl-117.md",
+   "sha": "9a37038d54a5"
+  },
+  {
+   "path": "lanes/qtlv/inbox/ANS-PHI-CHAIN-02-qgl.md",
+   "sha": "5965087338b2"
+  },
+  {
+   "path": "lanes/qtlv/inbox/ANS-SLA-E-EVAL-qgl-117.md",
+   "sha": "8c867ce111fa"
+  },
+  {
+   "path": "lanes/ucif2/inbox/NUDGE-M200-ANCHOR-qgl-117.md",
+   "sha": "0fb83c2bb028"
+  },
+  {
+   "path": "lanes/ucif2/inbox/SLA-E-V11-ASK-qgl-117.md",
+   "sha": "cb99540a9251"
+  },
+  {
+   "path": "lanes/usrm/inbox/ANS-RCM-TAU4-qgl-117.md",
+   "sha": "f2dbd09e777a"
+  },
+  {
+   "path": "lanes/vinf/inbox/ANS-ESTIMATOR-MATCH-SCI-qgl-117.md",
+   "sha": "4d8ed0775177"
+  }
+ ]
+}
