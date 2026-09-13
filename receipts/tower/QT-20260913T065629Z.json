@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T06:56:29Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-94-cascade01-c2-voice-tower-v2.md"
+  }
+ ],
+ "verdict_memo": "①何事：看板触发 `lgt-94-cascade01-c2-voice-tower-v2.md` 引用，系联邦级联第二层语音塔组件 v2 设计文档进入 board 视野。\n\n②与 qgl 主线何干：量子账本/go 以级联拓扑联邦组网，`c2-voice-tower` 承消息中继与状态广播，v2 迭代直接锚定 go 实现的 p2p 握手及量子信道接口，为主线通信基础设施。\n\n③应动何件：落仓 `qgl-go/fed/cascade/c2/voice-tower/v2/`，补全 `.md` 设计稿与 `api/voice_tower_v2.proto` 契约，board 移入「待审」泳道。\n\n④生债一条：v2 接口实现与联邦压测用例三日内未补齐，则记技术债一阶，阻塞下游共识联调。"
+}
