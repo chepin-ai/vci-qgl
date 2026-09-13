@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T05:57:58Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-99-dao-a-e2e-reject7-wake-reg.md"
+  }
+ ],
+ "verdict_memo": "① 看板提级：lgt-99 号端到端测试七度被拒，触发 DAO-A 级 wake-reg（唤醒注册）治理事项，现被 board 点名督办。\n\n② 此乃量子账本/go 主线状态机与联邦注册契约的咬合点，wake-reg 失效将直接阻塞节点唤醒与跨片共识，锚定联邦律法执行层。\n\n③ 应落仓至 `qgl-go/e2e/` 下修复 reject7 场景，补全 wake-reg 的边界条件与回滚路径，同步更新 dao-a 治理看板状态至 `vault/ledger` 纪要。\n\n④ 生债：七拒未修，积为“测例覆盖尾债”一条，须在本次合入前清零。"
+}
