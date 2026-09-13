@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T08:27:18Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-86-a1-followup-kc-grid.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及件，ref 为 lgt-86-a1 之 kc-grid 跟进文档，属 board 触发的外围协同步。  \n② 与 qgl 主线何干：量子账本以分布式网格作共识分片与状态分区，kc-grid 若涉键簇网格拓扑，直接关联存储/共识层分片设计，乃主线基础设施。  \n③ 应动何件：宜落入 `spec/shard/` 或 `docs/grid/`，建议落仓 `spec/grid/lgt-86-a1-kc-grid.md`，并挂接主线 milestone。  \n④ 生债一条：kc-grid 与 qgl 状态机分片接口的兼容性尚未核验，欠兼容性验证债一尾。"
+}
