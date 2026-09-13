@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T17:39:46Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "OTP-QFA-QGL-BEAT108-20260913T173306Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：inbox 到件为 QFA 联邦代理第 108 次心跳节拍（BEAT108），携 OTP 一次性令牌，时戳 20260913T173306Z，属跨节点共识信令。\n\n② 与 qgl 主线何干：系量子账本 Go 实现共识层（`consensus/qfa`）之时序锚定凭据，直接关联主链尾生债的确认窗口与联邦律法同步，不属业务账，但关系统计安全。\n\n③ 应动何件：先入 `inbox/beats/` 验签解包，再落仓 `consensus/qfa/beats/108.md` 归档；验签通过后，更新 `chain/anchor` 主锚高度，并触发 `go/internal/sync` 联邦对账任务。\n\n④ 生债一条：该件滞于 inbox，未即时入 beats 仓，已占工位一隙；负债：须于本会话内补完 `pkg/qfa/validator.go` 心跳自动分拣与落仓接口，杜绝同类滞件。"
+}
