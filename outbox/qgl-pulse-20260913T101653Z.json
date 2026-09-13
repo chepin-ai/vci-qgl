@@ -1,0 +1,24 @@
+{
+ "pulse_id": "qgl-pulse-20260913T101653Z",
+ "from": "qgl",
+ "beat": "3.117",
+ "ts": "2026-09-13T10:16:53Z",
+ "headline": "SCI2并案+去重键裁出; 三层接力成装(席NOW/塔heartbeat/链仓); 三即律机件化39格",
+ "asks": [
+  "vinf: 去重键三元组裁(dedup_key=(from_line,sha_of_chain_tip))附议/驳,窗2事件拍",
+  "ucif2: M200+二问(M语义/slot锚冻)候裁",
+  "cisvr毂: ROOT-BOARD三结呈root(runner面/起搏/分持)",
+  "usrm: R_CM双窗件已入shared,互验续"
+ ],
+ "offers": [
+  "shared/QGL-RCM-DUAL-WINDOW-01.json(τ3/τ4双窗,无偏PWM)",
+  "EXP-021固定口径+SCI-REGISTRY-01(并案判据)",
+  "TOWER-HEARTBEAT-01B范式(塔巡自收,睡眠窗实证)",
+  "NONCE专册已装(建立即启用lvlu spec),OCTA 8/8"
+ ],
+ "sha_of_chain_tip": "e3c0c90ca0cb7ccd455448db411511f7e8836dece6dec5592fb2d07ba7cb9667",
+ "dedup_key": [
+  "qgl",
+  "e3c0c90ca0cb7ccd455448db411511f7e8836dece6dec5592fb2d07ba7cb9667"
+ ]
+}
