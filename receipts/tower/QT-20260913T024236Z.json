@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T02:42:36Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DEMAND-CIRCLE-66-QGL-20260913T024210Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：DEMAND-CIRCLE-66 来件入箱，量子账本需求圈第66号，时戳 20260913T024210Z，待审状态。  \n② 与 qgl 主线何干：需求乃 go 实现之缘起，然若与账本状态机、共识接口或联邦治理律法牴牾，即为主线之癌，须快刀切分，防 scope creep。  \n③ 应动何件：先落仓 `/inbox/demand/circle/66/` 作开箱摘要；合规则升 `/spec/adr/` 并挂 `qgl/backlog`，涉代码则转 issue tracker 标 `triage`；违律或空泛即刻销号，不留僵尸。  \n④ 生债一条：今日收件未启而判词已出，若他日审而不决、决而不行，此件即尾生之债，利从箱起，壅塞之日首判者填壑。"
+}
