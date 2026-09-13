@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T02:46:40Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "ANS-CIRCLE-66-QGL-01.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① 何事：inbox 到件 ref=ANS-CIRCLE-66-QGL-01.md，仅见编号壳标，正文未达，为空函待拆。  \n② 与 qgl 主线何干：编号含 QGL-01，显系量子账本/go 主线首锚或架构圈 66 之提案，或涉联邦律法接口，然无文难断亲疏。  \n③ 应动何件：暂落 `/inbox/pending/ANS-CIRCLE-66-QGL-01.md`，贴黄签「待补正文」；限三日内完形，逾期转入 `/cold/hold`，复阅须加息。  \n④ 生债：空件占目，已耗判读一息，债记「见题无文，驿卒白瞪眼，利息先书」。"
+}
