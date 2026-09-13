@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T07:42:15Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-90-never-idle-selfdrive.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及 lgt-90 文档《never-idle-selfdrive》，议节点/协程自驱与零空闲机制。  \n② 与 qgl 主线何干：qgl 联邦节点须永动共识，go 侧 runtime 调度、事件循环及防阻塞策略系账本活性根基，此件即主线心跳。  \n③ 应动何件：落仓 `/spec/lgt-90-selfdrive.md`，同步在看板建技术任务卡：a) 自驱状态机接口；b) go runtime 零 idle 调度草案；c) 绑定 `qgl/node` 包实现。  \n④ 生债一条：债曰“引而不发”——仅 board-mention 而无 go 代码骨架，限三日提交 `node/selfdriver.go` 最小可编译接口。"
+}
