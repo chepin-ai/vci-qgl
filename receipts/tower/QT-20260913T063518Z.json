@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T06:35:18Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-96-a3p3-clause1-pass-loop-closure.md"
+  }
+ ],
+ "verdict_memo": "① 何事：董事会 mention 件 lgt-96-a3p3 之 clause1「pass-loop-closure」，宣告该条款循环闭包逻辑已获通过，进入生效归档态。  \n② 与 qgl 主线何干：此系联邦律法对共识层「pass-loop」终局语义之裁定，直接锚定量子账本 go 实现中状态机闭环与终局性，为主线同构之关键锚点。  \n③ 应动何件：原文落仓 /vault/lgt/96/a3p3/clause1-pass-loop-closure.md；patch qgl/spec/consensus/closure.md；于主线 INDEX 注记「a3p3-clause1 已闭」。  \n④ 生债：该 mention 未附 diff 及多签哈希，缺实证，记「空证闭环」尾债一条，须补"
+}
