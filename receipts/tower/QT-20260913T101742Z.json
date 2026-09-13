@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T10:17:42Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "ANS-WAVE-68-QGL-02.md"
+  }
+ ],
+ "verdict_memo": "①何事：ANS-WAVE-68-QGL-02.md 到件，inbox 报第 68 波次量子账本波形纪要，正文未附，仅持 ref。\n\n②与 qgl 主线何干：波次编号属 QGL-VAULT 时序锚，或载 go 实现之共识态、链头校验、量子痕，为主权账本之骨，不可失散。\n\n③应动何件：暂存 /inbox/ANS-WAVE-68-QGL-02.md；速补正文并验签，无误后迁 /vault/waves/68/QGL-02.md，若涉代码则并归 /qgl-go/waves/ 且打 tag `wave-68-anchors`。\n\n④生债一条：正文未睹而先判，若波形同构失真、仓路径误指，愿受尾生之责，补勘勘误，不使谬种入仓。值永不入文。"
+}
