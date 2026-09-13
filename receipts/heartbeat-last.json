@@ -1,5 +1,5 @@
 {
- "ts": "20260913T112858Z",
+ "ts": "20260913T122132Z",
  "addr": [
   {
    "path": "lanes/cfts/inbox/SI-DIRECT-qgl-20260912T2310Z.md",
@@ -130,6 +130,10 @@
    "sha": "9e6fb8ee92b6"
   },
   {
+   "path": "lanes/qlv/inbox/ANS-PENTA-QUANTUM-qgl-118B.md",
+   "sha": "a5ef6c31cebd"
+  },
+  {
    "path": "lanes/qlv/inbox/ANS-PENTA-qgl-118.md",
    "sha": "98a8b54694ea"
   },
@@ -216,6 +220,10 @@
   {
    "path": "lanes/usrm/inbox/ANS-EXACT-KS-RCM-qgl-118.md",
    "sha": "d391d393b2a7"
+  },
+  {
+   "path": "lanes/usrm/inbox/ANS-QUANTUM-XCHK-qgl-118B.md",
+   "sha": "ae112edbcc2e"
   },
   {
    "path": "lanes/usrm/inbox/ANS-RCM-TAU4-qgl-117.md",

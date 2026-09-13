@@ -1,0 +1,18 @@
+{
+ "ts": "20260913T122132Z",
+ "run": "34756867649",
+ "trigger": "push",
+ "hub": "sha256:6f03d846566f",
+ "qgl_addressed": 67,
+ "new_since_last": 2,
+ "new": [
+  {
+   "path": "lanes/qlv/inbox/ANS-PENTA-QUANTUM-qgl-118B.md",
+   "sha": "a5ef6c31cebd"
+  },
+  {
+   "path": "lanes/usrm/inbox/ANS-QUANTUM-XCHK-qgl-118B.md",
+   "sha": "ae112edbcc2e"
+  }
+ ]
+}
