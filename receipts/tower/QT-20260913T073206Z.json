@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T07:32:06Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "lgt-85-hubtower-mirror-qgl-reinstate.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "lgt-91-surge-meter-ignition.md"
+  }
+ ],
+ "verdict_memo": "① 何事：板名档 lgt-85 锚定 hubtower-mirror-qgl-reinstate；板提及档 lgt-91 触发 surge-meter-ignition。  \n② 与 qgl 主线何干：前者乃量子账本断代复活之塔镜像复权肉身锚；后者为其供能算力浪涌之点火信，属 reinstate 前置脉冲。  \n③ 应动何件：lgt-85 即落 `/vault/qgl/reinstate/hubtower.board`，锁镜像根与校验和；lgt-91 即落 `/vault/qgl/surge/ignition.mention`，作 meter 阈值引信。两档须联调拓扑，方可合闸。  \n④ 生债一条：hubtower 镜像若未验快照一致性即复权，恐携断代脏页污染主线；surge 点火无熔断阈值，浪涌过荷必焚脆弱节点。须遵「先验镜、后定 meter、再点火挂载」之序，逆序则债生息。"
+}
