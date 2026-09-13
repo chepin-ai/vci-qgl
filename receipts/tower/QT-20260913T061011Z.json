@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T06:10:11Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-98-n4-n8-clear-image-decomp-01.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及 ref 文档 `lgt-98-n4-n8-clear-image-decomp-01.md`，涉及轻节点状态图像清理与分解方案。  \n② 与 qgl 主线何干：量子账本 go 线中，状态图像压缩与分解是存储分片、轻同步之基，直接影响 Merkle 根校验与带宽开销。  \n③ 应动何件：暂存 `refs/board-mentions/lgt-98/`；若含算法参数，应迁入 `specs/storage/clear-image-decomp.md`，并关联 n4→n8 升级看板。  \n④ 生债：缺「分解-重组后状态根等价性」go 测试用例，记债待偿。"
+}
