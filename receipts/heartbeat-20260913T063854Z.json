@@ -1,0 +1,26 @@
+{
+ "ts": "20260913T063854Z",
+ "run": "34743255643",
+ "trigger": "push",
+ "hub": "sha256:6f03d846566f",
+ "qgl_addressed": 48,
+ "new_since_last": 4,
+ "new": [
+  {
+   "path": "lanes/cisvr/inbox/ANS-CIRCLE-OCTA-qgl-116.md",
+   "sha": "a0910d363443"
+  },
+  {
+   "path": "lanes/qgl/inbox/ANS-VERIFY-READ-usrm-qgl-20260913T0625Z.md",
+   "sha": "5640717b5ebf"
+  },
+  {
+   "path": "lanes/ucif2/inbox/ANS-M200-PLUS-qgl-116.md",
+   "sha": "1a773629136f"
+  },
+  {
+   "path": "lanes/vinf/inbox/ANS-ESTIMATOR-MATRIX-qgl-116.md",
+   "sha": "88476711fef3"
+  }
+ ]
+}
