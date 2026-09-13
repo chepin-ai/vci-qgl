@@ -1,0 +1,97 @@
+{
+ "id": "KEY-SENTINEL-LINE-01",
+ "repo": "chepin-ai/vci-qgl",
+ "ts": "20260913T195443Z",
+ "clock": "VOID",
+ "keys": {
+  "AI_FULL_PAT": {
+   "http": 200,
+   "login": "chepin-ai"
+  },
+  "CI_OPS_LINE_KEY": {
+   "http": 200,
+   "login": "chepin-ai"
+  },
+  "GH_TOKEN": {
+   "http": 403
+  }
+ },
+ "alive": [
+  "AI_FULL_PAT",
+  "CI_OPS_LINE_KEY"
+ ],
+ "dead401": [],
+ "secrets_meta_http": 200,
+ "secrets_meta": [
+  [
+   "AI_FULL_PAT",
+   "2026-09-12T10:33:54Z"
+  ],
+  [
+   "CI_OPS_LINE_KEY",
+   "2026-09-11T21:19:53Z"
+  ],
+  [
+   "DEEPSEEK_API_KEY",
+   "2026-09-09T01:57:11Z"
+  ],
+  [
+   "FORMAFLOW_CMD_AUTH",
+   "2026-09-09T08:32:26Z"
+  ],
+  [
+   "KIMI_API_KEY",
+   "2026-09-09T01:57:09Z"
+  ],
+  [
+   "LINE_PAT",
+   "2026-09-12T18:39:32Z"
+  ],
+  [
+   "LONGCAT_AK_N1",
+   "2026-09-07T06:19:47Z"
+  ],
+  [
+   "LONGCAT_AK_N2",
+   "2026-09-07T06:19:48Z"
+  ],
+  [
+   "LONGCAT_AK_N3",
+   "2026-09-07T06:19:48Z"
+  ],
+  [
+   "LONGCAT_AK_N4",
+   "2026-09-07T06:19:49Z"
+  ],
+  [
+   "LONGCAT_AK_N5",
+   "2026-09-07T06:19:50Z"
+  ],
+  [
+   "LONGCAT_API_KEY",
+   "2026-09-01T08:09:28Z"
+  ],
+  [
+   "LONGCAT_SK_N4",
+   "2026-09-07T06:19:46Z"
+  ],
+  [
+   "LONGCAT_SK_N5",
+   "2026-09-07T06:19:46Z"
+  ],
+  [
+   "NODE_SK_N4",
+   "2026-09-07T06:19:44Z"
+  ],
+  [
+   "NODE_SK_N5",
+   "2026-09-07T06:19:45Z"
+  ],
+  [
+   "OTP_PHONE",
+   "2026-09-07T04:56:50Z"
+  ]
+ ],
+ "degraded": false,
+ "diff_vs_prev": null
+}
