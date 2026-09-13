@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T08:21:00Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-87-floor-a2-scaling-drift.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：看板援引 `lgt-87-floor-a2-scaling-drift.md`，记 A2 层节点扩缩容时之状态漂移与一致性偏差纪要。\n\n② **与 qgl 主线何干**：QGL-Go 实现中，水平缩放触发分片重锚，若时钟与哈希账不同步，则量子账本主链完整性受蛀，直接威胁联邦共识。\n\n③ **应动何件**：速落仓 `/qgl-go/spec/scaling/lgt-87/`，并起草《A2 缩放一致性约束》草案，接入主线里程碑待审。\n\n④ **生债一条**：尾生债——未竟之 drift 须以形式化证明或全量压测报告一笔勾销，否则扩容之日即分叉之时。"
+}
