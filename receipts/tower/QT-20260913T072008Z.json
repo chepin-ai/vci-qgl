@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-13T07:20:08Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-92-kc-phase-transition.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及事件。ref 为 `lgt-92-kc-phase-transition.md`，系 92 号卡片关联的“相变/阶段转换”文档在看板被触发引用或状态流转。\n\n② 与 qgl 主线何干：量子账本的核心即状态共识与协议跃迁。`phase-transition` 直接对应节点状态机升级、共识切变或联邦律法生效的临界过程，属主线架构的关键抽象，必须纳入版本化知识库锚定。\n\n③ 应动何件：落仓至 `/vault/lgt/92/kc-phase-transition.md`，在看板标记 `status: triaged`，并关联主线里程碑 `milestone: protocol-vault`。若含代码原型，则另开 `/src/qgl/transition/` 实现分支。\n\n④ 生债一条：未明确该相变文档与现行联邦律法（共识规则）的兼容性边界，需补全状态迁移的合法性校验清单，否则后续复活节点可能因临界条件模糊而分叉。"
+}
