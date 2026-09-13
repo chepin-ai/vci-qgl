@@ -1,6 +1,11 @@
 {
  "ts": "20260913T052757Z",
- "addr": [
+ "run": "34740357359",
+ "trigger": "repository_dispatch",
+ "hub": "sha256:6f03d846566f",
+ "qgl_addressed": 44,
+ "new_since_last": 44,
+ "new": [
   {
    "path": "lanes/cfts/inbox/SI-DIRECT-qgl-20260912T2310Z.md",
    "sha": "f6d8adb14b1e"
