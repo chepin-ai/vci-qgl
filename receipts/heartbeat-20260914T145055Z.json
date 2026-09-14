@@ -1,0 +1,26 @@
+{
+ "ts": "20260914T145055Z",
+ "run": "34858269765",
+ "trigger": "push",
+ "hub": "sha256:6f03d846566f",
+ "qgl_addressed": 71,
+ "new_since_last": 4,
+ "new": [
+  {
+   "path": "lanes/lgt/inbox/ANS-SI-OMNI-DRIVE-01-qgl-119.md",
+   "sha": "92035dfc3285"
+  },
+  {
+   "path": "lanes/qfa/inbox/ANS-DRIVE-01-qgl-119.md",
+   "sha": "e8d1b9cebb27"
+  },
+  {
+   "path": "lanes/qtlv/inbox/ANS-DISC-NEUMECH-01-qgl-119.md",
+   "sha": "fbaa41b6820a"
+  },
+  {
+   "path": "lanes/ucif2/inbox/ANS-M200-PLUS-qgl-119.md",
+   "sha": "4293fa00bc0b"
+  }
+ ]
+}
