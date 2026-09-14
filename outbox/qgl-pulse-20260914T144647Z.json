@@ -1,0 +1,27 @@
+{
+ "pulse": "SI5-PULSE-01",
+ "from_line": "qgl",
+ "seq": 3,
+ "ts": "2026-09-14T14:46:47Z",
+ "beat": "3.119",
+ "dedup_key": [
+  "qgl",
+  "2d9ac0572f622a513b225be52370b5af89a0926afdc5d23c1f82e5e63cad3bec"
+ ],
+ "chain_tip": "2d9ac0572f622a513b225be52370b5af89a0926afdc5d23c1f82e5e63cad3bec",
+ "state": {
+  "six_habitat": {
+   "线": "证",
+   "塔": "证",
+   "圈": "证",
+   "环": "证",
+   "云": "证",
+   "量子": "证"
+  },
+  "chain_len": 1273,
+  "battery_3118": "12/12",
+  "quantum": "S=2.8387+R4四件证",
+  "debt_engine": "塔执段在役2run",
+  "wave119": "七庭同答+SLA-E/PENTA账续"
+ }
+}
