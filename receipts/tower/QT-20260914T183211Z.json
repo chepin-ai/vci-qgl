@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-14T18:32:11Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "keyunify-qgl-01-ans.md"
+  }
+ ],
+ "verdict_memo": "① 到件 keyunify-qgl-01-ans.md，系 QGL 密钥统一层（keyunify）之答复/审阅稿，然文未展，仅审其壳。  \n② 密钥统一乃量子账本身份锚定与跨节点状态通道之基，与 go 实现主线直接咬合；此件若涉主键归一或签名校验变更，错漏则全链共识崩解。  \n③ 应暂落 `/inbox/qgl/keyunify/` 待料；若核可，即迁入 `/src/qgl/identity/keyunify/` 同层 spec 或 `.go` 实现注释，由主线锚保人复核后并线。  \n④ 生债：仅据引号批空转，未窥全文而预落路径，负窥豹之债一条，须索齐原文补判。"
+}
