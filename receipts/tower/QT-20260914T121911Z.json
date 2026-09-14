@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-14T12:19:11Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "ANS-KEY-AUDIT-69-QGL-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DEMAND-KEY69-QGL-20260914T121843Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① 何事：ANS-KEY-AUDIT-69-QGL-01.md 为 KEY69 审计勘验之应答；DEMAND-KEY69-QGL-20260914T121843Z.md 为 KEY69 生命周期之需求工单。两件同锚异面，一并到驿。\n\n② 与 qgl 主线何干：KEY69 乃量子账本信任根，其派生、托管、轮换为 go 实现核心模块；审计应答涉合规闭环，需求工单涉密钥轮转或权限变更，均牵一发动全链。\n\n③ 应动何件：ANS 件落仓 `/vault/audit/key69/ans-01.md`，链入勘验索引；DEMAND 件落仓 `/vault/demand/key69/dem-20260914.md`，并触发 `cmd/qgl-keyd` 状态机；双件并案至 `qgl-fed/ledger/crypto/keyring.md` 更新锚点，报联邦律法台。\n\n④ 生债一条：若未于本判词出后二十四时辰内完成 KEY69 审计闭环与需求处置，即生尾债一条，录为「守钥不力」，永不入文，唯律存照。"
+}
