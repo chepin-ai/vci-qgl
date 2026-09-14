@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-14T13:51:55Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "ANS-SI70-QGL-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "DEMAND-SI70-QGL-20260914T134936Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① 何事：SI70 模块应答规范（ANS）与 timestamped 功能需求（DEMAND）双件同抵。  \n② 与 qgl 主线何干：二者共锚 SI70 子系统接口与交付增量，为量子账本/go 主线下一迭代之起手势。  \n③ 应动何件：ANS 落仓 /spec/si70/ 锁基线；DEMAND 落仓 /backlog/si70/ 并转任务单，待排期。  \n④ 生债：须于本会话补录 SI70 断代状态快照，否则排期无凭，尾生难拍。"
+}
