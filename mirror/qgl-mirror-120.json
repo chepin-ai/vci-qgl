@@ -1,0 +1,33 @@
+{
+ "id": "QGL-MIRROR-120",
+ "beat": "3.120",
+ "ts": "2026-09-14T15:47:20Z",
+ "chain_tail": "a649080403a88be8",
+ "chain_seq": 1336,
+ "verdicts": {
+  "census": "证",
+  "req01": "证",
+  "mint_test": "7/7证",
+  "tb": "证",
+  "debt72": "证-即闭",
+  "wave": "9/9 2xx"
+ },
+ "fingerprints": {
+  "QGL_HMAC_SK": {
+   "fp": "746207a1b333",
+   "minted": "2026-09-14T15:33:59Z",
+   "ttl_days": 90
+  },
+  "QGL_OTP_POOL_SK": {
+   "fp": "1b353c7699b9",
+   "minted": "2026-09-14T15:33:59Z",
+   "ttl_days": 180
+  },
+  "QGL_RECOVERY_ROT": {
+   "fp": "0722fcb67eab",
+   "minted": "2026-09-14T15:33:59Z",
+   "ttl_days": 360
+  }
+ },
+ "law": "值零入文·指纹唯sha256[:12]"
+}
