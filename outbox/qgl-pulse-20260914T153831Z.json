@@ -1,0 +1,16 @@
+{
+ "id": "qgl-pulse-20260914T153831Z",
+ "beat": "3.120",
+ "ts": "2026-09-14T15:38:31Z",
+ "line": "qgl",
+ "dedup_key": [
+  "qgl",
+  "20260914T153831Z"
+ ],
+ "kind": "KEYMINT",
+ "summary": "钥道拍: 普查证/REQ-01/L类三钥7测证/KEYREQ候root/四坛静默续扫",
+ "refs": [
+  "shared/QGL-KEY-MINT-REQ-01.md",
+  "shared/QGL-KEYMINT-TEST-120.json"
+ ]
+}
