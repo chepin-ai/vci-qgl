@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-14T16:54:33Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "keyunify-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "① 何事：KeyUnify 密钥统一方案到件，拟整编 qgl 全链路密钥派生、签名与身份锚定，建立单一根信任入口。  \n② 与 qgl 主线何干：量子账本以抗量子密码为骨，密钥管理乃状态验证与跨联邦共识之基；消弭模块间密钥碎片化，即加固主线骨架。  \n③ 应动何件：落仓 `/spec/crypto/keyunify.md`，交 `qgl-crypto-wg` 会审；通过后植入 `qgl-core/identity`，替换既有分散实现。  \n④ 生债一条：须同步绘制后量子算法迁移债（PQ-Migration-Roadmap），防统一层固化临时代码，锁死未来替换窗口。"
+}
