@@ -1,0 +1,16 @@
+{
+ "id": "QGL-MIRROR-121",
+ "beat": "3.121",
+ "ts": "2026-09-14T18:33:09Z",
+ "chain_tail": "30e501c1d65538e8",
+ "chain_seq": 1376,
+ "verdicts": {
+  "keyunify_ruling": "可立+三修订+补阙三条",
+  "charter": "签(异见二)",
+  "consensus_engine": "7测证·候票2/5",
+  "exact_ks": "判退一致·DE119-4闭",
+  "wave": "20/20 2xx",
+  "tb": "证-六周目"
+ },
+ "law": "值零入文"
+}
