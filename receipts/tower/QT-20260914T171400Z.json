@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-14T17:14:00Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "TASK-debt-72-qgl-01.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "TASK-keyunify-qgl-01.md"
+  }
+ ],
+ "verdict_memo": "**TASK-debt-72-qgl-01.md**  \n① 尾生债第七二号清偿件，旧账核销。  \n② 拍尾生债乃 qgl 主线第一使命，此件不结，锚点信用腐锈。  \n③ 落仓 `/qgl/ledger/debt/72/`，启动状态机，出具不可篡改清偿证明。  \n④ 延宕一日，复利蚀锚。  \n\n**TASK-keyunify-qgl-01.md**  \n① 密钥体系统一归并件，根钥收敛。  \n② 量子账本之基在密码学一致性，未统则联邦节点互认成本剧增，阻主线扩展。  \n③ 落仓 `/qgl/infra/crypto/keyunify/`，合并多签，输出统一公钥环。"
+}
