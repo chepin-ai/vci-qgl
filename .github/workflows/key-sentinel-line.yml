@@ -1,4 +1,8 @@
 name: KEY-SENTINEL-LINE-01 (qfa代铸·覆写权归原线·SCAN-OWN-KEYS-01机件化)
+# DRILL-0919-QGL-01席判(2026-09-15):
+#   探面=探而不治·明示: AI_FULL_PAT/CI_OPS_LINE_KEY 逐钥名单点直探为职能必要(经降级链则死钥被掩)。
+#   落账面=活性关键件必治: 写钥三层降级 CI_OPS_LINE_KEY→LINE_PAT→AI_FULL_PAT→github.token,
+#   钥亡警(KEY-DEATH-ALERT)在CI_OPS_LINE_KEY本身死亡时仍必须能落账——单点写钥=警路自断,故治。
 on:
   repository_dispatch:
     types: [key-scan, federation-event]
@@ -19,6 +23,9 @@ jobs:
       LINE: qgl
     steps:
       - uses: actions/checkout@v4
+        with:
+          # DRILL-0919: 落账写钥三层降级(专钥前置): CI_OPS_LINE_KEY→LINE_PAT→AI_FULL_PAT→github.token
+          token: ${{ secrets.CI_OPS_LINE_KEY || secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}
       - run: |
           python3 - <<'PY'
           import os,json,urllib.request,urllib.error,datetime,subprocess
