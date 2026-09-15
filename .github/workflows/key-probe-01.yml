@@ -1,5 +1,10 @@
 name: key-probe-01
 # KEY-PROBE-01 qfa beat-105: 各钥生死实测(只报钥名+HTTP码,值零打印零落盘)
+# DRILL-0919-QGL-01席判(2026-09-15): 本件=探钥器,判【探而不治】——
+#   逐钥名单点引用即本件职能(探某钥之生死必须以该钥本名直探,经降级链则死钥被掩、探义即失),
+#   故 FED_PAT/QI_PAT/GH_PAT_QI_FULL/KIMI_API_KEY/CI_OPS_LINE_KEY 单点引用为【职能必要】,不治而明示。
+#   落账面(收执推送)必治: checkout token 三层降级 LINE_PAT→AI_FULL_PAT→github.token,
+#   保证探报在任一业务钥死亡时仍能落地(降级面指向活钥,非虚面)。
 on:
   workflow_dispatch:
 permissions:
@@ -9,6 +14,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          # DRILL-0919: 落账面三层降级(专钥前置式之probe实例: 本件无更专写钥,以LINE_PAT为首层)
+          token: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}
       - name: probe
         env:
           AI_FULL_PAT: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}
