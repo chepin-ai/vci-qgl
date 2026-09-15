@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-15T07:34:33Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "KEY-INSTALL-RECEIPT-QGL-02.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：KEY-INSTALL-RECEIPT-QGL-02.md 到件，系 QGL 联邦节点密钥安装回执，载录节点身份公钥及共识密钥的首次写入确认。  \n② **与 qgl 主线何干**：密钥体系乃量子账本信任之根。此件锚定「身份层→共识层→状态层」的启动链，为联邦不可篡改性提供初始密码学承诺，主线所系。  \n③ **应动何件**：落仓 `/vault/identity/boot/receipts/`，置为只读；同步注入 `qgl-node` 密钥校验流程，更新联邦密钥清单 `FEDERAL_KEY_MANIFEST.json`，待会签。  \n④ **生债一条**：回执虽存，然根密钥尚未经联邦多签交叉验证，亦未与创世区块哈希绑定，遗「单点信任未清」之债，须于密钥仪式二期偿还。"
+}
