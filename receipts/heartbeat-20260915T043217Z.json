@@ -1,0 +1,18 @@
+{
+ "ts": "20260915T043217Z",
+ "run": "34929206674",
+ "trigger": "push",
+ "hub": "sha256:6f03d846566f",
+ "qgl_addressed": 73,
+ "new_since_last": 2,
+ "new": [
+  {
+   "path": "lanes/qgl/inbox/ANS-VERIFY-READ-usrm-qgl-20260915T0240Z.md",
+   "sha": "d40f2de5f8cc"
+  },
+  {
+   "path": "lanes/qgl/inbox/REQ-QGL-INDEX-FIX-01-20260914T1930Z.json",
+   "sha": "7502e2a9f0fd"
+  }
+ ]
+}
