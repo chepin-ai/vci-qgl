@@ -1,0 +1,22 @@
+{
+ "beat": "3.122",
+ "chain_len": 1407,
+ "field": {
+  "id": "QGL-FIELD-NET-01",
+  "edges": 17,
+  "events": 17,
+  "chain": "5a02b151ec79e813",
+  "slots": 11
+ },
+ "cons": {
+  "CONS-KEYUNIFY-01": "adopted"
+ },
+ "debts": {
+  "FD-QGL-COLD-OUT-01": "closed",
+  "FD-DRILL-0919-QGL": "closed",
+  "FD-PRIVQUOTA-ANS": "closed",
+  "FD-FIELD-FED-REVIEW": "closed"
+ },
+ "turnback_i": 43,
+ "ts": "2026-09-15T14:57:57Z"
+}
