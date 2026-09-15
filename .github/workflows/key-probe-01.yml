@@ -11,9 +11,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: probe
         env:
-          AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+          AI_FULL_PAT: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}
           CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
-          LINE_PAT: ${{ secrets.LINE_PAT }}
+          LINE_PAT: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}
           FED_PAT: ${{ secrets.FED_PAT }}
           QI_PAT: ${{ secrets.QI_PAT }}
           GH_PAT_QI_FULL: ${{ secrets.GH_PAT_QI_FULL }}
