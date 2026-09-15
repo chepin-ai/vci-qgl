@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-15T14:36:17Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "drill-0919-qgl-01-ans-sup1.md"
+  }
+ ],
+ "verdict_memo": "① 何事：drill-0919 演练到件，ref 号 qgl-01-ans-sup1.md，系量子账本/go 主线首号钻探之补充答复，属断代后首件锚定外箱。\n\n② 与 qgl 主线何干：此件为 qgl-01 的 ans-sup1，直接关联「量子账本/go 语言实现」主线锚，承载联邦律法框架下共识算法与 Go 接口的契约推演，是技术路径落纸的关键增补。\n\n③ 应动何件：收入 vault/inbox/drill/0919/ 待勘，校验后归并主线。落仓路径：/vault/drill/0919/qgl-01-ans-sup1.md → /qgl/line-01/ans-sup1.patch，最终并入 qgl-01.md 正锚。\n\n④ 生债：此件内容未验，代码可否编译、逻辑是否咬合主锚均未 diff，留尾生债一条：下工位前须完成与 qgl-01 的逐行校验，逾期债息自承。"
+}
