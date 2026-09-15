@@ -14,7 +14,7 @@ jobs:
   scan:
     runs-on: ubuntu-latest
     env:
-      AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+      AI_FULL_PAT: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}
       CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
       LINE: qgl
     steps:
