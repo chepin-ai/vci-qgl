@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-15T05:51:23Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "drill-0919-qgl-01-ans.md"
+  }
+ ],
+ "verdict_memo": "① 何事：inbox 到件，标识 drill-0919-qgl-01-ans.md，为演练序列之 go 实现层应答回执，待拆包审读。\n\n② 与 qgl 主线何干：此件锚定共识逻辑或接口契约之验证结论，若勘合无误，可"
+}
