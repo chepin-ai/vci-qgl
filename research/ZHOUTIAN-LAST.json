@@ -1,14 +1,14 @@
 {
- "beat": "3.127",
- "ts": "2026-09-17T18:46:57Z",
- "key": "在(vault healed probe 200)",
+ "beat": "3.128",
+ "ts": "2026-09-17T20:35:44Z",
+ "key": "在",
  "legs": {
-  "sense": "NM2 autofix fetched 10",
-  "mirror": "NM3 本拍八周目证",
-  "respond": "NM4 环转证",
-  "track": "NM5 8格矩阵",
-  "turnback": "i=45(co2-rerun八周目消费)"
+  "sense": "NM2",
+  "mirror": "双镜证",
+  "respond": "环转证",
+  "track": "7格",
+  "turnback": "i=46(doc-hashes七周目消费)"
  },
- "echo_scan": "vinf outbox无新(1730Z后); qfa ANS-SEM收",
- "verdict": "证(大周天五腿转, echo扫毕)"
+ "echo_scan": "三ANS-SEM收; 讨论室无答",
+ "verdict": "证"
 }
