@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-17T20:37:09Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEAT-3128-FULLRAIL-01.md"
+  }
+ ],
+ "verdict_memo": "①何事：BEAT-3128-FULLRAIL 到件，为 qgl 量子账本 go 实现之全轨状态校验与主链锚定检查点文档。\n\n②与 qgl 主线何干：全轨系主链连续性关键。断代复活后首件即逢 3128，是续主线锚的直接校验位，牵涉 go 层共识落盘与联邦律法兼容。\n\n③应动何件：落仓 `/qgl/beat/3128/fullrail/BEAT-3128-FULLRAIL-01.md`；启 `qgl-anchor` 流水线，同步更新 `internal/anchor/beat.go` 锚点索引及 `docs/CHAINLOG.md`。\n\n④生债一条：断代初醒，未审 3127 之断档 diff"
+}
