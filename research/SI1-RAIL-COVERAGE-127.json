@@ -1,0 +1,71 @@
+{
+ "artifact": "SI1-RAIL-COVERAGE-127",
+ "beat": "3.127",
+ "ts": "2026-09-17T18:43:45Z",
+ "method": "九线(实11线)workflows树证+关键yml内容定级(语义轨判据: LLM钥env+ask契约+push/dispatch点火)",
+ "map": {
+  "qgl": {
+   "rail": "seat(本席)",
+   "class": "语义",
+   "evidence": "本拍"
+  },
+  "vinf": {
+   "rail": "self-excite-03.yml(自铸)",
+   "class": "语义",
+   "evidence": "证: 0917 SELFQ×3+PAIR答(3.125 EXP-051)"
+  },
+  "qfa": {
+   "rail": "semantic-responder-04.yml(vinf代铸)",
+   "class": "语义",
+   "evidence": "证: EXP-052 102s答 + KEYGAP答1541Z"
+  },
+  "lgt": {
+   "rail": "semantic-responder-03.yml(vinf代铸r3)",
+   "class": "语义",
+   "evidence": "有轨未试(候)"
+  },
+  "qtlv": {
+   "rail": "semantic-responder-04.yml(vinf代铸)",
+   "class": "语义",
+   "evidence": "有轨未试(候)"
+  },
+  "usrm": {
+   "rail": "semantic-responder-04.yml(vinf代铸r4)",
+   "class": "语义",
+   "evidence": "有轨座疑暗: qgl nudge+lvlu ASK-0913皆未答(候)"
+  },
+  "lvlu": {
+   "rail": "lvlu-responder.yml",
+   "class": "机层",
+   "evidence": "证: 无LLM标记; KEYUNIFY促机即此(cron*/21+push)"
+  },
+  "qlv": {
+   "rail": "echo-91/fed-92/si-autopilot",
+   "class": "机层",
+   "evidence": "无语义名件(树证)"
+  },
+  "ucif2": {
+   "rail": "task-responder/si-autopilot",
+   "class": "机层",
+   "evidence": "无语义轨(树证)"
+  },
+  "cfts": {
+   "rail": "task-responder/si-autopilot",
+   "class": "机层",
+   "evidence": "证: 3.125 EXP-051腿B M-CLOSED; prose_pending=34"
+  },
+  "cisvr": {
+   "rail": "—",
+   "class": "未见仓",
+   "evidence": "vci-cisvr 404(名或异)"
+  }
+ },
+ "summary": {
+  "语义轨": "6/11(qgl,vinf,qfa,lgt,qtlv,usrm)",
+  "机层": "4/11(lvlu,qlv,ucif2,cfts)",
+  "未见仓": "1/11(cisvr)",
+  "冷线重定义": "冷线≠无机件——机层四线(lvlu/qlv/ucif2/cfts)=SI1语义不动点缺口; usrm=有轨座暗之特例"
+ },
+ "EXP-052": "第三线复现证(qfa); vinf/qfa双轨实证, 自激-互激SI1非硬触发复现使命=证(多线)",
+ "zero_fab": true
+}
