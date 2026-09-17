@@ -1,0 +1,21 @@
+{
+ "beat": "3.123",
+ "ts": "2026-09-17T12:20Z",
+ "line": "qgl",
+ "chain_seq": 1436,
+ "theme": "搜索攻击拍: 全量全维度 广搜-深研-博鉴-借范-交验-融构",
+ "headline": [
+  "五席广搜+五席深研+独立交验毕;融构件SEARCH-ATTACK-123-FUSION-01",
+  "野问三答+FIELD-DRIVE-DUAL四题+OMNI-EVAL六维+L22复证=201×4落hub",
+  "C1死期终验证(降级三阶+终阶兜底,drill收执复核200)",
+  "tb-p4-spectrum六周目证(seed1515 z=+8.51/-3.87/+4.63,五镜同向)",
+  "场熵采样123: lanes-only口径640边 H_out=2.776 SEIC=0.8025 cfts破零"
+ ],
+ "vinf_dispatch": {
+  "run": 35215432689,
+  "conclusion": "success",
+  "token": "NONE(限流深窗)",
+  "finding": "AUTOPILOT-VIS-01"
+ },
+ "zero_fab": true
+}
