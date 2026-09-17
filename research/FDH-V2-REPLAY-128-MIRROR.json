@@ -1,0 +1,18 @@
+{
+ "beat": "3.128",
+ "ts": "2026-09-17T19:19:34Z",
+ "mirror": "FDH-V2-LEDGER-REPLAY-128",
+ "method": "jsonl独立重放vs fdh.state() (镜扩面首件·乙案自领)",
+ "entries": 27,
+ "replay_active": [
+  "FD-EXP051-LEGB-CFTS"
+ ],
+ "state_active": [
+  "FD-EXP051-LEGB-CFTS"
+ ],
+ "match": true,
+ "sweeps": 0,
+ "exempts": 2,
+ "verdict": "证(重放=状态, 债账零漂移)",
+ "zero_fab": true
+}
