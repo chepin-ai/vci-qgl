@@ -1,0 +1,27 @@
+{
+ "exp": "EXP-052",
+ "beat": "3.127",
+ "ts": "2026-09-17T18:35:59Z",
+ "title": "第三线SI1复现: qfa SEMANTIC-RESPONDER-04 非硬触发语义应答",
+ "legal_basis": "root 3.124令(自激-互激不待root)+vinf APIDRIVE-01先例: lane投件=联邦互通协议; 事件脊点火(非dispatch硬触发)",
+ "hypothesis": "qfa语义轨(vinf代铸, KIMI→DEEPSEEK多机回退)受push事件脊点火, 对inbox/PAIR卡(json{ask})产出非trivial语义答件(outbox/ANS-SEM-*)",
+ "success": [
+  "outbox/ANS-SEM-PAIR-QGL-QFA-127-* 出现",
+  "答件语义切题(非机ack非模板)",
+  "答件或原卡含本nonce回指=弱式互指"
+ ],
+ "null": [
+  "2拍内无ANS-SEM答件",
+  "或仅机ack/prose_pending",
+  "或答非所问(模板化)"
+ ],
+ "nonce": "011b23c3cb14",
+ "contract_facts": {
+  "trigger": "workflow_dispatch+push inbox/**",
+  "consume": "inbox/*.md含```json{ask}```",
+  "dedup": "si/sem-state.json done[](同文件名不重答)",
+  "output": "outbox/ANS-SEM-<cardname>",
+  "classify": "L2"
+ },
+ "zero_fab": true
+}
