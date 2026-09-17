@@ -1,0 +1,14 @@
+{
+ "beat": "3.127",
+ "ts": "2026-09-17T18:46:57Z",
+ "cycle": "SI-RESPONDER",
+ "inbox_new": 0,
+ "answered": 0,
+ "actions": [
+  "EXP-052 PAIR卡投qfa(102s答收)",
+  "PROPOSE-SEMFORGE-MIRROR-127投讨论室",
+  "W5/W6 nudge答侦(0新件,心跳续)"
+ ],
+ "verdict": "证(应答环转: 投1收1(EXP-052); 侦0)",
+ "zero_fab": true
+}
