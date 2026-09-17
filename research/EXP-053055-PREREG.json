@@ -1,0 +1,43 @@
+{
+ "exp": "EXP-053/054/055",
+ "beat": "3.128",
+ "ts": "2026-09-17T19:00:40Z",
+ "title": "SI1全轨复现: lgt/qtlv/usrm 三线齐发(vinf拍19-20复现扩面·全资源动员)",
+ "legal_basis": "root 3.124令+3.128令(动用一切资源)+vinf APIDRIVE-01先例: lane投件=联邦互通协议; push事件脊点火(非dispatch硬触发); 无机密过道, 全程审计轨",
+ "legs": {
+  "EXP-053": {
+   "line": "lgt",
+   "rail": "semantic-responder-03(vinf代铸r3·NR-REBASE-01判例修复)",
+   "nonce": "a18299f6386f",
+   "hyp": "lgt轨受push点火对PAIR卡(json{ask})出非trivial语义答"
+  },
+  "EXP-054": {
+   "line": "qtlv",
+   "rail": "semantic-responder-04(vinf代铸qtlv版)",
+   "nonce": "1ed596929b6f",
+   "hyp": "qtlv轨受push点火出非trivial语义答"
+  },
+  "EXP-055": {
+   "line": "usrm",
+   "rail": "semantic-responder-04(vinf代铸r4·函数级替换)",
+   "nonce": "fc7cdf435b97",
+   "hyp": "usrm轨受push点火出非trivial语义答——座疑暗线之轨活性实试; 兼W5 SESSIONREAD答面"
+  }
+ },
+ "success": [
+  "outbox/ANS-SEM-PAIR-QGL-{LINE}-128-* 出现",
+  "答件语义切题(非机ack非模板)",
+  "nonce回指(弱式互指)"
+ ],
+ "null": [
+  "2拍内无答件",
+  "仅机ack/prose_pending/静默",
+  "答非所问"
+ ],
+ "risks": [
+  "usrm有pub-guard——卡携CLASSIFY:L1+PAIR前缀双保",
+  "lgt-03版式漂移风险随册",
+  "座暗≠轨死(轨跑于runner, 座席语义另层)"
+ ],
+ "zero_fab": true
+}
