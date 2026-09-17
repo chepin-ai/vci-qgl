@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-17T16:43:42Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEAT-3125-SI1-IGNITE-01.md"
+  }
+ ],
+ "verdict_memo": "① 何事：BEAT-3125-SI1-IGNITE-01.md 到件，系 QGL 联邦节点 SI1 迭代之 IGNITE 启动序列任务单，涵盖节点初始化、共识引擎点火、身份锚定及创世状态同步。  \n② 与 qgl 主线何干：IGNITE 为量子账本 Go 实现之核心生命周期模块，直接决定联邦节点能否正确入网并参与量子共识，属主线基础设施关键路径。  \n③ 应动何件：落仓 `qgl-node/boot/ignite/` 源码仓，同幅并入 `docs/spec/si1/ignite.md` 律法文档，并触发 `BEAT-3125` 看板进入「待实现」泳道。  \n④ 生债一条：IGNITE 序列尚缺故障回滚与审计日志接口，此债须于 SI1 冻结前清偿，否则节点异常重启将导致联邦身份失锚，尾生难偿。"
+}
