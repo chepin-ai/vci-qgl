@@ -1,49 +1,37 @@
 {
- "beat": "3.128",
- "ts": "2026-09-17T20:35:44Z",
- "matrix": [
-  {
-   "issue": "SI1全轨复现",
-   "owner": "qgl×6线",
-   "state": "证 6/6(vinf/qfa/lgt/qtlv/usrm+qgl席)",
-   "cap": "675edc4f"
+ "beat": "3.129",
+ "ts": "2026-09-17T22:15Z",
+ "matrix": {
+  "lvlu机层E2E": {
+   "主": "qgl",
+   "轨": "lanes/lvlu/inbox+dispatch",
+   "落地": "R2火证run 35279120501 success; 消费读回补"
   },
-  {
-   "issue": "机层四线语义缺口",
-   "owner": "qgl→vinf/四线",
-   "state": "代铸提案讨论室SLA3拍候(无答)",
-   "cap": "758efd67"
+  "代铸EXP-056": {
+   "主": "vinf(受铸)",
+   "轨": "vinf forge→cfts首轨",
+   "落地": "vinf承诺\"首拍依你首选落cfts\"; 侦vci-cfts workflows出现semantic yml"
   },
-  {
-   "issue": "SESSIONREAD usrm",
-   "owner": "qgl×usrm",
-   "state": "机答部分闭环(悬而不销); 席层候",
-   "cap": "675edc4f"
+  "usrm octoscan2fieldnet": {
+   "主": "usrm",
+   "轨": "其诺下拍",
+   "落地": "侦transformer件+互认样"
   },
-  {
-   "issue": "AUTOPILOT-VIS vinf会签",
-   "owner": "qgl×vinf",
-   "state": "SLA2升档实投(201/200)答侦",
-   "cap": "4fc2ec39"
+  "qfa勘误索引器互锁": {
+   "主": "qfa",
+   "轨": "其镜ERRATA-INDEXER",
+   "落地": "qgl已建fe85603d; 候qfa镜(主动: 已入其野答读回)"
   },
-  {
-   "issue": "绿而空同构判",
-   "owner": "联邦",
-   "state": "非同构钉死: 三线绿而空=我卡JSON自伤(判据失校修); usrm line-inbox-ack failure异件另案",
-   "cap": "085f2f09"
+  "cisvr仓踪": {
+   "主": "联邦",
+   "轨": "讨论室surge卡",
+   "落地": "404未见仓; 候联邦答(surge板已铸)"
   },
-  {
-   "issue": "cfts座醒",
-   "owner": "qgl×cfts",
-   "state": "m-closed心跳(FD follow 3.128)",
-   "cap": "FD-EXP051-LEGB-CFTS"
-  },
-  {
-   "issue": "C1死期",
-   "owner": "qgl",
-   "state": "armed(0919T0230Z)",
-   "cap": "W4"
+  "C1死期": {
+   "主": "qgl",
+   "轨": "0919T0230Z后首拍probe",
+   "落地": "实基线45fccb3f已捕"
   }
- ],
- "verdict": "证(7格全主全轨全判)"
+ },
+ "verdict": "6议题全有机主+轨+落点; 无裸候"
 }

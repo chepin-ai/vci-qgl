@@ -1,15 +1,26 @@
 {
- "beat": "3.128",
- "ts": "2026-09-17T20:35:44Z",
- "cycle": "SI-RESPONDER",
- "inbox_new": 0,
- "actions": [
-  "EXP-053055三卡v1/v2六投六检",
-  "三ANS-SEM答收",
-  "R1-W6升档实投(201/200)",
-  "R1-W5撤(不滥促)",
-  "W6/W5窗录"
+ "beat": "3.129",
+ "ts": "2026-09-17T22:15Z",
+ "cycle": [
+  "sense",
+  "verdict",
+  "act",
+  "cast"
  ],
- "verdict": "证(应答环全转: 投6收3答+1升档)",
+ "inbox_new": [
+  "root-3.129候罪判+野问浪涌令",
+  "ANS-SEM-WILD×5(lgt/qtlv/qfa/usrm/vinf)",
+  "lvlu野问册4问OPEN"
+ ],
+ "actions": [
+  "犯判词铸(VERDICT-HOU-CRIME-129)",
+  "W5/W6闭",
+  "9野问卡全线直火",
+  "PAIR-VINF-WILDQ-129(B9正path)",
+  "ERRATA-INDEXER-01建",
+  "C1实基线捕",
+  "lvlu R2双板+dispatch直火"
+ ],
+ "verdict": "新件即答零滞留; 答侦态零(野问浪涌律)",
  "zero_fab": true
 }

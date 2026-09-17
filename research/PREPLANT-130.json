@@ -1,0 +1,12 @@
+{
+ "beat": "3.130",
+ "preplant": [
+  "C1死期首拍: c1_death_day_probe.py + secrets元数据差分 vs C1-SECRETS-BASE-0917.json(meta-probe律)",
+  "侦vci-cfts workflows: semantic-responder出现→EXP-056首火",
+  "侦usrm octoscan2fieldnet.py transformer+互认样",
+  "lvlu消费证读回补(state seen/未录件警)→consensus lvlu格FULL化",
+  "讨论室surge卡答侦(cisvr/绿而空会签)——有答即二轮核正",
+  "turnback i=46 tb-beacon-audit"
+ ],
+ "ts": "2026-09-17T22:15Z"
+}

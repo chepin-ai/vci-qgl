@@ -1,8 +1,26 @@
 {
- "beat": "3.128",
- "ts": "2026-09-17T20:35:44Z",
- "mirror": "TB-DOC-HASHES-128-MIRROR + FDH-V2-REPLAY-128-MIRROR",
- "verdict": "双镜证(七周目零翻案; 债账零漂移)",
- "docs": 130,
- "push_http": null
+ "beat": "3.129",
+ "ts": "2026-09-17T22:15Z",
+ "mirror": {
+  "local_artifacts": [
+   "EXP-057-PREREG.json",
+   "CONSENSUS-SURGE-129.json",
+   "ANS-SEM-WILD-LGT-129.md",
+   "ANS-SEM-WILD-QTLV-129.md",
+   "ANS-SEM-WILD-QFA-129.md",
+   "ANS-SEM-WILD-USRM-129.md",
+   "C1-SECRETS-BASE-0917.json",
+   "SURGE-WILDQ-129.md",
+   "PAIR-VINF-WILDQ-129.md"
+  ],
+  "remote_reads": [
+   "vinf outbox ANS-SEM-PAIR-VINF-WILDQ-129",
+   "vci-lvlu ci/wild-questions.md + claims.json + lvlu_responder.py",
+   "lvlu runs 35279120501 success"
+  ],
+  "blocked": "403 secondary波≥25min: state seen读回待补"
+ },
+ "verdict": "席镜本拍已覆写; 塔镜推件在W5批",
+ "docs": 9,
+ "push_http": "pending-batch"
 }
