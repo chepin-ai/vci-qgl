@@ -1,0 +1,55 @@
+{
+ "mirror": "CO2-RERUN-TURNBACK-127-MIRROR",
+ "beat": "3.127",
+ "turnback": "tb-co2-rerun八周目(i=44→45)",
+ "ts": "2026-09-17T18:14:13Z",
+ "method": "独立重算(124同制: chi2 round1dp再阈CE-11=19.5)+种子2计数分裂对照(严格互补二项抽稀)",
+ "cmp": {
+  "games": {
+   "re": 29860,
+   "arch": 29860,
+   "match": true
+  },
+  "tested": {
+   "re": 19700,
+   "arch": 19700,
+   "match": true
+  },
+  "sig": {
+   "re": 3138,
+   "arch": 3138,
+   "match": true
+  },
+  "enriched": {
+   "re": 1640,
+   "arch": 1640,
+   "match": true
+  },
+  "depleted": {
+   "re": 1498,
+   "arch": 1498,
+   "match": true
+  }
+ },
+ "seed2_split_control": {
+  "seed": 2,
+  "mode": "strict-complement-binomial-thinning",
+  "half_sig_seed2a": 2094,
+  "half_sig_seed2b": 2097,
+  "balance_ratio": 0.9986,
+  "top50_retention_seed2a": 1.0,
+  "arch_106": {
+   "a": 1988,
+   "b": 2001,
+   "balance": 0.9935,
+   "retention": 1.0
+  },
+  "note": "半样本卡方期望减半,显著数衰减形态合;对照统计量(balance/retention)再验通过"
+ },
+ "honest_gaps": [
+  "EXACT整数1988/2001不可复得: 106原RNG流无存——差为流provenance非系统性偏倚(对照统计量balance 0.9986≈arch 0.9935, retention 1.0=1.0)",
+  "舍入律: 未舍入base sig=3145 vs 同制3138——7对chi2∈[19.5,19.55)在round1dp后恰贴阈; 判据失校即修: 镜算统一采124制"
+ ],
+ "verdict": "证(八周目零翻案: 五项EXACT全合; 种子2分裂对照结构层再验通过)",
+ "zero_fab": true
+}
