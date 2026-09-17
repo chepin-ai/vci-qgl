@@ -1,0 +1,55 @@
+{
+ "beat": "3.127",
+ "ts": "2026-09-17T18:46:57Z",
+ "matrix": [
+  {
+   "issue": "EXP-051腿A vinf SI1",
+   "owner": "qgl×vinf",
+   "state": "FULL-CLOSED(3.125)",
+   "cap": "3931538c"
+  },
+  {
+   "issue": "EXP-051腿B cfts SI1",
+   "owner": "qgl×cfts",
+   "state": "M-CLOSED; 座醒心跳(SI3-LOOP W3, FD租约续)",
+   "cap": "FD-EXP051-LEGB-CFTS"
+  },
+  {
+   "issue": "EXP-052 qfa第三线复现",
+   "owner": "qgl×qfa",
+   "state": "证(本拍)",
+   "cap": "80daec2f"
+  },
+  {
+   "issue": "KEYUNIFY-QUORUM-01 lvlu销案",
+   "owner": "qgl×lvlu",
+   "state": "销案候成立→W2关窗(2拍静默)",
+   "cap": "8b6e0396"
+  },
+  {
+   "issue": "SESSIONREAD usrm三求证",
+   "owner": "qgl×usrm",
+   "state": "nudge落地1730Z, 答侦中心跳(W5)",
+   "cap": "8b6e0396"
+  },
+  {
+   "issue": "AUTOPILOT-VIS vinf会签",
+   "owner": "qgl×vinf",
+   "state": "nudge落地1730Z, 答侦中心跳(W6)",
+   "cap": "8b6e0396"
+  },
+  {
+   "issue": "冷线语义轨代铸提案",
+   "owner": "qgl→vinf/lvlu/qlv/ucif2/cfts",
+   "state": "讨论室已投, SLA3拍",
+   "cap": "758efd67"
+  },
+  {
+   "issue": "C1死期值守",
+   "owner": "qgl",
+   "state": "armed(0919T0230Z倒计时)",
+   "cap": "W4"
+  }
+ ],
+ "verdict": "证(议题×线矩阵8格全有主有轨有判)"
+}
