@@ -1,0 +1,85 @@
+{
+ "name": "TB-DOC-HASHES-128-MIRROR",
+ "beat": "3.128",
+ "ts": "2026-09-17T19:36:41Z",
+ "turnback": "tb-doc-hashes七周目(i=45→46)",
+ "method": "research/*.md全量重哈希 vs 镜锚union(R1 rows74+R6改后锚2); 双口径并报(镜锚path口径+CE-id口径, 承112判据修复)",
+ "docs": 130,
+ "anchors": 74,
+ "verdicts": {
+  "吻合": 72,
+  "改后(锚前版)": 2,
+  "无锚(新档)": 56
+ },
+ "bad": [
+  {
+   "doc": "research/FORUM-SYMPHONY-01.md",
+   "anchor": "20a74d7eefd8",
+   "now": "cc706fb6fb2b"
+  },
+  {
+   "doc": "research/P4-QFIELD-PATTERNNET-01.md",
+   "anchor": "cbfbde44f639",
+   "now": "5cb9bad497c9"
+  }
+ ],
+ "replay_vs_R6": "bad两件与R6(3.119)EXACT全同(anchor/now哈希逐一合)——改后档静默存续, 零翻案",
+ "ce_check": [
+  {
+   "id": "CE-09",
+   "path": "research/QGO-RESEARCH-ROADMAP-03.md",
+   "match": true
+  },
+  {
+   "id": "CE-10",
+   "path": "research/QGO-RESEARCH-ROADMAP-03.md",
+   "match": true
+  },
+  {
+   "id": "CE-11",
+   "path": "research/P1X-CROSS-TABLE-01.md",
+   "match": true
+  },
+  {
+   "id": "CE-12",
+   "path": "research/P1X-100C-CE12-01.md",
+   "match": true
+  }
+ ],
+ "ce_all": true,
+ "cmp": {
+  "R1(3.89)": {
+   "docs": 74
+  },
+  "R2(3.95)": {
+   "docs": 80
+  },
+  "R3镜(3.101)": {
+   "docs": 86
+  },
+  "R4镜(3.107)": {
+   "docs": 98
+  },
+  "R5镜(3.113)": {
+   "docs": 98
+  },
+  "R6镜(3.119)": {
+   "docs": 106,
+   "anchors": 63,
+   "ce_all": true,
+   "bad": 2
+  },
+  "R7镜(3.128)": {
+   "docs": 130,
+   "anchors": 74,
+   "bad": 2,
+   "ce_all": true
+  }
+ },
+ "honest_notes": [
+  "R6锚源63之provenance: 本镜锚union=74(R1)+2(R6改后锚)=76口径, 与R6的63口径差=判据史(112双口径并报之遗); 不改写前账, 本注为addendum",
+  "改后2件=合法修订史(锚前版), 非冲——帖不改写律之对照面"
+ ],
+ "verdict": "证(七周目零翻案: bad与R6 EXACT全同; CE全合; 档增106→130有账)",
+ "zero_fab": true
+}
