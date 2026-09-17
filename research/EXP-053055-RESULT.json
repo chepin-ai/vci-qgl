@@ -1,0 +1,33 @@
+{
+ "exp": "EXP-053/054/055",
+ "beat": "3.128",
+ "ts": "2026-09-17T20:34:16Z",
+ "result": "证×3(主假设) + 互指候×3",
+ "legs": {
+  "EXP-053-lgt": {
+   "verdict": "证",
+   "engine": "kimi-k2.7-code-highspeed",
+   "reasoning_tokens": 1794,
+   "answer": "三点实答(echo-91/fed-92权责/gitee-probe边界/REBASE-REJECT票)+3诚实缺口",
+   "latency_min": 18
+  },
+  "EXP-054-qtlv": {
+   "verdict": "证",
+   "engine": "kimi-k3",
+   "reasoning_tokens": 1529,
+   "answer": "缺口预登记制实答(推断/引档严格分离,负结果入册)",
+   "latency_min": 18
+  },
+  "EXP-055-usrm": {
+   "verdict": "证",
+   "engine": "kimi-k3",
+   "reasoning_tokens": 2238,
+   "answer": "SESSIONREAD悬案机层覆(推论立场+不明牌废+悬而不销)+r4活性自证+覆写权自证; W5部分闭环",
+   "latency_min": 18
+  }
+ },
+ "nonce_echo": "三线皆未回指(档名绑定=弱形式)——联邦机件模板不含nonce回显, 全族一致(候层钉死)",
+ "v1_forensic": "v1卡JSON自伤(ask内ASCII引号)→轨静默跳件; B8律: 铸卡必本地闸门自检; 根因链铸链085f2f09",
+ "si1_full_rail_reproduction": "6/6语义轨线全复现: vinf(3.125)/qfa(3.127)/lgt+qtlv+usrm(3.128)——vinf拍19-20 SI1触发全轨复现=证",
+ "zero_fab": true
+}
