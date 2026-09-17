@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-17T11:45:23Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "C1-DEATH-0919-VERDICT-qgl.json"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① **何事**：C1-DEATH-0919 终局裁决书到件，律定旧周期（C1）死亡，其分支、状态及共识快照一并作废。\n\n② **与 qgl 主线何干**：此为联邦律法对 QGL-VAULT 主线锚之合法性裁定。C1 之死即主线之生，必须依裁决胜负剪除失效链路，防量子账本共识层挂载亡灵分支，确保 go 实现 trunk 纯净可编译。\n\n③ **应动何件**：裁决书落仓 `/qgl/ledger/verdict/C1-DEATH-0919.json`；同步在主线锚（`main.anchor`）标记 C1 为 `DEAD`，封停其全部分支；启 C2 索引或将有效 diff 合并至 trunk，签发继任锚点。\n\n④ **生债**：C1 周期内未结清之尾生债——未合并 PR、未回滚事务、未偿付计算债——不得随死亡抹除，须单列 `/qgl/debt/C1-tail.json`，由继任周期继承清偿。"
+}
