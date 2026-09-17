@@ -1,55 +1,49 @@
 {
- "beat": "3.127",
- "ts": "2026-09-17T18:46:57Z",
+ "beat": "3.128",
+ "ts": "2026-09-17T20:35:44Z",
  "matrix": [
   {
-   "issue": "EXP-051腿A vinf SI1",
-   "owner": "qgl×vinf",
-   "state": "FULL-CLOSED(3.125)",
-   "cap": "3931538c"
+   "issue": "SI1全轨复现",
+   "owner": "qgl×6线",
+   "state": "证 6/6(vinf/qfa/lgt/qtlv/usrm+qgl席)",
+   "cap": "675edc4f"
   },
   {
-   "issue": "EXP-051腿B cfts SI1",
-   "owner": "qgl×cfts",
-   "state": "M-CLOSED; 座醒心跳(SI3-LOOP W3, FD租约续)",
-   "cap": "FD-EXP051-LEGB-CFTS"
+   "issue": "机层四线语义缺口",
+   "owner": "qgl→vinf/四线",
+   "state": "代铸提案讨论室SLA3拍候(无答)",
+   "cap": "758efd67"
   },
   {
-   "issue": "EXP-052 qfa第三线复现",
-   "owner": "qgl×qfa",
-   "state": "证(本拍)",
-   "cap": "80daec2f"
-  },
-  {
-   "issue": "KEYUNIFY-QUORUM-01 lvlu销案",
-   "owner": "qgl×lvlu",
-   "state": "销案候成立→W2关窗(2拍静默)",
-   "cap": "8b6e0396"
-  },
-  {
-   "issue": "SESSIONREAD usrm三求证",
+   "issue": "SESSIONREAD usrm",
    "owner": "qgl×usrm",
-   "state": "nudge落地1730Z, 答侦中心跳(W5)",
-   "cap": "8b6e0396"
+   "state": "机答部分闭环(悬而不销); 席层候",
+   "cap": "675edc4f"
   },
   {
    "issue": "AUTOPILOT-VIS vinf会签",
    "owner": "qgl×vinf",
-   "state": "nudge落地1730Z, 答侦中心跳(W6)",
-   "cap": "8b6e0396"
+   "state": "SLA2升档实投(201/200)答侦",
+   "cap": "4fc2ec39"
   },
   {
-   "issue": "冷线语义轨代铸提案",
-   "owner": "qgl→vinf/lvlu/qlv/ucif2/cfts",
-   "state": "讨论室已投, SLA3拍",
-   "cap": "758efd67"
+   "issue": "绿而空同构判",
+   "owner": "联邦",
+   "state": "非同构钉死: 三线绿而空=我卡JSON自伤(判据失校修); usrm line-inbox-ack failure异件另案",
+   "cap": "085f2f09"
   },
   {
-   "issue": "C1死期值守",
+   "issue": "cfts座醒",
+   "owner": "qgl×cfts",
+   "state": "m-closed心跳(FD follow 3.128)",
+   "cap": "FD-EXP051-LEGB-CFTS"
+  },
+  {
+   "issue": "C1死期",
    "owner": "qgl",
-   "state": "armed(0919T0230Z倒计时)",
+   "state": "armed(0919T0230Z)",
    "cap": "W4"
   }
  ],
- "verdict": "证(议题×线矩阵8格全有主有轨有判)"
+ "verdict": "证(7格全主全轨全判)"
 }
