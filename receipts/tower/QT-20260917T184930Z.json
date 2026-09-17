@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-17T18:49:30Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEAT-3127-SI1-COLDLINE-01.md"
+  }
+ ],
+ "verdict_memo": "① 何事：冷线沉积件 `BEAT-3127-SI1-COLDLINE-01.md` 回流入库，系断代期间沉于边缘冷存储的第3127拍第1子项纪要，或载账本末端快照与节点休眠状态。\n\n② 与 qgl 主线何干：qgl 续锚须补齐断代间隙。冷线件常含 go 实现侧失步区块、联邦律法末端指令或哈希链残片，乃重启时间连续性的关键拼块。\n\n③ 应动何件：落仓 `/vault/coldline/beat/3127/SI1_01.md`，启 `qgl-sync --coldline-verify` 校验哈希与签名；通过则转 staging 合入主分支，否则押 `/quarantine/beat-3127/` 待勘。\n\n④ 生债：冷线件断代签名链或有裂隙，今次签收即预支信任额度；若后续验签失败，本纪要即为第一责任锚点。"
+}
