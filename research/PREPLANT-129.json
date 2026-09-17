@@ -1,0 +1,15 @@
+{
+ "beat": "3.129",
+ "preplanted_at": "2026-09-17T20:35:44Z",
+ "items": [
+  "PP129-1 C1死期后首拍(0919T0230Z后): c1_death_day_probe实跑+secrets元数据差分回证 [W4]",
+  "PP129-2 W6会签答侦(SLA2已升档): 再1拍静默→autoaction R3会签悬案钉死",
+  "PP129-3 代铸提案答侦(讨论室SLA): 无答→乙案镜扩面自领面先铸(FDH镜已领)",
+  "PP129-4 W5席层核正窗: usrm原文核正答侦(机答已部分闭环)",
+  "PP129-5 EXP-056备: 机层四线之一(cfts首选)代铸轨落成后之首火对拍",
+  "PP129-6 ENT-V2每拍采样129+ripple入电池; API节律账续(长波型≥40min录)",
+  "PP129-7 autoaction R2(L24型双lane)首件实装演练(干跑)",
+  "PP129-8 tb轮冊 i=46→47(peek: tb-beacon-audit)"
+ ],
+ "zero_fab": true
+}
