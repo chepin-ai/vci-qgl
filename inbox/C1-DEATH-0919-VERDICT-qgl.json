@@ -1,0 +1,43 @@
+{
+ "id": "C1-DEATH-0919-VERDICT-qgl",
+ "beat": "3.123",
+ "ts": "2026-09-17T12:00Z",
+ "armed_probe": "C1-DEATH-0919",
+ "line": "qgl",
+ "deadline": "2026-09-19T02:30Z",
+ "remaining_h": 38.5,
+ "chain_rehearsal": {
+  "tier1_CI_OPS_LINE_KEY": {
+   "in_registry": true,
+   "updated_at": "2026-09-11T21:19:53Z",
+   "last_probe": "200/chepin-ai@20260915T143414Z"
+  },
+  "tier2_LINE_PAT": {
+   "in_registry": true,
+   "updated_at": "2026-09-15T07:28:00Z"
+  },
+  "tier3_AI_FULL_PAT": {
+   "in_registry": true,
+   "updated_at": "2026-09-12T10:33:54Z",
+   "death_class": "C1泄系·死期2026-09-19T02:30Z",
+   "last_probe": "200/chepin-ai@20260915T143414Z"
+  },
+  "terminal": "GITHUB_TOKEN(公仓自动)+github.token —— 零secret级,永活",
+  "fallback_refs": {
+   "key-probe-01.yml": "三阶名齐+checkout token降级在",
+   "key-sentinel-line.yml": "三阶名齐+checkout token降级在"
+  }
+ },
+ "death_impact_analysis": {
+  "tier3_death_0919T0230Z": "AI_FULL_PAT亡→降级链自动落tier1/tier2(均在册且健康)→终阶GITHUB_TOKEN兜底;写面收执推送不断(三层降级已治于拍3.122 DRILL-0919)",
+  "autopilot_refs": "si-autopilot.yml探P1=AI_FULL_PAT→P2=LINE_PAT→P3=FED_PAT(不在册)→P4=QI_PAT(不在册): tier3亡后自动落LINE_PAT;今日空回(token=NONE)系限流深窗非钥亡(FINDING-AUTOPILOT-VIS-01另案)",
+  "risk": "低——三阶式+终阶兜底双保险在役;死期后首日sentinel差分回证预案已备"
+ },
+ "drill_receipts": {
+  "key-sentinel-20260915T143414Z": "200,双钥200/chepin-ai",
+  "drill-0919-dispatch": "run 34982486375 success"
+ },
+ "kq09": "FINE_OWN_PAT_QGL 仍不在册(root批窗一级件③)——每拍meta差分续侦",
+ "verdict": "证",
+ "law": "名级元数据轨,值零入文;无实测不索钥;401/403即停手(瞬态限流除外,凭据探已证健康)"
+}
