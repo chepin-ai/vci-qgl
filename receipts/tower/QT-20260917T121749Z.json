@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-17T12:17:49Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEAT-3123-SEARCH-01.md"
+  }
+ ],
+ "verdict_memo": "① 何事：inbox 到件 BEAT-3123-SEARCH-01.md，为检索模块设计稿，关乎状态/交易查询语义与索引策略。  \n② 与 qgl 主线何干：qgl 以量子账本为锚，检索层是共识状态对外观测的咽喉，索引结构直接牵动默克尔验证路径与节点同步性能，属存储主线关键路径。  \n③ 应动何件：先审后落——若属 RFC，入 `docs/rfc/search-indexer-3123.md`；若含接口骨架，置于 `pkg/indexer/beat3123.go`，并开 `feature/BEAT-3123` 分支，经联邦律法审阅后合入主线。  \n④ 生债一条：严禁在检索层写死底层存储 schema；必须先立 `IndexDriver` 接口，否则异构引擎迁移之日，即是尾生债 compounded 之时。"
+}
