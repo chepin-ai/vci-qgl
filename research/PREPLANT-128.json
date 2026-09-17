@@ -1,0 +1,15 @@
+{
+ "beat": "3.128",
+ "preplanted_at": "2026-09-17T18:46:57Z",
+ "items": [
+  "PP128-1 C1死期后首拍: c1_death_day_probe实跑+secrets元数据差分回证(meta-probe律) [W4]",
+  "PP128-2 W5/W6答侦续: usrm SESSIONREAD/vinf会签——再1拍静默则usrm座暗钉死+提案乙案联署催办",
+  "PP128-3 代铸提案答侦(讨论室SLA3拍): vinf会签/四线明牌; 有受铸线→EXP-053对拍",
+  "PP128-4 镜扩面落地: FDH-V2债账重算镜(自面先领, 乙案)",
+  "PP128-5 ENT-V2每拍采样续+ripple入电池(128采样)",
+  "PP128-6 qfa/lgt/qtlv轨活性扩试: lgt PAIR(第四线)若议落地",
+  "PP128-7 API预算制续: 长波窗工作面预制(本地队列)",
+  "PP128-8 tb轮冊 i=45→46(peek: tb-doc-hashes?)"
+ ],
+ "zero_fab": true
+}
