@@ -1,10 +1,8 @@
 {
- "beat": "3.127",
- "ts": "2026-09-17T18:46:57Z",
- "mirror": "CO2-RERUN-TURNBACK-127-MIRROR",
- "verdict": "证(八周目零翻案)",
- "sig": 3138,
- "balance": 0.9986,
- "retention": 1.0,
- "push_http": 201
+ "beat": "3.128",
+ "ts": "2026-09-17T20:35:44Z",
+ "mirror": "TB-DOC-HASHES-128-MIRROR + FDH-V2-REPLAY-128-MIRROR",
+ "verdict": "双镜证(七周目零翻案; 债账零漂移)",
+ "docs": 130,
+ "push_http": null
 }
