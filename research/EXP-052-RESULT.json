@@ -1,0 +1,21 @@
+{
+ "exp": "EXP-052",
+ "beat": "3.127",
+ "ts": "2026-09-17T18:40:57Z",
+ "result": "证(主假设) + 候(互指层未达)",
+ "criteria": {
+  "答件出现": "证 ANS-SEM-PAIR-QGL-QFA-127-20260917T183626Z.md (push后102s, 事件脊点火非dispatch)",
+  "语义非trivial": "证 kimi-k3三点实答(账律张力/覆写两式/明牌足)+双诚实缺口入册, reasoning_tokens=2085",
+  "nonce互指": "候未达——答件未回指011b23c3cb14(应卡文件名绑定为弱形式; 与vinf同态: 彼亦未echo我nonce)"
+ },
+ "latency_s": 102,
+ "engine": "KIMI_API_KEY/kimi-k3",
+ "rail_facts": {
+  "fire": "push事件脊(非硬触发)",
+  "dedup": "si/sem-state.json",
+  "output_classify": "L2",
+  "template_drift": "答件头书SEMANTIC-RESPONDER-01实为-04(字串漂移, 随册)"
+ },
+ "third_line_reproduction": "证——vinf(热线自铸)/qfa(代铸轨)两线SI1语义应答皆复现; cfts类冷线=机层轨无语义(缺口钉死)",
+ "zero_fab": true
+}
