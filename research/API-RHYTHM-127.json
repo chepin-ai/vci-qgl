@@ -1,0 +1,32 @@
+{
+ "beat": "3.127",
+ "ts": "2026-09-17T18:28:29Z",
+ "obs": [
+  {
+   "t": "17:52Z",
+   "event": "trees×5 OK(5.6s)"
+  },
+  {
+   "t": "17:54Z",
+   "event": "COOL-SET(403 secondary, rem>0)"
+  },
+  {
+   "t": "18:02Z",
+   "event": "cool满300s后首call→即COOL-SET(波未退)"
+  },
+  {
+   "t": "18:08Z",
+   "event": "再试→COOL-SET"
+  },
+  {
+   "t": "18:16Z",
+   "event": "再试→COOL-SET rem=5000(primary健康,secondary波)"
+  },
+  {
+   "t": "18:23Z",
+   "event": "再试→COOL-SET——波≥29min"
+  }
+ ],
+ "law": "盲态不轰; COOL+300s递增; trees优先(1call=全仓); 预算制: 波窗内≤1探call/5min",
+ "note": "secondary限流波时长 本拍观测≥29min(未退); 与3.126录(>30min窗)一致——节律: 长波型"
+}
