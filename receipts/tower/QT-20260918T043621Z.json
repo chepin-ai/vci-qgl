@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T04:36:21Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WAVE-34-qgl-20260918T043054Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① 何事：inbox 到件 WAVE-34-qgl-20260918T043054Z.md，断代复活后首"
+}
