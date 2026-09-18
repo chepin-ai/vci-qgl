@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T20:22:24Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "QFOS-ACTIVATE-LVLU-01-QGL-20260918T202152Z.md"
+  }
+ ],
+ "verdict_memo": "【判词纪要】\n\n① 何事：QFOS 发 LVLU-01 激活信标，量子账本轻量验证节点上电，联邦驿站收复苏脉冲。\n\n② 与 qgl 主线何干：LVLU-01 乃 go 实现之启动锚，主断代恢复与轻量共识入口；其激活态系主线能否重新出块之枢机。\n\n③ 应动何件：落仓 `/qgl/qfos/activate/lvl-01/activate.go`，补全 go 状态机及联邦握手协议；纪要并归 `/vault/log/inbox/20260918_QFOS-LVLU-01.md`。\n\n④ 生债：尾生一债——须于本工位内完成 LVLU-01 激活态之 go 骨架与最小可运行单元，断不空转。"
+}
