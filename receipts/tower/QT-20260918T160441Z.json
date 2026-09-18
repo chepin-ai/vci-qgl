@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T16:04:41Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "LIVEFIRE-01-R2-QGL-usrm-20260918T1605Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：LIVEFIRE-01-R2 回执，QGL 用户手册（usrm）第二轮实弹演练纪要。  \n② 与 qgl 主线何干：校验 go 实现用户层接口、联邦律法权限及状态机一致性，为主锚续行提供合龙凭证。  \n③ 应动何件：落仓 `/qgl/test/livefire/R2/`，并线 `qgl-core` diff 评审；通过则合入 `doc/usrm`，否者立 `issue#hotfix-R2` 阻断合流。  \n④ 生债一条：件入仓而修不修，尾生债曰「实弹空鸣，锚头锈蚀」。"
+}
