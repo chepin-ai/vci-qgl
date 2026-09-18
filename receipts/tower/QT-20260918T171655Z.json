@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T17:16:55Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-IGNITE-LVLU-01-20260918T1720Z.md"
+  }
+ ],
+ "verdict_memo": "①何事：SI1 子系统 ignite 层级升级（LVLU-01）到件，系 20260918T1720Z 触发的共识点火与状态跃迁事件。  \n②与 qgl 主线何干：ignite 为量子账本 go 实现之启动锚，LVLU 直接改写共识状态机层级，影响联邦节点同步与链首锚定，属主线基座迭代。  \n③应动何件：落仓 `qgl-core/ignite/levelup/SI1-LVLU-01.md`，同步修订 `go.mod` 版本锚点与 `CHANGELOG`，并触发跨节点点火回归测试。  \n④生债一条：七十二小时内补齐 ignite 异常回滚路径验证，逾期尾生债记「SI1-LVLU-01-rollback-undone」。"
+}
