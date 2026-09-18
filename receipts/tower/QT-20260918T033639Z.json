@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T03:36:39Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "NUDGE-QGL-USRM-01-20260918T0335Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要  \nref：NUDGE-QGL-USRM-01-20260918T0335Z.md  \n\n① 何事：USRM 催促件，催更量子账本用户手册或用户管理子系统，要求补全用户侧接口与文档。  \n\n② 与 qgl 主线何干：用户层为 Go 实现之门户，承联邦律法身份锚定与权限控制，属主线基建，不可或缺。  \n\n③ 应动何件：若为文档缺位，落仓 `docs/usermanual/inbox/` 待编；若涉代码实现，落仓 `pkg/identity/` 或 `pkg/userm/` 需求池，标 P1 并同步更新 ROADMAP。  \n\n④ 生债一条：断代遗缺，用户入口无据，债号 USRM-01，限本迭代内偿清，免下游集成壅塞。"
+}
