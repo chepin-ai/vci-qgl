@@ -15,7 +15,7 @@ jobs:
       - uses: actions/checkout@v4
       - name: key-scan
         env:
-          AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
+          AI_FULL_PAT: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}  # DRILL-0919三阶(usrm代铸,覆写权归原线,探钥器亦治)
           CI_OPS_LINE_KEY: ${{ secrets.CI_OPS_LINE_KEY }}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python3 ci/key_sentinel.py
