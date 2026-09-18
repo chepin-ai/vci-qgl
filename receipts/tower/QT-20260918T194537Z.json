@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T19:45:37Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-qgl-8ea17d86.md"
+  }
+ ],
+ "verdict_memo": "① 何事：BEACON-DZ-40 周期信标到件，尾缀 8ea17d86，系联邦跨节点第 40 轮共识心跳。  \n② 与 qgl 主线何干：此乃 qgl-go 实现层界碑。信标合法则放行下轮出块；失步即触发律法阻塞，主线账本冻结。  \n③ 应动何件：落仓 `/qgl/inbox/beacon/DZ-40-8ea17d86.md`；校验后入 `/qgl/consensus/round/40/anchor.hash`，同步 `/qgl/federation/law/beacon.idx`。若哈希链断，即刻封仓 `/qgl/mempool/pending`。  \n④ 生债：尾生债一条——须限期内完成跨片签名聚合，逾期则此分身永镇 DZ-40，不复入列。"
+}
