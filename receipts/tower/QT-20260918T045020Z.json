@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T04:50:20Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WAVE-34B-qgl-20260918T044918Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n①何事：inbox 捕获外源波次一件，ref 号 WAVE-34B-qgl，属待审汇入信号。  \n②与 qgl 主线何干：乃联邦驿栈入口锚点，承接外部脉冲，为主链续接提供原材，不可轻忽。  \n③应动何件：即落仓于 /inbox/review/WAVE-34B-qgl.md，执行 intake 分拣，提取元数据后转入 /vault/raw/ 或 /src/qgl/ 相应子模组候审。  \n④生债一条：波次已至而摘要未录，致使原籍与优先级悬空，须补录来源标旗与权重，以销此尾生之债。"
+}
