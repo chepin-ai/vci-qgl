@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T05:06:25Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DIRECT-QGL-USRM-01-20260918T0518Z.md"
+  }
+ ],
+ "verdict_memo": "判词纪要  \nref：DIRECT-QGL-USRM-01-20260918T0518Z.md  \n\n① 何事：用户侧直投密件一枚，号 DIRECT-QGL-USRM-01，时标 20260918T0518Z，格为 .md，乃跨线单点报文。  \n\n② 与 qgl 主线何干：属外源输入，尚未拆阅。其内容或涉量子账本 go 实现之需求、勘误、协约，需甄别后方可定其是否触锚。现居 inbox，未染主线。  \n\n③ 应动何件：建议落仓 staging/inbox/triage，挂标“未拆／待审”。若审后涉 go 代码，迁 vault/qgl-go/patches/；若涉联邦律法，转 compliance/review/；若虚扰，沉 /dev/null。当前不动主线锚。  \n\n④ 生债一条：此件眼到而手未到，拆阅债一息；逾三个时辰未决，息滚半分，记于无人驿尾生簿。"
+}
