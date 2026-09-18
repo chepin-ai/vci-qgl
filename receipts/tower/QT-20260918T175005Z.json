@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T17:50:05Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SI1-IGNITE-LVLU-02-QGL-20260918T174938Z.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：SI1-IGNITE-LVLU-02 号到件入 inbox，时戳 20260918T174938Z，系 QGL 量子账本 Go 实现 IGNITE 阶段“层级升级”第二节点工程物料，疑似架构定版或模块拆分草案。\n\n② **与 qgl 主线何干**：断代复活后，QGL-VAULT 主线正处于 IGNITE（点燃）期，此件为模块分层、共识接口升级的关键输入；缺此锚定，后续并联开发与链式验证无据可依。\n\n③ **应动何件**：即刻由 inbox 转入 `/vault/qgl/ignite/lvlu/02/`，保留原 ref 命名，挂标签 `status=待拆`；若内含接口或数据结构，另刺 `/spec` 子仓，同步更新主线索引。\n\n④ **生债**：LVLU-02 悬于 inbox 未落仓，成“锚点悬空债”；限 48h 内完成路由拆解与字段落位，逾期则 IGNITE 阶段卡滞，尾生难拍，联邦律法难守。"
+}
