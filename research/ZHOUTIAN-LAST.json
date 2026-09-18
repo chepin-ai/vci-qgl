@@ -1,14 +1,14 @@
 {
- "beat": "3.128",
- "ts": "2026-09-17T20:35:44Z",
+ "beat": "3.130",
+ "ts": "2026-09-18T03:55Z",
  "key": "在",
  "legs": {
   "sense": "NM2",
-  "mirror": "双镜证",
-  "respond": "环转证",
-  "track": "7格",
-  "turnback": "i=46(doc-hashes七周目消费)"
+  "mirror": "双镜证(10卡201+批推)",
+  "respond": "环转证(直入零候)",
+  "track": "9格",
+  "turnback": "i=46"
  },
- "echo_scan": "三ANS-SEM收; 讨论室无答",
+ "echo_scan": "qfa两轮答+qlv receipt+lvlu录件",
  "verdict": "证"
 }

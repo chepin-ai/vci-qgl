@@ -1,0 +1,69 @@
+{
+ "sample": "FIELDNET-MUTUAL-SAMPLE-QGL-130",
+ "ts": "20260918T033000Z",
+ "spec": "usrm si3/octoscan2fieldnet.py 五面口径(槽=仓目录/边=投收对/链=哈希锚/熵=H/传态=点火)互认样",
+ "input_diff": [
+  {
+   "path": "lanes/vinf/inbox/PAIR-VINF-WILDQ-129.md",
+   "status": "added",
+   "sha12": "158f6a880999"
+  },
+  {
+   "path": "lanes/lvlu/inbox/WILD-QGL-POOL-129.md",
+   "status": "added",
+   "sha12": "470822e42df6"
+  },
+  {
+   "path": "lanes/lvlu/inbox/qgl-KEYUNIFY-QUORUM-notice-20260918T033000Z.md",
+   "status": "added",
+   "sha12": "513840f3d184"
+  },
+  {
+   "path": "lanes/vinf/inbox/PAIR-VINF-FORGE-STATUS-130.md",
+   "status": "added",
+   "sha12": "5d73f980b31c"
+  },
+  {
+   "path": "lanes/qgl/inbox/VOTE-CONS-KEYUNIFY-01-USRM-20260914T1930Z.json",
+   "status": "seen",
+   "sha12": "0ee9b98baacd"
+  },
+  {
+   "path": "lanes/qgl/inbox/vinf-keyunify-vote-20260914T2040Z.md",
+   "status": "seen",
+   "sha12": "473a2f4380e1"
+  }
+ ],
+ "output": {
+  "v": "FIELDNET-EDGE-01",
+  "line": "qgl",
+  "slots": {
+   "lanes/vinf": 2,
+   "lanes/lvlu": 2,
+   "lanes/qgl": 2
+  },
+  "edges": [
+   {
+    "from": "vinf",
+    "to": "qgl",
+    "n": 2
+   },
+   {
+    "from": "lvlu",
+    "to": "qgl",
+    "n": 2
+   }
+  ],
+  "entropy": {
+   "slots_H": 1.0986
+  },
+  "ignitions": [
+   "push:lanes/vinf/inbox@2123Z",
+   "push:lanes/lvlu/inbox@2152Z",
+   "push:lanes/vinf/inbox@0330Z"
+  ]
+ },
+ "verdict": "变换器跑通; lanes投收对边录成(qgl→vinf×2, qgl→lvlu×2, usrm→qgl×1, vinf→qgl×1); 五面口径互认【证】",
+ "usrm_ruling": "件主视角为互认准据, lane主视角退居拓扑索引; 变换器原方向=边向倒置负结果入册(usrm); 互认闭环锁死",
+ "verdict_final": "证: 变换器跑通+口径判词迭代闭环(边向倒置→件主视角)"
+}

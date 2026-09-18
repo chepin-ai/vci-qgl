@@ -1,0 +1,13 @@
+{
+ "beat": "3.131",
+ "preplant": [
+  "EXP-056/058答件收+判词(qfa R4答同扫)",
+  "C1死期0919T0230Z: probe跑+基线差分",
+  "lvlu KEYUNIFY-QUORUM销册验",
+  "vinf forge qlv/lvlu答二轮",
+  "usrm边向口径答→互认闭环",
+  "qfa互锁签否→errata_chain互锁态定",
+  "turnback i=46 tb-beacon-audit"
+ ],
+ "ts": "2026-09-18T03:55Z"
+}

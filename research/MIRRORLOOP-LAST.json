@@ -1,26 +1,26 @@
 {
- "beat": "3.129",
- "ts": "2026-09-17T22:15Z",
+ "beat": "3.130",
+ "ts": "2026-09-18T03:55Z",
  "mirror": {
   "local_artifacts": [
-   "EXP-057-PREREG.json",
-   "CONSENSUS-SURGE-129.json",
-   "ANS-SEM-WILD-LGT-129.md",
-   "ANS-SEM-WILD-QTLV-129.md",
-   "ANS-SEM-WILD-QFA-129.md",
-   "ANS-SEM-WILD-USRM-129.md",
-   "C1-SECRETS-BASE-0917.json",
-   "SURGE-WILDQ-129.md",
-   "PAIR-VINF-WILDQ-129.md"
+   "EXP-056-CFTS-PAIR-CARD-ARMED.md",
+   "FIELDNET-MUTUAL-SAMPLE-QGL-130.json",
+   "API-RHYTHM-130.json"
   ],
   "remote_reads": [
-   "vinf outbox ANS-SEM-PAIR-VINF-WILDQ-129",
-   "vci-lvlu ci/wild-questions.md + claims.json + lvlu_responder.py",
-   "lvlu runs 35279120501 success"
+   "70仓穷举(cisvr退)",
+   "cfts/ucif2语义轨直取实证",
+   "qlv tower receipt QT-20260918T033743Z",
+   "qfa ERRATA互锁两轮答",
+   "lvlu claims.json qgl靶KEYUNIFY-QUORUM-01",
+   "usrm octoscan2fieldnet.py",
+   "lvlu seen_inbox录知会件"
   ],
-  "blocked": "403 secondary波≥25min: state seen读回待补"
+  "pushes": [
+   "cfts/ucif2/qlv/qfa×3/usrm/vinf/lvlu×2 = 10卡全201"
+  ]
  },
- "verdict": "席镜本拍已覆写; 塔镜推件在W5批",
- "docs": 9,
- "push_http": "pending-batch"
+ "verdict": "直入浪涌: 10卡直火+6面直取+互认样跑通",
+ "docs": 3,
+ "push_http": "201×13(10直入卡+3批推待窗)"
 }
