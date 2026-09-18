@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T20:17:42Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-qgl-b2e67be9.md"
+  }
+ ],
+ "verdict_memo": "① 何事：断代节点信标到件。BEACON-DZ-40 携 qgl-b2e67be9 节点哈希自 inbox 入栈，报存活及账本差异，为断代后首心跳。  \n② 与 qgl 主线何干：量子账本赖联邦全节点共识。该 beacon 若携侧链或缺块，直接冲击主链因果连续性；其哈希须纳入 ledger 图谱校验，系主线完整性之关键补丁。  \n③ 应动何件：落仓 `/vault/beacon/dz/BEACON-DZ-40-qgl-b2e67be9.md`；启 `ledger-sync` 比对主链高度。若可回滚并入 `/chain/qgl/pending/`；若存疑则退入 `/quarantine/orphan/` 待共识裁决。  \n④ 生债：断代期间交易承诺未明，须限次同步周期内追索其断代根因与签名者权责，逾期则成暗伤，此为尾生之债。"
+}
