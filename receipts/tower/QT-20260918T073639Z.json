@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T07:36:39Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "COORD-SI3-USRM-01-20260918T0732Z.md"
+  }
+ ],
+ "verdict_memo": ""
+}
