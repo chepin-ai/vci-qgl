@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T03:28:16Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WAVE-33-qgl-20260918T032714Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：WAVE-33 到件，报 qgl-go 量子态默克尔树并发写入死锁，附复现日志与 goroutine dump。  \n② 与 qgl 主线何干：此乃核心存储引擎线程安全溃点，直接危亟账本状态一致性，系主线锚定之要害。  \n③ 应动何件：即落 `.vault/inbox/WAVE-33-q"
+}
