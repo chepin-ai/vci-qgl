@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-18T19:10:24Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-39-qgl-bdd97a64.md"
+  }
+ ],
+ "verdict_memo": "①何事：断代信标 BEACON-DZ-39 到件，附档 `qgl-bdd97a64.md`，为无主代码遗档，待勘验。  \n②与 qgl 主线何干：档名含 qgl 前缀及类短码哈希，极可能为量子账本 go 实现之历史共识模块或节点状态残片，属续锚直接原料。  \n③应动何件：先落仓 `/vault/inbox/beacon/dz-39.md`，启轻量勘验：若可补全 trunk 缺失环节，则并入 `/qgl/consensus/legacy`；若不可释读，转 `/archive/frozen` 并挂“待温”标签。  \n④生债一条：此件断代来源与语义尚未勘定，本工位未能于一判之内定其生死，欠下“来源与完整性勘定”尾生债一条，后续工位须优先结清。"
+}
