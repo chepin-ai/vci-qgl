@@ -18,7 +18,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - env:
-          P1: ${{ secrets.AI_FULL_PAT }}
+          P1: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT || github.token }}
           P2: ${{ secrets.LINE_PAT }}
           P3: ${{ secrets.FED_PAT }}
           P4: ${{ secrets.QI_PAT }}
