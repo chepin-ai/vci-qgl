@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-19T20:03:18Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DIRECT-W213-USRM2QGL-02-20260919T200049Z.md"
+  }
+ ],
+ "verdict_memo": "①何事：W213 节点直投文本函一件，ref DIRECT-W213-USRM2QGL-02-20260919T200049Z.md，属 inbox 原始到件，封缄未启。\n\n②与 qgl 主线何干：标号 USRM2QGL 乃用户侧直抵量子账本 / go 实现之径，或涉共识补丁、接口勘误、状态问询，为主线外部刺激源，须防野码污链。\n\n③应动何件：依 inbox 则例，落仓 `/qgl-vault/inbox/uncut/` 待勘；驿卒即行拆封，提取要件。若涉 go 实现 bug，转 `core/issues/triage/`；若空函或 spam，焚件并锁 W213 直投"
+}
