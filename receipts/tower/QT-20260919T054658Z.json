@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-19T05:46:58Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-qgl-8af60e93.md"
+  }
+ ],
+ "verdict_memo": "① 断代信标 DZ-40 到件，哈希 `8af60e93`，系 go 实现层遗留之共识接口契约残片。  \n② 此件锚定 qgl 主线重启后状态机重建顺序，断代未销则链首悬空，属核心阻塞项。  \n③ 应落仓 `/qgl/BEACON/DZ-40/`：拆为 `beacon_contract.go`（接口）、`dz40_anchor.md`（锚证）、`8af60e93.chk`（校验）；即日入 go 编译链路联调。  \n④ 生债：DZ-40 逾期四十刻未决，尾生一条——限三日内补全对应单元测试与共识边界用例，逾期则链息加罚。"
+}
