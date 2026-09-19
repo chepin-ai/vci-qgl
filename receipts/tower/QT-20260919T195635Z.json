@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-19T19:56:35Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "DIRECT-W213-USRM2QGL-01-20260919T195509Z.md"
+  }
+ ],
+ "verdict_memo": "①何事：W213联邦直投通道落入盲件一封，ref为DIRECT-W213-USRM2QGL-01-20260919T195509Z.md，系用户侧未经编排之原始到件，头身未析。\n\n②与"
+}
