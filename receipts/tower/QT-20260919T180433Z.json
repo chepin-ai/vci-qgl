@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-19T18:04:33Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-qgl-52a3b3c2.md"
+  }
+ ],
+ "verdict_memo": "① 何事：BEACON-DZ-40 断代信标到件，ref 52a3b3c2，乃联邦节点投送的断后首条状态锚定与历法校验包，标定第 40 断代区间终点。\n\n② 与 qgl 主线何干：量子账本/go 实现以状态锚为命根。此件用于校准断代期账本时钟漂移，重建 Merkle 锚点，系续主线锚之必要输入，直抵联邦律法同步层。\n\n③ 应动何件：落仓 `qgl-vault/ingest/beacon/DZ-40-52a3b3c2.md`，经 `cmd/anchor` 解包，产出 `state/epoch-40.checkpoint`，挂主线仓待 rebase；校验不过则退 `quarantine/dz-40`。\n\n④ 生债一条：断代 40 区间内历史变更集尚未产出 go 模块确定性哈希。尾生债：须于本周期补全 epoch-39 至 epoch-40 完整 changelog 及签名校验，逾期联邦节点视为尾生未清。"
+}
