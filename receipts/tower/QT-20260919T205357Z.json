@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-19T20:53:57Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "QP-ANS-FEEDBACK-USRM2QGL-01-20260919T205331Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：USRM（用户手册）向 QGL go 实现反馈件 QP-ANS-FEEDBACK-USRM2QGL-01，报文档与代码偏差或入门阻塞。\n\n② 与 qgl 主线何干：手册乃联邦律法之白话译本、接口契约之入世桥梁。手册失真则开发者误读账本协议，轻则入歧，重则破窗，直接侵蚀 qgl 主线的可信度与采用率。\n\n③ 应动何件：先作初筛——纯文档谬误落仓 `vault/docs/usermanual/errata/`；若 API 行为与手册不符，转 `vault/qgl-core/issues/` 并挂标签 `spec-drift`。限时三日定界，不得久滞 inbox。\n\n④ 生债一条：须在本迭代周期内完成 USRM 与 HEAD 版本的契约一致性审计，确保纸面律法与链上实现同频，不得使尾生之债跨年。"
+}
