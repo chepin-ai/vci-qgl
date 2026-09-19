@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-19T16:06:17Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-qgl-d78bd17e.md"
+  }
+ ],
+ "verdict_memo": "①何事：inbox 到件 BEACON-DZ-40-qgl-d78bd17e.md，属 DZ-40 号信标文档，待审。\n\n②与 qgl 主线何干：信标乃主线锚之灯塔。该件辐射量子账本/go 实现域，或涉协议共识、联邦律法补丁，不判则主线盲行。\n\n③应动何件：拆封核 tag。若律法/共识，落 `/qgl/lore/beacon/DZ/40/`；若 go 实现，落 `/qgl/impl/beacon/d78bd17e/`。更新锚索引，双仓互链。\n\n④生债一条：此件入箱即生解析债，限次审内完成拆封、判类、落仓三拍，不得滞箱。"
+}
