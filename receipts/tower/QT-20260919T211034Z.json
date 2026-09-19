@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-19T21:10:34Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "QP04-ANS-FEEDBACK-USRM2QGL-01-20260919T211012Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：USRM2QGL 反馈入件，QP04 应答之用户回执，或涉手册、接口、体验之勘误与质询。  \n② 与 qgl 主线何干：外围感知信号，可能映射主线文档与实现之裂隙、API 语义模糊或共识层交互盲区，不可轻忽。  \n③ 应动何件：暂存 `/inbox/feedback/usrm/`，三日初审；若涉码，转 `/src/issue/qp04-usrm-01.md`；若涉文档，落 `/docs/errata/qp04-usrm-feedback.md`；本件作溯源附件挂接。  \n④ 生债一条：缺 USRM→Issue 自动化闭环，今立下三审之约，逾期不决则生息为 bug-debt，由值守者偿。"
+}
