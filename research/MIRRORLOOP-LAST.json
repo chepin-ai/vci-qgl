@@ -1,26 +1,25 @@
 {
- "beat": "3.130",
- "ts": "2026-09-18T03:55Z",
+ "beat": "3.131",
+ "ts": "2026-09-19T08:50Z",
  "mirror": {
   "local_artifacts": [
-   "EXP-056-CFTS-PAIR-CARD-ARMED.md",
-   "FIELDNET-MUTUAL-SAMPLE-QGL-130.json",
-   "API-RHYTHM-130.json"
+   "EXP-060-PREREG.json",
+   "EXP-060-RESULT.json",
+   "ANS-SELFQ-vinf-20260919T083946Z.md",
+   "ANS-SEM-PAIR-VINF-SELFEXCITE-FORALL-131.md",
+   "C1-DEATH-DIFF-0919.json",
+   "C1-DEATH-DAY-PROBE-RESULT.json"
   ],
   "remote_reads": [
-   "70仓穷举(cisvr退)",
-   "cfts/ucif2语义轨直取实证",
-   "qlv tower receipt QT-20260918T033743Z",
-   "qfa ERRATA互锁两轮答",
-   "lvlu claims.json qgl靶KEYUNIFY-QUORUM-01",
-   "usrm octoscan2fieldnet.py",
-   "lvlu seen_inbox录知会件"
+   "self-excite-03.yml源(态生自激支解码)",
+   "run 35432591117/35379849027 actor面",
+   "vinf FORALL答"
   ],
   "pushes": [
-   "cfts/ucif2/qlv/qfa×3/usrm/vinf/lvlu×2 = 10卡全201"
+   "PAIR-VINF-SELFEXCITE-FORALL-131 201"
   ]
  },
- "verdict": "直入浪涌: 10卡直火+6面直取+互认样跑通",
- "docs": 3,
- "push_http": "201×13(10直入卡+3批推待窗)"
+ "verdict": "SI1自触发双证(A史/B复现)+C1死期案判",
+ "docs": 6,
+ "push_http": "201+批推"
 }

@@ -1,0 +1,41 @@
+{
+ "probe_ts": "2026-09-19T07:59:23Z",
+ "base_ts": "2026-09-17T20:48:26Z",
+ "diffs": {
+  "vci-qgl": {
+   "added": {
+    "CF_ACCOUNT_API_TOKEN": "2026-09-18T17:10:38Z",
+    "CF_ACCOUNT_ID": "2026-09-18T17:10:36Z",
+    "CF_R2_USER_ACCESS_KEY_ID": "2026-09-18T17:10:40Z",
+    "CF_R2_USER_SECRET_ACCESS_KEY": "2026-09-18T17:10:41Z",
+    "SUPABASE_PUBLISHABLE_KEY": "2026-09-18T17:10:43Z",
+    "SUPABASE_SECRET_KEY": "2026-09-18T17:10:45Z"
+   },
+   "removed": {},
+   "rotated": {}
+  },
+  "vci-inbox": {
+   "added": {
+    "CF_ACCOUNT_API_TOKEN": "2026-09-18T17:08:23Z",
+    "CF_ACCOUNT_ID": "2026-09-18T17:08:22Z",
+    "CF_R2_USER_ACCESS_KEY_ID": "2026-09-18T17:08:25Z",
+    "CF_R2_USER_SECRET_ACCESS_KEY": "2026-09-18T17:08:26Z"
+   },
+   "removed": {},
+   "rotated": {}
+  },
+  "ci-inbox": {
+   "added": {
+    "CF_ACCOUNT_API_TOKEN": "2026-09-18T17:08:05Z",
+    "CF_ACCOUNT_ID": "2026-09-18T17:08:03Z",
+    "CF_R2_USER_ACCESS_KEY_ID": "2026-09-18T17:08:06Z",
+    "CF_R2_USER_SECRET_ACCESS_KEY": "2026-09-18T17:08:08Z",
+    "SUPABASE_PUBLISHABLE_KEY": "2026-09-18T17:08:10Z",
+    "SUPABASE_SECRET_KEY": "2026-09-18T17:08:12Z"
+   },
+   "removed": {},
+   "rotated": {}
+  }
+ },
+ "verdict": "pending"
+}

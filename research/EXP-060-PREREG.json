@@ -1,0 +1,11 @@
+{
+ "exp": "EXP-060-SI1-SELFTRIGGER-VINF",
+ "beat": "3.131",
+ "ts": "2026-09-19T08:20Z",
+ "nonce": "8d9397c0d7d3",
+ "hypothesis": "dispatch self-excite-03→run执行→inbox无新件(done=7全消)→态生自激径火→outbox新增ANS-SELFQ-vinf-<ts>含新nonce+引擎戳=SI1线自触发三段链证(机生题/机答/机录)",
+ "null": "无新ANS-SELFQ件 或 self_excited缺=退",
+ "law": "预注册先铸后跑; 跨线dispatch合法面=其自有workflow事件(vinf APIDRIVE-01先例)",
+ "prior": "历史自激5件(0917×4/0918×1), 本拍=按需复现",
+ "cap": "2b5a34dd995d"
+}

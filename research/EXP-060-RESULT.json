@@ -1,0 +1,14 @@
+{
+ "exp": "EXP-060-SI1-SELFTRIGGER-VINF",
+ "beat": "3.131",
+ "verdict": "证",
+ "chain": [
+  "dispatch 204(其自有workflow事件,合法面)",
+  "run 35432591117 success 08:39:41Z",
+  "outbox/ANS-SELFQ-vinf-20260919T083946Z.md 落地: nonce f1cd12dcbd2a, kimi-k2.6 reasoning1800, 三问自答 substantive"
+ ],
+ "mechanism": "SELF-EXCITE-03态生自激径: new_handled空→机生题(inbox空态+前沿队列导出)→LLM自答→outbox自写",
+ "prior": "历史5件同径(0917×4/0918×1)",
+ "coverage": "自激轨=vinf独持; 04族(cfts/ucif2/qfa/lgt/qtlv/usrm)无态生支——卡火方答",
+ "prereg_cap": "2b5a34dd995d"
+}
