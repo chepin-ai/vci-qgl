@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-20T17:04:04Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-qgl-e5e6f20d.md"
+  }
+ ],
+ "verdict_memo": "判词纪要：\n\n① 何事：BEACON-DZ-40 信标模块文档到件（ref: e5e6f20d），为 qgl 网络层节点发现与状态广播之规范纪要。\n\n② 与 qgl 主线何干：信标系量子账本节点入网、拓扑维护及抗分区能力的基座，直连联邦网络层与量子状态同步主线，缺此则节点盲行。\n\n③ 应动何件：宜落仓 `vault/qgl/network/beacon/dz40/spec.md`；若含接口契约，同步生成 `pkg/beacon/dz40/interface.go` 及 `.proto`；挂标 #network #beacon 入架构评审队列。\n\n④ 生债一条：须于 48h 内补全 BEACON-DZ-40 与共识层（qgl-core）的握手状态机图，否则联邦节点互联契约悬空，尾生债记一笔。"
+}
