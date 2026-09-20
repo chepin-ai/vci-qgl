@@ -1,0 +1,18 @@
+{
+ "beat": "3.132",
+ "pc": 0,
+ "ring": 129,
+ "turnback_i": 47,
+ "ts": "2026-09-20T07:35:35Z",
+ "chain_seq": 1609,
+ "headline": "全局激活证: SI1态生自激支六线落地·端到端自激全证·囊0dd9ea2a6bd1",
+ "e2e": {
+  "forge": "六线204(证)",
+  "landing": "六线sha字节级MATCH(证)",
+  "self_trigger": "六线ANS-SELFQ落地+真引擎应答(证)",
+  "qlv": "退(座拒)"
+ },
+ "nmust": "9/9",
+ "beacon": "armed-8/heartbeat",
+ "law": "零编数律·候=犯·先铸后跑"
+}

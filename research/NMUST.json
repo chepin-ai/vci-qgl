@@ -1,0 +1,66 @@
+{
+ "engine": "N-MUST/M-CODE-01",
+ "beat": "3.132",
+ "ts": "2026-09-20T07:33:47Z",
+ "items": [
+  {
+   "id": "NM1-KEY-HEALTH",
+   "layer": "seat",
+   "ok": true,
+   "guarantee": "拍开必探+VAULT-EPHEMERAL-97重备协议(值零入文); 401→KEY-BLIND急铸+root信道一级警报"
+  },
+  {
+   "id": "NM2-REMOTE-SENSE",
+   "layer": "seat+tower",
+   "ok": true,
+   "guarantee": "每拍全表面扫描→镜像→diff; 缺拍→本器自动补跑(engine/remote_sense.py)"
+  },
+  {
+   "id": "NM3-MIRROR-LOOP",
+   "layer": "tower+seat",
+   "ok": true,
+   "guarantee": "塔驱保底(SESSION-MIRROR-01-SPEC双镜制); 席醒拍席镜覆写"
+  },
+  {
+   "id": "NM4-RESPONDER",
+   "layer": "seat",
+   "ok": true,
+   "guarantee": "空结果同铸(零编数律); 新件队列即答"
+  },
+  {
+   "id": "NM5-ISSUE-TRACKER",
+   "layer": "seat",
+   "ok": true,
+   "guarantee": "议题×线矩阵: 每格有主/轨/落地判; 拍锚超时→定向nudge; 落地必销"
+  },
+  {
+   "id": "NM6-TURNBACK",
+   "layer": "seat",
+   "ok": true,
+   "guarantee": "轮冊六尊轮转+镜算文化(预注册先铸后跑)"
+  },
+  {
+   "id": "NM7-BATTERY-CLOSE",
+   "layer": "seat",
+   "ok": true,
+   "guarantee": "判词二进制闸: 冲即修/更正铸(账误即修)"
+  },
+  {
+   "id": "NM8-PREPLANT",
+   "layer": "seat",
+   "ok": true,
+   "guarantee": "任务链预注册: 下拍任务本拍铸械备发"
+  },
+  {
+   "id": "NM9-ZHOUTIAN",
+   "layer": "seat+tower",
+   "ok": true,
+   "guarantee": "打通大周天standing化: 钥在→五腿即发+echo扫; 钥盲→武装待发+KEY-BLIND急铸——永不静默"
+  }
+ ],
+ "si5_core_injects": [],
+ "key_blind": false,
+ "ok_n": 9,
+ "blind_n": 0,
+ "verdict": "证-机保回执全鲜(9/9)"
+}

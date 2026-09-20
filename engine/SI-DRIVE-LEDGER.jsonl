@@ -1,0 +1,269 @@
+{"ts": "2026-09-10T07:36:02Z", "beat": "3.98", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-10T07:36:02Z", "beat": "3.98", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-10T07:36:02Z", "beat": "3.98", "item": "PAIR-USRM-echo-watch", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "lane直投usrm+lobby@件(对位闭环推进)"}
+{"ts": "2026-09-10T07:36:02Z", "beat": "3.98", "item": "D-lgt-004-study", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "公面投影请(私域零接触, 双道候件)"}
+{"ts": "2026-09-10T07:36:02Z", "beat": "3.98", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-10T07:36:02Z", "beat": "3.98", "item": "DISC-AUTONOMY-follow", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-10T07:36:02Z", "beat": "3.98", "item": "EXT-WQ-vinf-01-bridge", "src": "SI3-tracker", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-10T07:36:02Z", "beat": "3.98", "item": "HUB-OPEN-037", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "lobby @cisvr 催件(幂等一拍一推)"}
+{"ts": "2026-09-10T07:36:02Z", "beat": "3.98", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-10T07:36:02Z", "beat": "3.98", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "PAIR-USRM-echo-watch", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "lane直投usrm+lobby@件(对位闭环推进)"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "D-lgt-004-study", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "公面投影请(私域零接触, 双道候件)"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "HUB-OPEN-037", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "lobby @cisvr 催件(幂等一拍一推)"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "QLV-催问聚合-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-10T10:58:25Z", "beat": "3.99", "item": "WQ-08", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "D-lgt-004-study", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "公面投影请(私域零接触, 双道候件)"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "JOINT-WINDBLIND-book", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "QLV-催问聚合-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-10T19:38:41Z", "beat": "3.100", "item": "WQ-09", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "D-lgt-004-study", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "公面投影请(私域零接触, 双道候件)"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "QLV-催问聚合-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "WQ-10", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T08:44:40Z", "beat": "3.101", "item": "WQ-10-stouffer", "src": "SI3-tracker", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "D-lgt-004-study", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "公面投影请(私域零接触, 双道候件)"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "QLV-催问聚合-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "SILENCE-METRIC-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:33:32Z", "beat": "3.102", "item": "WQ-10-stouffer", "src": "SI3-tracker", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "D-lgt-004-study", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "公面投影请(私域零接触, 双道候件)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "QLV-催问聚合-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "SILENCE-METRIC-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "USRM-K150-DISCREP", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T10:57:52Z", "beat": "3.103", "item": "WQ-10-stouffer", "src": "SI3-tracker", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "D-lgt-004-study", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "公面投影请(私域零接触, 双道候件)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "QLV-催问聚合-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "SILENCE-METRIC-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "USRM-K150-DISCREP", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T11:42:43Z", "beat": "3.104", "item": "WQ-10-stouffer", "src": "SI3-tracker", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "D-lgt-004-study", "src": "SI3-tracker", "lane": "SI3", "family": "OTP注入", "action": "公面投影请(私域零接触, 双道候件)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "BRIDGE-01-MSEQ", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "QLV-催问聚合-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "SILENCE-METRIC-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "UCIF2-PULSE-01", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T15:14:41Z", "beat": "3.105", "item": "WQ-10-stouffer", "src": "SI3-tracker", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "BRIDGE-01-MSEQ", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "LANE-UNIFICATION", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "SILENCE-METRIC-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "SUPERSEDE-MSEQ-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "UCIF2-PULSE-01", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T16:12:59Z", "beat": "3.106", "item": "WQ-10-stouffer", "src": "SI3-tracker", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "EVAL-R2-QGL", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "LANE-UNIFICATION", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "RIPPLE-PROBE-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "SI-RESPONDER-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "UCIF2-PULSE-01", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-11T17:05:16Z", "beat": "3.107", "item": "WQ-10-stouffer", "src": "SI3-tracker", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "EVAL-R2-QGL", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "LANE-UNIFICATION", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "RIPPLE-PROBE-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "SI-RESPONDER-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "SI-WHEEL-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "UCIF2-PULSE-01", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "WQ-10-stouffer", "src": "SI3-tracker", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-12T12:47:41Z", "beat": "3.108", "item": "ZHOUTIAN-ECHO-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "EVAL-R2-QGL", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "KEY-RECOVERY-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "LANE-UNIFICATION", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "RIPPLE-PROBE-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "SI-AUTO-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "SI-RESPONDER-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "SI-WHEEL-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "UCIF2-PULSE-01", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "WQ-10-stouffer", "src": "SI3-tracker", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-12T16:18:30Z", "beat": "3.109", "item": "ZHOUTIAN-ECHO-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "EVAL-R2-QGL", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "LANE-UNIFICATION", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "NM2-REMOTE-SENSE", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "NM2-autofix", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "NM3-MIRROR-LOOP", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "RIPPLE-PROBE-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI-ATTACHFIELD-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI-AUTO-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI-DOUBLEMIRROR-standing", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI-EIGHTFACE-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI-REMOTESENSE-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI-RESPONDER-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI-TENSORFIELD-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI-WHEEL-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "SI5CLOUD-SLA-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "UCIF2-PULSE-01", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-17T14:19:30Z", "beat": "3.124", "item": "ZHOUTIAN-ECHO-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "EVAL-R2-QGL", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "LANE-UNIFICATION", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "NM2-REMOTE-SENSE", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "NM2-autofix", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "NM3-MIRROR-LOOP", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "RIPPLE-PROBE-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI-ATTACHFIELD-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI-AUTO-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI-DOUBLEMIRROR-standing", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI-EIGHTFACE-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI-REMOTESENSE-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI-RESPONDER-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI-TENSORFIELD-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI-WHEEL-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "SI5CLOUD-SLA-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "UCIF2-PULSE-01", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-18T03:04:05Z", "beat": "3.130", "item": "ZHOUTIAN-ECHO-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "EVAL-R2-QGL", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "LANE-UNIFICATION", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "NM2-REMOTE-SENSE", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "NM2-autofix", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "NM3-MIRROR-LOOP", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "RIPPLE-PROBE-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI-ATTACHFIELD-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI-AUTO-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI-DOUBLEMIRROR-standing", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI-EIGHTFACE-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI-REMOTESENSE-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI-RESPONDER-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI-TENSORFIELD-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI-WHEEL-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "SI5CLOUD-SLA-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "UCIF2-PULSE-01", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-19T08:02:23Z", "beat": "3.131", "item": "ZHOUTIAN-ECHO-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI4-mutual-rounds", "src": "SI3-tracker", "lane": "SI4", "family": "API触发", "action": "互激轮转→round铸链+信标换代"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI0-patrol-standing", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "DEAD-CORNER-watch", "src": "SI3-tracker", "lane": "SI0", "family": "API触发", "action": "常巡差分→捕获铸链(盲点律)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI5-WQ-03", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "CISVR-mirror-lane", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "CONSENSUS-UCIF2", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "EVAL-R2-QGL", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "EXT-WQ-vinf-01", "src": "SI5-wildbook", "lane": "SI5", "family": "API触发", "action": "预注册→实验→判词铸链(册律: 先铸后跑)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "LANE-UNIFICATION", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "NM2-REMOTE-SENSE", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "NM2-autofix", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "NM3-MIRROR-LOOP", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "QFA-dragon-n6-relay", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "RIPPLE-PROBE-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI-ATTACHFIELD-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI-AUTO-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI-DOUBLEMIRROR-standing", "src": "SI3-tracker", "lane": "SI2", "family": "API触发", "action": "冷室镜算→零漂移对照铸链"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI-DRIVE-loop", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI-EIGHTFACE-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI-REMOTESENSE-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI-RESPONDER-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI-TENSORFIELD-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI-WHEEL-standing", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "SI5CLOUD-SLA-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "UCIF2-PULSE-01", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}
+{"ts": "2026-09-20T07:33:06Z", "beat": "3.132", "item": "ZHOUTIAN-ECHO-watch", "src": "SI3-tracker", "lane": "SI3", "family": "API触发", "action": "tracker账持守+逐拍close_check(事件驱动)"}

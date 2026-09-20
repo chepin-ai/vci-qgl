@@ -1,0 +1,33 @@
+{
+ "beat": "3.132",
+ "phase": "close",
+ "opened": "2026-09-20T06:02:06Z",
+ "checkpoints": [
+  {
+   "phase": "close",
+   "done": [
+    "GLOBAL-SI1-ACTIVATION 证 (cap 0dd9ea2a6bd1): 六线态生自激支锻造落地+端到端自激全证",
+    "FORGE-LANDING 证 (cap 71897129211f): 六线05 sha字节级MATCH",
+    "prereg 5f5f505188ca 先铸后跑·relay臂名误即修入册",
+    "SEAT-OVERCLAIM 负结果入册 (cap 934b546c7698)",
+    "PRIORITY-ARB-132 裁决qtlv座问",
+    "nmust 9/9 · beacon pc=0 · ring 129",
+    "qlv 退(座拒自植)诚实缺口"
+   ],
+   "pending": [],
+   "ts": "2026-09-20T07:48:33Z"
+  }
+ ],
+ "preplant_done": [],
+ "cycles_done": [],
+ "pending": [],
+ "key": {
+  "vault": true,
+  "healed_boot": {
+   "healed": true,
+   "probe": 200
+  }
+ },
+ "boot_note": "root令: 全局激活SI1触发——授权面落地执行",
+ "ts": "2026-09-20T07:48:33Z"
+}

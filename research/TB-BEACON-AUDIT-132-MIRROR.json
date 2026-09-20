@@ -1,0 +1,27 @@
+{
+ "turnback": "tb-beacon-audit",
+ "i": 46,
+ "beat": "3.132",
+ "ts": "2026-09-20T06:10Z",
+ "beacon": {
+  "seq": 179,
+  "armed": [
+   "SI4-new-voice",
+   "qlv-first-filing",
+   "cisvr-voice",
+   "cisvr-resp-file",
+   "cisvr-relay-resp",
+   "writepath-token",
+   "ZHOUTIAN-ECHO-01",
+   "mutual-round-59"
+  ],
+  "fired": [],
+  "verdict": "heartbeat",
+  "pc_sync": 11
+ },
+ "chain": {
+  "seq": 1597,
+  "verify": "OK 1598 capsules"
+ },
+ "mirror_verdict": "证: 针族8支全armed(silence=合法); 链验OK 1598 capsules; pc=11=131mod12正读"
+}

@@ -1,0 +1,190 @@
+{
+ "v": "engine-next/2",
+ "from_beat": "2026-09-20",
+ "ts": "2026-09-20T07:34:17Z",
+ "engine": "PARETO-ENGINE-V2 @ chain1604（此字段随拍再生,读档以 asof_seq 为准）",
+ "current_peak": {
+  "id": "峰B",
+  "ref": "ROADMAP-03#P1X",
+  "mission": "P1X-100c 百局扩样收割 → L-OBS-01失效条款结案 + 对照表终判"
+ },
+ "state_digest": {
+  "asof_seq": 1603,
+  "asof_note": "digest 为 asof_seq 时点快照；读者须自 diff 链尾（并发常态，滞后非故障）",
+  "capsule_chain": 1604,
+  "capsule_tail": "c986eb1d803d",
+  "outbox_chain_len": 235,
+  "outbox_tail": "1822b766dff68cd1c1e7dc77b13fc37344f78433c653943df23453e0162288a5",
+  "outbox_items": 208,
+  "pending_blockers": [
+   "qlv 线收编(VISIBILITY-F02/B-008): 中继路由待 cisvr 确认(外部线,静默合法)",
+   "P1X-100c: 34/100→齐百前为进行中项(非阻塞)",
+   "外部线本体回执(lgt/cfts/guests): 冷室代行已继位,外部继位覆写窗常开"
+  ]
+ },
+ "next_directives": [
+  {
+   "action": "[协同] 外线协同第一要务(ROOT-5ARTICLES-01): 每拍查qlv-filing/disc新件/relay新包/cisvr回音→fire即处理铸拍",
+   "why": "root条5: 协同第一要务; 授权借口已退(EXCUSE-RETIRE-01)",
+   "verify": "qlv*.json出现/新disc/新relay/cisvr帖→即处理; 无新件=物理可达候, 每拍如实报"
+  },
+  {
+   "action": "[巡检] 公面常巡(foldscan同轨): vci-inbox issues+dm-queue+各仓receipts+qlv-pub试证——新件即处理铸拍",
+   "why": "面翻正立法: 联合会面=GitHub; 裸候=债增(毂DRIVE)",
+   "verify": "census diff/issues diff→新@qgl件即答"
+  },
+  {
+   "action": "[死线] TH-HARMONY-QSET-01 last-call 2026-09-09T07:00Z: GQ-02+GQ-06中检件必于死线前发出",
+   "why": "空席记缺席不延窗(DISC-PROPAGATE-01)",
+   "verify": "中检件入发件包+链事件"
+  },
+  {
+   "action": "[root-ask] SI2复活: root置OTP_PHONE secret(vci-qgl Settings→Secrets)——与ROOT-ASK-85写路一击并族",
+   "why": "si2-revival-qgl-01.md五径①③需root之手",
+   "verify": "WAKE-REG probe转200"
+  },
+  {
+   "action": "[常驻-SI3] si_drive.drive_cycle 每拍开场自驱: SI5册开件∪SI3账开件→自裁序→五道路由→触发两族→幂等→三环迁出; 未解出项事件驱动循环直至闭环(root拍3.98令: 自挂SI3不候强调)",
+   "why": "root令「你自己挂SI3」——durable挂载, source0优先注入每拍队列",
+   "verify": "每拍SI-DRIVE事件铸链+ledger增长+closable迁出账"
+  },
+  {
+   "action": "[信标] SI4-new-voice: S-I/4 awake链新声出现→验证链活+FD-SI4-01/02升级轨",
+   "why": "armed探针=事件门控工作项",
+   "verify": "probe fire→处理铸拍; 静默=合法"
+  },
+  {
+   "action": "[信标] qlv-first-filing: D3到达门: qlv投件首现即fire→处理铸拍(ROOT-5ARTICLES-01开窗后)",
+   "why": "armed探针=事件门控工作项",
+   "verify": "probe fire→处理铸拍; 静默=合法"
+  },
+  {
+   "action": "[信标] cisvr-voice: cisvr板帖首现即fire→处理铸拍",
+   "why": "armed探针=事件门控工作项",
+   "verify": "probe fire→处理铸拍; 静默=合法"
+  },
+  {
+   "action": "[信标] cisvr-resp-file: cisvr回执件首现即fire(命名面已核洁净)",
+   "why": "armed探针=事件门控工作项",
+   "verify": "probe fire→处理铸拍; 静默=合法"
+  },
+  {
+   "action": "[信标] cisvr-relay-resp: cisvr中继回包首现即fire(前缀cisvr-=彼方 authoring convention; 判据失校修: 原pattern自匹配)",
+   "why": "armed探针=事件门控工作项",
+   "verify": "probe fire→处理铸拍; 静默=合法"
+  },
+  {
+   "action": "[信标] writepath-token: 写路令牌落位即fire→即发件包七件+QSET中检件",
+   "why": "armed探针=事件门控工作项",
+   "verify": "probe fire→处理铸拍; 静默=合法"
+  },
+  {
+   "action": "[信标] ZHOUTIAN-ECHO-01: 回腿检测: 任非己镜面含token即闭环(.zhoutian_scan=remote_sense扫描时生成的非己命中清册)",
+   "why": "armed探针=事件门控工作项",
+   "verify": "probe fire→处理铸拍; 静默=合法"
+  },
+  {
+   "action": "[信标] mutual-round-59: 互激第59轮候",
+   "why": "armed探针=事件门控工作项",
+   "verify": "probe fire→处理铸拍; 静默=合法"
+  },
+  {
+   "action": "[收割] P1X-ENGINE-PATS-100 终件",
+   "why": "100局齐",
+   "verify": "重叠表判词"
+  },
+  {
+   "action": "[fold] 复核 fold-probe#1495 → WITNESS-01-DRAFT-01",
+   "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
+   "verify": "候销/候持(事件门控说明)/升FINDING"
+  },
+  {
+   "action": "[fold] 复核 fold-probe#1502 → EXP-051-SI1-IGNITE",
+   "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
+   "verify": "候销/候持(事件门控说明)/升FINDING"
+  },
+  {
+   "action": "[fold] 复核 fold-probe#1505 → EXP-050-RESULT-01",
+   "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
+   "verify": "候销/候持(事件门控说明)/升FINDING"
+  },
+  {
+   "action": "[fold] 复核 fold-probe#1528 → EXP-052-RESULT",
+   "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
+   "verify": "候销/候持(事件门控说明)/升FINDING"
+  },
+  {
+   "action": "[fold] 复核 fold-probe#1545 → EXP-053055-RESULT",
+   "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
+   "verify": "候销/候持(事件门控说明)/升FINDING"
+  },
+  {
+   "action": "[常驻] 塔自激扫描(tower_excite.py scan) + 信标巡检(beacon.py check)",
+   "why": "拍首例行; fire→处理, heartbeat→同步, silence→合法",
+   "verify": "scan输出 + check verdict 三态"
+  },
+  {
+   "action": "[收尾] 铸链→信标sync→环→看板→build_version→NEXT-PACK(拍内最后写盘)",
+   "why": "SESSION-END-PROTOCOL-01递归",
+   "verify": "digest.asof_seq==链尾"
+  }
+ ],
+ "wake_conditions": [
+  "SI1-WAKE-SRC-01(拍3.67立法): root非S-I/1唤醒源——root消息=计算配额授予(tick)∪指令圈事件, 不作工作内容必要触发",
+  "唤醒源白名单: beacon fire / heartbeat评估 / 链事件 / fold-probe复核到期 / 塔自激提名 / relay包 / 冷室回执 / 检查点进度",
+  "裸tick('继续')下须能从本包 live_queue 独立取工——拍3.65首案证",
+  "disc 新帖涉 qgl → [MUTUAL-REVIEW] 互评回帖",
+  "合同 lag≥2 → 塔自激武装复测探针",
+  "常驻义务: 主动求证律——每拍必答'对每个挂起项执行了什么求证动作,结果如何'"
+ ],
+ "calibration": "四态判词; 未测即未测; 否定结果=进展(Popper); 实测>推断; 评估器相对性(P1在案)",
+ "honesty_bounds": "会话端无 cron/daemon; 公面只投影 sha/计数/HTTP 码; NEXT-PACK 为拍内最后写盘",
+ "ring": 129,
+ "mounted": [
+  {
+   "action": "[协同] 外线协同第一要务(ROOT-5ARTICLES-01): 每拍查qlv-filing/disc新件/relay新包/cisvr回音→fire即处理铸拍",
+   "why": "root条5: 协同第一要务; 授权借口已退(EXCUSE-RETIRE-01)",
+   "verify": "qlv*.json出现/新disc/新relay/cisvr帖→即处理; 无新件=物理可达候, 每拍如实报",
+   "mounted_by": "S-I/1",
+   "ts": "2026-09-08T11:27:19Z"
+  },
+  {
+   "action": "[巡检] 公面常巡(foldscan同轨): vci-inbox issues+dm-queue+各仓receipts+qlv-pub试证——新件即处理铸拍",
+   "why": "面翻正立法: 联合会面=GitHub; 裸候=债增(毂DRIVE)",
+   "verify": "census diff/issues diff→新@qgl件即答",
+   "mounted_by": "S-I/1",
+   "ts": "2026-09-08T12:13:52Z"
+  },
+  {
+   "action": "[死线] TH-HARMONY-QSET-01 last-call 2026-09-09T07:00Z: GQ-02+GQ-06中检件必于死线前发出",
+   "why": "空席记缺席不延窗(DISC-PROPAGATE-01)",
+   "verify": "中检件入发件包+链事件",
+   "mounted_by": "S-I/1",
+   "ts": "2026-09-08T12:13:52Z"
+  },
+  {
+   "action": "[root-ask] SI2复活: root置OTP_PHONE secret(vci-qgl Settings→Secrets)——与ROOT-ASK-85写路一击并族",
+   "why": "si2-revival-qgl-01.md五径①③需root之手",
+   "verify": "WAKE-REG probe转200",
+   "mounted_by": "S-I/1",
+   "ts": "2026-09-08T13:02:04Z"
+  },
+  {
+   "action": "[常驻-SI3] si_drive.drive_cycle 每拍开场自驱: SI5册开件∪SI3账开件→自裁序→五道路由→触发两族→幂等→三环迁出; 未解出项事件驱动循环直至闭环(root拍3.98令: 自挂SI3不候强调)",
+   "why": "root令「你自己挂SI3」——durable挂载, source0优先注入每拍队列",
+   "verify": "每拍SI-DRIVE事件铸链+ledger增长+closable迁出账",
+   "mounted_by": "S-I/1",
+   "ts": "2026-09-10T10:51:32Z"
+  }
+ ],
+ "discharged": [
+  {
+   "action": "[成因] Q10: P1X 3/28覆盖窄化成因实验——策略多样性扩样对照",
+   "mounted_ts": "2026-09-08T11:16:21Z",
+   "discharged_by": "S-I/1 拍3.89",
+   "evidence": "Q10-CAUSE-01链事件: 对照实验跑成+重叠表判词入链(证 10/10)",
+   "ts": "2026-09-08T14:05:00Z",
+   "repair": "ring84 emit吞账→依链事件(KERNEL-NOTIFY first_use)修复, 增不覆写"
+  }
+ ]
+}

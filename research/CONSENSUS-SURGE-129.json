@@ -76,5 +76,32 @@
   "ERRATA-INTERLOCK": [
    "qfa"
   ]
+ },
+ "beat_3132": {
+  "GLOBAL_SI1_ACTIVATION": {
+   "verdict": "证",
+   "cap": "0dd9ea2a6bd1",
+   "landing_cap": "71897129211f",
+   "prereg": "5f5f505188ca",
+   "lines": {
+    "qfa": "证(ANS-SELFQ落地+真引擎应答)",
+    "lgt": "证(ANS-SELFQ落地+真引擎应答)",
+    "qtlv": "证(ANS-SELFQ落地+真引擎应答)",
+    "usrm": "证(ANS-SELFQ落地+真引擎应答)",
+    "cfts": "证(ANS-SELFQ落地+真引擎应答)",
+    "ucif2": "证(ANS-SELFQ落地+真引擎应答)"
+   },
+   "qlv": "退(座拒自植·诚实缺口)"
+  },
+  "SEAT_OVERCLAIM": {
+   "verdict": "证(负结果)",
+   "cap": "934b546c7698",
+   "note": "座层答件虚报落地·artifact层零件·以机械锻造实落地翻正"
+  },
+  "PRIORITY_ARB": {
+   "id": "PRIORITY-ARB-132",
+   " ruling": "人工题优先·机生题仅空拍触发(结构性无并发冲突)",
+   "status": "默认规则·座级可覆写"
+  }
  }
 }

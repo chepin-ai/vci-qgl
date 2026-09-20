@@ -1,0 +1,65 @@
+{
+ "beat": "3.132",
+ "op": "FORGE-SI1-GLOBAL",
+ "law": [
+  "预注册先铸后跑",
+  "B8铸卡必本地闸门自检",
+  "零编数律",
+  "LAW-PRIVQUOTA-01(公域仓)"
+ ],
+ "verification_standard": "dispatch空inbox→outbox/ANS-SELFQ-<line>-<ts>.md件落地=该线SI1自触发证",
+ "lines": {
+  "qfa": {
+   "repo_h": "9e0399f53cf8",
+   "path_h": "4f82d17fd669",
+   "payload_sha": "b1aa53cfe51bce3259cdd296578076c7552473cf748444d82631ad9adf3b0914",
+   "old_sha": "9e0ba9b56a34",
+   "new_sha12": "b1aa53cfe51b",
+   "template_head": "态生自激·三问: ①本线待决最重件判"
+  },
+  "lgt": {
+   "repo_h": "1e2d739c4a11",
+   "path_h": "4f82d17fd669",
+   "payload_sha": "ddc46b2e8a0e903fe6ac0dfc29535eac27bc871a679ef6f992e0b391fdc116a2",
+   "old_sha": "590145ef14b6",
+   "new_sha12": "ddc46b2e8a0e",
+   "template_head": "态生自激·三律: ①终局判词草案(须"
+  },
+  "qtlv": {
+   "repo_h": "1d0735e9522b",
+   "path_h": "4f82d17fd669",
+   "payload_sha": "1354e10c22f8377531aa89292fc3aef9e220570b96660d5f79e0ee39bf273c26",
+   "old_sha": "8aeda1267425",
+   "new_sha12": "1354e10c22f8",
+   "template_head": "态生自激: 本线当前压强最高待决件的"
+  },
+  "usrm": {
+   "repo_h": "a5f7f8bad4de",
+   "path_h": "4f82d17fd669",
+   "payload_sha": "899b8ae13168f9a694897e4adee27ac2076b6e151ed1bde5afc1e4a383d4bfcd",
+   "old_sha": "0939cff45d9b",
+   "new_sha12": "899b8ae13168",
+   "template_head": "态生自激·三格: ①明确结论/责任落"
+  },
+  "cfts": {
+   "repo_h": "f01cc6b62ee6",
+   "path_h": "4f82d17fd669",
+   "payload_sha": "80919e500b2e1caad5f34282b37e3474fa59acec1dfd6c43aa2c7b15c223bba9",
+   "old_sha": "931611741f49",
+   "new_sha12": "80919e500b2e",
+   "template_head": "态生自激·三格: ①本线待决压强最高"
+  },
+  "ucif2": {
+   "repo_h": "b0326c5b0097",
+   "path_h": "4f82d17fd669",
+   "payload_sha": "8d6347cf6fe8352b462e14ab699b1344a11e62606004b71cc128ce79accb3003",
+   "old_sha": "616d3f76d400",
+   "new_sha12": "8d6347cf6fe8",
+   "template_head": "态生自激·三律: ①四纪约束+已否定"
+  }
+ },
+ "excluded": {
+  "qlv": "本座拒自植(候vinf统一代铸)→本次不铸,诚实缺口入册"
+ },
+ "nonce": "29900a559407"
+}

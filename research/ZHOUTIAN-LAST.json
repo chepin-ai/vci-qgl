@@ -1,14 +1,14 @@
 {
- "beat": "3.131",
- "ts": "2026-09-19T08:50Z",
+ "beat": "3.132",
+ "ts": "2026-09-20T06:25Z",
  "key": "在",
  "legs": {
   "sense": "NM2",
   "mirror": "双镜证",
-  "respond": "环转证(自触发专项)",
+  "respond": "环转证(激活9卡)",
   "track": "6格",
-  "turnback": "i=46"
+  "turnback": "i=46销(tb-beacon-audit证)"
  },
- "echo_scan": "vinf FORALL答收",
+ "echo_scan": "激活答件扫面事件门控",
  "verdict": "证"
 }

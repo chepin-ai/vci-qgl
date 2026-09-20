@@ -1,25 +1,22 @@
 {
- "beat": "3.131",
- "ts": "2026-09-19T08:50Z",
+ "beat": "3.132",
+ "ts": "2026-09-20T06:25Z",
  "mirror": {
   "local_artifacts": [
-   "EXP-060-PREREG.json",
-   "EXP-060-RESULT.json",
-   "ANS-SELFQ-vinf-20260919T083946Z.md",
-   "ANS-SEM-PAIR-VINF-SELFEXCITE-FORALL-131.md",
-   "C1-DEATH-DIFF-0919.json",
-   "C1-DEATH-DAY-PROBE-RESULT.json"
+   "GLOBAL-ACTIVATION-132.json",
+   "TB-BEACON-AUDIT-132-MIRROR.json",
+   "CE11销案(镜在囊)"
   ],
   "remote_reads": [
-   "self-excite-03.yml源(态生自激支解码)",
-   "run 35432591117/35379849027 actor面",
-   "vinf FORALL答"
+   "双种CE11档",
+   "beacon针账",
+   "turnback roster"
   ],
   "pushes": [
-   "PAIR-VINF-SELFEXCITE-FORALL-131 201"
+   "激活9卡全201"
   ]
  },
- "verdict": "SI1自触发双证(A史/B复现)+C1死期案判",
- "docs": 6,
- "push_http": "201+批推"
+ "verdict": "全局激活批一毕",
+ "docs": 2,
+ "push_http": "201×9+批推待窗"
 }
