@@ -1,0 +1,25 @@
+{
+ "beat": "3.136",
+ "preplanted": [
+  {
+   "id": "H2-AUTOFIRE-WATCH",
+   "what": "自主火观察(新基线: qfa2/lgt2/qtlv3/usrm2/cfts3/ucif2 2)",
+   "armed": "beat-3.136-boot"
+  },
+  {
+   "id": "VINF-VERIFY-133-ANS",
+   "what": "vinf答件检测+读答入册",
+   "armed": "beat-3.136-boot"
+  },
+  {
+   "id": "CE-FOLLOW-CE-11-XING",
+   "what": "链>1636塔探自触",
+   "armed": "tower-auto"
+  },
+  {
+   "id": "BRIDGE-TWELVE-RETEST-XING",
+   "what": "链>1646塔探自触",
+   "armed": "tower-auto"
+  }
+ ]
+}

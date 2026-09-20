@@ -14,7 +14,8 @@
   {
    "id": "SELFQ-TEMPLATE-PATCH",
    "what": "EXP-062缺口补丁: 自激题模板注入\"引数必注源·无源标缺\"——铸提案卡请六线会签或直接锻造(依浪涌律v1.1)",
-   "armed": "beat-3.135-boot"
+   "armed": "beat-3.135-boot",
+   "consumed": "3.135: EXP-063预注册(囊11c53ae569cc)+v2补丁六件闸门过, 候波窗锻造"
   },
   {
    "id": "CE-FOLLOW-CE-11-XING",

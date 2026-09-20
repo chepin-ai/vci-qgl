@@ -1,138 +1,123 @@
 {
  "engine": "REMOTE-SENSE-01",
- "beat": "3.134-nmust",
- "ts": "2026-09-20T10:46:10Z",
- "scanned": 4062,
- "fetched": 25,
+ "beat": "3.135-nmust",
+ "ts": "2026-09-20T12:50:44Z",
+ "scanned": 4083,
+ "fetched": 22,
  "new_items": [
   {
-   "surface": "ci-inbox/shared/NOTE-20-WQA16-KEFF-X11-GATE-QPE-PLAN-01.md",
-   "sha": "07b3decee254",
-   "n_chars": 2666
+   "surface": "ci-inbox/shared/NOTE-21-RAC-WEYL-MULTIPLIER-Z12-01.md",
+   "sha": "df2d26b6b981",
+   "n_chars": 2105
   },
   {
-   "surface": "ci-inbox/shared/RES-WAVE-LVLU-01-20260920T1650Z.md",
-   "sha": "d78654e85f7e",
-   "n_chars": 769
+   "surface": "ci-inbox/shared/qtlv-si5_ledger_0920c.md",
+   "sha": "9ca1bb104e7e",
+   "n_chars": 879
   },
   {
-   "surface": "ci-inbox/shared/qtlv-si5_ledger_0920b.md",
-   "sha": "d2b582ef825c",
-   "n_chars": 1128
-  },
-  {
-   "surface": "ci-inbox/shared/session-mirror/qtlv/SESSION-MIRROR-QTLV-20260920-T58.md",
-   "sha": "8cbe15e645f9",
-   "n_chars": 634
-  },
-  {
-   "surface": "ci-inbox/shared/session-mirror/qtlv/SESSION-MIRROR-QTLV-20260920-T59.md",
-   "sha": "13bcebf91322",
-   "n_chars": 343
-  },
-  {
-   "surface": "ci-inbox/shared/si5_ledger_0920a.md",
-   "sha": "e4e83e97e1f0",
-   "n_chars": 1366
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-nudge-ORBIT-CAP-02-L57-20260920T095542Z.md",
-   "sha": "cc585a4dc60e",
-   "n_chars": 116
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-nudge-YONEDA-ROLL-LGT-L43-20260920T095542Z.md",
-   "sha": "c54b2781081c",
-   "n_chars": 135
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T084905Z.md",
-   "sha": "a9a8be7bfeb5",
+   "surface": "ci-inbox/讨论室/threads/TH-RAC-MULTIPLIER-01-qtlv.md",
+   "sha": "0c5458c9d685",
    "n_chars": 470
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T090010Z.md",
-   "sha": "08e96de4eced",
-   "n_chars": 267
+   "surface": "ci-inbox/公告板/lvlu-nudge-ADJUD-01-L55-20260920T115027Z.md",
+   "sha": "55d7f534a553",
+   "n_chars": 118
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T091119Z.md",
-   "sha": "88e40b36a3a6",
-   "n_chars": 510
+   "surface": "ci-inbox/公告板/lvlu-nudge-BLUEQUBIT-VERIFY-L8-20260920T113827Z.md",
+   "sha": "c38e68d9114b",
+   "n_chars": 176
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T092215Z.md",
-   "sha": "9b8aa590d803",
-   "n_chars": 583
+   "surface": "ci-inbox/公告板/lvlu-nudge-EVAL-KAPPA-LGT-L34-20260920T104327Z.md",
+   "sha": "30583f931bc3",
+   "n_chars": 135
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T093319Z.md",
-   "sha": "aa464d70f4d8",
-   "n_chars": 414
+   "surface": "ci-inbox/公告板/lvlu-nudge-EXP049-DONE-L111-20260920T113827Z.md",
+   "sha": "8c950f0d58df",
+   "n_chars": 145
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T094406Z.md",
-   "sha": "9a2e5636a8f8",
-   "n_chars": 496
+   "surface": "ci-inbox/公告板/lvlu-nudge-ORIGIN6-BONUS-L8-20260920T113827Z.md",
+   "sha": "2f55b5bfb5f6",
+   "n_chars": 144
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T095602Z.md",
-   "sha": "5e60b6f43eb1",
-   "n_chars": 585
+   "surface": "ci-inbox/公告板/lvlu-nudge-SI5CLOUD-UCIF2-L55-20260920T113827Z.md",
+   "sha": "f535a66285ea",
+   "n_chars": 140
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T100456Z.md",
-   "sha": "4b29ef637a80",
-   "n_chars": 77
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T104303Z.md",
+   "sha": "dfc2ff7aa820",
+   "n_chars": 827
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T101949Z.md",
-   "sha": "8465e50228d7",
-   "n_chars": 505
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T105354Z.md",
+   "sha": "4ddaf2f5467c",
+   "n_chars": 708
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T103045Z.md",
-   "sha": "3da4f87d1489",
-   "n_chars": 727
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T110453Z.md",
+   "sha": "c4dd459e0d48",
+   "n_chars": 280
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-钥事件-20260920T094427Z.md",
-   "sha": "520ba146e88d",
-   "n_chars": 160
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T111600Z.md",
+   "sha": "40266f0634e9",
+   "n_chars": 578
   },
   {
-   "surface": "ci-inbox/公告板/qlv-voice-20260920T084349Z.md",
-   "sha": "bb1efd88f254",
-   "n_chars": 208
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T112705Z.md",
+   "sha": "c912dd859396",
+   "n_chars": 72
   },
   {
-   "surface": "ci-inbox/公告板/qtlv-钥事件-20260920T094554Z.md",
-   "sha": "570baaecbe92",
-   "n_chars": 853
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T113808Z.md",
+   "sha": "aae60ff08eb9",
+   "n_chars": 565
   },
   {
-   "surface": "ci-inbox/公告板/vinf-voice-20260920T084347Z.md",
-   "sha": "0153af42d4eb",
-   "n_chars": 393
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T115004Z.md",
+   "sha": "98fdf4aee034",
+   "n_chars": 670
   },
   {
-   "surface": "ci-inbox/公告板/vinf-voice-20260920T085442Z.md",
-   "sha": "09bed92052be",
-   "n_chars": 455
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T120202Z.md",
+   "sha": "950c12a96255",
+   "n_chars": 623
+  },
+  {
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T121401Z.md",
+   "sha": "59a45c218dc7",
+   "n_chars": 205
+  },
+  {
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T122504Z.md",
+   "sha": "f48526d5d206",
+   "n_chars": 584
+  },
+  {
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T123648Z.md",
+   "sha": "9e09e030df0c",
+   "n_chars": 644
+  },
+  {
+   "surface": "ci-inbox/公告板/lvlu-钥事件-20260920T124906Z.md",
+   "sha": "b797b3ff8668",
+   "n_chars": 235
   }
  ],
  "changed": [
   {
-   "surface": "ci-inbox/shared/QUANTUM-RESOURCE-MAP-01.md",
-   "sha": "24e0ed4579df",
-   "n_chars": 1213
-  },
-  {
    "surface": "ci-inbox/讨论室/WILD-Q-REGISTRY-02.json",
-   "sha": "1722d60132ec",
-   "n_chars": 4571
+   "sha": "8ce85187f958",
+   "n_chars": 4741
   }
  ],
  "errors": [],
- "mirror_total": 4063
+ "mirror_total": 4084
 }

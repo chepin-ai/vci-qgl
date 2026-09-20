@@ -1,25 +1,24 @@
 {
- "beat": "3.134",
+ "beat": "3.135",
  "phase": "close",
- "opened": "2026-09-20T10:40:33Z",
+ "opened": "2026-09-20T11:59:46Z",
  "checkpoints": [
   {
    "phase": "open",
    "done": [],
    "pending": [],
-   "ts": "2026-09-20T10:40:33Z"
+   "ts": "2026-09-20T11:59:47Z"
   },
   {
    "phase": "close",
    "done": [
-    "EXP-062 自答质量审计 质证 (囊70e856a02106): A×2 B×5, 无源数字缺口入册, cfts#2范式推介",
-    "H2自主火窗: 合法静默+结构性低频判明 (囊274c2e39463b)",
-    "vinf VERIFY-133答件窗续(合法静默)",
-    "模板补丁提案 SELFQ-TEMPLATE-PATCH 挂PREPLANT-135",
-    "nmust 9/9 · beacon pc=2 · ring 131"
+    "EXP-063 证 (囊d8391da941ec): 模板补丁六线落地MATCH+补丁后帧6/6达标+虚构数值全消除",
+    "六线基线核验BASE-MINE(座默示受领)",
+    "vinf答件窗续(合法静默)",
+    "nmust 9/9 · beacon pc=3 · ring 132"
    ],
    "pending": [],
-   "ts": "2026-09-20T10:46:32Z"
+   "ts": "2026-09-20T12:51:16Z"
   }
  ],
  "preplant_done": [],
@@ -27,8 +26,11 @@
  "pending": [],
  "key": {
   "vault": true,
-  "healed_boot": null
+  "healed_boot": {
+   "healed": true,
+   "probe": 200
+  }
  },
- "boot_note": "重启续close",
- "ts": "2026-09-20T10:49:19Z"
+ "boot_note": "EXP-063: 模板补丁对照实验(引数必注源·无源标缺)",
+ "ts": "2026-09-20T12:51:16Z"
 }
