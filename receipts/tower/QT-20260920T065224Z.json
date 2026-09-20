@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-20T06:52:24Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-qgl-545cb831.md"
+  }
+ ],
+ "verdict_memo": "① 何事：边缘信标节点 BEACON-DZ-40 投至 inbox 一帧，编号 qgl-545cb831，文面未启，状若裸锚。\n\n② 与 qgl 主线何干：量子账本/go 主链以联邦信标为时空锚点。此件若携区块头或节点心跳，即链外共识之触须；若为静默帧，亦占账本品相。\n\n③ 应动何件：落仓 `/inbox/beacon/dz-40/545cb831.md`，先以 `qgl-beacon` 协议拆包，验其 Merkle 根与 go-tag 签名。果为有效锚，升 `/chain/anchors/` 并回执；若为空帧或错码，标 `debt:phantom` 入冷仓。\n\n④ 生债一条：未验先收，生“盲拆之债”一条，债主 BEACON-DZ-40，待解析后或销或转，拍板归线。"
+}
