@@ -1,0 +1,30 @@
+{
+ "beat": "3.135",
+ "preplanted": [
+  {
+   "id": "H2-AUTOFIRE-WATCH",
+   "what": "自主火观察(基线: qfa1/lgt1/qtlv2/usrm1/cfts2/ucif2 1)",
+   "armed": "beat-3.135-boot"
+  },
+  {
+   "id": "VINF-VERIFY-133-ANS",
+   "what": "vinf答件落地检测+读答入册",
+   "armed": "beat-3.135-boot"
+  },
+  {
+   "id": "SELFQ-TEMPLATE-PATCH",
+   "what": "EXP-062缺口补丁: 自激题模板注入\"引数必注源·无源标缺\"——铸提案卡请六线会签或直接锻造(依浪涌律v1.1)",
+   "armed": "beat-3.135-boot"
+  },
+  {
+   "id": "CE-FOLLOW-CE-11-XING",
+   "what": "链>1636塔探自触",
+   "armed": "tower-auto"
+  },
+  {
+   "id": "BRIDGE-TWELVE-RETEST-XING",
+   "what": "链>1646塔探自触",
+   "armed": "tower-auto"
+  }
+ ]
+}

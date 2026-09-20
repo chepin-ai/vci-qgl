@@ -1,7 +1,7 @@
 {
  "engine": "N-MUST/M-CODE-01",
- "beat": "3.133",
- "ts": "2026-09-20T08:50:02Z",
+ "beat": "3.134",
+ "ts": "2026-09-20T10:45:47Z",
  "items": [
   {
    "id": "NM1-KEY-HEALTH",
@@ -14,7 +14,7 @@
    "layer": "seat+tower",
    "ok": true,
    "guarantee": "每拍全表面扫描→镜像→diff; 缺拍→本器自动补跑(engine/remote_sense.py)",
-   "autofix": "remote_sense re-run: fetched 208"
+   "autofix": "remote_sense re-run: fetched 25"
   },
   {
    "id": "NM3-MIRROR-LOOP",

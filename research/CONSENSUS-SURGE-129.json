@@ -118,5 +118,21 @@
    "answer": "合法静默中(答侦窗挂PREPLANT-134)"
   },
   "errata_seq2": "relay-writer-01名误→relay-writer.yml实名(判据失校即修)"
+ },
+ "beat_3134": {
+  "EXP-062": {
+   "verdict": "质证",
+   "cap": "70e856a02106",
+   "grades": "A×2(cfts#1/cfts#2) B×5",
+   "缺口": "无源精确数字→模板补丁候选"
+  },
+  "H2": {
+   "verdict": "合法静默",
+   "cap": "274c2e39463b",
+   "结构洞察": "自激支触发=轨跑且inbox空, 自主火低频属结构非故障"
+  },
+  "VINF-VERIFY-133": {
+   "answer": "未落(合法静默)·窗续"
+  }
  }
 }

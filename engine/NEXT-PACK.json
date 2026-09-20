@@ -1,18 +1,18 @@
 {
  "v": "engine-next/2",
  "from_beat": "2026-09-20",
- "ts": "2026-09-20T08:52:31Z",
- "engine": "PARETO-ENGINE-V2 @ chain1619（此字段随拍再生,读档以 asof_seq 为准）",
+ "ts": "2026-09-20T10:46:11Z",
+ "engine": "PARETO-ENGINE-V2 @ chain1627（此字段随拍再生,读档以 asof_seq 为准）",
  "current_peak": {
   "id": "峰B",
   "ref": "ROADMAP-03#P1X",
   "mission": "P1X-100c 百局扩样收割 → L-OBS-01失效条款结案 + 对照表终判"
  },
  "state_digest": {
-  "asof_seq": 1618,
+  "asof_seq": 1626,
   "asof_note": "digest 为 asof_seq 时点快照；读者须自 diff 链尾（并发常态，滞后非故障）",
-  "capsule_chain": 1619,
-  "capsule_tail": "efc147ea53d8",
+  "capsule_chain": 1627,
+  "capsule_tail": "629b9730a71d",
   "outbox_chain_len": 235,
   "outbox_tail": "1822b766dff68cd1c1e7dc77b13fc37344f78433c653943df23453e0162288a5",
   "outbox_items": 208,
@@ -139,7 +139,7 @@
  ],
  "calibration": "四态判词; 未测即未测; 否定结果=进展(Popper); 实测>推断; 评估器相对性(P1在案)",
  "honesty_bounds": "会话端无 cron/daemon; 公面只投影 sha/计数/HTTP 码; NEXT-PACK 为拍内最后写盘",
- "ring": 130,
+ "ring": 131,
  "mounted": [
   {
    "action": "[协同] 外线协同第一要务(ROOT-5ARTICLES-01): 每拍查qlv-filing/disc新件/relay新包/cisvr回音→fire即处理铸拍",
