@@ -4,22 +4,26 @@
   {
    "id": "FORGE-LANDING-VERIFY",
    "what": "六线05补丁落地sha比对+relay run取证",
-   "armed": "beat-3.133-boot"
+   "armed": "beat-3.133-boot",
+   "consumed": "3.132尾段已成(囊71897129211f/0dd9ea2a6bd1/934b546c7698) — 销"
   },
   {
    "id": "SI1-E2E-VERIFY",
    "what": "六线空inbox dispatch→ANS-SELFQ件落地取证(若3.132尾波未竟)",
-   "armed": "beat-3.133-boot"
+   "armed": "beat-3.133-boot",
+   "consumed": "3.132尾段已成(囊71897129211f/0dd9ea2a6bd1/934b546c7698) — 销"
   },
   {
    "id": "QLV-GAP",
    "what": "qlv拒自植缺口——候vinf统一代铸或root直裁",
-   "armed": "standing"
+   "armed": "standing",
+   "consumed": "3.133: 携六线证囊再请裁(见本拍)"
   },
   {
    "id": "SEAT-OVERCLAIM-LEDGER",
    "what": "席位越权虚报负结果写入consensus总账",
-   "armed": "beat-3.133-boot"
+   "armed": "beat-3.133-boot",
+   "consumed": "3.132尾段已成(囊71897129211f/0dd9ea2a6bd1/934b546c7698) — 销"
   }
  ]
 }

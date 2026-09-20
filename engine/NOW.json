@@ -1,21 +1,27 @@
 {
- "beat": "3.132",
+ "beat": "3.133",
  "phase": "close",
- "opened": "2026-09-20T06:02:06Z",
+ "opened": "2026-09-20T08:06:26Z",
  "checkpoints": [
+  {
+   "phase": "open",
+   "done": [],
+   "pending": [],
+   "ts": "2026-09-20T08:06:56Z"
+  },
   {
    "phase": "close",
    "done": [
-    "GLOBAL-SI1-ACTIVATION 证 (cap 0dd9ea2a6bd1): 六线态生自激支锻造落地+端到端自激全证",
-    "FORGE-LANDING 证 (cap 71897129211f): 六线05 sha字节级MATCH",
-    "prereg 5f5f505188ca 先铸后跑·relay臂名误即修入册",
-    "SEAT-OVERCLAIM 负结果入册 (cap 934b546c7698)",
-    "PRIORITY-ARB-132 裁决qtlv座问",
-    "nmust 9/9 · beacon pc=0 · ring 129",
-    "qlv 退(座拒自植)诚实缺口"
+    "EXP-061 H1 双拍稳定性 证 (囊aef5ff4b1f65, cfts双nonce 3b4491f305f5→3fb865b58ae1, sem-log×2)",
+    "EXP-061 H2 自主火窗内合法静默(不判伪,窗续3.134)",
+    "vinf验讫知会卡201落地(答件侦窗挂PREPLANT-134)",
+    "qlv携证再请裁: 回声层应答非座裁→维持退合法(囊fdce22644eb6)",
+    "errata seq2 锻造臂名误即修入链",
+    "kernel Empty死重建续行(状态自愈校验: nmust/beacon/ring/dash皆已成)",
+    "nmust 9/9 · beacon pc=1 seq181 · ring 130"
    ],
    "pending": [],
-   "ts": "2026-09-20T07:48:33Z"
+   "ts": "2026-09-20T08:53:42Z"
   }
  ],
  "preplant_done": [],
@@ -23,11 +29,8 @@
  "pending": [],
  "key": {
   "vault": true,
-  "healed_boot": {
-   "healed": true,
-   "probe": 200
-  }
+  "healed_boot": null
  },
- "boot_note": "root令: 全局激活SI1触发——授权面落地执行",
- "ts": "2026-09-20T07:48:33Z"
+ "boot_note": "kernel重启重建(Empty死) — 续close电池",
+ "ts": "2026-09-20T08:53:42Z"
 }

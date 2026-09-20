@@ -103,5 +103,20 @@
    " ruling": "人工题优先·机生题仅空拍触发(结构性无并发冲突)",
    "status": "默认规则·座级可覆写"
   }
+ },
+ "beat_3133": {
+  "EXP-061": {
+   "verdict": "证(H1双拍稳定性)/合法静默(H2自主火窗续)",
+   "cap": "aef5ff4b1f65"
+  },
+  "QLV": {
+   "verdict": "退(回声层应答非座裁·维持退·不罚)",
+   "cap": "fdce22644eb6"
+  },
+  "VINF-VERIFY-133": {
+   "card": "201落地",
+   "answer": "合法静默中(答侦窗挂PREPLANT-134)"
+  },
+  "errata_seq2": "relay-writer-01名误→relay-writer.yml实名(判据失校即修)"
  }
 }

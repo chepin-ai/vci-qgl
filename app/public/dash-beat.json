@@ -1,18 +1,18 @@
 {
- "beat": "3.132",
- "pc": 0,
- "ring": 129,
+ "beat": "3.133",
+ "pc": 1,
+ "ring": 130,
  "turnback_i": 47,
- "ts": "2026-09-20T07:35:35Z",
- "chain_seq": 1609,
- "headline": "全局激活证: SI1态生自激支六线落地·端到端自激全证·囊0dd9ea2a6bd1",
+ "ts": "2026-09-20T08:52:31Z",
+ "chain_seq": 1618,
+ "headline": "续证: EXP-061双拍稳定性证(cfts双nonce)·vinf验讫知会·qlv维持退(合法)·H2自主火窗续",
  "e2e": {
-  "forge": "六线204(证)",
-  "landing": "六线sha字节级MATCH(证)",
-  "self_trigger": "六线ANS-SELFQ落地+真引擎应答(证)",
-  "qlv": "退(座拒)"
+  "EXP-061": "证(H1)",
+  "qlv": "退(回声非裁·合法)",
+  "vinf_ans": "合法静默",
+  "H2": "窗续3.134"
  },
  "nmust": "9/9",
  "beacon": "armed-8/heartbeat",
- "law": "零编数律·候=犯·先铸后跑"
+ "law": "零编数律·候=犯·先铸后跑·盲态不轰"
 }

@@ -54,7 +54,11 @@
    }
   },
   "patch_gate": "B8/B9自检: 六件snippet compile + 全件YAML safe_load + 嵌入python全块compile 全过; 插入位=log锚后/sem-log写前; log[self_excited]入sem-log.jsonl",
-  "landing_verify": "进行中(403双峰长波·COOL 300后验)",
-  "qlv": "excluded(本座拒自植·诚实缺口)"
+  "landing_verify": "证: 六线sha256字节级MATCH(囊71897129211f) + 六线ANS-SELFQ端到端落地(囊0dd9ea2a6bd1)",
+  "qlv": "excluded(本座拒自植·诚实缺口)",
+  "e2e_result": {
+   "cap": "0dd9ea2a6bd1",
+   "verdict": "证"
+  }
  }
 }

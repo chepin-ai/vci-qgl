@@ -1,0 +1,25 @@
+{
+ "beat": "3.134",
+ "preplanted": [
+  {
+   "id": "H2-AUTOFIRE-WATCH",
+   "what": "六线自主火观察: 树比对ANS-SELFQ基线(qfa074147/lgt074151/qtlv074156+091212/usrm074159/cfts074203+084351/ucif2 074206)之外新件=Grade-A证",
+   "armed": "beat-3.134-boot"
+  },
+  {
+   "id": "VINF-VERIFY-133-ANS",
+   "what": "vinf对SEM-PAIR-VINF-VERIFY-133答件落地检测+读答入册",
+   "armed": "beat-3.134-boot"
+  },
+  {
+   "id": "CE-FOLLOW-CE-11-XING",
+   "what": "链>1623塔探自触: CE-11复察",
+   "armed": "tower-auto"
+  },
+  {
+   "id": "BRIDGE-TWELVE-RETEST-XING",
+   "what": "链>1633塔探自触: 十二律桥接复评",
+   "armed": "tower-auto"
+  }
+ ]
+}
