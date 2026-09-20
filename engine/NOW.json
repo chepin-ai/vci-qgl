@@ -1,24 +1,26 @@
 {
- "beat": "3.135",
+ "beat": "3.136",
  "phase": "close",
- "opened": "2026-09-20T11:59:46Z",
+ "opened": "2026-09-20T13:29:29Z",
  "checkpoints": [
   {
    "phase": "open",
    "done": [],
    "pending": [],
-   "ts": "2026-09-20T11:59:47Z"
+   "ts": "2026-09-20T13:29:29Z"
   },
   {
    "phase": "close",
    "done": [
-    "EXP-063 证 (囊d8391da941ec): 模板补丁六线落地MATCH+补丁后帧6/6达标+虚构数值全消除",
-    "六线基线核验BASE-MINE(座默示受领)",
-    "vinf答件窗续(合法静默)",
-    "nmust 9/9 · beacon pc=3 · ring 132"
+    "SI0~6 六层触证 (囊fe10bfe2fa28)",
+    "赐文借范入册 (PARADIGM-RAC-GIFT-136): RAC/Schmidt见证/噪声鲁棒/超界即证",
+    "SI6-DIMWIT 提案候root裁 (囊6b718a2d1f2e)",
+    "qfa三帧SI1活性再证(nonce 6b8ff88b85ae/k3/无源标缺)",
+    "compliance劝诫受领: 囊体causal锚入(峰B标准化)",
+    "nmust 9/9 · beacon pc=4 · ring 133"
    ],
    "pending": [],
-   "ts": "2026-09-20T12:51:16Z"
+   "ts": "2026-09-20T13:45:09Z"
   }
  ],
  "preplant_done": [],
@@ -26,11 +28,8 @@
  "pending": [],
  "key": {
   "vault": true,
-  "healed_boot": {
-   "healed": true,
-   "probe": 200
-  }
+  "healed_boot": null
  },
- "boot_note": "EXP-063: 模板补丁对照实验(引数必注源·无源标缺)",
- "ts": "2026-09-20T12:51:16Z"
+ "boot_note": "重启续push(Empty死#4)",
+ "ts": "2026-09-20T13:48:08Z"
 }

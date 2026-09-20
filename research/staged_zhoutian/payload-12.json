@@ -1,0 +1,6 @@
+{
+ "remote_path": "shared/ZHOUTIAN/ZT-3136.json",
+ "content": "{\n \"exp\": \"ZHOUTIAN-CIRCUIT-01\",\n \"token_sha\": \"6057abd9ea28cb9a0f74dc576fb94cefdd04b68a1b57d7bd872c0884bcd809da\",\n \"beat\": \"3.136\",\n \"ts\": \"2026-09-20T13:38:09Z\",\n \"legs\": [\n  \"line\",\n  \"tower\",\n  \"circle\",\n  \"ring\",\n  \"cloud\"\n ],\n \"return_legs\": [\n  \"line-echo\",\n  \"hub-echo\",\n  \"root-seat\"\n ],\n \"law\": \"回腿闭合证; 空结果同铸\"\n}",
+ "leg": "cloud-shared",
+ "target": "hub-shared"
+}

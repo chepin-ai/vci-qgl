@@ -144,5 +144,24 @@
   "VINF-VERIFY-133": {
    "answer": "未落(合法静默)·窗续3.136"
   }
+ },
+ "beat_3136": {
+  "SI0-6-ACTIVATION": {
+   "cap": "fe10bfe2fa28",
+   "verdict": "六层触证(SI6提案候裁)"
+  },
+  "SI6-DIMWIT": {
+   "cap": "6b718a2d1f2e",
+   "status": "候root裁(借范Schmidt见证)"
+  },
+  "PARADIGM-RAC": {
+   "note": "root赐文借范: RAC择需解码/Schmidt操作见证/噪声鲁棒/超界即证"
+  },
+  "H2": {
+   "基线持守": "合法静默"
+  },
+  "VINF-VERIFY-133": {
+   "answer": "未落(合法静默)·窗续"
+  }
  }
 }

@@ -1,0 +1,7 @@
+{
+ "remote_path": "receipts/ZHOUTIAN/ZT-3136.json",
+ "content": "{\"exp\": \"ZHOUTIAN-CIRCUIT-01 own-receipt\", \"token_sha\": \"6057abd9ea28cb9a0f74dc576fb94cefdd04b68a1b57d7bd872c0884bcd809da\", \"ts\": \"2026-09-20T13:38:09Z\"}",
+ "leg": "own-receipt",
+ "target": "vci-qgl",
+ "repo": "vci-qgl"
+}

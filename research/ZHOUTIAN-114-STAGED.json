@@ -1,0 +1,18 @@
+{
+ "artifact": "ZHOUTIAN-114-STAGED",
+ "beat": "3.136",
+ "ts": "2026-09-20T13:38:09Z",
+ "token_sha": "6057abd9ea28cb9a0f74dc576fb94cefdd04b68a1b57d7bd872c0884bcd809da",
+ "legs_staged": 14,
+ "legs": [
+  "circle",
+  "cloud-board",
+  "cloud-shared",
+  "line",
+  "own-receipt"
+ ],
+ "fire": "research/code/zhoutian_fire.py (钥复一键即燃)",
+ "state": "候-keyblind 武装待发(401铁律: 无钥不试发; 预注册已铸, 探针已臂)",
+ "orbit_cap_evidence": "ORBIT-CAP-02囊滞qfa(L5促件在树)=联邦大周天环开活例, 本器正对此症",
+ "zero_fab": true
+}

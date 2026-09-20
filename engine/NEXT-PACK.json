@@ -1,18 +1,18 @@
 {
  "v": "engine-next/2",
  "from_beat": "2026-09-20",
- "ts": "2026-09-20T12:51:03Z",
- "engine": "PARETO-ENGINE-V2 @ chain1633（此字段随拍再生,读档以 asof_seq 为准）",
+ "ts": "2026-09-20T13:44:52Z",
+ "engine": "PARETO-ENGINE-V2 @ chain1644（此字段随拍再生,读档以 asof_seq 为准）",
  "current_peak": {
   "id": "峰B",
   "ref": "ROADMAP-03#P1X",
   "mission": "P1X-100c 百局扩样收割 → L-OBS-01失效条款结案 + 对照表终判"
  },
  "state_digest": {
-  "asof_seq": 1632,
+  "asof_seq": 1643,
   "asof_note": "digest 为 asof_seq 时点快照；读者须自 diff 链尾（并发常态，滞后非故障）",
-  "capsule_chain": 1633,
-  "capsule_tail": "f7cbff04a6f4",
+  "capsule_chain": 1644,
+  "capsule_tail": "e719081729d5",
   "outbox_chain_len": 235,
   "outbox_tail": "1822b766dff68cd1c1e7dc77b13fc37344f78433c653943df23453e0162288a5",
   "outbox_items": 208,
@@ -94,11 +94,6 @@
    "verify": "重叠表判词"
   },
   {
-   "action": "[fold] 复核 fold-probe#1502 → EXP-051-SI1-IGNITE",
-   "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
-   "verify": "候销/候持(事件门控说明)/升FINDING"
-  },
-  {
    "action": "[fold] 复核 fold-probe#1505 → EXP-050-RESULT-01",
    "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
    "verify": "候销/候持(事件门控说明)/升FINDING"
@@ -115,6 +110,11 @@
   },
   {
    "action": "[fold] 复核 fold-probe#1616 → EXP-061-RESULT-133",
+   "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
+   "verify": "候销/候持(事件门控说明)/升FINDING"
+  },
+  {
+   "action": "[fold] 复核 fold-probe#1643 → SI6-DIMWIT-PROPOSAL-136",
    "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
    "verify": "候销/候持(事件门控说明)/升FINDING"
   },
@@ -139,7 +139,7 @@
  ],
  "calibration": "四态判词; 未测即未测; 否定结果=进展(Popper); 实测>推断; 评估器相对性(P1在案)",
  "honesty_bounds": "会话端无 cron/daemon; 公面只投影 sha/计数/HTTP 码; NEXT-PACK 为拍内最后写盘",
- "ring": 132,
+ "ring": 133,
  "mounted": [
   {
    "action": "[协同] 外线协同第一要务(ROOT-5ARTICLES-01): 每拍查qlv-filing/disc新件/relay新包/cisvr回音→fire即处理铸拍",

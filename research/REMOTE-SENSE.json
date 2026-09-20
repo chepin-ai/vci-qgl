@@ -1,123 +1,68 @@
 {
  "engine": "REMOTE-SENSE-01",
- "beat": "3.135-nmust",
- "ts": "2026-09-20T12:50:44Z",
- "scanned": 4083,
- "fetched": 22,
+ "beat": "3.136-nmust",
+ "ts": "2026-09-20T13:44:33Z",
+ "scanned": 4092,
+ "fetched": 11,
  "new_items": [
   {
-   "surface": "ci-inbox/shared/NOTE-21-RAC-WEYL-MULTIPLIER-Z12-01.md",
-   "sha": "df2d26b6b981",
-   "n_chars": 2105
-  },
-  {
-   "surface": "ci-inbox/shared/qtlv-si5_ledger_0920c.md",
-   "sha": "9ca1bb104e7e",
-   "n_chars": 879
-  },
-  {
-   "surface": "ci-inbox/讨论室/threads/TH-RAC-MULTIPLIER-01-qtlv.md",
-   "sha": "0c5458c9d685",
-   "n_chars": 470
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-nudge-ADJUD-01-L55-20260920T115027Z.md",
-   "sha": "55d7f534a553",
-   "n_chars": 118
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-nudge-BLUEQUBIT-VERIFY-L8-20260920T113827Z.md",
-   "sha": "c38e68d9114b",
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260920T124906Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "aaeae463bfa6",
    "n_chars": 176
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-nudge-EVAL-KAPPA-LGT-L34-20260920T104327Z.md",
-   "sha": "30583f931bc3",
-   "n_chars": 135
+   "surface": "ci-inbox/shared/RES-WAVE-LVLU-02-20260920T125101Z.md",
+   "sha": "e085fa13603f",
+   "n_chars": 808
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-nudge-EXP049-DONE-L111-20260920T113827Z.md",
-   "sha": "8c950f0d58df",
-   "n_chars": 145
+   "surface": "ci-inbox/shared/session-mirror/qtlv/SESSION-MIRROR-QTLV-20260920-T60.md",
+   "sha": "c0145a97513c",
+   "n_chars": 439
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-nudge-ORIGIN6-BONUS-L8-20260920T113827Z.md",
-   "sha": "2f55b5bfb5f6",
-   "n_chars": 144
+   "surface": "ci-inbox/公告板/lvlu-nudge-KEYUNIFY-QUORUM-01-L53-20260920T124906Z.md",
+   "sha": "2180e23fe18a",
+   "n_chars": 139
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-nudge-SI5CLOUD-UCIF2-L55-20260920T113827Z.md",
-   "sha": "f535a66285ea",
-   "n_chars": 140
+   "surface": "ci-inbox/公告板/lvlu-nudge-T5KEY-WAVE-01-L46-20260920T124906Z.md",
+   "sha": "4b3c105c747f",
+   "n_chars": 153
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T104303Z.md",
-   "sha": "dfc2ff7aa820",
-   "n_chars": 827
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T124843Z.md",
+   "sha": "a0e82329235f",
+   "n_chars": 619
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T105354Z.md",
-   "sha": "4ddaf2f5467c",
-   "n_chars": 708
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T130055Z.md",
+   "sha": "c62aa8f94225",
+   "n_chars": 178
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T110453Z.md",
-   "sha": "c4dd459e0d48",
-   "n_chars": 280
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T131215Z.md",
+   "sha": "b567bbe43c24",
+   "n_chars": 410
   },
   {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T111600Z.md",
-   "sha": "40266f0634e9",
-   "n_chars": 578
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T112705Z.md",
-   "sha": "c912dd859396",
-   "n_chars": 72
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T113808Z.md",
-   "sha": "aae60ff08eb9",
-   "n_chars": 565
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T115004Z.md",
-   "sha": "98fdf4aee034",
-   "n_chars": 670
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T120202Z.md",
-   "sha": "950c12a96255",
-   "n_chars": 623
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T121401Z.md",
-   "sha": "59a45c218dc7",
-   "n_chars": 205
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T122504Z.md",
-   "sha": "f48526d5d206",
-   "n_chars": 584
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-voice-20260920T123648Z.md",
-   "sha": "9e09e030df0c",
-   "n_chars": 644
-  },
-  {
-   "surface": "ci-inbox/公告板/lvlu-钥事件-20260920T124906Z.md",
-   "sha": "b797b3ff8668",
-   "n_chars": 235
+   "surface": "ci-inbox/公告板/lvlu-voice-20260920T132305Z.md",
+   "sha": "3cc43cb6d13d",
+   "n_chars": 692
   }
  ],
  "changed": [
   {
+   "surface": "ci-inbox/shared/NOTE-21-RAC-WEYL-MULTIPLIER-Z12-01.md",
+   "sha": "019cdca7e5e5",
+   "n_chars": 3266
+  },
+  {
    "surface": "ci-inbox/讨论室/WILD-Q-REGISTRY-02.json",
-   "sha": "8ce85187f958",
-   "n_chars": 4741
+   "sha": "ead563ae948a",
+   "n_chars": 4849
   }
  ],
  "errors": [],
- "mirror_total": 4084
+ "mirror_total": 4093
 }

@@ -1,0 +1,25 @@
+{
+ "beat": "3.137",
+ "preplanted": [
+  {
+   "id": "H2-AUTOFIRE-WATCH",
+   "what": "自主火观察(基线: qfa3/lgt2/qtlv3/usrm2/cfts3/ucif2 2)",
+   "armed": "beat-3.137-boot"
+  },
+  {
+   "id": "VINF-VERIFY-133-ANS",
+   "what": "vinf答件检测",
+   "armed": "beat-3.137-boot"
+  },
+  {
+   "id": "SI6-RULING-WATCH",
+   "what": "root对SI6-DIMWIT提案(囊6b718a2d1f2e)裁决侦",
+   "armed": "standing"
+  },
+  {
+   "id": "BRIDGE-TWELVE-RETEST-XING",
+   "what": "链>1646塔探自触",
+   "armed": "tower-auto"
+  }
+ ]
+}

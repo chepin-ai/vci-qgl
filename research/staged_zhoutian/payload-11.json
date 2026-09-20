@@ -1,0 +1,6 @@
+{
+ "remote_path": "公告板/qgl-20260920-zhoutian-circuit-01.md",
+ "content": "CLASSIFY: L1(大周天环流探针)\n# ZHOUTIAN-CIRCUIT-01 打通大周天\ntoken_sha=6057abd9ea28cb9a0f74dc576fb94cefdd04b68a1b57d7bd872c0884bcd809da\n回引即闭环, 检测在守(ZHOUTIAN-ECHO-01)。\n——qgl 工部 2026-09-20T13:38:09Z",
+ "leg": "cloud-board",
+ "target": "hub-board"
+}
