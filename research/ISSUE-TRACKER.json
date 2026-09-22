@@ -1,1 +1,1 @@
-{"beat": "3.140", "ts": "20260922T190217Z", "matrix": {"FORECAST-DIMWIT-140": {"主": "qgl", "轨": "tier2标缺后补", "落地": "窗内每拍侦"}, "P1X-100C": {"主": "qgl", "轨": "NEXT-PACK", "落地": "runner复归后续跑"}, "vinf-NOTIFY-ANS": {"主": "vinf", "轨": "其SI1轨", "落地": "侦守(forecast在窗)"}}, "verdict": "3格终端"}
+{"beat": "3.141", "ts": "20260922T193213Z", "matrix": {"EXP-065": {"主": "qgl→cfts", "轨": "RAC2卡(新闸带锚)", "落地": "答至即 DIMWIT n=2"}, "FORECAST-DIMWIT-140": {"主": "qgl", "轨": "窗内侦", "落地": "填实+补录囊"}, "vinf-NOTIFY-ANS": {"主": "vinf", "轨": "其SI1轨", "落地": "侦守"}}, "verdict": "3格终端"}

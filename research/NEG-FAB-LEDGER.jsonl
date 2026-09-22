@@ -1,2 +1,3 @@
 {"beat": "3.138", "line": "qgl", "family": "SEM-PAIR", "fabrication_count": 0, "note": "册首——EXP-063后v2帧6/6零编造", "ts": "20260922T174547Z"}
 {"beat": "3.140", "line": "qgl", "family": "SEM-PAIR/FED-NOTIFY", "fabrication_count": 0, "note": "FED-NOTIFY×2全注源(cap锚齐); cfts答零编造范本", "ts": "20260922T185932Z"}
+{"beat": "3.141", "line": "qgl", "family": "FED-NOTIFY", "fabrication_count": 0, "note": "B8.1互锚fp闸落地engine/cardgate.py, 无锚拒/有锚过自测双通", "ts": "20260922T192930Z"}

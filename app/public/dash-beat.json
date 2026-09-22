@@ -1,24 +1,20 @@
 {
- "beat": "3.140",
- "ts": "20260922T190301Z",
- "chain_seq": 1709,
- "head": "920cd569b33c",
- "pc": 8,
+ "beat": "3.141",
+ "ts": "20260922T195200Z",
+ "chain_seq": 1731,
+ "head": "6121ec983b30",
+ "pc": 9,
  "ring": 137,
  "verdict": "证",
  "nmust": "9/9",
- "headline": "交互环闭合拍: cfts答FED-NOTIFY(SI6自主决获跨线确认) + B10-tier2首试行 + 补锚闸增",
+ "headline": "自触律拍: LAW-SELFTRIGGER-141铸法 + RAC第二轮证(B8.1升tier1强制) + 联邦自触跨线直证",
  "caps": {
-  "CROSSLINE-CONFIRM": "05f30700af8a",
-  "ANCHOR-SUPPLEMENT": "3af589b2a08d",
-  "TIER2-TRIAL-OPEN": "82ed8b2a7ee2",
-  "P1X-STATUS": "872e5bde73ff"
+  "LAW-SELFTRIGGER": "513f0b81d879",
+  "EXP-065-RESULT": "140cccf86e4c",
+  "B8-1-TIER1": "009aa6bc2bb8",
+  "SI0-HARVEST": "785f917cdc82"
  },
- "tier2_forecast": {
-  "window": "3.140-3.143",
-  "fields": 2,
-  "status": "pending"
- },
- "prev": "3.139",
- "prev_chain": 1693
+ "dimwit_ledger": "research/DIMWIT-LEDGER.jsonl (5件全证)",
+ "prev": "3.140",
+ "prev_chain": 1709
 }

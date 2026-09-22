@@ -1,20 +1,21 @@
 {
- "beat": "3.140",
+ "beat": "3.141",
  "phase": "close",
- "opened": "2026-09-22T18:54:55Z",
+ "opened": "2026-09-22T19:27:24Z",
  "checkpoints": [
   {
    "phase": "close",
    "done": [
-    "cfts答确认+补锚",
-    "tier2首试行",
-    "P1X册",
-    "NEG-FAB册",
-    "nmust 9/9证",
-    "PREPLANT-141"
+    "LAW-SELFTRIGGER-141",
+    "B8.1闸+tier1座裁落地",
+    "EXP-065证(n=2)",
+    "SI0-HARVEST+errata4",
+    "SELFTRIG跨线见证",
+    "nmust9/9",
+    "PREPLANT-142"
    ],
    "pending": [],
-   "ts": "2026-09-22T19:02:43Z"
+   "ts": "2026-09-22T19:52:00Z"
   }
  ],
  "preplant_done": [],
@@ -24,6 +25,6 @@
   "vault": true,
   "healed_boot": null
  },
- "boot_note": "tier2-trial+recon",
- "ts": "2026-09-22T19:02:43Z"
+ "boot_note": "rebuild-2",
+ "ts": "2026-09-22T19:52:00Z"
 }
