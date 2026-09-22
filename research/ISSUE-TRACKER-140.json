@@ -1,0 +1,7 @@
+{
+ "beat": "3.140",
+ "matrix_ref": "FORECAST-DIMWIT-140(tier2试行主件)+P1X-100C-STATUS-140",
+ "cells": 2,
+ "all_have": "主/轨/落地判",
+ "ts": "20260922T190134Z"
+}

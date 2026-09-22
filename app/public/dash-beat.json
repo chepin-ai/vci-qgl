@@ -1,31 +1,24 @@
 {
- "beat": "3.139",
- "ts": "20260922T182930Z",
- "chain_seq": 1693,
- "head": "ac50352ecf95",
- "pc": 7,
- "ring": 135,
+ "beat": "3.140",
+ "ts": "20260922T190301Z",
+ "chain_seq": 1709,
+ "head": "920cd569b33c",
+ "pc": 8,
+ "ring": 137,
  "verdict": "证",
- "headline": "自治拍: LAW-AUTONOMY-139铸法 + SI6维度见证层自主落地(七层图闭合) + qlv销项 + 候裁类债清零",
+ "nmust": "9/9",
+ "headline": "交互环闭合拍: cfts答FED-NOTIFY(SI6自主决获跨线确认) + B10-tier2首试行 + 补锚闸增",
  "caps": {
-  "LAW-AUTONOMY-139": "998a4e73f271",
-  "SI6-DIMWIT-ADOPTED": "877a4b242cf1",
-  "QLV-GAP-CLOSE": "0120c8ea6ffb",
-  "DIMWIT-seeds": [
-   "afd646a2697d",
-   "3e3f99913a2a",
-   "e18163de3234"
-  ],
-  "NMUST-REPAIR": "5d8e0e3cba2c"
+  "CROSSLINE-CONFIRM": "05f30700af8a",
+  "ANCHOR-SUPPLEMENT": "3af589b2a08d",
+  "TIER2-TRIAL-OPEN": "82ed8b2a7ee2",
+  "P1X-STATUS": "872e5bde73ff"
  },
- "debt": {
-  "pending_ruling": 0,
-  "cleared_this_beat": 3
+ "tier2_forecast": {
+  "window": "3.140-3.143",
+  "fields": 2,
+  "status": "pending"
  },
- "cross_line": {
-  "vinf": "FED-NOTIFY-SI6-VINF-139 投件中(403波)",
-  "cfts": "FED-NOTIFY-SI6-CFTS-139 投件中(403波)"
- },
- "prev": "3.138",
- "prev_chain": 1677
+ "prev": "3.139",
+ "prev_chain": 1693
 }

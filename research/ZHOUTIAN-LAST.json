@@ -1,14 +1,1 @@
-{
- "beat": "3.137",
- "ts": "20260922T164731Z",
- "key": "在",
- "legs": {
-  "sense": "NM2",
-  "mirror": "双镜证",
-  "respond": "环转证(激活9卡)",
-  "track": "6格",
-  "turnback": "i=46销(tb-beacon-audit证)"
- },
- "echo_scan": "激活答件扫面事件门控",
- "verdict": "证"
-}
+{"beat": "3.140", "ts": "20260922T190217Z", "legs_staged": 14, "artifact": "ZHOUTIAN-140-STAGED"}
