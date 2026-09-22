@@ -1,26 +1,25 @@
 {
- "beat": "3.136",
+ "beat": "3.137",
  "phase": "close",
- "opened": "2026-09-20T13:29:29Z",
+ "opened": "2026-09-22T16:15:44Z",
  "checkpoints": [
   {
    "phase": "open",
    "done": [],
    "pending": [],
-   "ts": "2026-09-20T13:29:29Z"
+   "ts": "2026-09-22T16:15:44Z"
   },
   {
    "phase": "close",
    "done": [
-    "SI0~6 六层触证 (囊fe10bfe2fa28)",
-    "赐文借范入册 (PARADIGM-RAC-GIFT-136): RAC/Schmidt见证/噪声鲁棒/超界即证",
-    "SI6-DIMWIT 提案候root裁 (囊6b718a2d1f2e)",
-    "qfa三帧SI1活性再证(nonce 6b8ff88b85ae/k3/无源标缺)",
-    "compliance劝诫受领: 囊体causal锚入(峰B标准化)",
-    "nmust 9/9 · beacon pc=4 · ring 133"
+    "EXP-064 RAC交验 证 (囊4e221dc1bc0f): cfts[择X2]只答所择越经典界",
+    "cfts B10后缀推广座裁落地: 分族分级路径(B10-FAMILY-CLASSIFY挂3.138)",
+    "errata seq3: cfts时刻观察自劾撤回(彼正我误·基线陈旧)",
+    "nmust死根查明即修: NM2陈回执→autofix全扫超时——先备回执再跑(9/9)",
+    "beacon pc=5 · ring 134"
    ],
    "pending": [],
-   "ts": "2026-09-20T13:45:09Z"
+   "ts": "2026-09-22T16:58:07Z"
   }
  ],
  "preplant_done": [],
@@ -30,6 +29,6 @@
   "vault": true,
   "healed_boot": null
  },
- "boot_note": "重启续push(Empty死#4)",
- "ts": "2026-09-20T13:48:08Z"
+ "boot_note": "重启续(Empty死#5)",
+ "ts": "2026-09-22T16:58:07Z"
 }

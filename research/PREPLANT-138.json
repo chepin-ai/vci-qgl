@@ -1,0 +1,40 @@
+{
+ "beat": "3.138",
+ "preplanted": [
+  {
+   "id": "H2-AUTOFIRE-WATCH",
+   "what": "自主火观察(基线: qfa3/lgt2/qtlv3/usrm2/cfts3/ucif2 2)",
+   "armed": "beat-3.138-boot"
+  },
+  {
+   "id": "VINF-VERIFY-133-ANS",
+   "what": "vinf答件检测",
+   "armed": "beat-3.138-boot"
+  },
+  {
+   "id": "SI6-RULING-WATCH",
+   "what": "root对SI6提案裁决侦",
+   "armed": "standing"
+  },
+  {
+   "id": "B10-FAMILY-CLASSIFY",
+   "what": "cfts裁落地: B10卡面分族分级草案(可溯字段强制/先天缺源标缺后补)——qgl草拟提交互锚验",
+   "armed": "beat-3.138-boot"
+  },
+  {
+   "id": "CE-FOLLOW-CE-11-XING",
+   "what": "链>1655塔探自触",
+   "armed": "tower-auto"
+  },
+  {
+   "id": "BRIDGE-TWELVE-RETEST-XING",
+   "what": "链>1665塔探自触",
+   "armed": "tower-auto"
+  },
+  {
+   "id": "REMOTE-SENSE-FULL",
+   "what": "全表面扫补跑(3.137为定向capture)",
+   "armed": "beat-3.138-boot"
+  }
+ ]
+}

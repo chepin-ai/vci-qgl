@@ -1,7 +1,7 @@
 {
  "engine": "REMOTE-SENSE-01",
- "beat": "3.136-nmust",
- "ts": "2026-09-20T13:44:33Z",
+ "beat": "3.137",
+ "ts": "20260922T165728Z",
  "scanned": 4092,
  "fetched": 11,
  "new_items": [
@@ -64,5 +64,6 @@
   }
  ],
  "errors": [],
- "mirror_total": 4093
+ "mirror_total": 4093,
+ "note": "本拍定向capture: 六线outbox树察(H2基线比对)+vinf树察+cfts RAC答件直取 — 全表面扫缺拍→下拍首务补(front注入)"
 }
