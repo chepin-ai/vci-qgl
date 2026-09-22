@@ -1,30 +1,22 @@
 {
- "beat": "3.138",
+ "beat": "3.139",
  "phase": "close",
- "opened": "2026-09-22T17:31:34Z",
+ "opened": "2026-09-22T18:12:16Z",
  "checkpoints": [
-  {
-   "phase": "open",
-   "done": [],
-   "pending": [],
-   "ts": "2026-09-22T17:31:34Z"
-  },
   {
    "phase": "close",
    "done": [
-    "DEBT-FIX-1 nmust-autofix限幅40(Empty死根因除)",
-    "DEBT-FIX-2 capsule.py核改:body锚自动注入(ROOT通告)",
-    "FOUR-CAP-AUDIT-138 四能力全证",
-    "DEBT-REGISTER-138 21件全处置",
-    "B10-FAMILY-CLASSIFY-138 cfts座裁落地+负结果册建",
-    "ALIGNMENT-138 五统一册",
-    "CE/BRIDGE探针窗越链消耗(滑窗重臂)",
-    "SI3驱动环26项+NMUST冲即修4件",
-    "H2/VINF-VERIFY-133侦(负观察同铸)",
-    "WATCH-RECON-138+NM4空结果同铸"
+    "LAW-AUTONOMY-139铸法(root令自限禁止律)",
+    "SI6-DIMWIT自主采纳+engine/dimwit.py落地+种子见证三证",
+    "SI0-SI6七层图闭合",
+    "QLV-GAP自主销项(采纳退为终态,六轨定编)",
+    "DEBT-REGISTER-139-ADD候裁类债清零",
+    "FED-NOTIFY-SI6通报卡×2锻造(B8/B9/B10自检PASS,403波中投件待波开)",
+    "塔扫/SI3环26/周天14/NMUST冲即修4",
+    "BEAT-3139.md+dash+npm build staged"
    ],
    "pending": [],
-   "ts": "2026-09-22T17:50:53Z"
+   "ts": "2026-09-22T18:34:07Z"
   }
  ],
  "preplant_done": [],
@@ -32,11 +24,8 @@
  "pending": [],
  "key": {
   "vault": true,
-  "healed_boot": {
-   "healed": true,
-   "probe": 200
-  }
+  "healed_boot": null
  },
- "boot_note": "kernel-rebuild-mid-138",
- "ts": "2026-09-22T17:50:53Z"
+ "boot_note": "rebuild-2",
+ "ts": "2026-09-22T18:34:07Z"
 }

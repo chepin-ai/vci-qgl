@@ -1,32 +1,31 @@
 {
- "beat": "3.138",
- "ts": "20260922T175111Z",
- "chain_seq": 1677,
- "head": "9f0d900d9957",
- "pc": 6,
+ "beat": "3.139",
+ "ts": "20260922T182930Z",
+ "chain_seq": 1693,
+ "head": "ac50352ecf95",
+ "pc": 7,
  "ring": 135,
  "verdict": "证",
- "headline": "全局对齐拍: 五统一册落地 + 双工程债清偿 + B10分族分级 + 四能力审计全证",
+ "headline": "自治拍: LAW-AUTONOMY-139铸法 + SI6维度见证层自主落地(七层图闭合) + qlv销项 + 候裁类债清零",
  "caps": {
-  "DEBT-FIX-NMUST-AUTOFIX": "e7cc98367f94",
-  "KERNEL-CHANGE-ALIGN(ROOT通告)": "afc0b339b7d5",
-  "FOUR-CAP-AUDIT": "529337b49a8e",
-  "DEBT-REGISTER": "fde8cfa4f507",
-  "B10-FAMILY-CLASSIFY": "5ce4ec7d4563",
-  "ALIGNMENT-138": "a30f1365601b",
-  "WATCH-RECON": "e68e3ea76a1e",
-  "NMUST-REPAIR": "303c60db1cd9"
+  "LAW-AUTONOMY-139": "998a4e73f271",
+  "SI6-DIMWIT-ADOPTED": "877a4b242cf1",
+  "QLV-GAP-CLOSE": "0120c8ea6ffb",
+  "DIMWIT-seeds": [
+   "afd646a2697d",
+   "3e3f99913a2a",
+   "e18163de3234"
+  ],
+  "NMUST-REPAIR": "5d8e0e3cba2c"
  },
  "debt": {
-  "total": 21,
-  "cleared": 6,
-  "pending_ruling": 3,
-  "watching": 8,
-  "rearch": 2,
-  "proposed": 2
+  "pending_ruling": 0,
+  "cleared_this_beat": 3
  },
- "alignment": "research/ALIGNMENT-138.md",
- "kernel_change_notice": true,
- "prev": "3.137",
- "prev_chain": 1651
+ "cross_line": {
+  "vinf": "FED-NOTIFY-SI6-VINF-139 投件中(403波)",
+  "cfts": "FED-NOTIFY-SI6-CFTS-139 投件中(403波)"
+ },
+ "prev": "3.138",
+ "prev_chain": 1677
 }

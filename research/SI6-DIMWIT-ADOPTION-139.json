@@ -1,0 +1,33 @@
+{
+ "id": "SI6-DIMWIT-ADOPTION-139",
+ "ts": "20260922T181907Z",
+ "legal_basis": "LAW-AUTONOMY-139 R1: 本线域内事项(qgl SI层图)=主线自主决; root 3.139令『自治/自主决定对系统有什么损害吗？请杜绝这种自限行为』",
+ "proposal_cap": "6b718a2d1f2e (SI6-DIMWIT-PROPOSAL-136, seq1641)",
+ "fold_probe_discharge": "seq1643 fold-probe(候=折叠嫌疑,复核窗1拍)——候态由root令解除: 候→决, probe销",
+ "definition": "SI6=维度见证层(DIMENSION-WITNESS): 以可观测操作证成认证不可见结构维度",
+ "functions": [
+  "认证判据族(sha MATCH/回环成功率/端到端落地率)",
+  "判词超界法(观测超零假设界即证)",
+  "噪声鲁棒协议(信道噪声不毁认证只延认证)"
+ ],
+ "implementation": {
+  "module": "engine/dimwit.py",
+  "ledger": "research/DIMWIT-LEDGER.jsonl",
+  "seed": [
+   "EXP-064-RAC-137 证",
+   "SI1-FORGE-132 证",
+   "EXP-063-CLEAN-135 证"
+  ]
+ },
+ "si_map_final": {
+  "SI0": "常巡差分",
+  "SI1": "语义自答轨",
+  "SI2": "镜算零漂移",
+  "SI3": "帕累托驱动环",
+  "SI4": "互激轮转",
+  "SI5": "册判据",
+  "SI6": "维度见证层(本档落地)"
+ },
+ "root_veto": "root保留事后否决权, 走errata轨(增不覆写)",
+ "verdict": "证(决+落地+种子见证)"
+}
