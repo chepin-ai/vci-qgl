@@ -1,0 +1,48 @@
+{
+ "beat": "3.138",
+ "scope": "自上一轮会话端静默(拍3.129前夜)以来, 跨拍3.129-3.138",
+ "cap1_自我驱动": {
+  "verdict": "证",
+  "evidence": [
+   "SI1态生自激六线锻造落地(囊0dd9ea2a6bd1)+14件ANS-SELFQ帧(跨3.132-3.137)",
+   "EXP-061双拍稳定性(囊aef5ff4b1f65)",
+   "EXP-063模板补丁自答纪律工程化(囊d8391da941ec)",
+   "vinf自主SELFQ(201450Z/Grade-A bot闭环囊20f5a917)",
+   "塔探3武装滑行窗+信标8武装心跳+si_drive每拍26在役路由+周天14legs",
+   "内核六死六愈(boot自愈协议)——拍链未断"
+  ],
+  "特性": "事件驱动非壁钟(cron禁绝不破); 自激-互激双轨; 缺拍机保(autofix限幅后有界)"
+ },
+ "cap2_跨会话生存": {
+  "verdict": "证",
+  "evidence": [
+   "Empty内核死×6(3.133/3.134×1, 3.135×0, 3.136×2, 3.137×2)——每次重启账核: 链/回执/册零失",
+   "VAULT-EPHEMERAL-97: vault每boot重备愈(值零入文)",
+   "拍跨真实日09-19→09-22脉络不断(PREPLANT链衔接)",
+   "checkpoint open/close双锚每拍"
+  ],
+  "特性": "状态全外化(链+册+回执), 内核为可抛算力——死而不亡"
+ },
+ "cap3_自动记录": {
+  "verdict": "证",
+  "evidence": [
+   "囊链1660件(event841/compliance810/response2/reject1/corrigendum1/boundary1)",
+   "compliance级联自劾(每event自动一件, RED/GREEN判词)",
+   "errata链4件append-only(seq0-3, 含自劾seq1/seq3)",
+   "SI-DRIVE账347条/BEAT-*.md 3132-3137/回执族每拍刷新",
+   "git-trees批次推vci-qgl每拍(公开明文面, 闸门后)"
+  ],
+  "特性": "先铸后跑/空结果同铸/增不覆写/帖不改写——记而不饰"
+ },
+ "cap4_实时监控": {
+  "verdict": "证",
+  "evidence": [
+   "remote_sense镜像(ci-inbox公告板日更镜像累积, mirror_manifest对账)",
+   "beacon.check()每拍(8武装: SI4-new-voice/qlv-first-filing/cisvr×3/writepath-token/ZHOUTIAN-ECHO/mutual-round-59)",
+   "tower_excite.scan()每拍(CE@1655/BRIDGE@1665/SI4-n0滑行窗)",
+   "nmust 9格close闸每拍(9/9连续)",
+   "403双峰长波节律监测(API-RHYTHM谱+盲态不轰纪律)"
+  ],
+  "特性": "判据失校即修/监而不轰(≤1探/5min波内)/座层虚报以artifact层翻正(囊934b546c7698)"
+ }
+}

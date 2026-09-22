@@ -1,0 +1,71 @@
+{
+ "beat": "3.138",
+ "register": {
+  "A_跨线候件(合法静默·侦守武装)": {
+   "vinf-VERIFY-133答": {
+    "disposition": "窗续侦",
+    "armed": "PREPLANT每拍"
+   },
+   "qlv-gap": {
+    "disposition": "候root裁(座拒自植终局维持退)",
+    "armed": "standing"
+   },
+   "cisvr": {
+    "disposition": "退(证·70仓穷举)——终端态; beacon三探免费续守",
+    "armed": "beacon"
+   },
+   "EXP-049/KQ-09/mutual-round-59/qlv-first-filing/ZHOUTIAN-ECHO/writepath-token/SI4-new-voice": {
+    "disposition": "beacon武装侦(零成本)",
+    "armed": "beacon"
+   },
+   "lvlu众nudge(ADJUD/EVAL-KAPPA/ORBIT-CAP/EXP049/T5KEY/YONEDA/SI5CLOUD/BLUEQUBIT)": {
+    "disposition": "嵌入旁听抽检位(vinf裁)——镜像监, 不逐答",
+    "armed": "remote_sense镜像"
+   }
+  },
+  "B_本线工程债(本拍清)": {
+   "nmust-autofix全扫杀内核": {
+    "disposition": "已修(cap e7cc98367f94): 限幅40顶补"
+   },
+   "C-ANCHOR-STD 732RED噪声": {
+    "disposition": "已修源(cap afc0b339b7d5): causal+prev_ref自动注入→GREEN; 历史RED增不覆写不追改"
+   },
+   "ANS-ANS-双前缀": {
+    "disposition": "已闭(3.132改名+推)"
+   },
+   "REMOTE-SENSE全量扫": {
+    "disposition": "重构: 有界分批(波窗内本拍试跑一批)"
+   }
+  },
+  "C_研究债/开放问题": {
+   "B10-FAMILY-CLASSIFY": {
+    "disposition": "本拍完成草案(cfts座裁落地)"
+   },
+   "SI6-DIMWIT": {
+    "disposition": "候root裁(囊6b718a2d1f2e)"
+   },
+   "BRIDGE/CE探针": {
+    "disposition": "塔窗候(1665/1655)"
+   },
+   "P1X-100c 34/100": {
+    "disposition": "嵌入峰B稳态节奏(非阻塞, NEXT-PACK在账)"
+   },
+   "qtlv-20260912先人SELFQ证迹": {
+    "disposition": "存疑入册(低优先·候自然显影)"
+   }
+  },
+  "D_架构冗余/混淆": {
+   "semantic-responder-04陈轨(六线)": {
+    "disposition": "融合提案: 04退役归档——越域不火, 铸提案卡入册, 座自行"
+   },
+   "si3_loop.py遗产": {
+    "disposition": "重构提案: 功能已并于si_drive——标记legacy, 引用面见上grep",
+    "refs": "见register附注"
+   },
+   "si_auto/si_responder/si_interact重叠": {
+    "disposition": "融合提案: standing三件套归口SI-DRIVE-loop账"
+   }
+  }
+ },
+ "summary": "债21项: 已清4/本拍清2/候裁3/侦守8/重构2/提案2"
+}

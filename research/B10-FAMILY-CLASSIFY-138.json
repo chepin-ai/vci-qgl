@@ -1,0 +1,34 @@
+{
+  "rule_id": "B10-FAMILY-CLASSIFY-138",
+  "based_on": "cfts座裁(RAC答,EXP-064): 建议限本线试运行; 对B10族分族分级, 可溯字段强制执行, 先天缺源字段先标缺后补链; 待跨线负结果册满三期、回零率稳定低于阈值, 方可提请纪律委员会定级推广",
+  "tier_1_enforce_suffix": {
+    "definition": "可溯字段——载荷内出现的任何精确数值/百分比/日期/计数/引语, 其来源原则上可由生成者提供(引文/文件/链内囊证)",
+    "families": [
+      "SEM-PAIR(跨线语义卡, 如rac_ask引用论文数值)",
+      "ANS-SELFQ模板题(态生题若含数值)",
+      "TASK/GOAL指令卡(含进度计数/阈值)"
+    ],
+    "mandate": "强制注入suffix『(引数必注源·无源标缺·禁虚构数值)』+ 生成后负结果册记录fabrication_count",
+    "status": "本线六轨已落地(v2,EXP-063证)"
+  },
+  "tier_2_mark_then_fill": {
+    "definition": "先天缺源字段——某些字段语义上要求其值在生成时刻尚无来源(如预测值/目标值/未来阈值/对端待答值)",
+    "families": [
+      "FORECAST/PROBE卡(预测链点/探针阈值)",
+      "WISH/GOAL-SEED卡(愿景目标值)",
+      "ASK卡中显式标注的hypothesis值"
+    ],
+    "mandate": "不强制suffix(会扼杀合法预测), 但字段值必须带『缺』标记(value_source:'pending'), 后补链时填实并铸补录囊(增不覆写)",
+    "status": "草案——本拍注册, 下拍起试行"
+  },
+  "tier_3_exempt": {
+    "definition": "纯结构/路由字段——无事实断言的机械字段(id/ts/nonce/priority/repo指针)",
+    "families": [
+      "所有卡类的机械字段"
+    ],
+    "mandate": "豁免(nonce/sha等非事实断言)",
+    "status": "即生效"
+  },
+  "promotion_gate": "跨线负结果册满三期(每线每拍一册)+回零率(修正后重犯率)稳定<10% → 提请纪律委员会定级推广至B10全族",
+  "ledger": "research/NEG-FAB-LEDGER.jsonl (跨线负结果册, 自本拍起建)"
+}

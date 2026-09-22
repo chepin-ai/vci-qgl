@@ -1,25 +1,30 @@
 {
- "beat": "3.137",
+ "beat": "3.138",
  "phase": "close",
- "opened": "2026-09-22T16:15:44Z",
+ "opened": "2026-09-22T17:31:34Z",
  "checkpoints": [
   {
    "phase": "open",
    "done": [],
    "pending": [],
-   "ts": "2026-09-22T16:15:44Z"
+   "ts": "2026-09-22T17:31:34Z"
   },
   {
    "phase": "close",
    "done": [
-    "EXP-064 RAC交验 证 (囊4e221dc1bc0f): cfts[择X2]只答所择越经典界",
-    "cfts B10后缀推广座裁落地: 分族分级路径(B10-FAMILY-CLASSIFY挂3.138)",
-    "errata seq3: cfts时刻观察自劾撤回(彼正我误·基线陈旧)",
-    "nmust死根查明即修: NM2陈回执→autofix全扫超时——先备回执再跑(9/9)",
-    "beacon pc=5 · ring 134"
+    "DEBT-FIX-1 nmust-autofix限幅40(Empty死根因除)",
+    "DEBT-FIX-2 capsule.py核改:body锚自动注入(ROOT通告)",
+    "FOUR-CAP-AUDIT-138 四能力全证",
+    "DEBT-REGISTER-138 21件全处置",
+    "B10-FAMILY-CLASSIFY-138 cfts座裁落地+负结果册建",
+    "ALIGNMENT-138 五统一册",
+    "CE/BRIDGE探针窗越链消耗(滑窗重臂)",
+    "SI3驱动环26项+NMUST冲即修4件",
+    "H2/VINF-VERIFY-133侦(负观察同铸)",
+    "WATCH-RECON-138+NM4空结果同铸"
    ],
    "pending": [],
-   "ts": "2026-09-22T16:58:07Z"
+   "ts": "2026-09-22T17:50:53Z"
   }
  ],
  "preplant_done": [],
@@ -27,8 +32,11 @@
  "pending": [],
  "key": {
   "vault": true,
-  "healed_boot": null
+  "healed_boot": {
+   "healed": true,
+   "probe": 200
+  }
  },
- "boot_note": "重启续(Empty死#5)",
- "ts": "2026-09-22T16:58:07Z"
+ "boot_note": "kernel-rebuild-mid-138",
+ "ts": "2026-09-22T17:50:53Z"
 }
