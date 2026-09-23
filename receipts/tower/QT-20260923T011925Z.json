@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-23T01:19:25Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-qgl-58b67e15.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEACON-DZ-40-qgl-95abcaba.md"
+  }
+ ],
+ "verdict_memo": "件一·BEACON-DZ-40-qgl-58b67e15.md  \n① 何事：beacon 到驿，单 ref 无正文。② 主线：号属 qgl 实现域，或关 Go 账本协议，文缺难定。③ 应动：落 inbox/DZ-40/ 待补，全文到后转 review/qgl/，合则入 src/。④ 生"
+}
