@@ -1,21 +1,20 @@
 {
- "beat": "3.142",
+ "beat": "3.143",
  "phase": "close",
- "opened": "2026-09-23T05:22:11Z",
+ "opened": "2026-09-23T14:25:26Z",
  "checkpoints": [
   {
    "phase": "close",
    "done": [
-    "小周天×5压测证",
-    "大周天FIRED 26/23",
-    "模块矩阵全活",
-    "SI0-6七层齐触发",
-    "wheel滤器修",
-    "FORECAST侦(窗余1拍)",
-    "nmust9/9"
+    "tier2首试行闭环(双未证如实)",
+    "EXP-066先铸+卡201",
+    "P1X判退",
+    "NEG-FAB册",
+    "nmust9/9",
+    "PREPLANT-144"
    ],
    "pending": [],
-   "ts": "2026-09-23T05:43:33Z"
+   "ts": "2026-09-23T14:44:03Z"
   }
  ],
  "preplant_done": [],
@@ -28,6 +27,6 @@
    "probe": 200
   }
  },
- "boot_note": "zhou-tian-stress+SI0-6-full-trigger",
- "ts": "2026-09-23T05:43:33Z"
+ "boot_note": "forecast-window-close",
+ "ts": "2026-09-23T14:44:03Z"
 }
