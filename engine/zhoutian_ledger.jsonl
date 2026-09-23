@@ -1,0 +1,27 @@
+{"beat": "3.107", "ts": "2026-09-11T17:05:01Z", "primary": "lvlu", "small_loop": true, "big_loop_posts": 5}
+{"beat": "3.108", "ts": "2026-09-12T12:47:30Z", "primary": "lgt", "small_loop": true, "big_loop_posts": 1}
+{"beat": "3.109", "ts": "2026-09-12T16:18:30Z", "primary": "qlv", "small_loop": true, "big_loop_posts": 1}
+{"beat": "3.110", "ts": "2026-09-12T16:48:24Z", "primary": "qfa", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.111", "ts": "2026-09-12T17:40:52Z", "primary": "usrm", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.112", "ts": "2026-09-12T19:11:56Z", "primary": "ucif2", "small_loop": true, "big_loop_posts": 4}
+{"beat": "3.113", "ts": "2026-09-12T23:15:15Z", "primary": "cisvr", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.114", "ts": "2026-09-13T00:16:07Z", "primary": "vinf", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.114", "ts": "2026-09-13T00:16:00Z", "primary": "vinf", "small_loop": true, "big_loop_posts": 0, "big_loop_staged": 14, "note": "回腿闭合证立案(ZHOUTIAN-CIRCUIT-01); 钥盲去腿武装待发, echo针在守"}
+{"beat": "3.115", "ts": "2026-09-13T00:57:35Z", "primary": "lvlu", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.115", "ts": "2026-09-13T00:57:33Z", "primary": "lvlu", "small_loop": true, "big_loop_posts": 8, "zhoutian_fired": true, "note": "大周天去腿26/26 2xx(17件+9塔唤); 回腿echo针在守(窗≤2拍, 首扫0命中照铸)"}
+{"beat": "3.116", "ts": "2026-09-13T05:54:48Z", "primary": "lgt", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.116", "ts": "2026-09-13T05:54:47Z", "primary": "lgt", "small_loop": true, "big_loop_posts": 10, "zhoutian_closed": "vinf echo 35min (probe-calib后命中)", "note": "回腿首闭: 预注册阈值命中(毂回响1/3类); 心跳塔器接棒歇间收账"}
+{"beat": "3.117", "ts": "2026-09-13T10:26:13Z", "primary": "qlv", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.117", "ts": "2026-09-13T10:26:12Z", "primary": "qlv", "small_loop": true, "big_loop_posts": 20, "zhoutian_closed": "回腿2/3类讫(毂回响vinf/qtlv+线回引usrm), 余root席镜类", "note": "风暴拍: heartbeat二拍账(wake新件=1@0827Z)+SLA-E v1.1六线续登波"}
+{"beat": "3.118", "ts": "2026-09-13T11:20:09Z", "primary": "qfa", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.118", "ts": "2026-09-13T11:20:08Z", "primary": "qfa", "small_loop": true, "big_loop_posts": 5, "zhoutian_closed": "回腿2/3类【立·机读】: usrm lane回卡token_sha全形登记", "note": "heartbeat三拍账: 歇间塔巡16 receipts, wake 14件@1031Z——会话歇而毂自收三拍连证"}
+{"beat": "3.119", "ts": "2026-09-14T14:49:41Z", "primary": "usrm", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.119", "ts": "2026-09-14T14:49:40Z", "primary": "usrm", "small_loop": true, "big_loop_posts": 12, "zhoutian_closed": "回腿2/3类【立·机读】续; root席镜类入覆写位DE119-7(判点化)", "note": "大讨论七庭同答12/12——三即律压测: SLA内6件/迟账载1件(qfa庭会话歇); 脉第三铸"}
+{"beat": "3.120", "ts": "2026-09-14T15:46:40Z", "primary": "ucif2", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.120", "ts": "2026-09-14T15:46:39Z", "primary": "ucif2", "small_loop": true, "big_loop_posts": 11, "zhoutian_closed": "DEBT-72即闭(三即#9); 回腿2/3类续; root席镜类覆写位DE119-7续probe", "note": "钥道拍大 Loop: shared×4+双lane+讨论室+板+脉#4+DEBT-72双件=11帖"}
+{"beat": "3.121", "ts": "2026-09-14T18:18:18Z", "primary": "cisvr", "small_loop": true, "big_loop_posts": 3}
+{"beat": "3.121", "ts": "2026-09-14T18:18:16Z", "primary": "cisvr", "small_loop": true, "big_loop_posts": 19, "zhoutian_closed": "KEYUNIFY双请闭/CHARTER签/B20B21闭/HEALTH三答/exact-KS闭/探测×10发起(跟进轨在)", "note": "SI交互拍: 统一五域齐进——策略签/标准判/资源目/设施擎/方法承"}
+{"beat": "3.122", "ts": "2026-09-15T14:51:36Z", "primary": "vinf", "small_loop": true, "big_loop_posts": 0}
+{"beat": "3.123", "ts": "2026-09-17T11:53:01Z", "primary": "lvlu", "small_loop": true, "big_loop_posts": 4}
+{"beat": "3.142", "ts": "2026-09-23T05:26:35Z", "primary": "lgt", "small_loop": true, "big_loop_posts": 1}
+{"beat": "3.142b", "ts": "2026-09-23T05:36:57Z", "primary": "qlv", "small_loop": true, "big_loop_posts": 0}

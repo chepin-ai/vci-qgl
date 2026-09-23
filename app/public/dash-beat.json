@@ -1,20 +1,21 @@
 {
- "beat": "3.141",
- "ts": "20260922T195200Z",
- "chain_seq": 1731,
- "head": "6121ec983b30",
- "pc": 9,
+ "beat": "3.142",
+ "ts": "20260923T054333Z",
+ "chain_seq": 1755,
+ "head": "0b0ba12cd550",
+ "pc": 10,
  "ring": 137,
  "verdict": "证",
  "nmust": "9/9",
- "headline": "自触律拍: LAW-SELFTRIGGER-141铸法 + RAC第二轮证(B8.1升tier1强制) + 联邦自触跨线直证",
+ "headline": "周天压测拍: 小周天5×14腿证 + 大周天FIRED 26/23腿 + SI0-6七层齐触发(SI6首齐)",
  "caps": {
-  "LAW-SELFTRIGGER": "513f0b81d879",
-  "EXP-065-RESULT": "140cccf86e4c",
-  "B8-1-TIER1": "009aa6bc2bb8",
-  "SI0-HARVEST": "785f917cdc82"
+  "XIAO-ZHOUTIAN-STRESS": "a6b6a6e5af37",
+  "DA-ZHOUTIAN-FIRED": "c726d293486e",
+  "SI0-6-ACTIVATION": "d8262c917c58",
+  "MODULE-MATRIX": "db27575d2f24",
+  "WHEEL-FILTER-FIX": "5168f98af0d9"
  },
- "dimwit_ledger": "research/DIMWIT-LEDGER.jsonl (5件全证)",
- "prev": "3.140",
- "prev_chain": 1709
+ "dimwit_ledger": "7件全证",
+ "prev": "3.141",
+ "prev_chain": 1731
 }

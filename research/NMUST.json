@@ -1,7 +1,7 @@
 {
  "engine": "N-MUST/M-CODE-01",
- "beat": "3.141",
- "ts": "2026-09-22T19:51:34Z",
+ "beat": "3.142",
+ "ts": "2026-09-23T05:42:25Z",
  "items": [
   {
    "id": "NM1-KEY-HEALTH",
@@ -13,7 +13,8 @@
    "id": "NM2-REMOTE-SENSE",
    "layer": "seat+tower",
    "ok": true,
-   "guarantee": "每拍全表面扫描→镜像→diff; 缺拍→本器自动补跑(engine/remote_sense.py)"
+   "guarantee": "每拍全表面扫描→镜像→diff; 缺拍→本器自动补跑(engine/remote_sense.py)",
+   "autofix": "remote_sense bounded re-run: fetched 40 (cap40, DEBT-FIX-138)"
   },
   {
    "id": "NM3-MIRROR-LOOP",
@@ -58,7 +59,16 @@
    "guarantee": "打通大周天standing化: 钥在→五腿即发+echo扫; 钥盲→武装待发+KEY-BLIND急铸——永不静默"
   }
  ],
- "si5_core_injects": [],
+ "si5_core_injects": [
+  {
+   "front": "NM2-autofix",
+   "note": "sense缺拍自动补跑(限幅40, 全量转下拍)"
+  },
+  {
+   "front": "NM2-REMOTE-SENSE",
+   "note": "回执缺/陈——核心机front注入, 下拍首务"
+  }
+ ],
  "key_blind": false,
  "ok_n": 9,
  "blind_n": 0,

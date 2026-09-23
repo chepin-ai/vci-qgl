@@ -1,21 +1,21 @@
 {
- "beat": "3.141",
+ "beat": "3.142",
  "phase": "close",
- "opened": "2026-09-22T19:27:24Z",
+ "opened": "2026-09-23T05:22:11Z",
  "checkpoints": [
   {
    "phase": "close",
    "done": [
-    "LAW-SELFTRIGGER-141",
-    "B8.1闸+tier1座裁落地",
-    "EXP-065证(n=2)",
-    "SI0-HARVEST+errata4",
-    "SELFTRIG跨线见证",
-    "nmust9/9",
-    "PREPLANT-142"
+    "小周天×5压测证",
+    "大周天FIRED 26/23",
+    "模块矩阵全活",
+    "SI0-6七层齐触发",
+    "wheel滤器修",
+    "FORECAST侦(窗余1拍)",
+    "nmust9/9"
    ],
    "pending": [],
-   "ts": "2026-09-22T19:52:00Z"
+   "ts": "2026-09-23T05:43:33Z"
   }
  ],
  "preplant_done": [],
@@ -23,8 +23,11 @@
  "pending": [],
  "key": {
   "vault": true,
-  "healed_boot": null
+  "healed_boot": {
+   "healed": true,
+   "probe": 200
+  }
  },
- "boot_note": "rebuild-2",
- "ts": "2026-09-22T19:52:00Z"
+ "boot_note": "zhou-tian-stress+SI0-6-full-trigger",
+ "ts": "2026-09-23T05:43:33Z"
 }
