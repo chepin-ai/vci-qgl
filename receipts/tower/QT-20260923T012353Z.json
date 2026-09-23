@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-23T01:23:53Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "SEAT-SURGE-QGL-01.md"
+  }
+ ],
+ "verdict_memo": "① 何事：到件为 SEAT-SURGE-QGL-01.md，乃 QGL 网络席位（节点/验证者）激增事件之 inbox 工单，涉扩容涌浪与资源再平衡。\n\n② 与 qgl 主线何干：量子账本以 go 实现共识层与状态通道，席位陡增直接冲击拓扑发现、消息复杂度及账本同步带宽，系主线可用性之关键变量。\n\n③ 应动何件：宜落仓至 docs/ops/runbooks/surge-seat.md 备案，并提级 core/consensus/shard 或 node-pool 模块，评估动态分片与准入阈值代码变更。\n\n④ 生债一条：席位无界而分片未就，主链共识负载将溢，此债记「扩容预案未竟，限流门未焊」。"
+}
