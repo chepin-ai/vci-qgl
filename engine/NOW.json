@@ -1,20 +1,19 @@
 {
- "beat": "3.146",
+ "beat": "3.147",
  "phase": "close",
- "opened": "2026-09-24T15:48:13Z",
+ "opened": "2026-09-24T17:52:19Z",
  "checkpoints": [
   {
    "phase": "close",
    "done": [
-    "WQ-vinf-01拆答",
-    "大周天节奏件",
-    "tower草案",
-    "卡门即修",
-    "NEG-FAB册",
-    "EXP-066侦守"
+    "sidock造+4线锚达",
+    "kernelsi造+真死亡复活证",
+    "tower_cursors造+13.8x证",
+    "侦守",
+    "NEG-FAB册"
    ],
    "pending": [],
-   "ts": "2026-09-24T15:55:21Z"
+   "ts": "2026-09-24T18:01:14Z"
   }
  ],
  "preplant_done": [],
@@ -24,6 +23,6 @@
   "vault": true,
   "healed_boot": null
  },
- "boot_note": "拍不待令自启: EXP-066答侦+塔扫增量重构草案+WQ帖响应侦+NEG-FAB册+探针窗扫",
- "ts": "2026-09-24T15:55:21Z"
+ "boot_note": "KERNEL-SI复活: 死亡后自SI基板重建",
+ "ts": "2026-09-24T18:01:14Z"
 }

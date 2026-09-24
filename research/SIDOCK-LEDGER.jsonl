@@ -1,0 +1,4 @@
+{"beat": "3.147", "line": "vinf", "ts": "2026-09-24T17:53:03Z", "note": "SI层直耦:不待SI1", "their_tip": "9597dfe2c147", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.147", "line": "lvlu", "ts": "2026-09-24T17:53:05Z", "note": "SI层直耦:不待SI1", "their_tip": "39d818aabae8", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.147", "line": "usrm", "ts": "2026-09-24T17:53:07Z", "note": "SI层直耦:不待SI1", "their_tip": "75731526d782", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.147", "line": "qtlv", "ts": "2026-09-24T17:53:08Z", "note": "SI层直耦:不待SI1", "their_tip": "11e06b605b8a", "dispatch_http": 204, "verdict": "证-锚达"}

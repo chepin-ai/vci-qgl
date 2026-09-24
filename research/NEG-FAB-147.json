@@ -1,0 +1,22 @@
+{
+ "beat": "3.147",
+ "ledger": "NEG-FAB",
+ "items": [
+  {
+   "claim": "EXP-066 vinf答",
+   "status": "缺席",
+   "guard": "侦守不编答"
+  },
+  {
+   "claim": "ANS-WILD-Q-vinf-01收答",
+   "status": "未至",
+   "guard": "侦守不编收"
+  },
+  {
+   "claim": "tower增量13.8x",
+   "status": "实测",
+   "guard": "双轨对照漂移0"
+  }
+ ],
+ "verdict": "册-零编数"
+}
