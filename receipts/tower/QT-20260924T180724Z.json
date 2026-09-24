@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-24T18:07:24Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILD-SURGE-R4-QGL-01.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n① 何事：野生突发涌入件（WILD-SURGE-R4），编号 QGL-01，系量子账本/go 线 inbox 未归类材料，可能涉协议草案、节点发现或接口补丁，来源与边界待验。\n\n② 与 qgl 主线何干：主线使命为“续锚”与“守联邦律法”。该 surge 若含 go 实现碎片或共识逻辑，则直接锚定主线；若为杂音，则侵蚀主线纯度，需速判其是否合律。\n\n③ 应动何件：先落仓 `QGL-VAULT/inbox/surge/r4-qgl-01.md` 做检疫拆解；若验出有效代码/规范，转 `qgl-go/drafts` 或 `qgl-spec/proposals`；若废件，封入 `vault/archive/rejected` 并记拒因。\n\n④ 生债一条：此件在 inbox 多留一刻，主线锚点就多一分漂移风险。债曰：尾生未拍，inbox 即债。"
+}
