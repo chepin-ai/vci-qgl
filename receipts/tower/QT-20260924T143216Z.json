@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-24T14:32:16Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILD-SURGE-R2-QGL-01.md"
+  }
+ ],
+ "verdict_memo": "①何事：野生surge到件，ref WILD-SURGE-R2-QGL-01，系外部非周期注入或断代遗珠，待勘验。  \n②与qgl主线何干：主线锚为量子账本Go实现，此件若携共识补丁、状态机碎片或侧链提案，则直触核心；若为异构噪音，则仅擦边联邦律法，需隔离。  \n③应动何件：暂押 `/vault/inbox/surge/`，启QGL-TRIAGE判型；可采迁 `/qgl/core/contrib/` 或 `/qgl/spec/v2/`，不可采封 `/vault/cold/rejected/`，挂尾生债签。  \n④生债一条：断代复活首务遇突件，今日不判不迁，即为尾生债，按联邦律法计息，限七十二时辰内清结。"
+}
