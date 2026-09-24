@@ -1,0 +1,16 @@
+{
+ "id": "DEBT-FIX-146-TOWER-INCREMENTAL",
+ "beat": "3.146",
+ "status": "草案-证",
+ "driver": "MEASURE-145 M4实测: tower_scan 54535.3ms/beat (最重)",
+ "problem": "全量扫每拍重枚举塔面(tower_scan全扫), O(全仓面)/拍",
+ "design": {
+  "core": "游标增量扫: 持久化last_seen_sha per塔面(vci-*/ci-*), 每拍仅GET ref比sha, 变则深扫不变则跳过",
+  "cursor_file": "engine/tower_cursors.json (sha per repo, 增不覆写)",
+  "fallback": "sha比对失败/新仓→全扫兜底",
+  "expected": "O(1) ref-GET per repo/拍 → 54.5s→~3-6s (N repos × ~600ms API)",
+  "risk": "ref比对漏目录内变? 否——任何content push必动branch sha, git语义保证"
+ },
+ "validation": "预注册先铸后跑: 3.147预注册→并行跑全扫vs增量扫双轨对照3拍→漂移=0则切轨",
+ "zero_fab": "本件=设计草案, 未实现, 不领性能证; 性能数字=推算非实测"
+}

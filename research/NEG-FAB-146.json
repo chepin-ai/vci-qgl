@@ -1,0 +1,22 @@
+{
+ "beat": "3.146",
+ "ledger": "NEG-FAB",
+ "items": [
+  {
+   "claim": "tower增量扫描性能推算3-6s",
+   "status": "推算-未实测",
+   "guard": "草案已标zero_fab"
+  },
+  {
+   "claim": "EXP-066 vinf答",
+   "status": "缺席-静默合法",
+   "guard": "侦守不编答"
+  },
+  {
+   "claim": "WQ帖lvlu响应",
+   "status": "缺席-静默合法",
+   "guard": "侦守不编响应"
+  }
+ ],
+ "verdict": "册-零编数"
+}

@@ -1,19 +1,14 @@
 {
- "beat": "3.145",
- "ts": "20260924T152754Z",
- "chain_seq": 1851,
- "head": "c664a05a9e53",
- "pc": 1,
- "ring": 137,
- "verdict": "证",
- "nmust": "9/9",
- "headline": "真机实测拍: emit 39ms / 验链3.2万囊/s / 耦合管线578ms / 20连发爆发存活——六件全证",
- "caps": {
-  "MEASURE-145": "a772b9e3dc84",
-  "DEBT-ADD": "fdfb57e0aae2",
-  "COUPLE-PIPELINE": "9748cb05e1b5"
+ "beat": "3.146",
+ "chain": 1873,
+ "pc": 2,
+ "headline": "野问拆答·节奏件首自燃·卡门即修拍",
+ "verdicts": {
+  "WQ-vinf-01答": "证",
+  "大周天": "证26/23",
+  "tower草案": "证",
+  "卡门修": "证",
+  "EXP-066": "侦守"
  },
- "measure": "research/MEASURE-145.json",
- "prev": "3.144",
- "prev_chain": 1777
+ "ts": "2026-09-24T15:55:00.429925+00:00"
 }

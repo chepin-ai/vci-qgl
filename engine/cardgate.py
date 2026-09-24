@@ -5,7 +5,7 @@ B8.1(3.141增, cfts座裁定级tier1强制·与suffix同级·不得降advisory):
 import json
 import re
 
-_ANCHOR_RE = re.compile(r"(fp|fingerprint|tip|cap|sha)[\"\s:]*[\"\']?[0-9a-f]{12}")
+_ANCHOR_RE = re.compile(r"(fp|fingerprint|tip|cap|sha|anchor)[\"\s:]*[\"\']?[0-9a-f]{12}")  # DEBT-FIX-146: 增anchor键(forge注入键名), errata seq5
 
 
 def self_gate(card_text, require_anchor=True):

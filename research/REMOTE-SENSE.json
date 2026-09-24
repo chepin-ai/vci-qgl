@@ -1,1 +1,13 @@
-{"beat": "3.145", "ts": "20260924T152732Z", "engine": "REMOTE-SENSE-01", "verdict": "册-波阻", "scanned": 0, "fetched": 0, "note": "403次级波贯穿本拍后段——盲态不轰, 空结果同铸; 上拍3.141收4538扫/150取在案(cap 785f917cdc82)"}
+{
+ "beat": "3.146",
+ "verdict": "册-实扫",
+ "scanned": 4,
+ "fetched": 6,
+ "detail": [
+  "vinf-inbox(EXP-066答缺席-侦守)",
+  "vci-qgl-inbox(WILD-Q-vinf-01拆答)",
+  "ci-inbox讨论室(162帖,lvlu未应-侦守)",
+  "WILD-Q-REGISTRY-02(17问,WQ-RAC-01 open)"
+ ],
+ "ts": "2026-09-24T15:55:00.429925+00:00"
+}

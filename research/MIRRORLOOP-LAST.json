@@ -1,1 +1,6 @@
-{"beat": "3.145", "ts": "20260924T151007Z", "mode": "seat-mirror-overwrite", "chain": 1849}
+{
+ "beat": "3.146",
+ "drift": 0,
+ "verdict": "零漂",
+ "ts": "2026-09-24T15:48:33.903164Z"
+}

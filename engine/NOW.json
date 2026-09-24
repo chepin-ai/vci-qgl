@@ -1,20 +1,20 @@
 {
- "beat": "3.145",
+ "beat": "3.146",
  "phase": "close",
- "opened": "2026-09-24T15:03:39Z",
+ "opened": "2026-09-24T15:48:13Z",
  "checkpoints": [
   {
    "phase": "close",
    "done": [
-    "MEASURE-145六件全证",
-    "耦合管线证",
-    "爆发存活证",
-    "债册+2",
-    "nmust9/9",
-    "PREPLANT-146"
+    "WQ-vinf-01拆答",
+    "大周天节奏件",
+    "tower草案",
+    "卡门即修",
+    "NEG-FAB册",
+    "EXP-066侦守"
    ],
    "pending": [],
-   "ts": "2026-09-24T15:27:54Z"
+   "ts": "2026-09-24T15:55:21Z"
   }
  ],
  "preplant_done": [],
@@ -24,6 +24,6 @@
   "vault": true,
   "healed_boot": null
  },
- "boot_note": "rebuild-2-measure",
- "ts": "2026-09-24T15:27:54Z"
+ "boot_note": "拍不待令自启: EXP-066答侦+塔扫增量重构草案+WQ帖响应侦+NEG-FAB册+探针窗扫",
+ "ts": "2026-09-24T15:55:21Z"
 }
