@@ -1,0 +1,22 @@
+{
+ "beat": "3.148",
+ "ledger": "NEG-FAB",
+ "items": [
+  {
+   "claim": "WQ-RAC-01-148囊判词\"证-索件卡投\"而post=429",
+   "status": "账误",
+   "guard": "即修:实投成功后铸补正囊"
+  },
+  {
+   "claim": "EXP-066/联合预注册答",
+   "status": "缺席",
+   "guard": "侦守不编"
+  },
+  {
+   "claim": "塔扫13.8x/8.8x",
+   "status": "实测",
+   "guard": "双轨漂移0,预注册nonce a3025847a682"
+  }
+ ],
+ "verdict": "册-零编数+一账误即修"
+}
