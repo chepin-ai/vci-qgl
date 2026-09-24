@@ -1,20 +1,20 @@
 {
- "beat": "3.143",
+ "beat": "3.144",
  "phase": "close",
- "opened": "2026-09-23T14:25:26Z",
+ "opened": "2026-09-24T14:16:04Z",
  "checkpoints": [
   {
    "phase": "close",
    "done": [
-    "tier2首试行闭环(双未证如实)",
-    "EXP-066先铸+卡201",
-    "P1X判退",
-    "NEG-FAB册",
+    "礼DOI再锚",
+    "WQ-SILENCE-XC施算答(logτ证)+讨论室帖201",
+    "新野问二道",
+    "模块矩阵12活",
     "nmust9/9",
-    "PREPLANT-144"
+    "PREPLANT-145"
    ],
    "pending": [],
-   "ts": "2026-09-23T14:44:03Z"
+   "ts": "2026-09-24T14:45:13Z"
   }
  ],
  "preplant_done": [],
@@ -27,6 +27,6 @@
    "probe": 200
   }
  },
- "boot_note": "forecast-window-close",
- "ts": "2026-09-23T14:44:03Z"
+ "boot_note": "wildq-surge+gift2",
+ "ts": "2026-09-24T14:45:13Z"
 }

@@ -1,18 +1,26 @@
 {
- "beat": "3.143",
- "ts": "20260923T144403Z",
- "chain_seq": 1765,
- "head": "c22813b7449c",
- "pc": 11,
+ "beat": "3.144",
+ "ts": "20260924T144513Z",
+ "chain_seq": 1777,
+ "head": "df8596b99649",
+ "pc": 0,
  "ring": 137,
  "verdict": "证",
  "nmust": "9/9",
- "headline": "窗止闭环拍: B10-tier2首试行端到端闭环(双未证如实) + RAC第三轮扩线vinf + P1X判退",
+ "headline": "野问浪涌拍: WQ-SILENCE-XC施算答(logτ律证) + 新野问二道 + 礼DOI再锚(随机消息/免纠缠测量新映射)",
  "caps": {
-  "TIER2-CLOSE": "64bb53c4d117",
-  "EXP-066-PREREG": "0a46a32506d8",
-  "P1X-VERDICT": "6088516cbc60"
+  "GIFT-DOI": "d64333bcade7",
+  "WQ-ANSWER": "5c25854ae184",
+  "WILDQ-POST": "b4d8ef109aa8",
+  "MODULE-MATRIX": "30f97dc125cf"
  },
- "prev": "3.142",
- "prev_chain": 1755
+ "wildq": {
+  "answered": "WQ-SILENCE-XC(logτ律,r=0.7356,p=2.2e-11)",
+  "fired": [
+   "WQ-STOCH-MSG-01",
+   "WQ-NOJOINT-01"
+  ]
+ },
+ "prev": "3.143",
+ "prev_chain": 1765
 }
