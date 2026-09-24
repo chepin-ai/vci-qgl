@@ -1,20 +1,20 @@
 {
- "beat": "3.144",
+ "beat": "3.145",
  "phase": "close",
- "opened": "2026-09-24T14:16:04Z",
+ "opened": "2026-09-24T15:03:39Z",
  "checkpoints": [
   {
    "phase": "close",
    "done": [
-    "礼DOI再锚",
-    "WQ-SILENCE-XC施算答(logτ证)+讨论室帖201",
-    "新野问二道",
-    "模块矩阵12活",
+    "MEASURE-145六件全证",
+    "耦合管线证",
+    "爆发存活证",
+    "债册+2",
     "nmust9/9",
-    "PREPLANT-145"
+    "PREPLANT-146"
    ],
    "pending": [],
-   "ts": "2026-09-24T14:45:13Z"
+   "ts": "2026-09-24T15:27:54Z"
   }
  ],
  "preplant_done": [],
@@ -22,11 +22,8 @@
  "pending": [],
  "key": {
   "vault": true,
-  "healed_boot": {
-   "healed": true,
-   "probe": 200
-  }
+  "healed_boot": null
  },
- "boot_note": "wildq-surge+gift2",
- "ts": "2026-09-24T14:45:13Z"
+ "boot_note": "rebuild-2-measure",
+ "ts": "2026-09-24T15:27:54Z"
 }

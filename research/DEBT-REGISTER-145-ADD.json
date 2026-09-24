@@ -1,0 +1,19 @@
+{
+ "beat": "3.145",
+ "addendum_of": "research/DEBT-REGISTER-138.json",
+ "ts": "20260924T151007Z",
+ "new_items": [
+  {
+   "item": "tower_scan 54.5s/beat(实测MEASURE-145)",
+   "class": "B_本线工程债",
+   "disposition": "候重构: 链扫增量化(记录上次扫位)+glob限深; 非阻塞, 拍内容纳"
+  },
+  {
+   "item": "beacon_check 17.5s/beat(实测)",
+   "class": "B_本线工程债",
+   "disposition": "同上——probe glob结果缓存化"
+  }
+ ],
+ "source": "MEASURE-145 M4实测",
+ "verdict": "册"
+}

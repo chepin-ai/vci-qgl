@@ -1,0 +1,52 @@
+{
+ "battery": "MEASURE-145",
+ "prereg": "dc4519b4089a",
+ "M1_emit_latency_ms": {
+  "mean": 39.0,
+  "p50": 38.9,
+  "p95": 40.5,
+  "max": 40.9,
+  "n": 10,
+  "note": "含锚自动注入+compliance级联"
+ },
+ "M2_verify_chain": {
+  "s_per_run": [
+   0.05,
+   0.06,
+   0.06
+  ],
+  "caps_per_s": 32092.6,
+  "chain_at": 1802
+ },
+ "M3_api_latency_ms": {
+  "samples": [
+   672.4,
+   609.5,
+   604.5
+  ],
+  "endpoint": "/rate_limit(豁免面)",
+  "remaining": 5000
+ },
+ "M4_module_ms": {
+  "si_drive": 86.6,
+  "tower_scan": 54535.3,
+  "zhoutian": 245.1,
+  "beacon_check": 17486.8,
+  "finding": "tower_scan=54.5s与beacon_check=17.5s为最重模块——链扫+glob所致, 工程债候选(非阻塞)"
+ },
+ "M5_coupling": {
+  "pipeline": "cardgate→capsule→dimwit→verify",
+  "ms": 577.8,
+  "all_pass": true
+ },
+ "M6_burst": {
+  "n": 20,
+  "ms": 939.8,
+  "per_emit": 47.0,
+  "kernel_alive": true,
+  "post_chain": "OK 1848"
+ },
+ "kernel_deaths_this_beat": 1,
+ "zero_fab": true,
+ "ts": "20260924T150935Z"
+}

@@ -1,26 +1,19 @@
 {
- "beat": "3.144",
- "ts": "20260924T144513Z",
- "chain_seq": 1777,
- "head": "df8596b99649",
- "pc": 0,
+ "beat": "3.145",
+ "ts": "20260924T152754Z",
+ "chain_seq": 1851,
+ "head": "c664a05a9e53",
+ "pc": 1,
  "ring": 137,
  "verdict": "证",
  "nmust": "9/9",
- "headline": "野问浪涌拍: WQ-SILENCE-XC施算答(logτ律证) + 新野问二道 + 礼DOI再锚(随机消息/免纠缠测量新映射)",
+ "headline": "真机实测拍: emit 39ms / 验链3.2万囊/s / 耦合管线578ms / 20连发爆发存活——六件全证",
  "caps": {
-  "GIFT-DOI": "d64333bcade7",
-  "WQ-ANSWER": "5c25854ae184",
-  "WILDQ-POST": "b4d8ef109aa8",
-  "MODULE-MATRIX": "30f97dc125cf"
+  "MEASURE-145": "a772b9e3dc84",
+  "DEBT-ADD": "fdfb57e0aae2",
+  "COUPLE-PIPELINE": "9748cb05e1b5"
  },
- "wildq": {
-  "answered": "WQ-SILENCE-XC(logτ律,r=0.7356,p=2.2e-11)",
-  "fired": [
-   "WQ-STOCH-MSG-01",
-   "WQ-NOJOINT-01"
-  ]
- },
- "prev": "3.143",
- "prev_chain": 1765
+ "measure": "research/MEASURE-145.json",
+ "prev": "3.144",
+ "prev_chain": 1777
 }
