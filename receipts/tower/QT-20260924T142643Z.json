@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-24T14:26:43Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILD-SURGE-R1-QGL-01.md"
+  }
+ ],
+ "verdict_memo": "① 野生 surge（WILD-SURGE-R1）突入收件箱，未经联邦共识网关校验，属无序原始增量投递。  \n② 量子账本/go 主线以共识状态机为骨，此 surge 若携非共识逻辑或侧链碎片，将污染主锚。须辨其是野码投毒，还是散落的协议拼图。  \n③ 应动：先封入 `/inbox/triage/` 隔离洗码；若提取出有效 QGL 协议碎片，则净身后落仓 `/spec/draft/` 并挂起合并请求（`pending/federation-review`），严禁直入主分支。  \n④ 生债：本次甄别与隔离操作记入联邦运维尾生债；若终判定为无效 surge，误审机会成本亦归本工位承担，待后续会话清偿。"
+}
