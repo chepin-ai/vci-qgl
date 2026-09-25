@@ -21,7 +21,7 @@ concurrency:
 jobs:
   drive:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -35,6 +35,8 @@ jobs:
           AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
           GITHUB_TOKEN: ${{ github.token }}
           SELFTEST_INPUT: ${{ github.event.inputs.selftest }}
+          CASCADE_PAYLOAD: ${{ toJson(github.event.client_payload) }}
+          CASCADE_SLEEP_S: '600'
         run: |
           if [ "$SELFTEST_INPUT" = "yes" ]; then
             python3 ci/line_drive.py --selftest

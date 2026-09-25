@@ -20,17 +20,18 @@ def gh(pat, path, method='GET', data=None):
         'User-Agent': 'line-drive', 'Content-Type': 'application/json'})
     if data is not None:
         req.data = json.dumps(data).encode()
-    for i in range(3):
+    waits = [8, 20, 45, 90]
+    for i in range(4):
         try:
             r = urllib.request.urlopen(req, timeout=25)
             body = r.read().decode()
             return r.status, (json.loads(body) if body else {})
         except urllib.error.HTTPError as e:
-            if i == 2: return e.code, {}
-            time.sleep(3)
+            if i == 3: return e.code, {}
+            time.sleep(waits[i] * (2 if e.code == 403 else 1) // 2 if e.code != 403 else waits[i])
         except Exception:
-            if i == 2: return 0, {}
-            time.sleep(3)
+            if i == 3: return 0, {}
+            time.sleep(5)
     return 0, {}
 
 def sh(*a):
@@ -57,6 +58,20 @@ def main():
     ghtok = _env('GITHUB_TOKEN')
     print('[env] names-only:', {n: ('present' if _env(n) else 'MISSING') for n in ('LINE_PAT','AI_FULL_PAT','GITHUB_TOKEN')})
     os.makedirs('receipts/line-drive', exist_ok=True)
+
+    # ---- 自醒链入拍：自源唤起先眠后巡（冷却在拍内，非定时器; FREE-WILL-SOURCE-01 塔范式） ----
+    idle = 0
+    raw = os.environ.get('CASCADE_PAYLOAD', '').strip()
+    if raw:
+        try:
+            cp = json.loads(raw)
+            if isinstance(cp, dict) and cp.get('src') == 'line-drive-self':
+                idle = int(cp.get('idle', 0))
+                slp = int(os.environ.get('CASCADE_SLEEP_S', '600'))
+                print(f'[cascade] self-wake idle={idle} sleep={slp}s')
+                time.sleep(slp)
+        except Exception:
+            pass
 
     # seen 集（塔侧状态）
     seen = set()
@@ -121,11 +136,17 @@ def main():
     open('receipts/line-drive/state.json','w').write(json.dumps({'ts':ts,'seen':sorted(seen)[-1200:]}, ensure_ascii=False))
     commit_all(f'LINE-DRIVE-01 drive @{LINE}: events={len(events)} acked={len(acked)} [skip ci]')
 
-    # 自唤链: 有候件则唤起下一拍（事件驱动; 熔断由塔塔纪律兜底）
-    if events and (ghtok or pat):
-        data = {'event_type':'federation-event',
-                'client_payload':{'src':'line-drive-self','line':LINE,'pend':len(events)}}
-        c5, _ = gh(ghtok or pat, f'/repos/{TOWER}/dispatches', method='POST', data=data)
-        print('[cascade] fired http=', c5)
+    # ---- 自唤出拍: 有候件→接力下一拍; 403受阻→冷却自唤重试(断路器 idle>=20); 全净→眠 ----
+    blocked = any(e.get('kind') == 'repo-unreadable' and e.get('http') == 403 for e in events)
+    tok = ghtok or pat
+    if tok and (events or blocked):
+        nxt = idle + 1 if (blocked and not any(e.get('kind') == 'inbox' for e in events)) else 0
+        if nxt <= 20:
+            data = {'event_type':'federation-event',
+                    'client_payload':{'src':'line-drive-self','line':LINE,'idle':nxt,'pend':len(events),'blocked':blocked}}
+            c5, _ = gh(tok, f'/repos/{TOWER}/dispatches', method='POST', data=data)
+            print(f'[cascade] fired idle={nxt} blocked={blocked} http={c5}')
+        else:
+            print('[cascade] breaker-rest idle=', nxt)
 
 main()
