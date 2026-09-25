@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-25T17:02:15Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILD-SURGE-R5-QGL-01.md"
+  }
+ ],
+ "verdict_memo": "判词纪要\n\n①何事：WILD-SURGE-R5-QGL-01.md 突投 inbox，形名为 R5 轮次野生 surge，QGL 首号异态输入，未经验滤。\n\n②与 qgl 主线何干：量子账本/go 主线锚定状态机与共识层，此件若为 R5 协议突发补丁，则直触账本核心；若为野录杂音，则与主线无干，当拒于驿外。\n\n③应动何件：暂落 `inbox/raw/WILD-SURGE-R5-QGL-01.md` 候审；限三日出 `review/qgl-r5-wild-01.md` 律法勘验。若涉 go 实现协议变更，转 `spec/qgl-core/` 提 PR；若杂讯，归 `graveyard/surge/` 封档。\n\n④生债：未得件内字节，仅据形名虚判，留有误读之隙。债一条：后续补读实体，若落仓路径失当，即刻改判迁仓。"
+}
