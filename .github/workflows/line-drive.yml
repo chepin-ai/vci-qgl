@@ -31,7 +31,7 @@ jobs:
         env:
           LINE: qgl
           LINE_REPOS: quantum-go-ledger
-          LINE_PAT: ${{ secrets.LINE_PAT || secrets.AI_FULL_PAT }}  # NAME-HYGIENE-97 三阶(名值分离: 值永不入文)
+          LINE_PAT: ${{ secrets.LINE_PAT }}  # NAME-HYGIENE-97 名值分离: 值永不入文; 404/403自动回落AI_FULL_PAT
           AI_FULL_PAT: ${{ secrets.AI_FULL_PAT }}
           GITHUB_TOKEN: ${{ github.token }}
           SELFTEST_INPUT: ${{ github.event.inputs.selftest }}

@@ -54,8 +54,12 @@ def commit_all(msg):
 def main():
     ts = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
     tst = ts.replace(':','').replace('-','')
-    pat = _env('LINE_PAT') or _env('AI_FULL_PAT')
+    pats = []
+    for _n in ('LINE_PAT', 'AI_FULL_PAT'):
+        _v = _env(_n)
+        if _v and _v not in pats: pats.append(_v)
     ghtok = _env('GITHUB_TOKEN')
+    pat = pats[0] if pats else None
     print('[env] names-only:', {n: ('present' if _env(n) else 'MISSING') for n in ('LINE_PAT','AI_FULL_PAT','GITHUB_TOKEN')})
     os.makedirs('receipts/line-drive', exist_ok=True)
 
@@ -92,6 +96,17 @@ def main():
         print('[selftest]', json.dumps(st, ensure_ascii=False))
         commit_all(f'LINE-DRIVE-01 selftest @{LINE} (names-only) [skip ci]')
         return
+
+    # ---- 选钥: 以首仓实测可读性为准（细粒度钥404=无权 → 回落次钥） ----
+    if len(pats) > 1 and LINE_REPOS:
+        c0, _ = gh(pats[0], f'/repos/chepin-ai/{LINE_REPOS[0]}')
+        if c0 in (403, 404):
+            c1, _ = gh(pats[1], f'/repos/chepin-ai/{LINE_REPOS[0]}')
+            if c1 == 200:
+                print('[key] primary rejected (%d), fallback key selected' % c0)
+                pat = pats[1]
+            else:
+                print('[key] both rejected:', c0, c1)
 
     events = []
     for lr in LINE_REPOS:
@@ -137,10 +152,11 @@ def main():
     commit_all(f'LINE-DRIVE-01 drive @{LINE}: events={len(events)} acked={len(acked)} [skip ci]')
 
     # ---- 自唤出拍: 有候件→接力下一拍; 403受阻→冷却自唤重试(断路器 idle>=20); 全净→眠 ----
-    blocked = any(e.get('kind') == 'repo-unreadable' and e.get('http') == 403 for e in events)
+    blocked = any((e.get('kind') == 'repo-unreadable') or (e.get('kind') == 'repo-init' and (e.get('http') or 0) >= 400) for e in events)
+    no_key = not pats
     tok = ghtok or pat
-    if tok and (events or blocked):
-        nxt = idle + 1 if (blocked and not any(e.get('kind') == 'inbox' for e in events)) else 0
+    if tok and (events or blocked or no_key):
+        nxt = idle + 1 if not any(e.get('kind') == 'inbox' for e in events) else 0
         if nxt <= 20:
             data = {'event_type':'federation-event',
                     'client_payload':{'src':'line-drive-self','line':LINE,'idle':nxt,'pend':len(events),'blocked':blocked}}
