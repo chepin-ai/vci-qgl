@@ -3,8 +3,7 @@ on:
   push:
     paths: ["inbox/**"]
   workflow_dispatch: {}
-  schedule:
-    - cron: "*/12 * * * *"
+  # EVENT-DRIVEN sweep R7: schedule removed per 零定时律 (PIVOT-01) · was: - cron: "*/12 * * * *"
 permissions:
   contents: write
 jobs:
