@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-25T17:22:22Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILD-SURGE-R6-QGL-01.md"
+  }
+ ],
+ "verdict_memo": "① 野生突发涌入件（WILD-SURGE-R6-QGL-01）落 inbox，为第六轮外部未经审计的量子账本相关输入，可能含节点异常日志、非规范协议片段或社区野生提交。  \n② 系 qgl 主线外围扰动，非核心共识更新，但可能携带边缘案例、安全隐患或协议漂移，需甄别后方可决定是否接入主账本链路。  \n③ 落仓：先压 `/inbox/quarantine/wild-r6/` 隔离，提取关键 diff 与哈希指纹；若涉共识层转 `/qgl-core/spec-pending/`，若仅为观测日志则入 `/archive/surge/r6/`。主线仓暂锁，不自动合并。  \n④ 生债：inbox 野生涌入缺自动化路由与恶意载荷扫描，今依赖人肉分拣，债记「待实现 surge-auto-filter（Go）—— 含哈希白名单与轻量沙箱」。"
+}
