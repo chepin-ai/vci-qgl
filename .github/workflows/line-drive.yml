@@ -27,7 +27,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: line-drive（公域驱动私域: 读私域inbox→收执→回写私域outbox→落账→自唤）
+      - name: line-drive·公域驱动私域·读私域inbox→收执→回写私域outbox→落账→自唤
         env:
           LINE: qgl
           LINE_REPOS: quantum-go-ledger
