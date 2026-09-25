@@ -105,7 +105,7 @@ def main():
     acked = []
     for e in events:
         if e.get('kind') != 'inbox' or not pat: continue
-        lr, name = e['repo'], e['name']
+        lr, name = e['repo'], e['ref']
         ack = {'v':'LINE-DRIVE-01','ts':ts,'tower':TOWER,'line':LINE,
                'src':f'inbox/{name}','head_excerpt':e.get('head','')[:300],
                'law':'公域CI通道驱动私域CI; 名值分离; 事件驱动'}
