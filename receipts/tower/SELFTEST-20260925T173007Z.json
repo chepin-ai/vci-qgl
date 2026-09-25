@@ -1,0 +1,14 @@
+{
+ "ts": "2026-09-25T17:30:07Z",
+ "names": {
+  "KIMI_API_KEY": "present",
+  "LINE_PAT": "present",
+  "GITHUB_TOKEN": "present",
+  "〈RED〉": "MISSING",
+  "DEEPSEEK_API_KEY": "present",
+  "LONGCAT_API_KEY": "present",
+  "CMD_AUTH": "MISSING"
+ },
+ "kimi_models_http": 200,
+ "gh_whoami": "FAIL"
+}
