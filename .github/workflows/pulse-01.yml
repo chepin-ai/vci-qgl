@@ -102,6 +102,14 @@ jobs:
                   except Exception as e: peer_res='fail:'+str(e)[:60]
           
           json.dump(st,open(stf,'w'),ensure_ascii=False)
+          # 推送须以hub App IT为凭证——GITHUB_TOKEN推送不触发下游workflow(环防律),SR-05依赖push事件
+          if not IT:
+              try: IT=mint_it()
+              except Exception: IT=None
+          if IT:
+              subprocess.run(['git','remote','set-url','origin','https://x-access-token:'+IT+'@github.com/chepin-ai/vci-'+LINE+'.git'],capture_output=True)
+          else:
+              print(json.dumps({'honest_gap':'no-hub-IT, push will not trigger SR-05'}))
           subprocess.run(['git','config','user.name',LINE+'-pulse']); subprocess.run(['git','config','user.email','pulse@ci'])
           subprocess.run(['git','add','si',INBOX])
           c=subprocess.run(['git','commit','-m','PULSE-01 '+ts+' n='+str(st['pulse_n'])+' delta='+str(bool(delta))],capture_output=True,text=True)
