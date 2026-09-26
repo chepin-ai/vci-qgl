@@ -1,0 +1,126 @@
+name: ISSUE-AUTORESP-01 (qgl线issue自动追踪应答轨·环闸防风暴)
+'on':
+  issues:
+    types: [opened]
+  issue_comment:
+    types: [created]
+  workflow_dispatch:
+permissions:
+  contents: write
+  issues: write
+env:
+  IA_LINE: qgl
+  EV_NAME: ${{ github.event_name }}
+  ISSUE_N: ${{ github.event.issue.number }}
+  ISSUE_TITLE: ${{ github.event.issue.title }}
+  ISSUE_BODY: ${{ github.event.issue.body }}
+  COMMENT_BODY: ${{ github.event.comment.body }}
+  AUTHOR: ${{ github.event.sender.login }}
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
+  DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+jobs:
+  autoresp:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: issue-autorespond
+        run: |
+          python3 - <<'PYEOF'
+          import os,json,subprocess,datetime,hashlib,urllib.request,urllib.error
+          LINE=os.environ.get('IA_LINE','usrm')
+          NL=chr(10)
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          EV=os.environ.get('EV_NAME','')
+          N=os.environ.get('ISSUE_N','')
+          TITLE=os.environ.get('ISSUE_TITLE','')[:200]
+          IBODY=os.environ.get('ISSUE_BODY','')[:1500]
+          CBODY=os.environ.get('COMMENT_BODY','')[:1500]
+          AUTHOR=os.environ.get('AUTHOR','')
+          GH=os.environ.get('GH_TOKEN','')
+          # 环闸: bot作者/自身答痕 不答(防风暴防自环)
+          if AUTHOR.endswith('[bot]'):
+              print(json.dumps({'skip':'bot-author','author':AUTHOR})); raise SystemExit(0)
+          if '[SI1自动应答]' in IBODY+CBODY:
+              print(json.dumps({'skip':'self-answer-marker'})); raise SystemExit(0)
+          q=(CBODY if CBODY.strip() else IBODY).strip()
+          if not q:
+              print(json.dumps({'skip':'empty'})); raise SystemExit(0)
+          q='【issue #'+N+' '+TITLE+'】'+NL+q
+          
+          def llm(question):
+              key=os.environ.get('KIMI_API_KEY','')
+              if key:
+                  base='https://api.moonshot.cn/v1'
+                  H={'Authorization':'Bearer '+key,'Content-Type':'application/json'}
+                  try:
+                      rq=urllib.request.Request(base+'/models',headers=H)
+                      ms=json.loads(urllib.request.urlopen(rq,timeout=20).read()).get('data',[])
+                      cands=[m['id'] for m in ms]
+                  except Exception: cands=[]
+                  for model in cands[:6]:
+                      body={'model':model,'messages':[
+                          {'role':'system','content':'你是'+LINE+'线SI1席层应答机。以联邦纪律(诚实缺口/三即律/负结果入册/级名不滥)作答,务实精炼,中文,200-400字。'},
+                          {'role':'user','content':question}]}
+                      try:
+                          rq=urllib.request.Request(base+'/chat/completions',data=json.dumps(body).encode(),headers=H,method='POST')
+                          d=json.loads(urllib.request.urlopen(rq,timeout=90).read())
+                          return {'engine':'KIMI','model':model,'usage':d.get('usage',{}),'answer':d['choices'][0]['message']['content']}
+                      except Exception as e:
+                          print(json.dumps({'llm_fail':model,'err':str(e)[:60]})); continue
+              dk=os.environ.get('DEEPSEEK_API_KEY','')
+              if dk:
+                  try:
+                      body={'model':'deepseek-chat','messages':[{'role':'user','content':question[:1500]}]}
+                      rq=urllib.request.Request('https://api.deepseek.com/v1/chat/completions',data=json.dumps(body).encode(),
+                          headers={'Authorization':'Bearer '+dk,'Content-Type':'application/json'},method='POST')
+                      d=json.loads(urllib.request.urlopen(rq,timeout=90).read())
+                      return {'engine':'DEEPSEEK','model':'deepseek-chat','usage':d.get('usage',{}),'answer':d['choices'][0]['message']['content']}
+                  except Exception as e: print(json.dumps({'ds_fail':str(e)[:60]}))
+              return None
+          
+          # 互锚验(公域匿名道)
+          tip=None
+          try:
+              rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-vinf/contents/outbox-tip',
+                  headers={'Accept':'application/vnd.github+json','User-Agent':'issue-autoresp'})
+              tl=[x['name'] for x in json.loads(urllib.request.urlopen(rq,timeout=20).read()) if x['name'].startswith('TIP-')]
+              if tl: tip=sorted(tl)[-1].split('-')[-1].replace('.json','')
+          except Exception: tip=None
+          
+          r=llm(q)
+          if not r:
+              ans='(LLM道暂闭——诚实缺口,待下拍重试)'
+          else:
+              ans=r['answer']
+          reply=NL.join(['[SI1自动应答·'+LINE+'线SI1席·互锚验fp='+str(tip)+']','',ans,'','—— '+LINE+' ISSUE-AUTORESP-01 '+ts])
+          # 回评入issue
+          if GH and N:
+              try:
+                  rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-'+LINE+'/issues/'+N+'/comments',
+                      data=json.dumps({'body':reply}).encode(),method='POST',
+                      headers={'Authorization':'Bearer '+GH,'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+                  rc=urllib.request.urlopen(rq,timeout=30).status
+              except Exception as e: rc='fail:'+str(e)[:60]
+          else: rc='no-token'
+          # 留痕入issue-trail(不入inbox,免SR-05重复答)
+          os.makedirs('issue-trail',exist_ok=True)
+          rec=NL.join(['CLASSIFY: L2('+LINE+'线issue自动应答留痕)','# ISSUE-'+str(N)+'-'+ts,'',
+              '事件: '+EV+'｜作者: '+AUTHOR,'问: '+q,'','引擎: '+(r['engine']+'/'+r['model'] if r else 'NONE'),'答fp: '+hashlib.sha256(ans.encode()).hexdigest()[:12],'回评状态: '+str(rc),'',reply])
+          open('issue-trail/ISSUE-'+str(N)+'-'+ts+'.md','w').write(rec)
+          subprocess.run(['git','config','user.name',LINE+'-issue-autoresp']); subprocess.run(['git','config','user.email','ia@ci'])
+          subprocess.run(['git','add','issue-trail'])
+          c=subprocess.run(['git','commit','-m','ISSUE-AUTORESP #'+str(N)+' '+ts],capture_output=True,text=True)
+          push='skip'
+          if c.returncode==0:
+              import time as _t
+              for i in range(3):
+                  subprocess.run(['git','fetch','-q','origin','main'],capture_output=True)
+                  rb=subprocess.run(['git','rebase','origin/main'],capture_output=True,text=True)
+                  qq=subprocess.run(['git','push','-q','origin','HEAD:main'],capture_output=True,text=True)
+                  if qq.returncode==0: push='ok'; break
+                  if rb.returncode!=0: subprocess.run(['git','rebase','--abort'],capture_output=True)
+                  _t.sleep(2+i*2)
+              else: push='fail'
+          print(json.dumps({'line':LINE,'ts':ts,'issue':N,'comment_status':rc,'engine':(r['engine'] if r else None),'push':push},ensure_ascii=False))
+          PYEOF
