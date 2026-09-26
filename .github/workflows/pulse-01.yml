@@ -1,0 +1,120 @@
+name: PULSE-01 (qgl线SI1自激-互激自发启动轨·态变触发·节流防风暴)
+'on':
+  schedule:
+    - cron: '14,44 * * * *'
+  workflow_dispatch:
+permissions:
+  contents: write
+env:
+  PULSE_LINE: qgl
+  PULSE_INBOX: inbox
+  BASE_BR: main
+  HUB_APP_PEM: ${{ secrets.HUB_APP_PEM }}
+  HUB_APP_ID: ${{ secrets.HUB_APP_ID }}
+  HUB_APP_INSTALLATION: ${{ secrets.HUB_APP_INSTALLATION }}
+jobs:
+  pulse:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: deps
+        run: pip install -q pyjwt cryptography
+      - name: pulse
+        run: |
+          python3 - <<PYEOF
+          import os,json,subprocess,datetime,hashlib,urllib.request,urllib.error,base64
+          LINE= os.environ.get('PULSE_LINE','usrm')
+          INBOX= os.environ.get('PULSE_INBOX','inbox')
+          NL=chr(10)
+          ts=datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
+          os.makedirs('si',exist_ok=True); os.makedirs(INBOX,exist_ok=True)
+          stf='si/pulse-state.json'
+          try: st=json.load(open(stf))
+          except Exception: st={}
+          st.setdefault('tip_fp',None); st.setdefault('ledger_seq',0); st.setdefault('pulse_n',0)
+          st['pulse_n']+=1
+          
+          def mint_it():
+              import jwt,time as _t
+              pem=os.environ.get('HUB_APP_PEM',''); appid=os.environ.get('HUB_APP_ID',''); inst=os.environ.get('HUB_APP_INSTALLATION','')
+              if not (pem and appid and inst): return None
+              now=int(_t.time())
+              t=jwt.encode({'iat':now-60,'exp':now+540,'iss':appid},pem,algorithm='RS256')
+              rq=urllib.request.Request('https://api.github.com/app/installations/'+str(inst)+'/access_tokens',
+                  data=b'{}',method='POST',headers={'Authorization':'Bearer '+t,'Accept':'application/vnd.github+json'})
+              return json.loads(urllib.request.urlopen(rq,timeout=30).read())['token']
+          
+          # 信号一: vinf链尖fp(公域匿名道)
+          tip=None
+          try:
+              rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-vinf/contents/outbox-tip',
+                  headers={'Accept':'application/vnd.github+json','User-Agent':'pulse-01'})
+              tl=[x['name'] for x in json.loads(urllib.request.urlopen(rq,timeout=20).read()) if x['name'].startswith('TIP-')]
+              if tl: tip=sorted(tl)[-1].split('-')[-1].replace('.json','')
+          except Exception as e: tip=None
+          
+          # 信号二: 联邦账seq(私仓·hub IT道)
+          seq=None; IT=None
+          try:
+              IT=mint_it()
+              if IT:
+                  rq=urllib.request.Request('https://raw.githubusercontent.com/chepin-ai/ci-control/main/bridge/stream-ledger.jsonl',
+                      headers={'Authorization':'Bearer '+IT,'User-Agent':'pulse-01'})
+                  raw=urllib.request.urlopen(rq,timeout=30).read().decode()
+                  seq=json.loads(raw.strip().splitlines()[-1])['seq']
+          except Exception as e: seq=None
+          
+          delta=(tip and tip!=st['tip_fp']) or (isinstance(seq,int) and seq!=st['ledger_seq'])
+          made=[]
+          if delta:
+              q='联邦态变自激: vinf链尖fp '+str(st['tip_fp'])+'→'+str(tip)+'; 账seq '+str(st['ledger_seq'])+'→'+str(seq)+'。问本席: 此态变于尔线何义? 尔线当周可有何自主动作(一事一议)? 位格申报,限300字。'
+              nm='PULSE-'+LINE.upper()+'-'+ts+'.md'
+              card=NL.join(['CLASSIFY: L1('+LINE+'线PULSE-01自激卡·态变触发自发启动)','',
+                  '```json',json.dumps({'ask':q,'from':LINE+'-pulse','vinf_tip_fp':tip,'ts':ts},ensure_ascii=False),'```','',
+                  '问本席: '+q,'—— '+LINE+' PULSE-01 #noauto'])
+              open(os.path.join(INBOX,nm),'w').write(card); made.append(nm)
+              if tip: st['tip_fp']=tip
+              if isinstance(seq,int): st['ledger_seq']=seq
+          
+          # 互激环: 每8拍(约4h)向邻线投一卡(节流·防风暴)
+          RING={'usrm':'cfts','cfts':'qgl','qgl':'ucif2','ucif2':'vinf','vinf':'usrm'}
+          PEER_PATH={'usrm':'inbox','cfts':'inbox','qgl':'inbox','ucif2':'inbox','vinf':'lanes/vinf/inbox'}
+          peer_res=None
+          if st['pulse_n']%8==0 and IT:
+              peer=RING.get(LINE)
+              if peer:
+                  pq='互激环卡·来自'+LINE+'线: 尔线当前最关心的一个未决问题是什么? 需要何线何种协作? 位格申报,限300字。'
+                  pnm='PULSE-RING-'+LINE.upper()+'-TO-'+peer.upper()+'-'+ts+'.md'
+                  pcard=NL.join(['CLASSIFY: L1('+LINE+'→'+peer+' 互激环卡·PULSE-01)','',
+                      '```json',json.dumps({'ask':pq,'from':LINE+'-pulse-ring','vinf_tip_fp':st.get('tip_fp'),'ts':ts},ensure_ascii=False),'```','',
+                      '问'+peer+'席: '+pq,'—— '+LINE+' PULSE-01 #noauto'])
+                  try:
+                      api_base='https://api.github.com/repos/chepin-ai/vci-'+peer+'/contents/'+PEER_PATH[peer]+'/'+pnm
+                      rq=urllib.request.Request(api_base,headers={'Authorization':'Bearer '+IT,'Accept':'application/vnd.github+json'})
+                      try:
+                          old=json.loads(urllib.request.urlopen(rq,timeout=20).read()); sha=old.get('sha')
+                      except urllib.error.HTTPError: sha=None
+                      body={'message':'pulse-ring: '+LINE+'→'+peer+' '+ts,'content':base64.b64encode(pcard.encode()).decode()}
+                      if sha: body['sha']=sha
+                      rq2=urllib.request.Request(api_base,data=json.dumps(body).encode(),method='PUT',
+                          headers={'Authorization':'Bearer '+IT,'Accept':'application/vnd.github+json','Content-Type':'application/json'})
+                      resp=urllib.request.urlopen(rq2,timeout=30); peer_res=resp.status
+                  except Exception as e: peer_res='fail:'+str(e)[:60]
+          
+          json.dump(st,open(stf,'w'),ensure_ascii=False)
+          subprocess.run(['git','config','user.name',LINE+'-pulse']); subprocess.run(['git','config','user.email','pulse@ci'])
+          subprocess.run(['git','add','si',INBOX])
+          c=subprocess.run(['git','commit','-m','PULSE-01 '+ts+' n='+str(st['pulse_n'])+' delta='+str(bool(delta))],capture_output=True,text=True)
+          push='skip(no-change)'
+          if c.returncode==0:
+              import time as _t
+              for i in range(4):
+                  subprocess.run(['git','fetch','-q','origin','HEAD'],capture_output=True)
+                  rb=subprocess.run(['git','rebase','origin/'+os.environ.get('BASE_BR','main')],capture_output=True,text=True)
+                  q=subprocess.run(['git','push','-q','origin','HEAD:'+os.environ.get('BASE_BR','main')],capture_output=True,text=True)
+                  if q.returncode==0: push='ok'; break
+                  if rb.returncode!=0: subprocess.run(['git','rebase','--abort'],capture_output=True)
+                  _t.sleep(2+i*2)
+              else: push='fail:'+q.stderr[:60]
+          print(json.dumps({'line':LINE,'ts':ts,'pulse_n':st['pulse_n'],'delta':bool(delta),'made':made,'peer':peer_res,'push':push},ensure_ascii=False))
+          PYEOF
