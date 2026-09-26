@@ -21,7 +21,7 @@ jobs:
         run: pip install -q pyjwt cryptography
       - name: pulse
         run: |
-          python3 - <<PYEOF
+          python3 - <<'PYEOF'
           import os,json,subprocess,datetime,hashlib,urllib.request,urllib.error,base64
           LINE= os.environ.get('PULSE_LINE','usrm')
           INBOX= os.environ.get('PULSE_INBOX','inbox')
