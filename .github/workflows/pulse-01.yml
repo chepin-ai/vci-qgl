@@ -108,6 +108,8 @@ jobs:
               except Exception: IT=None
           if IT:
               subprocess.run(['git','remote','set-url','origin','https://x-access-token:'+IT+'@github.com/chepin-ai/vci-'+LINE+'.git'],capture_output=True)
+              # checkout注入的http.extraheader(GITHUB_TOKEN basic)会盖过URL内凭证——必须卸载,否则推送仍计GITHUB_TOKEN不触发下游
+              subprocess.run(['git','config','--local','--unset-all','http.https://github.com/.extraheader'],capture_output=True)
           else:
               print(json.dumps({'honest_gap':'no-hub-IT, push will not trigger SR-05'}))
           subprocess.run(['git','config','user.name',LINE+'-pulse']); subprocess.run(['git','config','user.email','pulse@ci'])
