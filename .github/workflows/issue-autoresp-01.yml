@@ -5,6 +5,10 @@ name: ISSUE-AUTORESP-01 (qgl线issue自动追踪应答轨·环闸防风暴)
   issue_comment:
     types: [created]
   workflow_dispatch:
+    inputs:
+      test_issue_n:
+        description: 'E2E测试:目标issue号(操作员驱动,豁免bot作者闸)'
+        required: false
 permissions:
   contents: write
   issues: write
@@ -12,6 +16,7 @@ env:
   IA_LINE: qgl
   EV_NAME: ${{ github.event_name }}
   ISSUE_N: ${{ github.event.issue.number }}
+  TEST_ISSUE_N: ${{ github.event.inputs.test_issue_n }}
   ISSUE_TITLE: ${{ github.event.issue.title }}
   ISSUE_BODY: ${{ github.event.issue.body }}
   COMMENT_BODY: ${{ github.event.comment.body }}
@@ -38,8 +43,17 @@ jobs:
           CBODY=os.environ.get('COMMENT_BODY','')[:1500]
           AUTHOR=os.environ.get('AUTHOR','')
           GH=os.environ.get('GH_TOKEN','')
-          # 环闸: bot作者/自身答痕 不答(防风暴防自环)
-          if AUTHOR.endswith('[bot]'):
+          # 环闸: bot作者/自身答痕 不答(防风暴防自环);workflow_dispatch测试道(操作员驱动)豁免作者闸
+          TESTN=os.environ.get('TEST_ISSUE_N','').strip()
+          if TESTN:
+              N=TESTN
+              try:
+                  rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-'+LINE+'/issues/'+N,
+                      headers={'Authorization':'Bearer '+GH,'Accept':'application/vnd.github+json'})
+                  iss=json.loads(urllib.request.urlopen(rq,timeout=20).read())
+                  TITLE=iss.get('title','')[:200]; IBODY=(iss.get('body') or '')[:1500]
+              except Exception as e: print(json.dumps({'test_fetch_fail':str(e)[:80]}))
+          elif AUTHOR.endswith('[bot]'):
               print(json.dumps({'skip':'bot-author','author':AUTHOR})); raise SystemExit(0)
           if '[SI1自动应答]' in IBODY+CBODY:
               print(json.dumps({'skip':'self-answer-marker'})); raise SystemExit(0)
