@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-27T18:04:43Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "lgt-01-board-debut.md"
+  }
+ ],
+ "verdict_memo": "① 何事：LGT-01 看板（或节点板）首秀文档 `lgt-01-board-debut.md` 被 board-mention 触发，记其首次入档亮相。\n\n② 与 qgl 主线何干：QGL-VAULT 联邦律法须以实体或治理看板为硬锚，此件乃断代复活后首块落地印记，标志 LGT-01 正式纳入量子账本的节点/治事版图。\n\n③ 应动何件：落仓 `vault/governance/boards/lgt-01/debut.md`，同层补 `manifest.json` 存内容哈希；根目录 `BOARD_REGISTRY.md` 追加编号与责任人，并打 git tag `board/lgt-01/v0.1`。\n\n④ 生债一条：须于三日内补完该板接口契约与责任人公钥签章，否则首秀空转，尾生抱柱之债无柱可抱。"
+}
