@@ -83,10 +83,12 @@ jobs:
           if st['pulse_n']%8==0 and IT:
               peer=RING.get(LINE)
               if peer:
-                  pq='互激环卡·来自'+LINE+'线: 尔线当前最关心的一个未决问题是什么? 需要何线何种协作? 位格申报,限300字。'
+                  SEEDS=['EXP-CLOCKSYNC-01启动评审:时钟漂移对互锚验fp双载的影响量级?','DWA-01双证代数:SealV1锚链在何条件下可替代全账哈希?','P5量子批收割后,σ双层复算如何与双预言(ucif2/cfts)对表?','qtlv PULSE空转之谜:列三项可证伪假设并设计判别实验','ε_leak=I(x;metadata|score)在Sim10=0.3291bit之后,下一测点如何设计?','沉睡仓ci-bus/ci-code/ci-root复活角色建议(用即建律)']
+                  si=(st['pulse_n']//8)%len(SEEDS)
+                  pq='互激环卡·来自'+LINE+'线·研究种['+str(si)+']: '+SEEDS[si]+' 限300字,依联邦纪律作答,成果归议档。'
                   pnm='PULSE-RING-'+LINE.upper()+'-TO-'+peer.upper()+'-'+ts+'.md'
                   pcard=NL.join(['CLASSIFY: L1('+LINE+'→'+peer+' 互激环卡·PULSE-01)','',
-                      '```json',json.dumps({'ask':pq,'from':LINE+'-pulse-ring','vinf_tip_fp':st.get('tip_fp'),'ts':ts},ensure_ascii=False),'```','',
+                      '```json',json.dumps({'ask':pq,'from':LINE+'-pulse-ring','seed_idx':si,'vinf_tip_fp':st.get('tip_fp'),'ts':ts},ensure_ascii=False),'```','',
                       '问'+peer+'席: '+pq,'—— '+LINE+' PULSE-01 #noauto'])
                   try:
                       api_base='https://api.github.com/repos/chepin-ai/vci-'+peer+'/contents/'+PEER_PATH[peer]+'/'+pnm
