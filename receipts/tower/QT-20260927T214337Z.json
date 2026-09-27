@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-27T21:43:37Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "dashboard-usrm.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及 `dashboard-usrm.md`，为用户管理仪表盘（usrm）需求同步事件。\n\n② 与 qgl 主线何干：量子账本联邦节点依赖身份与权限体系，usrm 是治理面入口，直接锚定 go 实现中的身份模块、多签合约及联邦律法准入规则。\n\n③ 应动何件：将仪表盘需求拆解落仓——规格入 `/spec/federation/identity.md`，go 接口入 `/internal/auth/identity.go`，并补节点注册、权限分级、凭证轮转三张实现卡。\n\n④ 生债一条：身份合约接口若本周内无定稿，联邦节点准入与跨链权限校验将无锚可依，尾生债记此。"
+}
