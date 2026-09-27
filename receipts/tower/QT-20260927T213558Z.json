@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-27T21:35:58Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PULSE-RING-CFTS-TO-QGL-20260927T213440Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：PULSE-RING 借 CFTS 通道向 QGL 发来跨联邦脉冲件，时标未来，属域外共识信标。  \n② 与 qgl 主线何干：此件直击量子账本 go 实现之联邦互操作层，涉时序锚点校验与跨域状态根同步，干系主线锚完整性。  \n③ 应动何件：先落 `/inbox/cfts/pending`，依联邦律法验时序、签名、域凭据；验准转 `/vault/anchor/pulse-ring` 续锚，不律即焚。  \n④ 生债：件缺 CFTS 双向握手回执，尾生债一条——“限期内补全跨域证明，未补不得写入状态根”。"
+}
