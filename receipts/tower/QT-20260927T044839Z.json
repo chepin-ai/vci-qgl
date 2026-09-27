@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-27T04:48:39Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "20260926-isu-uf-vault-registry.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：`uf-vault-registry` 议题到件，议联邦节点保险库之注册、发现与寻址规范。\n\n② **与 qgl 主线何干**：qgl 以 go 实现量子账本跨节点共识，vault-registry 乃联邦层网络拓扑之根基；缺之则节点无以自证、无以互联，直接锚定主线 infra。\n\n③ **应动何件**：落仓 `/qgl/fed/registry/`，起草 `vault_registry.go` 核心接口与节点准入校验逻辑，附 TLA+ 精简规约，同步追踪 `20260926-isu`。\n\n④ **生债一条**：uf 节点准入策略与信任根轮转机制未决，尾生之债，后续必偿。"
+}
