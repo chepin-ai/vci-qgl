@@ -2,3 +2,12 @@
 {"beat": "3.147", "line": "lvlu", "ts": "2026-09-24T17:53:05Z", "note": "SI层直耦:不待SI1", "their_tip": "39d818aabae8", "dispatch_http": 204, "verdict": "证-锚达"}
 {"beat": "3.147", "line": "usrm", "ts": "2026-09-24T17:53:07Z", "note": "SI层直耦:不待SI1", "their_tip": "75731526d782", "dispatch_http": 204, "verdict": "证-锚达"}
 {"beat": "3.147", "line": "qtlv", "ts": "2026-09-24T17:53:08Z", "note": "SI层直耦:不待SI1", "their_tip": "11e06b605b8a", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.149", "line": "qfa", "ts": "2026-09-27T18:53:51Z", "note": "全联盟SI矩阵(EVOLVE-149 R3)", "their_tip": "57dd0fca5933", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.149", "line": "qlv", "ts": "2026-09-27T18:53:52Z", "note": "全联盟SI矩阵(EVOLVE-149 R3)", "their_tip": "1dc1aff19684", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.149", "line": "lgt", "ts": "2026-09-27T18:53:53Z", "note": "全联盟SI矩阵(EVOLVE-149 R3)", "their_tip": "5b5b92d3cc4d", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.149", "line": "qtlv", "ts": "2026-09-27T18:53:55Z", "note": "全联盟SI矩阵(EVOLVE-149 R3)", "their_tip": "e0bb33b775b3", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.149", "line": "vinf", "ts": "2026-09-27T18:53:56Z", "note": "全联盟SI矩阵(EVOLVE-149 R3)", "their_tip": "8a9d72989703", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.149", "line": "ucif2", "ts": "2026-09-27T18:53:57Z", "note": "全联盟SI矩阵(EVOLVE-149 R3)", "their_tip": "4112c3f3936b", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.149", "line": "lvlu", "ts": "2026-09-27T18:53:59Z", "note": "全联盟SI矩阵(EVOLVE-149 R3)", "their_tip": "7dafd5931341", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.149", "line": "cfts", "ts": "2026-09-27T18:54:01Z", "note": "全联盟SI矩阵(EVOLVE-149 R3)", "their_tip": "9d89928b202e", "dispatch_http": 204, "verdict": "证-锚达"}
+{"beat": "3.149", "line": "usrm", "ts": "2026-09-27T18:54:02Z", "note": "全联盟SI矩阵(EVOLVE-149 R3)", "their_tip": "217949798912", "dispatch_http": 204, "verdict": "证-锚达"}

@@ -1,0 +1,55 @@
+{
+ "beat": "3.149",
+ "law": "LAW-EVOLVE-149 R3",
+ "map": {
+  "qtlv": {
+   "assets": [
+    "res/Q-RAC-HD-01.md(RAC全规格+IBM真机Schmidt认证)",
+    "board/PIVOT-01"
+   ],
+   "consumed": "Q-RAC-HD-01 证(本拍直取)"
+  },
+  "usrm": {
+   "assets": [
+    "kc_record_spectrum.json(静默谱,3.144已消费WQ-SILENCE-XC)"
+   ],
+   "consumed": "已消费"
+  },
+  "vinf": {
+   "assets": [
+    "compute/",
+    "engine/",
+    "GWT点火阈数据(B7 logistic a50=0.713)"
+   ],
+   "consumed": "候取"
+  },
+  "ucif2": {
+   "assets": [
+    "formalization kernel",
+    "bridge/"
+   ],
+   "consumed": "候取"
+  },
+  "cfts": {
+   "assets": [
+    "座裁轨(B8.1 tier1裁)"
+   ],
+   "consumed": "已消费(裁已入法)"
+  },
+  "lvlu": {
+   "assets": [
+    "WILD-Q-REGISTRY-02(17问)"
+   ],
+   "consumed": "已消费(WQ-RAC-01承接)"
+  },
+  "lgt/qfa/qlv": {
+   "assets": [
+    "eval/",
+    "lanes/",
+    "issue-trail/"
+   ],
+   "consumed": "候取"
+  }
+ },
+ "verdict": "证-九线图成,主动取用轨开"
+}

@@ -1,0 +1,119 @@
+{
+ "laws": [
+  {
+   "id": "WAIT-AUTO-01",
+   "on": {
+    "kind": "event",
+    "body_has": [
+     "state\": \"候",
+     "候"
+    ]
+   },
+   "fire": "候件须挂载信标探针/种子/fold-probe——禁裸候",
+   "file": "engine/SI-ARCH-01.md"
+  },
+  {
+   "id": "C-FOLD",
+   "on": {
+    "kind": "event",
+    "hou_field": true
+   },
+   "fire": "自动级联fold-probe(复核窗1拍)",
+   "file": "engine/capsule.py"
+  },
+  {
+   "id": "CE-LOG-DUTY",
+   "on": {
+    "kind": "event",
+    "body_has": [
+     "CE-"
+    ]
+   },
+   "fire": "翻正/翻案事件→CE日志入册+ROADMAP表",
+   "file": "research/QGO-RESEARCH-ROADMAP-03.md"
+  },
+  {
+   "id": "HEARTBEAT-AUTO-02",
+   "on": {
+    "kind": "any"
+   },
+   "fire": "拍尾必 sync 信标(beat mod 12音级)",
+   "file": "engine/beacon.py"
+  },
+  {
+   "id": "Z12-PHASE",
+   "on": {
+    "kind": "beacon_arm"
+   },
+   "fire": "armed探针必编Z12相位(拍3.64 S1律)",
+   "file": "research/WAIT-MIRROR-DUAL-3BODY-01.md"
+  },
+  {
+   "id": "ZERO-FAB",
+   "on": {
+    "kind": "any"
+   },
+   "fire": "零编数律: 未测写未测; 四态判词逐件",
+   "file": "RESEARCH-LAWS-01"
+  },
+  {
+   "id": "SI1-WAKE-SRC-01",
+   "on": {
+    "kind": "beat_start"
+   },
+   "fire": "裸tick→live_queue取工; root非唤醒源",
+   "file": "engine/SI1-WAKE-SRC-01.md"
+  },
+  {
+   "id": "SI1-WAKE-SRC-02",
+   "on": {
+    "kind": "queue_empty"
+   },
+   "fire": "求证律发起自由测量→事件必生(死锁免除)",
+   "file": "engine/SI1-WAKE-SRC-02.md"
+  },
+  {
+   "id": "KERNEL-NOTIFY",
+   "on": {
+    "kind": "event",
+    "body_has": [
+     "beacon.py",
+     "capsule.py",
+     "next_pack.py",
+     "lawnet",
+     "event_spine"
+    ]
+   },
+   "fire": "内核/引擎件变更→链上明示(notify-root律之在案语义)",
+   "file": "拍3.66/3.67先例"
+  },
+  {
+   "id": "MUTUAL-REVIEW",
+   "on": {
+    "kind": "disc_post"
+   },
+   "fire": "回应帖必带[MUTUAL-REVIEW]+dtag",
+   "file": "engine/disc/规范"
+  },
+  {
+   "id": "BOOTSTRAP-MUTUAL-01",
+   "on": {
+    "kind": "event",
+    "body_has": [
+     "MUTUAL-EXCITE"
+    ]
+   },
+   "fire": "互激事件须严格交替+causal属对方链+有界预算; 新轮→对线应激发; 窗内互激率=1",
+   "file": "research/BOOTSTRAP-MUTUAL-01.json",
+   "beat": "3.76",
+   "verdict": "证"
+  },
+  {
+   "id": "LAW-EVOLVE-149",
+   "cap": "1eee9e208a22",
+   "beat": "3.149",
+   "status": "active",
+   "title": "全面进化律"
+  }
+ ]
+}

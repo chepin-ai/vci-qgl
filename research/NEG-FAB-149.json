@@ -1,0 +1,22 @@
+{
+ "beat": "3.149",
+ "ledger": "NEG-FAB",
+ "items": [
+  {
+   "claim": "EXP-066/qtlv答/裁答",
+   "status": "缺席",
+   "guard": "侦守不编"
+  },
+  {
+   "claim": "切轨56.2s囊f9e617263ff8",
+   "status": "账误(陈旧模块)",
+   "guard": "errata seq7+补正囊10e8d410bfba"
+  },
+  {
+   "claim": "9线锚达",
+   "status": "实测204",
+   "guard": "SIDOCK-LEDGER"
+  }
+ ],
+ "verdict": "册-零编数+一账误即修"
+}
