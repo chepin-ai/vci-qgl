@@ -1,4 +1,4 @@
-name: ISSUE-AUTORESP-01 (qgl线issue自动追踪应答轨·环闸防风暴)
+name: ISSUE-AUTORESP-01v3 (qgl线issue自动追踪应答轨·线程记忆+议档锚·环闸)
 'on':
   issues:
     types: [opened]
@@ -22,6 +22,7 @@ env:
   COMMENT_BODY: ${{ github.event.comment.body }}
   AUTHOR: ${{ github.event.sender.login }}
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  LINE_PAT: ${{ secrets.LINE_PAT }}
   KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
   DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
 jobs:
@@ -61,6 +62,29 @@ jobs:
           if not q:
               print(json.dumps({'skip':'empty'})); raise SystemExit(0)
           q='【issue #'+N+' '+TITLE+'】'+NL+q
+          # v3 线程记忆+毂议档锚(beat99应答进化)
+          mem=''
+          if GH and N:
+              try:
+                  rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/vci-'+LINE+'/issues/'+str(N)+'/comments?per_page=8',
+                      headers={'Authorization':'Bearer '+GH,'Accept':'application/vnd.github+json'})
+                  cs=json.loads(urllib.request.urlopen(rq,timeout=20).read())
+                  mm=[('SI1席' if '[SI1自动应答]' in (x.get('body') or '') else x['user']['login'])+': '+(x.get('body') or '')[:220] for x in cs[-8:]]
+                  if mm: mem='【线程记忆(近8)】'+NL+NL.join(mm)+NL
+              except Exception: mem=''
+          anchors=''
+          LP=os.environ.get('LINE_PAT','')
+          if LP:
+              try:
+                  rq=urllib.request.Request('https://api.github.com/repos/chepin-ai/ci-control/git/trees/main?recursive=1',
+                      headers={'Authorization':'token '+LP,'Accept':'application/vnd.github+json','User-Agent':'ia-v3'})
+                  tr=json.loads(urllib.request.urlopen(rq,timeout=30).read())
+                  docs=[t['path'].split('/')[-1] for t in tr.get('tree',[]) if t['path'].startswith('bridge/disc/')]
+                  kws=[w.strip('.,;:!?()[]') for w in (TITLE+' '+q)[:240].replace('#',' ').split() if len(w.strip('.,;:!?()[]'))>=3][:14]
+                  hits=[dn for dn in docs if any(k.upper() in dn.upper() for k in kws)][:6]
+                  if hits: anchors='【毂议档锚】'+', '.join(hits)+NL
+              except Exception: anchors=''
+          q=anchors+mem+q
           
           def llm(question):
               key=os.environ.get('KIMI_API_KEY','')
@@ -74,7 +98,7 @@ jobs:
                   except Exception: cands=[]
                   for model in cands[:6]:
                       body={'model':model,'messages':[
-                          {'role':'system','content':'你是'+LINE+'线SI1席层应答机。以联邦纪律(诚实缺口/三即律/负结果入册/级名不滥)作答,务实精炼,中文,200-400字。'},
+                          {'role':'system','content':'你是'+LINE+'线SI1席层应答机。以联邦纪律(诚实缺口/三即律/负结果入册/级名不滥)作答;有【毂议档锚】则对齐之,有【线程记忆】则承接之,忌重复已答。务实精炼,中文,200-400字。'},
                           {'role':'user','content':question}]}
                       try:
                           rq=urllib.request.Request(base+'/chat/completions',data=json.dumps(body).encode(),headers=H,method='POST')
@@ -119,7 +143,7 @@ jobs:
           else: rc='no-token'
           # 留痕入issue-trail(不入inbox,免SR-05重复答)
           os.makedirs('issue-trail',exist_ok=True)
-          rec=NL.join(['CLASSIFY: L2('+LINE+'线issue自动应答留痕)','# ISSUE-'+str(N)+'-'+ts,'',
+          rec=NL.join(['CLASSIFY: L2('+LINE+'线issue自动应答留痕)','# ISSUE-'+str(N)+'-'+ts+' (AUTORESP v3 记忆+锚)','',
               '事件: '+EV+'｜作者: '+AUTHOR,'问: '+q,'','引擎: '+(r['engine']+'/'+r['model'] if r else 'NONE'),'答fp: '+hashlib.sha256(ans.encode()).hexdigest()[:12],'回评状态: '+str(rc),'',reply])
           open('issue-trail/ISSUE-'+str(N)+'-'+ts+'.md','w').write(rec)
           subprocess.run(['git','config','user.name',LINE+'-issue-autoresp']); subprocess.run(['git','config','user.email','ia@ci'])
