@@ -1,0 +1,102 @@
+{
+ "ts": "20260927T184422Z",
+ "run": "36341745221",
+ "trigger": "push",
+ "hub": "sha256:6f03d846566f",
+ "qgl_addressed": 89,
+ "new_since_last": 23,
+ "new": [
+  {
+   "path": "lanes/cfts/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md",
+   "sha": "1a58a288e7a4"
+  },
+  {
+   "path": "lanes/cfts/inbox/ZHOUTIAN-PING-qgl-20260924T155334Z.md",
+   "sha": "337fdb2003ed"
+  },
+  {
+   "path": "lanes/cisvr/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md",
+   "sha": "1a58a288e7a4"
+  },
+  {
+   "path": "lanes/cisvr/inbox/ZHOUTIAN-PING-qgl-20260924T155334Z.md",
+   "sha": "337fdb2003ed"
+  },
+  {
+   "path": "lanes/lgt/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md",
+   "sha": "1a58a288e7a4"
+  },
+  {
+   "path": "lanes/lgt/inbox/ZHOUTIAN-PING-qgl-20260924T155334Z.md",
+   "sha": "337fdb2003ed"
+  },
+  {
+   "path": "lanes/lvlu/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md",
+   "sha": "1a58a288e7a4"
+  },
+  {
+   "path": "lanes/lvlu/inbox/ZHOUTIAN-PING-qgl-20260924T155334Z.md",
+   "sha": "337fdb2003ed"
+  },
+  {
+   "path": "lanes/qfa/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md",
+   "sha": "1a58a288e7a4"
+  },
+  {
+   "path": "lanes/qfa/inbox/ZHOUTIAN-PING-qgl-20260924T155334Z.md",
+   "sha": "337fdb2003ed"
+  },
+  {
+   "path": "lanes/qgl/inbox/PAIR-CLOSE-USRM-QGL-128-20260918T0130Z.md",
+   "sha": "41c5287750b3"
+  },
+  {
+   "path": "lanes/qgl/inbox/REQ-QGL-REGISTRY-REFRESH-01-20260915T1225Z.json",
+   "sha": "4f9c7503be41"
+  },
+  {
+   "path": "lanes/qgl/inbox/vinf-qgl-xval26-20260917T1015Z.md",
+   "sha": "f78fe08ffff8"
+  },
+  {
+   "path": "lanes/qlv/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md",
+   "sha": "1a58a288e7a4"
+  },
+  {
+   "path": "lanes/qlv/inbox/ZHOUTIAN-PING-qgl-20260924T155334Z.md",
+   "sha": "337fdb2003ed"
+  },
+  {
+   "path": "lanes/qtlv/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md",
+   "sha": "1a58a288e7a4"
+  },
+  {
+   "path": "lanes/qtlv/inbox/ZHOUTIAN-PING-qgl-20260924T155334Z.md",
+   "sha": "337fdb2003ed"
+  },
+  {
+   "path": "lanes/ucif2/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md",
+   "sha": "1a58a288e7a4"
+  },
+  {
+   "path": "lanes/ucif2/inbox/ZHOUTIAN-PING-qgl-20260924T155334Z.md",
+   "sha": "337fdb2003ed"
+  },
+  {
+   "path": "lanes/usrm/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md",
+   "sha": "1a58a288e7a4"
+  },
+  {
+   "path": "lanes/usrm/inbox/ZHOUTIAN-PING-qgl-20260924T155334Z.md",
+   "sha": "337fdb2003ed"
+  },
+  {
+   "path": "lanes/vinf/inbox/ZHOUTIAN-PING-qgl-20260923T052333Z.md",
+   "sha": "1a58a288e7a4"
+  },
+  {
+   "path": "lanes/vinf/inbox/ZHOUTIAN-PING-qgl-20260924T155334Z.md",
+   "sha": "337fdb2003ed"
+  }
+ ]
+}
