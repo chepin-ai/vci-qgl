@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-29T05:43:47Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PULSE-QGL-20260929T054303Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：inbox 到件 `PULSE-QGL-20260929T054303Z.md`，为 QGL 线脉冲切片，时戳 2026-09-29T05:43:03Z，单文件无附注，形态未明。\n\n② 与 qgl 主线何干：脉冲件乃量子账本时序锚之外在观测，或含链状态心跳、共识间隙、异常波纹，直接关系账本连续性与时空证明之真伪，不可轻弃。\n\n③ 应动何件：不宜淤滞 inbox。即落 `qgl/pulse/2026/09/` 归档仓，抽取时序、状态哈希、熵增三域入索引进位；若验出异常，则 fork 至 `qgl/alerts/pending/` 并锁待审。\n\n④ 生债一条：脉冲到件缺结构化头，unpack 脚本无法自举。债：补订 `PULSE-*.md` 元模板，强置 frontmatter（ts, hash, node, entropy），令后件机器可读，免复人工判形。"
+}
