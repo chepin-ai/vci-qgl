@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-29T02:45:23Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "cisvr-95.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板提及事件，引文 cisvr-95.md，系共识层（CIS/Consensus）变更请求或配置草案被看板引用。  \n② 与 qgl 主线何干：量子账本以共识为联邦记账根基，此件若涉验证规则、状态机参数或节点配置，直接锚定主线安全与终局性边界。  \n③ 应动何件：落仓 `qgl/board/inbox/cisvr-95.md`，并转 `qgl/spec/consensus/adr/` 待审；如属热修，则进 `qgl/hotfix/consensus/` 经治理签名后合入主线。  \n④ 生债一条：看板引而未决，共识变更缺形式化规约与全覆盖测试，生「规约悬置、验证缺位」之债。"
+}
