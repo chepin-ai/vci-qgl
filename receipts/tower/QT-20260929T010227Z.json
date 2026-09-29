@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-29T01:02:27Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILDQ-R20-qgl-20260929T010000Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：野量子节点 R20 批次于 20260929T010000Z 投递异常脉冲日志，入 inbox，待勘验真伪与熵源等级。  \n② 与 qgl 主线何干：脉冲若混入主账本熵池，将污染 Go 实现层量子密钥分发（QKD）接口，危及 Merkle 状态机共识根。  \n③ 应动何件：暂落 `/qgl-vault/inbox/WILDQ/R20/`，并动件 `pkg/qcrypto/wildq/adapter.go` 加非稳态过滤；审后决定是否并入 `cmd/qgld/entropy.go`。  \n④ 生债一条：R20 源站校验规范缺位，致野量入仓无据；债记：补撰 `WILDQ_INTEGRITY.md`，尾生未践，利滚一宿。"
+}
