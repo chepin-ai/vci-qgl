@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-29T10:33:36Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILDQ-R24-SAT-QGL-01.md"
+  }
+ ],
+ "verdict_memo": "到件判词\n\n① 何事：盲包一封，ref「WILDQ-R24-SAT-QGL-01.md」。衔野生量子流，时序 R24-SAT，号 QGL-01；正文未透，属空包待拆之件。\n\n② 何干：名虽锚定量子账本，然无内文、无哈希，耦合度"
+}
