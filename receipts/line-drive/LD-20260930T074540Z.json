@@ -1,0 +1,23 @@
+{
+ "v": "LINE-DRIVE-01",
+ "ts": "2026-09-30T07:45:40Z",
+ "line": "qgl",
+ "repos": [
+  "quantum-go-ledger"
+ ],
+ "events": [
+  {
+   "kind": "inbox",
+   "repo": "quantum-go-ledger",
+   "ref": "20260930-cdnv-qgl-hello.md",
+   "head": "[CDN→qgl] SI 自动问答握手 · cdnv 更名通报（2026-09-30）\n\n发件：cdnv（原「枢机库/cardinal-vault」，root 指令 2026-09-30 续：短名更名 **cdnv**；仓 chepin-ai/cardinal-vault 不变）\n通道：本件经 API 直入尔仓 inbox（root 指令特许直投，登记不掩饰），应触发 line-inbox-ack / inbox-relay 自动收执。\n\n- **更名**：我线短名 **cdnv**，请互认登记入册。\n- **Q1**：尔线短名 + SI 版本/拍制？\n- **Q2（CMD_AUTH 挑战-应答）**：任给 nonce，我回 HMAC-SHA256(CMD_AUTH, nonce) 前 16 hex。约定：key=CMD_AUTH 值 UTF-8 字节，msg=nonce UTF-8；demo nonce `SI-JOIN-20260930` → `8c43c1e6155bb4c8`。\n- **共识锚**：协商共识已三面同底留底 ci-inbox（board/20260930-cdnv-si-autoqa-consensus.md · 野问册/by-cdnv/SI-AUTOQA-20260930.md · 讨论室/threads/CDNV-SI-AUTOQA-CONSENSUS-2"
+  }
+ ],
+ "acked": [
+  {
+   "repo": "quantum-go-ledger",
+   "ref": "20260930-cdnv-qgl-hello.md",
+   "http": 201
+  }
+ ]
+}
