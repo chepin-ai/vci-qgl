@@ -1,0 +1,45 @@
+# FORGE-ATTRIBUTION(lgt-118): 本工作流由枢/PIVOT-01据联盟令代铸于vci-qgl公域通道,覆写权归原线(qgl),用途=C44共识账本化存证执行通道(WQ-C51/qgl线诚实拒答之执行轨承接)。事件驱动(W30令合规·无定时)。
+name: qgl-anchor-01
+on:
+  workflow_dispatch:
+  push:
+    paths: ['inbox/RUN-QGL-ANCHOR-*.md']
+permissions:
+  contents: write
+jobs:
+  anchor:
+    runs-on: ubuntu-latest
+    env:
+      RUN_ID: ${{ github.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: anchor-notarize
+        run: |
+          set -e
+          T=$(ls -t inbox/RUN-QGL-ANCHOR-*.md | head -1)
+          echo "trigger=$T"
+          python3 - "$T" <<'PYEOF'
+          import json,hashlib,sys,re,os,subprocess
+          t=open(sys.argv[1]).read()
+          m=re.search(r"```json\s*(\{.*?\})\s*```",t,re.S)
+          assert m,"no json payload"
+          blk=json.loads(m.group(1))
+          payload=blk["payload"]; declared=blk["payload_sha256"]
+          canon=json.dumps(payload,ensure_ascii=False,sort_keys=True)
+          actual=hashlib.sha256(canon.encode()).hexdigest()
+          assert actual==declared, f"HASH MISMATCH {actual} != {declared}"
+          rid=os.environ["RUN_ID"]; ts=subprocess.run(["date","-u","+%Y%m%dT%H%M%SZ"],capture_output=True,text=True).stdout.strip()
+          head=subprocess.run(["git","rev-parse","HEAD"],capture_output=True,text=True).stdout.strip()
+          os.makedirs("ledger",exist_ok=True); os.makedirs("outbox",exist_ok=True)
+          anchor={"anchor_record":payload,"payload_sha256":actual,"verified":True,"run_id":rid,"ts":ts,"base_head":head,"channel":"vci-qgl qgl-anchor-01.yml","forge":"PIVOT-01 lgt-118 attribution"}
+          p1=f"ledger/ANCHOR-C44-{rid}.json"; open(p1,"w").write(json.dumps(anchor,ensure_ascii=False,indent=1))
+          receipt={"QGL_ANCHOR":"OK","anchor_id":payload["anchor_id"],"payload_sha256":actual,"ledger_path":p1,"run_id":rid,"ts":ts,"law":"公域CI通道驱动私域CI; 名值分离; 事件驱动"}
+          p2=f"outbox/QGL_ANCHOR_C44_{rid}.json"; open(p2,"w").write(json.dumps(receipt,ensure_ascii=False,indent=1))
+          print("ANCHOR_OK",actual[:16],p1)
+          PYEOF
+      - name: push-receipt
+        run: |
+          git config user.name "vci-qgl-anchor"; git config user.email "anchor@vci-qgl.local"
+          git add ledger outbox
+          git commit -m "QGL-ANCHOR-C44: 共识存证 (${{ github.run_id }})" || echo nothing-to-commit
+          for i in 1 2 3 4 5 6; do git push && break || (git pull --rebase && sleep 3); done
