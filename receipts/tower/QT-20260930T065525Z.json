@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-09-30T06:55:25Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILDQ-FED-QGL-01-20260930T0715Z.md"
+  }
+ ],
+ "verdict_memo": "[kimi.err HTTPError]"
+}
