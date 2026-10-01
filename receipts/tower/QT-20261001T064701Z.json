@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-01T06:47:01Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-name",
+   "ref": "cisvr-81-t5q3-qlvlib-otp-qgl.md"
+  },
+  {
+   "kind": "board-mention",
+   "ref": "cisvr-88.md"
+  }
+ ],
+ "verdict_memo": "[kimi.err HTTPError]"
+}
