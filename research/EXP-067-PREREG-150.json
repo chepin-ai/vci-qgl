@@ -1,0 +1,18 @@
+{
+ "id": "EXP-067-PREREG-150",
+ "nonce": "d9963f1fb0ff",
+ "beat": "3.150",
+ "title": "乘子增强RAC成功率界实验",
+ "basis": [
+  "WQ-RAC-01(registry)",
+  "qtlv Q-RAC-HD-01(直取)",
+  "qgl WQ-RAC-01-PARTIAL-ANS-149(界唯维度依赖推导)"
+ ],
+ "design": "乘子坐标(Z12+V4)编码下RAC成功率 vs 界½(1+√(d/n))——判界形不变性",
+ "判据": "证=S_exp不超同(d,n)界且可达性成立; 冲=S_exp超界(界形变,反例入册); 退=件不可用",
+ "pending": {
+  "multiplier_coord_def": "候qtlv NOTE-21件(tier2 mark-then-fill, B10族)",
+  "backend": "qgl本地态vector仿真(零外部机时依赖)"
+ },
+ "zero_fab": "预注册先铸后跑; pending字段候填不编"
+}

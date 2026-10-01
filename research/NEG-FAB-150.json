@@ -1,0 +1,22 @@
+{
+ "beat": "3.150",
+ "ledger": "NEG-FAB",
+ "items": [
+  {
+   "claim": "qtlv答/EXP-066答",
+   "status": "缺席",
+   "guard": "侦守不编"
+  },
+  {
+   "claim": "EXP-067理想复现",
+   "status": "实测numpy态vector",
+   "guard": "独立代码非抄qtlv"
+  },
+  {
+   "claim": "噪声模型",
+   "status": "简化退极化",
+   "guard": "已标注非物理级"
+  }
+ ],
+ "verdict": "册-零编数"
+}

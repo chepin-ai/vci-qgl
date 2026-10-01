@@ -1,213 +1,213 @@
 {
  "engine": "REMOTE-SENSE-01",
- "beat": "3.149-nmust",
- "ts": "2026-09-27T18:55:36Z",
- "scanned": 5600,
+ "beat": "3.150-nmust",
+ "ts": "2026-10-01T10:07:30Z",
+ "scanned": 6422,
  "fetched": 40,
  "new_items": [
   {
-   "surface": "ci-inbox/lanes/qgl/inbox/ANS-ZHOUTIAN-QTLV-20260927.md",
-   "sha": "8ae8eb9c3a14",
-   "n_chars": 255
-  },
-  {
-   "surface": "ci-inbox/lanes/qgl/inbox/ZT-ECHO-USRM-01.md",
-   "sha": "61adb6dc01b6",
-   "n_chars": 542
-  },
-  {
-   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260924T195132Z-KEYUNIFY-QUORUM-01-lvlu.md",
-   "sha": "cd59aeb4afcf",
-   "n_chars": 176
-  },
-  {
-   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260925T090442Z-KEYUNIFY-QUORUM-01-lvlu.md",
-   "sha": "097daf4d12a3",
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260927T190051Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "8bc413717e76",
    "n_chars": 178
   },
   {
-   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260925T115522Z-KEYUNIFY-QUORUM-01-lvlu.md",
-   "sha": "857959c30c1f",
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260928T065416Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "d471ac5cda95",
    "n_chars": 178
   },
   {
-   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260925T175334Z-KEYUNIFY-QUORUM-01-lvlu.md",
-   "sha": "de2544ae6ece",
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260928T135402Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "6ae49e6d6cb7",
    "n_chars": 178
   },
   {
-   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260925T224348Z-KEYUNIFY-QUORUM-01-lvlu.md",
-   "sha": "5dc693207ea1",
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260928T165132Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "d17d750355bf",
    "n_chars": 178
   },
   {
-   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260926T035740Z-KEYUNIFY-QUORUM-01-lvlu.md",
-   "sha": "e3bc892abd10",
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260928T224537Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "ccfc90fdbd24",
    "n_chars": 178
   },
   {
-   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260926T070420Z-KEYUNIFY-QUORUM-01-lvlu.md",
-   "sha": "e6737bf4fe07",
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260929T045814Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "bb827c9f7d58",
    "n_chars": 178
   },
   {
-   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260926T154725Z-KEYUNIFY-QUORUM-01-lvlu.md",
-   "sha": "8f532322612c",
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260929T130900Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "dfd37fc90759",
    "n_chars": 178
   },
   {
-   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260927T024445Z-KEYUNIFY-QUORUM-01-lvlu.md",
-   "sha": "4d5ac4dc0855",
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260929T200435Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "b71820414615",
    "n_chars": 178
   },
   {
-   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260927T124825Z-KEYUNIFY-QUORUM-01-lvlu.md",
-   "sha": "4361a6b5e515",
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260929T230219Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "348219db5105",
    "n_chars": 178
   },
   {
-   "surface": "vci-qgl/inbox/20260926-isu-uf-vault-registry.md",
-   "sha": "51cb1a57c8f7",
-   "n_chars": 381
+   "surface": "vci-inbox/lanes/qgl/inbox/nudge-20260930T015350Z-KEYUNIFY-QUORUM-01-lvlu.md",
+   "sha": "768756d9fd01",
+   "n_chars": 178
   },
   {
-   "surface": "vci-qgl/inbox/PULSE-QGL-20260927T014919Z.md",
-   "sha": "7dc22315b40a",
-   "n_chars": 368
+   "surface": "vci-qgl/inbox/CONSENSUS-CONF-QGL-01-20260930T0715Z.md",
+   "sha": "0aa29841f4d1",
+   "n_chars": 430
   },
   {
-   "surface": "vci-qgl/inbox/PULSE-QGL-20260927T182320Z.md",
-   "sha": "16e3906b21a1",
-   "n_chars": 358
+   "surface": "vci-qgl/inbox/PIVOT-01-ANNOUNCE-20260929T020831Z.md",
+   "sha": "8e076d08bced",
+   "n_chars": 655
   },
   {
-   "surface": "vci-qgl/inbox/PULSE-RING-CFTS-TO-QGL-20260927T181842Z.md",
-   "sha": "e4e10e9ee0ed",
-   "n_chars": 291
+   "surface": "vci-qgl/inbox/PULSE-QGL-20260928T194035Z.md",
+   "sha": "ff8d8c6f34ee",
+   "n_chars": 396
   },
   {
-   "surface": "vci-qgl/inbox/WILD-SURGE-R4-QGL-01.md",
-   "sha": "e162c59b5378",
-   "n_chars": 498
+   "surface": "vci-qgl/inbox/PULSE-QGL-20260929T054303Z.md",
+   "sha": "e9dc3b858174",
+   "n_chars": 396
   },
   {
-   "surface": "vci-qgl/inbox/WILD-SURGE-R5-QGL-01.md",
-   "sha": "34ff16a379fb",
-   "n_chars": 551
+   "surface": "vci-qgl/inbox/PULSE-QGL-20260930T130222Z.md",
+   "sha": "652bb663eb24",
+   "n_chars": 396
   },
   {
-   "surface": "vci-qgl/inbox/WILD-SURGE-R6-QGL-01.md",
-   "sha": "370cd3e73aa4",
-   "n_chars": 521
+   "surface": "vci-qgl/inbox/PULSE-RING-CFTS-TO-QGL-20260927T213440Z.md",
+   "sha": "a82b00d4de35",
+   "n_chars": 346
   },
   {
-   "surface": "ci-inbox/shared/NOTE-22-REALPROBE-X3CNOT-QPE-01.md",
-   "sha": "16b3e6d688f5",
-   "n_chars": 1694
+   "surface": "vci-qgl/inbox/PULSE-RING-CFTS-TO-QGL-20260929T212224Z.md",
+   "sha": "cab076a136cc",
+   "n_chars": 352
   },
   {
-   "surface": "ci-inbox/shared/NOTE-23-SI4-FABRIC-AUDIT-T62-01.md",
-   "sha": "8e5e181daa47",
-   "n_chars": 2266
+   "surface": "vci-qgl/inbox/REPLY-R26B-QGL-5SITE-01.md",
+   "sha": "df35168171a5",
+   "n_chars": 581
   },
   {
-   "surface": "ci-inbox/shared/QRAC-HD-01-D6-FILTER-20260927T071245Z.md",
-   "sha": "f7f42b5097ea",
-   "n_chars": 323
+   "surface": "vci-qgl/inbox/REPLY-R26B2-QGL-5SITE-01.md",
+   "sha": "b3d09a43fccf",
+   "n_chars": 622
   },
   {
-   "surface": "ci-inbox/shared/QRAC-HD-01-JOB4-20260925T194937Z.md",
-   "sha": "805b7b77c588",
-   "n_chars": 613
+   "surface": "vci-qgl/inbox/RUN-QGL-ANCHOR-C44-01-20260930T0715Z.md",
+   "sha": "dc9ebb5bcd46",
+   "n_chars": 1009
   },
   {
-   "surface": "ci-inbox/shared/field-engine/CHAIN-VERIFY-QLV-01.json",
-   "sha": "aee9a137bd5e",
-   "n_chars": 902
+   "surface": "vci-qgl/inbox/WILDQ-FED-QGL-01-20260930T0715Z.md",
+   "sha": "7d8dc7a27b03",
+   "n_chars": 656
   },
   {
-   "surface": "ci-inbox/shared/field-engine/CHAIN-VERIFY-QLV-01.md",
-   "sha": "d39e66405f64",
-   "n_chars": 1715
+   "surface": "vci-qgl/inbox/WILDQ-R20-qgl-20260929T010000Z.md",
+   "sha": "2f636846291c",
+   "n_chars": 522
   },
   {
-   "surface": "ci-inbox/shared/field-engine/FRAC-TRIALS-01/ECHO-FRAC-01-qtlv-seq7-8.md",
-   "sha": "cd7480d94176",
-   "n_chars": 251
+   "surface": "vci-qgl/inbox/WILDQ-R20B-qgl-20260929T011500Z.md",
+   "sha": "b535e4d58c43",
+   "n_chars": 616
   },
   {
-   "surface": "ci-inbox/shared/field-engine/FRAC-TRIALS-01/EPS-LEAK-SIM10-RESULT.json",
-   "sha": "9a8ffe3df89d",
-   "n_chars": 197
+   "surface": "vci-qgl/inbox/WILDQ-R24-SAT-QGL-01.md",
+   "sha": "2844616f61d1",
+   "n_chars": 624
   },
   {
-   "surface": "ci-inbox/shared/field-engine/FRAC-TRIALS-01/REAL-TRACK-REPORT-01.md",
-   "sha": "415ede2d5393",
-   "n_chars": 2420
+   "surface": "vci-qgl/inbox/WILDQ-R26-FIX-QGL-01.md",
+   "sha": "9b20dcfa466f",
+   "n_chars": 590
   },
   {
-   "surface": "ci-inbox/shared/field-engine/FRAC-TRIALS-01/REAL-TRACK-REPORT-IBM-01.md",
-   "sha": "24d436c28094",
-   "n_chars": 2099
+   "surface": "vci-qgl/inbox/WILDQ-R26B-FIX-QGL-01.md",
+   "sha": "6c0f5c87856e",
+   "n_chars": 685
   },
   {
-   "surface": "ci-inbox/shared/field-engine/FRAC-TRIALS-01/ibm_track_chain.jsonl",
-   "sha": "3964d21c76c4",
-   "n_chars": 3284
+   "surface": "vci-qgl/inbox/XENGINE-INTEG-01-QGL-20261001T072106ZZ.md",
+   "sha": "b6ca0ed38e48",
+   "n_chars": 281
   },
   {
-   "surface": "ci-inbox/shared/field-engine/FRAC-TRIALS-01/quafu_sim_chain.jsonl",
-   "sha": "0ef3ddbc481c",
-   "n_chars": 7328
+   "surface": "ci-inbox/shared/NOTE-24-NEGATION-CHAIN-WQZ4-01.md",
+   "sha": "88f548e9af42",
+   "n_chars": 926
   },
   {
-   "surface": "ci-inbox/shared/field-engine/FRAC-TRIALS-01/quafu_sim_seal.json",
-   "sha": "640bc1f404a7",
-   "n_chars": 697
+   "surface": "ci-inbox/shared/NOTE-25-AUTOPOIESIS-T64-01.md",
+   "sha": "1be972627647",
+   "n_chars": 1276
   },
   {
-   "surface": "ci-inbox/shared/field-engine/QRAC-TRIALS-01/QRAC-D4-V3-ZNE-SPEC.md",
-   "sha": "3a9355ac00c8",
-   "n_chars": 1755
+   "surface": "ci-inbox/shared/ZHOUTIAN/ZT-3150.json",
+   "sha": "742c6badd374",
+   "n_chars": 321
   },
   {
-   "surface": "ci-inbox/shared/field-engine/QRAC-TRIALS-01/QRAC-D8-PRESCREEN-01.md",
-   "sha": "73000736d486",
-   "n_chars": 1206
+   "surface": "ci-inbox/shared/field-engine/FRAC-TRIALS-01/ECHO-FRAC-01-qtlv-seq13-25-legacy.md",
+   "sha": "eedd68523572",
+   "n_chars": 346
   },
   {
-   "surface": "ci-inbox/shared/field-engine/QRAC-TRIALS-01/QRAC-HD01-D4-V2-RC-SPEC.md",
-   "sha": "ba622036cb36",
-   "n_chars": 1332
+   "surface": "ci-inbox/shared/field-engine/QRAC-TRIALS-01/QRAC-D4-V4-LAUNCH-PLAN.md",
+   "sha": "f5b72dbb1d8e",
+   "n_chars": 1455
   },
   {
-   "surface": "ci-inbox/shared/field-engine/QRAC-TRIALS-01/REAL-TRACK-REPORT-TIANYAN-QRAC-01.md",
-   "sha": "96381b687f29",
-   "n_chars": 5305
+   "surface": "ci-inbox/shared/field-engine/QRAC-TRIALS-01/QRAC-D4-V4-RICHARDSON-CHECK.md",
+   "sha": "6657c52c17ed",
+   "n_chars": 507
   },
   {
-   "surface": "ci-inbox/shared/field-engine/QRAC-TRIALS-01/REAL-TRACK-REPORT-TIANYAN-QRAC-02.md",
-   "sha": "0f5331833532",
-   "n_chars": 5094
+   "surface": "ci-inbox/shared/field-engine/QRAC-TRIALS-01/QRAC-D4-V4-SHALLOW-SPEC.md",
+   "sha": "013ce0ae8cab",
+   "n_chars": 2437
   },
   {
-   "surface": "ci-inbox/shared/field-engine/QRAC-TRIALS-01/qrac_tianyan_chain.jsonl",
-   "sha": "a9ddc3fa85d6",
-   "n_chars": 4944
+   "surface": "ci-inbox/shared/field-engine/QRAC-TRIALS-01/iqft2_3cz_decomp.json",
+   "sha": "a4e1f31879be",
+   "n_chars": 700
   }
  ],
  "changed": [
   {
-   "surface": "ci-inbox/shared/FIELD-USRM-01.json",
-   "sha": "9e5f77c54cdd",
-   "n_chars": 621
+   "surface": "ci-inbox/shared/AUTO-LEDGER-QFA-01.json",
+   "sha": "78858b49fd78",
+   "n_chars": 10500
   },
   {
-   "surface": "ci-inbox/shared/QTLV-SI3-LOOP-01.md",
-   "sha": "39d3a443a5b5",
-   "n_chars": 3171
+   "surface": "ci-inbox/shared/FIELD-USRM-01.json",
+   "sha": "0c344ba36313",
+   "n_chars": 622
+  },
+  {
+   "surface": "ci-inbox/shared/ORBIT-TRACK-01.json",
+   "sha": "b900e4448465",
+   "n_chars": 2322
+  },
+  {
+   "surface": "ci-inbox/shared/TENSOR-FIELD-01.json",
+   "sha": "3be4a9486fa6",
+   "n_chars": 15958
+  },
+  {
+   "surface": "ci-inbox/shared/field-engine/FRAC-TRIALS-01/chain.jsonl",
+   "sha": "d4a6ab862a21",
+   "n_chars": 4397
   }
  ],
  "errors": [],
- "mirror_total": 4513
+ "mirror_total": 4548
 }

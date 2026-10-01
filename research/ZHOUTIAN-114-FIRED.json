@@ -1,8 +1,8 @@
 {
  "artifact": "ZHOUTIAN-114-FIRED",
- "beat": "3.146",
- "ts": "2026-09-24T15:53:40Z",
- "token_sha": "7711616c7b68601ef3da2c6ef740ac82ab803bf39db61010742ddd0d54044d3b",
+ "beat": "3.150",
+ "ts": "2026-10-01T10:03:56Z",
+ "token_sha": "d3e94fa743b78f42d6b967e975d1fc0a584969c8ab24918e2f58f6310d5a0547",
  "legs": {
   "line": [
    {
@@ -79,7 +79,7 @@
   "own-receipt": [
    {
     "target": "vci-qgl",
-    "http": 201
+    "http": 409
    }
   ]
  },
@@ -95,6 +95,6 @@
   "usrm": 204,
   "cisvr": "alias-unresolved(树搜候)"
  },
- "score": "26/23 legs 2xx",
+ "score": "25/23 legs 2xx",
  "zero_fab": true
 }
