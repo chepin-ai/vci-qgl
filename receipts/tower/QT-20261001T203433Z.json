@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-01T20:34:33Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PULSE-QGL-20261001T203105Z.md"
+  }
+ ],
+ "verdict_memo": "[kimi.err HTTPError]"
+}
