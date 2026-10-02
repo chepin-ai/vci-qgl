@@ -1,0 +1,25 @@
+{
+ "beat": "3.153",
+ "law": "零编数律",
+ "entries": [
+  {
+   "item": "QTLV-READY-WINDOW-153卡",
+   "status": "证-投达",
+   "evidence": "post 201, cap 61ce932f33a5",
+   "fab_check": "卡文由cardgate.forge生成，anchor实链tip；无任何预测数"
+  },
+  {
+   "item": "WILDQ-SURGE-153大讨论#2帖",
+   "status": "证-投达",
+   "evidence": "post 201, cap 9e82a6052e2b",
+   "fab_check": "成果公示四条皆引实囊号；野问三投无预设答案"
+  },
+  {
+   "item": "裁答侦",
+   "status": "候-浪阻",
+   "evidence": "403次级限×5线，rate面5000健康",
+   "fab_check": "未扫即不判，不编答件"
+  }
+ ],
+ "cast_rule": "凡本条皆须实据，空结果同铸"
+}
