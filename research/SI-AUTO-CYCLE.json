@@ -1,0 +1,19 @@
+{
+ "beat": "3.153",
+ "cycle": "close-prep",
+ "ts": "2026-10-02T13:37:55Z",
+ "items": [
+  "qtlv卡投达201",
+  "大讨论#2投达201",
+  "裁答侦退"
+ ],
+ "key_health": {
+  "ok": true,
+  "evidence": {
+   "http": 200,
+   "secrets_count": 30,
+   "probe": "meta-probe名+updated_at",
+   "ts": "2026-10-02T13:55:14Z"
+  }
+ }
+}
