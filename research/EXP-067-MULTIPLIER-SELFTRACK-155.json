@@ -1,0 +1,34 @@
+{
+ "artifact": "EXP-067-MULTIPLIER-SELFTRACK-155",
+ "beat": "3.155",
+ "ts": "2026-10-02T16:18:30Z",
+ "law": "窗逾自推轨（卡61ce932f33a5：窗3.153-3.155逾则qgl自推，zero_fab标注推导轨）",
+ "prereg_nonce": "d9963f1fb0ff",
+ "definition": {
+  "n": 12,
+  "V4": "U(12)={1,5,7,11}乘子坐标（mod-12单位群，qgl自推定义，候qtlv tier2原件对校）",
+  "encoding": "Alice X^x1 Z^(m·x2)",
+  "decode": "y=1计算基(iA-iB)%12=x1；y=2逆QFT(iA+iB)%12=m·x2，m∈U(12)可逆唯一解"
+ },
+ "results": {
+  "ideal_S": 1.0,
+  "combos": 192,
+  "noise_sweep_measured": {
+   "0.0": 1.0,
+   "0.05": 0.9594,
+   "0.1": 0.8917,
+   "0.15": 0.8552,
+   "0.2": 0.8188,
+   "0.3": 0.7375,
+   "0.5": 0.5229
+  },
+  "analytic": "S(p)=(1-p)+p/12（实测p=0.5: 0.5229 vs 解析0.5208 一致）",
+  "thresholds": {
+   "Schmidt≥5": "p<0.1937（界0.8227）",
+   "Schmidt≥11全维": "p<0.0232（界0.9787）",
+   "classical_50%": "p<0.5455"
+  }
+ },
+ "zero_fab": true,
+ "witness_seat": "qtlv联署轨仍留（件到即互锚）"
+}
