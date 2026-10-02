@@ -1,0 +1,12 @@
+{
+ "artifact": "STRESS-155",
+ "beat": "3.155",
+ "results": {
+  "save_state_ms": 62.1,
+  "emit_ms_per_cap": 51.3,
+  "verify_s_at_2230": 0.07,
+  "chain_after": 2230,
+  "verdict": "全绿"
+ },
+ "zero_fab": true
+}
