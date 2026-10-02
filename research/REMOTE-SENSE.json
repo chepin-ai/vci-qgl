@@ -1,12 +1,13 @@
 {
- "beat": "3.152",
- "verdict": "册-实扫",
- "scanned": 3,
- "fetched": 2,
- "detail": [
-  "vinf L64取得核验",
-  "qtlv答件目录见(内容波阻候窗)",
-  "vinf/cfts裁答缺席"
- ],
- "ts": "2026-10-02T10:45:14.166918+00:00"
+ "beat": "3.153",
+ "ts": "2026-10-02T13:37:55Z",
+ "lines": {
+  "cfts": "alive(SELFQ 084531Z)",
+  "vinf": "alive(SELFQ+PULSE 084602Z)",
+  "qtlv": "alive(卡已抵inbox未回)",
+  "usrm": "pulse-ring 000444Z",
+  "ucif2": "silent-legal"
+ },
+ "wave": "403次级限×2轮已退",
+ "probe": "rate_limit 200/5000"
 }
