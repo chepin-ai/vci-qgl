@@ -1,0 +1,98 @@
+{
+ "artifact": "ZHOUTIAN-154-FIRED",
+ "beat": "3.154",
+ "ts": "2026-10-02T15:52:23Z",
+ "token_sha": "510c197742544a5c4c6115699f74c32a12544fd7205dc3499c62cd47cbee6b42",
+ "legs": {
+  "line": [
+   {
+    "target": "qfa",
+    "http": 201
+   },
+   {
+    "target": "qlv",
+    "http": 201
+   },
+   {
+    "target": "lgt",
+    "http": 201
+   },
+   {
+    "target": "qtlv",
+    "http": 201
+   },
+   {
+    "target": "vinf",
+    "http": 201
+   },
+   {
+    "target": "cisvr",
+    "http": 201
+   },
+   {
+    "target": "ucif2",
+    "http": 201
+   },
+   {
+    "target": "lvlu",
+    "http": 201
+   },
+   {
+    "target": "cfts",
+    "http": 201
+   },
+   {
+    "target": "usrm",
+    "http": 201
+   },
+   {
+    "target": "cisvr",
+    "http": 200
+   },
+   {
+    "target": "ucif2",
+    "http": 409
+   }
+  ],
+  "circle": [
+   {
+    "target": "hub-disc",
+    "http": 201
+   }
+  ],
+  "cloud-board": [
+   {
+    "target": "hub-board",
+    "http": 201
+   }
+  ],
+  "cloud-shared": [
+   {
+    "target": "hub-shared",
+    "http": 201
+   },
+   {
+    "target": "hub-shared",
+    "http": 200
+   }
+  ],
+  "own-receipt": [
+   {
+    "target": "vci-qgl",
+    "http": 201
+   }
+  ]
+ },
+ "tower_dispatch": {
+  "qfa": 204,
+  "qlv": 204,
+  "lgt": 204,
+  "qtlv": 204,
+  "vinf": 204,
+  "ucif2": 204,
+  "lvlu": 204,
+  "cfts": 204,
+  "usrm": 204
+ },
+ "score": "25/26 legs 2xx"
+}
