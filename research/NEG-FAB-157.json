@@ -1,0 +1,18 @@
+{
+ "beat": "3.157",
+ "law": "零编数律",
+ "entries": [
+  {
+   "item": "网站根因+修复",
+   "status": "证",
+   "evidence": "cap 78bdaea08947+实证截图",
+   "fab_check": "根因经grep实证（0引用），修复经渲染实证"
+  },
+  {
+   "item": "构建竞态",
+   "status": "证",
+   "evidence": "dist-test/dist2对照+盯梢实验",
+   "fab_check": "实验记录如实"
+  }
+ ]
+}
