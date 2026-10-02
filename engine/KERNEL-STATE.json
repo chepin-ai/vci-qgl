@@ -1,12 +1,12 @@
 {
- "beat": "3.156",
- "chain_tip": "7cc0bfc4937de047021ed6eded7717b661b91211882961886d1c4142ae9d3997",
- "chain_seq": 2259,
+ "beat": "3.157",
+ "chain_tip": "6bbf8ddbe3e5261249287bf57e1197afebd22b8b8b4de478da4b060fc957cbaf",
+ "chain_seq": 2273,
  "contract_sha": "bd7ef5455897",
  "cool": {},
- "saved_at": "2026-10-02T20:57:09Z",
+ "saved_at": "2026-10-02T21:32:39Z",
  "extra": {
   "auto": "checkpoint-close"
  },
- "cap": "5b1b4e0b3527"
+ "cap": "c9e50c8274a3"
 }
