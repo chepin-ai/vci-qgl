@@ -1,0 +1,26 @@
+{
+ "beat": "3.156",
+ "from": "3.155",
+ "items": [
+  {
+   "item": "qtlv tier2原件对校侦（乘子坐标U(12)定义校准+见证联署）",
+   "pri": "high"
+  },
+  {
+   "item": "五问裁答侦（MINDWIND/ERRATA-XLINE/RESURRECT/METACOG-LOOP/RESCALE）",
+   "pri": "high"
+  },
+  {
+   "item": "大周天回腿侦（ZT-3154 token镜面扫）",
+   "pri": "mid"
+  },
+  {
+   "item": "EXP-067乘子版噪声阈收窄实测（p∈[0.15,0.20]细分）",
+   "pri": "mid"
+  },
+  {
+   "item": "NEG-FAB-156册",
+   "pri": "routine"
+  }
+ ]
+}
