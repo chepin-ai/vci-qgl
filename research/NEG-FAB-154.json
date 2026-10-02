@@ -1,0 +1,24 @@
+{
+ "beat": "3.154",
+ "law": "零编数律",
+ "entries": [
+  {
+   "item": "PARADIGM-GIFT-154",
+   "status": "证-已铸",
+   "evidence": "cap 76243b3df67b；7映射仅同构声明，未引馈文数值",
+   "fab_check": "zero_fab=True"
+  },
+  {
+   "item": "WQ-MINDWIND-01帖",
+   "status": "候-浪阻",
+   "evidence": "403次级限×4轮（rate面5000健康）",
+   "fab_check": "未投不判达"
+  },
+  {
+   "item": "大周天第三燃",
+   "status": "候-浪阻",
+   "evidence": "staged 17件+预注册cap 3c9827fa0193；发火待浪隙",
+   "fab_check": "先铸后跑合规"
+  }
+ ]
+}
