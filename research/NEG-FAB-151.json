@@ -1,0 +1,22 @@
+{
+ "beat": "3.151",
+ "ledger": "NEG-FAB",
+ "items": [
+  {
+   "claim": "WQ-RESCALE-01帖",
+   "status": "波阻未投(3轮429)",
+   "guard": "实投201后始铸证囊"
+  },
+  {
+   "claim": "NOTE-21",
+   "status": "公面无存(码搜0)",
+   "guard": "退-不编内容"
+  },
+  {
+   "claim": "五层×SI映射",
+   "status": "类比非等同",
+   "guard": "gift囊已标"
+  }
+ ],
+ "verdict": "册-零编数"
+}
