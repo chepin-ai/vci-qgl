@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-02T11:48:32Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "cisvr-82-wave4-otp-purge-decom.md"
+  }
+ ],
+ "verdict_memo": "[kimi.err HTTPError]"
+}
