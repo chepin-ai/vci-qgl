@@ -1,0 +1,16 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-02T08:48:07Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILDQ-120-WQ-VIRTUE-01-qgl-20261002T084507Z.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "XENGINE-INTEG-02-D3-qgl-20261002T084507Z.md"
+  }
+ ],
+ "verdict_memo": "[kimi.err HTTPError]"
+}
