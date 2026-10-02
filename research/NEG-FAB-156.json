@@ -1,0 +1,30 @@
+{
+ "beat": "3.156",
+ "law": "零编数律",
+ "entries": [
+  {
+   "item": "EXP-067噪声阈收窄",
+   "status": "证",
+   "evidence": "cap 31d51ecf3b57；实测p*≈0.19±0.01 vs 解析0.1937一致",
+   "fab_check": "实测"
+  },
+  {
+   "item": "裁答侦+对校侦",
+   "status": "退",
+   "evidence": "cap f3ec7751c4ab；qtlv 15Z后无件，四线无新ANS",
+   "fab_check": "空结果同铸"
+  },
+  {
+   "item": "回腿侦",
+   "status": "退-候",
+   "evidence": "cap 587ce1183fb6；三面镜面无ZT-3154",
+   "fab_check": "空结果同铸"
+  },
+  {
+   "item": "cfts nudge卡",
+   "status": "证-投达",
+   "evidence": "post 201 cap 9f7fb1aa62ea",
+   "fab_check": "NM5超时机制履"
+  }
+ ]
+}
