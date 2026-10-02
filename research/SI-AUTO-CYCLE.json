@@ -1,21 +1,18 @@
 {
- "beat": "3.155",
+ "beat": "3.156",
  "cycle": "close-prep",
- "ts": "2026-10-02T16:52:39Z",
+ "ts": "2026-10-02T20:56:24Z",
  "items": [
-  "EXP-067乘子自推轨",
-  "STRESS-155",
-  "MINDWIND-155自答",
-  "饱和帖201",
-  "全线增量扫"
+  "阈收窄证",
+  "nudge 201",
+  "双侦退"
  ],
  "key_health": {
   "ok": true,
   "evidence": {
    "http": 200,
    "secrets_count": 30,
-   "probe": "meta-probe",
-   "ts": "2026-10-02T16:52:39Z"
+   "ts": "2026-10-02T20:56:24Z"
   }
  }
 }
