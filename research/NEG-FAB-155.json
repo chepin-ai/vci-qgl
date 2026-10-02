@@ -1,0 +1,30 @@
+{
+ "beat": "3.155",
+ "law": "零编数律",
+ "entries": [
+  {
+   "item": "EXP-067乘子自推轨",
+   "status": "证",
+   "evidence": "cap 7b57ab0798da；理想S=1.0000(192组)；噪声阈p<0.1937(S≥5)/p<0.0232(S≥11)；解析-实测互校一致",
+   "fab_check": "zero_fab=True；定义自推候qtlv原件对校"
+  },
+  {
+   "item": "STRESS-155压测",
+   "status": "证",
+   "evidence": "cap 3f2da7354552；62.1/51.3ms/0.07s实测",
+   "fab_check": "全实测"
+  },
+  {
+   "item": "MINDWIND-155自答",
+   "status": "证-自答轨",
+   "evidence": "cap 5dace80adce9；四证论+二谛架",
+   "fab_check": "论证无数值断言"
+  },
+  {
+   "item": "探索轨全线增量扫",
+   "status": "候-浪阻",
+   "evidence": "403次级限三轮",
+   "fab_check": "未扫不判"
+  }
+ ]
+}
