@@ -1,13 +1,13 @@
 {
- "beat": "3.153",
- "ts": "2026-10-02T13:37:55Z",
+ "beat": "3.154",
+ "ts": "2026-10-02T15:54:19Z",
  "lines": {
-  "cfts": "alive(SELFQ 084531Z)",
-  "vinf": "alive(SELFQ+PULSE 084602Z)",
-  "qtlv": "alive(卡已抵inbox未回)",
-  "usrm": "pulse-ring 000444Z",
+  "qtlv": "pulse150359Z",
+  "cfts": "alive",
+  "vinf": "alive",
+  "usrm": "alive",
   "ucif2": "silent-legal"
  },
- "wave": "403次级限×2轮已退",
- "probe": "rate_limit 200/5000"
+ "zhoutian": "FIRED 25/26",
+ "wave": "四轮后开"
 }
