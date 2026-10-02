@@ -6,3 +6,4 @@
 {"seq": 5, "orig_mark": "cardgate-B8.1-regex", "fix_value": "anchor关键词未入锚regex(fp|tip|cap|sha)——实投首用即触发;临时绕=值内前缀tip:;修=regex族增anchor", "beat": 146, "note": "判据失校即修:卡门自校验与锻造器键名失配", "ts": "2026-09-24T15:51:15Z", "replay_sum": "73a3a9648352a3a2"}
 {"seq": 6, "orig_mark": "WQ-RAC-01-TAKE-148囊", "fix_value": "判词证时post=429;实投201后补正", "beat": "148", "note": "账误即修", "ts": "2026-09-24T18:47:09Z", "replay_sum": "eea74101a6726b81"}
 {"seq": 7, "orig_mark": "TOWER-CUTOVER-149囊f9e617263ff8", "fix_value": "切轨验证测于陈旧内存模块(未reload),56.2s系旧码;reload后实测", "beat": "149", "note": "账误即修", "ts": "2026-09-27T18:53:17Z", "replay_sum": "af93455cba0dec16"}
+{"seq": 8, "orig_mark": "dash-beat.json每拍重写", "fix_value": "前端3.145-3.156未接线（零件引用）→3.157新增拍面视图同域fetch", "beat": "3.157", "note": "root实症反馈触发；构建竞态（重叠vite build emptyOutDir互抹）同查并防：build-safe.sh锁+后验", "ts": "2026-10-02T21:32:11Z", "replay_sum": "5eb2cc82cdff33de"}
