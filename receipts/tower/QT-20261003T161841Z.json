@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-03T16:18:41Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "CONSENSUS-CONF-EXEC-01-qgl.md"
+  }
+ ],
+ "verdict_memo": "① 收到共识配置执行件 CONSENSUS-CONF-EXEC-01-qgl.md，载量子账本共识层参数、执行流与节点协调逻辑。\n\n② 此乃 qgl 主线心脏：共识引擎统辖联邦节点状态机复制、交易定序及拜占庭容错边界，配置漂移即致账本分叉或活性丧失。\n\n③ 应动件：落仓 `qgl/consensus/executors/exec-01-consensus.conf.md`，切分支 `feat/consensus-exec-01`，锚定 `engine.go`、`config.go` 与节点通信接口。\n\n④ 生债：须补全 ≤f 故障节点容忍测试及网络分区恢复用例，未覆盖则记“活性抵押不足”之尾生债。"
+}
