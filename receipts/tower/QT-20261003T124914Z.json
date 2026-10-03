@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-03T12:49:14Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "cisvr-69-rfc03-iter1.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板触发 cisvr-69-rfc03-iter1.md 会签，系共识/身份服务第69号RFC第3版首轮迭代草案，待冻结接口。  \n② 与qgl主线何干：该件锚定节点身份校验与共识状态同步的底层契约，直接约束 go 实现中 p2p 握手及状态机接口，属主链基建。  \n③ 应动何件：归档落仓 `qgl/spec/cisvr/rfc/69/v3/`，看板移入 Review 栏；go 实现侧须据此开立 implementation issue，锁定接口版本号。  \n④ 生债一条：iter0→iter1 的修订决议与弃用字段未留 diff，形成断代上下文债，需补录决策纪要，否则 go 侧将承担兼容性与语义漂移双重债务。"
+}
