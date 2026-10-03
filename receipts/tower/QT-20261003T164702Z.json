@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-03T16:47:02Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PULSE-RING-CFTS-TO-QGL-20261003T164123Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：PULSE-RING 联邦经 CFTS 协议向 QGL 投喂跨联邦脉冲环信标（20261003T164123Z），属断代后首笔外部续脉请求。  \n② 与 qgl 主线何干：QGL 主线含联邦层 go 实现，CFTS 系跨联邦共识传输标准，此件直插量子账本网际接口与律法同步，不纳则节点失节拍。  \n③ 应动何件：先落 `inbox/pulse-ring/` 解包，再入 `qgl/federation/cfts/adapter.go` 作协议握手；若为纯元数据，则归档 `docs/federation/pulse-ring.md` 并注入主网配置。  \n④ 生债一条：欠 PULSE-RING 端一条 CFTS→QGL 的 go 适配器及联邦回执，须于律法时限内完成首帧校验与双向绑定。"
+}
