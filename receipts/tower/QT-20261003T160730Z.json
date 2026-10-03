@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-03T16:07:30Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILDQ-EXEC-QGL-01.md"
+  }
+ ],
+ "verdict_memo": "① **何事**：WILDQ-EXEC-QGL-01.md 入箱，乃野生执行器（WildQ Exec）之架构草案，涉量子账本指令调度、生命周期及 Go 并发执行策略。  \n② **与 qgl 主线何干**：执行层为量子账本之筋骨，上承共识、下接状态机；缺此件，QGL 仅静态库，主线运转无力。  \n③ **应动何件**：宜自 `/inbox` 迁入 `/docs/spec/exec/adr-001-wildq-exec.md`，附必填项——状态转移图与 Goroutine/Channel 绑定方案。  \n④ **生债一条**：WildQ 与 `core` 引擎边界未划，恐埋循环依赖之患，急待以接口契约封疆定界。"
+}
