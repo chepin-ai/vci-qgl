@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-03T07:15:00Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "cisvr-72-otp-all-directives.md"
+  }
+ ],
+ "verdict_memo": "① 董事层援引 cisvr-72 OTP 全指令文档到件，属治理规程或一次性操作密钥的顶层定向。  \n② 量子账本以密码学身份为基，OTP 指令若涉节点准入、密钥轮换或授权链，直接锚定 qgl 联邦律法之 auth 层。  \n③ 应动件：落仓 `vault/governance/cisvr72/otp-all-directives.md`；同步提取 OTP 规程，起草 `auth/otp/directive.go` 接口草案，供 go 模块实现。  \n④ 生债：董事层 OTP 定向尚未转译为 qgl go 语言可编译的 IAuthDirective 接口，尾生债一笔，待偿。"
+}
