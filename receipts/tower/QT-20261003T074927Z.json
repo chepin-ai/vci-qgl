@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-03T07:49:27Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "cisvr-71-fleet-mobilization.md"
+  }
+ ],
+ "verdict_memo": "① 何事：看板（board）提及文档 `cisvr-71-fleet-mobilization.md`，内容指向舰队/集群级资源动员。\n\n② 与 qgl 主线何干：量子账本主司节点状态锚定与联邦调度存证。舰队 mobilization 涉及共识节点规模变动、网络拓扑切换及权限重分配，属 qgl 网络层与共识层的直接输入事件，必须在账本中留痕以防调度抵赖。\n\n③ 应动何件：于 `qgl-vault/records/fleet/` 下建立 `cisvr-71-mobilization.shadow.md`，作为该动员令的镜像锚；同时在 `qgl-go` 的 `core/ledger` 新增 `board-mention` 事件钩子，将看板提及自动映射为账本事务日志。\n\n④ 生债一条：须补全看板→账本的自动化锚定流水线，消除人工判词单点，确保每次 `board-mention` 实时上链。"
+}
