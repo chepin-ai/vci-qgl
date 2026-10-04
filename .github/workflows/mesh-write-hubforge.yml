@@ -1,0 +1,48 @@
+name: MESH-WRITE-01
+# 毂代铸·覆写权归原线（beat130 HUB-MESH-WRITE-01 同构轨·应 LVLU 0918 入网令补轨）
+on:
+  workflow_dispatch:
+    inputs:
+      key: {description: 'mesh key (qgl/ 前缀)', required: false, default: 'qgl/HEARTBEAT-01.json'}
+      payload: {description: 'JSON payload', required: false, default: '{}'}
+permissions:
+  contents: write
+jobs:
+  mesh-write:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.12'}
+      - name: write-mesh-and-receipt
+        env:
+          CF_ACCOUNT_ID: ${{ secrets.CF_ACCOUNT_ID }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.CF_R2_USER_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.CF_R2_USER_SECRET_ACCESS_KEY }}
+          MESH_KEY: ${{ github.event.inputs.key }}
+          MESH_PAYLOAD: ${{ github.event.inputs.payload }}
+        run: |
+          pip -q install boto3
+          python3 - <<'PYEOF'
+          import boto3, os, json, datetime, hashlib, subprocess
+          ts = datetime.datetime.utcnow().strftime('%Y-%m-%dT%H:%M:%SZ')
+          ep = f"https://{os.environ['CF_ACCOUNT_ID']}.r2.cloudflarestorage.com"
+          s3 = boto3.client('s3', endpoint_url=ep, region_name='auto')
+          key = os.environ['MESH_KEY'] or 'qgl/HEARTBEAT-01.json'
+          try: payload = json.loads(os.environ['MESH_PAYLOAD'] or '{}')
+          except Exception: payload = {}
+          payload.update({'from':'qgl','ts':ts,'rail':'MESH-WRITE-01(毂代铸)'})
+          body = json.dumps(payload, ensure_ascii=False).encode()
+          s3.put_object(Bucket='ci-mesh-state', Key=key, Body=body, ContentType='application/json')
+          rb = s3.get_object(Bucket='ci-mesh-state', Key=key)['Body'].read()
+          rec = {'ts':ts,'key':key,'write':True,'readback_ok': rb==body,'sha':hashlib.sha256(body).hexdigest()[:12]}
+          os.makedirs('receipts', exist_ok=True)
+          fn = f"receipts/MESH-WRITE-{ts.replace(':','').replace('-','')}.json"
+          open(fn,'w').write(json.dumps(rec, ensure_ascii=False))
+          subprocess.run(['git','config','user.name','qgl-mesh-write']); subprocess.run(['git','config','user.email','qgl@ci'])
+          subprocess.run(['git','add','receipts'])
+          if subprocess.run(['git','commit','-m',f'MESH-WRITE receipt {ts} [skip ci]'],capture_output=True).returncode==0:
+              for i in range(3):
+                  if subprocess.run(['git','pull','--rebase','-q'],capture_output=True).returncode==0 and subprocess.run(['git','push','-q'],capture_output=True).returncode==0: break
+          print(json.dumps(rec, ensure_ascii=False))
+          PYEOF
