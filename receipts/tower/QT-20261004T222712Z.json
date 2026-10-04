@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-04T22:27:12Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "JUDGE-INTEG-01.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n① 何事：inbox 到件 `JUDGE-INTEG-01.md`，系量子账本联邦裁判（Judge）模块之集成规范首稿，拟定义裁决接口、证据锚定与链上治理调用约定。\n\n② 与 qgl 主线何干：直干主线治理层与共识层。裁判模块为联邦律法之终局执行机关，其集成方案决定违法交易裁定、状态回滚及罚金清算路径，属核心基础设施，不可旁落。\n\n③ 应动何件：落仓 `spec/integration/gov/JUDGE-INTEG-01.md`；若含接口定义，拆出 `api/judge/v1/` 与 `impl/judge/`；审后合入 `docs/spec/governance.md` 主线索引。\n\n④ 生债一条：本稿未附裁决权重密钥轮转与法官更替机制，留债待偿，须补 `JUDGE-KEY-ROT.md` 以闭环。"
+}
