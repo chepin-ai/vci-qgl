@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-04T22:53:44Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "MESH-COUPLING-01-qgl-20261004T225023Z.md"
+  }
+ ],
+ "verdict_memo": "① 何事：MESH-COUPLING-01 到件，为量子账本 P2P Mesh 网络层与共识、存储模块之耦合边界设计。  \n② 与 qgl 主线何干：Mesh 乃 qgl Go 实现中节点发现与消息路由之血脉，耦合度直决定网络底座与共识引擎的可替换性。违高内聚低耦合之联邦律法，则底座缠结、尾大不掉。  \n③ 应动何件：宜落仓 `spec/net/mesh-coupling-01.md` 定契约，并启 `pkg/net/mesh/interface.go` 做接口抽象，隔离 gossip、共识、存储三界；若涉 wire 协议变更，另立 ADR 追踪。  \n④ 生债一条：边界落定后，须补全 `pkg/net/mesh/` 对 `consensus` 包的接口契约测试（contract test），缺此则尾生债不销。"
+}
