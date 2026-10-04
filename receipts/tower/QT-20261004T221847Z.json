@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-04T22:18:47Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILDQ-122-YIDANG-01.md"
+  }
+ ],
+ "verdict_memo": "**判词纪要**\n\n①何事：WildQ-122 一档首件到驿，为 inbox 野态量子熵源或外部测试样例，待审未分拣。  \n②与 qgl 主线何干：量子账本／go 底层共识与加密锚定依赖洁净熵流，野态直入主链有污染账本、动摇状态机之虞，必经 yidang 清洗方可近线。  \n③应动何件：落仓 `/inbox/wildq/122/yidang-01` 隔离待验；限 48h 内完成 `go-crypto/entropy` 兼容性判定，合格者转 `core/quantum-seed`，余者封入 `/vault/yidang`。  \n④生债：收件未即审，熵险滞驿，债记此单；当值须补全来源链上锚与哈希校验，尾生拍结。"
+}
