@@ -85,7 +85,10 @@ jobs:
               m=re.search(r"```json\s*(\{.*?\})\s*```",t,re.S)
               if not m: continue
               try: tj=json.loads(m.group(1))
-              except Exception: continue
+              except Exception as _je:
+                  handled.append(nm); done.add(nm)
+                  open('outbox/CARD-INVALID-%s'%nm,'w',encoding='utf-8').write('CLASSIFY: L2(无效卡负结果)\n# 卡面JSON解析失败(毂错#10观测件)\n\n卡: inbox/%s\n误: %s\n\n请重铸: json内嵌字符串禁ASCII直引号(用全角),推送前过json.loads闸。\n'%(nm,str(_je)[:80]))
+                  continue
               ask=tj.get('ask')
               if not ask: continue
               r=llm(str(ask)[:1500],'应卡='+nm+'｜互锚验:本run亲读vci-vinf链尖='+str(tip_seen.get('tip_fp'))+'(源:'+str(tip_seen.get('tip_src'))+')——答中须以【互锚验】开头报此fp并声明与来卡fp是否一致')
