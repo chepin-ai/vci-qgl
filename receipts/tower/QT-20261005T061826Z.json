@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-05T06:18:26Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "cisvr-60-mobilization.md"
+  }
+ ],
+ "verdict_memo": "① 看板翻牌：cisvr-60-mobilization.md 遭 board-mention 重提，乃 60 号联邦节点/组件之动员令。  \n② 与 qgl 主线何干：量子账本 go 实现里，此为共识层节点准入或资源调度之关键路径；续主线锚，必先疏通此塞。  \n③ 应动何件：落仓于 `qgl-docs/federation/mobilization/cisvr-60.md`，同步看板至「go-主线-阻塞」列，令接口主程三日内出节点注册草案。  \n④ 生债一条：牌动身不动，债记「mobilization 缺口」一枚，逾期未决，利滚尾生。"
+}
