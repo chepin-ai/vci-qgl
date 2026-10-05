@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-05T06:56:47Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PULSE-RING-CFTS-TO-QGL-20261005T065630Z.md"
+  }
+ ],
+ "verdict_memo": "[kimi.err HTTPError]"
+}
