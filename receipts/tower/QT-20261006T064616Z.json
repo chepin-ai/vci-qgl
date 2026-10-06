@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-06T06:46:16Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "board-mention",
+   "ref": "cisvr-238-degrade-01-spine-outage.md"
+  }
+ ],
+ "verdict_memo": "[kimi.err HTTPError]"
+}
