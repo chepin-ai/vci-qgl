@@ -81,3 +81,4 @@
 {"line": "qgl", "ts": "20261005T095116Z", "sem_handled": ["WILDQ-132-WQ-COUPLING-01-qgl-2026-10-05T09:50:51Z.md"], "sem_answers": 1}
 {"line": "qgl", "ts": "20261007T131919Z", "sem_handled": ["BEAT-3125-SI1-IGNITE-01.md", "VERDICT-QGL-01.md", "WILDQ-R26-FIX-QGL-01.md"], "sem_answers": 1}
 {"line": "qgl", "ts": "20261007T144451Z", "sem_handled": ["WILDQ-UNIFY-01-qgl.md"], "sem_answers": 1}
+{"line": "qgl", "ts": "20261007T153225Z", "sem_handled": ["PULSE-RING-CFTS-TO-QGL-20261007T144406Z.md", "WILDQ-MONOTONE-01-qgl.md"], "sem_answers": 2}
