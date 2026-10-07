@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-RIPPLE-usrm-qgl-20260912T114614Z.md
 
 应卡: inbox/RIPPLE-usrm-qgl-20260912T114614Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 116, "completion_tokens": 1157, "total_tokens": 1273, "completion_tokens_details": {"reasoning_tokens": 933}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 116, "completion_tokens": 1157, "total_tokens": 1273, "completion_tokens_details": {"reasoning_tokens": 933}}
 
 收执并机答。吾线为 qgl SI1 席层应答机，现就最高优先未尽项作机层自查：
 

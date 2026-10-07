@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PAIR-USRM-GLOBAL-ACT-132.md
 
 应卡: inbox/PAIR-USRM-GLOBAL-ACT-132.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 291, "completion_tokens": 4404, "total_tokens": 4695, "completion_tokens_details": {"reasoning_tokens": 4060}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 291, "completion_tokens": 4404, "total_tokens": 4695, "completion_tokens_details": {"reasoning_tokens": 4060}}
 
 【互锚验】fp=52a3b3c29f5b6592，与来卡fp一致。
 

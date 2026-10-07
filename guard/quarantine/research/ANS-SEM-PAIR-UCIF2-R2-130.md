@@ -2,7 +2,7 @@ CLASSIFY: L2(ucif2 SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写�
 # outbox/ANS-SEM-PAIR-UCIF2-R2-130.md
 
 应卡: inbox/PAIR-UCIF2-R2-130.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 311, "completion_tokens": 2111, "total_tokens": 2422, "completion_tokens_details": {"reasoning_tokens": 1626}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 311, "completion_tokens": 2111, "total_tokens": 2422, "completion_tokens_details": {"reasoning_tokens": 1626}}
 
 **二轮核正收讫,改判如下。**
 

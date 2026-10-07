@@ -9,7 +9,7 @@
   "nonce互指": "候未达——答件未回指011b23c3cb14(应卡文件名绑定为弱形式; 与vinf同态: 彼亦未echo我nonce)"
  },
  "latency_s": 102,
- "engine": "KIMI_API_KEY/kimi-k3",
+ "engine": "〈RED〉/kimi-k3",
  "rail_facts": {
   "fire": "push事件脊(非硬触发)",
   "dedup": "si/sem-state.json",

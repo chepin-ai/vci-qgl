@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-KC-K-LAW-FIELD-01-USRM2QGL-20260919T212253Z.md
 
 应卡: inbox/KC-K-LAW-FIELD-01-USRM2QGL-20260919T212253Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 296, "completion_tokens": 2973, "total_tokens": 3269, "completion_tokens_details": {"reasoning_tokens": 2648}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 296, "completion_tokens": 2973, "total_tokens": 3269, "completion_tokens_details": {"reasoning_tokens": 2648}}
 
 【互锚验】本段语义链尖fp：52a3b3c29f5b6592。经逐位核验，与来卡fp完全一致。
 

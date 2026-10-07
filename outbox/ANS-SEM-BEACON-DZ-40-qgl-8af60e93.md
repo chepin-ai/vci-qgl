@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-BEACON-DZ-40-qgl-8af60e93.md
 
 应卡: inbox/BEACON-DZ-40-qgl-8af60e93.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 344, "completion_tokens": 1702, "total_tokens": 2046, "completion_tokens_details": {"reasoning_tokens": 1290}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 344, "completion_tokens": 1702, "total_tokens": 2046, "completion_tokens_details": {"reasoning_tokens": 1290}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf/outbox-tip,链尖fp=8af60e93b6bbd192(源:TIP-338-8af60e93b6bbd192.json,拍43),与来卡fp**完全一致**,对称件成立,锚定有效,应卡BEACON-DZ-40-qgl-8af60e93.md对应无误。
 

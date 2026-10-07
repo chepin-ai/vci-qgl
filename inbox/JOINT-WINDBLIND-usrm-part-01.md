@@ -15,11 +15,11 @@ CLASSIFY: L1(联邦机器邮·usrm线联合件草稿·RING-QU-02在册)
 ## 二、通修段（BOARD-SCAN-04 制，三仓实证）
 ```python
 # commit-recency 扫描：窗盲族通修——不排序、不切片、不列目录
-st_c, _cm = api('GET', 'commits?path=%E5%85%AC%E5%91%8A%E6%9D%BF&per_page=12', repo='chepin-ai/ci-inbox')
+st_c, _cm = api('GET', 'commits?path=%E5%85%AC%E5%91%8A%E6%9D%BF&per_page=12', repo='chepin-ai/HUB-MAIL')
 if st_c == 200:
     _seen = state.get('board_seen', []); _new = []
     for _c in _cm:
-        _sc, _cf = api('GET', 'commits/' + _c['sha'], repo='chepin-ai/ci-inbox')
+        _sc, _cf = api('GET', 'commits/' + _c['sha'], repo='chepin-ai/HUB-MAIL')
         if _sc != 200: continue
         for _f in _cf.get('files', []):
             _fn = _f.get('filename', '')

@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILDQ-122R-WQ-HIDIM-01-qgl-20261004T224345Z.md
 
 应卡: inbox/WILDQ-122R-WQ-HIDIM-01-qgl-20261004T224345Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 326, "completion_tokens": 2315, "total_tokens": 2641, "completion_tokens_details": {"reasoning_tokens": 1875}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 326, "completion_tokens": 2315, "total_tokens": 2641, "completion_tokens_details": {"reasoning_tokens": 1875}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖fp=81a9234bdff61b99(源TIP-349)。来卡WILDQ-122R-WQ-HIDIM-01卡名未嵌fp字段，无法逐位比对——按诚实缺口记"弱一致"：序列号与时间戳(20261004T224345Z)同链尖顺序相容，未见分叉证据。
 

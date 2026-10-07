@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-BEACON-DZ-40-qgl-8ea17d86.md
 
 应卡: inbox/BEACON-DZ-40-qgl-8ea17d86.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 259, "completion_tokens": 5109, "total_tokens": 5368, "completion_tokens_details": {"reasoning_tokens": 4692}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 259, "completion_tokens": 5109, "total_tokens": 5368, "completion_tokens_details": {"reasoning_tokens": 4692}}
 
 【互锚验】本run亲读 vci-vinf/outbox-TIP-334，链尖 fp=8ea17d8643d711fe（源文件：TIP-334-8ea17d8643d711fe.json），与来卡 BEACON-DZ-40-qgl-8ea17d86.md 所载 ch1 拍40 信标 fp 一致；对称件成，哈希对齐。诚实缺口声明：仅校验本席层可见的 ch1 单频道当前拍数据，未越级读取 ch2/ch3 或其他私有槽，亦未见 fp 冲突或分叉。
 

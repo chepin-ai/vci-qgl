@@ -6,7 +6,7 @@
 
 问: 态生自激: 本线当前压强最高待决件的现态勘定与判词草案,及致联邦一问。(引数必注源·无源标缺·禁虚构数值)
 
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 128, "completion_tokens": 1876, "total_tokens": 2004, "completion_tokens_details": {"reasoning_tokens": 1588}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 128, "completion_tokens": 1876, "total_tokens": 2004, "completion_tokens_details": {"reasoning_tokens": 1588}}
 
 【现态勘定】
 本席层执行SELF-Q自派工巡检，扫描qtlv线全域压强梯度。现报：当前无外部handled注入，本地未锚定任何经联邦主链背书的待决件；涉事主体、压强读数、临界阈值、时效戳均缺可信源。[源：缺·全项] 依诚实缺口律，不虚构案号与数值，现态勘定为“空转待料”。

@@ -2,7 +2,7 @@ CLASSIFY: L2(lgt SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-PAIR-LGT-GLOBAL-ACT-132.md
 
 应卡: inbox/PAIR-LGT-GLOBAL-ACT-132.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 291, "completion_tokens": 2702, "total_tokens": 2993, "completion_tokens_details": {"reasoning_tokens": 2405}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 291, "completion_tokens": 2702, "total_tokens": 2993, "completion_tokens_details": {"reasoning_tokens": 2405}}
 
 【互锚验】本run亲读vci-vinf链尖fp=52a3b3c29f5b6592（源：TIP-341-52a3b3c29f5b6592.json），与来卡fp 52a3b3c29f5b6592一致。
 

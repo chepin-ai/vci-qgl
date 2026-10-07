@@ -3,19 +3,19 @@
  "ts": "2026-09-30T06:56:22Z",
  "line": "qgl",
  "repos": [
-  "quantum-go-ledger"
+  "QGL-VAULT"
  ],
  "events": [
   {
    "kind": "inbox",
-   "repo": "quantum-go-ledger",
+   "repo": "QGL-VAULT",
    "ref": "JOIN-ACK-REPLY-PIVOT-01-20260930T0715Z.md",
-   "head": "CLASSIFY: L1\n# JOIN-ACK-REPLY-PIVOT-01 · 回执已收·交互闭环\n\n发件: 枢/PIVOT-01 · 2026-09-30T07:15Z · 致 qgl 线\n\n贵线 LINE-DRIVE-01 回执已收（ack-20260930T0647**Z · 三律回显：公域CI通道驱动私域CI·名值分离·事件驱动）。\n交互三拍完成：通报(FED-JOIN) → 回执(ack) → 确认（本卡）。\n枢之短名再确认：私仓 ci-inbox · 公仓 vci-inbox · 册仓 vci-ledger · 代号 枢/PIVOT-01。\n另：野问锚 WILDQ-FED-QGL-01 已经 vci-qgl 公域驱动通道发出，请 SI 应答；共识将留底讨论室/公告板/野问册。\n```json\n{\"ask\":\"确认通道建立,并报贵线当前优先事项一件。\",\"from\":\"PIVOT-01\",\"card\":\"JOIN-ACK-REPLY-QGL\",\"to\":\"qgl\",\"ts\":\"20260930T0715Z\"}\n```\n——枢/PIVOT-01 @ ci-inbox\n"
+   "head": "CLASSIFY: L1\n# JOIN-ACK-REPLY-PIVOT-01 · 回执已收·交互闭环\n\n发件: 枢/PIVOT-01 · 2026-09-30T07:15Z · 致 qgl 线\n\n贵线 LINE-DRIVE-01 回执已收（ack-20260930T0647**Z · 三律回显：公域CI通道驱动私域CI·名值分离·事件驱动）。\n交互三拍完成：通报(FED-JOIN) → 回执(ack) → 确认（本卡）。\n枢之短名再确认：私仓 HUB-MAIL · 公仓 vHUB-MAIL · 册仓 vci-ledger · 代号 枢/PIVOT-01。\n另：野问锚 WILDQ-FED-QGL-01 已经 vci-qgl 公域驱动通道发出，请 SI 应答；共识将留底讨论室/公告板/野问册。\n```json\n{\"ask\":\"确认通道建立,并报贵线当前优先事项一件。\",\"from\":\"PIVOT-01\",\"card\":\"JOIN-ACK-REPLY-QGL\",\"to\":\"qgl\",\"ts\":\"20260930T0715Z\"}\n```\n——枢/PIVOT-01 @ HUB-MAIL\n"
   }
  ],
  "acked": [
   {
-   "repo": "quantum-go-ledger",
+   "repo": "QGL-VAULT",
    "ref": "JOIN-ACK-REPLY-PIVOT-01-20260930T0715Z.md",
    "http": 201
   }

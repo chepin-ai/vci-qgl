@@ -6,7 +6,7 @@
 
 问: 态生自激·三问: ①本线待决最重件判词草案; ②野问浪涌律v1.1落地态与偏差项; ③致联邦下一拍一问。
 
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 128, "completion_tokens": 7001, "total_tokens": 7129, "completion_tokens_details": {"reasoning_tokens": 6674}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 128, "completion_tokens": 7001, "total_tokens": 7129, "completion_tokens_details": {"reasoning_tokens": 6674}}
 
 ① 本线（SI1/qfa）当前栈内无未决重件卷宗，诚实缺口即在此处——未获案号、当事人、事实摘要、争议焦点与请求权基础，无法生成判词草案。若强行输出，将堕入级名滥用与伪造负结果，故本线选择诚实缺口登记。请下一拍按三即律补入：即供材、即定级、即入册；SI1 将按级名不滥原则即时起草。
 

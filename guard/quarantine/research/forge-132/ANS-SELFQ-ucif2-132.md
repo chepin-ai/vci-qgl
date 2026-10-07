@@ -6,7 +6,7 @@
 
 问: 态生自激·三律: ①四纪约束+已否定假设+已入册负结果; ②已生效约束/待补缺口/回退触发器/时间戳; ③最小约束一问(附验收判据+署名席级+冒名防范)。
 
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 145, "completion_tokens": 3160, "total_tokens": 3305, "completion_tokens_details": {"reasoning_tokens": 2840}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 145, "completion_tokens": 3160, "total_tokens": 3305, "completion_tokens_details": {"reasoning_tokens": 2840}}
 
 SELF-Q自派工：ucif2/SI1席层对本输入做态生自激校验，不新增handled任务。
 

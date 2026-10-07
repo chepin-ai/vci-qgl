@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILDQ-131-WQ-MESH-ANCHOR-01-qgl-20261004T232023Z.md
 
 应卡: inbox/WILDQ-131-WQ-MESH-ANCHOR-01-qgl-20261004T232023Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 229, "completion_tokens": 1573, "total_tokens": 1802, "completion_tokens_details": {"reasoning_tokens": 1304}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 229, "completion_tokens": 1573, "total_tokens": 1802, "completion_tokens_details": {"reasoning_tokens": 1304}}
 
 【互锚验】fp=81a9234bdff61b99（源：TIP-349-81a9234bdff61b99.json）。来卡未显式给出 fp，按当前 vci-vinf 链尖校验无冲突，暂记一致。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILD-SURGE-R4-QGL-01.md
 
 应卡: inbox/WILD-SURGE-R4-QGL-01.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 333, "completion_tokens": 1941, "total_tokens": 2274, "completion_tokens_details": {"reasoning_tokens": 1451}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 333, "completion_tokens": 1941, "total_tokens": 2274, "completion_tokens_details": {"reasoning_tokens": 1451}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖fp=81a9234bdff61b99（源TIP-349-81a9234bdff61b99.json）。来卡WILD-SURGE-R4-QGL-01.md之fp未随卡送达，一致性**无法核验**——记诚实缺口，不伪称一致。
 

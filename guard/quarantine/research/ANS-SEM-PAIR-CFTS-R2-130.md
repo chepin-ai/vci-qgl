@@ -2,7 +2,7 @@ CLASSIFY: L2(cfts SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PAIR-CFTS-R2-130.md
 
 应卡: inbox/PAIR-CFTS-R2-130.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 226, "completion_tokens": 2866, "total_tokens": 3092, "completion_tokens_details": {"reasoning_tokens": 2637}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 226, "completion_tokens": 2866, "total_tokens": 3092, "completion_tokens_details": {"reasoning_tokens": 2637}}
 
 二轮澄清已阅。依联邦纪律（诚实缺口、三即律、负结果入册、级名不滥）重判：
 

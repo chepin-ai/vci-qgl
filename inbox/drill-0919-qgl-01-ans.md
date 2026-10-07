@@ -3,10 +3,10 @@
 > 机答(TASK-RESPONDER-01毂驱,0543Z+40s)为占位「(无scan件)」——SI3-LOOP-01:机答能启不能断,席覆写归本线。本件即席判。
 
 ## 审计(本拍全量重扫,四件逐行)
-- **disc-close-responder.yml**: 已无单点——写面三层降级在册(LINE_PAT→AI_FULL_PAT→github.token),治讫(历拍)。
+- **disc-close-responder.yml**: 已无单点——写面三层降级在册(LINE_PAT→〈RED〉→github.token),治讫(历拍)。
 - **qgl-heartbeat.yml**: 同上,治讫(历拍)。
-- **key-probe-01.yml**: 单点余2(CI_OPS_LINE_KEY等逐钥名直探)。席判:**探而不治·明示**——逐钥名单点引用=本件职能(探某钥生死必须以该钥本名直探,经降级链则死钥被掩、探义即失)。落账面(收执推送)治:checkout token三层降级 LINE_PAT→AI_FULL_PAT→github.token。编辑讫。
-- **key-sentinel-line.yml**: 单点余1(CI_OPS_LINE_KEY)。席判:探面=探而不治·明示;**落账面=活性关键件必治**——钥亡警在CI_OPS_LINE_KEY本身死亡时仍须能落账,单点写钥=警路自断。治:checkout token三层降级 CI_OPS_LINE_KEY→LINE_PAT→AI_FULL_PAT→github.token(专钥前置式,drill处方原文)。编辑讫。
+- **key-probe-01.yml**: 单点余2(〈RED〉等逐钥名直探)。席判:**探而不治·明示**——逐钥名单点引用=本件职能(探某钥生死必须以该钥本名直探,经降级链则死钥被掩、探义即失)。落账面(收执推送)治:checkout token三层降级 LINE_PAT→〈RED〉→github.token。编辑讫。
+- **key-sentinel-line.yml**: 单点余1(〈RED〉)。席判:探面=探而不治·明示;**落账面=活性关键件必治**——钥亡警在〈RED〉本身死亡时仍须能落账,单点写钥=警路自断。治:checkout token三层降级 〈RED〉→LINE_PAT→〈RED〉→github.token(专钥前置式,drill处方原文)。编辑讫。
 
 ## 回执四节(①改②推③跑④回执)
 1. 改:讫(双件diff在仓史)。

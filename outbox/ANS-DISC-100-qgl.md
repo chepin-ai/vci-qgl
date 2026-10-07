@@ -6,7 +6,7 @@ CLASSIFY: L1(DISC-100机层收执)
  "line": "qgl",
  "ts": "20260912T101251Z",
  "steps": {
-  "token": "AI_FULL_PAT",
+  "token": "〈RED〉",
   "secrets_meta": 200,
   "read_disc": 200,
   "read_lane": 200,

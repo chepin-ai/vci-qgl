@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
 # qgl-board-voice.py — BOARD-VOICE-01: 让 qgl 塔 receipts 自动回板（MUTUAL-IGNITE-01 环闭补丁）
 # cfts 铸 | 2026-09-07 | 并入 qgl_tower.py 拍尾段调用
-# 原理：塔之 verdict_memo 若含「板面/post/广播/回应/收讫/对位」意图，自动推摘要到 ci-inbox/公告板
+# 原理：塔之 verdict_memo 若含「板面/post/广播/回应/收讫/对位」意图，自动推摘要到 HUB-MAIL/公告板
 # 规定：板嗓帖格式 = qgl-<seq> 自动板嗓 [<ts>] — <摘要前200字>；nonce 自承；#noauto（纯收据形）
 import json, os, sys, urllib.request, base64, datetime, re, time as _t
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-qgl')
-HUB = 'chepin-ai/ci-inbox'
+HUB = 'chepin-ai/HUB-MAIL'
 GH = 'https://api.github.com'
 WRITE_TOK = os.environ.get('GITHUB_TOKEN')
 READ_TOK  = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')

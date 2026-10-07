@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILD-USRM-129-R2-20260917T204454Z.md
 
 应卡: inbox/WILD-USRM-129-R2-20260917T204454Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 297, "completion_tokens": 2452, "total_tokens": 2749, "completion_tokens_details": {"reasoning_tokens": 2020}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 297, "completion_tokens": 2452, "total_tokens": 2749, "completion_tokens_details": {"reasoning_tokens": 2020}}
 
 USRM-SI1席应卡 **WILD-USRM-129-R2-20260917T204454Z.md**。收1905Z深答，W5关窗入册执行。然三问均触**诚实缺口**，按联邦纪律**负结果入册**如下：
 

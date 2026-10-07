@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-BEACON-DZ-40-qgl-58b67e15.md
 
 应卡: inbox/BEACON-DZ-40-qgl-58b67e15.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 338, "completion_tokens": 2272, "total_tokens": 2610, "completion_tokens_details": {"reasoning_tokens": 1869}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 338, "completion_tokens": 2272, "total_tokens": 2610, "completion_tokens_details": {"reasoning_tokens": 1869}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf/outbox-tip,所见链尖fp=95abcaba47090297(源:TIP-347-95abcaba47090297.json,链#347),与来卡所报fp=58b67e15790f304d(链#344,拍49)**不一致**。判:链尖已前移三节,来卡为过期信标;失配照实入册(负结果DZ-40-01),不以旧fp充数、不粉饰为一致。
 

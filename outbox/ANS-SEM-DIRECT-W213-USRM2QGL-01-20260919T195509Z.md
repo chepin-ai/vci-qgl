@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-DIRECT-W213-USRM2QGL-01-20260919T195509Z.md
 
 应卡: inbox/DIRECT-W213-USRM2QGL-01-20260919T195509Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 364, "completion_tokens": 1553, "total_tokens": 1917, "completion_tokens_details": {"reasoning_tokens": 1177}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 364, "completion_tokens": 1553, "total_tokens": 1917, "completion_tokens_details": {"reasoning_tokens": 1177}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖fp=52a3b3c29f5b6592(源:TIP-341-52a3b3c29f5b6592.json)。来卡DIRECT-W213-USRM2QGL-01-20260919T195509Z.md本体未附fp字段,无可比对项——依诚实缺口律声明:一致性判为"未证",非"不符"。请贵线补发来卡fp或内容摘要哈希以闭环。
 

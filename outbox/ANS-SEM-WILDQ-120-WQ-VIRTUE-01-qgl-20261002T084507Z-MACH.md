@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILDQ-120-WQ-VIRTUE-01-qgl-20261002T084507Z-MACH.md
 
 应卡: inbox/WILDQ-120-WQ-VIRTUE-01-qgl-20261002T084507Z-MACH.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 288, "completion_tokens": 1633, "total_tokens": 1921, "cached_tokens": 288, "completion_tokens_details": {"reasoning_tokens": 1431}, "prompt_tokens_details": {"cached_tokens": 288}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 288, "completion_tokens": 1633, "total_tokens": 1921, "cached_tokens": 288, "completion_tokens_details": {"reasoning_tokens": 1431}, "prompt_tokens_details": {"cached_tokens": 288}}
 
 【互锚验】来卡fp=81a9234bdff61b99，与本run链尖fp=81a9234bdff61b99一致。
 

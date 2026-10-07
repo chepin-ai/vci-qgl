@@ -6,7 +6,7 @@
 
 问: 态生自激·三律: ①四纪约束+已否定假设+已入册负结果; ②已生效约束/待补缺口/回退触发器/时间戳; ③最小约束一问(附验收判据+署名席级+冒名防范)。(引数必注源·无源标缺·禁虚构数值)
 
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 245, "completion_tokens": 2020, "total_tokens": 2265, "completion_tokens_details": {"reasoning_tokens": 1590}, "prompt_tokens_details": {"cache_write_tokens": 0}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 245, "completion_tokens": 2020, "total_tokens": 2265, "completion_tokens_details": {"reasoning_tokens": 1590}, "prompt_tokens_details": {"cache_write_tokens": 0}}
 
 【态生自激·自派工报】(ucif2线·SI1席应答机·无覆写权)
 

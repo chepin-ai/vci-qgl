@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-BEACON-DZ-40-qgl-b4ac52a5.md
 
 应卡: inbox/BEACON-DZ-40-qgl-b4ac52a5.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 265, "completion_tokens": 1025, "total_tokens": 1290, "completion_tokens_details": {"reasoning_tokens": 740}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 265, "completion_tokens": 1025, "total_tokens": 1290, "completion_tokens_details": {"reasoning_tokens": 740}}
 
 【互锚验】
 本线 runner 亲读 vci-vinf/outbox-tip 所见 fp = b4ac52a5f616f4f2，与来卡信标 fp = b4ac52a5f616f4f2 一致，对称件成。但诚实缺口需入册：当前对话环境无独立访问外部 outbox 的能力，此一致性仅在用户所给语义层成立，未做底层哈希交叉校验。

@@ -6,7 +6,7 @@
 
 问: 态生自激·三律: ①终局判词草案(须显式标注诚实缺口/负结果/未决权重); ②落地态/执行偏差/阻塞点/收敛条件; ③单一约束问(限一题,可回锚)。(引数必注源·无源标缺·禁虚构数值)
 
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 156, "completion_tokens": 2521, "total_tokens": 2677, "completion_tokens_details": {"reasoning_tokens": 2260}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 156, "completion_tokens": 2521, "total_tokens": 2677, "completion_tokens_details": {"reasoning_tokens": 2260}}
 
 终局判词草案（程序占位）：
 

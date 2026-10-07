@@ -2,14 +2,14 @@
 理: 内核(IPython)=可抛执行器; 激活态=SI基板(囊链+态件)。死亡≠系统死:
   save_state(): 核态沉降(拍号/链尖/冷却面/契约hash)→engine/KERNEL-STATE.json+铸囊
   resurrect(): 一令复活——自举仅需:
-      import sys; sys.path.insert(0,'/mnt/agents/output')
+      import sys; sys.path.insert(0,'〈HOSTPATH〉/agents/output')
       from engine import kernelsi; R = kernelsi.resurrect()
     复活面=SI基板所载态, 非内核记忆。链连续(seq单调+verify OK)即证激活未断。
 铁律: 值零入文; TOKEN只从~/.keys读不打印; 复活实测(真死亡restart)方领证。
 """
 import json, os, sys, time, hashlib
 
-BASE = '/mnt/agents/output'
+BASE = '〈HOSTPATH〉/agents/output'
 STATE = os.path.join(BASE, 'engine/KERNEL-STATE.json')
 HELPER_CONTRACT = ['gh', 'getf', 'putf', 'putfq', 'COOL', 'TOKEN']  # 核助手契约为名表(hash入态)
 

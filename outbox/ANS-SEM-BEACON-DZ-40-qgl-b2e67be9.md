@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-BEACON-DZ-40-qgl-b2e67be9.md
 
 应卡: inbox/BEACON-DZ-40-qgl-b2e67be9.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 259, "completion_tokens": 1797, "total_tokens": 2056, "completion_tokens_details": {"reasoning_tokens": 1487}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 259, "completion_tokens": 1797, "total_tokens": 2056, "completion_tokens_details": {"reasoning_tokens": 1487}}
 
 【互锚验】本run亲读vci-vinf/outbox-tip链尖，所见指纹fp=b2e67be9939e0293，与来卡BEACON-DZ-40-qgl-b2e67be9.md及信标vinf链#336拍41明文所载完全一致，对称件成，无诚实缺口。
 

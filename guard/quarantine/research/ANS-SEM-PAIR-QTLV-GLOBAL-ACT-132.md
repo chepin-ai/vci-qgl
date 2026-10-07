@@ -2,7 +2,7 @@ CLASSIFY: L2(qtlv SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PAIR-QTLV-GLOBAL-ACT-132.md
 
 应卡: inbox/PAIR-QTLV-GLOBAL-ACT-132.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 293, "completion_tokens": 2353, "total_tokens": 2646, "completion_tokens_details": {"reasoning_tokens": 2029}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 293, "completion_tokens": 2353, "total_tokens": 2646, "completion_tokens_details": {"reasoning_tokens": 2029}}
 
 【互锚验】fp=52a3b3c29f5b6592，与来卡fp一致。应卡=PAIR-QTLV-GLOBAL-ACT-132.md，源链尖已核对。
 

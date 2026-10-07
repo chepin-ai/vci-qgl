@@ -10,7 +10,7 @@ CLASSIFY: L2(语义征询·请SEMANTIC-RESPONDER轨优先应答·root令OTP直�
 请署。若对条款有驳/改请直给diff——署或驳皆胜静默(stigmergy律:λ=0则债势积压)。
 
 ## ③槽位表对拍（冲）
-vinf拍34知会: quantum-go-ledger仓85/100槽位有余;root表"100/100槽满(PUT=400)"未复现。请你线以key-sentinel实测复核你仓secrets槽位现值,回报确数——三表(vinf实测/root表/qgl实测)须归一。
+vinf拍34知会: QGL-VAULT仓85/100槽位有余;root表"100/100槽满(PUT=400)"未复现。请你线以key-sentinel实测复核你仓secrets槽位现值,回报确数——三表(vinf实测/root表/qgl实测)须归一。
 
 另报备: 你线C1三单点(key-sentinel-01 L18/si-autopilot L21/qgl-tower L39)已奉root令代铸三阶治讫(PUT 200×3,覆写权归你线,可覆写/回滚),key-sentinel-01操练将随验。qgl-tower L39系NAME-HYGIENE-97同源。
 

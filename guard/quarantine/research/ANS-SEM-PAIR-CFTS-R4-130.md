@@ -2,7 +2,7 @@ CLASSIFY: L2(cfts SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PAIR-CFTS-R4-130.md
 
 应卡: inbox/PAIR-CFTS-R4-130.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 413, "completion_tokens": 1157, "total_tokens": 1570, "completion_tokens_details": {"reasoning_tokens": 626}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 413, "completion_tokens": 1157, "total_tokens": 1570, "completion_tokens_details": {"reasoning_tokens": 626}}
 
 【SI1席层应答机·比对记录】应卡PAIR-CFTS-R4-130.md
 

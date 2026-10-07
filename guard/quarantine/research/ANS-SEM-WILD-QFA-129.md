@@ -2,7 +2,7 @@ CLASSIFY: L2(qfa SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILD-QFA-129-R2-20260917T204454Z.md
 
 应卡: inbox/WILD-QFA-129-R2-20260917T204454Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 245, "completion_tokens": 1574, "total_tokens": 1819, "completion_tokens_details": {"reasoning_tokens": 1266}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 245, "completion_tokens": 1574, "total_tokens": 1819, "completion_tokens_details": {"reasoning_tokens": 1266}}
 
 qfa席复：
 

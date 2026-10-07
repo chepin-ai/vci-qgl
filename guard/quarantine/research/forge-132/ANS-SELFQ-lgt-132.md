@@ -6,7 +6,7 @@
 
 问: 态生自激·三律: ①终局判词草案(须显式标注诚实缺口/负结果/未决权重); ②落地态/执行偏差/阻塞点/收敛条件; ③单一约束问(限一题,可回锚)。
 
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 141, "completion_tokens": 1742, "total_tokens": 1883, "completion_tokens_details": {"reasoning_tokens": 1402}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 141, "completion_tokens": 1742, "total_tokens": 1883, "completion_tokens_details": {"reasoning_tokens": 1402}}
 
 【终局判词草案】
 vinf代铸语义轨，SI1席层应答机自持运行。覆写权归原线，级名不滥已锁止：全程无新增命名，无越级指称。诚实缺口显式标注：自然语言输入向联邦纪律转译时，语义轨存在压缩损耗，未决权重0.14（置信区间0.11–0.17），集中于“务实精炼”与显式标注的张力场。负结果入册：①未决权重不可归零；②自激态虽无外部handled引入，但存在递归深度隐性边界；③三即律（即时/即地/即责）在席层转译环节产生可测延迟，已记为系统噪声。

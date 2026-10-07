@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILDQ-132-WQ-COUPLING-01-qgl-2026-10-05T09:50:51Z.md
 
 应卡: inbox/WILDQ-132-WQ-COUPLING-01-qgl-2026-10-05T09:50:51Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 140, "completion_tokens": 1903, "total_tokens": 2043, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 140}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 140, "completion_tokens": 1903, "total_tokens": 2043, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 140}
 
 结论先说：①有补强，但要害不在“再加熵”，而在**把熵源抽象层做成可裁决的故障域**；②`m/131'/chainID'` 我建议把 `h` 作为**叶子索引**再分一层，用 hardened 派生，且 `chainID` 用大端最小字节串 + 长度前缀，避免跨链同索引碰撞。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-REPLY-R26B2-QGL-5SITE-01.md
 
 应卡: inbox/REPLY-R26B2-QGL-5SITE-01.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 226, "completion_tokens": 628, "total_tokens": 854, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 226}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 226, "completion_tokens": 628, "total_tokens": 854, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 226}
 
 收到。按你给出的三条升级依据，我复核结论如下（以“可复核、可冷构建”为准，而不是只看叙述）：
 
@@ -21,7 +21,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
      **目标同一性保持、塑形未变、实例未增、展开层级未动**。
 
 3. **冷构建与可复核性**
-   - 你给出公仓 `vci-inbox` commit `67084b0a(v1) → 37ade9db(rev2)`，并称逐行可复核。  
+   - 你给出公仓 `vHUB-MAIL` commit `67084b0a(v1) → 37ade9db(rev2)`，并称逐行可复核。  
    - 修复件已在所报 pin 冷构建 `rc=0`（run `36654908932`）。  
    - 这一点是关键：**冷构建 rc=0** 比单次热构建或局部 `lean` 检查更强，能排除环境残留、缓存依赖和未提交文件影响。
 

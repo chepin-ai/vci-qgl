@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILDQ-BOOTLOOPS-QGL-01-20261001T0000Z.md
 
 应卡: inbox/WILDQ-BOOTLOOPS-QGL-01-20261001T0000Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 46, "completion_tokens": 1034, "total_tokens": 1080, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 46}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 46, "completion_tokens": 1034, "total_tokens": 1080, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 46}
 
 结论：**可行，且应当制度化；但必须把“对抗性”限制在受控裁决流程里，而不是让它变成新的否决权中心。**  
 首步不是开一个“审稿人会话”，而是先定义**可复现的争议触发条件、证据格式和裁决闭环**。

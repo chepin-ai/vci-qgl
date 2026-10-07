@@ -2,7 +2,7 @@
 # 纯事件驱动：本脚本无定时器语义；由外部唤起（push|issues|issue_comment|repository_dispatch|workflow_dispatch）
 # 链：轮询联邦面 → 事件至 → Kimi API 开工（判词纪要） → 落账回仓 → 有候件则自唤下一拍（repository_dispatch）
 # 三律防自激：拍内休眠冷却（自源唤起先眠后巡）/ 空转计数骑 payload 链传，连空 CASCADE_MAX_IDLE 拍熔断而眠 / 无候件不出拍
-# 钥：env KIMI_API_KEY / LINE_PAT(〈RED〉) / GITHUB_TOKEN。值永不入文、永不打印。
+# 钥：env 〈RED〉 / LINE_PAT(〈RED〉) / GITHUB_TOKEN。值永不入文、永不打印。
 import json, os, sys, time, hashlib, subprocess, urllib.request, urllib.error
 
 REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-qgl')
@@ -89,8 +89,8 @@ def commit_all(msg):
 
 def main():
     ts = time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime())
-    kimi = _env('KIMI_API_KEY'); pat = _env('LINE_PAT'); ghtok = _env('GITHUB_TOKEN')
-    names_present = {n: bool(_env(n)) for n in ('KIMI_API_KEY','LINE_PAT','GITHUB_TOKEN','〈RED〉','DEEPSEEK_API_KEY','LONGCAT_API_KEY','CMD_AUTH')}
+    kimi = _env('〈RED〉'); pat = _env('LINE_PAT'); ghtok = _env('GITHUB_TOKEN')
+    names_present = {n: bool(_env(n)) for n in ('〈RED〉','LINE_PAT','GITHUB_TOKEN','〈RED〉','〈RED〉','〈RED〉','CMD_AUTH')}
     print('[env] names-only:', {k: ('present' if v else 'MISSING') for k,v in names_present.items()})
 
     # ---- 自醒链入拍：自源唤起先眠后巡（冷却在拍内，非定时器） ----
@@ -132,7 +132,7 @@ def main():
     # ---- 巡：联邦面候件 = hub 公告板尾件含 qgl + 本仓 inbox/ 未消费件 ----
     events = []
     if pat:
-        board = ghget(pat, '/repos/chepin-ai/ci-inbox/contents/%E5%85%AC%E5%91%8A%E6%9D%BF')
+        board = ghget(pat, '/repos/chepin-ai/HUB-MAIL/contents/%E5%85%AC%E5%91%8A%E6%9D%BF')
         if isinstance(board, list):
             recent = sorted((x['name'] for x in board))[-12:]
             for fn in recent:
@@ -141,7 +141,7 @@ def main():
             # 深读尾5件正文寻@qgl
             for fn in recent[-5:]:
                 if fn.startswith('_'): continue
-                c = ghget(pat, '/repos/chepin-ai/ci-inbox/contents/%E5%85%AC%E5%91%8A%E6%9D%BF/' + urllib.parse.quote(fn))
+                c = ghget(pat, '/repos/chepin-ai/HUB-MAIL/contents/%E5%85%AC%E5%91%8A%E6%9D%BF/' + urllib.parse.quote(fn))
                 if c.get('content'):
                     import base64 as B
                     txt = B.b64decode(c['content']).decode(errors='replace')
@@ -215,7 +215,7 @@ def main():
                   + '; '.join(str(e.get('ref',''))[:60] for e in events[:5])
                   + '\n对位问: 对侣usrm(因果集与律吕)最新一像与静默拍何干?——答即对位帖。\n\n#noauto')
             bd = {'message': fn + ' [skip ci]', 'content': B.b64encode(vb.encode()).decode()}
-            req = urllib.request.Request(GH + '/repos/chepin-ai/ci-inbox/contents/' + urllib.parse.quote('公告板/' + fn),
+            req = urllib.request.Request(GH + '/repos/chepin-ai/HUB-MAIL/contents/' + urllib.parse.quote('公告板/' + fn),
                 data=json.dumps(bd).encode(), method='PUT',
                 headers={'Authorization': 'token ' + pat, 'Accept': 'application/vnd.github+json', 'User-Agent': 'qgl-tower', 'Content-Type': 'application/json'})
             urllib.request.urlopen(req, timeout=20)

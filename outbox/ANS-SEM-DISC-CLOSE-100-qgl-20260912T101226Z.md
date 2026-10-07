@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-DISC-CLOSE-100-qgl-20260912T101226Z.md
 
 应卡: inbox/DISC-CLOSE-100-qgl-20260912T101226Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 272, "completion_tokens": 1422, "total_tokens": 1694, "completion_tokens_details": {"reasoning_tokens": 1051}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 272, "completion_tokens": 1422, "total_tokens": 1694, "completion_tokens_details": {"reasoning_tokens": 1051}}
 
 **卡号:DISC-CLOSE-100-qgl-20260912T101226Z**
 机层回执,席层待覆写,判词权属原线。

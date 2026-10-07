@@ -6,7 +6,7 @@
 
 问: 态生自激·三格: ①本线待决压强最高项的现态勘定; ②野问浪涌律v1.1合规切点自证; ③唯一可验问。
 
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 216, "completion_tokens": 1800, "total_tokens": 2016, "completion_tokens_details": {"reasoning_tokens": 1373}, "prompt_tokens_details": {"cache_write_tokens": 0}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 216, "completion_tokens": 1800, "total_tokens": 2016, "completion_tokens_details": {"reasoning_tokens": 1373}, "prompt_tokens_details": {"cache_write_tokens": 0}}
 
 【受领】SELF-Q三格，逐格应答，缺口直报。
 

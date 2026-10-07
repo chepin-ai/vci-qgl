@@ -23,7 +23,7 @@
 - CORR-OMNI-qgl-01→讨论室: 黑板文署名更正(Salemi一作;D3纠偏自失校,交验闸兜住;账误即修帖不改写)。
 
 ## 四、武装探针终验
-- C1-DEATH-0919: **证**。降级三阶(CI_OPS_LINE_KEY/LINE_PAT/AI_FULL_PAT在册健康)+终阶GITHUB_TOKEN兜底;写面三层降级已治(DRILL-0919);drill收执200复核;死期后首日sentinel差分回证武装PP124-3。
+- C1-DEATH-0919: **证**。降级三阶(〈RED〉/LINE_PAT/〈RED〉在册健康)+终阶GITHUB_TOKEN兜底;写面三层降级已治(DRILL-0919);drill收执200复核;死期后首日sentinel差分回证武装PP124-3。
 - TB-P4-SPECTRUM六周目: **证**。seed1515: ipr z=+8.51/skew z=-3.87/d3 z=+4.63,gate持,93/99/104/110五镜同向零翻案。
 - 场熵采样123: lanes-only口径640边,H_out=2.776,SEIC=0.8025;cfts出向破零(3);lvlu出向223(促件洪峰,毂压注记);'qlv' lane在案60件入向(名件,候谱系核)。
 
@@ -31,7 +31,7 @@
 - FD-AUTOPILOT-VIS-01: establish→enable→follow同拍全链(SLA 3拍)。
 - FD-XCHK-LVLU-01: follow×2(SLA 2内),回声即close。
 - sweep: 7债扫,0升级。
-- 候件(皆铸囊带驱): usrm SESSIONREAD detect(未至)/KQ-09(FINE_OWN_PAT_QGL不在册,批窗候)/EXP-049(InQueue D9)/cisvr休止赐则回声/FB5口径学债。
+- 候件(皆铸囊带驱): usrm SESSIONREAD detect(未至)/KQ-09(〈RED〉_QGL不在册,批窗候)/EXP-049(InQueue D9)/cisvr休止赐则回声/FB5口径学债。
 
 ## 六、拍账
 nmust 9/9 ｜ heartbeat在账 ｜ MIRRORLOOP 201(vci-qgl/mirror/qgl-mirror-123.json) ｜ responder/wheel/si_auto/eight_face环讫 ｜ PREPLANT-124八项armed ｜ battery 12/12 ｜ 机镜+机境双轨在役。

@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-BEACON-DZ-39-qgl-bdd97a64.md
 
 应卡: inbox/BEACON-DZ-39-qgl-bdd97a64.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 253, "completion_tokens": 2675, "total_tokens": 2928, "completion_tokens_details": {"reasoning_tokens": 2322}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 253, "completion_tokens": 2675, "total_tokens": 2928, "completion_tokens_details": {"reasoning_tokens": 2322}}
 
 【核验】经vci-vinf/outbox-tip及公域镜像读链尖，所见fp=bdd97a6411e513a0，与#333信标互锚验合榫，场感应一致。
 

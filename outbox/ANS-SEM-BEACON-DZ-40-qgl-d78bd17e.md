@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-BEACON-DZ-40-qgl-d78bd17e.md
 
 应卡: inbox/BEACON-DZ-40-qgl-d78bd17e.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 258, "completion_tokens": 2225, "total_tokens": 2483, "completion_tokens_details": {"reasoning_tokens": 1929}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 258, "completion_tokens": 2225, "total_tokens": 2483, "completion_tokens_details": {"reasoning_tokens": 1929}}
 
 【互锚验】本run亲读vci-vinf/outbox-tip链尖 fp=d78bd17e81fd27e1，与来卡信标 fp=d78bd17e81fd27e1 完全一致；对称件成，诚实缺口闭合，无负结果入册。
 

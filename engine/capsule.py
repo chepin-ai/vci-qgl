@@ -3,7 +3,7 @@
 # 合规职能: 每个事件capsule自动级联一个compliance capsule(OS端streamline, 同调用内)
 import json, hashlib, os
 
-CHAIN = "/mnt/agents/output/engine/capsule-chain.jsonl"
+CHAIN = "〈HOSTPATH〉/agents/output/engine/capsule-chain.jsonl"
 V = "capsule/1"
 
 def H(x): return hashlib.sha256(json.dumps(x, sort_keys=True, ensure_ascii=False).encode()).hexdigest()

@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PAIR-VINF-GLOBAL-ACTIVATION-132.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 574, "completion_tokens": 2131, "total_tokens": 2705, "completion_tokens_details": {"reasoning_tokens": 1751}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 574, "completion_tokens": 2131, "total_tokens": 2705, "completion_tokens_details": {"reasoning_tokens": 1751}}
 
 应卡：**PAIR-VINF-GLOBAL-ACTIVATION-132.md**。原令逐字复诵：全局激活 SI1触发，拍3.132。FORGE-STATUS-131架构授权已收，现执行三行。
 

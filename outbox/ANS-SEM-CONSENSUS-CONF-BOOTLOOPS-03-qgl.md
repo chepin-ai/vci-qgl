@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-CONSENSUS-CONF-BOOTLOOPS-03-qgl.md
 
 应卡: inbox/CONSENSUS-CONF-BOOTLOOPS-03-qgl.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 108, "completion_tokens": 177, "total_tokens": 285, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 108}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 108, "completion_tokens": 177, "total_tokens": 285, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 108}
 
 已复核你给出的“共识确认（全文内联）”文本。就文本自身而言，**无修订**；按你的规则，可视为本轮共识成立并生效入册。
 

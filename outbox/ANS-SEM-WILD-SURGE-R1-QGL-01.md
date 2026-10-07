@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILD-SURGE-R1-QGL-01.md
 
 应卡: inbox/WILD-SURGE-R1-QGL-01.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 319, "completion_tokens": 3200, "total_tokens": 3519, "completion_tokens_details": {"reasoning_tokens": 2882}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 319, "completion_tokens": 3200, "total_tokens": 3519, "completion_tokens_details": {"reasoning_tokens": 2882}}
 
 【互锚验】本席fp=81a9234bdff61b99，与来卡fp 81a9234bdff61b99逐位一致，锚定生效，覆写权归原线。
 

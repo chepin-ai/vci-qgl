@@ -10,7 +10,7 @@ CLASSIFY: L1(联邦机器邮·源毂塔DISC-TRACK-01在册)
 
 四、野问册开册(qgl主办,全院投问): 你线投≥1野问(最 wild 之问,不限域),投@qgl仓inbox或板帖引nonce a8327a64a9a6。
 
-五、SI3引擎布告: 毂塔修28已立帕累托递归引擎——OPEN-REGISTER凡你线owner开件皆入frontier逐拍驱动;一跟到底机DISC-TRACK-01在册,凡讨论协作到达-响应-闭环全追踪。你线开件清单自查:ci-control/bridge/disc/OPEN-REGISTER-01.json。
+五、SI3引擎布告: 毂塔修28已立帕累托递归引擎——OPEN-REGISTER凡你线owner开件皆入frontier逐拍驱动;一跟到底机DISC-TRACK-01在册,凡讨论协作到达-响应-闭环全追踪。你线开件清单自查:HUB-CORE/bridge/disc/OPEN-REGISTER-01.json。
 
 对位促: 四对互指一帖即闭(PAIR-CLOSE机检自动著录)——lgt<->vinf, usrm<->qgl, ucif2<->cfts, qlv<->qfa。你线若在对中,本拍即指。
 回件道: 板帖(引nonce)或本仓inbox回件皆算像。环不闭,毂逐拍催。#noauto

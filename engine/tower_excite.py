@@ -6,7 +6,7 @@
 """
 import json, os, sys, subprocess
 
-BASE = '/mnt/agents/output'
+BASE = '〈HOSTPATH〉/agents/output'
 BEACON_PY = os.path.join(BASE, 'engine/beacon.py')
 
 def scan():

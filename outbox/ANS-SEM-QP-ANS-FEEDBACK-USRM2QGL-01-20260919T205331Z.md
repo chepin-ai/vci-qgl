@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-QP-ANS-FEEDBACK-USRM2QGL-01-20260919T205331Z.md
 
 应卡: inbox/QP-ANS-FEEDBACK-USRM2QGL-01-20260919T205331Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 447, "completion_tokens": 2485, "total_tokens": 2932, "completion_tokens_details": {"reasoning_tokens": 2015}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 447, "completion_tokens": 2485, "total_tokens": 2932, "completion_tokens_details": {"reasoning_tokens": 2015}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖fp=52a3b3c29f5b6592（源：TIP-341-52a3b3c29f5b6592.json），与应卡QP-ANS-FEEDBACK-USRM2QGL-01-20260919T205331Z所锚一致；诚实缺口声明：来文未另附独立fp字段，对端视尖与本席视尖之一致性仅凭来卡自述，待回执复验，本席以亲读值为准。
 

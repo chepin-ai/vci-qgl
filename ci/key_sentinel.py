@@ -34,13 +34,13 @@ def secrets_meta(token):
 def main():
     ts = time.strftime('%Y%m%dT%H%M%SZ', time.gmtime())
     keys = {}
-    for name in ('AI_FULL_PAT', 'CI_OPS_LINE_KEY', 'GH_TOKEN'):
+    for name in ('〈RED〉', '〈RED〉', '〈RED〉'):
         p = probe(os.environ.get(name))
         if p:
             keys[name] = p
     alive = [k for k, v in keys.items() if v.get('http') == 200]
     dead = [k for k, v in keys.items() if v.get('http') == 401]
-    meta = secrets_meta(os.environ.get('AI_FULL_PAT') or os.environ.get('CI_OPS_LINE_KEY') or os.environ.get('GH_TOKEN'))
+    meta = secrets_meta(os.environ.get('〈RED〉') or os.environ.get('〈RED〉') or os.environ.get('〈RED〉'))
     state_p = 'receipts/key-sentinel/state.json'
     prev = {}
     if os.path.exists(state_p):

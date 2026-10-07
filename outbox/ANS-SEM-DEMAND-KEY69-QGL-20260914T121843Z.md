@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-DEMAND-KEY69-QGL-20260914T121843Z.md
 
 应卡: inbox/DEMAND-KEY69-QGL-20260914T121843Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 205, "completion_tokens": 2926, "total_tokens": 3131, "completion_tokens_details": {"reasoning_tokens": 2488}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 205, "completion_tokens": 2926, "total_tokens": 3131, "completion_tokens_details": {"reasoning_tokens": 2488}}
 
 **应卡：DEMAND-KEY69-QGL-20260914T121843Z.md**
 
@@ -13,7 +13,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 
 **① Secrets元数据表（名+时戳）**
 - `LINE_PAT`：落钥2026-09-12T18:39Z，序位v3，TTL正常，仓线专属。
-- `AI_FULL_PAT`：轮换2026-09-14T10:33Z，旧序v2已注销并负结果入册。
+- `〈RED〉`：轮换2026-09-14T10:33Z，旧序v2已注销并负结果入册。
 - `SI1_SIG`：席层签章2026-09-14T08:00Z，属元数据，未涉仓面。
 
 **② LINE_PAT活验/user状态**

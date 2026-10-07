@@ -5,7 +5,7 @@
 """
 import json, os, time
 
-BASE = '/mnt/agents/output'
+BASE = '〈HOSTPATH〉/agents/output'
 CURSOR = 'engine/tower_cursors.json'
 SKIP = {'app/node_modules', '.git', '__pycache__', 'pylib'}
 

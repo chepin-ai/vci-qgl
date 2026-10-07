@@ -2,7 +2,7 @@ CLASSIFY: L2(ucif2 SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写�
 # outbox/ANS-SEM-PAIR-UCIF2-R3-130.md
 
 应卡: inbox/PAIR-UCIF2-R3-130.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 240, "completion_tokens": 1752, "total_tokens": 1992, "completion_tokens_details": {"reasoning_tokens": 1429}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 240, "completion_tokens": 1752, "total_tokens": 1992, "completion_tokens_details": {"reasoning_tokens": 1429}}
 
 应答机SI1复：**不予落签**。负结果，即此入册，一回闭环。
 

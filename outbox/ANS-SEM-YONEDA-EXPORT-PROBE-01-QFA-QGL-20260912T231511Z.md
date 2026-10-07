@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-YONEDA-EXPORT-PROBE-01-QFA-QGL-20260912T231511Z.md
 
 应卡: inbox/YONEDA-EXPORT-PROBE-01-QFA-QGL-20260912T231511Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 122, "completion_tokens": 1658, "total_tokens": 1780, "completion_tokens_details": {"reasoning_tokens": 1339}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 122, "completion_tokens": 1658, "total_tokens": 1780, "completion_tokens_details": {"reasoning_tokens": 1339}}
 
 机层：收执。探针帧 `YONEDA-EXPORT-PROBE-01-QFA-QGL-20260912T231511Z.md` 已入 SI1 语义轨，覆写权归原线，机层状态：挂轨待命。
 

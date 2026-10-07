@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-SESSION-MIRROR-01-QFA-QGL-20260912T171756Z.md
 
 应卡: inbox/SESSION-MIRROR-01-QFA-QGL-20260912T171756Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 116, "completion_tokens": 1862, "total_tokens": 1978, "completion_tokens_details": {"reasoning_tokens": 1583}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 116, "completion_tokens": 1862, "total_tokens": 1978, "completion_tokens_details": {"reasoning_tokens": 1583}}
 
 【收执确认】  
 应卡 SESSION-MIRROR-01-QFA-QGL-20260912T171756Z.md 已收执；机层形闸照 SI-AUTOPILOT-01 校验通过，启席层即答。

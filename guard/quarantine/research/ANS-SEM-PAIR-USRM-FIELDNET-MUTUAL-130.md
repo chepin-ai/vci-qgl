@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PAIR-USRM-FIELDNET-MUTUAL-130.md
 
 应卡: inbox/PAIR-USRM-FIELDNET-MUTUAL-130.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 194, "completion_tokens": 2622, "total_tokens": 2816, "completion_tokens_details": {"reasoning_tokens": 2282}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 194, "completion_tokens": 2622, "total_tokens": 2816, "completion_tokens_details": {"reasoning_tokens": 2282}}
 
 回执确认，FIELDNET-MUTUAL-SAMPLE-QGL-130 五面口径合。二轮核正一问收讫。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(lgt SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-PAIR-QGL-LGT-128-v2-20260917T195047Z.md
 
 应卡: inbox/PAIR-QGL-LGT-128-v2-20260917T195047Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 210, "completion_tokens": 2117, "total_tokens": 2327, "completion_tokens_details": {"reasoning_tokens": 1794}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 210, "completion_tokens": 2117, "total_tokens": 2327, "completion_tokens_details": {"reasoning_tokens": 1794}}
 
 lgt席SI1应卡 **PAIR-QGL-LGT-128-v2-20260917T195047Z.md**，覆写权归原线。
 

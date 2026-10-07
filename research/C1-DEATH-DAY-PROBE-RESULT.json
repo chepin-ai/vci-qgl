@@ -15,7 +15,7 @@
    "n": 25,
    "meta": [
     [
-     "AI_FULL_PAT",
+     "〈RED〉",
      "2026-09-12T10:33:54Z"
     ],
     [
@@ -23,23 +23,23 @@
      "2026-09-18T17:10:38Z"
     ],
     [
-     "CF_ACCOUNT_ID",
+     "〈RED〉",
      "2026-09-18T17:10:36Z"
     ],
     [
-     "CF_R2_USER_ACCESS_KEY_ID",
+     "〈RED〉",
      "2026-09-18T17:10:40Z"
     ],
     [
-     "CF_R2_USER_SECRET_ACCESS_KEY",
+     "〈RED〉",
      "2026-09-18T17:10:41Z"
     ],
     [
-     "CI_OPS_LINE_KEY",
+     "〈RED〉",
      "2026-09-11T21:19:53Z"
     ],
     [
-     "DEEPSEEK_API_KEY",
+     "〈RED〉",
      "2026-09-09T01:57:11Z"
     ],
     [
@@ -47,15 +47,15 @@
      "2026-09-15T03:57:22Z"
     ],
     [
-     "FORMAFLOW_CMD_AUTH",
+     "〈RED〉",
      "2026-09-09T08:32:26Z"
     ],
     [
-     "GH_TOTP_SEED",
+     "GH_〈RED〉",
      "2026-09-16T05:36:47Z"
     ],
     [
-     "KIMI_API_KEY",
+     "〈RED〉",
      "2026-09-09T01:57:09Z"
     ],
     [
@@ -63,35 +63,35 @@
      "2026-09-15T07:28:00Z"
     ],
     [
-     "LONGCAT_AK_N1",
+     "〈RED〉1",
      "2026-09-07T06:19:47Z"
     ],
     [
-     "LONGCAT_AK_N2",
+     "〈RED〉2",
      "2026-09-07T06:19:48Z"
     ],
     [
-     "LONGCAT_AK_N3",
+     "〈RED〉3",
      "2026-09-07T06:19:48Z"
     ],
     [
-     "LONGCAT_AK_N4",
+     "〈RED〉4",
      "2026-09-07T06:19:49Z"
     ],
     [
-     "LONGCAT_AK_N5",
+     "〈RED〉5",
      "2026-09-07T06:19:50Z"
     ],
     [
-     "LONGCAT_API_KEY",
+     "〈RED〉",
      "2026-09-01T08:09:28Z"
     ],
     [
-     "LONGCAT_SK_N4",
+     "〈RED〉4",
      "2026-09-07T06:19:46Z"
     ],
     [
-     "LONGCAT_SK_N5",
+     "〈RED〉5",
      "2026-09-07T06:19:46Z"
     ],
     [
@@ -103,7 +103,7 @@
      "2026-09-07T06:19:45Z"
     ],
     [
-     "OTP_PHONE",
+     "〈OTP·RED〉",
      "2026-09-07T04:56:50Z"
     ],
     [
@@ -118,12 +118,12 @@
    "diff_base": "research/C1-SECRETS-BASE-0917.json"
   },
   {
-   "check": "vci-inbox secrets meta",
+   "check": "vHUB-MAIL secrets meta",
    "http": 200,
    "n": 30,
    "meta": [
     [
-     "AI_FULL_PAT",
+     "〈RED〉",
      "2026-09-12T10:33:57Z"
     ],
     [
@@ -131,23 +131,23 @@
      "2026-09-18T17:08:23Z"
     ],
     [
-     "CF_ACCOUNT_ID",
+     "〈RED〉",
      "2026-09-18T17:08:22Z"
     ],
     [
-     "CF_R2_USER_ACCESS_KEY_ID",
+     "〈RED〉",
      "2026-09-18T17:08:25Z"
     ],
     [
-     "CF_R2_USER_SECRET_ACCESS_KEY",
+     "〈RED〉",
      "2026-09-18T17:08:26Z"
     ],
     [
-     "CI_OPS_HUB_KEY",
+     "〈RED〉",
      "2026-09-11T21:20:08Z"
     ],
     [
-     "CI_OPS_LINE_KEY",
+     "〈RED〉",
      "2026-09-11T21:19:47Z"
     ],
     [
@@ -155,15 +155,15 @@
      "2026-09-09T06:28:00Z"
     ],
     [
-     "DEEPSEEK_API_KEY_VCI1",
+     "〈RED〉_VCI1",
      "2026-09-07T04:57:03Z"
     ],
     [
-     "DEEPSEEK_API_KEY_VCI2",
+     "〈RED〉_VCI2",
      "2026-09-07T04:57:04Z"
     ],
     [
-     "DEEPSEEK_API_KEY_VCI3",
+     "〈RED〉_VCI3",
      "2026-09-07T04:57:06Z"
     ],
     [
@@ -171,31 +171,31 @@
      "2026-09-15T04:16:45Z"
     ],
     [
-     "FINE_OWN_PAT_USRM",
+     "〈RED〉_USRM",
      "2026-09-14T19:24:14Z"
     ],
     [
-     "FORMAFLOW_CMD_AUTH",
+     "〈RED〉",
      "2026-09-09T08:32:09Z"
     ],
     [
-     "GH_TOTP_SEED",
+     "GH_〈RED〉",
      "2026-09-16T05:36:56Z"
     ],
     [
-     "GUARD_APP_KEY",
+     "〈RED〉",
      "2026-08-22T23:09:01Z"
     ],
     [
-     "KIMI_API_KEY_VCI1",
+     "〈RED〉_VCI1",
      "2026-09-07T04:57:02Z"
     ],
     [
-     "KIMI_API_KEY_VCI2",
+     "〈RED〉_VCI2",
      "2026-09-07T04:57:04Z"
     ],
     [
-     "KIMI_API_KEY_VCI3",
+     "〈RED〉_VCI3",
      "2026-09-07T04:57:05Z"
     ],
     [
@@ -203,31 +203,31 @@
      "2026-09-12T18:39:40Z"
     ],
     [
-     "LONGCAT_AK_N1",
+     "〈RED〉1",
      "2026-09-07T04:57:10Z"
     ],
     [
-     "LONGCAT_AK_N2",
+     "〈RED〉2",
      "2026-09-07T04:57:11Z"
     ],
     [
-     "LONGCAT_AK_N3",
+     "〈RED〉3",
      "2026-09-07T04:57:11Z"
     ],
     [
-     "LONGCAT_AK_N4",
+     "〈RED〉4",
      "2026-09-07T04:57:12Z"
     ],
     [
-     "LONGCAT_AK_N5",
+     "〈RED〉5",
      "2026-09-07T04:57:13Z"
     ],
     [
-     "LONGCAT_SK_N4",
+     "〈RED〉4",
      "2026-09-07T04:57:08Z"
     ],
     [
-     "LONGCAT_SK_N5",
+     "〈RED〉5",
      "2026-09-07T04:57:09Z"
     ],
     [
@@ -239,19 +239,19 @@
      "2026-09-07T04:57:08Z"
     ],
     [
-     "OTP_PHONE",
+     "〈OTP·RED〉",
      "2026-09-07T04:56:51Z"
     ]
    ],
    "diff_base": "research/C1-SECRETS-BASE-0917.json"
   },
   {
-   "check": "ci-inbox secrets meta",
+   "check": "HUB-MAIL secrets meta",
    "http": 200,
    "n": 17,
    "meta": [
     [
-     "AI_FULL_PAT",
+     "〈RED〉",
      "2026-09-12T10:33:58Z"
     ],
     [
@@ -259,27 +259,27 @@
      "2026-09-18T17:08:05Z"
     ],
     [
-     "CF_ACCOUNT_ID",
+     "〈RED〉",
      "2026-09-18T17:08:03Z"
     ],
     [
-     "CF_R2_USER_ACCESS_KEY_ID",
+     "〈RED〉",
      "2026-09-18T17:08:06Z"
     ],
     [
-     "CF_R2_USER_SECRET_ACCESS_KEY",
+     "〈RED〉",
      "2026-09-18T17:08:08Z"
     ],
     [
-     "CI_OPS_HUB_ID",
+     "〈RED〉",
      "2026-09-05T15:11:32Z"
     ],
     [
-     "CI_OPS_HUB_KEY",
+     "〈RED〉",
      "2026-09-11T21:20:07Z"
     ],
     [
-     "CI_OPS_LINE_KEY",
+     "〈RED〉",
      "2026-09-09T02:06:53Z"
     ],
     [
@@ -291,15 +291,15 @@
      "2026-09-15T04:16:50Z"
     ],
     [
-     "FINE_OWN_PAT_USRM",
+     "〈RED〉_USRM",
      "2026-09-14T19:24:12Z"
     ],
     [
-     "FORMAFLOW_CMD_AUTH",
+     "〈RED〉",
      "2026-09-09T08:32:06Z"
     ],
     [
-     "GH_TOTP_SEED",
+     "GH_〈RED〉",
      "2026-09-16T05:34:15Z"
     ],
     [
@@ -307,7 +307,7 @@
      "2026-09-12T18:39:35Z"
     ],
     [
-     "OTP_PHONE",
+     "〈OTP·RED〉",
      "2026-09-07T04:56:54Z"
     ],
     [

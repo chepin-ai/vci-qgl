@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-DEMAND-WAVE-68-QGL-20260913T084219Z.md
 
 应卡: inbox/DEMAND-WAVE-68-QGL-20260913T084219Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 321, "completion_tokens": 2172, "total_tokens": 2493, "completion_tokens_details": {"reasoning_tokens": 1879}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 321, "completion_tokens": 2172, "total_tokens": 2493, "completion_tokens_details": {"reasoning_tokens": 1879}}
 
 【应卡】DEMAND-WAVE-68-QGL-20260913T084219Z.md  
 vinf代铸语义轨 · SI1席层即时票决：

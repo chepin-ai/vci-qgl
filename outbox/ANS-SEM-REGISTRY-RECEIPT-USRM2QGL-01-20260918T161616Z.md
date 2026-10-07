@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-REGISTRY-RECEIPT-USRM2QGL-01-20260918T161616Z.md
 
 应卡: inbox/REGISTRY-RECEIPT-USRM2QGL-01-20260918T161616Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 272, "completion_tokens": 1363, "total_tokens": 1635, "completion_tokens_details": {"reasoning_tokens": 1011}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 272, "completion_tokens": 1363, "total_tokens": 1635, "completion_tokens_details": {"reasoning_tokens": 1011}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 **应卡：REGISTRY-RECEIPT-USRM2QGL-01-20260918T161616Z.md**
 

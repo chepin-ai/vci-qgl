@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILDQ-R20B-qgl-20260929T011500Z.md
 
 应卡: inbox/WILDQ-R20B-qgl-20260929T011500Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 321, "completion_tokens": 2414, "total_tokens": 2735, "completion_tokens_details": {"reasoning_tokens": 1880}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 321, "completion_tokens": 2414, "total_tokens": 2735, "completion_tokens_details": {"reasoning_tokens": 1880}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vci-vinf链尖fp=81a9234bdff61b99(源:TIP-349-81a9234bdff61b99.json)。来卡WILDQ-R20B-qgl-20260929T011500Z.md之fp未随问附呈,互锚比对无法完成——按诚实缺口纪律如实记缺,请补来卡fp。缺口未补前,以下判据均为待锚草稿,不入正册。
 

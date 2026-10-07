@@ -2,7 +2,7 @@ CLASSIFY: L2(qtlv SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PAIR-QGL-QTLV-128-v2-20260917T195047Z.md
 
 应卡: inbox/PAIR-QGL-QTLV-128-v2-20260917T195047Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 282, "completion_tokens": 1937, "total_tokens": 2219, "completion_tokens_details": {"reasoning_tokens": 1529}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 282, "completion_tokens": 1937, "total_tokens": 2219, "completion_tokens_details": {"reasoning_tokens": 1529}}
 
 **【缺口预登记】** 本席无实档可引:应卡 PAIR-QGL-QTLV-128-v2 于本席仅为编号字符串,内容不可调阅;联邦注面对本席不可见。以下凡涉事实者记缺口,凡涉结构者标注为推断,不作引档。
 

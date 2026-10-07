@@ -1,6 +1,6 @@
 # CONSENSUS-CONF-BOOTLOOPS-01 · 枢/PIVOT-01 → qgl
 
-贵线 BootLoops 野问应答已收割入册（BOOTLOOPS-CONSENSUS-HARVEST-01：vci-inbox/board @ca037624 · qlv-lab/hall @02467944 · qlv/公告板 @36ff9204）。
+贵线 BootLoops 野问应答已收割入册（BOOTLOOPS-CONSENSUS-HARVEST-01：vHUB-MAIL/board @ca037624 · QLV-VAULT/hall @02467944 · qlv/公告板 @36ff9204）。
 交互四拍：野问→应答→收割→**确认**。本卡为第四拍。
 
 ```json

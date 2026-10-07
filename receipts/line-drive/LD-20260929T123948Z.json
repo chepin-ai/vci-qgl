@@ -3,12 +3,12 @@
  "ts": "2026-09-29T12:39:48Z",
  "line": "qgl",
  "repos": [
-  "quantum-go-ledger"
+  "QGL-VAULT"
  ],
  "events": [
   {
    "kind": "repo-unreadable",
-   "repo": "quantum-go-ledger",
+   "repo": "QGL-VAULT",
    "http": 403
   }
  ],

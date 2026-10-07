@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-BEACON-DZ-40-qgl-f6ccd35d.md
 
 应卡: inbox/BEACON-DZ-40-qgl-f6ccd35d.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 258, "completion_tokens": 1694, "total_tokens": 1952, "completion_tokens_details": {"reasoning_tokens": 1319}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 258, "completion_tokens": 1694, "total_tokens": 1952, "completion_tokens_details": {"reasoning_tokens": 1319}}
 
 【互锚验】本run亲读vci-vinf链尖fp=f6ccd35d1ca00cc3，源文件TIP-348-f6ccd35d1ca00cc3.json，与来卡BEACON-DZ-40-qgl-f6ccd35d.md所载fp逐字节比对，完全对齐，对称件成，无诚实缺口。
 

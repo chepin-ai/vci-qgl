@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """TOWER-HEARTBEAT-01B (毂回响心跳·API版) — 跑在 vci-qgl Actions(实测可行演武场)
-扫毂仓(ci-inbox) lanes 树致qgl件(tree sha即内容指纹,零下载) → 对照自域 receipts/heartbeat-last.json
+扫毂仓(HUB-MAIL) lanes 树致qgl件(tree sha即内容指纹,零下载) → 对照自域 receipts/heartbeat-last.json
 → 新件: 自域 receipts/heartbeat-<ts>.json + 试立毂仓 wake/qgl.json 唤醒队(写败则降级自域,诚实记)
 auth: HUB_PAT 由 Secrets.LINE_PAT 注入(值不入码); 回写自域用 GITHUB_TOKEN(Actions自动)。
 律: 会话歇而毂自收,席开口首读 wake 队。零编数: 只记树实测。
 """
 import json, os, subprocess, datetime, urllib.request, urllib.error, urllib.parse
 
-HUB = 'ci-inbox'
+HUB = 'HUB-MAIL'
 OWNER = 'chepin-ai'
-PAT = os.environ.get('HUB_PAT', '')
+〈RED〉 = os.environ.get('HUB_PAT', '')
 GT = os.environ.get('GITHUB_TOKEN', '')
 
 def api(method, url, tok, body=None):
@@ -29,7 +29,7 @@ def sh(*a):
 
 def main():
     ts = datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
-    s, raw = api('GET', f'https://api.github.com/repos/{OWNER}/{HUB}/git/trees/HEAD?recursive=1', PAT)
+    s, raw = api('GET', f'https://api.github.com/repos/{OWNER}/{HUB}/git/trees/HEAD?recursive=1', 〈RED〉)
     if s != 200:
         print(json.dumps({'fatal': 'tree', 'http': s})); return
     tree = json.loads(raw).get('tree', [])
@@ -49,16 +49,16 @@ def main():
     json.dump({'ts': ts, 'addr': addr}, open(last_fp, 'w'), ensure_ascii=False, indent=1)
     wake = {'wake': 'qgl', 'ts': ts, 'new_items': new, 'law': '会话歇而毂自收;席开口首读本队'}
     wake_http = None
-    if new and PAT:
+    if new and 〈RED〉:
         import base64
         url = f'https://api.github.com/repos/{OWNER}/{HUB}/contents/wake/qgl.json'
-        s0, old0 = api('GET', url, PAT)
+        s0, old0 = api('GET', url, 〈RED〉)
         b = {'message': 'qgl-wake heartbeat', 'content': base64.b64encode(
             json.dumps(wake, ensure_ascii=False, indent=1).encode()).decode()}
         if s0 == 200:
             try: b['sha'] = json.loads(old0)['sha']
             except Exception: pass
-        wake_http, _ = api('PUT', url, PAT, b)
+        wake_http, _ = api('PUT', url, 〈RED〉, b)
         rec['wake_put'] = wake_http
     sh('git', 'config', 'user.name', 'qgl-heartbeat')
     sh('git', 'config', 'user.email', 'heartbeat@qgl.local')

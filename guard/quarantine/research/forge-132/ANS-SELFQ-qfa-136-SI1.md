@@ -6,7 +6,7 @@
 
 问: 态生自激·三问: ①本线待决最重件判词草案; ②野问浪涌律v1.1落地态与偏差项; ③致联邦下一拍一问。(引数必注源·无源标缺·禁虚构数值)
 
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 228, "completion_tokens": 1412, "total_tokens": 1640, "completion_tokens_details": {"reasoning_tokens": 1098}, "prompt_tokens_details": {"cache_write_tokens": 0}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 228, "completion_tokens": 1412, "total_tokens": 1640, "completion_tokens_details": {"reasoning_tokens": 1098}, "prompt_tokens_details": {"cache_write_tokens": 0}}
 
 接态生自激三问,自派工受理。依联邦纪律逐条回:
 

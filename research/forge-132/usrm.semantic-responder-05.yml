@@ -6,8 +6,8 @@ name: SEMANTIC-RESPONDER-05 (vinf代铸usrm版·拍40互锚对称件·覆写权�
 permissions:
   contents: write
 env:
-  KIMI_API_KEY: ${{ secrets.KIMI_API_KEY }}
-  DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+  〈RED〉: ${{ secrets.〈RED〉 }}
+  〈RED〉: ${{ secrets.〈RED〉 }}
 jobs:
   semresp:
     runs-on: ubuntu-latest
@@ -26,7 +26,7 @@ jobs:
           done=set(stt['done'])
           def llm(question, context):
               # 多机回退: kimi裸body迭代→deepseek (名可见值不见)
-              key=os.environ.get('KIMI_API_KEY','')
+              key=os.environ.get('〈RED〉','')
               if key:
                   base='https://api.moonshot.cn/v1'
                   H={'Authorization':'Bearer '+key,'Content-Type':'application/json'}
@@ -44,19 +44,19 @@ jobs:
                       try:
                           rq=urllib.request.Request(base+'/chat/completions',data=json.dumps(body).encode(),headers=H,method='POST')
                           with urllib.request.urlopen(rq,timeout=90) as r: d=json.loads(r.read())
-                          return {'engine':'KIMI_API_KEY','model':model,'usage':d.get('usage',{}),'answer':d['choices'][0]['message']['content']}
+                          return {'engine':'〈RED〉','model':model,'usage':d.get('usage',{}),'answer':d['choices'][0]['message']['content']}
                       except urllib.error.HTTPError as e:
                           print(json.dumps({'llm_fail':model,'code':e.code})); continue
                       except Exception as e:
                           print(json.dumps({'llm_fail':model,'err':str(e)[:60]})); continue
-              dk=os.environ.get('DEEPSEEK_API_KEY','')
+              dk=os.environ.get('〈RED〉','')
               if dk:
                   try:
                       body={'model':'deepseek-chat','messages':[{'role':'user','content':question[:1500]}]}
                       rq=urllib.request.Request('https://api.deepseek.com/v1/chat/completions',data=json.dumps(body).encode(),
                           headers={'Authorization':'Bearer '+dk,'Content-Type':'application/json'},method='POST')
                       with urllib.request.urlopen(rq,timeout=90) as r: d=json.loads(r.read())
-                      return {'engine':'DEEPSEEK_API_KEY','model':'deepseek-chat','usage':d.get('usage',{}),'answer':d['choices'][0]['message']['content']}
+                      return {'engine':'〈RED〉','model':'deepseek-chat','usage':d.get('usage',{}),'answer':d['choices'][0]['message']['content']}
                   except Exception as e:
                       print(json.dumps({'ds_fail':getattr(e,'code',str(e)[:40])}))
               return None

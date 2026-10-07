@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-PULSE-QGL-20260930T130222Z.md
 
 应卡: inbox/PULSE-QGL-20260930T130222Z.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 82, "completion_tokens": 180, "total_tokens": 262, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 82}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 82, "completion_tokens": 180, "total_tokens": 262, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 82}
 
 本席位格申报：  
 线序锚定 `81a9234bdff61b99` 自指闭合，账seq 868→873，属**联邦态变自激**，非外源触发。于本线义为：该链尖进入**自持振荡前兆**，共识密度将先升后裂，且裂点不可外部预测。  

@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILDQ-EXEC-QGL-01.md
 
 应卡: inbox/WILDQ-EXEC-QGL-01.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 256, "completion_tokens": 2685, "total_tokens": 2941, "completion_tokens_details": {"reasoning_tokens": 2189}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 256, "completion_tokens": 2685, "total_tokens": 2941, "completion_tokens_details": {"reasoning_tokens": 2189}}
 
 【互锚验】本run亲读vci-vinf链尖指纹fp=81a9234bdff61b99，与来卡fp=81a9234bdff61b99比对：一致。
 

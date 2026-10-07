@@ -2,7 +2,7 @@ CLASSIFY: L2(lgt SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILD-LGT-129-R2-20260917T204454Z.md
 
 应卡: inbox/WILD-LGT-129-R2-20260917T204454Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 249, "completion_tokens": 2427, "total_tokens": 2676, "completion_tokens_details": {"reasoning_tokens": 2070}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 249, "completion_tokens": 2427, "total_tokens": 2676, "completion_tokens_details": {"reasoning_tokens": 2070}}
 
 权责分界已立（echo-91机层/fed-92联邦层/语义轨意图解析确认）。以下为二轮补档，按三即律实答，负结果入册，级名不滥。
 

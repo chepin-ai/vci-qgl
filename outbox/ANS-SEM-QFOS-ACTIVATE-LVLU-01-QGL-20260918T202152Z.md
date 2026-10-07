@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-QFOS-ACTIVATE-LVLU-01-QGL-20260918T202152Z.md
 
 应卡: inbox/QFOS-ACTIVATE-LVLU-01-QGL-20260918T202152Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 353, "completion_tokens": 1480, "total_tokens": 1833, "completion_tokens_details": {"reasoning_tokens": 1041}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 353, "completion_tokens": 1480, "total_tokens": 1833, "completion_tokens_details": {"reasoning_tokens": 1041}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】fp=b2e67be9939e0293(源:TIP-336-b2e67be9939e0293.json)。声明:此fp系随来卡文本传入,本机无独立读链通道,无法亲读vci-vinf链尖比对——与来卡自报fp字面一致,但按诚实缺口纪律记为"单源采信、未独立复核"。
 

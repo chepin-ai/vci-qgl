@@ -6,7 +6,7 @@
 
 问: 态生自激: 本线当前压强最高待决件的现态勘定与判词草案,及致联邦一问。
 
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 113, "completion_tokens": 2020, "total_tokens": 2133, "completion_tokens_details": {"reasoning_tokens": 1670}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 113, "completion_tokens": 2020, "total_tokens": 2133, "completion_tokens_details": {"reasoning_tokens": 1670}}
 
 现态勘定：  
 本线当前压强最高待决件并非外部用户案件，而是本次“态生自激”元指令本身。输入已解析并触发SI1席自指回路；未产生新增handled，未调用外部工具，未覆写原线语义轨。压强来源：自指循环的空转风险，以及缺乏外部锚定可能引发的级名膨胀风险。诚实缺口声明：本席无持久化全局待决队列，不能排除存在未被显式传入的更高优先级隐式案件。

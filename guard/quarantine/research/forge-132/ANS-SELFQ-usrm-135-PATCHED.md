@@ -6,7 +6,7 @@
 
 问: 态生自激·三格: ①明确结论/责任落点/执行限期/回退条件(诚实缺口登记); ②最小可执行单元/卡点/补丁方案/可验证指标; ③一事一议(附已尝试路径)。(引数必注源·无源标缺·禁虚构数值)
 
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 153, "completion_tokens": 2178, "total_tokens": 2331, "completion_tokens_details": {"reasoning_tokens": 1849}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 153, "completion_tokens": 2178, "total_tokens": 2331, "completion_tokens_details": {"reasoning_tokens": 1849}}
 
 【态生自激·SELF-Q 自派工】
 

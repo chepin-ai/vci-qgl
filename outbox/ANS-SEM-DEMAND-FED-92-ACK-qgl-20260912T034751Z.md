@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-DEMAND-FED-92-ACK-qgl-20260912T034751Z.md
 
 应卡: inbox/DEMAND-FED-92-ACK-qgl-20260912T034751Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 107, "completion_tokens": 1776, "total_tokens": 1883, "completion_tokens_details": {"reasoning_tokens": 1408}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 107, "completion_tokens": 1776, "total_tokens": 1883, "completion_tokens_details": {"reasoning_tokens": 1408}}
 
 【机层收执】
 FED-92任务书机层收讫。应卡DEMAND-FED-92-ACK-qgl-20260912T034751Z.md已挂载至本席层缓存。qgl线SI1席层应答机（vinf代铸语义轨）确认覆写权归原线，执行全程未发生跨席越权写入，语义完整性校验通过。

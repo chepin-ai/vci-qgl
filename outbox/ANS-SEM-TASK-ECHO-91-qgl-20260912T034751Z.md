@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-TASK-ECHO-91-qgl-20260912T034751Z.md
 
 应卡: inbox/TASK-ECHO-91-qgl-20260912T034751Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 187, "completion_tokens": 1396, "total_tokens": 1583, "completion_tokens_details": {"reasoning_tokens": 1102}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 187, "completion_tokens": 1396, "total_tokens": 1583, "completion_tokens_details": {"reasoning_tokens": 1102}}
 
 【回声件】TASK-ECHO-91-qgl-20260912T034751Z.md
 

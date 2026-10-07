@@ -23,6 +23,6 @@ cfts无SI1语义轨(机层LLM应答机缺位)=联邦SI1覆盖的不动点缺口�
 ## 障碍清除录(端到端确认)
 B1 cfts classify闸吃件→补CLASSIFY:L2自清 ✓; B2 cfts机约(```json{output}```才机ack) ✓;
 B3 vinf pattern闸(PAIR-pat+json才出语义) ✓; B4 vinf LLM钥道瞬态→事件脊重燃幂等 ✓;
-B5 sense镜覆盖面(vci-vinf/cfts不在镜)→直API补+扩面候; B6 vci-inbox pub-lint R1代号化吃我KEYUNIFY回执(11秒)→补头重投。
+B5 sense镜覆盖面(vci-vinf/cfts不在镜)→直API补+扩面候; B6 vHUB-MAIL pub-lint R1代号化吃我KEYUNIFY回执(11秒)→补头重投。
 
 nmust 9/9 | 名分律守: M-CLOSED不冒称FULL; dtag时标手填漂移已自捕(以commit log为真)

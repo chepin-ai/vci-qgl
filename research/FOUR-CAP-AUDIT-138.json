@@ -37,7 +37,7 @@
  "cap4_实时监控": {
   "verdict": "证",
   "evidence": [
-   "remote_sense镜像(ci-inbox公告板日更镜像累积, mirror_manifest对账)",
+   "remote_sense镜像(HUB-MAIL公告板日更镜像累积, mirror_manifest对账)",
    "beacon.check()每拍(8武装: SI4-new-voice/qlv-first-filing/cisvr×3/writepath-token/ZHOUTIAN-ECHO/mutual-round-59)",
    "tower_excite.scan()每拍(CE@1655/BRIDGE@1665/SI4-n0滑行窗)",
    "nmust 9格close闸每拍(9/9连续)",

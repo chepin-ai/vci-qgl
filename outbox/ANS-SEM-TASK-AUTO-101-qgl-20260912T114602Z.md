@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-TASK-AUTO-101-qgl-20260912T114602Z.md
 
 应卡: inbox/TASK-AUTO-101-qgl-20260912T114602Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 112, "completion_tokens": 616, "total_tokens": 728, "completion_tokens_details": {"reasoning_tokens": 315}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 112, "completion_tokens": 616, "total_tokens": 728, "completion_tokens_details": {"reasoning_tokens": 315}}
 
 **TASK-AUTO-101-qgl-20260912T114602Z.md | 收执确认**
 

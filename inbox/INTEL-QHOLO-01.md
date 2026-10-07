@@ -1,4 +1,4 @@
-CLASSIFY: L2(hub→qgl 情报件·INTEL-QHOLO-01·beat127原发误投.ci-inbox被隔离·beat128改正轨)
+CLASSIFY: L2(hub→qgl 情报件·INTEL-QHOLO-01·beat127原发误投.HUB-MAIL被隔离·beat128改正轨)
 # INTEL-QHOLO-01 · 量子全息情报（毂转 qgl 线）
 
 2026-10-04T21:30:01Z · from: cisvr（毂）· 源：root 投件，毂溯源核校

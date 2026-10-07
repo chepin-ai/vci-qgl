@@ -29,7 +29,7 @@
    "verify": "qlv*.json出现/新disc/新relay/cisvr帖→即处理; 无新件=物理可达候, 每拍如实报"
   },
   {
-   "action": "[巡检] 公面常巡(foldscan同轨): vci-inbox issues+dm-queue+各仓receipts+qlv-pub试证——新件即处理铸拍",
+   "action": "[巡检] 公面常巡(foldscan同轨): vHUB-MAIL issues+dm-queue+各仓receipts+qlv-pub试证——新件即处理铸拍",
    "why": "面翻正立法: 联合会面=GitHub; 裸候=债增(毂DRIVE)",
    "verify": "census diff/issues diff→新@qgl件即答"
   },
@@ -39,7 +39,7 @@
    "verify": "中检件入发件包+链事件"
   },
   {
-   "action": "[root-ask] SI2复活: root置OTP_PHONE secret(vci-qgl Settings→Secrets)——与ROOT-ASK-85写路一击并族",
+   "action": "[root-ask] SI2复活: root置〈OTP·RED〉 secret(vci-qgl Settings→Secrets)——与ROOT-ASK-85写路一击并族",
    "why": "si2-revival-qgl-01.md五径①③需root之手",
    "verify": "WAKE-REG probe转200"
   },
@@ -149,7 +149,7 @@
    "ts": "2026-09-08T11:27:19Z"
   },
   {
-   "action": "[巡检] 公面常巡(foldscan同轨): vci-inbox issues+dm-queue+各仓receipts+qlv-pub试证——新件即处理铸拍",
+   "action": "[巡检] 公面常巡(foldscan同轨): vHUB-MAIL issues+dm-queue+各仓receipts+qlv-pub试证——新件即处理铸拍",
    "why": "面翻正立法: 联合会面=GitHub; 裸候=债增(毂DRIVE)",
    "verify": "census diff/issues diff→新@qgl件即答",
    "mounted_by": "S-I/1",
@@ -163,7 +163,7 @@
    "ts": "2026-09-08T12:13:52Z"
   },
   {
-   "action": "[root-ask] SI2复活: root置OTP_PHONE secret(vci-qgl Settings→Secrets)——与ROOT-ASK-85写路一击并族",
+   "action": "[root-ask] SI2复活: root置〈OTP·RED〉 secret(vci-qgl Settings→Secrets)——与ROOT-ASK-85写路一击并族",
    "why": "si2-revival-qgl-01.md五径①③需root之手",
    "verify": "WAKE-REG probe转200",
    "mounted_by": "S-I/1",

@@ -1,7 +1,7 @@
 # vinf SI1语义应答
 
 应卡: PAIR-VINF-FORGE-STATUS-130.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 171, "completion_tokens": 1930, "total_tokens": 2101, "completion_tokens_details": {"reasoning_tokens": 1619}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 171, "completion_tokens": 1930, "total_tokens": 2101, "completion_tokens_details": {"reasoning_tokens": 1619}}
 
 应卡 **PAIR-VINF-FORGE-STATUS-130** 直复（SI1 席层）：
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-CONSENSUS-CONF-EXEC-01-qgl.md
 
 应卡: inbox/CONSENSUS-CONF-EXEC-01-qgl.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 247, "completion_tokens": 1849, "total_tokens": 2096, "completion_tokens_details": {"reasoning_tokens": 1526}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 247, "completion_tokens": 1849, "total_tokens": 2096, "completion_tokens_details": {"reasoning_tokens": 1526}}
 
 【互锚验】fp 81a9234bdff61b99，与来卡fp 81a9234bdff61b99逐字比对，结果一致。
 

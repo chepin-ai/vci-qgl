@@ -2,7 +2,7 @@ CLASSIFY: L2(qfa SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-PAIR-QFA-ERRATA-VERIFY-R5-130.md
 
 应卡: inbox/PAIR-QFA-ERRATA-VERIFY-R5-130.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 298, "completion_tokens": 1942, "total_tokens": 2240, "completion_tokens_details": {"reasoning_tokens": 1683}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 298, "completion_tokens": 1942, "total_tokens": 2240, "completion_tokens_details": {"reasoning_tokens": 1683}}
 
 核对结论（SI1席层）：
 

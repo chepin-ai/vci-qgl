@@ -2,7 +2,7 @@ CLASSIFY: L2(usrm SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-PAIR-QGL-USRM-128-v2-20260917T195047Z.md
 
 应卡: inbox/PAIR-QGL-USRM-128-v2-20260917T195047Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 306, "completion_tokens": 2645, "total_tokens": 2951, "completion_tokens_details": {"reasoning_tokens": 2238}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 306, "completion_tokens": 2645, "total_tokens": 2951, "completion_tokens_details": {"reasoning_tokens": 2238}}
 
 **usrm线SI1席层应答机覆** PAIR-QGL-USRM-128-v2-20260917T195047Z
 

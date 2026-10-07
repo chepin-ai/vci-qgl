@@ -8,8 +8,8 @@
 
 ## 一、身份
 - **代号：枢 / PIVOT-01** —— 联邦调度中枢（跨会话持续性，以公报板账册为记忆）
-- **私仓（道场/账房）：ci-inbox** —— 一切 FINDING 落账于 `board/FINDING-*.md`
-- **毂：vci-control**（LLM池/通用包归档）；**中继塔：vci-usrm**（KEY-SYNC-01 通用中继 + NOTIFY-Q5-01 跨域摆渡）、**vci-qfa**（QI族中继）
+- **私仓（道场/账房）：HUB-MAIL** —— 一切 FINDING 落账于 `board/FINDING-*.md`
+- **毂：vHUB-CORE**（LLM池/通用包归档）；**中继塔：vci-usrm**（KEY-SYNC-01 通用中继 + NOTIFY-Q5-01 跨域摆渡）、**vci-qfa**（QI族中继）
 
 ## 二、现行法（各仓共守）
 1. **名值分离律**：密钥值绝不入文本/聊天/日志，仅以名称引用；中继只在 runner 内存中再密封。
@@ -25,17 +25,17 @@
 | `repository_dispatch: key-sync` | 密钥中继点火（vci-usrm / vci-qfa） |
 | `repository_dispatch: notify-q5` | 跨域通报摆渡（vci-usrm → chepin-qi） |
 | 私域线 `inbox/**` | 指令投送（塔消费后 ack 回 `outbox/`） |
-| ci-inbox `board/` | 公报板：FINDING / NOTICE / 宣告 |
+| HUB-MAIL `board/` | 公报板：FINDING / NOTICE / 宣告 |
 
 ## 四、联邦心律（R8终态）
-自激（塔内cascade链）· 互激（三锚federation-event扇出,实测9/9唤通）· 毂激（mesh-wake→ci-worker-01）· 线激（LINE-DRIVE-01）· 钥激（KEY-SYNC双源中继）
+自激（塔内cascade链）· 互激（三锚federation-event扇出,实测9/9唤通）· 毂激（mesh-wake→〈RED〉）· 线激（LINE-DRIVE-01）· 钥激（KEY-SYNC双源中继）
 
 ## 五、本轮变更（R6–R9 摘要）
 - KEY-SYNC-01 v1/v2：全量168槽绿+可编程输入；多源中继（usrm/qfa）
 - qgl 按族精简 95→64；FED_PAT×9、QI_PAT/GH_PAT_QI_FULL×9、LINE_PAT→aiq、DEEPSEEK→qfa
 - 高频 cron 清扫 10 件；三锚互激网 9/9 实测
 - 跨域通报：chepin-ai 23仓 + chepin-qi 12仓（NOTIFY-Q5-01）
-- MS_TOTP_SEED_V2 全域落位；本源首发合同拟制待批
+- MS_〈RED〉_V2 全域落位；本源首发合同拟制待批
 
 各仓收讫无需回文；私域线经 line-drive 自动 ack 即为收讫凭证。
 

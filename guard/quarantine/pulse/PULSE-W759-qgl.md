@@ -2,7 +2,7 @@
 **wave**: 759
 **timestamp**: 2026-09-13T07:59:49.600130
 **source**: SI1-SessionEngine
-**si0_status**: RESTORED (PAT validated, push=True)
+**si0_status**: RESTORED (〈RED〉 validated, push=True)
 **mode**: AUTHENTICATED_WRITE
 
 ## A-Line Production

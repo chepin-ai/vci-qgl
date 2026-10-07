@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILDQ-R20-qgl-20260929T010000Z.md
 
 应卡: inbox/WILDQ-R20-qgl-20260929T010000Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code usage={"prompt_tokens": 220, "completion_tokens": 2895, "total_tokens": 3115, "completion_tokens_details": {"reasoning_tokens": 2631}}
+引擎: 〈RED〉/kimi-k2.7-code usage={"prompt_tokens": 220, "completion_tokens": 2895, "total_tokens": 3115, "completion_tokens_details": {"reasoning_tokens": 2631}}
 
 【互锚验】fp=81a9234bdff61b99，与来卡fp一致。
 

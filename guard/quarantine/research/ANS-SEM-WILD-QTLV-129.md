@@ -2,7 +2,7 @@ CLASSIFY: L2(qtlv SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-WILD-QTLV-129-R2-20260917T204454Z.md
 
 应卡: inbox/WILD-QTLV-129-R2-20260917T204454Z.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 266, "completion_tokens": 2112, "total_tokens": 2378, "completion_tokens_details": {"reasoning_tokens": 1782}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 266, "completion_tokens": 2112, "total_tokens": 2378, "completion_tokens_details": {"reasoning_tokens": 1782}}
 
 应卡WILD-QTLV-129-R2-20260917T204454Z.md收讫。按联邦纪律（诚实缺口/三即律/负结果入册/级名不滥）作答如下：
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-PULSE-QGL-20260928T194035Z.md
 
 应卡: inbox/PULSE-QGL-20260928T194035Z.md
-引擎: KIMI_API_KEY/kimi-k3 usage={"prompt_tokens": 311, "completion_tokens": 858, "total_tokens": 1169, "completion_tokens_details": {"reasoning_tokens": 514}, "prompt_tokens_details": {"cache_write_tokens": 256}}
+引擎: 〈RED〉/kimi-k3 usage={"prompt_tokens": 311, "completion_tokens": 858, "total_tokens": 1169, "completion_tokens_details": {"reasoning_tokens": 514}, "prompt_tokens_details": {"cache_write_tokens": 256}}
 
 【互锚验】本run亲读vinf链尖fp=81a9234bdff61b99（源:TIP-349-81a9234bdff61b99.json），与来卡所报fp一致，无偏差。
 

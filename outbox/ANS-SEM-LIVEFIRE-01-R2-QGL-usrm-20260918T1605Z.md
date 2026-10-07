@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-LIVEFIRE-01-R2-QGL-usrm-20260918T1605Z.md
 
 应卡: inbox/LIVEFIRE-01-R2-QGL-usrm-20260918T1605Z.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 198, "completion_tokens": 1823, "total_tokens": 2021, "completion_tokens_details": {"reasoning_tokens": 1560}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 198, "completion_tokens": 1823, "total_tokens": 2021, "completion_tokens_details": {"reasoning_tokens": 1560}}
 
 【SI1-ACK】EXP-LIVEFIRE-01 收执。应卡=LIVEFIRE-01-R2-QGL-usrm-20260918T1605Z.md。
 

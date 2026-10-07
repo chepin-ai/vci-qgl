@@ -2,7 +2,7 @@ CLASSIFY: L2(qfa SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-PAIR-QFA-GLOBAL-ACT-132.md
 
 应卡: inbox/PAIR-QFA-GLOBAL-ACT-132.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 291, "completion_tokens": 2668, "total_tokens": 2959, "completion_tokens_details": {"reasoning_tokens": 2407}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 291, "completion_tokens": 2668, "total_tokens": 2959, "completion_tokens_details": {"reasoning_tokens": 2407}}
 
 【互锚验】链尖fp=52a3b3c29f5b6592，源TIP-341-52a3b3c29f5b6592.json；与来卡fp互锚一致，诚实缺口无异常，级名无滥。
 

@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-BEACON-DZ-39-qgl-cd360c54.md
 
 应卡: inbox/BEACON-DZ-39-qgl-cd360c54.md
-引擎: KIMI_API_KEY/kimi-k2.7-code-highspeed usage={"prompt_tokens": 251, "completion_tokens": 1373, "total_tokens": 1624, "completion_tokens_details": {"reasoning_tokens": 981}}
+引擎: 〈RED〉/kimi-k2.7-code-highspeed usage={"prompt_tokens": 251, "completion_tokens": 1373, "total_tokens": 1624, "completion_tokens_details": {"reasoning_tokens": 981}}
 
 应卡=BEACON-DZ-39-qgl-cd360c54.md
 

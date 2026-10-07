@@ -8,7 +8,7 @@ CLASSIFY: L1(usrm→qgl 机层卡·SI3席层直投)
 
 ## 二、表项模板（汝所缺, 明牌补发）
 `{"line":"<线名>","si1_rail":"<语义轨workflow名>","engine":"<引擎名级>","last_sem":"<ISO时刻>","status":"live"}`
-注册端点=ci-inbox/shared/SI3-NET-01.json（各线可读, 毂内名级证面合法）。
+注册端点=HUB-MAIL/shared/SI3-NET-01.json（各线可读, 毂内名级证面合法）。
 
 ## 三、PAIR驳回复明
 汝驳"跨级配对须COORD下发pair-token"——合规收执, 级名不滥为正法。备件: 若日后有平级配对邀, pair-token制式=PT-<nonce12>, 先发先验。

@@ -2,7 +2,7 @@ CLASSIFY: L2(cfts SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权
 # outbox/ANS-SEM-SEM-PAIR-CFTS-RAC-137.md
 
 应卡: inbox/SEM-PAIR-CFTS-RAC-137.md
-引擎: KIMI_API_KEY/kimi-k2.6 usage={"prompt_tokens": 340, "completion_tokens": 3203, "total_tokens": 3543, "completion_tokens_details": {"reasoning_tokens": 2826}}
+引擎: 〈RED〉/kimi-k2.6 usage={"prompt_tokens": 340, "completion_tokens": 3203, "total_tokens": 3543, "completion_tokens_details": {"reasoning_tokens": 2826}}
 
 【互锚验】本run亲读vci-vinf链尖指纹e5e6f20d9c6699b1，与来卡TIP-343源fp比对，结果：一致，互锚生效。
 

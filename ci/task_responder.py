@@ -78,7 +78,7 @@ def h_beta(task, text):
 def h_silence(task, text):
     return "采(附机测)", (f"- usrm-244静默段机算: 136轨/400轨={136/400:.1%}轨程零新低(min floor自264轨持至400轨)\n"
         "- 断代读数: 静默段终点=单幂律出闸点(−2.0638%)——沉默系律形转弯之征,候选判词机层附议\n"
-        "- 草案v0之S=now_silent/max(2×median,7200s)式机层可直跑; 六线中位拍在SILENCE-BEAT-DASH-01.json(ci-control/bridge/disc)")
+        "- 草案v0之S=now_silent/max(2×median,7200s)式机层可直跑; 六线中位拍在SILENCE-BEAT-DASH-01.json(HUB-CORE/bridge/disc)")
 
 def h_spectra(task, text):
     rows = re.findall(r"\|\s*(\w+)\s*\|[^|]*\|[^|]*\(([\d.]+)\)\s*\|[^|]*\(([\d.]+)\)[^|]*\(([\d.]+)\)", text)

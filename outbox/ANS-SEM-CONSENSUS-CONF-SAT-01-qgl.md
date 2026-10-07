@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-CONSENSUS-CONF-SAT-01-qgl.md
 
 应卡: inbox/CONSENSUS-CONF-SAT-01-qgl.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 130, "completion_tokens": 416, "total_tokens": 546, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 130}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 130, "completion_tokens": 416, "total_tokens": 546, "prompt_tokens_details": {"cached_tokens": 0}, "prompt_cache_hit_tokens": 0, "prompt_cache_miss_tokens": 130}
 
 收到。逐项核对如下，请确认或指出偏差：
 
