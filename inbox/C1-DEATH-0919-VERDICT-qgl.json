@@ -12,7 +12,7 @@
    "updated_at": "2026-09-11T21:19:53Z",
    "last_probe": "200/chepin-ai@20260915T143414Z"
   },
-  "tier2_LINE_PAT": {
+  "tier2_〈RED〉": {
    "in_registry": true,
    "updated_at": "2026-09-15T07:28:00Z"
   },
@@ -30,7 +30,7 @@
  },
  "death_impact_analysis": {
   "tier3_death_0919T0230Z": "〈RED〉亡→降级链自动落tier1/tier2(均在册且健康)→终阶GITHUB_TOKEN兜底;写面收执推送不断(三层降级已治于拍3.122 DRILL-0919)",
-  "autopilot_refs": "si-autopilot.yml探P1=〈RED〉→P2=LINE_PAT→P3=FED_PAT(不在册)→P4=QI_PAT(不在册): tier3亡后自动落LINE_PAT;今日空回(token=NONE)系限流深窗非钥亡(FINDING-AUTOPILOT-VIS-01另案)",
+  "autopilot_refs": "si-autopilot.yml探P1=〈RED〉→P2=〈RED〉→P3=FED_PAT(不在册)→P4=QI_PAT(不在册): tier3亡后自动落〈RED〉;今日空回(token=NONE)系限流深窗非钥亡(FINDING-AUTOPILOT-VIS-01另案)",
   "risk": "低——三阶式+终阶兜底双保险在役;死期后首日sentinel差分回证预案已备"
  },
  "drill_receipts": {

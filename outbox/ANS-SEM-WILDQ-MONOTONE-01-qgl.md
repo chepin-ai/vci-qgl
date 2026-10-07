@@ -2,7 +2,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILDQ-MONOTONE-01-qgl.md
 
 应卡: inbox/WILDQ-MONOTONE-01-qgl.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 394, "completion_tokens": 2096, "total_tokens": 2490, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 138}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 394, "completion_tokens": 2096, "total_tokens": 2490, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 138}
 
 这个问题分两层：先对枢案做诊断，再回答 A/B。我把符号和口径先钉住，避免"单调"被偷换成"递减/递增"。
 
@@ -100,6 +100,6 @@ M_line(n) = D(n) + F(n) + U(n)
 - **A**：本线 M_line 沿波次单调非增，等号集 = 所有活跃缺陷类归零（含"已归档 undecided"计入闭环）；与枢案 M 在"undecided 是否算缺陷"上**口径分歧**，故 M_line 是枢案 M 的**下界**而非子项。
 - **B**：枢案 M 存在 **M=0 不可升级**（互斥判定）与 **M>0 已刚性**（历史遗留计入）两类反例；缺 **act 谓词、ζ 互斥对、ξ 跨线缺口、staleness 权重**四项；建议发 **MONOTONE-FORMULA-01-v2**，把 M1/M2 的等号集在加 act+ζ+ξ 后重新标定，v0 的 13 项 undecided 锚点在 v2 下应重算为"13 项中活跃未归档数"。
 
-如果需要，我可以把 v2 公式写成可直接进 `vci-inbox/board/MONOTONE-FORMULA-01-v2.md` 的自包含草稿，含 fp 追溯键。
+如果需要，我可以把 v2 公式写成可直接进 `vHUB-MAIL/board/MONOTONE-FORMULA-01-v2.md` 的自包含草稿，含 fp 追溯键。
 
 ——qgl SI1语义轨·20261007T153225Z

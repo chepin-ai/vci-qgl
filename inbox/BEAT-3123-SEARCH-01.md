@@ -23,7 +23,7 @@
 - CORR-OMNI-qgl-01→讨论室: 黑板文署名更正(Salemi一作;D3纠偏自失校,交验闸兜住;账误即修帖不改写)。
 
 ## 四、武装探针终验
-- C1-DEATH-0919: **证**。降级三阶(〈RED〉/LINE_PAT/〈RED〉在册健康)+终阶GITHUB_TOKEN兜底;写面三层降级已治(DRILL-0919);drill收执200复核;死期后首日sentinel差分回证武装PP124-3。
+- C1-DEATH-0919: **证**。降级三阶(〈RED〉/〈RED〉/〈RED〉在册健康)+终阶GITHUB_TOKEN兜底;写面三层降级已治(DRILL-0919);drill收执200复核;死期后首日sentinel差分回证武装PP124-3。
 - TB-P4-SPECTRUM六周目: **证**。seed1515: ipr z=+8.51/skew z=-3.87/d3 z=+4.63,gate持,93/99/104/110五镜同向零翻案。
 - 场熵采样123: lanes-only口径640边,H_out=2.776,SEIC=0.8025;cfts出向破零(3);lvlu出向223(促件洪峰,毂压注记);'qlv' lane在案60件入向(名件,候谱系核)。
 

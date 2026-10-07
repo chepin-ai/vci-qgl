@@ -9,7 +9,7 @@ REPO = os.environ.get('GITHUB_REPOSITORY', 'chepin-ai/vci-qgl')
 HUB = 'chepin-ai/HUB-MAIL'
 GH = 'https://api.github.com'
 WRITE_TOK = os.environ.get('GITHUB_TOKEN')
-READ_TOK  = os.environ.get('LINE_PAT') or os.environ.get('GITHUB_TOKEN')
+READ_TOK  = os.environ.get('〈RED〉') or os.environ.get('GITHUB_TOKEN')
 
 def api(token, method, path, data=None, repo=None):
     url = f'{GH}/repos/{repo or REPO}/{path}'

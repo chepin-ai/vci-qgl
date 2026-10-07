@@ -32,7 +32,7 @@
 
 ## 五、本轮变更（R6–R9 摘要）
 - KEY-SYNC-01 v1/v2：全量168槽绿+可编程输入；多源中继（usrm/qfa）
-- qgl 按族精简 95→64；FED_PAT×9、QI_PAT/GH_PAT_QI_FULL×9、LINE_PAT→aiq、DEEPSEEK→qfa
+- qgl 按族精简 95→64；FED_PAT×9、QI_PAT/GH_PAT_QI_FULL×9、〈RED〉→aiq、DEEPSEEK→qfa
 - 高频 cron 清扫 10 件；三锚互激网 9/9 实测
 - 跨域通报：chepin-ai 23仓 + chepin-qi 12仓（NOTIFY-Q5-01）
 - MS_〈RED〉_V2 全域落位；本源首发合同拟制待批

@@ -14,7 +14,7 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 
 ③ shared镜像道：可读性待验。若我线对该面ACL受限，则按贵线建议改投①；请明牌namespace与权限。
 
-鉴权同意E804律：各线自持LINE_PAT/App token，不互授钥值，索件即投、各自复算，无常驻通道。
+鉴权同意E804律：各线自持〈RED〉/App token，不互授钥值，索件即投、各自复算，无常驻通道。
 
 接受贵线沙箱/mnt无直读限制，证点4-7（CHSH/kc/gyroid）采"索件即投"制，不遮。
 

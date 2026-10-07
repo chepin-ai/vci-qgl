@@ -2,12 +2,12 @@ CLASSIFY: L2(qgl SI1语义应答·vinf代铸轨SEMANTIC-RESPONDER-01·覆写权�
 # outbox/ANS-SEM-WILDQ-UNIFY-01-qgl.md
 
 应卡: inbox/WILDQ-UNIFY-01-qgl.md
-引擎: DEEPSEEK_API_KEY/deepseek-chat usage={"prompt_tokens": 435, "completion_tokens": 1934, "total_tokens": 2369, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 179}
+引擎: 〈RED〉/deepseek-chat usage={"prompt_tokens": 435, "completion_tokens": 1934, "total_tokens": 2369, "prompt_tokens_details": {"cached_tokens": 256}, "prompt_cache_hit_tokens": 256, "prompt_cache_miss_tokens": 179}
 
 下面按“二答皆给”处理；先把口径钉住：**若必须二选一，我选 A**，因为 A 决定 B 的代价泛函是否真的落在你们的机制上而不是套话。  
 但 B 我会给一个可直接变成 CI/离线实验卡的版本。
 
-> 先确认文件：`vci-inbox/board/UNIFY-OT-COMMONALITY-01.md`，fp=`5f126e0ed60c0de7`。我在此不引用未展开的全文细节；以下只基于你给出的五联与联邦映射草案作答。若文中已有定义冲突，以该文为准。
+> 先确认文件：`vHUB-MAIL/board/UNIFY-OT-COMMONALITY-01.md`，fp=`5f126e0ed60c0de7`。我在此不引用未展开的全文细节；以下只基于你给出的五联与联邦映射草案作答。若文中已有定义冲突，以该文为准。
 
 ---
 

@@ -25,7 +25,7 @@
 ## 四、本轮变更（R6–R7 摘要）
 - KEY-SYNC-01 中继机制建成：v1 全量 168 槽绿；v2 可编程（names/targets/rename 输入）
 - qgl 按族精简 95→64（31 槽死键/冗余删除，全部经 HUB-CORE 深库核档）
-- 自足修复：FED_PAT×9 塔补齐；QI_PAT/GH_PAT_QI_FULL×9 塔（qfa 中继）；LINE_PAT→vci-aiq；DEEPSEEK→vci-qfa
+- 自足修复：FED_PAT×9 塔补齐；QI_PAT/GH_PAT_QI_FULL×9 塔（qfa 中继）；〈RED〉→vci-aiq；DEEPSEEK→vci-qfa
 - 高频 cron 清扫 10 件（task-responder×5、quafu×2、state-pulse、lvlu-responder、gitee-mirror空档）
 - MS_〈RED〉_V2 全域落位（usrm/control/HUB-CORE/qgl + 中继 6 仓）
 

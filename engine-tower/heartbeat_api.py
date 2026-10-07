@@ -3,7 +3,7 @@
 """TOWER-HEARTBEAT-01B (毂回响心跳·API版) — 跑在 vci-qgl Actions(实测可行演武场)
 扫毂仓(HUB-MAIL) lanes 树致qgl件(tree sha即内容指纹,零下载) → 对照自域 receipts/heartbeat-last.json
 → 新件: 自域 receipts/heartbeat-<ts>.json + 试立毂仓 wake/qgl.json 唤醒队(写败则降级自域,诚实记)
-auth: HUB_PAT 由 Secrets.LINE_PAT 注入(值不入码); 回写自域用 GITHUB_TOKEN(Actions自动)。
+auth: HUB_PAT 由 Secrets.〈RED〉 注入(值不入码); 回写自域用 GITHUB_TOKEN(Actions自动)。
 律: 会话歇而毂自收,席开口首读 wake 队。零编数: 只记树实测。
 """
 import json, os, subprocess, datetime, urllib.request, urllib.error, urllib.parse
