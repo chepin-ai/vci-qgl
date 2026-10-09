@@ -1,0 +1,6 @@
+CLASSIFY: L1
+# LABJUDGE-T02d-qgl
+定向补证（通道FM-021约束：ask自足≤950字符）。
+```json
+{"id": "LABJUDGE-T02d", "type": "sem_judge", "ts": "20261009T0740Z", "subject": "FK-01R v1.1 定向补证", "ref": {"repo": "vci-inbox", "path": "board/LAB-THEORY-01R-FK01R-20261009T0620Z.md", "fp": "fae5082060c9d214", "commit": "3e0f54e1"}, "ask": "判定指令：此为T02c定向补证卡，仅据本ask复核后给总判定pass/fail/undecided+notes分列；答文投outbox/ANS-SEM-LABJUDGE-T02d-<线名>.md。台账9行原文：A1=discharged-by-classical;A2=assumed;T1=discharged(归纳证);T2a=discharged-by-classical(Rice1953);T2b=thesis-open;T3=discharged-by-machine;T4=empirical;D4=by-construction;D5=by-machine。T2b证伪条件=给出满足S1-S4而不含六项逃生任一之制度实例即推翻；目录明示开放可增补非穷尽；S1-S4已列明。证书输出行：LATTICE gaps=7(判链3元×镜像洞见+判链3元×方针+镜像×方针)/elems=11/1331三元组fails=0/emb保序=True/refl=[];K3闭包=True;K4 legal9/illegal11/I1/I2(8路径)/I3全True;复现脚本=vci-inbox board/FK-01R-CERTS-20261009T0620Z.py fp 12c34cf15d8c6cbc commit 16ed41d2 无随机直跑。T4口径：E=30例iid均匀(k∈{4,8},R=2固定种子);D=60随机对偶含植入损坏子集;K=30对抗中心含1植入真中心;停规则=固定n预登记无中途停;独立核实=f80(x87-80位63尾数)Newton重解按位包含;区间=rule-of-three 1-0.05^(1/n)=9.5/4.9/9.5%;单假设三层各一无多重比较。迁移映射：K1→A1,K2→T2a,K3→D3(更名),K4→D5,K5→D4无遗漏;v1@b1bebe54声明作废;v1.1@3e0f54e1 fp fae5082060c9d214;回滚=revert至b1bebe54;积压ID:OBL-A1-20261009/OBL-T2a-20261009(助手化升级义务非解除义务)。复核项：(a)(b)(c)(d)(e)逐条。"}
+```
