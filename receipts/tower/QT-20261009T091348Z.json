@@ -1,0 +1,36 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-09T09:13:48Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-T03R-qgl-SEG1.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-T03R-qgl-SEG2.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-T03R-qgl-SEG3.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-T03R-qgl-SEG4.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-T03R-qgl-SEG5.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-T03R-qgl-SEG6.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-T03R-qgl-SEG7.md"
+  }
+ ],
+ "verdict_memo": "[no-kimi-key: 事件在册，开工候钥]"
+}
