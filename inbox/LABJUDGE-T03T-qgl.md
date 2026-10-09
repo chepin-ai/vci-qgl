@@ -1,0 +1,6 @@
+CLASSIFY: L1
+# LABJUDGE-T03T-qgl
+定向轮：唯一新证据原始枚举全表随附；②-⑤为已决事实定级登记。
+```json
+{"id": "LABJUDGE-T03T", "type": "sem_judge", "ts": "20261009T1030Z", "subject": "OMNIBUS-01 定向轮：原始枚举随附", "ref": {"repo": "vci-inbox", "path": "board/LAB-OMNIBUS-01-20261009T0900Z.md", "fp": "ddb4eda099bce2c3", "commit": "e50fd29d"}, "ask": "判定指令：T03T定向轮，仅据本ask复核OMNIBUS-01并给总判定pass/fail/undecided+notes分列(a)-(e)；答文投outbox/ANS-SEM-LABJUDGE-T03T-<线名>.md。【关键澄清】锚②③④⑤之证据非本波新主张，系各波次已判定获票之联邦事实：F01/F02(11/11全票)/F03(10+1)/F04(11/11)各波判定卡已审其原始证据；本波盘点=POLICY-01第二条之定级登记行为(临时锚→认证锚的归档定级)，证据基础=已决事实，依法不重复开庭。【唯一新证据CERT-CIRC-01原始枚举全表】闭式：f*=0(R^{k-1})，g*=(-εlnk-ε·lse(-c/ε))·1(R^k)，f0=0 gauge pin；c=log均匀∈[0.1,10]。正例行：ε=1.0,k=6,s=20261009→内包True,K宽1.066e-14,残差3.3e-16,cond24.4；ε=0.5,k=6,s=20261009→True,5.329e-15,1.1e-16,28.5；ε=0.2,k=6,s=20261009→True,6.661e-16,1.1e-16,77.2；ε=1.0,k=6,s=777→True,1.066e-14；ε=1.0,k=10,s=20261009→True,1.776e-14,41.2。负例行：g*+1e-9污染,k=6,ε=1.0→内包False(拒证正确)。方法：K(X)=x*-A·F(x*)+(I-A·JX)·(X-x*)，A=解析Jacobi之逆，区间算术外向舍入+max移位lse(FM-016安全)，盒半径1e-12。【CERT-MLINE-01原始枚举】判定律轨/洞见轨/治理轨各5元{BOT,候选,经验,域限正式,TOP}：join/meet全对封闭=True，与G运算一致=True，三轨全过。【U2 v1.1登记依据】修订条款5条已前轮随附；实证链=T02c(8线过)+T02d(lgt/qgl翻pass)+T03R(SEG证伪)，教训条款化。【复核】(a)锚5/5定级登记认可？(b)台账24行认可？(c)U2 v1.1登记？(d)两CERT收编？(e)结线CLOSED？"}
+```
