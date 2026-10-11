@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-11T18:26:01Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "PULSE-RING-CFTS-TO-QGL-20261011T182552Z.md"
+  }
+ ],
+ "verdict_memo": "[no-kimi-key: 事件在册，开工候钥]"
+}
