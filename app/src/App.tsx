@@ -5,6 +5,7 @@ import {
 import {
   fetchLedgerEntries, fetchMetrics19, fetchPlan19, fetchRuns,
   fetchKG, fetchSched, fetchAgents,
+  okLedgerEntries, okMetrics, okPlan, okRuns, okKG, okSched, okAgents,
   TYPE_STYLE, type LedgerEntry, type Metrics, type Plan, type WorkflowRun,
 } from './qgo/api';
 import { KGGraph, KGLegend, KGDetail, RelFilter, REL_STYLE, Lifecycle, type KG } from './qgo/KG';
@@ -112,11 +113,18 @@ export default function App() {
     // 快照先行（构建期内嵌，任何网络环境可见）；实时拉取成功则静默覆盖，失败不打扰。
     const load = () => {
       Promise.all([fetchLedgerEntries(40), fetchMetrics19(), fetchPlan19(), fetchRuns(8)])
-        .then(([e, m, p, r]) => { setEntries(e); setMetrics(m); setPlan(p); setRuns(r); setErr(null); setSyncedAt(new Date()); })
+        .then(([e, m, p, r]) => {
+          // PP160-API-GUARD：schema 校验通过方可覆盖快照，坏数据静默回退不崩视图
+          if (okLedgerEntries(e)) setEntries(e);
+          if (okMetrics(m)) setMetrics(m);
+          if (okPlan(p)) setPlan(p);
+          if (okRuns(r)) setRuns(r);
+          setErr(null); setSyncedAt(new Date());
+        })
         .catch(() => { /* 预览沙箱可能拦截外发请求 — 快照已在界面上，静默回退 */ });
-      fetchSched().then((v) => setSched(v as Sched)).catch(() => {});
-      fetchAgents().then((v) => setAgents((v as { roles?: Record<string, AgentRole> })?.roles ?? {})).catch(() => {});
-      fetchKG().then((v) => setKg(v as KG)).catch(() => {});
+      fetchSched().then((v) => { if (okSched(v)) setSched(v as Sched); }).catch(() => {});
+      fetchAgents().then((v) => { if (okAgents(v)) setAgents((v as { roles: Record<string, AgentRole> }).roles); }).catch(() => {});
+      fetchKG().then((v) => { if (okKG(v)) setKg(v as KG); }).catch(() => {});
       fetch(`${'https://raw.githubusercontent.com/chepin-ai/quantum-go-ledger/main'}/ci/orders.json`).then((r) => r.json()).then((v) => setOrders(v.orders ?? [])).catch(() => {});
       fetch(`${'https://raw.githubusercontent.com/chepin-ai/quantum-go-ledger/main'}/ci/complexity_index.json`).then((r) => r.json()).then((v) => setCde(v as CDE)).catch(() => {});
       fetch(`${'https://raw.githubusercontent.com/chepin-ai/quantum-go-ledger/main'}/ci/audit.json`).then((r) => r.json()).then((v) => setAudit(v as Audit)).catch(() => {});

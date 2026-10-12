@@ -1,19 +1,24 @@
 {
- "beat": "3.157",
- "chain_seq": 2275,
- "chain_tip": "990f5805bf5b",
- "pc": 1,
- "ts": "2026-10-02T21:32:30Z",
- "highlights": [
-  "网站未更新根症修复：新增「拍面」视图同域读dash-beat.json（默认首屏·实证截图在案）",
-  "构建竞态根治：build-safe.sh flock禁重叠+后验四件齐",
-  "账误seq8：3.145-3.156数据面未接线",
-  "EXP-067阈收窄p*≈0.19±0.01（承3.156）"
- ],
- "pending": [
-  "3.158大周天节奏件",
-  "cfts裁答（nudge已达）",
-  "qtlv tier2对校",
-  "拍面历史曲线"
- ]
+  "beat": "3.160",
+  "chain_seq": 2360,
+  "chain_tip": "686aae4f54ac",
+  "pc": 4,
+  "ts": "2026-10-12T19:52:35Z",
+  "highlights": [
+    "广搜 REMOTE-SENSE: scanned 3315 / fetched 797 / new 726 / changed 71 (mirror 5274)",
+    "深研 EXP-067 X2FULL: 768组×20000发 dev_max 0.0081 全组3σ内; 临界p 0.8227 vs 解析0.8224 (Δ0.0003)",
+    "野问 WQ-11: n=13素数维对照 证——统治式 S(p)=(1−p)+p/n 跨维首证 (48组 Δ0.0004)",
+    "博鉴 借范卡×2: KEYRECOVERY-160 / TRANSPORT-160",
+    "交验 巡拆92件全处置 + 积压1292件登记销案; 四帖HTTP201 (六段链路报/KEYUNIFY销案/VERIFY-defer/补遗)",
+    "融构 NMUST 9/9 证; qglgit 0700可重入修复; si_responder v1.1 beat契约修复; KEY-HEALED×3"
+  ],
+  "pending": [
+    "3.161首件 PP161-VERIFY-CONTRACT 注入点契约投枢对齐",
+    "PP161-LABJUDGE-COURT 在效卡批量开庭(不伪判)",
+    "PP161-WQ12 野问立项(先预注册)",
+    "PP161-BACKLOG-AUDIT 历史机促族核验(3.161-3.162窗)",
+    "PP161-WILDQ-INTAKE 五卡逐判",
+    "PP161-ZHOUTIAN-5 第五燃 3.162",
+    "PP161-ROOTFB 候root反馈"
+  ]
 }

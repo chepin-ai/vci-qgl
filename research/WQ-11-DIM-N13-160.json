@@ -1,0 +1,24 @@
+{
+  "beat": "3.160",
+  "wq": "WQ-11",
+  "exp": "EXP-067-DIM-N13",
+  "prereg_cap": "53531f5f690ca2",
+  "q": "解析统治式S(p)=(1−p)+p/n是否维数普适（n=13素数维对照）",
+  "state_vector": {
+    "points": 24,
+    "y1_maxdev": 1.55e-15,
+    "y2_maxdev": 3.11e-15
+  },
+  "mc": {
+    "groups": 48,
+    "shots": 20000,
+    "dev_max": 0.0041,
+    "crit_p01937_mean": 0.8208,
+    "analytic": 0.8212,
+    "delta": 0.0004
+  },
+  "verdict": "证",
+  "finding": "维数普适性首证：n=13素数维下三无关性与解析式全合——统治式S(p)=(1−p)+p/n跨维成立（n=12合数·n=13素数双点）",
+  "zero_fab": true,
+  "ts": "2026-10-12T16:52:21Z"
+}

@@ -8,10 +8,10 @@
   "任意他线(公告板投影)",
   "root"
  ],
- "beacon_seq": 185,
+ "beacon_seq": 208,
  "asof": {
-  "chain_seq": 1651,
-  "chain_tail": "9ae7f77748967e984b2328b44a51d495ea699875f2c0fafa153ca22c7b621536"
+  "chain_seq": 2360,
+  "chain_tail": "686aae4f54ac19f0a9503b345e43f7892f023171d73d05021ae941c9ccb6190b"
  },
  "armed_events": [
   {
@@ -95,10 +95,10 @@
   "qgl-20260906-siarch01-disc",
   "qgl-20260906-sci-surge01"
  ],
- "last_note": "3.137 证: RAC交验越界+cfts座裁落地+errata seq3自劾+nmust死因查明(nmust-autofix全扫)即修",
+ "last_note": "3.160收拍: 六段链路首航 广搜3315/深研768组全3σ/野问n=13证/交验四帖201/融构NMUST9-9 pending0; close cap 046419ebd1fe",
  "rhythm": {
-  "pitch_class": 5,
-  "beat": 137,
+  "pitch_class": 4,
+  "beat": 160,
   "law": "自治无裸候: 心跳按Z12音级行进, 候件编入12相位, 等待永不裸露"
  }
 }

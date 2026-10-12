@@ -1,19 +1,38 @@
 {
- "beat": "3.152",
+ "beat": "3.160",
  "phase": "close",
- "opened": "2026-10-02T10:23:18Z",
+ "opened": "2026-10-12T18:22:22Z",
  "checkpoints": [
   {
    "phase": "close",
    "done": [
-    "复活四连",
-    "塔扫常态复核",
-    "L64核验",
-    "qtlv闭环",
-    "NEG-FAB册"
+    "REMOTE-SENSE 广搜 3315扫/797取/726新",
+    "EXP-067 X2FULL 768组×20000发 全3σ",
+    "WQ-11 n=13素数维 证(跨维首证)",
+    "借范卡×2 (KEYRECOVERY/TRANSPORT)",
+    "巡拆92件全处置+积压1292件登记",
+    "四帖HTTP201推送(liuduan/keyunify/verify/addendum)",
+    "KEY-HEALED×3 probe200/5000",
+    "二级限流合规窗+慢速REST",
+    "qglgit 0700修复",
+    "si_responder v1.1契约修复",
+    "NMUST 9/9 证",
+    "ZHOUTIAN echo闭(ZT3150/ZT3154)",
+    "PREPLANT-161 十二件",
+    "close capsule 046419ebd1fe seq2357"
    ],
-   "pending": [],
-   "ts": "2026-10-02T11:10:31Z"
+   "pending": [
+    "PP161-VERIFY-CONTRACT 注入点契约投枢(3.161首件)",
+    "PP161-LABJUDGE-COURT 批量开庭",
+    "PP161-WQ12 野问立项预注册",
+    "PP161-BACKLOG-AUDIT 历史机促族核验",
+    "PP161-WILDQ-INTAKE 五卡intake",
+    "PP161-KEYUNIFY-FOLLOW 销案后跟",
+    "PP161-MESH-COUPLING HUB-HEARTBEAT-01 R2",
+    "PP161-ZHOUTIAN-5 第五燃3.162",
+    "PP161-ROOTFB 候root反馈"
+   ],
+   "ts": "2026-10-12T19:52:18Z"
   }
  ],
  "preplant_done": [],
@@ -23,6 +42,8 @@
   "vault": true,
   "healed_boot": null
  },
- "boot_note": "复活#9续: qtlv闭环铸囊+收束",
- "ts": "2026-10-02T11:10:31Z"
+ "boot_note": "continuation close-resume: 六段链路首航收拍; key vault healed",
+ "ts": "2026-10-12T19:52:18Z",
+ "close_cap": "046419ebd1fe",
+ "close_seq": 2357
 }

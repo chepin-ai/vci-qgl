@@ -1,10 +1,19 @@
 {
- "beat": "3.157",
- "fired": true,
- "score": "25/26",
- "cap": "9a474e7f419d",
- "next_fire": "3.158",
- "ts": "2026-10-02T21:32:30Z",
- "note": "3.154已燃25/26；回腿候；next_fire 3.158",
- "echo": "退-候"
+ "engine": "ZHOUTIAN-CIRCUIT-01",
+ "beat": "3.160",
+ "ts": "2026-10-12T18:19:40Z",
+ "mode": "close-echo-scan-local",
+ "echo_closed": {
+  "ZT3150-5194fa90c373": [
+   "ci-inbox/lanes/qgl/inbox/ZT-ECHO-USRM-02-20261001T1015Z.md",
+   "ci-inbox/lanes/qgl/inbox/ZT-ECHO-USRM-02-20261001T1015Z.md.v0b90c3c2"
+  ],
+  "ZT3154-94e287746b1d": [
+   "ci-inbox/lanes/qgl/inbox/ZT-ECHO-USRM-03-20261002T1558Z.md",
+   "ci-inbox/lanes/qgl/inbox/ZT-ECHO-USRM-03-20261002T1558Z.md.v097e96c3"
+  ]
+ },
+ "echo_open": [],
+ "note": "第五燃3.162 staged; 本拍仅收束回腿账, 不新发令牌",
+ "zero_fab": true
 }

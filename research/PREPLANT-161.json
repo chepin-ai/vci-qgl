@@ -1,0 +1,67 @@
+{
+ "v": 1,
+ "born": "beat 3.160 close",
+ "law": "预注册先铸后跑·空结果同铸·凡候必有主动驱动",
+ "items": [
+  {
+   "id": "PP161-WQ12",
+   "item": "野问WQ-12立项：候选——EXP-067统治式高维外推（n=14/15）或联邦钥锚覆盖率普查；须先预注册",
+   "src": "野问浪涌律v1.1"
+  },
+  {
+   "id": "PP161-ZHOUTIAN-5",
+   "item": "大周天第五燃 3.162 stage+fire（拓扑ZHOUTIAN-DISPATCH v2六活线）",
+   "src": "PREPLANT-160续"
+  },
+  {
+   "id": "PP161-CAIDA",
+   "item": "裁答侦常规巡：cfts/qtlv/vinf/ucif2 语义轨+公面（二级限流合规速率1.2s/件）",
+   "src": "standing"
+  },
+  {
+   "id": "PP161-RESPOND",
+   "item": "REMOTE-SENSE 3.160 diff新件即答（NM4机保）+ 讨论室回帖义务清",
+   "src": "常巡必拆律"
+  },
+  {
+   "id": "PP161-LEDGER-PUSH",
+   "item": "ledger续段推送：远端真尖锚定后增量件上仓（gen_dash_full PP160-LEDGER-ANCHOR首跑产物）",
+   "src": "PP160-LEDGER-ANCHOR"
+  },
+  {
+   "id": "PP161-ROOTFB",
+   "item": "候root对3.159全量刷新版da8d7f5与3.160六段首航之反馈",
+   "src": "standing"
+  },
+  {
+   "id": "PP161-VERIFY-CONTRACT",
+   "item": "KNOWN_FP 注入点契约草案（注入点/helper签名/拆除回滚语义）投枢/PIVOT-01对齐面；契约对齐前不申报 V3/V4 闭",
+   "src": "VERIFY-V11-CALL-01 defer回执"
+  },
+  {
+   "id": "PP161-LABJUDGE-COURT",
+   "item": "LABJUDGE 在效卡批量开庭（E/F/T/EXT/OTP02/SURGE01 系）：逐卡判 pass/fail/undecided+理由，否决必给可检验理由",
+   "src": "vci-qgl inbox 3.160 diff"
+  },
+  {
+   "id": "PP161-KEYUNIFY-FOLLOW",
+   "item": "KEYUNIFY-QUORUM-01 销案回执后跟：若 lvlu 闸五仍促，直引 REGISTRY adopted 校闸并登记判据失校",
+   "src": "lvlu十五促件"
+  },
+  {
+   "id": "PP161-MESH-COUPLING",
+   "item": "MESH-COUPLING-01 机轨：写 HUB-HEARTBEAT-01 R2 或答缺口一句",
+   "src": "vci-qgl inbox"
+  },
+  {
+   "id": "PP161-WILDQ-INTAKE",
+   "item": "WILDQ 五卡(BOOTLOOPS/MONOTONE/SAT/SURGE/UNIFY)+CONSENSUS-CONF-BOOTLOOPS-01 野问浪涌 intake:逐卡判 立项/并入/witness+理由,立案者必先预注册",
+   "src": "vci-qgl inbox 3.160 diff·野问浪涌律v1.1·议题落地律"
+  },
+  {
+   "id": "PP161-BACKLOG-AUDIT",
+   "item": "responder 历史积压族 audit: lvlu 公告板机促族(EXP049/SI5CLOUD/EVAL-KAPPA/T5KEY/YONEDA/BLUEQUBIT/ORIGIN6/WQREG/ORBIT-CAP/WQB15/ADJUD/EVALR2/REVDRV ~1056件)逐族核验原拍收执→销案或立候; 3.161-3.162 窗口",
+   "src": "SI-RESPONDER-CYCLE-160 pending census·凡候必有主动驱动"
+  }
+ ]
+}

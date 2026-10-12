@@ -1,0 +1,21 @@
+{
+  "card": "CARD-BORROW-KEYRECOVERY-01",
+  "v": 1,
+  "born": "beat 3.160 借范段",
+  "law": "KEY-RECOVERY-SEAL-01（拍3.115 root令根治钥盲）",
+  "pattern": "凭证密态锚定持久域 + 拍开自愈",
+  "problem": "凭证锚点全押 $HOME（天然易失载体，平台重 provisioning 即灭）→ 每撞必盲，重备常态化=症状制度化",
+  "solution": [
+    "provision: token 唯从 ~/.keys 读 → SealedBox(pk).encrypt → 密文落持久域(engine/ 级，跨会话跨重置存续实证) + sk 600 入 never-push 册",
+    "heal: 拍开钥缺 → 本地 SealedBox 解密重备 600 → credentialed 探针验(/rate_limit 200) → 铸 KEY-HEALED（无警报）；锚亦缺方 KEY-BLIND 一级警报回 root 信道",
+    "值零入文律不破：明文唯现于供钥瞬间与探针内存；落盘唯密文+sk"
+  ],
+  "evidence": {
+    "heal_3159": "HOME 重建后 ~keys 灭失 → heal() 探针 200/remaining 5000 → healed:true（03:21:34Z）",
+    "heal_3160": "会话间 HOME 再重置 → heal() 探针 200/5000 → healed:true（16:38:01Z）——两战两通",
+    "anchor_survival": "engine/vault_recovery.sealed 88B + .recovery_sk 32B，09-13 铸，跨≥4次 HOME 重置存续"
+  },
+  "replication": "任一线：nacl SealedBox + 持久域目录 + 拍开 heal 钩子 ≈ 30 行；sk 入 never-push 册（与 cios.py 同级处置）",
+  "residual_risk": "workspace 整体重置（平台级）则锚亡 → 回 root 信道——不可消只可说（诚实录）",
+  "dtag": "borrow-keyrecovery", "line": "qgl", "mutual_review": true
+}

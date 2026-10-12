@@ -1,21 +1,21 @@
 {
  "v": "engine-next/2",
- "from_beat": "2026-09-23",
- "ts": "2026-09-22T16:57:44Z",
- "engine": "PARETO-ENGINE-V2 @ chain1652（此字段随拍再生,读档以 asof_seq 为准）",
+ "from_beat": "2026-10-13",
+ "ts": "2026-10-12T20:11:42Z",
+ "engine": "PARETO-ENGINE-V2 @ chain2361（此字段随拍再生,读档以 asof_seq 为准）",
  "current_peak": {
   "id": "峰B",
   "ref": "ROADMAP-03#P1X",
   "mission": "P1X-100c 百局扩样收割 → L-OBS-01失效条款结案 + 对照表终判"
  },
  "state_digest": {
-  "asof_seq": 1651,
+  "asof_seq": 2360,
   "asof_note": "digest 为 asof_seq 时点快照；读者须自 diff 链尾（并发常态，滞后非故障）",
-  "capsule_chain": 1652,
-  "capsule_tail": "9ae7f7774896",
-  "outbox_chain_len": 235,
-  "outbox_tail": "1822b766dff68cd1c1e7dc77b13fc37344f78433c653943df23453e0162288a5",
-  "outbox_items": 208,
+  "capsule_chain": 2361,
+  "capsule_tail": "686aae4f54ac",
+  "outbox_chain_len": 239,
+  "outbox_tail": "e98f1e7039d0",
+  "outbox_items": 4,
   "pending_blockers": [
    "qlv 线收编(VISIBILITY-F02/B-008): 中继路由待 cisvr 确认(外部线,静默合法)",
    "P1X-100c: 34/100→齐百前为进行中项(非阻塞)",
@@ -29,7 +29,7 @@
    "verify": "qlv*.json出现/新disc/新relay/cisvr帖→即处理; 无新件=物理可达候, 每拍如实报"
   },
   {
-   "action": "[巡检] 公面常巡(foldscan同轨): vHUB-MAIL issues+dm-queue+各仓receipts+qlv-pub试证——新件即处理铸拍",
+   "action": "[巡检] 公面常巡(foldscan同轨): vci-inbox issues+dm-queue+各仓receipts+qlv-pub试证——新件即处理铸拍",
    "why": "面翻正立法: 联合会面=GitHub; 裸候=债增(毂DRIVE)",
    "verify": "census diff/issues diff→新@qgl件即答"
   },
@@ -39,8 +39,8 @@
    "verify": "中检件入发件包+链事件"
   },
   {
-   "action": "[root-ask] SI2复活: root置〈OTP·RED〉 secret(vci-qgl Settings→Secrets)——与ROOT-ASK-85写路一击并族",
-   "why": "si2-revival-qgl-01.md五径①③需root之手",
+   "action": "[root-ask] SI2复活: root置OTP信道 secret(vci-qgl Settings→Secrets)——与ROOT-ASK-85写路一击并族",
+   "why": "si2-revival-qgl-01.md五径①③需root之手 (3.160脱敏: 密钥名不入公开明文面,R1-trigger律)",
    "verify": "WAKE-REG probe转200"
   },
   {
@@ -94,27 +94,27 @@
    "verify": "重叠表判词"
   },
   {
-   "action": "[fold] 复核 fold-probe#1505 → EXP-050-RESULT-01",
+   "action": "[fold] 复核 fold-probe#1910 → WQ-RAC-01-TAKE-148",
    "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
    "verify": "候销/候持(事件门控说明)/升FINDING"
   },
   {
-   "action": "[fold] 复核 fold-probe#1528 → EXP-052-RESULT",
+   "action": "[fold] 复核 fold-probe#1949 → FOLD-1910-REVIEW-150",
    "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
    "verify": "候销/候持(事件门控说明)/升FINDING"
   },
   {
-   "action": "[fold] 复核 fold-probe#1545 → EXP-053055-RESULT",
+   "action": "[fold] 复核 fold-probe#2250 → ZHOUTIAN-ECHO-SCAN-156",
    "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
    "verify": "候销/候持(事件门控说明)/升FINDING"
   },
   {
-   "action": "[fold] 复核 fold-probe#1616 → EXP-061-RESULT-133",
+   "action": "[fold] 复核 fold-probe#2255 → ZHOUTIAN-ECHO-SCAN-156",
    "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
    "verify": "候销/候持(事件门控说明)/升FINDING"
   },
   {
-   "action": "[fold] 复核 fold-probe#1643 → SI6-DIMWIT-PROPOSAL-136",
+   "action": "[fold] 复核 fold-probe#2296 → CAIDA-PROBE-158",
    "why": "候=折叠嫌疑, 复核窗1拍, 逾期升FINDING",
    "verify": "候销/候持(事件门控说明)/升FINDING"
   },
@@ -139,7 +139,7 @@
  ],
  "calibration": "四态判词; 未测即未测; 否定结果=进展(Popper); 实测>推断; 评估器相对性(P1在案)",
  "honesty_bounds": "会话端无 cron/daemon; 公面只投影 sha/计数/HTTP 码; NEXT-PACK 为拍内最后写盘",
- "ring": 134,
+ "ring": 160,
  "mounted": [
   {
    "action": "[协同] 外线协同第一要务(ROOT-5ARTICLES-01): 每拍查qlv-filing/disc新件/relay新包/cisvr回音→fire即处理铸拍",
@@ -149,7 +149,7 @@
    "ts": "2026-09-08T11:27:19Z"
   },
   {
-   "action": "[巡检] 公面常巡(foldscan同轨): vHUB-MAIL issues+dm-queue+各仓receipts+qlv-pub试证——新件即处理铸拍",
+   "action": "[巡检] 公面常巡(foldscan同轨): vci-inbox issues+dm-queue+各仓receipts+qlv-pub试证——新件即处理铸拍",
    "why": "面翻正立法: 联合会面=GitHub; 裸候=债增(毂DRIVE)",
    "verify": "census diff/issues diff→新@qgl件即答",
    "mounted_by": "S-I/1",
@@ -163,8 +163,8 @@
    "ts": "2026-09-08T12:13:52Z"
   },
   {
-   "action": "[root-ask] SI2复活: root置〈OTP·RED〉 secret(vci-qgl Settings→Secrets)——与ROOT-ASK-85写路一击并族",
-   "why": "si2-revival-qgl-01.md五径①③需root之手",
+   "action": "[root-ask] SI2复活: root置OTP信道 secret(vci-qgl Settings→Secrets)——与ROOT-ASK-85写路一击并族",
+   "why": "si2-revival-qgl-01.md五径①③需root之手 (3.160脱敏: 密钥名不入公开明文面,R1-trigger律)",
    "verify": "WAKE-REG probe转200",
    "mounted_by": "S-I/1",
    "ts": "2026-09-08T13:02:04Z"

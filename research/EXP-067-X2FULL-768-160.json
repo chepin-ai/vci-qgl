@@ -1,0 +1,47 @@
+{
+  "beat": "3.160",
+  "exp": "EXP-067-MULTIPLIER-X2FULL-768",
+  "nonce": "d9963f1fb0ff（不动）",
+  "prereg_cap": "f935f8a3b60eae",
+  "ts": "2026-10-12T16:46:06Z",
+  "protocol": "n=12 |Φ_12> Alice X^3 Z^(m·x2) Bob双基; x2∈0..11×m∈{1,5,7,11}×y∈{1,2}×p(8值)=768组×20000发",
+  "noise_model": "退极化 ρ=(1−p)|Φ_A><Φ_A|+p·I/144",
+  "state_vector": {
+    "points": 48,
+    "y1_maxdev": 2.22e-15,
+    "y2_maxdev": 5.11e-15,
+    "ideal_S": 1.0
+  },
+  "mc": {
+    "groups": 768,
+    "shots": 20000,
+    "dev_max": 0.0081,
+    "dev_mean": 0.0015,
+    "in_3sigma": 1.0
+  },
+  "crit_p01937": {
+    "mean": 0.8227,
+    "analytic": 0.8224,
+    "delta": 0.0003
+  },
+  "x2_independence": {
+    "spread_max": 0.0135,
+    "spread_mean": 0.0059
+  },
+  "m_symmetry": {
+    "spread_max": 0.0109,
+    "spread_mean": 0.0038
+  },
+  "y_independence": {
+    "spread_max": 0.0095,
+    "spread_mean": 0.002
+  },
+  "findings": [
+    "x2无关性成立：12值全扫无任何系统偏离（极差均值0.0059≈MC噪声窗）——V4全线对偶于解析式",
+    "m对称+y基无关+x2无关三无关性闭合：EXP-067乘子轨在n=12全线由S(p)=(1−p)+p/12单一解析式统治",
+    "临界点p=0.1937: 96点均值0.8227 vs 解析0.8224，Δ=0.0003——超越3.159单点合，现为96点集合合",
+    "态矢48点理想S=1.0至2.2e-15——matrix_power勘误后构造完全稳固"
+  ],
+  "zero_fab": true,
+  "prereg": "PREREG-EXP067-768-160 先铸后跑"
+}
