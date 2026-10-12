@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-12T19:32:46Z",
+ "idle_in": 5,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "WILDQ-SURGE-02-qgl.md"
+  }
+ ],
+ "verdict_memo": "[no-kimi-key: 事件在册，开工候钥]"
+}
