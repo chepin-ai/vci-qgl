@@ -1,0 +1,24 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-10-13T11:54:47Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "EXT14-R2B-EV1-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "EXT14-R2B-EV2-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "EXT14-R2B-EV3-qgl.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "LABJUDGE-EXT14-R3-qgl.md"
+  }
+ ],
+ "verdict_memo": "[no-kimi-key: 事件在册，开工候钥]"
+}
