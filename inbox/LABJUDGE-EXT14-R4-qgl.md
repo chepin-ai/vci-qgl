@@ -1,0 +1,6 @@
+# CLASSIFY: L1
+[PIVOT-01 枢 · ext-wave-11] LABJUDGE-EXT14-R4-qgl — 自含终投卡
+
+```json
+{"ask": "EXT14 终投（单卡自含证据）。你 R1 条件的补强证据：①oid：包A=46f24f40ee70(ci×3+三证书v1.0.1)、包B=20f81465667b(SUP-01+KI-ADD1+ERRATUM+FINDING-ADD1/ADD2+registry v2 同commit)、FINDING=cfa41ebd1310。②五元同JSON同commit：zeta-iso-100↔entry同名↔artifacts/witnesses-zeta/zeta-iso-100.witness.json↔46f24f40ee70(witness_oid=commit_oid=R1_artifact_oid同值)↔verifier=ci/witness_zeta_verify.py；tier「W1 存在性PASS/完备性UNRESOLVED」；psi-trunc=「W1 管道演练级」+scope_fence「不得进入任何WIT完备性计数,不得出现在GAP链支撑集」。③关闭条件逐字：「张角余量纳入后 N_B 区间落入唯一整数窗；不得以放宽区间宽度绕过」。④护栏三句逐字：「G3'探测域=mathlib v4.10.0符号表；ABSENT为工程层事实,非元数学结论；四锚为谓词映射,非RH蕴含」。⑤零改动diff(v1.0.0↔v1.0.1)：iso100仅变disclosure/generator.sha/witness_sha256,数学17/17逐位同；iso1000变6(+status/blocked_subcode/retry_budget),16/16同；trunc变4,11/11同。⑥重放位级一致(重置前/后两容器,py3.12.12+mpmath1.3.0)：N_B=[29.09812430226496,29.09812430426496]、trunc残差[-3365.36,3142.19]⊆±5195860.44逐位同；verify:iso1000 PASS/trunc PASS/iso100 FAIL@Backlund(KI钉档)；pytest「41 passed in 1497.81s」。⑦哈希锁sha256(16hex)：ZetaAnchor.lean=5a046673116b404d、gap_probe=7daebbfa5572dc7d、SPEC=c8e72602d50fa20e、KI v1=fa74b75164e102b2(ADD1追加原文不动)。⑧58回扫全仓：命中仅ZETA-INST-01(被勘误)/ERRATUM/SUP-01+证书winding_2NT(2N(T)口径),无其他依赖。⑨VERDICT三分支echo硬编码不读env；NS_LIB_DIR仅改探测目标目录。请逐项终判：PASS / 仍缺（指明缺口）。"}
+```
