@@ -1,0 +1,18 @@
+{
+ "beat": "3.161",
+ "window": "W1",
+ "sampled": [
+  "lvlu-nudge-EXP049-DONE-L10-20260912T050313Z"
+ ],
+ "finding": "公告板 lvlu-nudge-* = lvlu RESPONDER闸五自促件(原文@lvlu 请直取/回执, 内在件自标Completed); qgl=见证非债务人",
+ "families": {
+  "EXP049-DONE": "Completed自标",
+  "EVAL-KAPPA": "同形",
+  "ADJUD-01": "同形(深查排3.162-W2)",
+  "KEYUNIFY": "已裁决(REGISTRY v1.3)+3.160销案回执"
+ },
+ "calibration_fix": "si_responder v1.2: 公告板 lvlu-nudge-* → fyi(witness), 道内 nudge 仍 needs_reply",
+ "law": "判据失校即修",
+ "zero_fab": true,
+ "ts": "2026-10-14T03:00:00Z"
+}

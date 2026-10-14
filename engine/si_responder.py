@@ -70,6 +70,10 @@ def classify(path, reg_items, key=None):
     if base.startswith(('QGL-', 'qgl-')) or '-reply-qgl' in base or 'qgl-voice' in base:
         return 'own'          # my own posts
     if (key or path) in reg_items:               return 'processed'
+    # v1.2(BACKLOG-AUDIT-161-W1实证修): 公告板 lvlu-nudge-* = lvlu闸五自促件(@lvlu 直取),
+    # qgl 为见证非债务人 → fyi; lanes/qgl/inbox 内 nudge 仍 needs_reply(道内即 addressed)
+    if '公告板/' in path and base.startswith('lvlu-nudge-'):
+        return 'fyi'
     markers = ('EXP-', 'PAIR-', 'ANS-', 'nudge', 'mech-call', '直通', 'reply',
                'TASK', 'REQ', 'eval', 'relay', '议题')
     return 'needs_reply' if any(m in base for m in markers) else 'fyi'

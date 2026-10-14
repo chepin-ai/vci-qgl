@@ -1,17 +1,43 @@
 {
- "beat": "3.157",
- "cycle": "close-prep",
- "ts": "2026-10-02T21:32:30Z",
+ "beat": "3.161",
+ "cycle": "close",
+ "ts": "2026-10-14T03:16:40Z",
  "items": [
-  "SITEFIX证",
-  "账误seq8"
+  "六段链路首航证",
+  "PATROL-UNPACK-160",
+  "KEY-HEALED-160-REHEAL",
+  "secondary-cool合规窗"
  ],
  "key_health": {
   "ok": true,
   "evidence": {
    "http": 200,
-   "secrets_count": 30,
-   "ts": "2026-10-02T21:32:30Z"
+   "remaining": 5000,
+   "probe": "/rate_limit"
+  },
+  "note": "vault在(二度heal后持稳); 内容面二级限流=合规静默窗处理中, 401/403铁律未触"
+ },
+ "zero_fab": true,
+ "history": [
+  {
+   "beat": "3.160",
+   "key_health": {
+    "ok": true,
+    "evidence": {
+     "http": 200,
+     "remaining": 5000,
+     "note": "KEY-HEALED-160-REHEAL自愈后探针；内容面secondary冷却中，推送走冷却后git旁路",
+     "ts": "2026-10-12T18:22:22Z"
+    },
+    "history": [
+     {
+      "http": 201,
+      "note": "push 19/19 2xx实证",
+      "ts": "2026-10-08T01:37:50.776370Z"
+     }
+    ]
+   },
+   "ts": "2026-10-12T18:22:22Z"
   }
- }
+ ]
 }

@@ -1,24 +1,24 @@
 {
-  "beat": "3.160",
-  "chain_seq": 2360,
-  "chain_tip": "686aae4f54ac",
-  "pc": 4,
-  "ts": "2026-10-12T19:52:35Z",
+  "beat": "3.161",
+  "chain_seq": 2380,
+  "chain_tip": "671c87cac9d3",
+  "pc": 5,
+  "ts": "2026-10-14T03:56:15Z",
   "highlights": [
-    "广搜 REMOTE-SENSE: scanned 3315 / fetched 797 / new 726 / changed 71 (mirror 5274)",
-    "深研 EXP-067 X2FULL: 768组×20000发 dev_max 0.0081 全组3σ内; 临界p 0.8227 vs 解析0.8224 (Δ0.0003)",
-    "野问 WQ-11: n=13素数维对照 证——统治式 S(p)=(1−p)+p/n 跨维首证 (48组 Δ0.0004)",
-    "博鉴 借范卡×2: KEYRECOVERY-160 / TRANSPORT-160",
-    "交验 巡拆92件全处置 + 积压1292件登记销案; 四帖HTTP201 (六段链路报/KEYUNIFY销案/VERIFY-defer/补遗)",
-    "融构 NMUST 9/9 证; qglgit 0700可重入修复; si_responder v1.1 beat契约修复; KEY-HEALED×3"
+    "解构双目标: hexagonmath.org=AI数学预印本仓; openai/math=Lean手稿仓(书名修正: 非MATH基准仓)",
+    "实验 WQ-12 HEXAUDIT-01 证: 六组SRG×五必要条件 30/30 pass + 负对照fail + 压测20/20零误受",
+    "交验 LABJUDGE 批量开庭36卡: pass20/fail2/undecided14, T02c/d 自相矛盾实质否决",
+    "交付 V11-DELIVER-qgl-01 KNOWN_FP 注入点契约 v0.1(VERIFY-V11 解锁件)",
+    "大讨论: 野问四立项答(MONOTONE单调量实测+枢案二修正/SAT四联/SURGE三焊缝/UNIFY cap_sha刚性)+BOOTLOOPS无修订",
+    "融构: NMUST 9/9; responder pending=0; 二级限流合规二度(静默窗+git-data旁路)"
   ],
   "pending": [
-    "3.161首件 PP161-VERIFY-CONTRACT 注入点契约投枢对齐",
-    "PP161-LABJUDGE-COURT 在效卡批量开庭(不伪判)",
-    "PP161-WQ12 野问立项(先预注册)",
-    "PP161-BACKLOG-AUDIT 历史机促族核验(3.161-3.162窗)",
-    "PP161-WILDQ-INTAKE 五卡逐判",
-    "PP161-ZHOUTIAN-5 第五燃 3.162",
-    "PP161-ROOTFB 候root反馈"
+    "PP162-LABJUDGE-COURT-W2 二庭(EXT12-15系)",
+    "PP162-WILDQ-SURGE-02 融波三问",
+    "PP162-VERIFY-JOINTEST 联测跟",
+    "PP162-HEXAUDIT-X2 扩样",
+    "PP162-ZHOUTIAN-5 第五燃",
+    "PP162-BACKLOG-AUDIT-W2",
+    "PP162-ROOTFB"
   ]
 }

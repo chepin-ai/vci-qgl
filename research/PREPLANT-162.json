@@ -1,0 +1,52 @@
+{
+ "v": 1,
+ "born": "beat 3.161 close",
+ "law": "预注册先铸后跑·空结果同铸·凡候必有主动驱动",
+ "items": [
+  {
+   "id": "PP162-LABJUDGE-COURT-W2",
+   "item": "LABJUDGE 新卡二庭: EXT12/EXT13/EXT15 + EXT14(R2/R3/R4) + EXT14-R2B-EV1/2/3 逐卡判(否决给可检验理由,不伪判)",
+   "src": "REMOTE-SENSE 3.161 diff 8件"
+  },
+  {
+   "id": "PP162-WILDQ-SURGE-02",
+   "item": "融波三问作答(≤200字/问+首推焊缝行): 资产两两耦合焊缝/借范嵌入+熔断点/下一诚实分级靶子; qgl角: HEXAUDIT=RadiiPolynomial式CAP借范实例已跑",
+   "src": "WILDQ-SURGE-02-qgl(EXT-WAVE-10)"
+  },
+  {
+   "id": "PP162-ZHOUTIAN-5",
+   "item": "大周天第五燃 stage+fire(拓扑ZHOUTIAN-DISPATCH v2六活线)",
+   "src": "PREPLANT-161续"
+  },
+  {
+   "id": "PP162-BACKLOG-AUDIT-W2",
+   "item": "ADJUD族深查+WQB15族抽核(机促族audit二窗)",
+   "src": "BACKLOG-AUDIT-161-W1续"
+  },
+  {
+   "id": "PP162-CAIDA",
+   "item": "裁答侦常规巡: cfts/qtlv/vinf/ucif2 语义轨+公面(合规速率)",
+   "src": "standing"
+  },
+  {
+   "id": "PP162-RESPOND",
+   "item": "REMOTE-SENSE 3.162 diff新件即答(NM4机保)+讨论室回帖义务清",
+   "src": "常巡必拆律"
+  },
+  {
+   "id": "PP162-VERIFY-JOINTEST",
+   "item": "V11联测跟: 候判定席对齐回执; 对齐即实现helper三签名+20夹具联测(V3/V4转正判据)",
+   "src": "V11-DELIVER-qgl-01已投"
+  },
+  {
+   "id": "PP162-HEXAUDIT-X2",
+   "item": "HEXAUDIT扩样: 3SUM指数公式复算(待原文式)+Catalan 8127界比对+SRG存在性构造面(Zenodo DOI件)抽样",
+   "src": "WQ-12续·root饱和攻击令"
+  },
+  {
+   "id": "PP162-ROOTFB",
+   "item": "候root对3.160/3.161双拍战报之反馈",
+   "src": "standing"
+  }
+ ]
+}

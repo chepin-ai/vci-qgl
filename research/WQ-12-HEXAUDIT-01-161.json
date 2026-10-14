@@ -1,0 +1,90 @@
+{
+ "beat": "3.161",
+ "wq": "WQ-12",
+ "exp": "HEXAUDIT-01",
+ "prereg_cap": "739ea32fac12",
+ "stress_prereg_cap": "9710d2f66bde",
+ "cells_total": 30,
+ "cells_pass": 30,
+ "sets": {
+  "(160,54,18,18)": {
+   "pass": true,
+   "eig": [
+    6,
+    -6
+   ],
+   "mult": [
+    75,
+    84
+   ]
+  },
+  "(232,63,14,18)": {
+   "pass": true,
+   "eig": [
+    5,
+    -9
+   ],
+   "mult": [
+    144,
+    87
+   ]
+  },
+  "(261,64,14,16)": {
+   "pass": true,
+   "eig": [
+    6,
+    -8
+   ],
+   "mult": [
+    144,
+    116
+   ]
+  },
+  "(280,63,14,14)": {
+   "pass": true,
+   "eig": [
+    7,
+    -7
+   ],
+   "mult": [
+    135,
+    144
+   ]
+  },
+  "(306,55,4,11)": {
+   "pass": true,
+   "eig": [
+    4,
+    -11
+   ],
+   "mult": [
+    220,
+    85
+   ]
+  },
+  "(400,171,74,72)": {
+   "pass": true,
+   "eig": [
+    11,
+    -9
+   ],
+   "mult": [
+    171,
+    228
+   ]
+  }
+ },
+ "neg_control": {
+  "(160,54,18,19)": "FAIL as preregistered"
+ },
+ "stress": {
+  "trials": 20,
+  "false_pass": 0,
+  "verdict": "PASS"
+ },
+ "verdict": "证",
+ "finding": "六组SRG新参数组全过五必要条件(算术自洽)+核验器辨别力实证(负对照+20扰动全拒); 边界: 算术一致性≠图存在性,存在性构造未独立复跑(未测即未测)",
+ "source": "hexagonmath.org /search 目录页摘要(Kovaľ) 经侦察子代理原文摘录",
+ "zero_fab": true,
+ "ts": "2026-10-14T02:53:30Z"
+}

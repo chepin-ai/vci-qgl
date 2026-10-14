@@ -1,19 +1,9 @@
 {
- "engine": "ZHOUTIAN-CIRCUIT-01",
- "beat": "3.160",
- "ts": "2026-10-12T18:19:40Z",
- "mode": "close-echo-scan-local",
- "echo_closed": {
-  "ZT3150-5194fa90c373": [
-   "ci-inbox/lanes/qgl/inbox/ZT-ECHO-USRM-02-20261001T1015Z.md",
-   "ci-inbox/lanes/qgl/inbox/ZT-ECHO-USRM-02-20261001T1015Z.md.v0b90c3c2"
-  ],
-  "ZT3154-94e287746b1d": [
-   "ci-inbox/lanes/qgl/inbox/ZT-ECHO-USRM-03-20261002T1558Z.md",
-   "ci-inbox/lanes/qgl/inbox/ZT-ECHO-USRM-03-20261002T1558Z.md.v097e96c3"
-  ]
- },
- "echo_open": [],
- "note": "第五燃3.162 staged; 本拍仅收束回腿账, 不新发令牌",
+ "beat": "3.161",
+ "ts": "2026-10-14T03:16:40Z",
+ "artifact": "ZHOUTIAN-114-STAGED",
+ "legs_staged": 14,
+ "state": "候-keyblind 武装待发(401铁律: 无钥不试发; 预注册已铸, 探针已臂)",
+ "echo": "本拍未发新token; ZT3150/ZT3154 echo 已于3.160闭; 第五燃排3.162(PP161-ZHOUTIAN-5)",
  "zero_fab": true
 }

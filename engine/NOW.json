@@ -1,38 +1,32 @@
 {
- "beat": "3.160",
+ "beat": "3.161",
  "phase": "close",
- "opened": "2026-10-12T18:22:22Z",
+ "opened": "2026-10-14T02:37:06Z",
  "checkpoints": [
   {
    "phase": "close",
    "done": [
-    "REMOTE-SENSE 广搜 3315扫/797取/726新",
-    "EXP-067 X2FULL 768组×20000发 全3σ",
-    "WQ-11 n=13素数维 证(跨维首证)",
-    "借范卡×2 (KEYRECOVERY/TRANSPORT)",
-    "巡拆92件全处置+积压1292件登记",
-    "四帖HTTP201推送(liuduan/keyunify/verify/addendum)",
-    "KEY-HEALED×3 probe200/5000",
-    "二级限流合规窗+慢速REST",
-    "qglgit 0700修复",
-    "si_responder v1.1契约修复",
+    "双目标全维度侦察(书名修正: openai/math≠MATH仓)",
+    "WQ-12 HEXAUDIT-01 证: 30/30+负对照+压测20/20",
+    "LABJUDGE开庭36卡 pass20/fail2/undecided14",
+    "V11-DELIVER KNOWN_FP契约交付(commit 1f9fe7aed349)",
+    "野问六卡全落(四立项答+witness+无修订确认)",
+    "BACKLOG-AUDIT W1+si_responder v1.2判据修",
+    "REMOTE-SENSE 3.161: 8976扫/300取/296新",
+    "responder 17件 pending0",
     "NMUST 9/9 证",
-    "ZHOUTIAN echo闭(ZT3150/ZT3154)",
-    "PREPLANT-161 十二件",
-    "close capsule 046419ebd1fe seq2357"
+    "PREPLANT-162 九件"
    ],
    "pending": [
-    "PP161-VERIFY-CONTRACT 注入点契约投枢(3.161首件)",
-    "PP161-LABJUDGE-COURT 批量开庭",
-    "PP161-WQ12 野问立项预注册",
-    "PP161-BACKLOG-AUDIT 历史机促族核验",
-    "PP161-WILDQ-INTAKE 五卡intake",
-    "PP161-KEYUNIFY-FOLLOW 销案后跟",
-    "PP161-MESH-COUPLING HUB-HEARTBEAT-01 R2",
-    "PP161-ZHOUTIAN-5 第五燃3.162",
-    "PP161-ROOTFB 候root反馈"
+    "PP162-LABJUDGE-COURT-W2 二庭(EXT12-15系)",
+    "PP162-WILDQ-SURGE-02 融波三问",
+    "PP162-VERIFY-JOINTEST 联测跟",
+    "PP162-HEXAUDIT-X2 扩样",
+    "PP162-ZHOUTIAN-5 第五燃",
+    "PP162-BACKLOG-AUDIT-W2",
+    "PP162-ROOTFB"
    ],
-   "ts": "2026-10-12T19:52:18Z"
+   "ts": "2026-10-14T03:56:15Z"
   }
  ],
  "preplant_done": [],
@@ -40,10 +34,13 @@
  "pending": [],
  "key": {
   "vault": true,
-  "healed_boot": null
+  "healed_boot": {
+   "healed": true,
+   "probe": 200
+  }
  },
- "boot_note": "continuation close-resume: 六段链路首航收拍; key vault healed",
- "ts": "2026-10-12T19:52:18Z",
- "close_cap": "046419ebd1fe",
- "close_seq": 2357
+ "boot_note": "全量全维度搜索突破饱和攻击: hexagonmath.org×openai/math 十二动词+大讨论大协作野问浪涌",
+ "ts": "2026-10-14T03:56:15Z",
+ "close_cap": "2b7e08514917",
+ "close_seq": 2377
 }

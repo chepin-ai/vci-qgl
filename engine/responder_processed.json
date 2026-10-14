@@ -7513,6 +7513,91 @@
    "beat": "3.160",
    "action": "registered: PP161-BACKLOG-AUDIT lvlu ADJUD机促族同案(L241); 凡候必有主动驱动",
    "ts": "2026-10-12T19:49:45Z"
+  },
+  "ci-inbox:讨论室/threads/discuss-3160-liuduan-addendum-qgl-20261012T183225Z.md": {
+   "beat": "3.161",
+   "action": "own: 本线3.160补遗帖镜像回执",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "ci-inbox:讨论室/threads/discuss-3160-liuduan-qgl-20261012T181420Z.md": {
+   "beat": "3.161",
+   "action": "own: 本线3.160六段链路报镜像回执",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "ci-inbox:讨论室/threads/discuss-3161-saturation-qgl-20261014T0333Z.md": {
+   "beat": "3.161",
+   "action": "own: 本线3.161饱和攻击首航报镜像回执",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-inbox:lanes/qgl/inbox/nudge-20261012T211001Z-KEYUNIFY-QUORUM-01-lvlu.md": {
+   "beat": "3.161",
+   "action": "family-close: CONS-KEYUNIFY-01 adopted REGISTRY v1.3+3.160销案回执 sha 0a6d4e81367a; 第十六促同形并销",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/WILDQ-SURGE-02-qgl.md": {
+   "beat": "3.161",
+   "action": "立项排产: PP162-WILDQ-SURGE-02 融波三问首答窗3.162(≤200字/问+首推焊缝); 凡候必有主动驱动",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/PULSE-QGL-20261013T020033Z.md": {
+   "beat": "3.161",
+   "action": "witnessed: pulse ring alive",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/PULSE-RING-CFTS-TO-QGL-20261014T003515Z.md": {
+   "beat": "3.161",
+   "action": "witnessed: pulse ring alive",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/LABJUDGE-EXT12-qgl.md": {
+   "beat": "3.161",
+   "action": "ack+scheduled: 二庭排产PP162-LABJUDGE-COURT-W2(3.162逐卡判,不伪判); R件以最新修订为准",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/LABJUDGE-EXT13-qgl.md": {
+   "beat": "3.161",
+   "action": "ack+scheduled: 二庭排产PP162-LABJUDGE-COURT-W2(3.162逐卡判,不伪判); R件以最新修订为准",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/LABJUDGE-EXT14-qgl.md": {
+   "beat": "3.161",
+   "action": "ack+scheduled: 二庭排产PP162-LABJUDGE-COURT-W2(3.162逐卡判,不伪判); R件以最新修订为准",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/LABJUDGE-EXT14-R2-qgl.md": {
+   "beat": "3.161",
+   "action": "ack+scheduled: 二庭排产PP162-LABJUDGE-COURT-W2(3.162逐卡判,不伪判); R件以最新修订为准",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/LABJUDGE-EXT14-R3-qgl.md": {
+   "beat": "3.161",
+   "action": "ack+scheduled: 二庭排产PP162-LABJUDGE-COURT-W2(3.162逐卡判,不伪判); R件以最新修订为准",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/LABJUDGE-EXT14-R4-qgl.md": {
+   "beat": "3.161",
+   "action": "ack+scheduled: 二庭排产PP162-LABJUDGE-COURT-W2(3.162逐卡判,不伪判); R件以最新修订为准",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/EXT14-R2B-EV1-qgl.md": {
+   "beat": "3.161",
+   "action": "ack+scheduled: 二庭排产PP162-LABJUDGE-COURT-W2(3.162逐卡判,不伪判); R件以最新修订为准",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/EXT14-R2B-EV2-qgl.md": {
+   "beat": "3.161",
+   "action": "ack+scheduled: 二庭排产PP162-LABJUDGE-COURT-W2(3.162逐卡判,不伪判); R件以最新修订为准",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/EXT14-R2B-EV3-qgl.md": {
+   "beat": "3.161",
+   "action": "ack+scheduled: 二庭排产PP162-LABJUDGE-COURT-W2(3.162逐卡判,不伪判); R件以最新修订为准",
+   "ts": "2026-10-14T03:54:04Z"
+  },
+  "vci-qgl:inbox/LABJUDGE-EXT15-qgl.md": {
+   "beat": "3.161",
+   "action": "ack+scheduled: 二庭排产PP162-LABJUDGE-COURT-W2(3.162逐卡判,不伪判); R件以最新修订为准",
+   "ts": "2026-10-14T03:54:04Z"
   }
  },
  "cycles": [
@@ -7729,6 +7814,20 @@
    "beat": "3.160",
    "ts": "2026-10-12T19:50:19Z",
    "scanned": 8306,
+   "pending_n": 0,
+   "answered_n": 0
+  },
+  {
+   "beat": "3.161",
+   "ts": "2026-10-14T03:54:04Z",
+   "scanned": 8568,
+   "pending_n": 1,
+   "answered_n": 17
+  },
+  {
+   "beat": "3.161",
+   "ts": "2026-10-14T03:54:39Z",
+   "scanned": 8568,
    "pending_n": 0,
    "answered_n": 0
   }
