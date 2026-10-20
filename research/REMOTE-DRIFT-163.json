@@ -1,0 +1,9 @@
+{
+ "beat": "3.163",
+ "exp": "REMOTE-DRIFT SURFACES校修",
+ "zero_fab": true,
+ "finding": "vci-inbox/公告板=冻结九月份面(62件, 2026-09-11..18), qgl-patterned 3件皆旧(自帖2+lvlu月前帖1); 活面已在ci-inbox",
+ "action": "SURFACES六面不增改; 复活判据=remote_sense diff出现该面新件即复扫",
+ "verdict": "证",
+ "ts": "2026-10-20T12:32:55Z"
+}

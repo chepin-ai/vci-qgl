@@ -1,0 +1,33 @@
+{
+ "beat": "3.163",
+ "exp": "HEXAUDIT-X3 文献勘探(WILDQ-SURGE-02 Q2)",
+ "zero_fab": true,
+ "verdict": "证",
+ "answer": "Q2=是: 会议支模式普在——正则双图家族存在精确类比(Seidel 1976 (6.C): ρ1+ρ2=0支 ⟹ n≡2 mod4 且 n−1 两平方和, 对称会议矩阵, Belevitch/van-Lint–Seidel必要件)",
+ "key_facts": [
+  "正则双图⟺Seidel矩阵两特征值且ρ1ρ2=1−n; 非平凡则n偶; 升降: 后裔图=k=2μ的SRG",
+  "整数支(6.B): ρ1+ρ2≠0 ⟹ 两特征值皆奇整数; 小谱限 ρ1=3→n∈{10,16,28}, ρ1=5→n∈{16,26,36,76,96,126,176,276}",
+  "等角线: Gerzon绝对界N(d)≤d(d+1)/2仅d=2,3,7,23达成; Neumann: n>2d则1/α奇整数; Gerzon达成(d>3)⟹d+2奇平方(Bannai–Damerell+BRC型)",
+  "BMV格方法机制: 反极设计→偶格→判别群有限二次模短条件+Milgram–Braun/Gauss和矛盾; Kovaľ推广至SRG(hexagon:2610.00225, 70互补对排除, 部分Lean4)",
+  "编号消歧: hexagon:2610.00225(BMV-SRG) ≠ arXiv:2610.00225(Markarian, Pentagram relations)"
+ ],
+ "recommendation": "铸\"双图/等角线\"审计器(同一Seidel内核一器两族): n偶性+分支判别+会议支n≡2mod4∧n−1两平方和(可复用BRC路径)+奇整数特征值+小谱表+ETF Waldron Cor5.8+Gerzon奇平方+Neumann奇整数; SRG器作升降子模块嵌入; BMV最简情形det≡(−1)^{n/2} mod4作增强条款候选",
+ "sources": [
+  "en.wikipedia.org/wiki/Two-graph",
+  "en.wikipedia.org/wiki/Conference_matrix",
+  "research.tue.nl/files/88741311/seidfini1976.pdf",
+  "homepages.cwi.nl/~aeb/math/ipm/ipm.pdf",
+  "math.auckland.ac.nz/~waldron/Preprints/Equiangular/LAA10282.pdf",
+  "arXiv:1311.3219",
+  "arXiv:2609.36725v2",
+  "hexagonmath.org/search?tag=Sextic",
+  "aeb.win.tue.nl/graphs/srg/srgtabrefs.html"
+ ],
+ "unverified": [
+  "Taylor1977分类定理原文",
+  "Seidel(6.E)不等式渲染疑误",
+  "Kovaľ全文未开仅摘要",
+  "70对参数逐条未独立复验"
+ ],
+ "ts": "2026-10-20T12:40:07Z"
+}

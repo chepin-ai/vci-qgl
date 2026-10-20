@@ -1,0 +1,36 @@
+{
+ "beat": "3.163",
+ "exp": "E-WELD-Q1",
+ "prereg_cap": "8c4e7aee35ae",
+ "zero_fab": true,
+ "H0": {
+  "casts": 1000,
+  "distinct_cap_sha": 1000,
+  "distinct_h_b": 1,
+  "dual_path_agree": 1000
+ },
+ "H2": {
+  "perturbations": 100,
+  "differ": 100
+ },
+ "H3": {
+  "random_bodies": 10000,
+  "distinct": 10000
+ },
+ "H4": {
+  "chain_capsules": 2403,
+  "distinct_h_b": 2402,
+  "multi_member_classes": 1,
+  "byte_identical_in_class": true,
+  "class_sizes_top": [
+   2,
+   1,
+   1,
+   1,
+   1
+  ]
+ },
+ "verdict": "证",
+ "answer": "Q1精化判: 原始cap_sha链位绑定, 同内容异位铸千次零命中——朴素读法否证; 可操作投影h_b(body规范哈希)为刚性分类子: 刚性1000铸1类/双路径100%一致, 敏感100/100, 碰撞10000零, 链内2403囊2402类唯一2员类逐字节等——\"等h_b即并档不审内容\"成立, 但锚件须携h_b字段而非cap_sha",
+ "ts": "2026-10-20T12:34:23Z"
+}

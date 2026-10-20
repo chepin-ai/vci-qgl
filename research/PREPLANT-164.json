@@ -1,0 +1,48 @@
+{
+ "beat": "3.164",
+ "v": "PREPLANT-164",
+ "zero_fab": true,
+ "items": [
+  {
+   "id": "PP164-EXT14-W3-COURT",
+   "what": "EXT14系G3'修复回执若到(3.163 sense diff裁决)→合议庭W3开庭转判R2/R3/R4三未决卡",
+   "driver": "REMOTE-SENSE盯vci-qgl/inbox EXT14*; 到件即开庭"
+  },
+  {
+   "id": "PP164-HEXAUDIT-X3-BUILD",
+   "what": "两图/等角线审计器建造(X3文献判证落地): Seidel矩阵核共享, 会议支(n≡2 mod4 ∧ n−1两平方和)+Gerzon界/Neumann奇整数约束; 预注册先铸后跑, 双实现100%一致闸",
+   "driver": "qgl自驱, 借HEXAUDIT v2.1 QD核"
+  },
+  {
+   "id": "PP164-EWELD-Q2",
+   "what": "焊缝第二问: h_b刚档跨链可移植性——异链(他席)同body是否同档(等式类联邦互认预研)",
+   "driver": "预注册先行"
+  },
+  {
+   "id": "PP164-FRONTIER-V2",
+   "what": "FRONTIER-SYNTH v2合流: E-WELD-Q1证+X3证+REMOTE-DRIFT证并入综合前沿账",
+   "driver": "拍内即并"
+  },
+  {
+   "id": "PP164-ZHOUTIAN-7",
+   "what": "周天第七燃架栈(候-keyblind)",
+   "driver": "standing"
+  },
+  {
+   "id": "PP164-RESPOND",
+   "what": "应答环3.164",
+   "driver": "standing"
+  },
+  {
+   "id": "PP164-ROOTFB",
+   "what": "root回声面监测",
+   "driver": "standing"
+  },
+  {
+   "id": "PP164-CAIDA",
+   "what": "CAIDA轨standing",
+   "driver": "standing"
+  }
+ ],
+ "ts": "2026-10-20T12:48:19Z"
+}

@@ -1,13 +1,13 @@
 {
- "beat": "3.162",
+ "beat": "3.163",
  "evidence": {
-  "scanned": 4781,
-  "fetched": 799,
-  "changed": 2,
-  "new": 0,
+  "scanned": 5591,
+  "fetched": 468,
+  "changed": 0,
+  "new": 468,
   "wallclock_gate": true,
-  "note": "仓面重构期大件簇致墙钟闸1500s截断(如实降级, 盲态不轰); 改动面: FIELD-USRM-01/WILD-Q-REGISTRY-02"
+  "note": "公告板lvlu-voice簇342件次限流403如实降级(钥检200健康, 盲态不轰, 下拍续传); 首跑被夺已setsid隔离重跑——账误即修"
  },
  "drift": 0,
- "ts": "2026-10-20T09:26:47Z"
+ "ts": "2026-10-20T13:16:21Z"
 }
