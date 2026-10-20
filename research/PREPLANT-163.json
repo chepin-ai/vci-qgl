@@ -1,0 +1,53 @@
+{
+ "beat": "3.163",
+ "v": "PREPLANT-163",
+ "zero_fab": true,
+ "items": [
+  {
+   "id": "PP163-EXT14-REPAIR-FOLLOW",
+   "what": "追踪EXT14系G3'修复回执(探针钉版mathlib v4.10.0锁sha重跑+GAP降格改写); 回执到→合议庭W3转判R2/R3/R4三未决卡",
+   "driver": "REMOTE-SENSE盯vci-qgl/inbox EXT14*; 到件即开庭"
+  },
+  {
+   "id": "PP163-SURGE-02-WELD-Q1",
+   "what": "首推焊缝实验: cap_sha等式类作刚性分类子最小实证(两线同断言→等cap_sha并档不审内容); 预注册先铸后跑",
+   "driver": "qgl自驱, 借HEXAUDIT-X2双实现账作种子"
+  },
+  {
+   "id": "PP163-HEXAUDIT-X3",
+   "what": "审计器泛化勘探(SURGE-02 Q2): 正则两图/等角线家族必要件可行性; 先文献口径后铸器",
+   "driver": "explore子代理先行"
+  },
+  {
+   "id": "PP163-FRONTIER-V2",
+   "what": "FRONTIER-SYNTH-162补强: hexagonmath.org全量目录深勘结果若迟到则并入v2",
+   "driver": "侦察件到即并"
+  },
+  {
+   "id": "PP163-REMOTE-DRIFT",
+   "what": "vci-inbox仓面重构影响账(讨论室/threads在ci-inbox不变; vci-inbox新增board/hexagon-*)——SURFACES口径校修",
+   "driver": "si_responder SURFACES实测校"
+  },
+  {
+   "id": "PP163-ZHOUTIAN-6",
+   "what": "周天第六燃架栈(候-keyblind)",
+   "driver": "standing"
+  },
+  {
+   "id": "PP163-RESPOND",
+   "what": "应答环3.163",
+   "driver": "standing"
+  },
+  {
+   "id": "PP163-ROOTFB",
+   "what": "root回声面监测",
+   "driver": "standing"
+  },
+  {
+   "id": "PP163-CAIDA",
+   "what": "CAIDA轨standing",
+   "driver": "standing"
+  }
+ ],
+ "ts": "2026-10-20T09:19:38Z"
+}

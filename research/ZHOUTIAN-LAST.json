@@ -1,9 +1,15 @@
 {
- "beat": "3.161",
- "ts": "2026-10-14T03:16:40Z",
- "artifact": "ZHOUTIAN-114-STAGED",
+ "beat": "3.162",
+ "burn_no": 5,
+ "state": "候-keyblind 武装待发",
  "legs_staged": 14,
- "state": "候-keyblind 武装待发(401铁律: 无钥不试发; 预注册已铸, 探针已臂)",
- "echo": "本拍未发新token; ZT3150/ZT3154 echo 已于3.160闭; 第五燃排3.162(PP161-ZHOUTIAN-5)",
- "zero_fab": true
+ "fired_this_beat": 0,
+ "reason": "无实测不索钥律: 私域零接触+未获新钥, 第五燃架栈不点火",
+ "armed_targets": [
+  "lanes回收轨",
+  "mirrorloop深扫",
+  "wildcard探针"
+ ],
+ "zero_fab": true,
+ "ts": "2026-10-20T09:12:03Z"
 }

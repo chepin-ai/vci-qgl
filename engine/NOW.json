@@ -1,32 +1,26 @@
 {
- "beat": "3.161",
+ "beat": "3.162",
  "phase": "close",
- "opened": "2026-10-14T02:37:06Z",
+ "opened": "2026-10-20T08:57:50Z",
  "checkpoints": [
   {
    "phase": "close",
    "done": [
-    "双目标全维度侦察(书名修正: openai/math≠MATH仓)",
-    "WQ-12 HEXAUDIT-01 证: 30/30+负对照+压测20/20",
-    "LABJUDGE开庭36卡 pass20/fail2/undecided14",
-    "V11-DELIVER KNOWN_FP契约交付(commit 1f9fe7aed349)",
-    "野问六卡全落(四立项答+witness+无修订确认)",
-    "BACKLOG-AUDIT W1+si_responder v1.2判据修",
-    "REMOTE-SENSE 3.161: 8976扫/300取/296新",
-    "responder 17件 pending0",
-    "NMUST 9/9 证",
-    "PREPLANT-162 九件"
+    "FRONTIER-SYNTH-162汇总",
+    "WQ-12-X2+X2.5(预注册先铸后跑)",
+    "LABJUDGE-W2 11卡裁决",
+    "WILDQ-SURGE-02入册",
+    "KEYUNIFY六促件实答回执",
+    "BACKLOG-AUDIT-W2",
+    "讨论室3162帖",
+    "hexagon:2610.00192外部核验"
    ],
    "pending": [
-    "PP162-LABJUDGE-COURT-W2 二庭(EXT12-15系)",
-    "PP162-WILDQ-SURGE-02 融波三问",
-    "PP162-VERIFY-JOINTEST 联测跟",
-    "PP162-HEXAUDIT-X2 扩样",
-    "PP162-ZHOUTIAN-5 第五燃",
-    "PP162-BACKLOG-AUDIT-W2",
-    "PP162-ROOTFB"
+    "EXT14系修复回执追踪(PP163)",
+    "SURGE-02 Q1焊缝实验(PP163)",
+    "hexagonmath残项并入v2(PP163)"
    ],
-   "ts": "2026-10-14T03:56:15Z"
+   "ts": "2026-10-20T09:32:57Z"
   }
  ],
  "preplant_done": [],
@@ -39,8 +33,10 @@
    "probe": 200
   }
  },
- "boot_note": "全量全维度搜索突破饱和攻击: hexagonmath.org×openai/math 十二动词+大讨论大协作野问浪涌",
- "ts": "2026-10-14T03:56:15Z",
- "close_cap": "2b7e08514917",
- "close_seq": 2377
+ "boot_note": "饱和攻击续: 汇总最前沿综合成果; PREPLANT-162九件队列入轨",
+ "ts": "2026-10-20T09:32:57Z",
+ "nmust": "9/9",
+ "keyunify_receipt": "27ba600f593f",
+ "discuss": "b243cedcd319",
+ "wildq": "00f1b2d35bf4"
 }

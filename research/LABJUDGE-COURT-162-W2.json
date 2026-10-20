@@ -1,0 +1,39 @@
+{
+ "beat": "3.162",
+ "court": "LABJUDGE-W2",
+ "independent": true,
+ "cards": 11,
+ "verdicts": {
+  "pass": [
+   "EXT12",
+   "EXT13",
+   "EXT15",
+   "EXT15-R3",
+   "R2B-EV1",
+   "R2B-EV2"
+  ],
+  "fail": [
+   "EXT14",
+   "R2B-EV3"
+  ],
+  "undecided": [
+   "EXT14-R2",
+   "EXT14-R3",
+   "EXT14-R4"
+  ]
+ },
+ "key_finding": "G3'探测链不实: 卡称mathlib v4.10.0缺席riemannZeta_ne_zero_of_one_le_re, 外部多源实证其在库; 探针默认扫本仓library/ns且可env改向, 与护栏句'探测域=mathlib符号表'矛盾",
+ "repair": [
+  "探针钉死mathlib v4.10.0 checkout(锁tree sha)重跑",
+  "GAP命题降格改写(Re>=1非空白, 空白缩至临界带+Hardy Z缺席)",
+  "禁env改向探测目标",
+  "R1舍入统一四舍五入"
+ ],
+ "family_notes": [
+  "算术面零造假(29/649/1零点计数命中已知真值)",
+  "诚实分级纪律优良",
+  "共性缺陷: 工件不在场不可核验/11卡零prereg锚/措辞过言三处"
+ ],
+ "zero_fab": true,
+ "ts": "2026-10-20T09:18:58Z"
+}

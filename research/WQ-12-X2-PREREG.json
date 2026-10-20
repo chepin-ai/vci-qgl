@@ -1,0 +1,12 @@
+{
+ "id": "WQ-12-X2",
+ "beat": "3.162",
+ "type": "preregistration",
+ "auditor": "hexaudit v2 = v1五条件 + (vi)绝对界 v<=f(f+3)/2 且 v<=g(g+3)/2",
+ "corpus_A": "十组经典可实现SRG参数(文献载明存在; 本拍只测算术一致性, 存在性引文献不重证)",
+ "corpus_B": "500组随机元组(v<=400)六条件逐级计数 + 双实现独立复算一致性须=100%",
+ "regression": "WQ-12六组hexagonmath援引参数回归须30/30(含vi)",
+ "negative_control": "40组微扰: 任何条件破坏须被捕获, 零误放行",
+ "verdict_rule": "全过=证; 任一失败=如实报挂并定位(审计器bug or 参数误载, 两者皆如实)",
+ "boundary": "算术一致性≠图存在(未测即未测)"
+}

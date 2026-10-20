@@ -1,618 +1,88 @@
 {
-  "generated_at": "2026-10-14T03:56:15Z",
-  "current_beat": "3.161",
-  "beats": [
-    {
-      "beat": "3.57b",
-      "caps": 1,
-      "seq_first": 217,
-      "seq_last": 217
-    },
-    {
-      "beat": "3.57c",
-      "caps": 1,
-      "seq_first": 220,
-      "seq_last": 220
-    },
-    {
-      "beat": "3.61b",
-      "caps": 1,
-      "seq_first": 230,
-      "seq_last": 230
-    },
-    {
-      "beat": "3.104/3.105",
-      "caps": 1,
-      "seq_first": 773,
-      "seq_last": 773
-    },
-    {
-      "beat": "3.117->118",
-      "caps": 3,
-      "seq_first": 1205,
-      "seq_last": 1219
-    },
-    {
-      "beat": "3.50",
-      "caps": 1,
-      "seq_first": 198,
-      "seq_last": 198
-    },
-    {
-      "beat": "3.51",
-      "caps": 2,
-      "seq_first": 200,
-      "seq_last": 202
-    },
-    {
-      "beat": "3.52",
-      "caps": 1,
-      "seq_first": 204,
-      "seq_last": 204
-    },
-    {
-      "beat": "3.53",
-      "caps": 1,
-      "seq_first": 206,
-      "seq_last": 206
-    },
-    {
-      "beat": "3.54",
-      "caps": 1,
-      "seq_first": 209,
-      "seq_last": 209
-    },
-    {
-      "beat": "3.55",
-      "caps": 1,
-      "seq_first": 211,
-      "seq_last": 211
-    },
-    {
-      "beat": "3.56",
-      "caps": 1,
-      "seq_first": 213,
-      "seq_last": 213
-    },
-    {
-      "beat": "3.57",
-      "caps": 1,
-      "seq_first": 215,
-      "seq_last": 215
-    },
-    {
-      "beat": "3.58",
-      "caps": 1,
-      "seq_first": 222,
-      "seq_last": 222
-    },
-    {
-      "beat": "3.59",
-      "caps": 1,
-      "seq_first": 224,
-      "seq_last": 224
-    },
-    {
-      "beat": "3.60",
-      "caps": 1,
-      "seq_first": 226,
-      "seq_last": 226
-    },
-    {
-      "beat": "3.61",
-      "caps": 1,
-      "seq_first": 228,
-      "seq_last": 228
-    },
-    {
-      "beat": "3.62",
-      "caps": 1,
-      "seq_first": 232,
-      "seq_last": 232
-    },
-    {
-      "beat": "3.63",
-      "caps": 1,
-      "seq_first": 235,
-      "seq_last": 235
-    },
-    {
-      "beat": "3.64",
-      "caps": 1,
-      "seq_first": 238,
-      "seq_last": 238
-    },
-    {
-      "beat": "3.65",
-      "caps": 1,
-      "seq_first": 240,
-      "seq_last": 240
-    },
-    {
-      "beat": "3.66",
-      "caps": 1,
-      "seq_first": 243,
-      "seq_last": 243
-    },
-    {
-      "beat": "3.67",
-      "caps": 1,
-      "seq_first": 245,
-      "seq_last": 245
-    },
-    {
-      "beat": "3.68",
-      "caps": 1,
-      "seq_first": 248,
-      "seq_last": 248
-    },
-    {
-      "beat": "3.69",
-      "caps": 1,
-      "seq_first": 250,
-      "seq_last": 250
-    },
-    {
-      "beat": "3.70",
-      "caps": 1,
-      "seq_first": 252,
-      "seq_last": 252
-    },
-    {
-      "beat": "3.71",
-      "caps": 1,
-      "seq_first": 257,
-      "seq_last": 257
-    },
-    {
-      "beat": "3.72",
-      "caps": 1,
-      "seq_first": 259,
-      "seq_last": 259
-    },
-    {
-      "beat": "3.77",
-      "caps": 2,
-      "seq_first": 303,
-      "seq_last": 311
-    },
-    {
-      "beat": "3.78",
-      "caps": 2,
-      "seq_first": 333,
-      "seq_last": 335
-    },
-    {
-      "beat": "3.79",
-      "caps": 2,
-      "seq_first": 337,
-      "seq_last": 339
-    },
-    {
-      "beat": "3.80",
-      "caps": 2,
-      "seq_first": 345,
-      "seq_last": 347
-    },
-    {
-      "beat": "3.81",
-      "caps": 2,
-      "seq_first": 351,
-      "seq_last": 355
-    },
-    {
-      "beat": "3.82",
-      "caps": 9,
-      "seq_first": 357,
-      "seq_last": 373
-    },
-    {
-      "beat": "3.83",
-      "caps": 5,
-      "seq_first": 375,
-      "seq_last": 383
-    },
-    {
-      "beat": "3.84",
-      "caps": 5,
-      "seq_first": 385,
-      "seq_last": 393
-    },
-    {
-      "beat": "3.85",
-      "caps": 9,
-      "seq_first": 395,
-      "seq_last": 411
-    },
-    {
-      "beat": "3.86",
-      "caps": 4,
-      "seq_first": 413,
-      "seq_last": 419
-    },
-    {
-      "beat": "3.87",
-      "caps": 7,
-      "seq_first": 421,
-      "seq_last": 433
-    },
-    {
-      "beat": "3.88",
-      "caps": 7,
-      "seq_first": 435,
-      "seq_last": 447
-    },
-    {
-      "beat": "3.89",
-      "caps": 9,
-      "seq_first": 449,
-      "seq_last": 465
-    },
-    {
-      "beat": "3.90",
-      "caps": 10,
-      "seq_first": 467,
-      "seq_last": 485
-    },
-    {
-      "beat": "3.91",
-      "caps": 4,
-      "seq_first": 487,
-      "seq_last": 493
-    },
-    {
-      "beat": "3.92",
-      "caps": 7,
-      "seq_first": 495,
-      "seq_last": 507
-    },
-    {
-      "beat": "3.93",
-      "caps": 10,
-      "seq_first": 509,
-      "seq_last": 527
-    },
-    {
-      "beat": "3.94",
-      "caps": 10,
-      "seq_first": 529,
-      "seq_last": 547
-    },
-    {
-      "beat": "3.95",
-      "caps": 11,
-      "seq_first": 549,
-      "seq_last": 569
-    },
-    {
-      "beat": "3.96",
-      "caps": 9,
-      "seq_first": 571,
-      "seq_last": 587
-    },
-    {
-      "beat": "3.97",
-      "caps": 14,
-      "seq_first": 589,
-      "seq_last": 615
-    },
-    {
-      "beat": "3.98",
-      "caps": 13,
-      "seq_first": 617,
-      "seq_last": 641
-    },
-    {
-      "beat": "3.99",
-      "caps": 13,
-      "seq_first": 643,
-      "seq_last": 667
-    },
-    {
-      "beat": "3.100",
-      "caps": 10,
-      "seq_first": 669,
-      "seq_last": 687
-    },
-    {
-      "beat": "3.101",
-      "caps": 12,
-      "seq_first": 689,
-      "seq_last": 711
-    },
-    {
-      "beat": "3.102",
-      "caps": 11,
-      "seq_first": 713,
-      "seq_last": 733
-    },
-    {
-      "beat": "3.103",
-      "caps": 8,
-      "seq_first": 735,
-      "seq_last": 749
-    },
-    {
-      "beat": "3.104",
-      "caps": 9,
-      "seq_first": 751,
-      "seq_last": 767
-    },
-    {
-      "beat": "3.105",
-      "caps": 6,
-      "seq_first": 769,
-      "seq_last": 781
-    },
-    {
-      "beat": "3.106",
-      "caps": 11,
-      "seq_first": 783,
-      "seq_last": 803
-    },
-    {
-      "beat": "3.107",
-      "caps": 9,
-      "seq_first": 805,
-      "seq_last": 821
-    },
-    {
-      "beat": "3.108",
-      "caps": 11,
-      "seq_first": 823,
-      "seq_last": 843
-    },
-    {
-      "beat": "3.109",
-      "caps": 8,
-      "seq_first": 845,
-      "seq_last": 859
-    },
-    {
-      "beat": "3.110",
-      "caps": 15,
-      "seq_first": 861,
-      "seq_last": 889
-    },
-    {
-      "beat": "3.111",
-      "caps": 14,
-      "seq_first": 891,
-      "seq_last": 917
-    },
-    {
-      "beat": "3.112",
-      "caps": 21,
-      "seq_first": 919,
-      "seq_last": 959
-    },
-    {
-      "beat": "3.113",
-      "caps": 18,
-      "seq_first": 961,
-      "seq_last": 997
-    },
-    {
-      "beat": "3.114",
-      "caps": 17,
-      "seq_first": 1001,
-      "seq_last": 1033
-    },
-    {
-      "beat": "3.115",
-      "caps": 23,
-      "seq_first": 1037,
-      "seq_last": 1081
-    },
-    {
-      "beat": "3.116",
-      "caps": 15,
-      "seq_first": 1113,
-      "seq_last": 1141
-    },
-    {
-      "beat": "3.117",
-      "caps": 22,
-      "seq_first": 1161,
-      "seq_last": 1281
-    },
-    {
-      "beat": "3.118",
-      "caps": 23,
-      "seq_first": 1203,
-      "seq_last": 1255
-    },
-    {
-      "beat": "3.119",
-      "caps": 26,
-      "seq_first": 1261,
-      "seq_last": 1321
-    },
-    {
-      "beat": "3.120",
-      "caps": 19,
-      "seq_first": 1325,
-      "seq_last": 1365
-    },
-    {
-      "beat": "3.121",
-      "caps": 16,
-      "seq_first": 1369,
-      "seq_last": 1399
-    },
-    {
-      "beat": "3.122",
-      "caps": 11,
-      "seq_first": 1407,
-      "seq_last": 1427
-    },
-    {
-      "beat": "3.127",
-      "caps": 8,
-      "seq_first": 1518,
-      "seq_last": 1533
-    },
-    {
-      "beat": "3.128",
-      "caps": 7,
-      "seq_first": 1535,
-      "seq_last": 1548
-    },
-    {
-      "beat": "3.129",
-      "caps": 10,
-      "seq_first": 1550,
-      "seq_last": 1568
-    },
-    {
-      "beat": "3.130",
-      "caps": 7,
-      "seq_first": 1570,
-      "seq_last": 1582
-    },
-    {
-      "beat": "3.131",
-      "caps": 6,
-      "seq_first": 1584,
-      "seq_last": 1594
-    },
-    {
-      "beat": "3.132",
-      "caps": 7,
-      "seq_first": 1596,
-      "seq_last": 1608
-    },
-    {
-      "beat": "3.133",
-      "caps": 4,
-      "seq_first": 1610,
-      "seq_last": 1617
-    },
-    {
-      "beat": "3.134",
-      "caps": 4,
-      "seq_first": 1619,
-      "seq_last": 1625
-    },
-    {
-      "beat": "3.135",
-      "caps": 3,
-      "seq_first": 1627,
-      "seq_last": 1631
-    },
-    {
-      "beat": "3.136",
-      "caps": 4,
-      "seq_first": 1633,
-      "seq_last": 1641
-    },
-    {
-      "beat": "3.137",
-      "caps": 4,
-      "seq_first": 1644,
-      "seq_last": 1650
-    },
-    {
-      "beat": "3.138",
-      "caps": 7,
-      "seq_first": 1652,
-      "seq_last": 1664
-    },
-    {
-      "beat": "3.146",
-      "caps": 7,
-      "seq_first": 1852,
-      "seq_last": 1872
-    },
-    {
-      "beat": "3.147",
-      "caps": 9,
-      "seq_first": 1874,
-      "seq_last": 1898
-    },
-    {
-      "beat": "3.148",
-      "caps": 8,
-      "seq_first": 1900,
-      "seq_last": 1917
-    },
-    {
-      "beat": "3.149",
-      "caps": 12,
-      "seq_first": 1919,
-      "seq_last": 1943
-    },
-    {
-      "beat": "3.150",
-      "caps": 14,
-      "seq_first": 1945,
-      "seq_last": 1982
-    },
-    {
-      "beat": "3.151",
-      "caps": 10,
-      "seq_first": 1984,
-      "seq_last": 2010
-    },
-    {
-      "beat": "3.152",
-      "caps": 10,
-      "seq_first": 2000,
-      "seq_last": 2024
-    },
-    {
-      "beat": "3.153",
-      "caps": 17,
-      "seq_first": 2026,
-      "seq_last": 2058
-    },
-    {
-      "beat": "3.154",
-      "caps": 11,
-      "seq_first": 2060,
-      "seq_last": 2082
-    },
-    {
-      "beat": "3.155",
-      "caps": 79,
-      "seq_first": 2084,
-      "seq_last": 2240
-    },
-    {
-      "beat": "3.156",
-      "caps": 11,
-      "seq_first": 2242,
-      "seq_last": 2264
-    },
-    {
-      "beat": "3.157",
-      "caps": 7,
-      "seq_first": 2266,
-      "seq_last": 2278
-    },
-    {
-      "beat": "3.158",
-      "caps": 5,
-      "seq_first": 2280,
-      "seq_last": 2305
-    },
-    {
-      "beat": "3.159",
-      "caps": 8,
-      "seq_first": 2309,
-      "seq_last": 2331
-    },
-    {
-      "beat": "3.160",
-      "caps": 11,
-      "seq_first": 2333,
-      "seq_last": 2359
-    },
-    {
-      "beat": "3.161",
-      "caps": 1,
-      "seq_first": 2379,
-      "seq_last": 2379
-    }
-  ]
+ "generated_at": "2026-10-14T03:56:15Z",
+ "current_beat": "3.161",
+ "beats": [
+  {
+   "beat": "3.151",
+   "caps": 10,
+   "seq_first": 1984,
+   "seq_last": 2010
+  },
+  {
+   "beat": "3.152",
+   "caps": 10,
+   "seq_first": 2000,
+   "seq_last": 2024
+  },
+  {
+   "beat": "3.153",
+   "caps": 17,
+   "seq_first": 2026,
+   "seq_last": 2058
+  },
+  {
+   "beat": "3.154",
+   "caps": 11,
+   "seq_first": 2060,
+   "seq_last": 2082
+  },
+  {
+   "beat": "3.155",
+   "caps": 79,
+   "seq_first": 2084,
+   "seq_last": 2240
+  },
+  {
+   "beat": "3.156",
+   "caps": 11,
+   "seq_first": 2242,
+   "seq_last": 2264
+  },
+  {
+   "beat": "3.157",
+   "caps": 7,
+   "seq_first": 2266,
+   "seq_last": 2278
+  },
+  {
+   "beat": "3.158",
+   "caps": 5,
+   "seq_first": 2280,
+   "seq_last": 2305
+  },
+  {
+   "beat": "3.159",
+   "caps": 8,
+   "seq_first": 2309,
+   "seq_last": 2331
+  },
+  {
+   "beat": "3.160",
+   "caps": 11,
+   "seq_first": 2333,
+   "seq_last": 2359
+  },
+  {
+   "beat": "3.161",
+   "caps": 1,
+   "seq_first": 2379,
+   "seq_last": 2379
+  },
+  {
+   "beat": "3.162",
+   "chain_seq": 2398,
+   "chain_tip": "c19395657eb4",
+   "highlights": [
+    "hexagon:2610.00192已刊(内核文外部活页双证)",
+    "HEXAUDIT v2.1会议支+绝对界 X2证",
+    "X2.5界碑: 六条件⊂BMV隙3/3",
+    "合议庭W2 11卡 过6挂2未决3",
+    "WILDQ-SURGE-02融波三问入册",
+    "KEYUNIFY六促件实答 pending=0"
+   ],
+   "nmust": "9/9",
+   "ts": "2026-10-20T09:33:09Z"
+  }
+ ],
+ "beats_total": 103
 }

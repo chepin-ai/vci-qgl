@@ -106,7 +106,10 @@ def run_cycle(beat, answer_map=None):
     reg['cycles'].append(cyc)
     save_reg(reg)
     report = {'beat': beat, 'cycle': cyc, 'pending': pending, 'answered': answered,
-              'zero_fab': True, 'engine': 'si_responder.py v1.1'}
+              'zero_fab': True, 'engine': 'si_responder.py v1.3'}
+# v1.3(3.162): 版本串归位(v1.2分类修已在L73); 账记定向件类——
+# lanes/qgl/inbox/nudge-*-lvlu.md 且文含 "@qgl 请直取" 者 = lvlu闸五定向促件,
+# 非witness件: 须实答(answer_map落账+回执件投对lane), 不入fyi。
     with open(OUT, 'w') as f: json.dump(report, f, ensure_ascii=False, indent=1)
     return report
 

@@ -1,0 +1,16 @@
+{
+ "beat": "3.162",
+ "exp": "BACKLOG-AUDIT-W2 (ADJUD深查)",
+ "zero_fab": true,
+ "scope": "121件ADJUD-keyed台账(boot-backfill@3.106) + 公告板活面核验",
+ "method": "台账普查 + 活面直读(HTTP contents API, 两端样本+活面枚举)",
+ "findings": [
+  "ADJUD-keyed 121件全部属 lvlu-nudge-ADJUD-01 族(20260911批)",
+  "活面核验: 公告板现存62件, nudge类活件=0 —— ADJUD/W1机促族已全部被lvlu侧自清",
+  "样本直读(L4/L13) HTTP 404 坐实撤面; qgl台账为历史处置记录(增不覆写), 无悬账",
+  "W1分类修(v1.2)+v1.3定向件账与现状相容: 应答面pending=0(核验道)",
+  "本拍新到6件KEYUNIFY-QUORUM-01定向促件已实答(回执27ba600f593f)"
+ ],
+ "verdict": "证",
+ "ts": "2026-10-20T09:13:07Z"
+}

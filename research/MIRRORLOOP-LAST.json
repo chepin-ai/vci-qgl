@@ -1,20 +1,13 @@
 {
- "engine": "SESSION-MIRROR-01",
- "beat": "3.161",
- "ts": "2026-10-14T03:56:00Z",
- "mode": "seat-stamp",
+ "beat": "3.162",
  "evidence": {
-  "remote_sense": "research/REMOTE-SENSE.json 3.161 scanned8976/fetched300/new296/changed4/errors0",
-  "drift": 0,
-  "basis": "manifest sha-diff"
+  "scanned": 4781,
+  "fetched": 799,
+  "changed": 2,
+  "new": 0,
+  "wallclock_gate": true,
+  "note": "仓面重构期大件簇致墙钟闸1500s截断(如实降级, 盲态不轰); 改动面: FIELD-USRM-01/WILD-Q-REGISTRY-02"
  },
  "drift": 0,
- "drift_basis": "remote_sense diff unpacked same-beat; no unresolved mirror conflict in close queue",
- "zero_fab": true,
- "history": [
-  {
-   "beat": "3.160",
-   "ts": "2026-10-12T18:19:40Z"
-  }
- ]
+ "ts": "2026-10-20T09:26:47Z"
 }

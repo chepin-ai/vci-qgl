@@ -213,3 +213,17 @@ root 令：全量全维度搜索突破饱和攻击同步推进；论证/实现/�
 
 ### Stage E — 收拍
 NMUST 9/9 → close囊 → checkpoint → dash faces → beacon pc=5 → NEXT-PACK → 门禁 → 推送 → build → version → 报 root
+
+
+<!-- CLASSIFY: L1 (公面执行蓝图, sha256/counts only) -->
+# BEAT 3.162 PLAN — 饱和攻击·汇总最前沿综合成果
+
+root令(verbatim): 全量全维度搜索突破饱和攻击同步推进; 论证/实现/实验/压测/验证/探索、解构/修正/完善/强化/关联/统一: hexagonmath.org与https://github.com/openai/math; 汇总取得最前沿综合成果。
+
+Stage A — boot+standing: selfdrive.boot(162), 拍开boot即铸囊; key_health 探针。
+Stage B — 广搜(research轨, 与写作轨分离): 两路 explore 子代理并行深勘 hexagonmath.org / openai(math+Lean形式化生态), 交叉验证, 只取可核验事实与出处。
+Stage C — 深研+实验: HEXAUDIT-X2 扩展审计器(预注册先铸后跑); LABJUDGE 合议庭 W2(EXT12-15家族); BACKLOG-AUDIT W2 ADJUD 深查。
+Stage D — 交验+大讨论: 前沿综合成果汇总件(FRONTIER-SYNTH-162) + 讨论室融波帖(dtag+[MUTUAL-REVIEW]); WILDQ-SURGE-02 融波三问应答。
+Stage E — 收拍: NMUST 9项 → checkpoint('close') → dash → beacon(pc=6) → next_pack(ring 162, 最后写) → 闸五扫描 → git-data原子推 → build → version → 战报。
+
+零编数律/四态判词全程; 未测即未测; 私域额度零消耗; 429→探针→静默窗→git-data路。

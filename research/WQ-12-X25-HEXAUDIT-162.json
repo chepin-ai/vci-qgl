@@ -1,0 +1,139 @@
+{
+ "beat": "3.162",
+ "exp": "HEXAUDIT-X2.5",
+ "prereg_cap": "3b16ef17bc2e",
+ "zero_fab": true,
+ "existence_new": {
+  "(576,253,112,110)": {
+   "src": "2610.00194v2",
+   "pass": true,
+   "cells": {
+    "i_count": true,
+    "ii_disc": true,
+    "iii_eig": true,
+    "iv_mult": true,
+    "v_krein": true,
+    "vi_abs": true
+   },
+   "eig": [
+    "13",
+    "-11"
+   ],
+   "mult": [
+    253,
+    322
+   ],
+   "dual": true
+  },
+  "(784,351,158,156)": {
+   "src": "2610.00194v2",
+   "pass": true,
+   "cells": {
+    "i_count": true,
+    "ii_disc": true,
+    "iii_eig": true,
+    "iv_mult": true,
+    "v_krein": true,
+    "vi_abs": true
+   },
+   "eig": [
+    "15",
+    "-13"
+   ],
+   "mult": [
+    351,
+    432
+   ],
+   "dual": true
+  },
+  "(1296,595,274,272)": {
+   "src": "2610.00194v2",
+   "pass": true,
+   "cells": {
+    "i_count": true,
+    "ii_disc": true,
+    "iii_eig": true,
+    "iv_mult": true,
+    "v_krein": true,
+    "vi_abs": true
+   },
+   "eig": [
+    "19",
+    "-17"
+   ],
+   "mult": [
+    595,
+    700
+   ],
+   "dual": true
+  }
+ },
+ "excluded_by_BMV": {
+  "(96,35,10,14)": {
+   "src": "2610.00225v1",
+   "pass": true,
+   "cells": {
+    "i_count": true,
+    "ii_disc": true,
+    "iii_eig": true,
+    "iv_mult": true,
+    "v_krein": true,
+    "vi_abs": true
+   },
+   "eig": [
+    "3",
+    "-7"
+   ],
+   "mult": [
+    63,
+    32
+   ],
+   "dual": true
+  },
+  "(176,25,0,4)": {
+   "src": "2610.00225v1",
+   "pass": true,
+   "cells": {
+    "i_count": true,
+    "ii_disc": true,
+    "iii_eig": true,
+    "iv_mult": true,
+    "v_krein": true,
+    "vi_abs": true
+   },
+   "eig": [
+    "3",
+    "-7"
+   ],
+   "mult": [
+    120,
+    55
+   ],
+   "dual": true
+  },
+  "(169,42,5,12)": {
+   "src": "2610.00225v1",
+   "pass": true,
+   "cells": {
+    "i_count": true,
+    "ii_disc": true,
+    "iii_eig": true,
+    "iv_mult": true,
+    "v_krein": true,
+    "vi_abs": true
+   },
+   "eig": [
+    "3",
+    "-10"
+   ],
+   "mult": [
+    126,
+    42
+   ],
+   "dual": true
+  }
+ },
+ "verdict": "证",
+ "finding": "存在性3组全过(与构造在一致); 排除性3组过我六条件而被BMV格方法(Lean形式化)排除——六必要条件⊂BMV之界碑实证, 隙=3/3; 我器不碰存在性, 与2610.00225互补不矛盾",
+ "ts": "2026-10-20T09:32:42Z"
+}
