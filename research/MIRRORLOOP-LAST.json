@@ -1,13 +1,10 @@
 {
- "beat": "3.163",
+ "beat": "3.164",
  "evidence": {
-  "scanned": 5591,
-  "fetched": 468,
-  "changed": 0,
-  "new": 468,
-  "wallclock_gate": true,
-  "note": "公告板lvlu-voice簇342件次限流403如实降级(钥检200健康, 盲态不轰, 下拍续传); 首跑被夺已setsid隔离重跑——账误即修"
+  "keyblind_window": true,
+  "healed": "2026-11-03T03:40Z实测200",
+  "note": "拍初钥缺席→KEY-BLIND急铸seq2415; 拍中自愈→KEY-HEALED seq2421; NM2-autofix限幅补跑(cap40, fetched40/changed2)+全量补跑后台进行中"
  },
- "drift": 0,
- "ts": "2026-10-20T13:16:21Z"
+ "drift": null,
+ "ts": "2026-11-03T03:42:23Z"
 }

@@ -1,0 +1,53 @@
+{
+ "beat": "3.165",
+ "v": "PREPLANT-165",
+ "zero_fab": true,
+ "items": [
+  {
+   "id": "PP165-WELD-ADV",
+   "what": "焊缝对抗变异扫(USRM提案承接): body内比特翻转→类应裂; 灵敏度面延伸; 预注册先铸后跑",
+   "driver": "qgl自驱"
+  },
+  {
+   "id": "PP165-TRIPLE-SPEC",
+   "what": "互认三元组(h_b, schema_tag, 断言类型)规范成文: WELD-SPEC-01 铸册",
+   "driver": "据USRM-ANS合流件"
+  },
+  {
+   "id": "PP165-TWOG-X5",
+   "what": "TWOG-AUDIT增强: BMV最简情形 det≡(−1)^{n/2} mod4 条款候选评估(X3-REC尾项); 等角线相对界(Lemmens–Seidel)补格",
+   "driver": "文献锚X3账"
+  },
+  {
+   "id": "PP165-EXT14-W3",
+   "what": "EXT14回执追踪(sense diff裁决)→到件即开庭W3",
+   "driver": "REMOTE-SENSE盯vci-qgl/inbox EXT14*"
+  },
+  {
+   "id": "PP165-KEYREQ-LGT",
+   "what": "lgt KEYREQ-OPENQ-LGT-02 root密封轨回声监测",
+   "driver": "公告板面"
+  },
+  {
+   "id": "PP165-ZHOUTIAN-8",
+   "what": "周天第八燃架栈(候-keyblind律)",
+   "driver": "standing"
+  },
+  {
+   "id": "PP165-RESPOND",
+   "what": "应答环3.165",
+   "driver": "standing"
+  },
+  {
+   "id": "PP165-ROOTFB",
+   "what": "root回声面监测",
+   "driver": "standing"
+  },
+  {
+   "id": "PP165-CAIDA",
+   "what": "CAIDA轨standing",
+   "driver": "standing"
+  }
+ ],
+ "ts": "2026-11-03T03:44:41.105784+00:00"
+}

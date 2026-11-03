@@ -1,15 +1,16 @@
 {
- "beat": "3.163",
- "burn_no": 6,
+ "beat": "3.164",
+ "burn_no": 7,
  "state": "候-keyblind 武装待发",
  "legs_staged": 14,
  "fired_this_beat": 0,
- "reason": "无实测不索钥律: 私域零接触+未获新钥, 第六燃架栈不点火 (LAW-PRIVQUOTA-01: 私域额度全局禁用, 不向root请修)",
+ "reason": "席侧环境重置,钥文件缺席(实测FileNotFoundError); 无实测不索钥律→第七燃架栈不点火; KEY-BLIND已急铸seq2415",
  "armed_targets": [
   "lanes回收轨",
   "mirrorloop深扫",
   "wildcard探针"
  ],
  "zero_fab": true,
- "ts": "2026-10-20T12:47:47Z"
+ "ts": "2026-11-03T03:34:08Z",
+ "note": "拍中钥愈(实测200); 第七燃维持不点火——无新实测需求面, 武装待发律不变"
 }
