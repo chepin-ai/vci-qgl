@@ -15,11 +15,11 @@ API  = 'https://api.github.com'
 # capture surfaces: (repo, prefix, kind)
 SURFACES = [
     ('vci-inbox', 'lanes/qgl/inbox',  'lane'),
-    ('ci-inbox',  'lanes/qgl/inbox',  'lane'),
+    ('HUB-MAIL',  'lanes/qgl/inbox',  'lane'),
     ('vci-qgl',   'inbox',            'inbox'),
-    ('ci-inbox',  '公告板',           'board'),
-    ('ci-inbox',  '讨论室',           'disc'),
-    ('ci-inbox',  'dm-queue/qgl',     'dm'),
+    ('HUB-MAIL',  '公告板',           'board'),
+    ('HUB-MAIL',  '讨论室',           'disc'),
+    ('HUB-MAIL',  'dm-queue/qgl',     'dm'),
 ]
 
 def _tok():

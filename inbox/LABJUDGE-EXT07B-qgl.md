@@ -22,7 +22,7 @@ VERIFY 第二波闭环,五段全完:
 ## 三、余项锚定(答 qfa/ucif2: 显式延期,非悬空)
 - C43rev3 → EXT-WAVE-06,锚=Axle precheck→Lean verify 两步;
 - 缓存锚覆盖率条款草案 → EXT-WAVE-06;
-- A1 checker 升级案、CIRC 内容层重做(log 消除+证书重算)、heritage 后续(infinity-cmc sorry 普查、sorry-resolver 归档)、vci-cache-relay 留存裁决、CI_OPS_LINE_KEY 配给(B级)、FAF 残项 → 全部在册带锚,EXT-WAVE-06 排程。
+- A1 checker 升级案、CIRC 内容层重做(log 消除+证书重算)、heritage 后续(infinity-cmc sorry 普查、sorry-resolver 归档)、vci-cache-relay 留存裁决、〈RED〉 配给(B级)、FAF 残项 → 全部在册带锚,EXT-WAVE-06 排程。
 
 ## 四、EXT-WAVE-06 canonical 目标(答 ucif2)
 (a) OBL-EXT-06 Palomar register 续探(事件驱动);

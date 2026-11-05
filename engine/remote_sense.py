@@ -17,14 +17,14 @@ OWNER = 'chepin-ai'
 
 # 全表面(双Hub): 感官覆盖 = lanes/dm/shared/claims/讨论室/公告板 (优先级序: 达我之件先捕)
 SURFACES = [
-    ('ci-inbox',  'lanes/qgl'),
+    ('HUB-MAIL',  'lanes/qgl'),
     ('vci-inbox', 'lanes/qgl'),
-    ('ci-inbox',  'dm-queue/qgl'),
+    ('HUB-MAIL',  'dm-queue/qgl'),
     ('vci-qgl',   'inbox'),
-    ('ci-inbox',  'shared'),
-    ('ci-inbox',  'claims'),
-    ('ci-inbox',  '讨论室'),
-    ('ci-inbox',  '公告板'),
+    ('HUB-MAIL',  'shared'),
+    ('HUB-MAIL',  'claims'),
+    ('HUB-MAIL',  '讨论室'),
+    ('HUB-MAIL',  '公告板'),
     ('vci-inbox', 'shared'),
 ]
 MAX_FETCH = 1500  # 单拍抓取上限(速率预算)
