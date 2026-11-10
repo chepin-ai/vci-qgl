@@ -1,10 +1,11 @@
 {
- "beat": "3.164",
+ "beat": "3.165",
  "evidence": {
-  "keyblind_window": true,
-  "healed": "2026-11-03T03:40Z实测200",
-  "note": "拍初钥缺席→KEY-BLIND急铸seq2415; 拍中自愈→KEY-HEALED seq2421; NM2-autofix限幅补跑(cap40, fetched40/changed2)+全量补跑后台进行中"
+  "key": "200/4506 拍开实测",
+  "sense": "REMOTE-SENSE 3.165 done, scanned6871/fetched793",
+  "respond": "3仓5答件推送实证 c81fe5df/7278b401/e5b915d4",
+  "session_mirror": "本拍席镜条目入 receipts/session-mirror/mirror.jsonl 随闭拍推送"
  },
  "drift": null,
- "ts": "2026-11-03T03:42:23Z"
+ "ts": "2026-11-10T05:16:14.121749+00:00"
 }

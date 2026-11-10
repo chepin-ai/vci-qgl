@@ -1,16 +1,16 @@
 {
- "beat": "3.164",
- "burn_no": 7,
- "state": "候-keyblind 武装待发",
+ "beat": "3.165",
+ "burn_no": 8,
+ "state": "候-武装待发(栈载刷新)",
  "legs_staged": 14,
  "fired_this_beat": 0,
- "reason": "席侧环境重置,钥文件缺席(实测FileNotFoundError); 无实测不索钥律→第七燃架栈不点火; KEY-BLIND已急铸seq2415",
+ "reason": "七燃先例: 无新实测需求面不点火; 本燃修复栈载stale缺陷(3.161旧token→3.165新探针), 点火须root令",
  "armed_targets": [
   "lanes回收轨",
   "mirrorloop深扫",
   "wildcard探针"
  ],
  "zero_fab": true,
- "ts": "2026-11-03T03:34:08Z",
- "note": "拍中钥愈(实测200); 第七燃维持不点火——无新实测需求面, 武装待发律不变"
+ "ts": "2026-11-10T04:37:57.240791+00:00",
+ "token_sha": "54ed88c69a5b111c"
 }

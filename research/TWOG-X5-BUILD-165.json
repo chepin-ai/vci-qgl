@@ -1,0 +1,34 @@
+{
+ "id": "TWOG-X5-BUILD-165",
+ "beat": "3.165",
+ "ts": "2026-11-10T04:36:25.746488+00:00",
+ "version": "twoaudit v1.0→v1.1",
+ "new_cells": {
+  "EQ5_relbound": {
+   "stmt": "Lemmens–Seidel相对界: dα²<1 ⇒ r≤d(1−α²)/(1−dα²)",
+   "src": "Lemmens&Seidel, J.Algebra 24 (1973) 494–512, Thm 3.6",
+   "corpus_new_blocks": 384
+  },
+  "EQ6_bmv": {
+   "stmt": "Gerzon达成 d∈{47,79} 被否(Bannai–Munemasa–Venkov 2005); d=119 开→None",
+   "corpus_new_blocks": 6
+  },
+  "TG6_conf_det_selftest": {
+   "stmt": "候选不变量 det S=(−1)^{n/2}(n−1)^{n/2} · Paley q∈{5,9,13,17,25,29} 6/6 精确Bareiss实证",
+   "status": "实测自检锚(判读器自证), 非阻截格, 未引用文献定理(候选条款不晋级)"
+  }
+ },
+ "regression": {
+  "twograph_corpus": 987,
+  "twograph_dual_mismatch": 0,
+  "equiangular_corpus": 6544,
+  "equiangular_dual_mismatch": 0,
+  "anchors": "11/11 (TG升降三名锚+EQ5三通/阻+EQ6两阻一开+float修复+EQ3)"
+ },
+ "honest_amendments": [
+  "失校即修#1: α入口归一化Fraction — float α=1/3 曾致 EQ2 1/α 整数性误诊(3.0000000000000004); 修后 (24,100,0.2) EQ2 正确判True",
+  "失校即修#2(部署前截获): GF(9) 模多项式初稿 x²+2 在F3有根x=1(可约)→改x²+1; 自检前捕获, 未入链",
+  "语料诚实声明: 3.164 之508语料生成器随/tmp灭失; 本拍重建语料(双图987+等角线6544), 双路零失配在新语料上成立, 不声称与原508逐例同一"
+ ],
+ "verdict": "证"
+}

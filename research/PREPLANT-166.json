@@ -1,0 +1,53 @@
+{
+ "beat": "3.166",
+ "v": "PREPLANT-166",
+ "zero_fab": true,
+ "items": [
+  {
+   "id": "PP166-EXT14-W3",
+   "what": "EXT14回执追踪(sense diff)→到件即开庭W3",
+   "driver": "REMOTE-SENSE盯vci-qgl/inbox EXT14*"
+  },
+  {
+   "id": "PP166-KEYREQ-LGT",
+   "what": "lgt KEYREQ-OPENQ-LGT-02 / R19 root密封轨回声监测",
+   "driver": "公告板面"
+  },
+  {
+   "id": "PP166-NORTHSTAR-SIGNOFF",
+   "what": "NORTHSTAR-SIGNOFF-01.json 会签状态监测(窗2拍)+内容寻址建议采纳追踪; ≥5/9方称共识",
+   "driver": "ci-control bridge/disc"
+  },
+  {
+   "id": "PP166-WELD-XVAL",
+   "what": "USRM侧对拍结果回报watch→双实现零分歧则三元锚升格互认协议正本",
+   "driver": "讨论室 weld 线程"
+  },
+  {
+   "id": "PP166-TWOG-X6",
+   "what": "等角线增强候选评估: Okuda–Yu新相对界/pillar法/SDP界表(Gerzon d≤136改进)文献锚定后候选格",
+   "driver": "文献锚X5账"
+  },
+  {
+   "id": "PP166-ZHOUTIAN-9",
+   "what": "周天第九燃架栈(候律)",
+   "driver": "standing"
+  },
+  {
+   "id": "PP166-RESPOND",
+   "what": "应答环3.166",
+   "driver": "standing"
+  },
+  {
+   "id": "PP166-ROOTFB",
+   "what": "root回声面监测",
+   "driver": "standing"
+  },
+  {
+   "id": "PP166-CAIDA",
+   "what": "CAIDA轨standing",
+   "driver": "standing"
+  }
+ ],
+ "ts": "2026-11-10T05:17:37.400605+00:00"
+}

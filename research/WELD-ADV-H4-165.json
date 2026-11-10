@@ -1,0 +1,11 @@
+{
+ "sample": 200,
+ "flips": 102792,
+ "parse_survival": 38359,
+ "loud_parse_fail": 64433,
+ "tag_change": 21000,
+ "survival_rate": 0.3732,
+ "verdict": "证",
+ "prereg_sha": "8ebb4786eb4b",
+ "wallclock_s": 0.6
+}

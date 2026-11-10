@@ -1,0 +1,45 @@
+{
+ "id": "FRONTIER-INTAKE-165",
+ "beat": "3.165",
+ "ts": "2026-11-10T04:27:48.224487+00:00",
+ "source": {
+  "title": "Imaging exoplanets below the telescope stability limit",
+  "authors": "Ferrer-Chavez, Wang, Bouman, Freeman, Pueyo, Feng, Perrin",
+  "venue": "Nature 659, 58–62 (2026)",
+  "doi": "10.1038/s41586-026-11213-z",
+  "via": "linkresearcher.com/theses/447938b8-a9ca-4c5a-85ec-b9ef8ec29fb0 (root 供)"
+ },
+ "method_core": "FLIP (Physics-based Learning for Imaging Planets): 可微仪器前向模型(波前传感数据约束的物理PSF模型)+多步优化; 参考图校准像差→科学图微调; 以物理星光模型替代经验参考图相减",
+ "headline_results": [
+  "灵敏度 2–15× 优于 KLIP 标准技术",
+  "51 Eri b 首次 4.3μm (F430M) 探测 >5σ — KLIP 零探测的旧数据回收",
+  "on-sky 实证: 首次在实际日冕仪成像上展示实质灵敏度提升"
+ ],
+ "qf_os_mappings": [
+  {
+   "law": "判据分层律",
+   "map": "FLIP 拟合优度(PSF重建质量)不是发现判据; 发现主张落在残差图 >5σ 对噪声统计——模型内结论不直接获判据地位, 判据住在数据残差层"
+  },
+  {
+   "law": "判读器自证律",
+   "map": "先在参考图(已知答案: 纯星无行星)校准像差, 再调科学图(未知)——管线字面即'先以已知答案数据自证再判未知'"
+  },
+  {
+   "law": "真边界驱动",
+   "map": "'稳定极限'被当作硬边界; 不请更多硬件稳定度(稀缺资源预算), 改以建模噪声源移动边界——边界→可建模约束→信号回收"
+  },
+  {
+   "law": "空结果同铸",
+   "map": "KLIP 在 F430M 的零探测是诚实记录的归档空结果; 正因空结果同铸, 旧数据才可被新器械合法地将 候→证 翻转('science left on the table')"
+  },
+  {
+   "law": "无知显式化",
+   "map": "数字孪生把自身不完美(nm级镜面位移)列为拟合参数——对应 twoaudit EQ2 α缺失→None(不裁): 审计cell须显式编码无知"
+  }
+ ],
+ "actionables": [
+  "TWOG-X5 候选条款须按'先自证后判未知'过508语料回归再谈晋级",
+  "WELD-ADV  adversarial scan 采空结果同铸: 零碰撞预期, 任何非变=冲"
+ ],
+ "verdict": "证(摄入完成, 映射落账)"
+}

@@ -1,0 +1,14 @@
+{
+ "N": 1000,
+ "total_flips": 518112,
+ "H1_violations": 0,
+ "H2_violations": 0,
+ "hamming_min": 92,
+ "hamming_mean": 127.989,
+ "H1_pass": true,
+ "H2_pass": true,
+ "H3_pass": true,
+ "wallclock_s": 1.8,
+ "verdict": "证",
+ "prereg_sha": "2d75780a07d64ed5c63c90c1cef91767e28ecdc8b2e684460a740272913f3898"
+}
