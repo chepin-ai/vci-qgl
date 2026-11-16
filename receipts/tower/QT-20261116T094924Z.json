@@ -1,0 +1,20 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-11-16T09:49:24Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "BEAT-3166.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEAT-3167.md"
+  },
+  {
+   "kind": "inbox",
+   "ref": "BEAT-3168.md"
+  }
+ ],
+ "verdict_memo": "[no-kimi-key: 事件在册，开工候钥]"
+}
