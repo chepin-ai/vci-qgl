@@ -1,0 +1,176 @@
+{
+  "beat_count": 8,
+  "beat_range": [
+    "3.166",
+    "3.173"
+  ],
+  "classification": "CLASSIFY: L1",
+  "correction": "旧七拍口径漏计 3.173；本清单以八拍为唯一投递基数。",
+  "dtag": "backfill-166-173-174",
+  "entries": [
+    {
+      "beat": "3.166",
+      "projection": "BEAT-3166.md",
+      "projection_bytes": 5413,
+      "projection_kind": "review-header-projection",
+      "projection_sha256": "f6d4764934dea501df4e2821655d6c506d406de18f86f645474c34f6d6464dce",
+      "redacted_lines": [],
+      "source_bytes": 5366,
+      "source_modified": false,
+      "source_rule_hits": {
+        "credential_label": 0,
+        "op_label": 0,
+        "private_path": 0,
+        "private_repo": 0,
+        "sealed_file_label": 0,
+        "secret_material": 0
+      },
+      "source_sha256": "3ea23a7bec9bb9478c0385de5a3e51a1cf35d8ae09cd6a74ad5ab77b3cef35ef"
+    },
+    {
+      "beat": "3.167",
+      "projection": "BEAT-3167.md",
+      "projection_bytes": 3969,
+      "projection_kind": "review-header-projection",
+      "projection_sha256": "03fe85d9594e20efaf782fe7c5878c60e67cf1fa54b363da7d19ffd1f0f09d73",
+      "redacted_lines": [],
+      "source_bytes": 3922,
+      "source_modified": false,
+      "source_rule_hits": {
+        "credential_label": 0,
+        "op_label": 0,
+        "private_path": 0,
+        "private_repo": 0,
+        "sealed_file_label": 0,
+        "secret_material": 0
+      },
+      "source_sha256": "e66bd3343a8edde5d19452a4501690dbce5eb1b14cbe92d5993537f744176a32"
+    },
+    {
+      "beat": "3.168",
+      "projection": "BEAT-3168.md",
+      "projection_bytes": 3740,
+      "projection_kind": "review-header-projection",
+      "projection_sha256": "199f71b9933c75591acb1253491102ba42936b08149d42bca9f826ab3eaf02d8",
+      "redacted_lines": [],
+      "source_bytes": 3693,
+      "source_modified": false,
+      "source_rule_hits": {
+        "credential_label": 0,
+        "op_label": 0,
+        "private_path": 0,
+        "private_repo": 0,
+        "sealed_file_label": 0,
+        "secret_material": 0
+      },
+      "source_sha256": "a067939f906e678f1b64ea423e17ef0c516ca0d207e2146bbf771da78b89a560"
+    },
+    {
+      "beat": "3.169",
+      "projection": "BEAT-3169.md",
+      "projection_bytes": 3501,
+      "projection_kind": "review-header-projection",
+      "projection_sha256": "6449430bda64d702e527da4bb4eda7234fbbeac8c66e708f0af1bd54cea35119",
+      "redacted_lines": [],
+      "source_bytes": 3454,
+      "source_modified": false,
+      "source_rule_hits": {
+        "credential_label": 0,
+        "op_label": 0,
+        "private_path": 0,
+        "private_repo": 0,
+        "sealed_file_label": 0,
+        "secret_material": 0
+      },
+      "source_sha256": "f188461a350004d3a3f504a861f39129b164b290c0ebc267650ac8a0e6f90684"
+    },
+    {
+      "beat": "3.170",
+      "projection": "BEAT-3170.md",
+      "projection_bytes": 3752,
+      "projection_kind": "review-header-projection",
+      "projection_sha256": "58ddc88aa96eb21bafdfe9ee8e9fa1d2b2c8120859cb5d8eb22e899f174b8881",
+      "redacted_lines": [],
+      "source_bytes": 3705,
+      "source_modified": false,
+      "source_rule_hits": {
+        "credential_label": 0,
+        "op_label": 0,
+        "private_path": 0,
+        "private_repo": 0,
+        "sealed_file_label": 0,
+        "secret_material": 0
+      },
+      "source_sha256": "b02aabb36986b0de20408559459bfc619b37206613a862758c65d36eede5a0be"
+    },
+    {
+      "beat": "3.171",
+      "projection": "BEAT-3171.md",
+      "projection_bytes": 4262,
+      "projection_kind": "review-header-projection",
+      "projection_sha256": "f95c5306456c2027a795b1411c8f122b1fdc01c91bbe86216a426c8e3916bb23",
+      "redacted_lines": [],
+      "source_bytes": 4215,
+      "source_modified": false,
+      "source_rule_hits": {
+        "credential_label": 0,
+        "op_label": 0,
+        "private_path": 0,
+        "private_repo": 0,
+        "sealed_file_label": 0,
+        "secret_material": 0
+      },
+      "source_sha256": "869fdad8aaa3ad31399f8a3a6235a2be7d79358cce6669b4529db965437b5f2b"
+    },
+    {
+      "beat": "3.172",
+      "projection": "BEAT-3172.md",
+      "projection_bytes": 3923,
+      "projection_kind": "redacted-public-projection",
+      "projection_sha256": "3e893e9f36963ad306437072866f00b11a72a1f1324a64fbf6424119e484c6ef",
+      "redacted_lines": [
+        {
+          "line": 4,
+          "rules": [
+            "private_repo"
+          ]
+        }
+      ],
+      "source_bytes": 3962,
+      "source_modified": false,
+      "source_rule_hits": {
+        "credential_label": 0,
+        "op_label": 0,
+        "private_path": 0,
+        "private_repo": 1,
+        "sealed_file_label": 0,
+        "secret_material": 0
+      },
+      "source_sha256": "14edd344bf748f0919b0eba0a00555ae370e810db49598b511b7008923a0ac73"
+    },
+    {
+      "beat": "3.173",
+      "projection": "BEAT-3173.md",
+      "projection_bytes": 7068,
+      "projection_kind": "review-header-projection",
+      "projection_sha256": "be150e47494fec304b4459a55fc4610dac324c9356806ac5cb6571b11fa59e65",
+      "redacted_lines": [],
+      "source_bytes": 7021,
+      "source_modified": false,
+      "source_rule_hits": {
+        "credential_label": 0,
+        "op_label": 0,
+        "private_path": 0,
+        "private_repo": 0,
+        "sealed_file_label": 0,
+        "secret_material": 0
+      },
+      "source_sha256": "77c48c2f117f1bdebd2e391c420e2a559a9810a69e4e7c67a3b11be364be037d"
+    }
+  ],
+  "kind": "authoritative-eight-beat-public-backfill/1",
+  "mutual_review": "[MUTUAL-REVIEW]",
+  "remote_overwrite": false,
+  "source_originals_preserved": true,
+  "surface_sha256": "dc10a5a15cf2"
+}
