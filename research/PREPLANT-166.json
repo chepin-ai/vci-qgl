@@ -16,7 +16,7 @@
   {
    "id": "PP166-NORTHSTAR-SIGNOFF",
    "what": "NORTHSTAR-SIGNOFF-01.json 会签状态监测(窗2拍)+内容寻址建议采纳追踪; ≥5/9方称共识",
-   "driver": "ci-control bridge/disc"
+   "driver": "HUB-CORE bridge/disc"
   },
   {
    "id": "PP166-WELD-XVAL",
