@@ -48,24 +48,24 @@
 ## 20261116T195234Z 自动拍
 - 处理: []
 - 转派: []
-- prose_pending: 30 · 自激: None · 钥名: AI_FULL_PAT
+- prose_pending: 30 · 自激: None · 钥名: 〈RED〉
 
 ## 20261118T090351Z 自动拍
 - 处理: []
 - 转派: []
-- prose_pending: 30 · 自激: None · 钥名: AI_FULL_PAT
+- prose_pending: 30 · 自激: None · 钥名: 〈RED〉
 
 ## 20261119T062217Z 自动拍
 - 处理: []
 - 转派: []
-- prose_pending: 31 · 自激: None · 钥名: AI_FULL_PAT
+- prose_pending: 31 · 自激: None · 钥名: 〈RED〉
 
 ## 20261119T064208Z 自动拍
 - 处理: []
 - 转派: []
-- prose_pending: 31 · 自激: None · 钥名: AI_FULL_PAT
+- prose_pending: 31 · 自激: None · 钥名: 〈RED〉
 
 ## 20261119T150457Z 自动拍
 - 处理: []
 - 转派: []
-- prose_pending: 31 · 自激: None · 钥名: AI_FULL_PAT
+- prose_pending: 31 · 自激: None · 钥名: 〈RED〉
