@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-11-19T15:05:29Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "CORRECTION-BEAT170-GLOBAL-SURGE-01-qgl-20261119T1504Z.md"
+  }
+ ],
+ "verdict_memo": "[no-kimi-key: 事件在册，开工候钥]"
+}
