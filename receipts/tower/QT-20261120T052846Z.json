@@ -1,0 +1,12 @@
+{
+ "v": "QGL-TOWER-01",
+ "ts": "2026-11-20T05:28:46Z",
+ "idle_in": 0,
+ "events": [
+  {
+   "kind": "inbox",
+   "ref": "ANS-T-B171-QGL-ANS-01-MACHINE-02.md"
+  }
+ ],
+ "verdict_memo": "[no-kimi-key: 事件在册，开工候钥]"
+}
