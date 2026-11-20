@@ -31,7 +31,7 @@ def main():
     ts = datetime.datetime.utcnow().strftime('%Y%m%dT%H%M%SZ')
     s, raw = api('GET', f'https://api.github.com/repos/{OWNER}/{HUB}/git/trees/HEAD?recursive=1', PAT)
     if s != 200:
-        print(json.dumps({'fatal': 'tree', 'http': s})); return
+        print(json.dumps({'fatal': 'tree', 'http': s})); raise SystemExit(1)
     tree = json.loads(raw).get('tree', [])
     addr = sorted([{'path': t['path'], 'sha': t['sha'][:12]} for t in tree
                    if t['path'].startswith('lanes/') and '/inbox/' in t['path']
