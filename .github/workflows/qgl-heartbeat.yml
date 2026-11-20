@@ -16,5 +16,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: heartbeat KAT
+        run: python engine-tower/test_heartbeat_api.py
       - name: heartbeat
         run: python engine-tower/heartbeat_api.py

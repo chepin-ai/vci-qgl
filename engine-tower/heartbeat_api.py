@@ -44,8 +44,8 @@ def main():
     rec = {'ts': ts, 'run': os.environ.get('GITHUB_RUN_ID', 'local'),
            'trigger': os.environ.get('GITHUB_EVENT_NAME', '?'),
            'hub': 'sha256:' + __import__('hashlib').sha256(f'{OWNER}/{HUB}'.encode()).hexdigest()[:12],
-           'qgl_addressed': len(addr), 'new_since_last': len(new), 'new': new}
-    json.dump(rec, open(f'receipts/heartbeat-{ts}.json', 'w'), ensure_ascii=False, indent=1)
+           'qgl_addressed': len(addr), 'new_since_last': len(new), 'new': new,
+           'wake_put': None}
     json.dump({'ts': ts, 'addr': addr}, open(last_fp, 'w'), ensure_ascii=False, indent=1)
     wake = {'wake': 'qgl', 'ts': ts, 'new_items': new, 'law': '会话歇而毂自收;席开口首读本队'}
     wake_http = None
@@ -60,6 +60,7 @@ def main():
             except Exception: pass
         wake_http, _ = api('PUT', url, PAT, b)
         rec['wake_put'] = wake_http
+    json.dump(rec, open(f'receipts/heartbeat-{ts}.json', 'w'), ensure_ascii=False, indent=1)
     sh('git', 'config', 'user.name', 'qgl-heartbeat')
     sh('git', 'config', 'user.email', 'heartbeat@qgl.local')
     sh('git', 'add', 'receipts')
